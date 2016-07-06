@@ -2,21 +2,9 @@
   box-sizing: border-box;
 }
 
-.main-container {
-	text-align: center;
-}
-
-.vis-container {
-	display: inline-block;
-	height: auto;
-	width: auto;
-	max-width: 840px;
-	text-align: center;
-}
-
 .icons-row {
 	display: inline-block;
-	width: auto;	
+	width: auto;
 	max-height: 100px;
 }
 
@@ -32,7 +20,7 @@
 	background-color: #ECE5FF;
 }
 
-@media screen and (max-width: 925px) { 
+@media screen and (max-width: 925px) {
 
 	.vis-container {
 		width: 412px;

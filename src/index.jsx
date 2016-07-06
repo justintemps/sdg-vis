@@ -1,10 +1,5 @@
 import React from "react";
 import {render} from "react-dom";
+import SDGexplorer from "./Components/SDGexplorer/SDGexplorer.jsx";
 
-class App extends React.Component {
-	render () {
-		return <p> Hello React!</p>;
-	}
-}
-
-render(<App/>, document.getElementById("app"));
+render(<SDGexplorer />, document.getElementById("app"));
