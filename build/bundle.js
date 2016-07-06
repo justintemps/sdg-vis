@@ -20191,6 +20191,10 @@
 	
 	__webpack_require__(/*! ./sdgexplorer.scss */ 160);
 	
+	var _data = __webpack_require__(/*! json!../../data.json */ 164);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
@@ -20198,7 +20202,21 @@
 	var SDGexplorer = _react2.default.createClass({
 		displayName: "SDGexplorer",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "main-container" }, _react2.default.createElement("div", { className: "vis-container" }, "This is in the vis container biatch"));
+			return _react2.default.createElement("div", { className: "main-container" }, _react2.default.createElement("div", { className: "vis-container" }, _react2.default.createElement(IconGrid, null)));
+		}
+	});
+	
+	var IconGrid = _react2.default.createClass({
+		displayName: "IconGrid",
+		render: function render() {
+			return _react2.default.createElement("div", { className: "icons-row" }, _react2.default.createElement(Icon, { src: _data2.default.sdgIcon }));
+		}
+	});
+	
+	var Icon = _react2.default.createClass({
+		displayName: "Icon",
+		render: function render() {
+			return _react2.default.createElement("img", { className: "icon", src: this.props.src });
 		}
 	});
 	
@@ -20212,6 +20230,60 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */
+/*!***************************************!*\
+  !*** ./~/json-loader!./src/data.json ***!
+  \***************************************/
+/***/ function(module, exports) {
+
+	module.exports = {
+		"sdgNumber": 8,
+		"sdgName": "Promote inclusive and sustainable economic growth, employment and decent work for all",
+		"sdgIcon": "./src/images/E_SDG_Icons-01.webp",
+		"sdgTargets": [
+			"Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries",
+			"Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors",
+			"Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services",
+			"Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10-year framework of programmes on sustainable consumption and production, with developed countries taking the lead",
+			"By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value",
+			"By 2020, substantially reduce the proportion of youth not in employment, education or training",
+			"Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms",
+			"Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment",
+			"By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products",
+			"Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all",
+			"Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-Related Technical Assistance to Least Developed Countries",
+			"By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization"
+		],
+		"sdgTargetIsChar": {
+			"10": "a",
+			"11": "b"
+		},
+		"stories": [
+			{
+				"title": "From refugee in Kenya to business owner in Somalia",
+				"blurb": "Last October, UNHCR announced that 5,000 refugees had headed home to Somalia since December 2014 from the mammoth Dadaab refugee camp in northern Kenya, home to about 350,000 people.",
+				"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+				"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+			},
+			{
+				"title": "Helping Syrian refugees formalize their work status through cooperatives",
+				"blurb": "The ILO is working with agricultural cooperatives to help Syrian refugees obtain work permits during a three-month grace period announced by the government of Jordan, in a further step to improve access of Syrian refugees to the formal labour market.",
+				"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+				"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+			},
+			{
+				"title": "Working out of poverty in Timor-Leste",
+				"blurb": "Timor-Leste’s long journey to independence eroded large segments of the economy and infrastructure. Despite recent and rapid oil-fuelled growth, poverty has remained acute with half the population living on less than a dollar a day.",
+				"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+				"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+			}
+		]
+	};
 
 /***/ }
 /******/ ]);

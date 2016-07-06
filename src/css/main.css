@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-.icons-row {
-	display: inline-block;
-	width: auto;
-	max-height: 100px;
-}
-
 .icon {
 	max-width: 100px;
 	display: inline-block;

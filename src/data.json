@@ -1,6 +1,7 @@
 {
     "sdgNumber" : 8,
     "sdgName" : "Promote inclusive and sustainable economic growth, employment and decent work for all",
+	"sdgIcon" : "./src/images/E_SDG_Icons-01.webp",
     "sdgTargets" : [
         "Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries",
         "Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors",
