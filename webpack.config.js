@@ -56,7 +56,7 @@ if (production) {
 module.exports = {
 	debug:  !production,
 	devtool: production ? false : "eval",
-	entry: "./src",
+	entry: "./src/index.jsx",
 	output: {
 		path:          "build",
 		filename:      production ? "[name]-[hash].js" : "bundle.js",
@@ -93,6 +93,13 @@ module.exports = {
 			{
 				test: /\.scss/,
 				loader: ExtractPlugin.extract("style", "css!sass")
+			},
+			{
+				test:   /\.(png|gif|jpe?g|svg|webp)$/i,
+				loader: "url",
+				query: {
+					limit: 10000
+				}
 			}
 		]
 	}
