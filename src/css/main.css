@@ -1,0 +1,45 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.main-container {
+	text-align: center;
+}
+
+.vis-container {
+	display: inline-block;
+	height: auto;
+	width: auto;
+	max-width: 840px;
+	text-align: center;
+}
+
+.icons-row {
+	display: inline-block;
+	width: auto;	
+	max-height: 100px;
+}
+
+.icon {
+	max-width: 100px;
+	display: inline-block;
+}
+
+.content-display {
+	width: auto;
+	height: 300px;
+	margin: 0 0 5px;
+	background-color: #ECE5FF;
+}
+
+@media screen and (max-width: 925px) { 
+
+	.vis-container {
+		width: 412px;
+	}
+
+	.content-display {
+		width: 412px;
+	}
+
+}
