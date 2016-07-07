@@ -55,7 +55,9 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 158);
 	
-	var _SDGexplorer = __webpack_require__(/*! ./Components/SDGexplorer/SDGexplorer.jsx */ 159);
+	__webpack_require__(/*! ./Components/SDGexplorer/sdgexplorer.scss */ 159);
+	
+	var _SDGexplorer = __webpack_require__(/*! ./Components/SDGexplorer/SDGexplorer.jsx */ 163);
 	
 	var _SDGexplorer2 = _interopRequireDefault(_SDGexplorer);
 	
@@ -20174,6 +20176,18 @@
 
 /***/ },
 /* 159 */
+/*!*****************************************************!*\
+  !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
+  \*****************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */
 /*!****************************************************!*\
   !*** ./src/Components/SDGexplorer/SDGexplorer.jsx ***!
   \****************************************************/
@@ -20189,8 +20203,6 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(/*! ./sdgexplorer.scss */ 160);
-	
 	var _data = __webpack_require__(/*! json!../../data.json */ 164);
 	
 	var _data2 = _interopRequireDefault(_data);
@@ -20202,14 +20214,18 @@
 	var SDGexplorer = _react2.default.createClass({
 		displayName: "SDGexplorer",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "main-container" }, _react2.default.createElement("div", { className: "vis-container" }, _react2.default.createElement(IconGrid, null)));
+			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(Row, { startFrom: 1, numberIcons: 12, key: 1 }), _react2.default.createElement(Row, { startFrom: 12, numberIcons: 6, key: 2 })));
 		}
 	});
 	
-	var IconGrid = _react2.default.createClass({
-		displayName: "IconGrid",
+	var Row = _react2.default.createClass({
+		displayName: "Row",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "icons-row" }, _react2.default.createElement(Icon, { src: _data2.default.sdgIcon }));
+			var icons = [];
+			for (var i = this.props.startFrom - 1; i < this.props.numberIcons + this.props.startFrom - 1; i++) {
+				icons.push(_react2.default.createElement(Icon, { key: _data2.default[i].sdgNumber, src: _data2.default[i].sdgIcon }));
+			}
+			return _react2.default.createElement("div", { className: "row" }, icons);
 		}
 	});
 	
@@ -20223,67 +20239,754 @@
 	exports.default = SDGexplorer;
 
 /***/ },
-/* 160 */
-/*!*****************************************************!*\
-  !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
-  \*****************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 161 */,
-/* 162 */,
-/* 163 */,
 /* 164 */
 /*!***************************************!*\
   !*** ./~/json-loader!./src/data.json ***!
   \***************************************/
 /***/ function(module, exports) {
 
-	module.exports = {
-		"sdgNumber": 8,
-		"sdgName": "Promote inclusive and sustainable economic growth, employment and decent work for all",
-		"sdgIcon": "./src/images/E_SDG_Icons-01.webp",
-		"sdgTargets": [
-			"Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries",
-			"Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors",
-			"Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services",
-			"Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10-year framework of programmes on sustainable consumption and production, with developed countries taking the lead",
-			"By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value",
-			"By 2020, substantially reduce the proportion of youth not in employment, education or training",
-			"Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms",
-			"Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment",
-			"By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products",
-			"Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all",
-			"Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-Related Technical Assistance to Least Developed Countries",
-			"By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization"
-		],
-		"sdgTargetIsChar": {
-			"10": "a",
-			"11": "b"
+	module.exports = [
+		{
+			"sdgNumber": 1,
+			"sdgName": "End poverty in all its forms everywhere",
+			"sdgIcon": "./src/images/E_SDG_Icons-01.webp",
+			"sdgTargets": [
+				{
+					"number": "1.1",
+					"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
+				},
+				{
+					"number": "1.2",
+					"description": "By 2030, reduce at least by half the proportion of men, women and children living in poverty in all its dimensions according to national definitions"
+				},
+				{
+					"number": "1.3",
+					"description": "Implement nationally appropriate social protection systems"
+				},
+				{
+					"number": "1.5",
+					"description": "Ensure that all men and women, have equal rights to economic resources, including microfinance"
+				},
+				{
+					"number": "1.5",
+					"description": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
+				},
+				{
+					"number": "1.b",
+					"description": "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
 		},
-		"stories": [
-			{
-				"title": "From refugee in Kenya to business owner in Somalia",
-				"blurb": "Last October, UNHCR announced that 5,000 refugees had headed home to Somalia since December 2014 from the mammoth Dadaab refugee camp in northern Kenya, home to about 350,000 people.",
-				"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-				"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-			},
-			{
-				"title": "Helping Syrian refugees formalize their work status through cooperatives",
-				"blurb": "The ILO is working with agricultural cooperatives to help Syrian refugees obtain work permits during a three-month grace period announced by the government of Jordan, in a further step to improve access of Syrian refugees to the formal labour market.",
-				"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-				"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-			},
-			{
-				"title": "Working out of poverty in Timor-Leste",
-				"blurb": "Timor-Leste’s long journey to independence eroded large segments of the economy and infrastructure. Despite recent and rapid oil-fuelled growth, poverty has remained acute with half the population living on less than a dollar a day.",
-				"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-				"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
-			}
-		]
-	};
+		{
+			"sdgNumber": 2,
+			"sdgName": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+			"sdgIcon": "./src/images/E_SDG_Icons-02.webp",
+			"sdgTargets": [
+				{
+					"number": "2.3",
+					"description": "Double the agricultural productivity and incomes of small-scale food producers"
+				},
+				{
+					"number": "2.4",
+					"description": "Implement resilient agricultural practices that increase productivity and production"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 3,
+			"sdgName": "Ensure healthy lives and promote well-being for all at all ages",
+			"sdgIcon": "./src/images/E_SDG_Icons-03.webp",
+			"sdgTargets": [
+				{
+					"number": "3.3",
+					"description": "By 2030, end the epidemic of AIDS"
+				},
+				{
+					"number": "3.8",
+					"description": "Achieve universal health coverage"
+				},
+				{
+					"number": "3.9",
+					"description": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 4,
+			"sdgName": "Ensure inclusive and quality education for all and promote lifelong learning",
+			"sdgIcon": "./src/images/E_SDG_Icons-04.webp",
+			"sdgTargets": [
+				{
+					"number": "4.4",
+					"description": "By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship"
+				},
+				{
+					"number": "4.5",
+					"description": "Eliminate gender disparities in education and ensure equal access to all levels of education"
+				},
+				{
+					"number": "4.b",
+					"description": "By 2020, substantially expand globally the number of scholarships available to developing countries for enrolment in higher education, including vocational training"
+				},
+				{
+					"number": "4.c",
+					"description": "By 2030, substantially increase the supply of qualified teachers"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 5,
+			"sdgName": "Achieve gender equality and empower all women and girls",
+			"sdgIcon": "./src/images/E_SDG_Icons-05.webp",
+			"sdgTargets": [
+				{
+					"number": "5.1",
+					"description": "End all forms of discrimination against all women and girls"
+				},
+				{
+					"number": "5.2",
+					"description": "Eliminate all forms of violence against all women and girls in the public and private spheres, including trafficking"
+				},
+				{
+					"number": "5.4",
+					"description": "Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies and the promotion of shared responsibility within the household and the family as nationally appropriate"
+				},
+				{
+					"number": "5.5",
+					"description": "Ensure women’s full and effective participation and equal opportunities for leadership at all levels of decision-making in political, economic and public life"
+				},
+				{
+					"number": "5.a",
+					"description": "Undertake reforms to give women equal rights to economic resources"
+				},
+				{
+					"number": "5.c",
+					"description": "Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 6,
+			"sdgName": "Ensure access to water and sanitation for all",
+			"sdgIcon": "./src/images/E_SDG_Icons-06.webp",
+			"sdgTargets": [
+				{
+					"number": "6.3",
+					"description": "By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 7,
+			"sdgName": "Ensure access to affordable, reliable, sustainable and modern energy for all ",
+			"sdgIcon": "./src/images/E_SDG_Icons-07.webp",
+			"sdgTargets": [
+				{}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 8,
+			"sdgName": "Promote inclusive and sustainable economic growth, employment and decent work for all ",
+			"sdgIcon": "./src/images/E_SDG_Icons-08.webp",
+			"sdgTargets": [
+				{
+					"number": "8.1",
+					"description": "Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries"
+				},
+				{
+					"number": "8.2",
+					"description": "Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors"
+				},
+				{
+					"number": "8.3",
+					"description": "Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services"
+				},
+				{
+					"number": "8.4",
+					"description": "Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10-year framework of programmes on sustainable consumption and production, with developed countries taking the lead"
+				},
+				{
+					"number": "8.5",
+					"description": "By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value"
+				},
+				{
+					"number": "8.6",
+					"description": "By 2020, substantially reduce the proportion of youth not in employment, education or training"
+				},
+				{
+					"number": "8.7",
+					"description": "Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms"
+				},
+				{
+					"number": "8.8",
+					"description": "Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms"
+				},
+				{
+					"number": "8.9",
+					"description": "By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products"
+				},
+				{
+					"number": "8.10",
+					"description": "Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all"
+				},
+				{
+					"number": "8.a",
+					"description": "Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-Related Technical Assistance to Least Developed Countries"
+				},
+				{
+					"number": "8.b",
+					"description": "By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 9,
+			"sdgName": "Build resilient infrastructure, promote sustainable industrialization and foster innovation",
+			"sdgIcon": "./src/images/E_SDG_Icons-09.webp",
+			"sdgTargets": [
+				{
+					"number": "9.1",
+					"description": "Develop quality, reliable, sustainable and resilient infrastructure to support economic development and human well-being"
+				},
+				{
+					"number": "9.2",
+					"description": "Promote inclusive and sustainable industrialization and significantly raise industry's share of employment"
+				},
+				{
+					"number": "9.3",
+					"description": "Increase the access of small-scale industrial and other enterprises, to financial services, value chains"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 10,
+			"sdgName": "Reduce inequality within and among countries",
+			"sdgIcon": "./src/images/E_SDG_Icons-10.webp",
+			"sdgTargets": [
+				{
+					"number": "10.1",
+					"description": "Progressively achieve and sustain income growth of the bottom 40 per cent of the population"
+				},
+				{
+					"number": "10.2",
+					"description": "Empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status"
+				},
+				{
+					"number": "10.3",
+					"description": "Ensure equal opportunity and reduce inequalities of outcome, including by eliminating discriminatory laws, policies and practices and promoting appropriate legislation, policies and action"
+				},
+				{
+					"number": "10.4",
+					"description": "Adopt policies, especially fiscal, wage and social protection policies, and progressively achieve gender equality"
+				},
+				{
+					"number": "10.5",
+					"description": "Improve the regulation and monitoring of global financial markets and institutions and strengthen the implementation of such regulations"
+				},
+				{
+					"number": "10.6",
+					"description": "Ensure enhanced representation and voice for developing countries in decision-making in global international economic and financial institutions in order to deliver more effective, credible, accountable and legitimate institutions"
+				},
+				{
+					"number": "10.7",
+					"description": "Facilitate orderly, safe, regular and responsible migration"
+				},
+				{
+					"number": "10.c",
+					"description": "By 2030, reduce to less than 3 per cent the transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5 per cent"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 11,
+			"sdgName": "Make cities inclusive, safe, resilient and sustainable",
+			"sdgIcon": "./src/images/E_SDG_Icons-11.webp",
+			"sdgTargets": [
+				{
+					"number": "11.1",
+					"description": "By 2030, ensure access for all to adequate, safe and affordable housing and basic services"
+				},
+				{
+					"number": "11.2",
+					"description": "Provide access to safe, affordable, accessible and sustainable transport systems for all"
+				},
+				{
+					"number": "11.c",
+					"description": "Support least developed countries in building sustainable and resilient buildings utilizing local materials"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 12,
+			"sdgName": "Ensure sustainable consumption and production patterns",
+			"sdgIcon": "./src/images/E_SDG_Icons-12.webp",
+			"sdgTargets": [
+				{
+					"number": "12.1",
+					"description": "Implement the 10-year framework of programmes on sustainable consumption and production"
+				},
+				{
+					"number": "12.4",
+					"description": "By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment"
+				},
+				{
+					"number": "12.6",
+					"description": "Encourage companies to adopt sustainable practices and to integrate sustainability information into their reporting cycle"
+				},
+				{
+					"number": "12.a",
+					"description": "Support developing countries to strengthen their scientific and technological capacity to move towards more sustainable patterns of consumption and production"
+				},
+				{
+					"number": "12.b",
+					"description": "Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 13,
+			"sdgName": "Take urgent action to combat climate change and its impacts",
+			"sdgIcon": "./src/images/E_SDG_Icons-13.webp",
+			"sdgTargets": [
+				{
+					"number": "13.1",
+					"description": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 14,
+			"sdgName": "Conserve and sustainably use the oceans, seas and marine resources",
+			"sdgIcon": "./src/images/E_SDG_Icons-14.webp",
+			"sdgTargets": [
+				{
+					"number": "14.4",
+					"description": "Effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing"
+				},
+				{
+					"number": "14.6",
+					"description": "By 2020, prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing, eliminate subsidies that contribute to illegal, unreported and unregulated fishing"
+				},
+				{
+					"number": "14.7",
+					"description": "By 2030, increase the economic benefits to Small Island developing States and least developed countries from the sustainable use of marine resources, including through sustainable management of fisheries, aquaculture and tourism"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 15,
+			"sdgName": "Sustainably manage forests, combat desertification, halt and reverse land degradation, halt biodiversity loss",
+			"sdgIcon": "./src/images/E_SDG_Icons-15.webp",
+			"sdgTargets": [
+				{
+					"number": "15.b",
+					"description": "Mobilize significant resources from all sources and at all levels to finance sustainable forest management"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 16,
+			"sdgName": "Promote just, peaceful and inclusive societies",
+			"sdgIcon": "./src/images/E_SDG_Icons-16.webp",
+			"sdgTargets": [
+				{
+					"number": "16.2",
+					"description": "End abuse, exploitation, trafficking and all forms of violence against and torture of children"
+				},
+				{
+					"number": "16.3",
+					"description": "Promote the rule of law at the national and international levels and ensure equal access to justice for all"
+				},
+				{
+					"number": "16.6",
+					"description": "Develop effective, accountable and transparent institutions at all levels"
+				},
+				{
+					"number": "16.7",
+					"description": "Ensure responsive, inclusive, participatory and representative decision-making at all levels"
+				},
+				{
+					"number": "16.8",
+					"description": "Broaden and strengthen the participation of developing countries in the institutions of global governance"
+				},
+				{
+					"number": "16.10",
+					"description": "Ensure public access to information and protect fundamental freedoms, in accordance with international agreements"
+				},
+				{
+					"number": "16.a",
+					"description": "Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, to prevent violence and combat terrorism and crime"
+				},
+				{
+					"number": "16.b",
+					"description": "Promote and enforce non-discriminatory laws and policies for sustainable development"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		},
+		{
+			"sdgNumber": 17,
+			"sdgName": "Revitalize the global partnership for sustainable development",
+			"sdgIcon": "./src/images/E_SDG_Icons-17.webp",
+			"sdgTargets": [
+				{
+					"number": "17.9",
+					"description": "Enhance international support for implementing effective and targeted capacity-building in developing countries"
+				},
+				{
+					"number": "17.13",
+					"description": "Enhance global macroeconomic stability, including through policy coordination and policy coherence"
+				},
+				{
+					"number": "17.14",
+					"description": "Enhance policy coherence for sustainable development"
+				},
+				{
+					"number": "17.17",
+					"description": "Encourage and promote effective public, public-private and civil society partnerships"
+				}
+			],
+			"stories": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+				},
+				{
+					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
+					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+				},
+				{
+					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
+					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+				}
+			]
+		}
+	];
 
 /***/ }
 /******/ ]);

@@ -1,20 +1,32 @@
-.main-container {
+/* SDGexplorer */
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.wrapper, .sdgExplorer {
+  display: block;
+  height: 100%;
+  max-width: 800px;
   text-align: center; }
 
-.vis-container {
-  display: inline-block;
+/* Row */
+.row {
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
   height: auto;
-  width: auto;
-  max-width: 876px;
-  text-align: center; }
+  justify-content: space-between;
+  text-align: center;
+  max-width: 750px; }
 
-.icons-row {
-  display: inline-block;
-  width: auto;
-  max-height: 100px; }
-
+/* Icon */
 .icon {
-  max-width: 100px;
-  display: inline-block; }
+  box-sizing: border-box;
+  flex-basis: auto;
+  width: 16.666%;
+  padding: 7px; }
 
 /*# sourceMappingURL=bundle.css.map*/
