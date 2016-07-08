@@ -55,8 +55,6 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 158);
 	
-	__webpack_require__(/*! ./Components/SDGexplorer/sdgexplorer.scss */ 159);
-	
 	var _SDGexplorer = __webpack_require__(/*! ./Components/SDGexplorer/SDGexplorer.jsx */ 163);
 	
 	var _SDGexplorer2 = _interopRequireDefault(_SDGexplorer);
@@ -20207,6 +20205,8 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
+	__webpack_require__(/*! ./sdgexplorer.scss */ 159);
+	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
@@ -20214,7 +20214,7 @@
 	var SDGexplorer = _react2.default.createClass({
 		displayName: "SDGexplorer",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(Row, { startFrom: 1, numberIcons: 12, key: 1 }), _react2.default.createElement(Row, { startFrom: 12, numberIcons: 6, key: 2 })));
+			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(Row, { startFrom: 1, numberIcons: 12, key: 1 }), _react2.default.createElement(ViewerWindow, null), _react2.default.createElement(Row, { startFrom: 12, numberIcons: 6, key: 2 })));
 		}
 	});
 	
@@ -20233,6 +20233,20 @@
 		displayName: "Icon",
 		render: function render() {
 			return _react2.default.createElement("img", { className: "icon", src: this.props.src });
+		}
+	});
+	
+	var ViewerWindow = _react2.default.createClass({
+		displayName: "ViewerWindow",
+		render: function render() {
+			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(TitleBar, { sdgNumber: _data2.default[7].sdgNumber, sdgName: _data2.default[7].sdgName }));
+		}
+	});
+	
+	var TitleBar = _react2.default.createClass({
+		displayName: "TitleBar",
+		render: function render() {
+			return _react2.default.createElement("div", { className: "titleBar" }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName));
 		}
 	});
 	
