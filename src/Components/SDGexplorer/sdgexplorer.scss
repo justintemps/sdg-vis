@@ -2,6 +2,15 @@
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
+$font-stack: "Source Sans Pro", sans-serif;
+$dark-grey: #2a2a2a;
+$light-grey: #7e7e7e;
+
+@mixin boldText() {
+	color: $dark-grey;
+	font-weight: 600;
+}
+
 @mixin flex() {
 	align-items: center;
 	flex-direction: row;
@@ -55,6 +64,7 @@ body,
 	text-align: center;
 	width: 100%;
 }
+
 /* TitleBar */
 
 .titleBar {
@@ -69,7 +79,7 @@ body,
 
 .sdgNumber {
 	align-self: center;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: $font-stack;
 	font-size: 8em;
 	bottom: 5px;
 	color: #fff;
@@ -102,5 +112,30 @@ body,
 	display: inline;
 	font-size: 1.3em;
 	color: #fff;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: $font-stack;
+}
+
+/* Focus Targets */
+.focusTargets {
+	font-family: $font-stack;
+	padding: 0 20px 0 20px;
+	text-align: left;
+}
+
+.focusTargetHeading {
+	@include boldText();
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.targetSelector {
+	list-style-image: none;
+}
+
+.bullet {
+	display: inline;
+}
+
+.bullet::before {
+	content: '\2022';
 }

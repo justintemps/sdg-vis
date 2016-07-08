@@ -85,4 +85,25 @@ body,
   color: #fff;
   font-family: "Source Sans Pro", sans-serif; }
 
+/* Focus Targets */
+.focusTargets {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0 20px 0 20px;
+  text-align: left; }
+
+.focusTargetHeading {
+  color: #2a2a2a;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.targetSelector {
+  list-style-image: none; }
+
+.bullet {
+  display: inline; }
+
+.bullet::before {
+  content: '\2022'; }
+
 /*# sourceMappingURL=bundle.css.map*/

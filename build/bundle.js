@@ -20227,7 +20227,7 @@
 	var ViewerWindow = _react2.default.createClass({
 		displayName: "ViewerWindow",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(TitleBar, { sdgNumber: _data2.default[7].sdgNumber, sdgName: _data2.default[7].sdgName }));
+			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(TitleBar, { sdgNumber: _data2.default[7].sdgNumber, sdgName: _data2.default[7].sdgName }), _react2.default.createElement(ViewerWindowContent, null));
 		}
 	});
 	
@@ -20235,6 +20235,30 @@
 		displayName: "TitleBar",
 		render: function render() {
 			return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar" }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)));
+		}
+	});
+	
+	var ViewerWindowContent = _react2.default.createClass({
+		displayName: "ViewerWindowContent",
+		render: function render() {
+	
+			var focusTargets = _data2.default[7].focusTargets.map(function (focusTargets) {
+				return focusTargets.description;
+			});
+	
+			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(FocusTargets, { focusTargets: focusTargets }));
+		}
+	});
+	
+	var FocusTargets = _react2.default.createClass({
+		displayName: "FocusTargets",
+		render: function render() {
+	
+			var targets = this.props.focusTargets.map(function (target) {
+				return _react2.default.createElement("li", { className: "bullet" });
+			});
+	
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "focusTargetHeading" }, "Focus Targets"), _react2.default.createElement("div", { className: "focusTarget" }, this.props.focusTargets[0]), _react2.default.createElement("ul", { className: "targetSelector" }, "View more: ", targets));
 		}
 	});
 	
@@ -20252,7 +20276,7 @@
 			"sdgNumber": 1,
 			"sdgName": "End poverty in all its forms everywhere",
 			"sdgIcon": "./src/images/E_SDG_Icons-01.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "1.1",
 					"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
@@ -20303,7 +20327,7 @@
 			"sdgNumber": 2,
 			"sdgName": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
 			"sdgIcon": "./src/images/E_SDG_Icons-02.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "2.3",
 					"description": "Double the agricultural productivity and incomes of small-scale food producers"
@@ -20338,7 +20362,7 @@
 			"sdgNumber": 3,
 			"sdgName": "Ensure healthy lives and promote well-being for all at all ages",
 			"sdgIcon": "./src/images/E_SDG_Icons-03.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "3.3",
 					"description": "By 2030, end the epidemic of AIDS"
@@ -20377,7 +20401,7 @@
 			"sdgNumber": 4,
 			"sdgName": "Ensure inclusive and quality education for all and promote lifelong learning",
 			"sdgIcon": "./src/images/E_SDG_Icons-04.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "4.4",
 					"description": "By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship"
@@ -20420,7 +20444,7 @@
 			"sdgNumber": 5,
 			"sdgName": "Achieve gender equality and empower all women and girls",
 			"sdgIcon": "./src/images/E_SDG_Icons-05.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "5.1",
 					"description": "End all forms of discrimination against all women and girls"
@@ -20471,7 +20495,7 @@
 			"sdgNumber": 6,
 			"sdgName": "Ensure access to water and sanitation for all",
 			"sdgIcon": "./src/images/E_SDG_Icons-06.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "6.3",
 					"description": "By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally"
@@ -20502,7 +20526,7 @@
 			"sdgNumber": 7,
 			"sdgName": "Ensure access to affordable, reliable, sustainable and modern energy for all ",
 			"sdgIcon": "./src/images/E_SDG_Icons-07.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{}
 			],
 			"stories": [
@@ -20530,7 +20554,7 @@
 			"sdgNumber": 8,
 			"sdgName": "Promote inclusive and sustainable economic growth, employment and decent work for all ",
 			"sdgIcon": "./src/images/E_SDG_Icons-08.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "8.1",
 					"description": "Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries"
@@ -20605,7 +20629,7 @@
 			"sdgNumber": 9,
 			"sdgName": "Build resilient infrastructure, promote sustainable industrialization and foster innovation",
 			"sdgIcon": "./src/images/E_SDG_Icons-09.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "9.1",
 					"description": "Develop quality, reliable, sustainable and resilient infrastructure to support economic development and human well-being"
@@ -20644,7 +20668,7 @@
 			"sdgNumber": 10,
 			"sdgName": "Reduce inequality within and among countries",
 			"sdgIcon": "./src/images/E_SDG_Icons-10.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "10.1",
 					"description": "Progressively achieve and sustain income growth of the bottom 40 per cent of the population"
@@ -20703,7 +20727,7 @@
 			"sdgNumber": 11,
 			"sdgName": "Make cities inclusive, safe, resilient and sustainable",
 			"sdgIcon": "./src/images/E_SDG_Icons-11.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "11.1",
 					"description": "By 2030, ensure access for all to adequate, safe and affordable housing and basic services"
@@ -20742,7 +20766,7 @@
 			"sdgNumber": 12,
 			"sdgName": "Ensure sustainable consumption and production patterns",
 			"sdgIcon": "./src/images/E_SDG_Icons-12.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "12.1",
 					"description": "Implement the 10-year framework of programmes on sustainable consumption and production"
@@ -20789,7 +20813,7 @@
 			"sdgNumber": 13,
 			"sdgName": "Take urgent action to combat climate change and its impacts",
 			"sdgIcon": "./src/images/E_SDG_Icons-13.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "13.1",
 					"description": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries"
@@ -20820,7 +20844,7 @@
 			"sdgNumber": 14,
 			"sdgName": "Conserve and sustainably use the oceans, seas and marine resources",
 			"sdgIcon": "./src/images/E_SDG_Icons-14.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "14.4",
 					"description": "Effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing"
@@ -20859,7 +20883,7 @@
 			"sdgNumber": 15,
 			"sdgName": "Sustainably manage forests, combat desertification, halt and reverse land degradation, halt biodiversity loss",
 			"sdgIcon": "./src/images/E_SDG_Icons-15.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "15.b",
 					"description": "Mobilize significant resources from all sources and at all levels to finance sustainable forest management"
@@ -20890,7 +20914,7 @@
 			"sdgNumber": 16,
 			"sdgName": "Promote just, peaceful and inclusive societies",
 			"sdgIcon": "./src/images/E_SDG_Icons-16.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "16.2",
 					"description": "End abuse, exploitation, trafficking and all forms of violence against and torture of children"
@@ -20949,7 +20973,7 @@
 			"sdgNumber": 17,
 			"sdgName": "Revitalize the global partnership for sustainable development",
 			"sdgIcon": "./src/images/E_SDG_Icons-17.webp",
-			"sdgTargets": [
+			"focusTargets": [
 				{
 					"number": "17.9",
 					"description": "Enhance international support for implementing effective and targeted capacity-building in developing countries"

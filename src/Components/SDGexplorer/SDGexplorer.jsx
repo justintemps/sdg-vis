@@ -30,7 +30,6 @@ const Row = React.createClass({
 	}
 });
 
-
 const Icon = React.createClass({
 	render() {
 		return (
@@ -44,6 +43,7 @@ const ViewerWindow = React.createClass({
 		return(
 			<div className="viewerWindow">
 				<TitleBar sdgNumber={data[7].sdgNumber} sdgName={data[7].sdgName} />
+				<ViewerWindowContent />
 			</div>
 		);
 	}
@@ -61,6 +61,46 @@ const TitleBar = React.createClass({
 						{this.props.sdgName}
 					</div>
 				</div>
+			</div>
+		);
+	}
+});
+
+const ViewerWindowContent = React.createClass({
+	render() {
+
+		const focusTargets = data[7].focusTargets.map( (focusTargets) => {
+			return (
+				focusTargets.description
+			);
+		});
+
+		return (
+			<div className="viewerWindowContent">
+				<FocusTargets focusTargets={focusTargets} />
+			</div>
+		);
+	}
+});
+
+const FocusTargets = React.createClass({
+	render() {
+
+		const targets = this.props.focusTargets.map( (target) => {
+			return (
+				<li className="bullet"></li>
+			);
+		});
+
+		return (
+			<div className="focusTargets">
+				<div className="focusTargetHeading">Focus Targets</div>
+				<div className="focusTarget">
+					{this.props.focusTargets[0]}
+				</div>
+				<ul className="targetSelector">
+					View more: {targets}
+				</ul>
 			</div>
 		);
 	}
