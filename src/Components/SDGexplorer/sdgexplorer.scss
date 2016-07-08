@@ -10,14 +10,14 @@
 }
 
 html,
-body, #app {
+body,
+#app,
+.wrapper {
 	width: 100%;
 	height: 100%;
 }
 
 .wrapper {
-	display: block;
-	height: 100%;
 	max-width: 750px;
 	text-align: center;
 }
@@ -56,28 +56,46 @@ body, #app {
 	width: 100%;
 }
 /* TitleBar */
+
 .titleBar {
 	@include flex();
 	flex-wrap: nowrap;
 	padding: 0;
-	width: auto;
 	background-color: #a21942;
-	height: 20%;
 	position: relative;
 	text-align: left;
 	width: calc(100% - 10px;)
 }
 
 .sdgNumber {
-	align-self: flex-start;
+	align-self: center;
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 8em;
+	bottom: 5px;
 	color: #fff;
 	left: -12px;
-	line-height: 65%;
+	line-height: 75%;
 	margin: 0;
 	padding: 0;
 	position: relative;
+}
+
+.viewerWindow > div:first-child {
+	margin: 0;
+	padding: 0;
+}
+
+/* Triangle */
+.viewerWindow > div:first-child::after {
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #a21942;
+	content: "";
+	display: block;
+	margin: 2px 0;
+	position: relative;
+	height: 0;
+	width: 0;
 }
 
 .sdgName {

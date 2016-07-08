@@ -55,7 +55,7 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 158);
 	
-	var _SDGexplorer = __webpack_require__(/*! ./Components/SDGexplorer/SDGexplorer.jsx */ 163);
+	var _SDGexplorer = __webpack_require__(/*! ./Components/SDGexplorer/SDGexplorer.jsx */ 159);
 	
 	var _SDGexplorer2 = _interopRequireDefault(_SDGexplorer);
 	
@@ -20174,18 +20174,6 @@
 
 /***/ },
 /* 159 */
-/*!*****************************************************!*\
-  !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
-  \*****************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */
 /*!****************************************************!*\
   !*** ./src/Components/SDGexplorer/SDGexplorer.jsx ***!
   \****************************************************/
@@ -20201,11 +20189,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 164);
+	var _data = __webpack_require__(/*! json!../../data.json */ 160);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	__webpack_require__(/*! ./sdgexplorer.scss */ 159);
+	__webpack_require__(/*! ./sdgexplorer.scss */ 161);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -20246,14 +20234,14 @@
 	var TitleBar = _react2.default.createClass({
 		displayName: "TitleBar",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "titleBar" }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName));
+			return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar" }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)));
 		}
 	});
 	
 	exports.default = SDGexplorer;
 
 /***/ },
-/* 164 */
+/* 160 */
 /*!***************************************!*\
   !*** ./~/json-loader!./src/data.json ***!
   \***************************************/
@@ -21001,6 +20989,15 @@
 			]
 		}
 	];
+
+/***/ },
+/* 161 */
+/*!*****************************************************!*\
+  !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
+  \*****************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);
