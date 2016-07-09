@@ -1,0 +1,50 @@
+/* TitleBar */
+@import "src/styles/_utils";
+
+.titleBar {
+	@include flex();
+	flex-wrap: nowrap;
+	padding: 0;
+	background-color: $goal8color;
+	position: relative;
+	text-align: left;
+	width: calc(100% - 10px;)
+}
+
+.sdgNumber {
+	align-self: center;
+	font-family: $font-stack;
+	font-size: 8em;
+	bottom: 5px;
+	color: #fff;
+	left: -12px;
+	line-height: 75%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.viewerWindow > div:first-child {
+	margin: 0;
+	padding: 0;
+}
+
+/* Triangle */
+.viewerWindow > div:first-child::after {
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid $goal8color;
+	content: "";
+	display: block;
+	margin: 2px 0;
+	position: relative;
+	height: 0;
+	width: 0;
+}
+
+.sdgName {
+	display: inline;
+	font-size: 1.3em;
+	color: #fff;
+	font-family: $font-stack;
+}

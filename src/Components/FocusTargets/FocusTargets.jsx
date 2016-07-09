@@ -1,4 +1,5 @@
 import React from "react";
+import "./focusTargets.scss";
 
 const FocusTargets = React.createClass({
 	render() {

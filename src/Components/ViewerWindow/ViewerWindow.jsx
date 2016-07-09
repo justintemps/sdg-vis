@@ -2,6 +2,7 @@ import React from "react";
 import data from "!json!../../data.json";
 import TitleBar from "../TitleBar/TitleBar.jsx";
 import ViewerWindowContent from "../ViewerWindowContent/ViewerWindowContent.jsx";
+import "./viewerWindow.scss";
 
 const ViewerWindow = React.createClass({
 	render() {

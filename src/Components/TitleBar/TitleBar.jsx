@@ -1,5 +1,6 @@
 import React from "react";
 import data from "!json!../../data.json";
+import "./titleBar.scss";
 
 const TitleBar = React.createClass({
 	render() {
