@@ -20193,6 +20193,14 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
+	var _Row = __webpack_require__(/*! ../Row/Row.jsx */ 165);
+	
+	var _Row2 = _interopRequireDefault(_Row);
+	
+	var _ViewerWindow = __webpack_require__(/*! ../ViewerWindow/ViewerWindow.jsx */ 167);
+	
+	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
+	
 	__webpack_require__(/*! ./sdgexplorer.scss */ 161);
 	
 	function _interopRequireDefault(obj) {
@@ -20202,63 +20210,7 @@
 	var SDGexplorer = _react2.default.createClass({
 		displayName: "SDGexplorer",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(Row, { startFrom: 1, numberIcons: 12, key: 1 }), _react2.default.createElement(ViewerWindow, null), _react2.default.createElement(Row, { startFrom: 12, numberIcons: 6, key: 2 })));
-		}
-	});
-	
-	var Row = _react2.default.createClass({
-		displayName: "Row",
-		render: function render() {
-			var icons = [];
-			for (var i = this.props.startFrom - 1; i < this.props.numberIcons + this.props.startFrom - 1; i++) {
-				icons.push(_react2.default.createElement(Icon, { key: _data2.default[i].sdgNumber, src: _data2.default[i].sdgIcon }));
-			}
-			return _react2.default.createElement("div", { className: "row" }, icons);
-		}
-	});
-	
-	var Icon = _react2.default.createClass({
-		displayName: "Icon",
-		render: function render() {
-			return _react2.default.createElement("img", { className: "icon", src: this.props.src });
-		}
-	});
-	
-	var ViewerWindow = _react2.default.createClass({
-		displayName: "ViewerWindow",
-		render: function render() {
-			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(TitleBar, { sdgNumber: _data2.default[7].sdgNumber, sdgName: _data2.default[7].sdgName }), _react2.default.createElement(ViewerWindowContent, null));
-		}
-	});
-	
-	var TitleBar = _react2.default.createClass({
-		displayName: "TitleBar",
-		render: function render() {
-			return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar" }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)));
-		}
-	});
-	
-	var ViewerWindowContent = _react2.default.createClass({
-		displayName: "ViewerWindowContent",
-		render: function render() {
-	
-			var focusTargets = _data2.default[7].focusTargets.map(function (focusTargets) {
-				return focusTargets.description;
-			});
-	
-			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(FocusTargets, { focusTargets: focusTargets }));
-		}
-	});
-	
-	var FocusTargets = _react2.default.createClass({
-		displayName: "FocusTargets",
-		render: function render() {
-	
-			var bullets = this.props.focusTargets.map(function (target) {
-				return _react2.default.createElement("li", { className: "bullet" });
-			});
-	
-			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("div", { className: "focusTarget" }, this.props.focusTargets[0]), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets)));
+			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, { startFrom: 1, numberIcons: 12, key: 1 }), _react2.default.createElement(_ViewerWindow2.default, null), _react2.default.createElement(_Row2.default, { startFrom: 12, numberIcons: 6, key: 2 })));
 		}
 	});
 	
@@ -21022,6 +20974,239 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */
+/*!************************************!*\
+  !*** ./src/Components/Row/Row.jsx ***!
+  \************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(/*! json!../../data.json */ 160);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	var _Icon = __webpack_require__(/*! ../Icon/Icon.jsx */ 166);
+	
+	var _Icon2 = _interopRequireDefault(_Icon);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Row = _react2.default.createClass({
+		displayName: "Row",
+		render: function render() {
+			var icons = [];
+			for (var i = this.props.startFrom - 1; i < this.props.numberIcons + this.props.startFrom - 1; i++) {
+				icons.push(_react2.default.createElement(_Icon2.default, { key: _data2.default[i].sdgNumber, src: _data2.default[i].sdgIcon }));
+			}
+			return _react2.default.createElement("div", { className: "row" }, icons);
+		}
+	});
+	
+	exports.default = Row;
+
+/***/ },
+/* 166 */
+/*!**************************************!*\
+  !*** ./src/Components/Icon/Icon.jsx ***!
+  \**************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(/*! json!../../data.json */ 160);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Icon = _react2.default.createClass({
+		displayName: "Icon",
+		render: function render() {
+			return _react2.default.createElement("img", { className: "icon", src: this.props.src });
+		}
+	});
+	
+	exports.default = Icon;
+
+/***/ },
+/* 167 */
+/*!******************************************************!*\
+  !*** ./src/Components/ViewerWindow/ViewerWindow.jsx ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(/*! json!../../data.json */ 160);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	var _TitleBar = __webpack_require__(/*! ../TitleBar/TitleBar.jsx */ 168);
+	
+	var _TitleBar2 = _interopRequireDefault(_TitleBar);
+	
+	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 169);
+	
+	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var ViewerWindow = _react2.default.createClass({
+		displayName: "ViewerWindow",
+		render: function render() {
+			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, { sdgNumber: _data2.default[7].sdgNumber, sdgName: _data2.default[7].sdgName }), _react2.default.createElement(_ViewerWindowContent2.default, null));
+		}
+	});
+	
+	exports.default = ViewerWindow;
+
+/***/ },
+/* 168 */
+/*!**********************************************!*\
+  !*** ./src/Components/TitleBar/TitleBar.jsx ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(/*! json!../../data.json */ 160);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var TitleBar = _react2.default.createClass({
+		displayName: "TitleBar",
+		render: function render() {
+			return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar" }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)));
+		}
+	});
+	
+	exports.default = TitleBar;
+
+/***/ },
+/* 169 */
+/*!********************************************************************!*\
+  !*** ./src/Components/ViewerWindowContent/ViewerWindowContent.jsx ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(/*! json!../../data.json */ 160);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 170);
+	
+	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var ViewerWindowContent = _react2.default.createClass({
+		displayName: "ViewerWindowContent",
+		render: function render() {
+	
+			var focusTargets = _data2.default[7].focusTargets.map(function (focusTargets) {
+				return focusTargets.description;
+			});
+	
+			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, { focusTargets: focusTargets }));
+		}
+	});
+	
+	exports.default = ViewerWindowContent;
+
+/***/ },
+/* 170 */
+/*!******************************************************!*\
+  !*** ./src/Components/FocusTargets/FocusTargets.jsx ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var FocusTargets = _react2.default.createClass({
+		displayName: "FocusTargets",
+		render: function render() {
+	
+			var bullets = this.props.focusTargets.map(function (target) {
+				return _react2.default.createElement("li", { className: "bullet" });
+			});
+	
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("div", { className: "focusTarget" }, this.props.focusTargets[0]), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets)));
+		}
+	});
+	
+	exports.default = FocusTargets;
 
 /***/ }
 /******/ ]);
