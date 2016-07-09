@@ -20254,11 +20254,11 @@
 		displayName: "FocusTargets",
 		render: function render() {
 	
-			var targets = this.props.focusTargets.map(function (target) {
+			var bullets = this.props.focusTargets.map(function (target) {
 				return _react2.default.createElement("li", { className: "bullet" });
 			});
 	
-			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "focusTargetHeading" }, "Focus Targets"), _react2.default.createElement("div", { className: "focusTarget" }, this.props.focusTargets[0]), _react2.default.createElement("ul", { className: "targetSelector" }, "View more: ", targets));
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("div", { className: "focusTarget" }, this.props.focusTargets[0]), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets)));
 		}
 	});
 	

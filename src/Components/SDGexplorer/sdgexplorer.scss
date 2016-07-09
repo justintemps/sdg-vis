@@ -1,15 +1,16 @@
 /* SDGexplorer */
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 
 $font-stack: "Source Sans Pro", sans-serif;
+
+$bulletSelected: #3bc3e4;
+$bulletUnselected: #bdebf6;
 $dark-grey: #2a2a2a;
 $light-grey: #7e7e7e;
+$goal6color: #26bde2;
+$goal8color: #a21942;
 
-@mixin boldText() {
-	color: $dark-grey;
-	font-weight: 600;
-}
 
 @mixin flex() {
 	align-items: center;
@@ -71,7 +72,7 @@ body,
 	@include flex();
 	flex-wrap: nowrap;
 	padding: 0;
-	background-color: #a21942;
+	background-color: $goal8color;
 	position: relative;
 	text-align: left;
 	width: calc(100% - 10px;)
@@ -99,7 +100,7 @@ body,
 .viewerWindow > div:first-child::after {
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
-	border-top: 20px solid #a21942;
+	border-top: 20px solid $goal8color;
 	content: "";
 	display: block;
 	margin: 2px 0;
@@ -122,20 +123,45 @@ body,
 	text-align: left;
 }
 
-.focusTargetHeading {
-	@include boldText();
-	text-transform: uppercase;
+h3 {
+	color: $goal8color;
+	font-size: .9em;
 	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
 }
 
 .targetSelector {
-	list-style-image: none;
+	@include flex();
+	flex-wrap: nowrap;
+	margin: 5px 0;
+}
+
+.bullets {
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	color: $bulletSelected;
+	font-size: .9em;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
 .bullet {
+	color: $bulletUnselected;
 	display: inline;
+	font-size: 3em;
+	line-height: 50%;
+	margin: 0 10px 0 10px;
+	position: relative;
+	top: 2px;
 }
 
 .bullet::before {
-	content: '\2022';
+	content: "\2022";
 }

@@ -86,7 +86,7 @@ const ViewerWindowContent = React.createClass({
 const FocusTargets = React.createClass({
 	render() {
 
-		const targets = this.props.focusTargets.map( (target) => {
+		const bullets = this.props.focusTargets.map( (target) => {
 			return (
 				<li className="bullet"></li>
 			);
@@ -94,13 +94,16 @@ const FocusTargets = React.createClass({
 
 		return (
 			<div className="focusTargets">
-				<div className="focusTargetHeading">Focus Targets</div>
+				<h3>Focus Targets</h3>
 				<div className="focusTarget">
 					{this.props.focusTargets[0]}
 				</div>
-				<ul className="targetSelector">
-					View more: {targets}
-				</ul>
+				<div className="targetSelector">
+					<h4>View more:</h4>
+					<ul className="bullets">
+						{bullets}
+					</ul>
+				</div>
 			</div>
 		);
 	}
