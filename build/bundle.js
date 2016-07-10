@@ -20207,8 +20207,11 @@
 	
 	var SDGexplorer = _react2.default.createClass({
 		displayName: "SDGexplorer",
+		getInitialState: function getInitialState() {
+			return { selected: 7 };
+		},
 		render: function render() {
-			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, { startFrom: 1, numberIcons: 12, key: 1 }), _react2.default.createElement(_ViewerWindow2.default, null), _react2.default.createElement(_Row2.default, { startFrom: 12, numberIcons: 6, key: 2 })));
+			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, { startFrom: 1, numberIcons: 12, key: 1 }), _react2.default.createElement(_ViewerWindow2.default, { selected: this.state.selected }), _react2.default.createElement(_Row2.default, { startFrom: 12, numberIcons: 6, key: 2 })));
 		}
 	});
 	
@@ -20270,6 +20273,7 @@
 			"sdgNumber": 1,
 			"sdgName": "End poverty in all its forms everywhere",
 			"sdgIcon": "./src/images/sdg1.svg",
+			"sdgColor": "#e5243b",
 			"focusTargets": [
 				{
 					"number": "1.1",
@@ -20321,6 +20325,7 @@
 			"sdgNumber": 2,
 			"sdgName": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
 			"sdgIcon": "./src/images/sdg2.svg",
+			"sdgColor": "#dda63a",
 			"focusTargets": [
 				{
 					"number": "2.3",
@@ -20356,6 +20361,7 @@
 			"sdgNumber": 3,
 			"sdgName": "Ensure healthy lives and promote well-being for all at all ages",
 			"sdgIcon": "./src/images/sdg3.svg",
+			"sdgColor": "#4c9f38",
 			"focusTargets": [
 				{
 					"number": "3.3",
@@ -20395,6 +20401,7 @@
 			"sdgNumber": 4,
 			"sdgName": "Ensure inclusive and quality education for all and promote lifelong learning",
 			"sdgIcon": "./src/images/sdg4.svg",
+			"sdgColor": "#c5192d",
 			"focusTargets": [
 				{
 					"number": "4.4",
@@ -20438,6 +20445,7 @@
 			"sdgNumber": 5,
 			"sdgName": "Achieve gender equality and empower all women and girls",
 			"sdgIcon": "./src/images/sdg5.svg",
+			"sdgColor": "#ff3a21",
 			"focusTargets": [
 				{
 					"number": "5.1",
@@ -20489,6 +20497,7 @@
 			"sdgNumber": 6,
 			"sdgName": "Ensure access to water and sanitation for all",
 			"sdgIcon": "./src/images/sdg6.svg",
+			"sdgColor": "#26bde2",
 			"focusTargets": [
 				{
 					"number": "6.3",
@@ -20520,6 +20529,7 @@
 			"sdgNumber": 7,
 			"sdgName": "Ensure access to affordable, reliable, sustainable and modern energy for all ",
 			"sdgIcon": "./src/images/sdg7.svg",
+			"sdgColor": "#fcc30b",
 			"focusTargets": [
 				{}
 			],
@@ -20548,6 +20558,7 @@
 			"sdgNumber": 8,
 			"sdgName": "Promote inclusive and sustainable economic growth, employment and decent work for all ",
 			"sdgIcon": "./src/images/sdg8.svg",
+			"sdgColor": "#a21942",
 			"focusTargets": [
 				{
 					"number": "8.1",
@@ -20623,6 +20634,7 @@
 			"sdgNumber": 9,
 			"sdgName": "Build resilient infrastructure, promote sustainable industrialization and foster innovation",
 			"sdgIcon": "./src/images/sdg9.svg",
+			"sdgColor": "#fd6925",
 			"focusTargets": [
 				{
 					"number": "9.1",
@@ -20662,6 +20674,7 @@
 			"sdgNumber": 10,
 			"sdgName": "Reduce inequality within and among countries",
 			"sdgIcon": "./src/images/sdg10.svg",
+			"sdgColor": "#dd1367",
 			"focusTargets": [
 				{
 					"number": "10.1",
@@ -20721,6 +20734,7 @@
 			"sdgNumber": 11,
 			"sdgName": "Make cities inclusive, safe, resilient and sustainable",
 			"sdgIcon": "./src/images/sdg11.svg",
+			"sdgColor": "#fd9d24",
 			"focusTargets": [
 				{
 					"number": "11.1",
@@ -20760,6 +20774,7 @@
 			"sdgNumber": 12,
 			"sdgName": "Ensure sustainable consumption and production patterns",
 			"sdgIcon": "./src/images/sdg12.svg",
+			"sdgColor": "#bf8b2e",
 			"focusTargets": [
 				{
 					"number": "12.1",
@@ -20807,6 +20822,7 @@
 			"sdgNumber": 13,
 			"sdgName": "Take urgent action to combat climate change and its impacts",
 			"sdgIcon": "./src/images/sdg13.svg",
+			"sdgColor": "#3f7e44",
 			"focusTargets": [
 				{
 					"number": "13.1",
@@ -20838,6 +20854,7 @@
 			"sdgNumber": 14,
 			"sdgName": "Conserve and sustainably use the oceans, seas and marine resources",
 			"sdgIcon": "./src/images/sdg14.svg",
+			"sdgColor": "#0a97d9",
 			"focusTargets": [
 				{
 					"number": "14.4",
@@ -20877,6 +20894,7 @@
 			"sdgNumber": 15,
 			"sdgName": "Sustainably manage forests, combat desertification, halt and reverse land degradation, halt biodiversity loss",
 			"sdgIcon": "./src/images/sdg15.svg",
+			"sdgColor": "#56c02b",
 			"focusTargets": [
 				{
 					"number": "15.b",
@@ -20908,6 +20926,7 @@
 			"sdgNumber": 16,
 			"sdgName": "Promote just, peaceful and inclusive societies",
 			"sdgIcon": "./src/images/sdg16.svg",
+			"sdgColor": "#00689d",
 			"focusTargets": [
 				{
 					"number": "16.2",
@@ -20967,6 +20986,7 @@
 			"sdgNumber": 17,
 			"sdgName": "Revitalize the global partnership for sustainable development",
 			"sdgIcon": "./src/images/sdg17.svg",
+			"sdgColor": "#19486a",
 			"focusTargets": [
 				{
 					"number": "17.9",
@@ -21104,7 +21124,7 @@
 	var ViewerWindow = _react2.default.createClass({
 		displayName: "ViewerWindow",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, { sdgNumber: _data2.default[7].sdgNumber, sdgName: _data2.default[7].sdgName }), _react2.default.createElement(_ViewerWindowContent2.default, null));
+			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, { sdgNumber: _data2.default[this.props.selected].sdgNumber, sdgName: _data2.default[this.props.selected].sdgName, sdgColor: _data2.default[this.props.selected].sdgColor }), _react2.default.createElement(_ViewerWindowContent2.default, null));
 		}
 	});
 	
@@ -21140,7 +21160,12 @@
 	var TitleBar = _react2.default.createClass({
 		displayName: "TitleBar",
 		render: function render() {
-			return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar" }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)));
+	
+			var color = {
+				background: this.props.sdgColor
+			};
+	
+			return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)));
 		}
 	});
 	

@@ -15,7 +15,10 @@
   position: relative;
   text-align: center; }
 /* TitleBar */
-/* Utilities */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
 .titleBar {
   align-items: center;
   flex-direction: row;
@@ -23,7 +26,6 @@
   display: flex;
   flex-wrap: nowrap;
   padding: 0;
-  background-color: #a21942;
   position: relative;
   text-align: left;
   width: calc(100% - 10px); }
@@ -62,8 +64,14 @@
   color: #fff;
   font-family: "Source Sans Pro", sans-serif; }
 /* Focus Targets */
-/* Utilities */
-/* Utilities */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
 html,
 body,
 #app,
@@ -144,8 +152,14 @@ a {
   flex-wrap: nowrap;
   margin: 5px 0; }
 /* Impact Stories */
-/* Utilities */
-/* Utilities */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
 html,
 body,
 #app,
@@ -214,8 +228,14 @@ a {
   content: "\2022"; }
 
 /* Focus Targets */
-/* Utilities */
-/* Utilities */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
 html,
 body,
 #app,
@@ -324,7 +344,10 @@ a {
   position: relative;
   text-align: center;
   width: 100%; }
-/* Utilities */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
 html,
 body,
 #app,
@@ -392,7 +415,10 @@ a {
 .bullet::before {
   content: "\2022"; }
 /* SDGexplorer */
-/* Utilities */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
 html,
 body,
 #app,
@@ -461,6 +487,9 @@ a {
 .bullet::before {
   content: "\2022"; }
 
-/* Utilities */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
 
 /*# sourceMappingURL=bundle.css.map*/

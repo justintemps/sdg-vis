@@ -22,11 +22,9 @@ h2 {
 	padding: 0;
 }
 
-
 h2::after {
 	content: "\00a0\ >";
 }
-
 
 h3 {
 	color: $goal8color;

@@ -1,6 +1,17 @@
-/* Utilities */
+/* -- Typography -- */
 
 $font-stack: "Source Sans Pro", sans-serif;
+
+/* -- Mixins -- */
+
+@mixin flex() {
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+/* -- Color Palette -- */
 
 $bulletSelected: #3bc3e4;
 
@@ -10,13 +21,21 @@ $dark-grey: #2a2a2a;
 
 $light-grey: #7e7e7e;
 
+/* Global Goals */
+$goal1color: #e5243b;
+$goal2color: #dda63a;
+$goal3color: #4c9f38;
+$goal4color: #c5192d;
+$goal5color: #ff3a21;
 $goal6color: #26bde2;
-
+$goal7color: #fcc30b;
 $goal8color: #a21942;
-
-@mixin flex() {
-	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	display: flex;
-}
+$goal9color: #fd6925;
+$goal10color: #dd1367;
+$goal11color: #fd9d24;
+$goal12color: #bf8b2e;
+$goal13color: #3f7e44;
+$goal14color: #0a97d9;
+$goal15color: #56c02b;
+$goal16color: #00689d;
+$goal17color: #19486a;
