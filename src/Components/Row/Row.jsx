@@ -7,7 +7,11 @@ const Row = React.createClass({
 	render() {
 		const icons = [];
 		for ( let i = (this.props.startFrom - 1); i < (this.props.numberIcons + this.props.startFrom - 1); i++ ) {
-			icons.push( <Icon key={data[i].sdgNumber} src={data[i].sdgIcon} /> );
+			icons.push( <Icon
+				key={data[i].sdgNumber}
+				src={data[i].sdgIcon}
+				handler={this.props.handler}
+			/> );
 		}
 		return (
 			<div className="row">

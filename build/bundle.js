@@ -20210,8 +20210,13 @@
 		getInitialState: function getInitialState() {
 			return { selected: 7 };
 		},
+		selectSDG: function selectSDG(sdg) {
+			this.setState({
+				selected: 2
+			});
+		},
 		render: function render() {
-			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, { startFrom: 1, numberIcons: 12, key: 1 }), _react2.default.createElement(_ViewerWindow2.default, { selected: this.state.selected }), _react2.default.createElement(_Row2.default, { startFrom: 12, numberIcons: 6, key: 2 })));
+			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, { startFrom: 1, numberIcons: 12, key: 1, handler: this.selectSDG }), _react2.default.createElement(_ViewerWindow2.default, { selected: this.state.selected }), _react2.default.createElement(_Row2.default, { startFrom: 12, numberIcons: 6, key: 2, handler: this.selectSDG })));
 		}
 	});
 	
@@ -20253,7 +20258,11 @@
 		render: function render() {
 			var icons = [];
 			for (var i = this.props.startFrom - 1; i < this.props.numberIcons + this.props.startFrom - 1; i++) {
-				icons.push(_react2.default.createElement(_Icon2.default, { key: _data2.default[i].sdgNumber, src: _data2.default[i].sdgIcon }));
+				icons.push(_react2.default.createElement(_Icon2.default, {
+					key: _data2.default[i].sdgNumber,
+					src: _data2.default[i].sdgIcon,
+					handler: this.props.handler
+				}));
 			}
 			return _react2.default.createElement("div", { className: "row" }, icons);
 		}
@@ -21058,7 +21067,7 @@
 	var Icon = _react2.default.createClass({
 		displayName: "Icon",
 		render: function render() {
-			return _react2.default.createElement("img", { className: "icon", src: this.props.src });
+			return _react2.default.createElement("img", { className: "icon", src: this.props.src, onClick: this.props.handler });
 		}
 	});
 	

@@ -12,13 +12,19 @@ const SDGexplorer = React.createClass({
 		);
 	},
 
+	selectSDG(sdg) {
+		this.setState({
+			selected: 2
+		});
+	},
+
 	render() {
 		return (
 			<div className="wrapper">
 				<div className="sdgExplorer">
-					<Row startFrom={1} numberIcons={12} key={1} />
+					<Row startFrom={1} numberIcons={12} key={1} handler={this.selectSDG} />
 					<ViewerWindow selected={this.state.selected} />
-					<Row startFrom={12} numberIcons={6} key={2} />
+					<Row startFrom={12} numberIcons={6} key={2} handler={this.selectSDG} />
 				</div>
 			</div>
 		);
