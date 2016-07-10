@@ -20269,7 +20269,7 @@
 		{
 			"sdgNumber": 1,
 			"sdgName": "End poverty in all its forms everywhere",
-			"sdgIcon": "./src/images/E_SDG_Icons-01.webp",
+			"sdgIcon": "./src/images/sdg1.svg",
 			"focusTargets": [
 				{
 					"number": "1.1",
@@ -20320,7 +20320,7 @@
 		{
 			"sdgNumber": 2,
 			"sdgName": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
-			"sdgIcon": "./src/images/E_SDG_Icons-02.webp",
+			"sdgIcon": "./src/images/sdg2.svg",
 			"focusTargets": [
 				{
 					"number": "2.3",
@@ -20355,7 +20355,7 @@
 		{
 			"sdgNumber": 3,
 			"sdgName": "Ensure healthy lives and promote well-being for all at all ages",
-			"sdgIcon": "./src/images/E_SDG_Icons-03.webp",
+			"sdgIcon": "./src/images/sdg3.svg",
 			"focusTargets": [
 				{
 					"number": "3.3",
@@ -20394,7 +20394,7 @@
 		{
 			"sdgNumber": 4,
 			"sdgName": "Ensure inclusive and quality education for all and promote lifelong learning",
-			"sdgIcon": "./src/images/E_SDG_Icons-04.webp",
+			"sdgIcon": "./src/images/sdg4.svg",
 			"focusTargets": [
 				{
 					"number": "4.4",
@@ -20437,7 +20437,7 @@
 		{
 			"sdgNumber": 5,
 			"sdgName": "Achieve gender equality and empower all women and girls",
-			"sdgIcon": "./src/images/E_SDG_Icons-05.webp",
+			"sdgIcon": "./src/images/sdg5.svg",
 			"focusTargets": [
 				{
 					"number": "5.1",
@@ -20488,7 +20488,7 @@
 		{
 			"sdgNumber": 6,
 			"sdgName": "Ensure access to water and sanitation for all",
-			"sdgIcon": "./src/images/E_SDG_Icons-06.webp",
+			"sdgIcon": "./src/images/sdg6.svg",
 			"focusTargets": [
 				{
 					"number": "6.3",
@@ -20519,7 +20519,7 @@
 		{
 			"sdgNumber": 7,
 			"sdgName": "Ensure access to affordable, reliable, sustainable and modern energy for all ",
-			"sdgIcon": "./src/images/E_SDG_Icons-07.webp",
+			"sdgIcon": "./src/images/sdg7.svg",
 			"focusTargets": [
 				{}
 			],
@@ -20547,7 +20547,7 @@
 		{
 			"sdgNumber": 8,
 			"sdgName": "Promote inclusive and sustainable economic growth, employment and decent work for all ",
-			"sdgIcon": "./src/images/E_SDG_Icons-08.webp",
+			"sdgIcon": "./src/images/sdg8.svg",
 			"focusTargets": [
 				{
 					"number": "8.1",
@@ -20622,7 +20622,7 @@
 		{
 			"sdgNumber": 9,
 			"sdgName": "Build resilient infrastructure, promote sustainable industrialization and foster innovation",
-			"sdgIcon": "./src/images/E_SDG_Icons-09.webp",
+			"sdgIcon": "./src/images/sdg9.svg",
 			"focusTargets": [
 				{
 					"number": "9.1",
@@ -20661,7 +20661,7 @@
 		{
 			"sdgNumber": 10,
 			"sdgName": "Reduce inequality within and among countries",
-			"sdgIcon": "./src/images/E_SDG_Icons-10.webp",
+			"sdgIcon": "./src/images/sdg10.svg",
 			"focusTargets": [
 				{
 					"number": "10.1",
@@ -20720,7 +20720,7 @@
 		{
 			"sdgNumber": 11,
 			"sdgName": "Make cities inclusive, safe, resilient and sustainable",
-			"sdgIcon": "./src/images/E_SDG_Icons-11.webp",
+			"sdgIcon": "./src/images/sdg11.svg",
 			"focusTargets": [
 				{
 					"number": "11.1",
@@ -20759,7 +20759,7 @@
 		{
 			"sdgNumber": 12,
 			"sdgName": "Ensure sustainable consumption and production patterns",
-			"sdgIcon": "./src/images/E_SDG_Icons-12.webp",
+			"sdgIcon": "./src/images/sdg12.svg",
 			"focusTargets": [
 				{
 					"number": "12.1",
@@ -20806,7 +20806,7 @@
 		{
 			"sdgNumber": 13,
 			"sdgName": "Take urgent action to combat climate change and its impacts",
-			"sdgIcon": "./src/images/E_SDG_Icons-13.webp",
+			"sdgIcon": "./src/images/sdg13.svg",
 			"focusTargets": [
 				{
 					"number": "13.1",
@@ -20837,7 +20837,7 @@
 		{
 			"sdgNumber": 14,
 			"sdgName": "Conserve and sustainably use the oceans, seas and marine resources",
-			"sdgIcon": "./src/images/E_SDG_Icons-14.webp",
+			"sdgIcon": "./src/images/sdg14.svg",
 			"focusTargets": [
 				{
 					"number": "14.4",
@@ -20876,7 +20876,7 @@
 		{
 			"sdgNumber": 15,
 			"sdgName": "Sustainably manage forests, combat desertification, halt and reverse land degradation, halt biodiversity loss",
-			"sdgIcon": "./src/images/E_SDG_Icons-15.webp",
+			"sdgIcon": "./src/images/sdg15.svg",
 			"focusTargets": [
 				{
 					"number": "15.b",
@@ -20907,7 +20907,7 @@
 		{
 			"sdgNumber": 16,
 			"sdgName": "Promote just, peaceful and inclusive societies",
-			"sdgIcon": "./src/images/E_SDG_Icons-16.webp",
+			"sdgIcon": "./src/images/sdg16.svg",
 			"focusTargets": [
 				{
 					"number": "16.2",
@@ -20966,7 +20966,7 @@
 		{
 			"sdgNumber": 17,
 			"sdgName": "Revitalize the global partnership for sustainable development",
-			"sdgIcon": "./src/images/E_SDG_Icons-17.webp",
+			"sdgIcon": "./src/images/sdg17.svg",
 			"focusTargets": [
 				{
 					"number": "17.9",
