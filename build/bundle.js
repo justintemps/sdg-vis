@@ -20197,9 +20197,9 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	__webpack_require__(/*! ../../styles/base.scss */ 181);
+	__webpack_require__(/*! ../../styles/base.scss */ 182);
 	
-	__webpack_require__(/*! ./sdgexplorer.scss */ 179);
+	__webpack_require__(/*! ./sdgexplorer.scss */ 184);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -20298,7 +20298,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20333,7 +20333,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20372,7 +20372,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20415,7 +20415,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20466,7 +20466,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20497,7 +20497,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20525,7 +20525,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20600,7 +20600,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20639,7 +20639,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20698,7 +20698,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20737,7 +20737,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20784,7 +20784,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20815,7 +20815,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20854,7 +20854,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20885,7 +20885,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20944,7 +20944,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -20987,7 +20987,7 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
 					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
@@ -21095,7 +21095,7 @@
 	
 	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
 	
-	__webpack_require__(/*! ./viewerWindow.scss */ 177);
+	__webpack_require__(/*! ./viewerWindow.scss */ 180);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21181,6 +21181,10 @@
 	
 	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
 	
+	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 177);
+	
+	var _ImpactStories2 = _interopRequireDefault(_ImpactStories);
+	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
@@ -21189,11 +21193,20 @@
 		displayName: "ViewerWindowContent",
 		render: function render() {
 	
-			var focusTargets = _data2.default[7].focusTargets.map(function (focusTargets) {
-				return focusTargets.description;
+			var focusTargets = _data2.default[7].focusTargets.map(function (target) {
+				return target.description;
 			});
 	
-			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, { focusTargets: focusTargets }));
+			var impactStories = _data2.default[7].stories.map(function (story) {
+				return {
+					title: story.title,
+					blurb: story.blurb,
+					url: story.url,
+					imageUrl: story.imageUrl
+				};
+			});
+	
+			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, { focusTargets: focusTargets }), _react2.default.createElement(_ImpactStories2.default, { impactStories: impactStories }));
 		}
 	});
 	
@@ -21230,7 +21243,7 @@
 				return _react2.default.createElement("li", { className: "bullet" });
 			});
 	
-			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("div", { className: "focusTarget" }, this.props.focusTargets[0]), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets)));
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("p", null, this.props.focusTargets[0]), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets)));
 		}
 	});
 	
@@ -21248,6 +21261,53 @@
 /***/ },
 /* 176 */,
 /* 177 */
+/*!********************************************************!*\
+  !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
+  \********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(/*! ./impactStories.scss */ 178);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var ImpactStories = _react2.default.createClass({
+		displayName: "ImpactStories",
+		render: function render() {
+	
+			var bullets = this.props.impactStories.map(function (target) {
+				return _react2.default.createElement("li", { className: "bullet" });
+			});
+	
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("h3", null, "Impact Stories"), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("a", { href: this.props.impactStories[0].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[0].title)), _react2.default.createElement("p", null, this.props.impactStories[0].blurb), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[0].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[0].imageUrl })))));
+		}
+	});
+	
+	exports.default = ImpactStories;
+
+/***/ },
+/* 178 */
+/*!*********************************************************!*\
+  !*** ./src/Components/ImpactStories/impactStories.scss ***!
+  \*********************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 179 */,
+/* 180 */
 /*!*******************************************************!*\
   !*** ./src/Components/ViewerWindow/viewerWindow.scss ***!
   \*******************************************************/
@@ -21256,21 +21316,21 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 178 */,
-/* 179 */
-/*!*****************************************************!*\
-  !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
-  \*****************************************************/
+/* 181 */,
+/* 182 */
+/*!******************************!*\
+  !*** ./src/styles/base.scss ***!
+  \******************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 180 */,
-/* 181 */
-/*!******************************!*\
-  !*** ./src/styles/base.scss ***!
-  \******************************/
+/* 183 */,
+/* 184 */
+/*!*****************************************************!*\
+  !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
+  \*****************************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

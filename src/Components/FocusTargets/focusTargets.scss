@@ -4,7 +4,7 @@
 @import "src/styles/base";
 
 .focusTargets {
-	font-family: $font-stack;
+	margin: 10px 0;
 	padding: 0 20px 0 20px;
 	text-align: left;
 }
@@ -13,23 +13,4 @@
 	@include flex();
 	flex-wrap: nowrap;
 	margin: 5px 0;
-}
-
-.bullets {
-	margin: 0;
-	padding: 0;
-}
-
-.bullet {
-	color: $bulletUnselected;
-	display: inline;
-	font-size: 3em;
-	line-height: 50%;
-	margin: 0 10px 0 10px;
-	position: relative;
-	top: 2px;
-}
-
-.bullet::before {
-	content: "\2022";
 }

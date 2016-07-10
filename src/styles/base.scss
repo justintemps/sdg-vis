@@ -13,9 +13,25 @@ body,
 	text-align: center;
 }
 
+h2 {
+	font-family: $font-stack;
+	font-size: 1.4em;
+	font-weight: 400;
+	color: $goal6color;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+
+h2::after {
+	content: "\00a0\ >";
+}
+
+
 h3 {
 	color: $goal8color;
-	font-size: .9em;
+	font-family: $font-stack;
+	font-size: .88em;
 	font-weight: 600;
 	margin: 0;
 	padding: 0;
@@ -24,9 +40,43 @@ h3 {
 
 h4 {
 	color: $bulletSelected;
+	font-family: $font-stack;
 	font-size: .9em;
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
 	position: relative;
+}
+
+p {
+	font-family: $font-stack;
+	font-size: .86em;
+	color: $dark-grey;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* -- Bullets -- */
+
+.bullets {
+	margin: 0;
+	padding: 0;
+}
+
+.bullet {
+	color: $bulletUnselected;
+	display: inline;
+	font-size: 3em;
+	line-height: 50%;
+	margin: 0 10px 0 10px;
+	position: relative;
+	top: 5px;
+}
+
+.bullet::before {
+	content: "\2022";
 }

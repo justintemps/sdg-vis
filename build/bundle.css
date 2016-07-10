@@ -75,9 +75,21 @@ body,
   max-width: 750px;
   text-align: center; }
 
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #26bde2;
+  margin: 0 0 5px;
+  padding: 0; }
+
+h2::after {
+  content: "\A0   >"; }
+
 h3 {
   color: #a21942;
-  font-size: .9em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .88em;
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -85,25 +97,24 @@ h3 {
 
 h4 {
   color: #3bc3e4;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
   padding: 0;
   position: relative; }
 
-.focusTargets {
+p {
   font-family: "Source Sans Pro", sans-serif;
-  padding: 0 20px 0 20px;
-  text-align: left; }
+  font-size: .86em;
+  color: #2a2a2a;
+  margin: 0;
+  padding: 0; }
 
-.targetSelector {
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 5px 0; }
+a {
+  text-decoration: none; }
 
+/* -- Bullets -- */
 .bullets {
   margin: 0;
   padding: 0; }
@@ -115,10 +126,196 @@ h4 {
   line-height: 50%;
   margin: 0 10px 0 10px;
   position: relative;
-  top: 2px; }
+  top: 5px; }
 
 .bullet::before {
   content: "\2022"; }
+
+.focusTargets {
+  margin: 10px 0;
+  padding: 0 20px 0 20px;
+  text-align: left; }
+
+.targetSelector {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 5px 0; }
+/* Impact Stories */
+/* Utilities */
+/* Utilities */
+html,
+body,
+#app,
+.wrapper {
+  width: 100%;
+  height: 100%; }
+
+.wrapper {
+  max-width: 750px;
+  text-align: center; }
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #26bde2;
+  margin: 0 0 5px;
+  padding: 0; }
+
+h2::after {
+  content: "\A0   >"; }
+
+h3 {
+  color: #a21942;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .88em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; }
+
+h4 {
+  color: #3bc3e4;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .9em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .86em;
+  color: #2a2a2a;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+/* -- Bullets -- */
+.bullets {
+  margin: 0;
+  padding: 0; }
+
+.bullet {
+  color: #bdebf6;
+  display: inline;
+  font-size: 3em;
+  line-height: 50%;
+  margin: 0 10px 0 10px;
+  position: relative;
+  top: 5px; }
+
+.bullet::before {
+  content: "\2022"; }
+
+/* Focus Targets */
+/* Utilities */
+/* Utilities */
+html,
+body,
+#app,
+.wrapper {
+  width: 100%;
+  height: 100%; }
+
+.wrapper {
+  max-width: 750px;
+  text-align: center; }
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #26bde2;
+  margin: 0 0 5px;
+  padding: 0; }
+
+h2::after {
+  content: "\A0   >"; }
+
+h3 {
+  color: #a21942;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .88em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; }
+
+h4 {
+  color: #3bc3e4;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .9em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .86em;
+  color: #2a2a2a;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+/* -- Bullets -- */
+.bullets {
+  margin: 0;
+  padding: 0; }
+
+.bullet {
+  color: #bdebf6;
+  display: inline;
+  font-size: 3em;
+  line-height: 50%;
+  margin: 0 10px 0 10px;
+  position: relative;
+  top: 5px; }
+
+.bullet::before {
+  content: "\2022"; }
+
+.focusTargets {
+  margin: 10px 0;
+  padding: 0 20px 0 20px;
+  text-align: left; }
+
+.targetSelector {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 5px 0; }
+
+.impactStories {
+  margin: 10px 0;
+  padding: 0 10px 0 20px;
+  text-align: left; }
+
+.stories-wrapper {
+  align-items: top;
+  display: flex;
+  flex-direction: top;
+  flex-wrap: nowrap; }
+
+.thumbnail-wrapper {
+  margin: 0 0 0 5px; }
+
+.thumbnail {
+  margin: 0;
+  max-width: 180px;
+  padding: 0;
+  position: relative;
+  top: 5px; }
 /* ViewerWindow */
 .viewerWindow {
   height: 50%;
@@ -139,9 +336,21 @@ body,
   max-width: 750px;
   text-align: center; }
 
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #26bde2;
+  margin: 0 0 5px;
+  padding: 0; }
+
+h2::after {
+  content: "\A0   >"; }
+
 h3 {
   color: #a21942;
-  font-size: .9em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .88em;
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -149,11 +358,39 @@ h3 {
 
 h4 {
   color: #3bc3e4;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
   padding: 0;
   position: relative; }
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .86em;
+  color: #2a2a2a;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+/* -- Bullets -- */
+.bullets {
+  margin: 0;
+  padding: 0; }
+
+.bullet {
+  color: #bdebf6;
+  display: inline;
+  font-size: 3em;
+  line-height: 50%;
+  margin: 0 10px 0 10px;
+  position: relative;
+  top: 5px; }
+
+.bullet::before {
+  content: "\2022"; }
 /* SDGexplorer */
 /* Utilities */
 html,
@@ -168,9 +405,21 @@ body,
   max-width: 750px;
   text-align: center; }
 
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #26bde2;
+  margin: 0 0 5px;
+  padding: 0; }
+
+h2::after {
+  content: "\A0   >"; }
+
 h3 {
   color: #a21942;
-  font-size: .9em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .88em;
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -178,11 +427,39 @@ h3 {
 
 h4 {
   color: #3bc3e4;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
   padding: 0;
   position: relative; }
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: .86em;
+  color: #2a2a2a;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+/* -- Bullets -- */
+.bullets {
+  margin: 0;
+  padding: 0; }
+
+.bullet {
+  color: #bdebf6;
+  display: inline;
+  font-size: 3em;
+  line-height: 50%;
+  margin: 0 10px 0 10px;
+  position: relative;
+  top: 5px; }
+
+.bullet::before {
+  content: "\2022"; }
 
 /* Utilities */
 

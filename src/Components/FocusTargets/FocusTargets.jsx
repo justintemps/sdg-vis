@@ -13,9 +13,7 @@ const FocusTargets = React.createClass({
 		return (
 			<div className="focusTargets">
 				<h3>Focus Targets</h3>
-				<div className="focusTarget">
-					{this.props.focusTargets[0]}
-				</div>
+				<p>{this.props.focusTargets[0]}</p>
 				<div className="targetSelector">
 					<h4>View more:</h4>
 					<ul className="bullets">
