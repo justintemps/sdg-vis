@@ -10,6 +10,18 @@ const TitleBar = React.createClass({
 			background : this.props.sdgColor
 		};
 
+		const triangle = {
+			borderLeft: "20px solid transparent",
+			borderRight: "20px solid transparent",
+			borderTop: `20px solid ${this.props.sdgColor}`,
+			content: "",
+			display: "block",
+			margin: "2px 0",
+			position: "relative",
+			height: 0,
+			width: 0
+		};
+
 		return(
 			<div>
 				<div className="titleBar" style={color}>
@@ -20,6 +32,7 @@ const TitleBar = React.createClass({
 						{this.props.sdgName}
 					</div>
 				</div>
+				<div style={triangle}></div>
 			</div>
 		);
 	}

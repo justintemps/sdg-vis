@@ -20193,13 +20193,13 @@
 	
 	var _Row2 = _interopRequireDefault(_Row);
 	
-	var _ViewerWindow = __webpack_require__(/*! ../ViewerWindow/ViewerWindow.jsx */ 167);
+	var _ViewerWindow = __webpack_require__(/*! ../ViewerWindow/ViewerWindow.jsx */ 169);
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	__webpack_require__(/*! ../../styles/base.scss */ 180);
+	__webpack_require__(/*! ../../styles/base.scss */ 182);
 	
-	__webpack_require__(/*! ./sdgexplorer.scss */ 182);
+	__webpack_require__(/*! ./sdgexplorer.scss */ 184);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -20247,7 +20247,7 @@
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
-	__webpack_require__(/*! ./row.scss */ 163);
+	__webpack_require__(/*! ./row.scss */ 167);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21059,7 +21059,7 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	__webpack_require__(/*! ./icon.scss */ 184);
+	__webpack_require__(/*! ./icon.scss */ 163);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21079,9 +21079,9 @@
 
 /***/ },
 /* 163 */
-/*!*************************************!*\
-  !*** ./src/Components/Row/row.scss ***!
-  \*************************************/
+/*!***************************************!*\
+  !*** ./src/Components/Icon/icon.scss ***!
+  \***************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
@@ -21091,6 +21091,16 @@
 /* 165 */,
 /* 166 */,
 /* 167 */
+/*!*************************************!*\
+  !*** ./src/Components/Row/row.scss ***!
+  \*************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 168 */,
+/* 169 */
 /*!******************************************************!*\
   !*** ./src/Components/ViewerWindow/ViewerWindow.jsx ***!
   \******************************************************/
@@ -21110,15 +21120,15 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	var _TitleBar = __webpack_require__(/*! ../TitleBar/TitleBar.jsx */ 168);
+	var _TitleBar = __webpack_require__(/*! ../TitleBar/TitleBar.jsx */ 170);
 	
 	var _TitleBar2 = _interopRequireDefault(_TitleBar);
 	
-	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 171);
+	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 173);
 	
 	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
 	
-	__webpack_require__(/*! ./viewerWindow.scss */ 178);
+	__webpack_require__(/*! ./viewerWindow.scss */ 180);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21134,7 +21144,7 @@
 	exports.default = ViewerWindow;
 
 /***/ },
-/* 168 */
+/* 170 */
 /*!**********************************************!*\
   !*** ./src/Components/TitleBar/TitleBar.jsx ***!
   \**********************************************/
@@ -21154,7 +21164,7 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	__webpack_require__(/*! ./titleBar.scss */ 169);
+	__webpack_require__(/*! ./titleBar.scss */ 171);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21168,14 +21178,26 @@
 				background: this.props.sdgColor
 			};
 	
-			return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)));
+			var triangle = {
+				borderLeft: "20px solid transparent",
+				borderRight: "20px solid transparent",
+				borderTop: "20px solid " + this.props.sdgColor,
+				content: "",
+				display: "block",
+				margin: "2px 0",
+				position: "relative",
+				height: 0,
+				width: 0
+			};
+	
+			return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)), _react2.default.createElement("div", { style: triangle }));
 		}
 	});
 	
 	exports.default = TitleBar;
 
 /***/ },
-/* 169 */
+/* 171 */
 /*!***********************************************!*\
   !*** ./src/Components/TitleBar/titleBar.scss ***!
   \***********************************************/
@@ -21184,8 +21206,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 170 */,
-/* 171 */
+/* 172 */,
+/* 173 */
 /*!********************************************************************!*\
   !*** ./src/Components/ViewerWindowContent/ViewerWindowContent.jsx ***!
   \********************************************************************/
@@ -21205,11 +21227,11 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 172);
+	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 174);
 	
 	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
 	
-	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 175);
+	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 177);
 	
 	var _ImpactStories2 = _interopRequireDefault(_ImpactStories);
 	
@@ -21241,7 +21263,7 @@
 	exports.default = ViewerWindowContent;
 
 /***/ },
-/* 172 */
+/* 174 */
 /*!******************************************************!*\
   !*** ./src/Components/FocusTargets/FocusTargets.jsx ***!
   \******************************************************/
@@ -21257,7 +21279,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(/*! ./focusTargets.scss */ 173);
+	__webpack_require__(/*! ./focusTargets.scss */ 175);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21278,7 +21300,7 @@
 	exports.default = FocusTargets;
 
 /***/ },
-/* 173 */
+/* 175 */
 /*!*******************************************************!*\
   !*** ./src/Components/FocusTargets/focusTargets.scss ***!
   \*******************************************************/
@@ -21287,8 +21309,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 174 */,
-/* 175 */
+/* 176 */,
+/* 177 */
 /*!********************************************************!*\
   !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
   \********************************************************/
@@ -21304,7 +21326,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(/*! ./impactStories.scss */ 176);
+	__webpack_require__(/*! ./impactStories.scss */ 178);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21325,7 +21347,7 @@
 	exports.default = ImpactStories;
 
 /***/ },
-/* 176 */
+/* 178 */
 /*!*********************************************************!*\
   !*** ./src/Components/ImpactStories/impactStories.scss ***!
   \*********************************************************/
@@ -21334,8 +21356,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 177 */,
-/* 178 */
+/* 179 */,
+/* 180 */
 /*!*******************************************************!*\
   !*** ./src/Components/ViewerWindow/viewerWindow.scss ***!
   \*******************************************************/
@@ -21344,8 +21366,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 179 */,
-/* 180 */
+/* 181 */,
+/* 182 */
 /*!******************************!*\
   !*** ./src/styles/base.scss ***!
   \******************************/
@@ -21354,21 +21376,11 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 181 */,
-/* 182 */
+/* 183 */,
+/* 184 */
 /*!*****************************************************!*\
   !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
   \*****************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 183 */,
-/* 184 */
-/*!***************************************!*\
-  !*** ./src/Components/Icon/icon.scss ***!
-  \***************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

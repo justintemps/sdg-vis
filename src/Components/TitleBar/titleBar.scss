@@ -28,8 +28,21 @@
 	padding: 0;
 }
 
-/* Triangle */
+/*
 .viewerWindow > div:first-child::after {
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid $goal8color;
+	content: "";
+	display: block;
+	margin: 2px 0;
+	position: relative;
+	height: 0;
+	width: 0;
+}
+*/
+
+.triangle {
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 	border-top: 20px solid $goal8color;
