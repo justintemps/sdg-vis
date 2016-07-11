@@ -14,7 +14,7 @@ const SDGexplorer = React.createClass({
 
 	selectSDG(sdg) {
 		this.setState({
-			selected: 2
+			selected: sdg
 		});
 	},
 
