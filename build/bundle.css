@@ -38,6 +38,7 @@
   bottom: 5px;
   color: #fff;
   left: -12px;
+  letter-spacing: -0.09em;
   line-height: 75%;
   margin: 0;
   padding: 0;
@@ -47,19 +48,6 @@
   margin: 0;
   padding: 0; }
 
-/*
-.viewerWindow > div:first-child::after {
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid $goal8color;
-	content: "";
-	display: block;
-	margin: 2px 0;
-	position: relative;
-	height: 0;
-	width: 0;
-}
-*/
 .triangle {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;

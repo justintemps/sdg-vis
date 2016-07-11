@@ -20197,9 +20197,9 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	__webpack_require__(/*! ../../styles/base.scss */ 182);
+	__webpack_require__(/*! ../../styles/base.scss */ 185);
 	
-	__webpack_require__(/*! ./sdgexplorer.scss */ 184);
+	__webpack_require__(/*! ./sdgexplorer.scss */ 187);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21159,7 +21159,7 @@
 	
 	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
 	
-	__webpack_require__(/*! ./viewerWindow.scss */ 180);
+	__webpack_require__(/*! ./viewerWindow.scss */ 183);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21272,7 +21272,7 @@
 	
 	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
 	
-	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 177);
+	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 180);
 	
 	var _ImpactStories2 = _interopRequireDefault(_ImpactStories);
 	
@@ -21328,11 +21328,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 186);
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 175);
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	__webpack_require__(/*! ./focusTargets.scss */ 175);
+	__webpack_require__(/*! ./focusTargets.scss */ 178);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21355,104 +21355,6 @@
 
 /***/ },
 /* 175 */
-/*!*******************************************************!*\
-  !*** ./src/Components/FocusTargets/focusTargets.scss ***!
-  \*******************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 176 */,
-/* 177 */
-/*!********************************************************!*\
-  !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
-  \********************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 186);
-	
-	var _Bullet2 = _interopRequireDefault(_Bullet);
-	
-	__webpack_require__(/*! ./impactStories.scss */ 178);
-	
-	function _interopRequireDefault(obj) {
-		return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	var ImpactStories = _react2.default.createClass({
-		displayName: "ImpactStories",
-		render: function render() {
-			var _this = this;
-	
-			var bullets = this.props.impactStories.map(function (target, i) {
-				return _react2.default.createElement(_Bullet2.default, {
-					type: "impactStory",
-					key: i,
-					id: i,
-					currentStory: _this.props.currentStory,
-					selectStory: _this.props.selectStory
-				});
-			});
-	
-			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("h3", null, "Impact Stories"), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
-		}
-	});
-	
-	exports.default = ImpactStories;
-
-/***/ },
-/* 178 */
-/*!*********************************************************!*\
-  !*** ./src/Components/ImpactStories/impactStories.scss ***!
-  \*********************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 179 */,
-/* 180 */
-/*!*******************************************************!*\
-  !*** ./src/Components/ViewerWindow/viewerWindow.scss ***!
-  \*******************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 181 */,
-/* 182 */
-/*!******************************!*\
-  !*** ./src/styles/base.scss ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 183 */,
-/* 184 */
-/*!*****************************************************!*\
-  !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
-  \*****************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 185 */,
-/* 186 */
 /*!******************************************!*\
   !*** ./src/Components/Bullet/Bullet.jsx ***!
   \******************************************/
@@ -21468,7 +21370,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(/*! ./bullet.scss */ 187);
+	__webpack_require__(/*! ./bullet.scss */ 176);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21507,10 +21409,108 @@
 	exports.default = Bullet;
 
 /***/ },
-/* 187 */
+/* 176 */
 /*!*******************************************!*\
   !*** ./src/Components/Bullet/bullet.scss ***!
   \*******************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 177 */,
+/* 178 */
+/*!*******************************************************!*\
+  !*** ./src/Components/FocusTargets/focusTargets.scss ***!
+  \*******************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 179 */,
+/* 180 */
+/*!********************************************************!*\
+  !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
+  \********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 175);
+	
+	var _Bullet2 = _interopRequireDefault(_Bullet);
+	
+	__webpack_require__(/*! ./impactStories.scss */ 181);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var ImpactStories = _react2.default.createClass({
+		displayName: "ImpactStories",
+		render: function render() {
+			var _this = this;
+	
+			var bullets = this.props.impactStories.map(function (target, i) {
+				return _react2.default.createElement(_Bullet2.default, {
+					type: "impactStory",
+					key: i,
+					id: i,
+					currentStory: _this.props.currentStory,
+					selectStory: _this.props.selectStory
+				});
+			});
+	
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("h3", null, "Impact Stories"), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
+		}
+	});
+	
+	exports.default = ImpactStories;
+
+/***/ },
+/* 181 */
+/*!*********************************************************!*\
+  !*** ./src/Components/ImpactStories/impactStories.scss ***!
+  \*********************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 182 */,
+/* 183 */
+/*!*******************************************************!*\
+  !*** ./src/Components/ViewerWindow/viewerWindow.scss ***!
+  \*******************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 184 */,
+/* 185 */
+/*!******************************!*\
+  !*** ./src/styles/base.scss ***!
+  \******************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 186 */,
+/* 187 */
+/*!*****************************************************!*\
+  !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
+  \*****************************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
