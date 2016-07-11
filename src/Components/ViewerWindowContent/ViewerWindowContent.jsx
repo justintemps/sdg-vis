@@ -24,7 +24,7 @@ const ViewerWindowContent = React.createClass({
 
 		return (
 			<div className="viewerWindowContent">
-				<FocusTargets focusTargets={focusTargets} />
+				<FocusTargets focusTargets={focusTargets} focusTarget={this.props.focusTarget} selectFocusTarget={this.props.selectFocusTarget} />
 				<ImpactStories impactStories={impactStories}/>
 			</div>
 		);

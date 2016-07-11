@@ -7,14 +7,22 @@ import "./sdgexplorer.scss";
 const SDGexplorer = React.createClass({
 
 	getInitialState() {
-		return(
-			{selected : 7}
-		);
+		return({
+			sdg : 7,
+			focusTarget : 0
+		});
 	},
 
 	selectSDG(sdg) {
 		this.setState({
-			selected: sdg
+			sdg: sdg,
+			focusTarget : 0
+		});
+	},
+
+	selectFocusTarget(focusTarget) {
+		this.setState({
+			focusTarget: focusTarget
 		});
 	},
 
@@ -23,7 +31,7 @@ const SDGexplorer = React.createClass({
 			<div className="wrapper">
 				<div className="sdgExplorer">
 					<Row startFrom={1} numberIcons={12} key={1} handler={this.selectSDG} />
-					<ViewerWindow selected={this.state.selected} />
+					<ViewerWindow sdg={this.state.sdg} focusTarget={this.state.focusTarget} selectFocusTarget={this.selectFocusTarget} />
 					<Row startFrom={12} numberIcons={6} key={2} handler={this.selectSDG} />
 				</div>
 			</div>
