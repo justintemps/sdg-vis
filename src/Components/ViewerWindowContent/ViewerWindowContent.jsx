@@ -6,7 +6,7 @@ import ImpactStories from "../ImpactStories/ImpactStories.jsx";
 const ViewerWindowContent = React.createClass({
 	render() {
 
-		const focusTargets = data[7].focusTargets.map( (target) => {
+		const focusTargets = data[this.props.sdgNumber].focusTargets.map( (target) => {
 			return (
 				target.description
 			);

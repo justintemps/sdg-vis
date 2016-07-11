@@ -21137,7 +21137,7 @@
 	var ViewerWindow = _react2.default.createClass({
 		displayName: "ViewerWindow",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, { sdgNumber: _data2.default[this.props.selected].sdgNumber, sdgName: _data2.default[this.props.selected].sdgName, sdgColor: _data2.default[this.props.selected].sdgColor }), _react2.default.createElement(_ViewerWindowContent2.default, null));
+			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, { sdgNumber: _data2.default[this.props.selected].sdgNumber, sdgName: _data2.default[this.props.selected].sdgName, sdgColor: _data2.default[this.props.selected].sdgColor }), _react2.default.createElement(_ViewerWindowContent2.default, { sdgNumber: this.props.selected }));
 		}
 	});
 	
@@ -21243,7 +21243,7 @@
 		displayName: "ViewerWindowContent",
 		render: function render() {
 	
-			var focusTargets = _data2.default[7].focusTargets.map(function (target) {
+			var focusTargets = _data2.default[this.props.sdgNumber].focusTargets.map(function (target) {
 				return target.description;
 			});
 	
@@ -21288,6 +21288,8 @@
 	var FocusTargets = _react2.default.createClass({
 		displayName: "FocusTargets",
 		render: function render() {
+	
+			var focusTargets = this.props.focusTargets;
 	
 			var bullets = this.props.focusTargets.map(function (target) {
 				return _react2.default.createElement("li", { className: "bullet" });

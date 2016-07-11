@@ -4,6 +4,8 @@ import "./focusTargets.scss";
 const FocusTargets = React.createClass({
 	render() {
 
+		const focusTargets = this.props.focusTargets;
+
 		const bullets = this.props.focusTargets.map( (target) => {
 			return (
 				<li className="bullet"></li>

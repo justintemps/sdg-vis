@@ -10,7 +10,7 @@ const ViewerWindow = React.createClass({
 		return(
 			<div className="viewerWindow">
 				<TitleBar sdgNumber={data[this.props.selected].sdgNumber} sdgName={data[this.props.selected].sdgName} sdgColor= {data[this.props.selected].sdgColor} />
-				<ViewerWindowContent />
+				<ViewerWindowContent sdgNumber={this.props.selected} />
 			</div>
 		);
 	}
