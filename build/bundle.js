@@ -21300,7 +21300,7 @@
 			var _this = this;
 	
 			var bullets = this.props.focusTargets.map(function (target, i) {
-				return _react2.default.createElement(Bullet, { key: i, target: i, selectFocusTarget: _this.props.selectFocusTarget });
+				return _react2.default.createElement(Bullet, { key: i, target: i, focusTarget: _this.props.focusTarget, selectFocusTarget: _this.props.selectFocusTarget });
 			});
 	
 			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget]), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets)));
@@ -21313,7 +21313,15 @@
 			this.props.selectFocusTarget(this.props.target);
 		},
 		render: function render() {
-			return _react2.default.createElement("li", { className: "bullet", onClick: this.selectFocusTarget });
+			var selected = { color: "#3bc3e4" };
+			var unselected = { color: "#bdebf6" };
+			var isSelected = false;
+	
+			if (this.props.target === this.props.focusTarget) {
+				isSelected = true;
+			}
+	
+			return _react2.default.createElement("li", { className: "bullet", style: isSelected ? selected : unselected, onClick: this.selectFocusTarget });
 		}
 	});
 	

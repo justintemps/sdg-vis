@@ -141,7 +141,7 @@ a {
   padding: 0; }
 
 .bullet {
-  color: #bdebf6;
+  cursor: pointer;
   display: inline;
   font-size: 3em;
   line-height: 50%;
@@ -229,7 +229,7 @@ a {
   padding: 0; }
 
 .bullet {
-  color: #bdebf6;
+  cursor: pointer;
   display: inline;
   font-size: 3em;
   line-height: 50%;
@@ -305,7 +305,7 @@ a {
   padding: 0; }
 
 .bullet {
-  color: #bdebf6;
+  cursor: pointer;
   display: inline;
   font-size: 3em;
   line-height: 50%;
@@ -417,7 +417,7 @@ a {
   padding: 0; }
 
 .bullet {
-  color: #bdebf6;
+  cursor: pointer;
   display: inline;
   font-size: 3em;
   line-height: 50%;
@@ -489,7 +489,7 @@ a {
   padding: 0; }
 
 .bullet {
-  color: #bdebf6;
+  cursor: pointer;
   display: inline;
   font-size: 3em;
   line-height: 50%;

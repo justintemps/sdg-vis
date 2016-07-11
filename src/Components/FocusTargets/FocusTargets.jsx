@@ -7,7 +7,7 @@ const FocusTargets = React.createClass({
 
 		const bullets = this.props.focusTargets.map( (target, i) => {
 			return (
-				<Bullet key={i} target={i} selectFocusTarget={this.props.selectFocusTarget} />
+				<Bullet key={i} target={i} focusTarget={this.props.focusTarget} selectFocusTarget={this.props.selectFocusTarget} />
 			);
 		});
 
@@ -33,8 +33,16 @@ const Bullet = React.createClass({
 	},
 
 	render() {
+		const selected = {color: "#3bc3e4"};
+		const unselected = {color: "#bdebf6"};
+		let isSelected = false;
+
+		if (this.props.target === this.props.focusTarget) {
+			isSelected = true;
+		}
+
 		return(
-			<li className="bullet" onClick={this.selectFocusTarget}></li>
+			<li className="bullet" style={ isSelected ? selected : unselected } onClick={this.selectFocusTarget}></li>
 		);
 	}
 });
