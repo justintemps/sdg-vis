@@ -21287,15 +21287,32 @@
 	
 	var FocusTargets = _react2.default.createClass({
 		displayName: "FocusTargets",
+		getInitialState: function getInitialState() {
+			return { focusTarget: 0 };
+		},
+		selectFocusTarget: function selectFocusTarget(focusTarget) {
+			this.setState({ focusTarget: focusTarget });
+		},
 		render: function render() {
+			var _this = this;
 	
 			var focusTargets = this.props.focusTargets;
 	
-			var bullets = this.props.focusTargets.map(function (target) {
-				return _react2.default.createElement("li", { className: "bullet" });
+			var bullets = this.props.focusTargets.map(function (target, i) {
+				return _react2.default.createElement(Bullet, { key: i, target: i, handler: _this.selectFocusTarget });
 			});
 	
-			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("p", null, this.props.focusTargets[0]), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets)));
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("p", null, this.props.focusTargets[this.state.focusTarget]), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets)));
+		}
+	});
+	
+	var Bullet = _react2.default.createClass({
+		displayName: "Bullet",
+		selectFocusTarget: function selectFocusTarget() {
+			this.props.handler(this.props.target);
+		},
+		render: function render() {
+			return _react2.default.createElement("li", { className: "bullet", onClick: this.selectFocusTarget });
 		}
 	});
 	
