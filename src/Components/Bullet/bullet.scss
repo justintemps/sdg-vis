@@ -1,0 +1,20 @@
+/* -- Bullets -- */
+
+.bullets {
+	margin: 0;
+	padding: 0;
+}
+
+.bullet {
+	cursor: pointer;
+	display: inline;
+	font-size: 3em;
+	line-height: 50%;
+	margin: 0 10px 0 10px;
+	position: relative;
+	top: 5px;
+}
+
+.bullet::before {
+	content: "\2022";
+}

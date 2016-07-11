@@ -20210,7 +20210,8 @@
 		getInitialState: function getInitialState() {
 			return {
 				sdg: 7,
-				focusTarget: 0
+				focusTarget: 0,
+				currentStory: 0
 			};
 		},
 		selectSDG: function selectSDG(sdg) {
@@ -20224,8 +20225,29 @@
 				focusTarget: focusTarget
 			});
 		},
+		selectStory: function selectStory(story) {
+			this.setState({
+				currentStory: story
+			});
+		},
 		render: function render() {
-			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, { startFrom: 1, numberIcons: 12, key: 1, handler: this.selectSDG }), _react2.default.createElement(_ViewerWindow2.default, { sdg: this.state.sdg, focusTarget: this.state.focusTarget, selectFocusTarget: this.selectFocusTarget }), _react2.default.createElement(_Row2.default, { startFrom: 12, numberIcons: 6, key: 2, handler: this.selectSDG })));
+			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, {
+				startFrom: 1,
+				numberIcons: 12,
+				key: 1,
+				handler: this.selectSDG
+			}), _react2.default.createElement(_ViewerWindow2.default, {
+				sdg: this.state.sdg,
+				focusTarget: this.state.focusTarget,
+				selectFocusTarget: this.selectFocusTarget,
+				currentStory: this.state.currentStory,
+				selectStory: this.selectStory
+			}), _react2.default.createElement(_Row2.default, {
+				startFrom: 12,
+				numberIcons: 6,
+				key: 2,
+				handler: this.selectSDG
+			})));
 		}
 	});
 	
@@ -21146,7 +21168,17 @@
 	var ViewerWindow = _react2.default.createClass({
 		displayName: "ViewerWindow",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, { sdgNumber: _data2.default[this.props.sdg].sdgNumber, sdgName: _data2.default[this.props.sdg].sdgName, sdgColor: _data2.default[this.props.sdg].sdgColor }), _react2.default.createElement(_ViewerWindowContent2.default, { sdgNumber: this.props.sdg, focusTarget: this.props.focusTarget, selectFocusTarget: this.props.selectFocusTarget }));
+			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, {
+				sdgNumber: _data2.default[this.props.sdg].sdgNumber,
+				sdgName: _data2.default[this.props.sdg].sdgName,
+				sdgColor: _data2.default[this.props.sdg].sdgColor
+			}), _react2.default.createElement(_ViewerWindowContent2.default, {
+				sdgNumber: this.props.sdg,
+				focusTarget: this.props.focusTarget,
+				selectFocusTarget: this.props.selectFocusTarget,
+				currentStory: this.props.currentStory,
+				selectStory: this.props.selectStory
+			}));
 		}
 	});
 	
@@ -21256,7 +21288,7 @@
 				return target.description;
 			});
 	
-			var impactStories = _data2.default[7].stories.map(function (story) {
+			var impactStories = _data2.default[this.props.sdgNumber].stories.map(function (story) {
 				return {
 					title: story.title,
 					blurb: story.blurb,
@@ -21265,7 +21297,15 @@
 				};
 			});
 	
-			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, { focusTargets: focusTargets, focusTarget: this.props.focusTarget, selectFocusTarget: this.props.selectFocusTarget }), _react2.default.createElement(_ImpactStories2.default, { impactStories: impactStories }));
+			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, {
+				focusTargets: focusTargets,
+				focusTarget: this.props.focusTarget,
+				selectFocusTarget: this.props.selectFocusTarget
+			}), _react2.default.createElement(_ImpactStories2.default, {
+				impactStories: impactStories,
+				currentStory: this.props.currentStory,
+				selectStory: this.props.selectStory
+			}));
 		}
 	});
 	
@@ -21288,6 +21328,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 186);
+	
+	var _Bullet2 = _interopRequireDefault(_Bullet);
+	
 	__webpack_require__(/*! ./focusTargets.scss */ 175);
 	
 	function _interopRequireDefault(obj) {
@@ -21300,28 +21344,10 @@
 			var _this = this;
 	
 			var bullets = this.props.focusTargets.map(function (target, i) {
-				return _react2.default.createElement(Bullet, { key: i, target: i, focusTarget: _this.props.focusTarget, selectFocusTarget: _this.props.selectFocusTarget });
+				return _react2.default.createElement(_Bullet2.default, { type: "focusTarget", key: i, id: i, focusTarget: _this.props.focusTarget, selectFocusTarget: _this.props.selectFocusTarget });
 			});
 	
 			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget]), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets)));
-		}
-	});
-	
-	var Bullet = _react2.default.createClass({
-		displayName: "Bullet",
-		selectFocusTarget: function selectFocusTarget() {
-			this.props.selectFocusTarget(this.props.target);
-		},
-		render: function render() {
-			var selected = { color: "#3bc3e4" };
-			var unselected = { color: "#bdebf6" };
-			var isSelected = false;
-	
-			if (this.props.target === this.props.focusTarget) {
-				isSelected = true;
-			}
-	
-			return _react2.default.createElement("li", { className: "bullet", style: isSelected ? selected : unselected, onClick: this.selectFocusTarget });
 		}
 	});
 	
@@ -21354,6 +21380,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 186);
+	
+	var _Bullet2 = _interopRequireDefault(_Bullet);
+	
 	__webpack_require__(/*! ./impactStories.scss */ 178);
 	
 	function _interopRequireDefault(obj) {
@@ -21363,12 +21393,19 @@
 	var ImpactStories = _react2.default.createClass({
 		displayName: "ImpactStories",
 		render: function render() {
+			var _this = this;
 	
-			var bullets = this.props.impactStories.map(function (target) {
-				return _react2.default.createElement("li", { className: "bullet" });
+			var bullets = this.props.impactStories.map(function (target, i) {
+				return _react2.default.createElement(_Bullet2.default, {
+					type: "impactStory",
+					key: i,
+					id: i,
+					currentStory: _this.props.currentStory,
+					selectStory: _this.props.selectStory
+				});
 			});
 	
-			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("h3", null, "Impact Stories"), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("a", { href: this.props.impactStories[0].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[0].title)), _react2.default.createElement("p", null, this.props.impactStories[0].blurb), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[0].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[0].imageUrl })))));
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("h3", null, "Impact Stories"), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
 		}
 	});
 	
@@ -21409,6 +21446,71 @@
 /*!*****************************************************!*\
   !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
   \*****************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 185 */,
+/* 186 */
+/*!******************************************!*\
+  !*** ./src/Components/Bullet/Bullet.jsx ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(/*! ./bullet.scss */ 187);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Bullet = _react2.default.createClass({
+		displayName: "Bullet",
+		selectFocusTarget: function selectFocusTarget() {
+			this.props.selectFocusTarget(this.props.id);
+		},
+		selectStory: function selectStory() {
+			this.props.selectStory(this.props.id);
+		},
+		render: function render() {
+			var isSelected = false;
+	
+			var selected = { color: "#3bc3e4" };
+			var unselected = { color: "#bdebf6" };
+	
+			if (this.props.type === "focusTarget") {
+				if (this.props.id === this.props.focusTarget) {
+					isSelected = true;
+				}
+			} else {
+				if (this.props.id === this.props.currentStory) {
+					isSelected = true;
+				}
+			}
+	
+			return _react2.default.createElement("li", { className: "bullet",
+				style: isSelected ? selected : unselected,
+				onClick: this.props.type === "focusTarget" ? this.selectFocusTarget : this.selectStory });
+		}
+	});
+	
+	exports.default = Bullet;
+
+/***/ },
+/* 187 */
+/*!*******************************************!*\
+  !*** ./src/Components/Bullet/bullet.scss ***!
+  \*******************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

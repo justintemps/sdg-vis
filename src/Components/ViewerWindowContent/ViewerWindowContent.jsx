@@ -12,7 +12,7 @@ const ViewerWindowContent = React.createClass({
 			);
 		});
 
-		const impactStories = data[7].stories.map( (story) => {
+		const impactStories = data[this.props.sdgNumber].stories.map( (story) => {
 			return (
 			{
 				title : story.title,
@@ -24,8 +24,16 @@ const ViewerWindowContent = React.createClass({
 
 		return (
 			<div className="viewerWindowContent">
-				<FocusTargets focusTargets={focusTargets} focusTarget={this.props.focusTarget} selectFocusTarget={this.props.selectFocusTarget} />
-				<ImpactStories impactStories={impactStories}/>
+				<FocusTargets
+					focusTargets={focusTargets}
+					focusTarget={this.props.focusTarget}
+					selectFocusTarget={this.props.selectFocusTarget}
+				/>
+				<ImpactStories
+					impactStories={impactStories}
+					currentStory={this.props.currentStory}
+					selectStory={this.props.selectStory}
+				/>
 			</div>
 		);
 	}

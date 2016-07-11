@@ -1,4 +1,5 @@
 import React from "react";
+import Bullet from "../Bullet/Bullet.jsx";
 import "./focusTargets.scss";
 
 const FocusTargets = React.createClass({
@@ -7,7 +8,7 @@ const FocusTargets = React.createClass({
 
 		const bullets = this.props.focusTargets.map( (target, i) => {
 			return (
-				<Bullet key={i} target={i} focusTarget={this.props.focusTarget} selectFocusTarget={this.props.selectFocusTarget} />
+				<Bullet type="focusTarget" key={i} id={i} focusTarget={this.props.focusTarget} selectFocusTarget={this.props.selectFocusTarget} />
 			);
 		});
 
@@ -22,27 +23,6 @@ const FocusTargets = React.createClass({
 					</ul>
 				</div>
 			</div>
-		);
-	}
-});
-
-const Bullet = React.createClass({
-
-	selectFocusTarget() {
-		this.props.selectFocusTarget(this.props.target);
-	},
-
-	render() {
-		const selected = {color: "#3bc3e4"};
-		const unselected = {color: "#bdebf6"};
-		let isSelected = false;
-
-		if (this.props.target === this.props.focusTarget) {
-			isSelected = true;
-		}
-
-		return(
-			<li className="bullet" style={ isSelected ? selected : unselected } onClick={this.selectFocusTarget}></li>
 		);
 	}
 });

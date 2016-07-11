@@ -76,6 +76,22 @@
   font-size: 1.3em;
   color: #fff;
   font-family: "Source Sans Pro", sans-serif; }
+/* -- Bullets -- */
+.bullets {
+  margin: 0;
+  padding: 0; }
+
+.bullet {
+  cursor: pointer;
+  display: inline;
+  font-size: 3em;
+  line-height: 50%;
+  margin: 0 10px 0 10px;
+  position: relative;
+  top: 5px; }
+
+.bullet::before {
+  content: "\2022"; }
 /* Focus Targets */
 /* -- Typography -- */
 /* -- Mixins -- */
@@ -134,23 +150,6 @@ p {
 
 a {
   text-decoration: none; }
-
-/* -- Bullets -- */
-.bullets {
-  margin: 0;
-  padding: 0; }
-
-.bullet {
-  cursor: pointer;
-  display: inline;
-  font-size: 3em;
-  line-height: 50%;
-  margin: 0 10px 0 10px;
-  position: relative;
-  top: 5px; }
-
-.bullet::before {
-  content: "\2022"; }
 
 .focusTargets {
   margin: 10px 0;
@@ -223,23 +222,6 @@ p {
 a {
   text-decoration: none; }
 
-/* -- Bullets -- */
-.bullets {
-  margin: 0;
-  padding: 0; }
-
-.bullet {
-  cursor: pointer;
-  display: inline;
-  font-size: 3em;
-  line-height: 50%;
-  margin: 0 10px 0 10px;
-  position: relative;
-  top: 5px; }
-
-.bullet::before {
-  content: "\2022"; }
-
 /* Focus Targets */
 /* -- Typography -- */
 /* -- Mixins -- */
@@ -299,23 +281,6 @@ p {
 a {
   text-decoration: none; }
 
-/* -- Bullets -- */
-.bullets {
-  margin: 0;
-  padding: 0; }
-
-.bullet {
-  cursor: pointer;
-  display: inline;
-  font-size: 3em;
-  line-height: 50%;
-  margin: 0 10px 0 10px;
-  position: relative;
-  top: 5px; }
-
-.bullet::before {
-  content: "\2022"; }
-
 .focusTargets {
   margin: 10px 0;
   padding: 0 20px 0 20px;
@@ -352,7 +317,7 @@ a {
 /* ViewerWindow */
 .viewerWindow {
   height: 50%;
-  max-height: 500px;
+  max-height: 400px;
   padding: 5px;
   position: relative;
   text-align: center;
@@ -410,23 +375,6 @@ p {
 
 a {
   text-decoration: none; }
-
-/* -- Bullets -- */
-.bullets {
-  margin: 0;
-  padding: 0; }
-
-.bullet {
-  cursor: pointer;
-  display: inline;
-  font-size: 3em;
-  line-height: 50%;
-  margin: 0 10px 0 10px;
-  position: relative;
-  top: 5px; }
-
-.bullet::before {
-  content: "\2022"; }
 /* SDGexplorer */
 /* -- Typography -- */
 /* -- Mixins -- */
@@ -482,23 +430,6 @@ p {
 
 a {
   text-decoration: none; }
-
-/* -- Bullets -- */
-.bullets {
-  margin: 0;
-  padding: 0; }
-
-.bullet {
-  cursor: pointer;
-  display: inline;
-  font-size: 3em;
-  line-height: 50%;
-  margin: 0 10px 0 10px;
-  position: relative;
-  top: 5px; }
-
-.bullet::before {
-  content: "\2022"; }
 
 /* -- Typography -- */
 /* -- Mixins -- */
