@@ -20217,7 +20217,8 @@
 		selectSDG: function selectSDG(sdg) {
 			this.setState({
 				sdg: sdg,
-				focusTarget: 0
+				focusTarget: 0,
+				currentStory: 0
 			});
 		},
 		selectFocusTarget: function selectFocusTarget(focusTarget) {
@@ -20343,22 +20344,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Breaking the cycle of poverty in Tunisia",
+					"blurb": "Cooperation between government and social partners, and effective collective bargaining, can promote a more equitable distribution of a country's wealth and income.",
+					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/features/tunisia/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_481717.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-				},
-				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
+					"title": "Working out of poverty in Timor-Leste",
+					"blurb": "ILO’s Business Opportunities and Support Services (BOSS) project helped local communities to improve farming practices, develop market access, create jobs and develop small and medium-sized enterprises.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493379.jpg"
+				},
+				{
+					"title": "How Zambia is greening its way out of poverty",
+					"blurb": "The Zambia Green Jobs Programme promotes the development of sustainable enterprises by boosting competitiveness and business growth thanks to green technologies.",
+					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/features/zambia/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---ed_emp/---gjp/documents/image/wcms_492376.jpg"
 				}
 			]
 		},
@@ -20379,22 +20380,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Women in agriculture: Cooking their way to empowerment and visibility",
+					"blurb": "An ILO initiative in north Lebanon is training women on food preparation and marketing, to help them make a living, market excess produce, and carve a visible role for themselves in the agricultural sector.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_453247/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_453854.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "Mushrooms mean opportunities for disabled persons in Bangladesh",
+					"blurb": "Farming mushrooms is offering a valuable income stream for disabled people in Bangladesh, helping give them more confidence and control over their future.",
+					"url": "http://www.ilo.org/dhaka/Informationresources/Publicinformation/features/WCMS_451901/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-dhaka/documents/image/wcms_451925.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Olive festival supports Jordan host communities in face of refugee crisis",
+					"blurb": "Local farmers and businesses came together to showcase products and explore avenues to develop the olive industry.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_321418/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_321628.jpg"
 				}
 			]
 		},
@@ -20419,22 +20420,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Educated, empowered, inspired: HIV risk reduced",
+					"blurb": "A novel programme helped HIV vulnerable women in southern Africa build business to improve their lives and the wellbeing of their families.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_481049/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_481605.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "Ergonomics in China: Tackling workplace stress",
+					"blurb": "The ILO works with unions and the government in China to reduce the impact of stress and poor ergonomics on workers.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_472313/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_474879.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "On the fire safety frontline: Lessons from Bangladeshi fire fighters",
+					"blurb": "Bangladeshi fire fighters received ILO-supported training, focusing on fire and building safety in garment factories.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_465067/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_465071.jpg"
 				}
 			]
 		},
@@ -20463,22 +20464,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Jordan: Eager teens enthused by entrepreneurship education",
+					"blurb": "Nearly 550 Jordanian youth learned how to set up and run a business through the “Know about Business” course which fills a big gap in entrepreneurship education.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_389391/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_389395.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "Apprenticeship programme offers escape from child labour in Jordan",
+					"blurb": "A youth apprenticeship programme launched by the International Labour Organization and the International Youth Foundation makes gains in the fight against child labour in Jordan.",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_478557/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_478560.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Vocational training changed my life",
+					"blurb": "The vocational training path has led to success for one Bangladeshi woman.",
+					"url": "http://www.ilo.org/dhaka/Informationresources/Publicinformation/features/WCMS_462057/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-dhaka/documents/image/wcms_462055.jpg"
 				}
 			]
 		},
@@ -20515,22 +20516,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Women weave a better future",
+					"blurb": "The ILO has set up weaving centres in one of Pakistan’s poorest provinces to boost the quality of the products, and improve skills and income of the weavers.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_418970/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_418977.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "Protecting pregnant workers’ rights in Lesotho",
+					"blurb": "How the Better Work Programme of the ILO and the International Finance Cooperation (IFC) promotes decent work for young women in Lesotho’s garment industry.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_403759/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_403763.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Global momentum means more women move into management",
+					"blurb": "New study shows positive link between female leadership and business performance and urges boost from current 5 per cent of women in top positions.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_333678/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_334074.jpg"
 				}
 			]
 		},
@@ -20547,22 +20548,16 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Irrigation projects aim to ease strain of Syria refugee crisis in Jordan",
+					"blurb": "A labour-intensive ILO initiative to develop water catchment and drip irrigation systems is playing a pivotal role in creating decent work opportunities in northern Jordan.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_463108/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_463116.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-				},
-				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Monrovia post Ebola: The quest for clean water and youth employment",
+					"blurb": "A new programme to strengthen the capacity of local communities in Liberia to improve sanitation highlights the importance of access to clean water.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_460487/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_460968.jpg"
 				}
 			]
 		},
@@ -20576,22 +20571,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Bangladesh: Lighting the Way to a Greener World of Work",
+					"blurb": "Solar power is increasingly seen as a convenient, affordable and environmentally friendly alternative for many in Bangladesh.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_183892/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_183890.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "Title Environmental sustainability is not a job killer",
+					"blurb": "ILO Green Jobs Programme coordinator, Peter Poschen, outlines the business and job opportunities that could emerge from a shift to a greener economy.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_205526/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_487323.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Solar home systems: Lighting the way to a greener world of work in Bangladesh",
+					"blurb": "The move toward greater use of solar energy is being encouraged by the Bangladesh government and is officially endorsed in its current sixth five-year development plan.",
+					"url": "http://www.ilo.org/asia/info/public/WCMS_216757/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_216976.jpg"
 				}
 			]
 		},
@@ -20652,22 +20647,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
+					"title": "Rising to the top of the footwear industry through Decent Work",
+					"blurb": "Bethlehem Tilahun Alemu, a young Ethiopian entrepreneur created one of the world’s fastest growing footwear brands by betting on Decent Work.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_346716/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_346758.jpg"
+				},
+				{
+					"title": "Diversity brings prosperity in Northern Sri Lanka",
+					"blurb": "The ILO and Australian government are working to reduce vulnerability and strengthen market networks for Sri Lankan smallholders.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_486061/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_486063.jpg"
+				},
+				{
+					"title": "From refugee in Kenya to business owner in Somalia",
+					"blurb": "The story of one of the beneficiaries of ILO’s Durable Solutions for Somali refugee returnees through Repatriation, Assistance and Promoting Sustainable Livelihood project.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-				},
-				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-				},
-				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
 				}
 			]
 		},
@@ -20692,22 +20687,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Technology transforming industries critical for growth and jobs in ASEAN",
+					"blurb": "A new study by the International Labour Organization’s Bureau for Employers’ Activities shows that the robot age is already a reality in ASEAN countries. More than 60 per cent of enterprises surveyed in the region see new technologies as a positive for increasing sales, labour productivity and employment of highly skilled workers..",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_496766/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496752.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "LDCs should focus on jobs and decent work for inclusive growth and economic transformation, says ILO",
+					"blurb": "Conference participants discuss the importance of developing globalised value chains, building infrastructure, boosting access to energy as well as women’s empowerment.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_250882/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_250888.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Ryder: Rana Plaza legacy must be improved working conditions globally",
+					"blurb": "The ILO Director-General highlights the human cost of poor working conditions and calls for action to ensure the Rana Plaza tragedy is not repeated.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_240371/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_241118.jpg"
 				}
 			]
 		},
@@ -20752,10 +20747,10 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "The vital role of social protection in the fight against inequality",
+					"blurb": "When I talk about schools and hospitals in the fight against poverty and inequality, people generally nod in agreement. They may have different ideas about how they should be run and paid for, but we agree on the power of health and the power of education.",
+					"url": "https://iloblog.org/2015/11/20/the-vital-role-of-social-protection-in-the-fight-against-inequality-2/",
+					"imageUrl": "https://iloblogdotorg.files.wordpress.com/2015/11/profile-photo.jpg?w=219"
 				},
 				{
 					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",

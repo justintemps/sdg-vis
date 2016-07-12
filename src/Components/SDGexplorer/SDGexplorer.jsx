@@ -17,7 +17,8 @@ const SDGexplorer = React.createClass({
 	selectSDG(sdg) {
 		this.setState({
 			sdg: sdg,
-			focusTarget : 0
+			focusTarget : 0,
+			currentStory : 0
 		});
 	},
 
