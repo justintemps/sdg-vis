@@ -32,8 +32,13 @@ const Icon = React.createClass({
 	},
 
 	render() {
+
+		const border = {
+			border : `1px solid ${this.props.color}`
+		};
+
 		return (
-			<div className="icon" onClick={this.clickHandler}>
+			<div className="icon" style={border} onClick={this.clickHandler}>
 				{sdg[this.props.sdg]}
 			</div>
 		);

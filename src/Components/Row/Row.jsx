@@ -11,6 +11,7 @@ const Row = React.createClass({
 				sdg={data[i].sdgNumber - 1}
 				key={data[i].sdgNumber}
 				src={data[i].sdgIcon}
+				color={data[i].sdgColor}
 				handler={this.props.handler}
 			/> );
 		}

@@ -20294,6 +20294,7 @@
 					sdg: _data2.default[i].sdgNumber - 1,
 					key: _data2.default[i].sdgNumber,
 					src: _data2.default[i].sdgIcon,
+					color: _data2.default[i].sdgColor,
 					handler: this.props.handler
 				}));
 			}
@@ -21171,7 +21172,12 @@
 			this.props.handler(this.props.sdg);
 		},
 		render: function render() {
-			return _react2.default.createElement("div", { className: "icon", onClick: this.clickHandler }, sdg[this.props.sdg]);
+	
+			var border = {
+				border: "1px solid " + this.props.color
+			};
+	
+			return _react2.default.createElement("div", { className: "icon", style: border, onClick: this.clickHandler }, sdg[this.props.sdg]);
 		}
 	});
 	
