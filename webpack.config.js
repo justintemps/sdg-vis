@@ -95,12 +95,17 @@ module.exports = {
 				loader: ExtractPlugin.extract("style", "css!sass")
 			},
 			{
+				test: /\.svg$/,
+				loader: "babel!svg-react"
+			}
+/*			{
 				test:   /\.(png|gif|jpe?g|svg|webp)$/i,
 				loader: "url",
 				query: {
 					limit: 10000
 				}
 			}
+*/
 		]
 	}
 };

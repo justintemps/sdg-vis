@@ -20193,13 +20193,13 @@
 	
 	var _Row2 = _interopRequireDefault(_Row);
 	
-	var _ViewerWindow = __webpack_require__(/*! ../ViewerWindow/ViewerWindow.jsx */ 187);
+	var _ViewerWindow = __webpack_require__(/*! ../ViewerWindow/ViewerWindow.jsx */ 295);
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	__webpack_require__(/*! ../../styles/base.scss */ 203);
+	__webpack_require__(/*! ../../styles/base.scss */ 311);
 	
-	__webpack_require__(/*! ./sdgexplorer.scss */ 205);
+	__webpack_require__(/*! ./sdgexplorer.scss */ 313);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -20279,7 +20279,7 @@
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
-	__webpack_require__(/*! ./row.scss */ 185);
+	__webpack_require__(/*! ./row.scss */ 293);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21087,75 +21087,75 @@
 	
 	__webpack_require__(/*! ./icon.scss */ 163);
 	
-	var _sdg = __webpack_require__(/*! ../../images/sdg1.svg */ 167);
+	var _sdg = __webpack_require__(/*! babel!svg-react!../../images/sdg1.svg */ 167);
 	
 	var _sdg2 = _interopRequireDefault(_sdg);
 	
-	var _sdg3 = __webpack_require__(/*! ../../images/sdg2.svg */ 168);
+	var _sdg3 = __webpack_require__(/*! babel!svg-react!../../images/sdg2.svg */ 276);
 	
 	var _sdg4 = _interopRequireDefault(_sdg3);
 	
-	var _sdg5 = __webpack_require__(/*! ../../images/sdg3.svg */ 169);
+	var _sdg5 = __webpack_require__(/*! babel!svg-react!../../images/sdg3.svg */ 277);
 	
 	var _sdg6 = _interopRequireDefault(_sdg5);
 	
-	var _sdg7 = __webpack_require__(/*! ../../images/sdg4.svg */ 170);
+	var _sdg7 = __webpack_require__(/*! babel!svg-react!../../images/sdg4.svg */ 278);
 	
 	var _sdg8 = _interopRequireDefault(_sdg7);
 	
-	var _sdg9 = __webpack_require__(/*! ../../images/sdg5.svg */ 171);
+	var _sdg9 = __webpack_require__(/*! babel!svg-react!../../images/sdg5.svg */ 279);
 	
 	var _sdg10 = _interopRequireDefault(_sdg9);
 	
-	var _sdg11 = __webpack_require__(/*! ../../images/sdg6.svg */ 172);
+	var _sdg11 = __webpack_require__(/*! babel!svg-react!../../images/sdg6.svg */ 280);
 	
 	var _sdg12 = _interopRequireDefault(_sdg11);
 	
-	var _sdg13 = __webpack_require__(/*! ../../images/sdg7.svg */ 173);
+	var _sdg13 = __webpack_require__(/*! babel!svg-react!../../images/sdg7.svg */ 281);
 	
 	var _sdg14 = _interopRequireDefault(_sdg13);
 	
-	var _sdg15 = __webpack_require__(/*! ../../images/sdg8.svg */ 174);
+	var _sdg15 = __webpack_require__(/*! babel!svg-react!../../images/sdg8.svg */ 282);
 	
 	var _sdg16 = _interopRequireDefault(_sdg15);
 	
-	var _sdg17 = __webpack_require__(/*! ../../images/sdg9.svg */ 175);
+	var _sdg17 = __webpack_require__(/*! babel!svg-react!../../images/sdg9.svg */ 283);
 	
 	var _sdg18 = _interopRequireDefault(_sdg17);
 	
-	var _sdg19 = __webpack_require__(/*! ../../images/sdg10.svg */ 176);
+	var _sdg19 = __webpack_require__(/*! babel!svg-react!../../images/sdg10.svg */ 284);
 	
 	var _sdg20 = _interopRequireDefault(_sdg19);
 	
-	var _sdg21 = __webpack_require__(/*! ../../images/sdg11.svg */ 177);
+	var _sdg21 = __webpack_require__(/*! babel!svg-react!../../images/sdg11.svg */ 285);
 	
 	var _sdg22 = _interopRequireDefault(_sdg21);
 	
-	var _sdg23 = __webpack_require__(/*! ../../images/sdg12.svg */ 178);
+	var _sdg23 = __webpack_require__(/*! babel!svg-react!../../images/sdg12.svg */ 286);
 	
 	var _sdg24 = _interopRequireDefault(_sdg23);
 	
-	var _sdg25 = __webpack_require__(/*! ../../images/sdg13.svg */ 179);
+	var _sdg25 = __webpack_require__(/*! babel!svg-react!../../images/sdg13.svg */ 287);
 	
 	var _sdg26 = _interopRequireDefault(_sdg25);
 	
-	var _sdg27 = __webpack_require__(/*! ../../images/sdg14.svg */ 180);
+	var _sdg27 = __webpack_require__(/*! babel!svg-react!../../images/sdg14.svg */ 288);
 	
 	var _sdg28 = _interopRequireDefault(_sdg27);
 	
-	var _sdg29 = __webpack_require__(/*! ../../images/sdg15.svg */ 181);
+	var _sdg29 = __webpack_require__(/*! babel!svg-react!../../images/sdg15.svg */ 289);
 	
 	var _sdg30 = _interopRequireDefault(_sdg29);
 	
-	var _sdg31 = __webpack_require__(/*! ../../images/sdg16.svg */ 182);
+	var _sdg31 = __webpack_require__(/*! babel!svg-react!../../images/sdg16.svg */ 290);
 	
 	var _sdg32 = _interopRequireDefault(_sdg31);
 	
-	var _sdg33 = __webpack_require__(/*! ../../images/sdg17.svg */ 183);
+	var _sdg33 = __webpack_require__(/*! babel!svg-react!../../images/sdg17.svg */ 291);
 	
 	var _sdg34 = _interopRequireDefault(_sdg33);
 	
-	var _sdg35 = __webpack_require__(/*! ../../images/sdg18.svg */ 184);
+	var _sdg35 = __webpack_require__(/*! babel!svg-react!../../images/sdg18.svg */ 292);
 	
 	var _sdg36 = _interopRequireDefault(_sdg35);
 	
@@ -21163,7 +21163,7 @@
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	var sdg = [_sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default, _sdg36.default];
+	var sdg = [_react2.default.createElement(_sdg2.default, null), _react2.default.createElement(_sdg4.default, null), _react2.default.createElement(_sdg6.default, null), _react2.default.createElement(_sdg8.default, null), _react2.default.createElement(_sdg10.default, null), _react2.default.createElement(_sdg12.default, null), _react2.default.createElement(_sdg14.default, null), _react2.default.createElement(_sdg16.default, null), _react2.default.createElement(_sdg18.default, null), _react2.default.createElement(_sdg20.default, null), _react2.default.createElement(_sdg22.default, null), _react2.default.createElement(_sdg24.default, null), _react2.default.createElement(_sdg28.default, null), _react2.default.createElement(_sdg28.default, null), _react2.default.createElement(_sdg30.default, null), _react2.default.createElement(_sdg32.default, null), _react2.default.createElement(_sdg34.default, null)];
 	
 	var Icon = _react2.default.createClass({
 		displayName: "Icon",
@@ -21171,12 +21171,13 @@
 			this.props.handler(this.props.sdg);
 		},
 		render: function render() {
-	
-			return _react2.default.createElement("img", { className: "icon", src: sdg[this.props.sdg], onClick: this.clickHandler });
+			return _react2.default.createElement("div", { className: "icon", onClick: this.clickHandler }, sdg[this.props.sdg]);
 		}
 	});
 	
 	exports.default = Icon;
+	
+	/*	<img className="icon" src={sdg[this.props.sdg]} onClick={this.clickHandler}/>*/
 
 /***/ },
 /* 163 */
@@ -21192,168 +21193,5472 @@
 /* 165 */,
 /* 166 */,
 /* 167 */
-/*!*****************************!*\
-  !*** ./src/images/sdg1.svg ***!
-  \*****************************/
-/***/ function(module, exports) {
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg1.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc2Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2UzMjUzYzt9LmNscy0ye2ZpbGw6I2ZmZjt9LmNscy0ze2ZpbGw6bm9uZTtzdHJva2U6I2ZmZjtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2Utd2lkdGg6MS4zMXB4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMTwvdGl0bGU+PGcgaWQ9IkVuZ2xpc2giPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iLTIuNDkiIHk9Ii0yLjE3IiB3aWR0aD0iMTE3LjMzIiBoZWlnaHQ9IjExNy4zMyIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg2LjA3LDUzLjMyYTMuMDksMy4wOSwwLDEsMSwzLjEsMy4wOSwzLjEsMy4xLDAsMCwxLTMuMS0zLjA5Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOTIuNzgsNTcuNjFhNC4xMiw0LjEyLDAsMCwxLDMuNzQsNC4xMVY3MC4zYTEuMiwxLjIsMCwwLDEtMi40LDBWNjIuOTNjMC0uMjgtLjA4LS42NS0uNTktLjY1LS4zNSwwLS40Mi4zNy0uNDMuNjFWODVhMS43MiwxLjcyLDAsMCwxLTMuNDUsMFY3Mi4yNGEuNDcuNDcsMCwwLDAtLjQ5LS41MWgwYS40Ny40NywwLDAsMC0uNS41MVY4NWExLjcyLDEuNzIsMCwxLDEtMy40NSwwVjYyLjg5YzAtLjI0LS4wOS0uNjEtLjQzLS42MS0uNTEsMC0uNTguMzctLjU4LjY1VjcwLjNhMS4yLDEuMiwwLDAsMS0yLjQsMFY2MS43MmE0LjEyLDQuMTIsMCwwLDEsMy43NS00LjExbC4yMywwaDYuNzZsLjI0LDAiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02Ny42Nyw1NC45NWEyLjkzLDIuOTMsMCwxLDAtMi45MywyLjkzLDIuOTMsMi45MywwLDAsMCwyLjkzLTIuOTMiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01OC44NCw2MS41OWwtMi40NCw3Ljkzcy0uNDMsMS40NS44LDEuODIsMS42LTEuMDYsMS42LTEuMDZsMi02LjYycy4xMS0uNTEuNDktLjQuMjQuNjUuMjQuNjVsLTMuNDIsMTIuNGgzLjE4Vjg1LjJhMS41MywxLjUzLDAsMCwwLDMuMDUsMFY3Ni4zMWguODdWODUuMmExLjUzLDEuNTMsMCwwLDAsMy4wNSwwVjc2LjMxaDMuMThMNjgsNjMuOTFzLS4xNC0uNTQuMjQtLjY1LjQ5LjQuNDkuNGwyLDYuNjJzLjM3LDEuNDIsMS42LDEuMDYuOC0xLjgyLjgtMS44MmwtMi40NC03Ljkzcy0uODctMi4yOS0yLjgtMi4yOUg2MS42NGMtMS45MywwLTIuOCwyLjI5LTIuOCwyLjI5Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTAuMTMsNTQuOTVhMi45MywyLjkzLDAsMSwwLTIuOTMsMi45MywyLjkzLDIuOTMsMCwwLDAsMi45My0yLjkzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDEuMjksNjEuNTlsLTIuNDMsNy45M3MtLjQ0LDEuNDUuOCwxLjgyLDEuNi0xLjA2LDEuNi0xLjA2bDItNi42MnMuMTEtLjUxLjQ5LS40LjI0LjY1LjI0LjY1bC0zLjQyLDEyLjRoMy4xOFY4NS4yYTEuNTMsMS41MywwLDAsMCwzLjA1LDBWNzYuMzFoLjg3Vjg1LjJhMS41MywxLjUzLDAsMCwwLDMuMDUsMFY3Ni4zMWgzLjE4bC0zLjQxLTEyLjRzLS4xNS0uNTQuMjQtLjY1LjQ5LjQuNDkuNGwyLDYuNjJzLjM3LDEuNDIsMS42LDEuMDYuOC0xLjgyLjgtMS44Mkw1My4xLDYxLjU5cy0uODctMi4yOS0yLjgtMi4yOUg0NC4wOWMtMS45MywwLTIuOCwyLjI5LTIuOCwyLjI5Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzcuNTEsNzEuMzVhMi40NCwyLjQ0LDAsMSwwLTIuNDQtMi40NCwyLjQ0LDIuNDQsMCwwLDAsMi40NCwyLjQ0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzEuNjcsNzguOTJBLjg1Ljg1LDAsMCwwLDcyLDgwLjA4YS44MS44MSwwLDAsMCwxLS4zNGwxLjMzLTQuMjNzLjIzLS4yOC4yMywwdjEwaDBhMS4yNSwxLjI1LDAsMSwwLDIuNSwwVjgxLjU0cy0uMDctLjU2LjM4LS41Ni4zOC41Ni4zOC41NnYzLjkzYTEuMjUsMS4yNSwwLDAsMCwyLjUxLDB2LTEwYzAtLjI5LjE1LS4wOC4xNS0uMDhsMSwyLjlhNi45Miw2LjkyLDAsMCwwLC41OSwxLjM1LjkyLjkyLDAsMCwwLDEuMjEtLjUuOTEuOTEsMCwwLDAtLjEtLjg5aDBjMC0uMDktMS41NS0zLjgzLTEuNzMtNC4zNUM4MSw3Mi4zMiw4MCw3Mi4zNCw3OSw3Mi4zMXMtMS41NCwwLTEuNTQsMC0uNjIsMC0xLjg5LDAtMS42Ny42OS0zLjA3LDQuM2MtLjIuNTItLjg4LDIuMi0uODksMi4zWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI0LDUzLjMyYTMuMDksMy4wOSwwLDEsMC0zLjEsMy4wOUEzLjEsMy4xLDAsMCwwLDI0LDUzLjMyIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTcuMjUsNTcuNjFhNC4xMyw0LjEzLDAsMCwwLTMuNzUsNC4xMVY3MC4zYTEuMiwxLjIsMCwwLDAsMi40LDBWNjIuOTNjMC0uMjguMDgtLjY1LjU5LS42NS4zNSwwLC40Mi4zNy40NC42MVY4NWExLjcyLDEuNzIsMCwxLDAsMy40NCwwVjcyLjI0YS40Ny40NywwLDAsMSwuNDktLjUxaDBhLjQ3LjQ3LDAsMCwxLC41LjUxVjg1YTEuNzIsMS43MiwwLDEsMCwzLjQ1LDBWNjIuODljMC0uMjQuMDktLjYxLjQzLS42MS41MSwwLC41OC4zNy41OC42NVY3MC4zYTEuMiwxLjIsMCwwLDAsMi40LDBWNjEuNzJhNC4xMiw0LjEyLDAsMCwwLTMuNzUtNC4xMWwtLjIzLDBIMTcuNDlsLS4yNCwwIi8+PGxpbmUgY2xhc3M9ImNscy0zIiB4MT0iMTQuNTUiIHkxPSI3MS41NCIgeDI9IjExLjgiIHkyPSI4Ni4xMSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI5LjY5LDcwLjA3YS44OS44OSwwLDAsMC0xLjY0LjQ3LDEuNjIsMS42MiwwLDAsMCwuMDkuMzlsMi40Niw0LjQ1YTEuNTcsMS41NywwLDAsMSwuMTUuNTl2OS41NWgwYTEuMiwxLjIsMCwxLDAsMi40LDBWODEuNzVzLS4wNy0uNTMuMzYtLjUzLjM2LjUzLjM2LjUzdjMuNzdhMS4yLDEuMiwwLDAsMCwyLjQxLDBWNzZhMS41OSwxLjU5LDAsMCwxLC4xNS0uNTlsMi4yNy00LjExYTQsNCwwLDAsMCwuMjgtLjczLjg5Ljg5LDAsMCwwLTEuNjQtLjQ3aDBjLS4wNy4wNi0xLjIxLDIuMDktMS41OSwyLjQ2YTEsMSwwLDAsMS0uNzUuMzZIMzJhMSwxLDAsMCwxLS43NS0uMzZjLS4zOC0uMzgtMS41MS0yLjQtMS41OS0yLjQ2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMzLjUyLDcxLjM1YTIuNDQsMi40NCwwLDEsMC0yLjQ0LTIuNDQsMi40NCwyLjQ0LDAsMCwwLDIuNDQsMi40NCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzMy41MiA3NC43NyAzNi4yOCA3Ni43OCAzNy41OSA4MS42IDMzLjUyIDgxLjYgMjkuNDUgODEuNiAzMC43NiA3Ni43OCAzMy41MiA3NC43NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzMy40MyAxMi42NSAzMy40MyAxOC4zOSAzMi4xNCAxOC4zOSAzMi4xNCA5LjI1IDMzLjY1IDkuMjUgMzUuMyAxNC41IDM1LjMgOS4yNSAzNi41OSA5LjI1IDM2LjU5IDE4LjM5IDM1LjI0IDE4LjM5IDMzLjQzIDEyLjY1Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzkuOTEsMTguNUEyLjE4LDIuMTgsMCwwLDAsNDIuMjQsMTZWMTEuNjFhMi4zMywyLjMzLDAsMSwwLTQuNjUsMFYxNmEyLjE4LDIuMTgsMCwwLDAsMi4zMiwyLjQ3bS0uNzgtNy4xM2MwLS41NS4yNC0uOTQuNzgtLjk0cy44LjM5LjguOTR2NC45MWMwLC41NS0uMjQuOTQtLjguOTRzLS43OC0uMzktLjc4LS45NFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zMy42NywyOC44aC43NGMxLjU1LDAsMi4xMi0uNzgsMi4xMi0yLjA2VjI0LjgxYzAtMS4yOC0uNTctMi0yLjEyLTJIMzIuMTRWMzEuOWgxLjU0Wm0wLTQuNzhoLjU3Yy41MywwLC43NS4yNC43NS43NHYyLjFhLjY2LjY2LDAsMCwxLS43NS43NmgtLjU3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM5Ljc3LDMyYTIuMTgsMi4xOCwwLDAsMCwyLjMzLTIuNDdWMjUuMTJhMi4zMywyLjMzLDAsMSwwLTQuNjUsMHY0LjQyQTIuMTgsMi4xOCwwLDAsMCwzOS43NywzMk0zOSwyNC44N2MwLS41NS4yNC0uOTQuNzgtLjk0cy44LjM5LjguOTR2NC45YzAsLjU1LS4yNC45NC0uOC45NHMtLjc4LS4zOS0uNzgtLjk0WiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI0Ni4wMiAzMS45IDQ3Ljc2IDIyLjc2IDQ2LjMxIDIyLjc2IDQ1LjI0IDI5LjEzIDQ1LjIyIDI5LjEzIDQ0LjE3IDIyLjc2IDQyLjYxIDIyLjc2IDQ0LjM1IDMxLjkgNDYuMDIgMzEuOSIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI1Mi4xOSAzMC42NCA1MC4wNiAzMC42NCA1MC4wNiAyNy44NiA1MS41OSAyNy44NiA1MS41OSAyNi42MyA1MC4wNiAyNi42MyA1MC4wNiAyNC4wMSA1Mi4xOSAyNC4wMSA1Mi4xOSAyMi43NiA0OC41MiAyMi43NiA0OC41MiAzMS45IDUyLjE5IDMxLjkgNTIuMTkgMzAuNjQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01NC42NywyNy43bDEuNDQsNC4xOWgxLjYybC0xLjQ3LTQuMTVjLjg4LS4yLDEuMjMtLjc4LDEuMjMtMS43N1YyNC44MWMwLTEuMjgtLjU3LTItMi4xMi0ySDUzLjEzVjMxLjloMS41NFptMC0zLjY5aC41MWMuNTMsMCwuNzYuMjQuNzYuNzRWMjYuMWEuNjcuNjcsMCwwLDEtLjc2Ljc1aC0uNTFaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjU5LjQgMzEuOSA2MC45NSAzMS45IDYwLjk1IDI0LjAxIDYyLjIyIDI0LjAxIDYyLjIyIDIyLjc2IDU4LjEzIDIyLjc2IDU4LjEzIDI0LjAxIDU5LjQgMjQuMDEgNTkuNCAzMS45Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjY0LjUyIDMxLjkgNjYuMDYgMzEuOSA2Ni4wNiAyOC40MiA2Ny43NSAyMi43NiA2Ni4yOSAyMi43NiA2NS4zNiAyNi4yMiA2NS4zNCAyNi4yMiA2NC40MSAyMi43NiA2Mi44MSAyMi43NiA2NC41MiAyOC40MiA2NC41MiAzMS45Ii8+PC9nPjxnIGlkPSJOVU1CRVJTX09OTFkiIGRhdGEtbmFtZT0iTlVNQkVSUyBPTkxZIj48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMTUuNjEgMTMuNDYgMTUuNjQgMTMuNDYgMTUuNjQgMzAuNzEgMTkuNDMgMzAuNzEgMTkuNDMgOC4xOCAxNi40IDguMTggMTIuOTEgMTIuMjcgMTIuOTEgMTYuMjIgMTIuOTUgMTYuMjIgMTUuNjEgMTMuNDYiLz48L2c+PC9zdmc+"
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg1",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.76" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '&#xD;\n&#xD;\n\t\t\t.cls-1 {&#xD;\n\t\t\t\tfill:#e3253c;&#xD;\n\t\t\t}&#xD;\n&#xD;\n\t\t\t.cls-2 {&#xD;\n\t\t\t\tfill:#fff;&#xD;\n\t\t\t}&#xD;\n&#xD;\n\t\t\t.cls-3 {&#xD;\n\t\t\t\tfill:none;&#xD;\n\t\t\t\tstroke:#fff;&#xD;\n\t\t\t\tstroke-linecap:round;&#xD;\n\t\t\t\tstroke-miterlimit: 10;&#xD;\n\t\t\t\tstroke-width:1.31px;&#xD;\n\t\t\t}&#xD;\n&#xD;\n\t\t'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG1 No Poverty'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-2.49', y: '-2.17', width: '117.33', height: '117.33' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M86.07,53.32a3.09,3.09,0,1,1,3.1,3.09,3.1,3.1,0,0,1-3.1-3.09' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M92.78,57.61a4.12,4.12,0,0,1,3.74,4.11V70.3a1.2,1.2,0,0,1-2.4,0V62.93c0-.28-.08-.65-.59-.65-.35,0-.42.37-.43.61V85a1.72,1.72,0,0,1-3.45,0V72.24a.47.47,0,0,0-.49-.51h0a.47.47,0,0,0-.5.51V85a1.72,1.72,0,1,1-3.45,0V62.89c0-.24-.09-.61-.43-.61-.51,0-.58.37-.58.65V70.3a1.2,1.2,0,0,1-2.4,0V61.72a4.12,4.12,0,0,1,3.75-4.11l.23,0h6.76l.24,0' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M67.67,54.95a2.93,2.93,0,1,0-2.93,2.93,2.93,2.93,0,0,0,2.93-2.93' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M58.84,61.59l-2.44,7.93s-.43,1.45.8,1.82,1.6-1.06,1.6-1.06l2-6.62s.11-.51.49-.4.24.65.24.65l-3.42,12.4h3.18V85.2a1.53,1.53,0,0,0,3.05,0V76.31h.87V85.2a1.53,1.53,0,0,0,3.05,0V76.31h3.18L68,63.91s-.14-.54.24-.65.49.4.49.4l2,6.62s.37,1.42,1.6,1.06.8-1.82.8-1.82l-2.44-7.93s-.87-2.29-2.8-2.29H61.64c-1.93,0-2.8,2.29-2.8,2.29' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M50.13,54.95a2.93,2.93,0,1,0-2.93,2.93,2.93,2.93,0,0,0,2.93-2.93' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.29,61.59l-2.43,7.93s-.44,1.45.8,1.82,1.6-1.06,1.6-1.06l2-6.62s.11-.51.49-.4.24.65.24.65l-3.42,12.4h3.18V85.2a1.53,1.53,0,0,0,3.05,0V76.31h.87V85.2a1.53,1.53,0,0,0,3.05,0V76.31h3.18l-3.41-12.4s-.15-.54.24-.65.49.4.49.4l2,6.62s.37,1.42,1.6,1.06.8-1.82.8-1.82L53.1,61.59s-.87-2.29-2.8-2.29H44.09c-1.93,0-2.8,2.29-2.8,2.29' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M77.51,71.35a2.44,2.44,0,1,0-2.44-2.44,2.44,2.44,0,0,0,2.44,2.44' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M71.67,78.92A.85.85,0,0,0,72,80.08a.81.81,0,0,0,1-.34l1.33-4.23s.23-.28.23,0v10h0a1.25,1.25,0,1,0,2.5,0V81.54s-.07-.56.38-.56.38.56.38.56v3.93a1.25,1.25,0,0,0,2.51,0v-10c0-.29.15-.08.15-.08l1,2.9a6.92,6.92,0,0,0,.59,1.35.92.92,0,0,0,1.21-.5.91.91,0,0,0-.1-.89h0c0-.09-1.55-3.83-1.73-4.35C81,72.32,80,72.34,79,72.31s-1.54,0-1.54,0-.62,0-1.89,0-1.67.69-3.07,4.3c-.2.52-.88,2.2-.89,2.3Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M24,53.32a3.09,3.09,0,1,0-3.1,3.09A3.1,3.1,0,0,0,24,53.32' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M17.25,57.61a4.13,4.13,0,0,0-3.75,4.11V70.3a1.2,1.2,0,0,0,2.4,0V62.93c0-.28.08-.65.59-.65.35,0,.42.37.44.61V85a1.72,1.72,0,1,0,3.44,0V72.24a.47.47,0,0,1,.49-.51h0a.47.47,0,0,1,.5.51V85a1.72,1.72,0,1,0,3.45,0V62.89c0-.24.09-.61.43-.61.51,0,.58.37.58.65V70.3a1.2,1.2,0,0,0,2.4,0V61.72a4.12,4.12,0,0,0-3.75-4.11l-.23,0H17.49l-.24,0' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M29.69,70.07a.89.89,0,0,0-1.64.47,1.62,1.62,0,0,0,.09.39l2.46,4.45a1.57,1.57,0,0,1,.15.59v9.55h0a1.2,1.2,0,1,0,2.4,0V81.75s-.07-.53.36-.53.36.53.36.53v3.77a1.2,1.2,0,0,0,2.41,0V76a1.59,1.59,0,0,1,.15-.59l2.27-4.11a4,4,0,0,0,.28-.73.89.89,0,0,0-1.64-.47h0c-.07.06-1.21,2.09-1.59,2.46a1,1,0,0,1-.75.36H32a1,1,0,0,1-.75-.36c-.38-.38-1.51-2.4-1.59-2.46Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M33.52,71.35a2.44,2.44,0,1,0-2.44-2.44,2.44,2.44,0,0,0,2.44,2.44' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M39.91,18.5A2.18,2.18,0,0,0,42.24,16V11.61a2.33,2.33,0,1,0-4.65,0V16a2.18,2.18,0,0,0,2.32,2.47m-.78-7.13c0-.55.24-.94.78-.94s.8.39.8.94v4.91c0,.55-.24.94-.8.94s-.78-.39-.78-.94Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M33.67,28.8h.74c1.55,0,2.12-.78,2.12-2.06V24.81c0-1.28-.57-2-2.12-2H32.14V31.9h1.54Zm0-4.78h.57c.53,0,.75.24.75.74v2.1a.66.66,0,0,1-.75.76h-.57Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M39.77,32a2.18,2.18,0,0,0,2.33-2.47V25.12a2.33,2.33,0,1,0-4.65,0v4.42A2.18,2.18,0,0,0,39.77,32M39,24.87c0-.55.24-.94.78-.94s.8.39.8.94v4.9c0,.55-.24.94-.8.94s-.78-.39-.78-.94Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M54.67,27.7l1.44,4.19h1.62l-1.47-4.15c.88-.2,1.23-.78,1.23-1.77V24.81c0-1.28-.57-2-2.12-2H53.13V31.9h1.54Zm0-3.69h.51c.53,0,.76.24.76.74V26.1a.67.67,0,0,1-.76.75h-.51Z' }),
+	                React.createElement('line', { className: 'cls-3', x1: '14.55', y1: '71.54', x2: '11.8', y2: '86.11' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '33.52 74.77 36.28 76.78 37.59 81.6 33.52 81.6 29.45 81.6 30.76 76.78 33.52 74.77' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '33.43 12.65 33.43 18.39 32.14 18.39 32.14 9.25 33.65 9.25 35.3 14.5 35.3 9.25 36.59 9.25 36.59 18.39 35.24 18.39 33.43 12.65' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '46.02 31.9 47.76 22.76 46.31 22.76 45.24 29.13 45.22 29.13 44.17 22.76 42.61 22.76 44.35 31.9 46.02 31.9' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '52.19 30.64 50.06 30.64 50.06 27.86 51.59 27.86 51.59 26.63 50.06 26.63 50.06 24.01 52.19 24.01 52.19 22.76 48.52 22.76 48.52 31.9 52.19 31.9 52.19 30.64' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '59.4 31.9 60.95 31.9 60.95 24.01 62.22 24.01 62.22 22.76 58.13 22.76 58.13 24.01 59.4 24.01 59.4 31.9' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '64.52 31.9 66.06 31.9 66.06 28.42 67.75 22.76 66.29 22.76 65.36 26.22 65.34 26.22 64.41 22.76 62.81 22.76 64.52 28.42 64.52 31.9' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'cls-2', points: '15.61 13.46 15.64 13.46 15.64 30.71 19.43 30.71 19.43 8.18 16.4 8.18 12.91 12.27 12.91 16.22 12.95 16.22 15.61 13.46' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
 
 /***/ },
 /* 168 */
-/*!*****************************!*\
-  !*** ./src/images/sdg2.svg ***!
-  \*****************************/
-/***/ function(module, exports) {
+/*!***************************************!*\
+  !*** ./~/svg-react-loader/helpers.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2RlYTczYTt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDY8L3RpdGxlPjxnIGlkPSJFbmdsaXNoIj48cmVjdCBjbGFzcz0iY2xzLTEiIHg9Ii0yLjMzIiB5PSItMy4yNSIgd2lkdGg9IjExOS45NSIgaGVpZ2h0PSIxMTguNDEiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NC41OCw5NXYxLjU3YS4xMi4xMiwwLDAsMCwwLC4wNy43NC43NCwwLDAsMCwuNzMuNzFoMTguNWEuNzQuNzQsMCwwLDAsLjczLS43NGgwVjk0Ljc5Qzc0LjkxLDkxLjM5LDgyLjY5LDgzLDg0LjQsNzIuNzN2LS4wNmEuNTkuNTksMCwwLDAsMC0uMS43NC43NCwwLDAsMC0uNzUtLjc1SDI0LjkxYS43NC43NCwwLDAsMC0uNzUuNzVsMCwuMzNDMjYsODMuMjUsMzQsOTEuNzEsNDQuNTgsOTUiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02NC41Miw0Ni43NGMtLjI0LjM0LTUuOTIsOC41Mi4xMywxNS4xMywyLjc3LDMsMi41Myw1LjcxLDEuNzQsNy41MmgzLjg4Yy43OS0yLjY3LjQ2LTYtMi42OS05LjQ2LTQuNDUtNC44Ny4wNi0xMS40NS4xMi0xMS41NWExLjQ1LDEuNDUsMCwwLDAtLjYzLTIuMTcsMi4wNiwyLjA2LDAsMCwwLTIuNTUuNTQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01NC42OSw2OS4zOGgzLjg4Yy43OC0yLjY3LjQ2LTYtMi42OS05LjQ2LTQuNDYtNC44Ny4wNS0xMS40NS4xMi0xMS41NmExLjQ1LDEuNDUsMCwwLDAtLjYzLTIuMTcsMi4wNiwyLjA2LDAsMCwwLTIuNTUuNTRjLS4yNC4zNC01LjkzLDguNTIuMTMsMTUuMTMsMi43NywzLDIuNTMsNS43MSwxLjc0LDcuNTIiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00MS4xMyw0Ni43NGMtLjI1LjM0LTUuOTIsOC41Mi4xMiwxNS4xMywyLjc3LDMsMi41Myw1LjcxLDEuNzQsNy41MmgzLjg4Yy43OC0yLjY3LjQ2LTYtMi42OS05LjQ2LTQuNDYtNC44Ny4wNi0xMS40NS4xMy0xMS41NmExLjQ1LDEuNDUsMCwwLDAtLjYzLTIuMTcsMi4wNSwyLjA1LDAsMCwwLTIuNTUuNTQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zMy40MiwxNy4yNWgyLjMzVjE4LjVIMzEuODJWMTcuMjVsMi40MS02LjYzSDMyLjA2VjkuMzdoMy43OXYxLjI1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM2Ljc5LDkuMzdoMy42NnYxLjI1SDM4LjMzdjIuNjFoMS41MnYxLjI0SDM4LjMzdjIuNzdoMi4xM1YxOC41SDM2Ljc5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQyLjk1LDE0LjMxVjE4LjVINDEuNDFWOS4zN2gyLjI0YzEuNTUsMCwyLjExLjc3LDIuMTEsMnYxLjE3YzAsMS0uMzUsMS41Ni0xLjIzLDEuNzZMNDYsMTguNUg0NC4zOVptMC0zLjY5djIuODRoLjUxYS42Ni42NiwwLDAsMCwuNzUtLjc1VjExLjM2YzAtLjUtLjIzLS43NC0uNzUtLjc0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ2Ljc0LDE2LjE0VjExLjczYTIuMzMsMi4zMywwLDEsMSw0LjY1LDB2NC40MmEyLjMzLDIuMzMsMCwxLDEtNC42NSwwWm0zLjExLjI0di00LjljMC0uNTUtLjI0LS45NC0uNzktLjk0cy0uNzguMzktLjc4Ljk0djQuOWMwLC41NS4yNC45NC43OC45NFM0OS44NSwxNi45NCw0OS44NSwxNi4zOVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNC45MiwyNy44NkgzMy40NHY0SDMxLjkxVjIyLjc1aDEuNTR2My44N2gxLjQ4VjIyLjc1aDEuNTV2OS4xM0gzNC45MloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00MS45NCwyMi43NXY2LjkxYzAsMS40MS0uNjEsMi4zMy0yLjE3LDIuMzNhMi4wNiwyLjA2LDAsMCwxLTIuMjktMi4zM1YyMi43NUgzOXY3LjA2YzAsLjU0LjIyLjkuNzUuOXMuNzUtLjM2Ljc1LS45VjIyLjc1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ0LjI1LDI2LjE1djUuNzRINDNWMjIuNzVoMS41MUw0Ni4xMiwyOFYyMi43NUg0Ny40djkuMTNINDYuMDVaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTAuNzMsMjdoMi4xOHY0Ljg4aC0xLjF2LTFBMS4zOCwxLjM4LDAsMCwxLDUwLjM0LDMyYy0xLjMyLDAtMS45My0xLjA1LTEuOTMtMi40N1YyNS4xMWEyLjE2LDIuMTYsMCwwLDEsMi4zLTIuNDZjMS43LDAsMi4yLjk0LDIuMiwyLjI5di44MWgtMS40di0uOTNjMC0uNTctLjIyLS44OS0uNzctLjg5cy0uNzkuMzktLjc5Ljk0djQuOWMwLC41NS4yMy45NC43NS45NHMuNzUtLjI4Ljc1LS44OFYyOC4yMmgtLjczWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUzLjkyLDIyLjc1aDMuNjZWMjRINTUuNDZ2Mi42MUg1N3YxLjI0SDU1LjQ2djIuNzdoMi4xM3YxLjI1SDUzLjkyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYwLjA4LDI3Ljd2NC4xOUg1OC41NFYyMi43NWgyLjI0YzEuNTUsMCwyLjExLjc3LDIuMTEsMlYyNmMwLDEtLjM1LDEuNTYtMS4yMywxLjc2bDEuNDcsNC4xNUg2MS41MlptMC0zLjY5djIuODRoLjUxYS42Ni42NiwwLDAsMCwuNzUtLjc1VjI0Ljc1YzAtLjUtLjIzLS43NC0uNzUtLjc0WiIvPjwvZz48ZyBpZD0iTlVNQkVSU19PTkxZIiBkYXRhLW5hbWU9Ik5VTUJFUlMgT05MWSI+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjMuNCwyNy43OUgxNy4yMlYyNi43M2E0LjI4LDQuMjgsMCwwLDEsMS41OS0zLjQ0bDIuNDEtMi41NWMyLTIuMDgsMi4zOC0zLjQxLDIuMzgtNS42NlYxMi45MWMwLTMuMjEtMS41NS00LjczLTQuOTMtNC43M3MtNSwxLjc1LTUsNC45djIuNzFoMy40NFYxM2MwLTEuMzUuNjYtMS43NSwxLjQ2LTEuNzVzMS4zNi4zLDEuMzYsMS42OXYxLjg1YzAsMS44NS0uMTcsMi41OC0xLjM5LDMuODdsLTIuMTIsMi4yNWMtMiwyLjE4LTIuODEsMy42NC0yLjgxLDUuODV2NC4xM0gyMy40WiIvPjwvZz48L3N2Zz4="
+	var forEach  = __webpack_require__(/*! lodash/forEach */ 169);
+	var ATTR_KEY = 'data-svgreactloader';
+	
+	var MODULE = {
+	    /**
+	     * @param {HTMLElement}
+	     */
+	    applyAttributes: function (el) {
+	        var data = MODULE.hasXmlAttributes(el);
+	        if (data) {
+	            forEach(JSON.parse(data), function (args) {
+	                var method = 'setAttribute' + (args.length === 3 ? 'NS' : '');
+	                el[method].apply(el, args);
+	            });
+	        }
+	    },
+	    /**
+	     * @param {HTMLElement}
+	     */
+	    hasXmlAttributes: function (el) {
+	        return el && el.getAttribute(ATTR_KEY);
+	    },
+	    /**
+	     * @param {React.Component}
+	     */
+	    applyXmlAttributes: function (component) {
+	        var domEl = MODULE.reactDOM.findDOMNode(component);
+	        var fn = MODULE.applyAttributes;
+	
+	        if (domEl) {
+	            fn(domEl);
+	            forEach(domEl.querySelectorAll('[' + ATTR_KEY + ']'), fn);
+	        }
+	    }
+	};
+	
+	module.exports = function helpers (reactDOM) {
+	    if (!MODULE.reactDOM) {
+	        MODULE.reactDOM = reactDOM;
+	    }
+	    return MODULE;
+	};
+
 
 /***/ },
 /* 169 */
 /*!*****************************!*\
-  !*** ./src/images/sdg3.svg ***!
+  !*** ./~/lodash/forEach.js ***!
   \*****************************/
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc2Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzRjYTA0Njt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDc8L3RpdGxlPjxnIGlkPSJFbmdsaXNoIj48cmVjdCBjbGFzcz0iY2xzLTEiIHg9Ii0yLjgzIiB5PSItMS45MyIgd2lkdGg9IjExOC40NiIgaGVpZ2h0PSIxMTcuMDgiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02MC4wNiw5NC41MUg2MGExLjI4LDEuMjgsMCwwLDEtMS4xOS0xLjA3bC00LTIzLjE2LTYsMTEuMTdhMS4yOSwxLjI5LDAsMCwxLTIuNC0uNDNMNDMuODMsNjMuMTUsMzkuMTUsNzMuNjZhMS4yOSwxLjI5LDAsMCwxLTEuMTcuNzZIMTkuNzlhMS4yOSwxLjI5LDAsMSwxLDAtMi41N0gzNy4xNEw0My4zLDU4YTEuMjksMS4yOSwwLDAsMSwyLjQ1LjM0TDQ4LjM4LDc2LjhsNS45NC0xMWExLjI5LDEuMjksMCwwLDEsMi40LjM5TDYwLjQsODcuNjMsNzMuODIsNDNhMS4yOSwxLjI5LDAsMCwxLDIuMzktLjE5TDgzLjI3LDU3LjVBMS4yOSwxLjI5LDAsMCwxLDgxLDU4LjYxTDc1LjMzLDQ2Ljk1bC0xNCw0Ni42NUExLjI4LDEuMjgsMCwwLDEsNjAuMDYsOTQuNTFaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzMuNTUsMTMuNTJIMzUuOHY1SDM0LjY2di0xYTEuNDMsMS40MywwLDAsMS0xLjUxLDEuMTRjLTEuMzYsMC0yLTEuMDgtMi0yLjU0VjExLjU3QTIuMjMsMi4yMywwLDAsMSwzMy41NCw5YzEuNzUsMCwyLjI2LDEsMi4yNiwyLjM2di44M0gzNC4zNnYtMWMwLS41OC0uMjItLjkyLS43OS0uOTJzLS44Mi40LS44MiwxdjUuMDVjMCwuNTcuMjQsMSwuNzgsMXMuNzgtLjI5Ljc4LS45VjE0Ljc3aC0uNzVaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzYuNywxNi4xMlYxMS41N2EyLjQsMi40LDAsMSwxLDQuNzksMHY0LjU1YTIuNCwyLjQsMCwxLDEtNC43OSwwWm0zLjIxLjI1VjExLjMyYzAtLjU3LS4yNS0xLS44Mi0xcy0uODEuNC0uODEsMXY1LjA1YzAsLjU3LjI1LDEsLjgxLDFTMzkuOTEsMTYuOTQsMzkuOTEsMTYuMzdaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDIuMzksMTYuMTJWMTEuNTdhMi40LDIuNCwwLDEsMSw0Ljc5LDB2NC41NWEyLjQsMi40LDAsMSwxLTQuNzksMFptMy4yMS4yNVYxMS4zMmMwLS41Ny0uMjUtMS0uODItMXMtLjgxLjQtLjgxLDF2NS4wNWMwLC41Ny4yNSwxLC44MSwxUzQ1LjYsMTYuOTQsNDUuNiwxNi4zN1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01Mi44MiwxMS42NlYxNmMwLDEuNDQtLjYsMi41My0yLjI5LDIuNTNINDguMDhWOS4xNGgyLjQ0QzUyLjIyLDkuMTQsNTIuODIsMTAuMjEsNTIuODIsMTEuNjZabS0yLjQ4LDUuNmMuNjUsMCwuOS0uMzkuOS0xVjExLjM3YS44Mi44MiwwLDAsMC0uOS0uOTRoLS42N3Y2LjgzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU4LjI4LDE0LjRINTYuNzZ2NC4xNUg1NS4xN1Y5LjE0aDEuNTh2NGgxLjUzdi00aDEuNnY5LjQxaC0xLjZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjAuNzgsOS4xNGgzLjc4djEuMjlINjIuMzZ2Mi42OWgxLjU3VjE0LjRINjIuMzZ2Mi44NmgyLjE5djEuMjlINjAuNzhaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjUuMTUsMTguNTVsMS43OC05LjQxaDEuOGwxLjc5LDkuNDFINjguOWwtLjI5LTEuNzJINjYuOTNsLS4yOCwxLjcyWm0yLTNINjguNGwtLjYyLTMuNzhoMFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03MS4xOCw5LjE0aDEuNTh2OC4xMmgxLjg5djEuMjlINzEuMThaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzQuMjksOS4xNGg0LjIxdjEuMjlINzcuMTl2OC4xMmgtMS42VjEwLjQzaC0xLjNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODIuMzQsMTQuNEg4MC44MXY0LjE1SDc5LjIzVjkuMTRoMS41OHY0aDEuNTN2LTRoMS42djkuNDFoLTEuNloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zMC45MSwzMS43NGwxLjc4LTkuNDFoMS44bDEuNzksOS40MUgzNC42NkwzNC4zNywzMEgzMi42OWwtLjI4LDEuNzJabTItM2gxLjI2TDMzLjU0LDI1aDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzguMjcsMjUuODJ2NS45MUgzNi45NFYyMi4zMmgxLjU1bDEuNzEsNS40di01LjRoMS4zMnY5LjQxSDQwLjEzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ3LjE1LDI0Ljg1djQuMzZjMCwxLjQ0LS42LDIuNTMtMi4yOSwyLjUzSDQyLjQyVjIyLjMyaDIuNDRDNDYuNTUsMjIuMzIsNDcuMTUsMjMuMzksNDcuMTUsMjQuODVabS0yLjQ4LDUuNmMuNjUsMCwuOS0uMzkuOS0xVjI0LjU2YS44Mi44MiwwLDAsMC0uOS0uOTRINDR2Ni44M1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01Mi45MywyNS45Miw1MiwzMS43NEg1MC41NWwtMS4yNi05LjQxaDEuNTNsLjc0LDZoMGwuNzktNmgxLjI5bC44Nyw2aDBsLjcyLTZoMS4zM2wtMS4yMiw5LjQxaC0xLjVsLS45My01LjgyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU3LjI3LDIyLjMySDYxdjEuMjlINTguODV2Mi42OWgxLjU3djEuMjhINTguODV2Mi44Nkg2MXYxLjI5SDU3LjI3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYxLjg5LDIyLjMyaDEuNTh2OC4xMmgxLjg5djEuMjlINjEuODlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjYuMDgsMjIuMzJoMS41OHY4LjEyaDEuODl2MS4yOUg2Ni4wOFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03Mi42LDIyLjMyaDIuMjljMS41OCwwLDIuMTEuNzQsMi4xMSwyLjA3djFhMS4zNywxLjM3LDAsMCwxLS45NCwxLjUsMS40MywxLjQzLDAsMCwxLDEuMTgsMS41N3YxLjI1YzAsMS4zMy0uNiwyLjA3LTIuMTgsMi4wN0g3Mi42Wm0xLjU4LDRoLjU2YS42Ny42NywwLDAsMCwuNzUtLjc2VjI0LjM4YS42Ny42NywwLDAsMC0uNzYtLjc2aC0uNTRabTAsMS4yMXYyLjk0aC42OWEuNjguNjgsMCwwLDAsLjc4LS43NlYyOC4yNmMwLS41LS4yNC0uNzYtLjc5LS43NloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03OCwyMi4zMkg4MS44djEuMjlINzkuNjF2Mi42OWgxLjU3djEuMjhINzkuNjF2Mi44Nkg4MS44djEuMjlINzhaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODIuNjUsMjIuMzJoMS41OHY5LjQxSDgyLjY1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg2LjQ4LDI1LjgydjUuOTFIODUuMTVWMjIuMzJIODYuN2wxLjcxLDUuNHYtNS40aDEuMzJ2OS40MUg4OC4zNFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik05MywyNi43MWgyLjI1djVIOTQuMTN2LTFhMS40MywxLjQzLDAsMCwxLTEuNTEsMS4xNGMtMS4zNiwwLTItMS4wOC0yLTIuNTRWMjQuNzVBMi4yMywyLjIzLDAsMCwxLDkzLDIyLjIxYzEuNzUsMCwyLjI2LDEsMi4yNiwyLjM2di44M0g5My44MnYtMWMwLS41OC0uMjItLjkyLS43OS0uOTJzLS44Mi40LS44MiwxdjUuMDVjMCwuNTcuMjQsMSwuNzgsMXMuNzgtLjI5Ljc4LS45VjI4SDkzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY4Ljk0LDI2LjEyaDIuMjR2MS4yOUg2OC45NFoiLz48L2c+PGcgaWQ9Ik5VTUJFUlNfT05MWSIgZGF0YS1uYW1lPSJOVU1CRVJTIE9OTFkiPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE2LDMxLjIyYzMuODIsMCw1LjQ4LTIsNS40OC01LjE1VjIyLjc2YzAtMi4wNi0uOS0zLjM5LTIuNzktMy44MmEzLjYsMy42LDAsMCwwLDIuNTktMy42NXYtMmMwLTMuMTktMS41My01LjE1LTUtNS4xNUMxMi4zMiw4LjE4LDExLDEwLjUsMTEsMTMuODJ2MmgzLjQ1VjEzLjUyYzAtMS4zOS40My0yLjE5LDEuNjMtMi4xOXMxLjYzLjgsMS42MywydjIuNDJjMCwxLjItLjgsMS44My0yLDEuODNIMTQuMjJWMjAuNWgxLjZjMS4zMywwLDEuODYuNjMsMS44NiwxLjgzVjI2YzAsMS4xOS0uNTMsMi0xLjY5LDJzLTEuNzYtLjg2LTEuNzYtMi4xOVYyMi42NkgxMC43N3YzYzAsMy40MiwxLjM2LDUuNjEsNS4yMSw1LjYxIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOTMuMzksNjkuODRjMC0zLjE0LTItNS42OS01LjA3LTUuNjktMS41MywwLTMuMzcsMS42Ny00LjM3LDIuNy0xLTEtMi43Mi0yLjctNC4yNS0yLjctMy4wNSwwLTUuMTksMi41NS01LjE5LDUuNjlhNS43NSw1Ljc1LDAsMCwwLDEuNjIsNGgwTDg0LDgxLjcxbDcuODItNy44M2gwQTUuNzYsNS43NiwwLDAsMCw5My4zOSw2OS44NFoiLz48L2c+PC9zdmc+"
+	var arrayEach = __webpack_require__(/*! ./_arrayEach */ 170),
+	    baseEach = __webpack_require__(/*! ./_baseEach */ 171),
+	    baseIteratee = __webpack_require__(/*! ./_baseIteratee */ 195),
+	    isArray = __webpack_require__(/*! ./isArray */ 190);
+	
+	/**
+	 * Iterates over elements of `collection` and invokes `iteratee` for each element.
+	 * The iteratee is invoked with three arguments: (value, index|key, collection).
+	 * Iteratee functions may exit iteration early by explicitly returning `false`.
+	 *
+	 * **Note:** As with other "Collections" methods, objects with a "length"
+	 * property are iterated like arrays. To avoid this behavior use `_.forIn`
+	 * or `_.forOwn` for object iteration.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @alias each
+	 * @category Collection
+	 * @param {Array|Object} collection The collection to iterate over.
+	 * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	 * @returns {Array|Object} Returns `collection`.
+	 * @see _.forEachRight
+	 * @example
+	 *
+	 * _([1, 2]).forEach(function(value) {
+	 *   console.log(value);
+	 * });
+	 * // => Logs `1` then `2`.
+	 *
+	 * _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+	 *   console.log(key);
+	 * });
+	 * // => Logs 'a' then 'b' (iteration order is not guaranteed).
+	 */
+	function forEach(collection, iteratee) {
+	  var func = isArray(collection) ? arrayEach : baseEach;
+	  return func(collection, baseIteratee(iteratee, 3));
+	}
+	
+	module.exports = forEach;
+
 
 /***/ },
 /* 170 */
-/*!*****************************!*\
-  !*** ./src/images/sdg4.svg ***!
-  \*****************************/
+/*!********************************!*\
+  !*** ./~/lodash/_arrayEach.js ***!
+  \********************************/
 /***/ function(module, exports) {
 
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2M1MjAyZTt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDEyPC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIwLjExIiB5PSItMS45MyIgd2lkdGg9IjExNS4yMSIgaGVpZ2h0PSIxMTcuMDkiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNDkuNTYgNTkuOTMgMjkuNTIgNDguMzUgMjkuNTIgODUuOCA0OS41NiA5MS44NCA0OS41NiA1OS45MyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI1MS43NiA2MC4wMSA1MS43NiA5MS44NiA3MS45NCA4NS43OSA3MS45NCA0OC4zNiA1MS43NiA2MC4wMSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg3LjY3LDQ3LjQxYTIuMzcsMi4zNywwLDEsMC00Ljc0LDBWNTBoNC43NFoiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iODMuNTIgODUuMTMgODIuOTMgODUuMTMgODUuMzEgOTMuNDIgODcuNjcgODUuMTMgODcuMDggODUuMTMgODcuNjcgODUuMTMgODcuNjcgNTEuODIgODcuMDggNTEuODIgODYuNSA1MS44MiA4NS44NyA1MS44MiA4NC42OSA1MS44MiA4NC4xMSA1MS44MiA4My41MiA1MS44MiA4Mi45MyA1MS44MiA4Mi45MyA4NS4xMyA4My41MiA4NS4xMyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI3Ni4yNCA0OS45NiA3NC4xIDQ4LjI3IDc0LjEgODYuODEgNTEuODIgOTQuMDEgNTAuNzkgOTQuMDEgNTAuNTkgOTQuMDEgNDkuNTYgOTQuMDEgMjcuMzkgODcuODEgMjcuMzkgNDguMjcgMjUuMjQgNDkuOTYgMjUuMjQgODkuMzIgNDkuNDYgOTYuMDMgNTAuNTkgOTYuMDMgNTAuNzkgOTYuMDMgNTEuOTIgOTYuMDMgNzQuMjcgODguOTMgNzYuMjQgODguMzUgNzYuMjQgNDkuOTYiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zMy42NywxOC40OXYuNjJsMi45LjU0VjE4LjUxbC0xLjEzLS4yMmEyLjE5LDIuMTksMCwwLDAsMS4xMy0yLjE2VjExLjcxYTIuMzMsMi4zMywwLDEsMC00LjY1LDB2NC40MmEyLjEsMi4xLDAsMCwwLDEuNzUsMi4zNm0tLjIxLTdjMC0uNTUuMjQtLjk0Ljc4LS45NHMuNzkuMzkuNzkuOTR2NWMwLC41NC0uMjQuOTQtLjc5Ljk0cy0uNzgtLjQxLS43OC0uOTRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzkuODcsMTguNmMxLjU2LDAsMi4xNy0uOTIsMi4xNy0yLjMzVjkuMzVINDAuNjJ2Ny4wNmMwLC41NC0uMjIuOS0uNzUuOXMtLjc1LS4zNi0uNzUtLjlWOS4zNUgzNy41N3Y2LjkyYTIuMDYsMi4wNiwwLDAsMCwyLjI5LDIuMzMiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NC4zMSwxNi44MmgxLjYzbC4yOCwxLjY3SDQ3LjhMNDYuMDYsOS4zNUg0NC4zMWwtMS43Myw5LjE0SDQ0Wm0uODEtNC44OWgwbC42MSwzLjY3SDQ0LjUxWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI1MS45NCAxNy4yNCA1MC4xMSAxNy4yNCA1MC4xMSA5LjM1IDQ4LjU3IDkuMzUgNDguNTcgMTguNDkgNTEuOTQgMTguNDkgNTEuOTQgMTcuMjQiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjUyLjY1IiB5PSI5LjM1IiB3aWR0aD0iMS41NCIgaGVpZ2h0PSI5LjE0Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjU2LjE4IDE4LjQ5IDU3LjcyIDE4LjQ5IDU3LjcyIDEwLjYxIDU4Ljk5IDEwLjYxIDU4Ljk5IDkuMzUgNTQuOTEgOS4zNSA1NC45MSAxMC42MSA1Ni4xOCAxMC42MSA1Ni4xOCAxOC40OSIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI2MS4xNyAxOC40OSA2Mi43MSAxOC40OSA2Mi43MSAxNS4wMSA2NC40MSA5LjM1IDYyLjk0IDkuMzUgNjIuMDEgMTIuODIgNjEuOTkgMTIuODIgNjEuMDYgOS4zNSA1OS40NiA5LjM1IDYxLjE3IDE1LjAxIDYxLjE3IDE4LjQ5Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjM1LjU4IDMwLjY0IDMzLjQ1IDMwLjY0IDMzLjQ1IDI3Ljg2IDM0Ljk3IDI3Ljg2IDM0Ljk3IDI2LjYyIDMzLjQ1IDI2LjYyIDMzLjQ1IDI0LjAxIDM1LjU4IDI0LjAxIDM1LjU4IDIyLjc1IDMxLjkxIDIyLjc1IDMxLjkxIDMxLjg5IDM1LjU4IDMxLjg5IDM1LjU4IDMwLjY0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDEuMTEsMjkuNDRWMjUuMjFjMC0xLjQyLS41OC0yLjQ1LTIuMjItMi40NUgzNi41MnY5LjE0aDIuMzdjMS42NCwwLDIuMjItMS4wNSwyLjIyLTIuNDVtLTMuMDYsMS4yVjI0aC42NWEuOC44LDAsMCwxLC44Ny45MnY0Ljc5YzAsLjU1LS4yNC45My0uODcuOTNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDIuMTMsMjIuNzV2Ni45MkEyLjA2LDIuMDYsMCwwLDAsNDQuNDIsMzJjMS41NiwwLDIuMTctLjkyLDIuMTctMi4zM1YyMi43NUg0NS4xN3Y3LjA2YzAsLjU0LS4yMi45LS43Ni45cy0uNzUtLjM2LS43NS0uOVYyMi43NVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00Ny42LDI5LjUzQTIuMTYsMi4xNiwwLDAsMCw0OS44OSwzMmMxLjYzLDAsMi4xNy0xLDIuMTctMi4yOFYyOC4xNGgtMS40djEuNjhjMCwuNTQtLjE5Ljg5LS43NC44OXMtLjc4LS4zOS0uNzgtLjk0VjI0Ljg3YzAtLjU1LjIzLS45NC43OC0uOTRzLjc0LjMyLjc0Ljg5VjI2aDEuNFYyNC45NGMwLTEuMzUtLjQ3LTIuMjktMi4xNy0yLjI5YTIuMTYsMi4xNiwwLDAsMC0yLjI5LDIuNDdaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTQuMjUsMzAuMjJoMS42M2wuMjgsMS42N2gxLjU4TDU2LDIyLjc1SDU0LjI1bC0xLjczLDkuMTRINTRabS44MS00Ljg5aDBMNTUuNjgsMjlINTQuNDVaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjU3LjU1IDI0LjAxIDU4LjgxIDI0LjAxIDU4LjgxIDMxLjg5IDYwLjM2IDMxLjg5IDYwLjM2IDI0LjAxIDYxLjYzIDI0LjAxIDYxLjYzIDIyLjc1IDU3LjU1IDIyLjc1IDU3LjU1IDI0LjAxIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI2Mi40OCIgeT0iMjIuNzUiIHdpZHRoPSIxLjU0IiBoZWlnaHQ9IjkuMTQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02Ny4zNiwzMmEyLjE4LDIuMTgsMCwwLDAsMi4zMy0yLjQ3VjI1LjExYTIuMzMsMi4zMywwLDEsMC00LjY1LDB2NC40MkEyLjE4LDIuMTgsMCwwLDAsNjcuMzYsMzJtLS43OC03LjEzYzAtLjU1LjI0LS45NC43OC0uOTRzLjc5LjM5Ljc5Ljk0djQuOTFjMCwuNTUtLjI0Ljk0LS43OS45NHMtLjc4LS4zOS0uNzgtLjk0WiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI3MS45OSAyNi4xNSA3My44IDMxLjg5IDc1LjE1IDMxLjg5IDc1LjE1IDIyLjc1IDczLjg2IDIyLjc1IDczLjg2IDI4IDcyLjIxIDIyLjc1IDcwLjcgMjIuNzUgNzAuNyAzMS44OSA3MS45OSAzMS44OSA3MS45OSAyNi4xNSIvPjwvZz48ZyBpZD0iTlVNQkVSU19PTkxZIiBkYXRhLW5hbWU9Ik5VTUJFUlMgT05MWSI+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTguNzksMzAuNmgzLjU3VjI3aDEuNTJWMjRIMjIuMzZWOC4xOGgtMy43TDEyLjE0LDI0LjY1VjI3aDYuNjVaTTE1LjQ1LDI0bDMuMzctOS4yM2gwVjI0WiIvPjwvZz48L3N2Zz4="
+	/**
+	 * A specialized version of `_.forEach` for arrays without support for
+	 * iteratee shorthands.
+	 *
+	 * @private
+	 * @param {Array} [array] The array to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Array} Returns `array`.
+	 */
+	function arrayEach(array, iteratee) {
+	  var index = -1,
+	      length = array ? array.length : 0;
+	
+	  while (++index < length) {
+	    if (iteratee(array[index], index, array) === false) {
+	      break;
+	    }
+	  }
+	  return array;
+	}
+	
+	module.exports = arrayEach;
+
 
 /***/ },
 /* 171 */
-/*!*****************************!*\
-  !*** ./src/images/sdg5.svg ***!
-  \*****************************/
-/***/ function(module, exports) {
+/*!*******************************!*\
+  !*** ./~/lodash/_baseEach.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2VmNDEyYzt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDEzPC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMS45MyIgeT0iLTEuOTMiIHdpZHRoPSIxMTcuNjgiIGhlaWdodD0iMTE3LjA5Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODEuNDEsNDIuMjlINjcuNTJhLjE4LjE4LDAsMCwwLS4xOC4xOHY0LjYyYS4xOC4xOCwwLDAsMCwuMTguMThINzNMNjYuOTEsNTMuNEExOC4xOSwxOC4xOSwwLDEsMCw1My4zNCw4NS43NXY1LjMySDQ3Ljg2YS4xOC4xOCwwLDAsMC0uMTguMTh2NC45NWEuMTguMTgsMCwwLDAsLjE4LjE4aDUuNDh2NS4yM2EuMTguMTgsMCwwLDAsLjE4LjE4aDQuOTVhLjE4LjE4LDAsMCwwLC4xOC0uMThWOTYuMzdoNS40OGEuMTguMTgsMCwwLDAsLjE4LS4xOFY5MS4yNGEuMTguMTgsMCwwLDAtLjE4LS4xOEg1OC42NFY4NS42NkExOC4xOCwxOC4xOCwwLDAsMCw3MC41Niw1Ny4yNWw2LjA1LTYuMDV2NS4xN2EuMTguMTgsMCwwLDAsLjE4LjE4aDQuNjFhLjE4LjE4LDAsMCwwLC4xOC0uMThWNDIuNDdhLjE4LjE4LDAsMCwwLS4xOC0uMThNNTUuNjksODEuMUExMy4zOSwxMy4zOSwwLDEsMSw2OS4wOCw2Ny43MSwxMy40MSwxMy40MSwwLDAsMSw1NS42OSw4MS4xIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjMuODcsNjIuMjJINDcuNjNhLjE3LjE3LDAsMCwwLS4xOC4xNnYzLjkzYS4xNy4xNywwLDAsMCwuMTguMTZINjMuODdhLjE3LjE3LDAsMCwwLC4xOC0uMTZWNjIuMzdhLjE3LjE3LDAsMCwwLS4xOC0uMTYiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02My44Nyw2OS4yNEg0Ny42M2EuMTcuMTcsMCwwLDAtLjE4LjE2djMuOTNhLjE3LjE3LDAsMCwwLC4xOC4xNkg2My44N2EuMTcuMTcsMCwwLDAsLjE4LS4xNlY2OS40YS4xNy4xNywwLDAsMC0uMTgtLjE2Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzMuODQsMTguNmExLjM4LDEuMzgsMCwwLDAsMS40Ny0xLjF2MWgxLjFWMTMuNjFIMzQuMjN2MS4yMUgzNXYxLjYyYzAsLjU5LS4yNi44OC0uNzYuODhzLS43NS0uMzktLjc1LS45NFYxMS40N2MwLS41NS4yNC0uOTQuOC0uOTRzLjc3LjMyLjc3Ljg5di45M2gxLjR2LS44MWMwLTEuMzUtLjUtMi4yOS0yLjE5LTIuMjlhMi4xNiwyLjE2LDAsMCwwLTIuMywyLjQ3djQuNDJjMCwxLjQxLjYxLDIuNDcsMS45MiwyLjQ3Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjQxLjA5IDE3LjI0IDM4Ljk2IDE3LjI0IDM4Ljk2IDE0LjQ2IDQwLjQ4IDE0LjQ2IDQwLjQ4IDEzLjIyIDM4Ljk2IDEzLjIyIDM4Ljk2IDEwLjYxIDQxLjA5IDEwLjYxIDQxLjA5IDkuMzUgMzcuNDMgOS4zNSAzNy40MyAxOC40OSA0MS4wOSAxOC40OSA0MS4wOSAxNy4yNCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI0My4zNCAxMi43NSA0NS4xNSAxOC40OSA0Ni40OSAxOC40OSA0Ni40OSA5LjM1IDQ1LjIyIDkuMzUgNDUuMjIgMTQuNiA0My41NiA5LjM1IDQyLjA1IDkuMzUgNDIuMDUgMTguNDkgNDMuMzQgMTguNDkgNDMuMzQgMTIuNzUiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01Mi4xLDE2VjExLjgxYzAtMS40MS0uNTgtMi40NS0yLjIyLTIuNDVINDcuNTF2OS4xNGgyLjM3YzEuNjQsMCwyLjIyLTEuMDUsMi4yMi0yLjQ1TTQ5LDE3LjI0VjEwLjYxaC42NWEuOC44LDAsMCwxLC44Ny45MnY0Ljc5YzAsLjU1LS4yNC45My0uODcuOTNaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjU2Ljc3IDE3LjI0IDU0LjY1IDE3LjI0IDU0LjY1IDE0LjQ2IDU2LjE3IDE0LjQ2IDU2LjE3IDEzLjIyIDU0LjY1IDEzLjIyIDU0LjY1IDEwLjYxIDU2Ljc3IDEwLjYxIDU2Ljc3IDkuMzUgNTMuMTEgOS4zNSA1My4xMSAxOC40OSA1Ni43NyAxOC40OSA1Ni43NyAxNy4yNCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU5LjI2LDE0LjNsMS40NCw0LjE5aDEuNjJsLTEuNDctNC4xNWMuODctLjIsMS4yMy0uNzgsMS4yMy0xLjc3VjExLjRjMC0xLjI4LS41Ny0yLTIuMTEtMkg1Ny43MnY5LjE0aDEuNTRabTAtMy42OWguNTFjLjUzLDAsLjc1LjI0Ljc1Ljc0djEuMzVhLjY2LjY2LDAsMCwxLS43NS43NmgtLjUxWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzNS41OCAzMC42NCAzMy40NSAzMC42NCAzMy40NSAyNy44NiAzNC45NyAyNy44NiAzNC45NyAyNi42MiAzMy40NSAyNi42MiAzMy40NSAyNCAzNS41OCAyNCAzNS41OCAyMi43NSAzMS45MiAyMi43NSAzMS45MiAzMS44OSAzNS41OCAzMS44OSAzNS41OCAzMC42NCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM4LjI4LDMxLjg5di42MmwyLjg5LjU0VjMxLjlMNDAsMzEuNjlhMi4xOSwyLjE5LDAsMCwwLDEuMTMtMi4xNlYyNS4xMWEyLjMzLDIuMzMsMCwxLDAtNC42NSwwdjQuNDJhMi4xLDIuMSwwLDAsMCwxLjc1LDIuMzZtLS4yMi03YzAtLjU1LjI0LS45NC43OC0uOTRzLjc5LjM5Ljc5Ljk0djVjMCwuNTQtLjI0Ljk0LS43OS45NHMtLjc4LS40LS43OC0uOTRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDIuMTcsMjIuNzV2Ni45MUEyLjA2LDIuMDYsMCwwLDAsNDQuNDYsMzJjMS41NiwwLDIuMTctLjkyLDIuMTctMi4zM1YyMi43NUg0NS4yMXY3LjA2YzAsLjU0LS4yMi45LS43Ni45cy0uNzUtLjM2LS43NS0uOVYyMi43NVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00OS4xMSwzMC4yMmgxLjYzTDUxLDMxLjg5SDUyLjZsLTEuNzQtOS4xNEg0OS4xMWwtMS43Miw5LjE0aDEuNDZabS44MS00Ljg5aDBsLjYsMy42N0g0OS4zMVoiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNTMuMzUgMjIuNzUgNTMuMzUgMzEuODkgNTYuNzIgMzEuODkgNTYuNzIgMzAuNjQgNTQuODkgMzAuNjQgNTQuODkgMjIuNzUgNTMuMzUgMjIuNzUiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjU3LjU0IiB5PSIyMi43NSIgd2lkdGg9IjEuNTQiIGhlaWdodD0iOS4xNCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI2Mi43MyAzMS44OSA2Mi43MyAyNCA2NCAyNCA2NCAyMi43NSA1OS45MiAyMi43NSA1OS45MiAyNCA2MS4xOCAyNCA2MS4xOCAzMS44OSA2Mi43MyAzMS44OSIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI2Ni4yOSAzMS44OSA2Ny44MyAzMS44OSA2Ny44MyAyOC40MSA2OS41MiAyMi43NSA2OC4wNSAyMi43NSA2Ny4xMiAyNi4yMiA2Ny4xMSAyNi4yMiA2Ni4xOCAyMi43NSA2NC41OCAyMi43NSA2Ni4yOSAyOC40MSA2Ni4yOSAzMS44OSIvPjwvZz48ZyBpZD0iTlVNQkVSU19PTkxZIiBkYXRhLW5hbWU9Ik5VTUJFUlMgT05MWSI+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTguNDgsMTUuMjlhMy40LDMuNCwwLDAsMC0zLjE3LDEuNTVoMFYxMS4yNWg2LjQ4VjguMThIMTEuODRWMjAuODFoMy40NHYtLjVjMC0xLjMyLjYtMi4wNSwxLjY1LTIuMDVzMS42Mi43OSwxLjYyLDJWMjUuN2MwLDEuMTktLjQzLDItMS41OSwycy0xLjc1LS44Ni0xLjc1LTIuMThWMjIuNzNIMTEuNzd2Mi41NWMwLDMuNDEsMS4zNiw1LjU5LDUuMTksNS41OXM1LjM2LTIsNS4zNi01LjEzVjIwLjI1YzAtMy41NC0xLjgyLTUtMy44NC01Ii8+PC9nPjwvc3ZnPg=="
+	var baseForOwn = __webpack_require__(/*! ./_baseForOwn */ 172),
+	    createBaseEach = __webpack_require__(/*! ./_createBaseEach */ 194);
+	
+	/**
+	 * The base implementation of `_.forEach` without support for iteratee shorthands.
+	 *
+	 * @private
+	 * @param {Array|Object} collection The collection to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Array|Object} Returns `collection`.
+	 */
+	var baseEach = createBaseEach(baseForOwn);
+	
+	module.exports = baseEach;
+
 
 /***/ },
 /* 172 */
-/*!*****************************!*\
-  !*** ./src/images/sdg6.svg ***!
-  \*****************************/
-/***/ function(module, exports) {
+/*!*********************************!*\
+  !*** ./~/lodash/_baseForOwn.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzI5YmVlMjt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDE0PC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMS45NyIgeT0iLTEuOTMiIHdpZHRoPSIxMTcuODMiIGhlaWdodD0iMTE3LjA5Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzYuNDYsNDUuMTlBLjQ5LjQ5LDAsMCwwLDc2LjEsNDVIMzUuNTVhLjQ2LjQ2LDAsMCwwLS40Ny41NGw2LjgxLDQxLjJhLjQ4LjQ4LDAsMCwwLC40Ny40aDguMzZsLjU3LDYuNzFINDcuNzhMNTYsMTAyLjA4bDguMjEtOC4ySDYwLjY1bC41Ny02LjdoOC41MWEuNDcuNDcsMCwwLDAsLjQ3LS40bDYuMzctNDEuMTlBLjQ4LjQ4LDAsMCwwLDc2LjQ2LDQ1LjE5Wm0tMTUuNjcsMzNBNi41MSw2LjUxLDAsMCwxLDU2LDc5Ljg3YTYuNTEsNi41MSwwLDAsMS00Ljg0LTEuNjljLTMtMy0yLTYuODEtLjktOC43Ni42NS0xLjIyLDUuMzItOC4yMyw1LjcyLTguODN2MGwwLDAsMCwwdjBjLjM5LjYsNS4wNyw3LjYxLDUuNzIsOC44M0M2Mi43NSw3MS4zNyw2My44Myw3NS4xNCw2MC43OSw3OC4xOFpNNzMuNjYsNTMuODZhNSw1LDAsMCwwLTMuODMuMjNjLTUsMi04LjQ1LDIuNzctMTMuNzUsMS4xMi0zLjMzLTEtNi40NS0zLjIzLTEwLjE0LTEuOUEyMC44OCwyMC44OCwwLDAsMSwzOC40NSw1NWwtMS42LTguMTlINzQuOFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNC4yNSwxOC41MmMxLjYzLDAsMi4xNy0xLDIuMTctMi4yOFYxNC42N0gzNXYxLjY5YzAsLjU0LS4xOS44OS0uNzQuODlzLS43OC0uMzktLjc4LS45NFYxMS4zOWMwLS41NS4yMy0uOTQuNzgtLjk0cy43NC4zMi43NC44OXYxLjJoMS40VjExLjQ2YzAtMS4zNS0uNDctMi4yOS0yLjE3LTIuMjlBMi4xNiwyLjE2LDAsMCwwLDMyLDExLjY0djQuNDJhMi4xNiwyLjE2LDAsMCwwLDIuMjksMi40NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI0MC43NiAxNy4xNiAzOC45MyAxNy4xNiAzOC45MyA5LjI4IDM3LjM5IDkuMjggMzcuMzkgMTguNDIgNDAuNzYgMTguNDIgNDAuNzYgMTcuMTYiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNDUuMjYgMTcuMTYgNDMuMTMgMTcuMTYgNDMuMTMgMTQuMzkgNDQuNjYgMTQuMzkgNDQuNjYgMTMuMTQgNDMuMTMgMTMuMTQgNDMuMTMgMTAuNTMgNDUuMjYgMTAuNTMgNDUuMjYgOS4yOCA0MS42IDkuMjggNDEuNiAxOC40MiA0NS4yNiAxOC40MiA0NS4yNiAxNy4xNiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ3LjcsMTYuNzVoMS42M2wuMjgsMS42N2gxLjU4TDQ5LjQ1LDkuMjhINDcuN0w0NiwxOC40MmgxLjQ2Wm0uODEtNC44OWgwbC42MSwzLjY2SDQ3LjlaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjUzLjI1IDEyLjY3IDU1LjA2IDE4LjQyIDU2LjQgMTguNDIgNTYuNCA5LjI4IDU1LjEzIDkuMjggNTUuMTMgMTQuNTIgNTMuNDcgOS4yOCA1MS45NiA5LjI4IDUxLjk2IDE4LjQyIDUzLjI1IDE4LjQyIDUzLjI1IDEyLjY3Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjYyLjExIDE4LjQyIDYyLjk4IDEyLjc3IDYyLjk5IDEyLjc3IDYzLjg5IDE4LjQyIDY1LjM1IDE4LjQyIDY2LjUzIDkuMjggNjUuMjQgOS4yOCA2NC41NCAxNS4wNyA2NC41MiAxNS4wNyA2My42OCA5LjI4IDYyLjQyIDkuMjggNjEuNjYgMTUuMDcgNjEuNjQgMTUuMDcgNjAuOTMgOS4yOCA1OS40NCA5LjI4IDYwLjY3IDE4LjQyIDYyLjExIDE4LjQyIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjguMjgsMTYuNzVoMS42M2wuMjgsMS42N2gxLjU4TDcwLDkuMjhINjguMjhsLTEuNzIsOS4xNEg2OFptLjgxLTQuODloMGwuNjEsMy42Nkg2OC40OFoiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNzIuODQgMTguNDIgNzQuMzkgMTguNDIgNzQuMzkgMTAuNTMgNzUuNjYgMTAuNTMgNzUuNjYgOS4yOCA3MS41NyA5LjI4IDcxLjU3IDEwLjUzIDcyLjg0IDEwLjUzIDcyLjg0IDE4LjQyIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjgwLjA1IDE3LjE2IDc3LjkyIDE3LjE2IDc3LjkyIDE0LjM5IDc5LjQ0IDE0LjM5IDc5LjQ0IDEzLjE0IDc3LjkyIDEzLjE0IDc3LjkyIDEwLjUzIDgwLjA1IDEwLjUzIDgwLjA1IDkuMjggNzYuMzggOS4yOCA3Ni4zOCAxOC40MiA4MC4wNSAxOC40MiA4MC4wNSAxNy4xNiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgyLjQxLDE0LjIybDEuNDQsNC4xOWgxLjYyTDg0LDE0LjI2Yy44OC0uMiwxLjIzLS43OCwxLjIzLTEuNzZWMTEuMzNjMC0xLjI4LS41Ny0yLjA1LTIuMTItMi4wNUg4MC44OHY5LjE0aDEuNTRabTAtMy42OWguNTFjLjUyLDAsLjc1LjI0Ljc1Ljc0djEuMzVhLjY3LjY3LDAsMCwxLS43NS43NmgtLjUxWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMzLjUxLDMwLjIyaDEuNjNsLjI4LDEuNjdIMzdsLTEuNzQtOS4xNEgzMy41MWwtMS43Miw5LjE0aDEuNDZabS44MS00Ljg5aDBsLjYsMy42N0gzMy43MVoiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMzcuNjMgMjIuNzUgMzcuNjMgMzEuODkgMzguOTIgMzEuODkgMzguOTIgMjYuMTUgNDAuNzMgMzEuODkgNDIuMDcgMzEuODkgNDIuMDcgMjIuNzUgNDAuOCAyMi43NSA0MC44IDI4IDM5LjE0IDIyLjc1IDM3LjYzIDIyLjc1Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDMuMiwzMS44OWgyLjM3YzEuNjQsMCwyLjIyLTEuMDUsMi4yMi0yLjQ1VjI1LjIxYzAtMS40MS0uNTgtMi40NS0yLjIyLTIuNDVINDMuMlpNNDQuNzMsMjRoLjY1YS44LjgsMCwwLDEsLjg3LjkydjQuNzljMCwuNTUtLjI0LjkzLS44Ny45M2gtLjY1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUxLjIsMjguN3YxLjIzQTEuOSwxLjksMCwwLDAsNTMuMzcsMzJhMiwyLDAsMCwwLDIuMjQtMi4xNHYtLjQ0QTMuMDcsMy4wNywwLDAsMCw1NC4zNywyN2wtMS0xYy0uNDQtLjQzLS43My0uNzMtLjczLTEuMjR2LS4xOWEuNjcuNjcsMCwwLDEsLjczLS43NWMuNDksMCwuNzMuMjYuNzMuNzh2LjhoMS40di0uNzRjMC0xLjMyLS42MS0yLjA4LTIuMTQtMi4wOGExLjkxLDEuOTEsMCwwLDAtMi4xNSwyVjI1QTMuMDgsMy4wOCwwLDAsMCw1Mi41LDI3LjRsLjkuOWExLjY0LDEuNjQsMCwwLDEsLjY5LDEuMjlWMzBjMCwuNDgtLjIxLjgxLS43Ljgxcy0uNzUtLjMtLjc1LS44MVYyOC43WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU3LjUsMzEuODlsLjI3LTEuNjdINTkuNGwuMjgsMS42N2gxLjU4bC0xLjc0LTkuMTRINTcuNzdMNTYsMzEuODlabTEuMDgtNi41NmgwTDU5LjIsMjlINThaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjY1LjE4IDI4IDYzLjUzIDIyLjc1IDYyLjAyIDIyLjc1IDYyLjAyIDMxLjg5IDYzLjMxIDMxLjg5IDYzLjMxIDI2LjE1IDY1LjEyIDMxLjg5IDY2LjQ2IDMxLjg5IDY2LjQ2IDIyLjc1IDY1LjE4IDIyLjc1IDY1LjE4IDI4Ii8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI2Ny43MSIgeT0iMjIuNzUiIHdpZHRoPSIxLjU0IiBoZWlnaHQ9IjkuMTQiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNzIuNzYgMzEuODkgNzIuNzYgMjQuMDEgNzQuMDMgMjQuMDEgNzQuMDMgMjIuNzUgNjkuOTQgMjIuNzUgNjkuOTQgMjQuMDEgNzEuMjEgMjQuMDEgNzEuMjEgMzEuODkgNzIuNzYgMzEuODkiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03Ny4xNSwyMi43NUg3NS40bC0xLjczLDkuMTRoMS40NWwuMjctMS42N0g3N2wuMjgsMS42N2gxLjU4Wk03NS42LDI5bC42MS0zLjY3aDBMNzYuODMsMjlaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjgyLjQ4IDIyLjc1IDc4LjQgMjIuNzUgNzguNCAyNC4wMSA3OS42NyAyNC4wMSA3OS42NyAzMS44OSA4MS4yMiAzMS44OSA4MS4yMiAyNC4wMSA4Mi40OCAyNC4wMSA4Mi40OCAyMi43NSIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iODMuMzIiIHk9IjIyLjc1IiB3aWR0aD0iMS41NCIgaGVpZ2h0PSI5LjE0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODguMTcsMzJhMi4xOCwyLjE4LDAsMCwwLDIuMzMtMi40N1YyNS4xMWEyLjMzLDIuMzMsMCwxLDAtNC42NSwwdjQuNDJBMi4xOCwyLjE4LDAsMCwwLDg4LjE3LDMybS0uNzgtNy4xM2MwLS41NS4yNC0uOTQuNzgtLjk0cy43OS4zOS43OS45NHY0LjkxYzAsLjU1LS4yNC45NC0uNzkuOTRzLS43OC0uMzktLjc4LS45NFoiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iOTUuOTQgMzEuODkgOTUuOTQgMjIuNzUgOTQuNjYgMjIuNzUgOTQuNjYgMjggOTMuMDEgMjIuNzUgOTEuNSAyMi43NSA5MS41IDMxLjg5IDkyLjc5IDMxLjg5IDkyLjc5IDI2LjE1IDk0LjYgMzEuODkgOTUuOTQgMzEuODkiLz48L2c+PGcgaWQ9Ik5VTUJFUlNfT05MWSIgZGF0YS1uYW1lPSJOVU1CRVJTIE9OTFkiPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE3LDMxLjEzYzQsMCw1LjU2LTIuMTgsNS41Ni01LjY2VjIyLjE2YzAtMy42Ny0xLjQ2LTUuNTItNC4xNy01LjUyYTMuMjMsMy4yMywwLDAsMC0zLjExLDEuODJoMFYxMy42M2MwLTEuMzYuNDMtMi4zMiwxLjc5LTIuMzJzMS43NS44LDEuNzUsMi4xOFYxNWgzLjQ0VjEzLjhjMC0zLjMxLTEuMDktNS42Mi01LjI2LTUuNjItNCwwLTUuNDYsMi41NS01LjQ2LDYuMDVWMjUuMTRjMCwzLjQ3LDEuNTIsNiw1LjQ5LDZNMTUuMjEsMjEuN2MuMDctMS4yNi42LTIsMS43OS0yczEuNzkuNzksMS43OSwyLjI1djMuOWMwLDEuNDItLjUzLDIuMjUtMS44MiwyLjI1cy0xLjc1LS44Ni0xLjc1LTIuMjVaIi8+PC9nPjwvc3ZnPg=="
+	var baseFor = __webpack_require__(/*! ./_baseFor */ 173),
+	    keys = __webpack_require__(/*! ./keys */ 175);
+	
+	/**
+	 * The base implementation of `_.forOwn` without support for iteratee shorthands.
+	 *
+	 * @private
+	 * @param {Object} object The object to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Object} Returns `object`.
+	 */
+	function baseForOwn(object, iteratee) {
+	  return object && baseFor(object, iteratee, keys);
+	}
+	
+	module.exports = baseForOwn;
+
 
 /***/ },
 /* 173 */
-/*!*****************************!*\
-  !*** ./src/images/sdg7.svg ***!
-  \*****************************/
-/***/ function(module, exports) {
+/*!******************************!*\
+  !*** ./~/lodash/_baseFor.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZhYzMxNTt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDE1PC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMS4zMSIgeT0iLTEuODMiIHdpZHRoPSIxMTYuODIiIGhlaWdodD0iMTE4LjMzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTUuOTIsNTQuMTVBMTYuMzgsMTYuMzgsMCwxLDAsNzIuMyw3MC41MywxNi4zOCwxNi4zOCwwLDAsMCw1NS45Miw1NC4xNW0tMS4yMSw2LjQ3YTEuMjIsMS4yMiwwLDAsMSwyLjQzLDB2NS42MmExLjIyLDEuMjIsMCwwLDEtMi40MywwWm0xLjIyLDE4LjNhOC41Miw4LjUyLDAsMCwxLTIuNTMtMTYuNjZ2My4xN2E1LjU4LDUuNTgsMCwxLDAsNSwwVjYyLjI2YTguNTIsOC41MiwwLDAsMS0yLjUyLDE2LjY2Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzcuMTIsNzAuMzlBMS4zNywxLjM3LDAsMCwwLDM1Ljg2LDY5SDI4LjY5YTEuMzUsMS4zNSwwLDAsMCwwLDIuNjloNy4xN2ExLjM3LDEuMzcsMCwwLDAsMS4yNi0xLjM1Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODQuNDMsNzAuMzlBMS4zNywxLjM3LDAsMCwwLDgzLjE4LDY5SDc2YTEuMzUsMS4zNSwwLDAsMCwwLDIuNjloNy4xN2ExLjM3LDEuMzcsMCwwLDAsMS4yNi0xLjM1Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTUuOTMsNTEuNThhMS4zNywxLjM3LDAsMCwwLDEuMzQtMS4yNlY0My4xNWExLjM1LDEuMzUsMCwwLDAtMi42OSwwdjcuMTdhMS4zNywxLjM3LDAsMCwwLDEuMzUsMS4yNiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU1LjkzLDk4LjlhMS4zNywxLjM3LDAsMCwwLDEuMzQtMS4yNlY5MC40N2ExLjM1LDEuMzUsMCwwLDAtMi42OSwwdjcuMTdhMS4zNywxLjM3LDAsMCwwLDEuMzUsMS4yNiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM5LjYsNjFhMS4zNywxLjM3LDAsMCwwLS40Mi0xLjc5TDMzLDU1LjY5QTEuMzUsMS4zNSwwLDAsMCwzMS42Miw1OGw2LjIzLDMuNTZBMS4zNywxLjM3LDAsMCwwLDM5LjYsNjEiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04MC42Nyw4NC41NWExLjM3LDEuMzcsMCwwLDAtLjQyLTEuNzlMNzQsNzkuMTlhMS4zNSwxLjM1LDAsMCwwLTEuMzQsMi4zNGw2LjIzLDMuNTZhMS4zNywxLjM3LDAsMCwwLDEuNzYtLjU1Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjUuMjcsNTQuMDdhMS4zNywxLjM3LDAsMCwwLDEuNzktLjQybDMuNTYtNi4yM2ExLjM1LDEuMzUsMCwwLDAtMi4zNC0xLjM0bC0zLjU2LDYuMjJhMS4zNywxLjM3LDAsMCwwLC41NSwxLjc2Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDEuNzcsOTUuMTNhMS4zNywxLjM3LDAsMCwwLDEuNzktLjQzbDMuNTYtNi4yMmExLjM1LDEuMzUsMCwwLDAtMi4zNC0xLjM0bC0zLjU2LDYuMjNhMS4zNywxLjM3LDAsMCwwLC41NSwxLjc2Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDYuNTUsNTQuMDlhMS4zNywxLjM3LDAsMCwwLC41NC0xLjc2bC0zLjU4LTYuMjJhMS4zNSwxLjM1LDAsMCwwLTIuMzMsMS4zNGwzLjU4LDYuMjJhMS4zNywxLjM3LDAsMCwwLDEuOC40MiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTcwLjE0LDk1LjFhMS4zNywxLjM3LDAsMCwwLC41NC0xLjc2TDY3LjEsODcuMTJhMS4zNSwxLjM1LDAsMCwwLTIuMzMsMS4zNGwzLjU4LDYuMjJhMS4zNywxLjM3LDAsMCwwLDEuOC40MiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTcyLjIzLDYxYTEuMzcsMS4zNywwLDAsMCwxLjc2LjU0TDgwLjIxLDU4YTEuMzUsMS4zNSwwLDAsMC0xLjM0LTIuMzRsLTYuMjIsMy41OGExLjM3LDEuMzcsMCwwLDAtLjQyLDEuOCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMxLjIyLDg0LjZhMS4zNywxLjM3LDAsMCwwLDEuNzYuNTRsNi4yMi0zLjU4YTEuMzUsMS4zNSwwLDAsMC0xLjM0LTIuMzRsLTYuMjIsMy41OGExLjM3LDEuMzcsMCwwLDAtLjQyLDEuOCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMxLjY5LDE4LjQ5bDEuNzItOS4xM2gxLjc1bDEuNzQsOS4xM0gzNS4zM0wzNSwxNi44MkgzMy40MmwtLjI3LDEuNjdabTEuOTMtMi45aDEuMjNsLS42MS0zLjY2aDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzcuNDcsOS4zNmgzLjZ2MS4yNUgzOXYyLjYxaDEuNTR2MS4yNEgzOXY0SDM3LjQ3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQxLjY3LDkuMzZoMy42djEuMjVINDMuMjF2Mi42MWgxLjU0djEuMjRINDMuMjF2NEg0MS42N1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NS43NCwxNi4xM1YxMS43MWEyLjMzLDIuMzMsMCwxLDEsNC42NSwwdjQuNDJhMi4zMywyLjMzLDAsMSwxLTQuNjUsMFptMy4xMS4yNHYtNC45YzAtLjU1LS4yNC0uOTQtLjc5LS45NHMtLjc4LjM5LS43OC45NHY0LjljMCwuNTUuMjQuOTQuNzguOTRTNDguODYsMTYuOTMsNDguODYsMTYuMzdaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTIuNzQsMTQuM3Y0LjE5SDUxLjJWOS4zNmgyLjI0YzEuNTUsMCwyLjExLjc3LDIuMTEsMnYxLjE3YzAsMS0uMzUsMS41Ni0xLjIzLDEuNzZsMS40Nyw0LjE1SDU0LjE4Wm0wLTMuNjl2Mi44NGguNTFBLjY2LjY2LDAsMCwwLDU0LDEyLjdWMTEuMzVjMC0uNS0uMjMtLjc0LS43NS0uNzRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjAuOTEsMTEuODFWMTZjMCwxLjQtLjU4LDIuNDUtMi4yMiwyLjQ1SDU2LjMyVjkuMzZoMi4zN0M2MC4zNCw5LjM2LDYwLjkxLDEwLjM5LDYwLjkxLDExLjgxWk01OC41LDE3LjI0Yy42MywwLC44OC0uMzguODgtLjkzVjExLjUyYS44LjgsMCwwLDAtLjg4LS45MmgtLjY1djYuNjNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjEuMjgsMTguNDksNjMsOS4zNmgxLjc1bDEuNzQsOS4xM0g2NC45MmwtLjI4LTEuNjdINjNsLS4yNywxLjY3Wm0xLjkzLTIuOWgxLjIzbC0uNjEtMy42NmgwWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY3LjA2LDkuMzZoMi4yMmMxLjU0LDAsMiwuNzEsMiwydi45M2ExLjMzLDEuMzMsMCwwLDEtLjkyLDEuNDUsMS4zOSwxLjM5LDAsMCwxLDEuMTUsMS41MnYxLjIxYzAsMS4yOS0uNTgsMi0yLjExLDJINjcuMDZabTEuNTQsMy44NWguNTRhLjY1LjY1LDAsMCwwLC43My0uNzRWMTEuMzVhLjY1LjY1LDAsMCwwLS43NC0uNzRoLS41M1ptMCwxLjE3djIuODZoLjY3YS42Ni42NiwwLDAsMCwuNzUtLjc0VjE1LjEyYzAtLjQ4LS4yMy0uNzQtLjc3LS43NFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03Mi4yNiw5LjM2SDczLjh2Ny44OGgxLjgzdjEuMjVINzIuMjZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzYuMjYsOS4zNmgzLjY2djEuMjVINzcuOHYyLjYxaDEuNTJ2MS4yNEg3Ny44djIuNzdoMi4xM3YxLjI1SDc2LjI2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgxLjc5LDE4LjQ5bDEuNzItOS4xM2gxLjc1TDg3LDE4LjQ5SDg1LjQybC0uMjgtMS42N0g4My41MWwtLjI3LDEuNjdabTEuOTMtMi45aDEuMjNsLS42MS0zLjY2aDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODguODYsMTIuNzV2NS43NEg4Ny41N1Y5LjM2aDEuNTFsMS42Niw1LjI0VjkuMzZIOTJ2OS4xM0g5MC42NloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik05Ny40MSwxMS44MVYxNmMwLDEuNC0uNTgsMi40NS0yLjIyLDIuNDVIOTIuODJWOS4zNmgyLjM3Qzk2LjgzLDkuMzYsOTcuNDEsMTAuMzksOTcuNDEsMTEuODFaTTk1LDE3LjI0Yy42MywwLC44OC0uMzguODgtLjkzVjExLjUyYS44LjgsMCwwLDAtLjg4LS45MmgtLjY1djYuNjNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzEuOTIsMjkuNTR2LTQuNGEyLjE0LDIuMTQsMCwwLDEsMi4yOC0yLjQ1YzEuNjksMCwyLjE2Ljk0LDIuMTYsMi4yOFYyNkgzNVYyNC44NWMwLS41Ni0uMTktLjg4LS43NC0uODhzLS43OC4zOS0uNzguOTR2NC44OGMwLC41NS4yMy45NC43OC45NHMuNzQtLjM1Ljc0LS44OFYyOC4xNmgxLjM5djEuNTdjMCwxLjMtLjU0LDIuMjctMi4xNiwyLjI3QTIuMTUsMi4xNSwwLDAsMSwzMS45MiwyOS41NFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNy4zMiwyMi44aDEuNTN2Ny44NGgxLjgydjEuMjVIMzcuMzJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDEuNTEsMjIuOGgzLjY1VjI0SDQzdjIuNmgxLjUydjEuMjNINDN2Mi43NmgyLjEydjEuMjVINDEuNTFaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDUuODYsMzEuODlsMS43Mi05LjA5aDEuNzRsMS43Myw5LjA5SDQ5LjQ4bC0uMjgtMS42Nkg0Ny41OGwtLjI3LDEuNjZaTTQ3Ljc4LDI5SDQ5bC0uNi0zLjY1aDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTMuMSwyNi4xOHY1LjcxSDUxLjgxVjIyLjhoMS41TDU1LDI4VjIyLjhoMS4yN3Y5LjA5SDU0LjlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjAuMzIsMjIuOEg2NFYyNEg2MS44NXYyLjZoMS41MnYxLjIzSDYxLjg1djIuNzZINjR2MS4yNUg2MC4zMloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02Ni4xNywyNi4xOHY1LjcxSDY0Ljg4VjIyLjhoMS41TDY4LDI4VjIyLjhoMS4yN3Y5LjA5SDY4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTcwLjMsMjIuOGgzLjY1VjI0SDcxLjgzdjIuNmgxLjUydjEuMjNINzEuODN2Mi43NmgyLjEydjEuMjVINzAuM1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03Ni40LDI3LjcydjQuMTdINzQuODdWMjIuOGgyLjIzYzEuNTQsMCwyLjEuNzYsMi4xLDJWMjZjMCwxLS4zNSwxLjU1LTEuMjIsMS43NmwxLjQ2LDQuMTNINzcuODNabTAtMy42N3YyLjgzaC41MWEuNjYuNjYsMCwwLDAsLjc1LS43NVYyNC43OGMwLS41LS4yMy0uNzQtLjc1LS43NFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04Mi40NywyN2gyLjE3djQuODVoLTEuMXYtMUExLjM4LDEuMzgsMCwwLDEsODIuMDgsMzJjLTEuMzEsMC0xLjkyLTEtMS45Mi0yLjQ1di00LjRhMi4xNSwyLjE1LDAsMCwxLDIuMjktMi40NWMxLjY5LDAsMi4xOS45NCwyLjE5LDIuMjh2LjhIODMuMjV2LS45M2MwLS41Ni0uMjEtLjg4LS43Ni0uODhzLS43OS4zOS0uNzkuOTR2NC44OGMwLC41NS4yMy45NC43NS45NHMuNzUtLjI4Ljc1LS44N1YyOC4yNGgtLjcyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg4LjU5LDI4LjQzdjMuNDZIODcuMDdWMjguNDNsLTEuNy01LjYzSDg3bC45MywzLjQ1aDBsLjkzLTMuNDVoMS40NloiLz48L2c+PGcgaWQ9Ik5VTUJFUlNfT05MWSIgZGF0YS1uYW1lPSJOVU1CRVJTIE9OTFkiPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxNC42MyAxMi4yMSAyMC40NSAxMi4yMSAxNS40MiAzMS41NSAxOS4xNiAzMS41NSAyNC4wOSAxMi42IDI0LjA5IDkuMTMgMTQuNjMgOS4xMyAxNC42MyAxMi4yMSIvPjwvZz48L3N2Zz4="
+	var createBaseFor = __webpack_require__(/*! ./_createBaseFor */ 174);
+	
+	/**
+	 * The base implementation of `baseForOwn` which iterates over `object`
+	 * properties returned by `keysFunc` and invokes `iteratee` for each property.
+	 * Iteratee functions may exit iteration early by explicitly returning `false`.
+	 *
+	 * @private
+	 * @param {Object} object The object to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @param {Function} keysFunc The function to get the keys of `object`.
+	 * @returns {Object} Returns `object`.
+	 */
+	var baseFor = createBaseFor();
+	
+	module.exports = baseFor;
+
 
 /***/ },
 /* 174 */
-/*!*****************************!*\
-  !*** ./src/images/sdg8.svg ***!
-  \*****************************/
+/*!************************************!*\
+  !*** ./~/lodash/_createBaseFor.js ***!
+  \************************************/
 /***/ function(module, exports) {
 
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2EyMWM0NDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDE2PC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMi4wNSIgeT0iLTEuODMiIHdpZHRoPSIxMTkuOTIiIGhlaWdodD0iMTE4LjMzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzcuMDksNTUsNjUuNzMsNjUuNzlhMS44OCwxLjg4LDAsMCwwLS42NSwxLjYyVjk3LjdhLjY1LjY1LDAsMCwwLC42NS42NUg3Ny40NmEuNjUuNjUsMCwwLDAsLjY1LS42NVY1NS4yNmMwLS4zNi0uMjgtMS0xLS4yNyIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ0LjM2LDY5LjA3LDMzLDc5Ljg3YTEuODgsMS44OCwwLDAsMC0uNjUsMS42MlY5Ny43YS42NS42NSwwLDAsMCwuNjUuNjVINDQuNzRhLjY1LjY1LDAsMCwwLC42NS0uNjVWNjkuMzRjMC0uMzYtLjI4LTEtMS0uMjciLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04Mi4yNSw0MS44OGEuMzIuMzIsMCwwLDAtLjEtLjI1LjM0LjM0LDAsMCwwLS4yMS0uMDloLS4xNmwtOC43LDItLjE2LDBhLjM1LjM1LDAsMCwwLS4xNy4wOS4zMy4zMywwLDAsMCwwLC40N2wuMS4xLDIsMkw1NS4xNCw2NS44OCw0Niw1Ni43OGEuMjYuMjYsMCwwLDAtLjM3LDBsLTIuNDcsMi40N2gwTDI4LjYsNzMuODRhLjI2LjI2LDAsMCwwLDAsLjM3bDIuNDcsMi40N2EuMjYuMjYsMCwwLDAsLjM3LDBMNDUuODUsNjIuMjhsNi42MSw2LjYxLDAsMEw1NSw3MS4zOGEuMjYuMjYsMCwwLDAsLjM3LDBMNzcuNjksNDlsMi4wOSwyLjA4YS4zMy4zMywwLDAsMCwuNDYsMCwuMzIuMzIsMCwwLDAsLjA5LS4yMXYwTDgyLjI1LDQyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYwLjc5LDcxbC01LjUsNS41NGEuMjYuMjYsMCwwLDEtLjM1LDBsLTUtNS4wOGMtLjkxLS45MS0xLjExLS4xNy0xLjExLjE5Vjk3LjdhLjY0LjY0LDAsMCwwLC42NC42NUg2MS4yM2EuNjUuNjUsMCwwLDAsLjY1LS42NVY3MS4xN2MwLS4zNi0uMjgtMS0xLjA5LS4yIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzAsMjIuNzdIMzMuN1YyNEgzMS41N3YyLjYxSDMzLjF2MS4yNEgzMS41N3YyLjc3SDMzLjdWMzEuOUgzMFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNC4zOCwyOS41NVYyNS4xM2EyLjE1LDIuMTUsMCwwLDEsMi4yOS0yLjQ2YzEuNywwLDIuMTcuOTQsMi4xNywyLjI5VjI2aC0xLjR2LTEuMmMwLS41Ny0uMTktLjg5LS43NC0uODlzLS43OC4zOS0uNzguOTR2NC45YzAsLjU1LjIzLjk0Ljc4Ljk0cy43NC0uMzUuNzQtLjg5VjI4LjE2aDEuNHYxLjU4QzM4Ljg0LDMxLDM4LjMsMzIsMzYuNjcsMzJBMi4xNiwyLjE2LDAsMCwxLDM0LjM4LDI5LjU1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM5LjY3LDI5LjU1VjI1LjEzYTIuMzMsMi4zMywwLDEsMSw0LjY1LDB2NC40MmEyLjMzLDIuMzMsMCwxLDEtNC42NSwwWm0zLjExLjI0di00LjljMC0uNTUtLjI0LS45NC0uNzktLjk0cy0uNzguMzktLjc4Ljk0djQuOWMwLC41NS4yNC45NC43OC45NFM0Mi43OCwzMC4zNCw0Mi43OCwyOS43OVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00Ni40OSwyNi4xN1YzMS45SDQ1LjJWMjIuNzdINDYuN0w0OC4zNiwyOFYyMi43N2gxLjI4VjMxLjlINDguMjlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTAuNTIsMjkuNTVWMjUuMTNhMi4zMywyLjMzLDAsMSwxLDQuNjUsMHY0LjQyYTIuMzMsMi4zMywwLDEsMS00LjY1LDBabTMuMTEuMjR2LTQuOWMwLS41NS0uMjQtLjk0LS43OS0uOTRzLS43OC4zOS0uNzguOTR2NC45YzAsLjU1LjI0Ljk0Ljc4Ljk0UzUzLjYzLDMwLjM0LDUzLjYzLDI5Ljc5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYwLjI3LDI2aDBsLTEsNS45M2gtLjcxTDU3LjM0LDI2aDBWMzEuOUg1NlYyMi43N2gxLjc5bDEsNS4xNWgwbC44OS01LjE1aDEuOTRWMzEuOWgtMS40WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYyLjU1LDIyLjc3aDEuNTRWMzEuOUg2Mi41NVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02NC45NSwyOS41NVYyNS4xM2EyLjE1LDIuMTUsMCwwLDEsMi4yOS0yLjQ2YzEuNywwLDIuMTcuOTQsMi4xNywyLjI5VjI2SDY4di0xLjJjMC0uNTctLjE5LS44OS0uNzQtLjg5cy0uNzguMzktLjc4Ljk0djQuOWMwLC41NS4yMy45NC43OC45NHMuNzQtLjM1Ljc0LS44OVYyOC4xNmgxLjR2MS41OGMwLDEuMzEtLjU0LDIuMjgtMi4xNywyLjI4QTIuMTYsMi4xNiwwLDAsMSw2NC45NSwyOS41NVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03NC4zNCwyN2gyLjE4VjMxLjloLTEuMXYtMUExLjM4LDEuMzgsMCwwLDEsNzMuOTUsMzJDNzIuNjMsMzIsNzIsMzEsNzIsMjkuNTVWMjUuMTNhMi4xNiwyLjE2LDAsMCwxLDIuMy0yLjQ2YzEuNywwLDIuMi45NCwyLjIsMi4yOXYuODFoLTEuNHYtLjkzYzAtLjU3LS4yMi0uODktLjc3LS44OXMtLjc5LjM5LS43OS45NHY0LjljMCwuNTUuMjMuOTQuNzUuOTRzLjc1LS4yOC43NS0uODhWMjguMjRoLS43M1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03OC45MywyNy43MlYzMS45SDc3LjRWMjIuNzdoMi4yNGMxLjU1LDAsMi4xMS43NywyLjExLDJWMjZjMCwxLS4zNSwxLjU2LTEuMjMsMS43Nkw4MiwzMS45SDgwLjM3Wm0wLTMuNjl2Mi44NGguNTFhLjY2LjY2LDAsMCwwLC43NS0uNzVWMjQuNzdjMC0uNS0uMjMtLjc0LS43NS0uNzRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODIuNDUsMjkuNTVWMjUuMTNhMi4zMywyLjMzLDAsMSwxLDQuNjUsMHY0LjQyYTIuMzMsMi4zMywwLDEsMS00LjY1LDBabTMuMTEuMjR2LTQuOWMwLS41NS0uMjQtLjk0LS43OS0uOTRzLS43OC4zOS0uNzguOTR2NC45YzAsLjU1LjI0Ljk0Ljc4Ljk0Uzg1LjU2LDMwLjM0LDg1LjU2LDI5Ljc5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTkxLDI2LjI2bC0uODYsNS42NEg4OC43M0w4Ny41LDIyLjc3SDg5bC43MSw1Ljc5aDBsLjc3LTUuNzloMS4yNWwuODUsNS43OWgwbC43LTUuNzloMS4yOUw5My40LDMxLjlIOTEuOTVMOTEsMjYuMjZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOTUuMDYsMjIuNzdoNC4wOFYyNEg5Ny44OFYzMS45SDk2LjMzVjI0SDk1LjA2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEwMi42MywyNy44OGgtMS40OHY0SDk5LjYxVjIyLjc3aDEuNTR2My44N2gxLjQ4VjIyLjc3aDEuNTVWMzEuOWgtMS41NVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNC42MywxMS44MVYxNmMwLDEuNC0uNTgsMi40NS0yLjIyLDIuNDVIMzBWOS4zNmgyLjM3QzM0LjA1LDkuMzYsMzQuNjMsMTAuMzksMzQuNjMsMTEuODFabS0yLjQxLDUuNDNjLjYzLDAsLjg4LS4zOC44OC0uOTNWMTEuNTJhLjguOCwwLDAsMC0uODgtLjkyaC0uNjV2Ni42M1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNS42LDkuMzZoMy42NnYxLjI1SDM3LjE0djIuNjFoMS41MnYxLjI0SDM3LjE0djIuNzdoMi4xM3YxLjI1SDM1LjZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDAsMTYuMTNWMTEuNzFhMi4xNSwyLjE1LDAsMCwxLDIuMjktMi40NmMxLjcsMCwyLjE3Ljk0LDIuMTcsMi4yOXYxLjA4aC0xLjR2LTEuMmMwLS41Ny0uMTktLjg5LS43NC0uODlzLS43OC4zOS0uNzguOTR2NC45YzAsLjU1LjIzLjk0Ljc4Ljk0cy43NC0uMzUuNzQtLjg5VjE0Ljc0aDEuNHYxLjU4YzAsMS4zMS0uNTQsMi4yOC0yLjE3LDIuMjhBMi4xNiwyLjE2LDAsMCwxLDQwLDE2LjEzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ1LjQ0LDkuMzZINDkuMXYxLjI1SDQ3djIuNjFINDguNXYxLjI0SDQ3djIuNzdINDkuMXYxLjI1SDQ1LjQ0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUxLjMxLDEyLjc1djUuNzRINTBWOS4zNmgxLjUxbDEuNjYsNS4yNFY5LjM2aDEuMjh2OS4xM0g1My4xMloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01NS4yNiw5LjM2aDQuMDh2MS4yNUg1OC4wOHY3Ljg4SDU2LjUzVjEwLjYxSDU1LjI2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY1LDEyLjg0bC0uODYsNS42NEg2Mi42N0w2MS40NSw5LjM2aDEuNDhsLjcxLDUuNzloMGwuNzctNS43OWgxLjI1bC44NSw1Ljc5aDBsLjctNS43OWgxLjI5bC0xLjE5LDkuMTNINjUuODlMNjUsMTIuODRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjkuMTUsMTYuMTNWMTEuNzFhMi4zMywyLjMzLDAsMSwxLDQuNjUsMHY0LjQyYTIuMzMsMi4zMywwLDEsMS00LjY1LDBabTMuMTEuMjR2LTQuOWMwLS41NS0uMjQtLjk0LS43OS0uOTRzLS43OC4zOS0uNzguOTR2NC45YzAsLjU1LjI0Ljk0Ljc4Ljk0UzcyLjI2LDE2LjkzLDcyLjI2LDE2LjM3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTc2LjMxLDE0LjN2NC4xOUg3NC43N1Y5LjM2SDc3YzEuNTUsMCwyLjExLjc3LDIuMTEsMnYxLjE3YzAsMS0uMzUsMS41Ni0xLjIzLDEuNzZsMS40Nyw0LjE1SDc3Ljc1Wm0wLTMuNjl2Mi44NGguNTFhLjY2LjY2LDAsMCwwLC43NS0uNzVWMTEuMzVjMC0uNS0uMjMtLjc0LS43NS0uNzRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODEuNTksMTR2NC40NEg4MC4wNVY5LjM2aDEuNTR2NGwxLjY3LTRoMS41MUw4MywxMy40NmwxLjgyLDVIODMuMTlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODcsMTguNDlsMS43Mi05LjEzaDEuNzVsMS43NCw5LjEzSDkwLjU5bC0uMjgtMS42N0g4OC42N2wtLjI3LDEuNjdabTEuOTMtMi45SDkwLjFsLS42MS0zLjY2aDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOTQsMTIuNzV2NS43NEg5Mi42OFY5LjM2aDEuNTFsMS42Niw1LjI0VjkuMzZoMS4yOHY5LjEzSDk1Ljc3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEwMi43MywxMS44MVYxNmMwLDEuNC0uNTgsMi40NS0yLjIyLDIuNDVIOTguMTNWOS4zNmgyLjM3QzEwMi4xNSw5LjM2LDEwMi43MywxMC4zOSwxMDIuNzMsMTEuODFabS0yLjQxLDUuNDNjLjYzLDAsLjg4LS4zOC44OC0uOTNWMTEuNTJhLjguOCwwLDAsMC0uODgtLjkyaC0uNjV2Ni42M1oiLz48L2c+PGcgaWQ9Ik5VTUJFUlNfT05MWSIgZGF0YS1uYW1lPSJOVU1CRVJTIE9OTFkiPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI0LjIxLDI2LjI5VjIzLjg1YzAtMi4xNS0uNzYtMy43LTIuNTEtNC41YTQsNCwwLDAsMCwyLjE4LTMuOXYtLjkzYzAtMy41MS0xLjgyLTUuMzktNS4yOS01LjM5UzEzLjM2LDExLDEzLjM2LDE0LjUydi45M2E0LDQsMCwwLDAsMi4xMiwzLjljLTEuNzUuNzktMi40OCwyLjM1LTIuNDgsNC41djIuNDVjMCwzLjQxLDEuNjIsNS43OSw1LjU5LDUuNzlzNS42Mi0yLjM4LDUuNjItNS43OW0tNy4zMS0xMmMwLTEuMzYuNDYtMi4xNSwxLjY5LTIuMTVzMS43Mi43OSwxLjcyLDIuMTV2MS41MmMwLDEuMzYtLjQ2LDIuMTUtMS43MiwyLjE1cy0xLjY5LS44LTEuNjktMi4xNVptMy41NCwxMi40YzAsMS4zNi0uNSwyLjMyLTEuODUsMi4zMnMtMS44Mi0xLTEuODItMi4zMlYyMy4wNWMwLTEuMzYuNS0yLjMxLDEuODItMi4zMXMxLjg1LDEsMS44NSwyLjMxWiIvPjwvZz48L3N2Zz4="
+	/**
+	 * Creates a base function for methods like `_.forIn` and `_.forOwn`.
+	 *
+	 * @private
+	 * @param {boolean} [fromRight] Specify iterating from right to left.
+	 * @returns {Function} Returns the new base function.
+	 */
+	function createBaseFor(fromRight) {
+	  return function(object, iteratee, keysFunc) {
+	    var index = -1,
+	        iterable = Object(object),
+	        props = keysFunc(object),
+	        length = props.length;
+	
+	    while (length--) {
+	      var key = props[fromRight ? length : ++index];
+	      if (iteratee(iterable[key], key, iterable) === false) {
+	        break;
+	      }
+	    }
+	    return object;
+	  };
+	}
+	
+	module.exports = createBaseFor;
+
 
 /***/ },
 /* 175 */
-/*!*****************************!*\
-  !*** ./src/images/sdg9.svg ***!
-  \*****************************/
-/***/ function(module, exports) {
+/*!**************************!*\
+  !*** ./~/lodash/keys.js ***!
+  \**************************/
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2YyNmEyYzt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDE3PC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMi43NSIgeT0iLTEuODMiIHdpZHRoPSIxMTguMjkiIGhlaWdodD0iMTE4LjMzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODQuNDMsNzMuNDYsNzEuMTUsNjUuNzlWNTAuNDVhLjkxLjkxLDAsMCwwLS40NS0uNzlMNTcsNDEuNzRhLjkxLjkxLDAsMCwwLS45MSwwTDQyLjMxLDQ5LjY3YS45MS45MSwwLDAsMC0uNDUuNzlWNjUuNzlMMjguNTgsNzMuNDZhLjkxLjkxLDAsMCwwLS40NS43OFY5MC4xMWEuOTEuOTEsMCwwLDAsLjQ1Ljc5bDEzLjc0LDcuOTNhLjkxLjkxLDAsMCwwLC45MSwwTDU2LjUsOTEuMTZsMTMuMjgsNy42N2EuOTEuOTEsMCwwLDAsLjkxLDBMODQuNDMsOTAuOWEuOTEuOTEsMCwwLDAsLjQ1LS43OVY3NC4yNUEuOTEuOTEsMCwwLDAsODQuNDMsNzMuNDZaTTU1LjYsODguNTRsLTExLTYuMzYsMTEtNi4zNlpNNjguNDMsNjYuMzJsLTExLDYuMzZWNjBaTTU1LjYsNzIuNjhsLTExLTYuMzZMNTUuNiw2MFptMi43MiwxLjU3LDExLjkyLTYuODgsMTEuOTMsNi44OEw3MC4yNCw4MS4xM1ptMTEtOS41LTExLTYuMzYsMTEtNi4zNlpNNTQuNjksNTguMzlsLTExLDYuMzZWNTJaTTQxLjg2LDk2LjQ3LDI5Ljk0LDg5LjU5Vjc1LjgyTDQxLjg2LDgyLjdabTEuODEsMFY4My43NWwxMSw2LjM2Wm0zOS40LTYuODhMNzEuMTUsOTYuNDdWODIuN2wxMS45My02Ljg5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI2LjM5LDkuNTVoMS40NnY4LjcxSDI2LjM5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI5Ljc1LDEyLjc4djUuNDdIMjguNTFWOS41NUgzMGwxLjU4LDV2LTVoMS4yMnY4LjcxSDMxLjQ3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM3Ljc4LDExLjg4djRjMCwxLjM0LS41NSwyLjM0LTIuMTIsMi4zNEgzMy40VjkuNTVoMi4yNkMzNy4yMiw5LjU1LDM3Ljc4LDEwLjU0LDM3Ljc4LDExLjg4Wm0tMi4zLDUuMThjLjYsMCwuODMtLjM2LjgzLS44OVYxMS42MmEuNzYuNzYsMCwwLDAtLjgzLS44N2gtLjYydjYuMzJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDIuNjcsOS41NXY2LjU5YzAsMS4zNS0uNTgsMi4yMi0yLjA3LDIuMjJhMiwyLDAsMCwxLTIuMTgtMi4yMlY5LjU1aDEuNDZ2Ni43M2MwLC41MS4yMS44Ni43Mi44NnMuNzItLjM1LjcyLS44NlY5LjU1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQzLjI0LDE2LjM4VjE1LjIxSDQ0LjZ2MS4xOWMwLC40OS4yMi43Ny43Mi43N3MuNjctLjMxLjY3LS43N3YtLjMzYTEuNTcsMS41NywwLDAsMC0uNjUtMS4yM0w0NC40NywxNGEyLjk0LDIuOTQsMCwwLDEtMS4yMi0yLjMydi0uM2ExLjgyLDEuODIsMCwwLDEsMi4wNi0xLjkxYzEuNDYsMCwyLC43MiwyLDJ2LjcxSDQ2di0uNzZjMC0uNS0uMjMtLjc1LS42OS0uNzVhLjY0LjY0LDAsMCwwLS42OS43MnYuMThjMCwuNDkuMjcuNzcuNjksMS4xOGwuOTQuOTJhMi45MiwyLjkyLDAsMCwxLDEuMTgsMi4yNnYuNDJhMS44OSwxLjg5LDAsMCwxLTIuMTMsMkExLjgxLDEuODEsMCwwLDEsNDMuMjQsMTYuMzhaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDcuNTMsOS41NWgzLjg5djEuMTlINTAuMjF2Ny41MUg0OC43NFYxMC43NEg0Ny41M1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01My4zNywxNC4yNnY0SDUxLjkxVjkuNTVINTRjMS40OCwwLDIsLjczLDIsMnYxLjEyYzAsLjk0LS4zMywxLjQ5LTEuMTcsMS42OGwxLjQsNEg1NC43NVptMC0zLjUydjIuNzFoLjQ5YS42My42MywwLDAsMCwuNzItLjcyVjExLjQ1YzAtLjQ4LS4yMi0uNzEtLjcyLS43MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01OS4xOSwxNC45NHYzLjMxSDU3LjczVjE0Ljk0TDU2LjEsOS41NWgxLjUzbC44OSwzLjNoMGwuODktMy4zaDEuNFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02Mi4wNywxN2wtLjc0LDJoLS44MmwuMTgtMi4wOGgxLjM5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYzLjg3LDkuNTVoMS40NnY4LjcxSDYzLjg3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY3LjIzLDEyLjc4djUuNDdINjZWOS41NWgxLjQ0bDEuNTgsNXYtNWgxLjIydjguNzFINjguOTVaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzIuMTEsMTIuNzh2NS40N0g3MC44OFY5LjU1aDEuNDRsMS41OCw1di01aDEuMjJ2OC43MUg3My44M1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03NS43NiwxNlYxMS44YTIuMjIsMi4yMiwwLDEsMSw0LjQzLDBWMTZhMi4yMiwyLjIyLDAsMSwxLTQuNDMsMFptMywuMjNWMTEuNTZjMC0uNTMtLjIzLS45LS43Ni0uOXMtLjc1LjM3LS43NS45djQuNjhjMCwuNTMuMjMuOS43NS45Uzc4LjczLDE2Ljc3LDc4LjczLDE2LjI0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg1LjUyLDkuNTVsLTEuNjYsOC43MUg4Mi4yN0w4MC42Miw5LjU1aDEuNDlsMSw2LjA4aDBsMS02LjA4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg1LjA2LDE4LjI2bDEuNjQtOC43MWgxLjY3TDkwLDE4LjI2aC0xLjVsLS4yNy0xLjU5SDg2LjcxbC0uMjYsMS41OVptMS44NC0yLjc2aDEuMTdMODcuNDksMTJoMFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04OS42Myw5LjU1aDMuODl2MS4xOUg5Mi4zMnY3LjUxSDkwLjg0VjEwLjc0SDg5LjYzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTk0LDkuNTVoMS40NnY4LjcxSDk0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTk2LjE0LDE2VjExLjhhMi4yMiwyLjIyLDAsMSwxLDQuNDMsMFYxNmEyLjIyLDIuMjIsMCwxLDEtNC40MywwWm0zLC4yM1YxMS41NmMwLS41My0uMjMtLjktLjc2LS45cy0uNzUuMzctLjc1Ljl2NC42OGMwLC41My4yMy45Ljc1LjlTOTkuMSwxNi43Nyw5OS4xLDE2LjI0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEwMi40NCwxMi43OHY1LjQ3aC0xLjIzVjkuNTVoMS40NGwxLjU4LDV2LTVoMS4yMnY4LjcxaC0xLjI4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI2LjE2LDMxLjY4LDI3LjgsMjNoMS42N2wxLjY2LDguNzFoLTEuNWwtLjI3LTEuNTlIMjcuOGwtLjI2LDEuNTlaTTI4LDI4LjkyaDEuMTdsLS41OC0zLjQ5aDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzIuOSwyNi4yMXY1LjQ3SDMxLjY3VjIzaDEuNDRsMS41OCw1VjIzaDEuMjJ2OC43MUgzNC42MloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00MS4wNiwyNS4zMXY0YzAsMS4zNC0uNTUsMi4zNC0yLjEyLDIuMzRIMzYuNjhWMjNoMi4yNkM0MC41MSwyMyw0MS4wNiwyNCw0MS4wNiwyNS4zMVptLTIuMyw1LjE4Yy42LDAsLjgzLS4zNi44My0uODlWMjVhLjc2Ljc2LDAsMCwwLS44My0uODdoLS42MnY2LjMyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQzLjEyLDIzaDEuNDZ2OC43MUg0My4xMloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00Ni42LDI2LjIxdjUuNDdINDUuMzZWMjNINDYuOGwxLjU4LDVWMjNINDkuNnY4LjcxSDQ4LjMyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUwLjM4LDIzaDMuNDN2MS4xOWgtMnYyLjQ5SDUzLjN2MS4xOEg1MS44NHYzLjg0SDUwLjM4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU1Ljg1LDI3LjY5djRINTQuMzhWMjNoMi4xM2MxLjQ4LDAsMiwuNzMsMiwyVjI2YzAsLjk0LS4zMywxLjQ5LTEuMTcsMS42OGwxLjQsNEg1Ny4yMlptMC0zLjUydjIuNzFoLjQ5YS42My42MywwLDAsMCwuNzItLjcyVjI0Ljg3YzAtLjQ4LS4yMi0uNzEtLjcyLS43MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01OSwzMS42OCw2MC42OCwyM2gxLjY3TDY0LDMxLjY4SDYyLjVsLS4yNy0xLjU5SDYwLjY4bC0uMjYsMS41OVptMS44NC0yLjc2SDYybC0uNTgtMy40OWgwWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY0LjM0LDI5LjgxVjI4LjY0SDY1Ljd2MS4xOWMwLC40OS4yMi43Ny43Mi43N3MuNjctLjMxLjY3LS43N1YyOS41YTEuNTgsMS41OCwwLDAsMC0uNjUtMS4yM2wtLjg2LS44NmEyLjk0LDIuOTQsMCwwLDEtMS4yMi0yLjMydi0uM2ExLjgyLDEuODIsMCwwLDEsMi4wNi0xLjkxYzEuNDYsMCwyLC43MiwyLDJ2LjcxSDY3LjEyVjI0LjhjMC0uNS0uMjMtLjc1LS42OS0uNzVhLjY0LjY0LDAsMCwwLS42OS43MlYyNWMwLC40OS4yNy43Ny42OSwxLjE4bC45NC45MmEyLjkyLDIuOTIsMCwwLDEsMS4xOCwyLjI2di40MmExLjg5LDEuODksMCwwLDEtMi4xMywyQTEuODEsMS44MSwwLDAsMSw2NC4zNCwyOS44MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02OC44OSwyM2gzLjg5djEuMTlINzEuNTd2Ny41MUg3MC4xVjI0LjE3SDY4Ljg5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTc0Ljg2LDI3LjY5djRINzMuNFYyM2gyLjEzYzEuNDgsMCwyLC43MywyLDJWMjZjMCwuOTQtLjMzLDEuNDktMS4xNywxLjY4bDEuNCw0SDc2LjI0Wm0wLTMuNTJ2Mi43MWguNDlhLjYzLjYzLDAsMCwwLC43Mi0uNzJWMjQuODdjMC0uNDgtLjIyLS43MS0uNzItLjcxWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgyLjUzLDIzdjYuNTljMCwxLjM1LS41OCwyLjIyLTIuMDcsMi4yMmEyLDIsMCwwLDEtMi4xOC0yLjIyVjIzaDEuNDZWMjkuN2MwLC41MS4yMS44Ni43Mi44NnMuNzItLjM1LjcyLS44NlYyM1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04My4zMSwyOS40M1YyNS4yMmEyLjA1LDIuMDUsMCwwLDEsMi4xOC0yLjM1YzEuNjIsMCwyLjA3LjksMi4wNywyLjE4djFIODYuMjJWMjQuOTRjMC0uNTQtLjE4LS44NS0uNzEtLjg1cy0uNzUuMzctLjc1Ljl2NC42OGMwLC41My4yMi45Ljc1LjlzLjcxLS4zMy43MS0uODVWMjguMTFoMS4zNHYxLjVjMCwxLjI1LS41MSwyLjE3LTIuMDcsMi4xN0EyLjA2LDIuMDYsMCwwLDEsODMuMzEsMjkuNDNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODcuOCwyM2gzLjg5djEuMTlIOTAuNDl2Ny41MUg4OVYyNC4xN0g4Ny44WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTk2LjU2LDIzdjYuNTljMCwxLjM1LS41OCwyLjIyLTIuMDcsMi4yMmEyLDIsMCwwLDEtMi4xOC0yLjIyVjIzaDEuNDZWMjkuN2MwLC41MS4yMS44Ni43Mi44NnMuNzItLjM1LjcyLS44NlYyM1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik05OC44LDI3LjY5djRIOTcuMzRWMjNoMi4xM2MxLjQ4LDAsMiwuNzMsMiwyVjI2YzAsLjk0LS4zMywxLjQ5LTEuMTcsMS42OGwxLjQsNGgtMS41NFptMC0zLjUydjIuNzFoLjQ5YS42My42MywwLDAsMCwuNzItLjcyVjI0Ljg3YzAtLjQ4LS4yMi0uNzEtLjcyLS43MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xMDIuMjIsMjNoMy40OXYxLjE5aC0ydjIuNDloMS40NXYxLjE4aC0xLjQ1djIuNjVoMnYxLjE5aC0zLjQ5WiIvPjwvZz48ZyBpZD0iTlVNQkVSU19PTkxZIiBkYXRhLW5hbWU9Ik5VTUJFUlMgT05MWSI+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjIuMzUsMTUuMTFjMC0zLjQ3LTEuNTItNi01LjQ5LTZzLTUuNTUsMi4xOC01LjU1LDUuNjV2My4zMWMwLDMuNjcsMS40NSw1LjUyLDQuMTcsNS41MmEzLjIyLDMuMjIsMCwwLDAsMy4xMS0xLjgyaDB2NC44MmMwLDEuMzYtLjUzLDIuMzEtMS44OCwyLjMxcy0xLjg1LS43OS0xLjg1LTIuMThWMjUuMjZIMTEuNDR2MS4xOWMwLDMuMywxLjE5LDUuNjIsNS4zNiw1LjYyLDQsMCw1LjU1LTIuNTUsNS41NS02Wm0tMy43NCwzLjQ0Yy0uMDcsMS4yNi0uNTksMi0xLjc4LDJTMTUsMTkuODEsMTUsMTguMzV2LTMuOWMwLTEuNDIuNTMtMi4yNSwxLjgyLTIuMjVzMS43NS44NiwxLjc1LDIuMjVaIi8+PC9nPjwvc3ZnPg=="
+	var baseHas = __webpack_require__(/*! ./_baseHas */ 176),
+	    baseKeys = __webpack_require__(/*! ./_baseKeys */ 178),
+	    indexKeys = __webpack_require__(/*! ./_indexKeys */ 179),
+	    isArrayLike = __webpack_require__(/*! ./isArrayLike */ 183),
+	    isIndex = __webpack_require__(/*! ./_isIndex */ 192),
+	    isPrototype = __webpack_require__(/*! ./_isPrototype */ 193);
+	
+	/**
+	 * Creates an array of the own enumerable property names of `object`.
+	 *
+	 * **Note:** Non-object values are coerced to objects. See the
+	 * [ES spec](http://ecma-international.org/ecma-262/6.0/#sec-object.keys)
+	 * for more details.
+	 *
+	 * @static
+	 * @since 0.1.0
+	 * @memberOf _
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the array of property names.
+	 * @example
+	 *
+	 * function Foo() {
+	 *   this.a = 1;
+	 *   this.b = 2;
+	 * }
+	 *
+	 * Foo.prototype.c = 3;
+	 *
+	 * _.keys(new Foo);
+	 * // => ['a', 'b'] (iteration order is not guaranteed)
+	 *
+	 * _.keys('hi');
+	 * // => ['0', '1']
+	 */
+	function keys(object) {
+	  var isProto = isPrototype(object);
+	  if (!(isProto || isArrayLike(object))) {
+	    return baseKeys(object);
+	  }
+	  var indexes = indexKeys(object),
+	      skipIndexes = !!indexes,
+	      result = indexes || [],
+	      length = result.length;
+	
+	  for (var key in object) {
+	    if (baseHas(object, key) &&
+	        !(skipIndexes && (key == 'length' || isIndex(key, length))) &&
+	        !(isProto && key == 'constructor')) {
+	      result.push(key);
+	    }
+	  }
+	  return result;
+	}
+	
+	module.exports = keys;
+
 
 /***/ },
 /* 176 */
 /*!******************************!*\
-  !*** ./src/images/sdg10.svg ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2RkMTc2ODt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDE4PC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMi41NSIgeT0iLTEuODMiIHdpZHRoPSIxMTguODIiIGhlaWdodD0iMTE4LjMzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjcuNDIsNzMuODNINDUuMDhhLjI0LjI0LDAsMCwwLS4yNC4yNHY1LjA2YS4yNC4yNCwwLDAsMCwuMjQuMjRINjcuNDJhLjI0LjI0LDAsMCwwLC4yNS0uMjRWNzQuMDdhLjI0LjI0LDAsMCwwLS4yNS0uMjQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02Ny42Nyw2NC41NmEuMjQuMjQsMCwwLDAtLjI1LS4yNEg0NS4wOGEuMjQuMjQsMCwwLDAtLjI0LjI0djUuMDZhLjI0LjI0LDAsMCwwLC4yNC4yNEg2Ny40MmEuMjQuMjQsMCwwLDAsLjI1LS4yNFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04MC41OSw2Ni41NGEyNS44MiwyNS44MiwwLDAsMC00Ljc5LTkuNzdsLS4wNSwwYTI0LjE1LDI0LjE1LDAsMCwxLDEuOTEsMy4zOUEyMy43MiwyMy43MiwwLDAsMSwzNy41OSw4NS40MWEyMi4zOSwyMi4zOSwwLDAsMSwzMi41LTMwLjUybC4xNC4xM2EuODQuODQsMCwwLDAsLjUxLjE5QS44Ni44NiwwLDAsMCw3MS4zLDU1bC4wOS0uMDksMi44NC0yLjgxLjE5LS4xOGEuODIuODIsMCwwLDAsMC0xLjA4bC0uMDktLjA4QTI3LjUxLDI3LjUxLDAsMSwwLDM4Ljk0LDkyLjg2LDI2LDI2LDAsMCwwLDgwLjU5LDY2LjU0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzcuMjMsMTQuMzZsMS40Niw0LjI2aDEuNjRMMzguODUsMTQuNGMuODktLjIsMS4yNS0uNzksMS4yNS0xLjc5VjExLjQyYzAtMS4zLS41OC0yLjA4LTIuMTUtMi4wOEgzNS42N3Y5LjI4aDEuNTZabTAtMy43NWguNTJjLjU0LDAsLjc3LjI1Ljc3Ljc1djEuMzdhLjY4LjY4LDAsMCwxLS43Ny43N2gtLjUyWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI0NC44IDE3LjM1IDQyLjY0IDE3LjM1IDQyLjY0IDE0LjUzIDQ0LjE5IDE0LjUzIDQ0LjE5IDEzLjI3IDQyLjY0IDEzLjI3IDQyLjY0IDEwLjYxIDQ0LjggMTAuNjEgNDQuOCA5LjM0IDQxLjA4IDkuMzQgNDEuMDggMTguNjIgNDQuOCAxOC42MiA0NC44IDE3LjM1Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDguMTksOS4zNEg0NS43OHY5LjI4aDIuNDFjMS42NywwLDIuMjYtMS4wNywyLjI2LTIuNDl2LTQuM2MwLTEuNDQtLjU5LTIuNDktMi4yNi0yLjQ5bS43LDcuMDZjMCwuNTYtLjI1Ljk0LS44OS45NGgtLjY2VjEwLjYxSDQ4YS44MS44MSwwLDAsMSwuODkuOTNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTMsOS4zNEg1MS40N3Y3YTIuMDksMi4wOSwwLDAsMCwyLjMzLDIuMzdjMS41OSwwLDIuMi0uOTMsMi4yLTIuMzd2LTdINTQuNTZ2Ny4xN2MwLC41NS0uMjIuOTItLjc3Ljkycy0uNzYtLjM3LS43Ni0uOTJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTcsMTEuNzR2NC40OWEyLjIsMi4yLDAsMCwwLDIuMzMsMi41MWMxLjY2LDAsMi4yLTEsMi4yLTIuMzF2LTEuNkg2MC4xNHYxLjcxYzAsLjU1LS4xOS45LS43NS45cy0uNzktLjQtLjc5LTF2LTVjMC0uNTYuMjMtMSwuNzktMXMuNzUuMzMuNzUuOXYxLjIyaDEuNDJWMTEuNTZjMC0xLjM3LS40OC0yLjMzLTIuMi0yLjMzQTIuMTksMi4xOSwwLDAsMCw1NywxMS43NCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI2Mi41NSAxOC42MiA2Ni4yNyAxOC42MiA2Ni4yNyAxNy4zNSA2NC4xMSAxNy4zNSA2NC4xMSAxNC41MyA2NS42NSAxNC41MyA2NS42NSAxMy4yNyA2NC4xMSAxMy4yNyA2NC4xMSAxMC42MSA2Ni4yNyAxMC42MSA2Ni4yNyA5LjM0IDYyLjU1IDkuMzQgNjIuNTUgMTguNjIiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02Ny4yNCw5LjM0djkuMjhoMi40MWMxLjY3LDAsMi4yNi0xLjA3LDIuMjYtMi40OXYtNC4zYzAtMS40NC0uNTktMi40OS0yLjI2LTIuNDlabTMuMTEsMi4yVjE2LjRjMCwuNTYtLjI1Ljk0LS44OS45NEg2OC44VjEwLjYxaC42NmEuODEuODEsMCwwLDEsLjg5LjkzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSIzNS42NyIgeT0iMjIuNjIiIHdpZHRoPSIxLjU2IiBoZWlnaHQ9IjkuMjgiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNDIuNzcgMjIuNjIgNDEuNDcgMjIuNjIgNDEuNDcgMjcuOTQgMzkuNzggMjIuNjIgMzguMjUgMjIuNjIgMzguMjUgMzEuOSAzOS41NiAzMS45IDM5LjU2IDI2LjA3IDQxLjQgMzEuOSA0Mi43NyAzMS45IDQyLjc3IDIyLjYyIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjQ3LjM3IDIzLjg5IDQ3LjM3IDIyLjYyIDQzLjY0IDIyLjYyIDQzLjY0IDMxLjkgNDcuMzcgMzEuOSA0Ny4zNyAzMC42MyA0NS4yIDMwLjYzIDQ1LjIgMjcuODEgNDYuNzUgMjcuODEgNDYuNzUgMjYuNTUgNDUuMiAyNi41NSA0NS4yIDIzLjg5IDQ3LjM3IDIzLjg5Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTAuMjksMjIuNTFBMi4yMSwyLjIxLDAsMCwwLDQ3Ljk0LDI1VjI5LjVhMi4xNCwyLjE0LDAsMCwwLDEuNzgsMi40di42M2wyLjk0LjU1VjMxLjkxbC0xLjE1LS4yMmEyLjIzLDIuMjMsMCwwLDAsMS4xNS0yLjE5VjI1YTIuMjEsMi4yMSwwLDAsMC0yLjM3LTIuNW0uODEsNy4zMmMwLC41NS0uMjUsMS0uODEsMXMtLjc5LS40MS0uNzktMVYyNC43N2MwLS41Ni4yNS0xLC43OS0xcy44MS40LjgxLDFaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTMuNTQsMjIuNjJ2N0EyLjA5LDIuMDksMCwwLDAsNTUuODYsMzJjMS41OSwwLDIuMi0uOTMsMi4yLTIuMzd2LTdINTYuNjN2Ny4xN2MwLC41NS0uMjIuOTItLjc3Ljkycy0uNzctLjM3LS43Ny0uOTJWMjIuNjJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjAuMzIsMjIuNjIsNTguNTcsMzEuOWgxLjQ4bC4yNy0xLjdINjJsLjI5LDEuN2gxLjZMNjIuMSwyMi42MlpNNjAuNTMsMjlsLjYyLTMuNzJoMEw2MS43NywyOVoiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNjQuNSAyMi42MiA2NC41IDMxLjkgNjcuOTIgMzEuOSA2Ny45MiAzMC42MyA2Ni4wNiAzMC42MyA2Ni4wNiAyMi42MiA2NC41IDIyLjYyIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI2OC42MiIgeT0iMjIuNjIiIHdpZHRoPSIxLjU2IiBoZWlnaHQ9IjkuMjgiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNzMuNzUgMzEuOSA3My43NSAyMy44OSA3NS4wNCAyMy44OSA3NS4wNCAyMi42MiA3MC44OSAyMi42MiA3MC44OSAyMy44OSA3Mi4xOCAyMy44OSA3Mi4xOCAzMS45IDczLjc1IDMxLjkiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9Ijc1Ljc1IiB5PSIyMi42MiIgd2lkdGg9IjEuNTYiIGhlaWdodD0iOS4yOCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI4MS45MiAzMC42MyA3OS43NiAzMC42MyA3OS43NiAyNy44MSA4MS4zMSAyNy44MSA4MS4zMSAyNi41NSA3OS43NiAyNi41NSA3OS43NiAyMy44OSA4MS45MiAyMy44OSA4MS45MiAyMi42MiA3OC4yIDIyLjYyIDc4LjIgMzEuOSA4MS45MiAzMS45IDgxLjkyIDMwLjYzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODIuNTQsMjguNjZWMjkuOUExLjkzLDEuOTMsMCwwLDAsODQuNzQsMzIsMiwyLDAsMCwwLDg3LDI5Ljgzdi0uNDVBMy4xMiwzLjEyLDAsMCwwLDg1Ljc2LDI3bC0xLTFjLS40NS0uNDQtLjc0LS43NC0uNzQtMS4yNnYtLjE5YS42OC42OCwwLDAsMSwuNzQtLjc3Yy40OSwwLC43NC4yNi43NC43OXYuODFoMS40MnYtLjc1YzAtMS4zNC0uNjItMi4xMS0yLjE4LTIuMTFhMS45NCwxLjk0LDAsMCwwLTIuMTksMnYuMzJhMy4xMiwzLjEyLDAsMCwwLDEuMywyLjQ4bC45Mi45MmExLjY3LDEuNjcsMCwwLDEsLjcsMS4zMXYuMzZjMCwuNDktLjIyLjgyLS43MS44MnMtLjc3LS4zLS43Ny0uODJWMjguNjZaIi8+PC9nPjxnIGlkPSJOVU1CRVJTX09OTFkiIGRhdGEtbmFtZT0iTlVNQkVSUyBPTkxZIj48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMTIuMSAxNC42NiAxMi4xIDMxLjg0IDE1Ljg3IDMxLjg0IDE1Ljg3IDkuMzkgMTIuODYgOS4zOSA5LjM4IDEzLjQ3IDkuMzggMTcuNDEgOS40MiAxNy40MSAxMi4wNiAxNC42NiAxMi4xIDE0LjY2Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjkuNjQsMjZWMTUuMTljMC0zLjUxLTEuNzUtNi4wNi01LjU5LTYuMDZzLTUuNTYsMi41NS01LjU2LDYuMDZWMjZjMCwzLjQ3LDEuNzYsNi4wNiw1LjU2LDYuMDZzNS41OS0yLjU4LDUuNTktNi4wNm0tNy4zOC42VjE0LjU5YzAtMS4zNi41LTIuMzIsMS43OS0yLjMyczEuODIsMSwxLjgyLDIuMzJWMjYuNjRDMjUuODcsMjgsMjUuMzcsMjksMjQsMjlzLTEuNzktMS0xLjc5LTIuMzIiLz48L2c+PC9zdmc+"
-
-/***/ },
-/* 177 */
-/*!******************************!*\
-  !*** ./src/images/sdg11.svg ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2Y5OWQyODt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDE5PC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMS4yMyIgeT0iLTEuODMiIHdpZHRoPSIxMTcuNTEiIGhlaWdodD0iMTE4LjMzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTkuMjMsODUuMDlIMzZhLjQxLjQxLDAsMCwwLC4zLS42OWwwLDBMMjgsNzMuNTVsLS4wOC0uMDlhLjQxLjQxLDAsMCwwLS4zLS4xMy40Mi40MiwwLDAsMC0uMjcuMTFsLS4wNS4wNi0uMDguMDlMMTksODQuMjlsLS4xMy4xNWEuNDEuNDEsMCwwLDAtLjA3LjIzQS40MS40MSwwLDAsMCwxOS4yMyw4NS4wOVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNiw4Ni42MUgxOS4xNGEuNDEuNDEsMCwwLDAtLjQxLjQxdjEzLjE4YS40MS40MSwwLDAsMCwuNDEuNDFoNS40MlY5Mi4zM2EuNDEuNDEsMCwwLDEsLjQxLS40MWg1YS40MS40MSwwLDAsMSwuNDEuNDF2OC4yOUgzNmEuNDEuNDEsMCwwLDAsLjQxLS40MVY4N0EuNDEuNDEsMCwwLDAsMzYsODYuNjFaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOTQuMjEsODMuMTZINzcuNTNhLjQuNCwwLDAsMC0uNDEuNFYxMDAuNGEuNC40LDAsMCwwLC40MS40SDk0LjIxYS40LjQsMCwwLDAsLjQxLS40VjgzLjU2YS40LjQsMCwwLDAtLjQxLS40bS05LjEyLDExYS40LjQsMCwwLDEtLjQxLjRoLTVhLjQuNCwwLDAsMS0uNDEtLjR2LTNhLjQuNCwwLDAsMSwuNDEtLjRoNWEuNC40LDAsMCwxLC40MS40Wm0wLTUuNTlhLjQuNCwwLDAsMS0uNDEuNGgtNWEuNC40LDAsMCwxLS40MS0uNHYtM2EuNC40LDAsMCwxLC40MS0uNGg1YS40LjQsMCwwLDEsLjQxLjRabTcuNjEsNS41OWEuNC40LDAsMCwxLS40MS40aC01YS40LjQsMCwwLDEtLjQxLS40di0zYS40LjQsMCwwLDEsLjQxLS40aDVhLjQuNCwwLDAsMSwuNDEuNFptMC01LjU5YS40LjQsMCwwLDEtLjQxLjRoLTVhLjQuNCwwLDAsMS0uNDEtLjR2LTNhLjQuNCwwLDAsMSwuNDEtLjRoNWEuNC40LDAsMCwxLC40MS40WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU1LjQ1LDQ0LjA5SDM5LjEzYS40LjQsMCwwLDAtLjQuNHY1NS43NmEuNC40LDAsMCwwLC40LjRINTUuNDVhLjQuNCwwLDAsMCwuNC0uNFY0NC40OWEuNC40LDAsMCwwLS40LS40TTQ1Ljc0LDk0LjI5YS4yMS4yMSwwLDAsMS0uMjEuMjFINDEuNzlhLjIxLjIxLDAsMCwxLS4yMS0uMjFWOTAuMTNhLjIxLjIxLDAsMCwxLC4yMS0uMjFoMy43NGEuMjEuMjEsMCwwLDEsLjIxLjIxWm0wLTkuNTZhLjIxLjIxLDAsMCwxLS4yMS4yMUg0MS43OWEuMjEuMjEsMCwwLDEtLjIxLS4yMVY4MC41N2EuMjEuMjEsMCwwLDEsLjIxLS4yMWgzLjc0YS4yMS4yMSwwLDAsMSwuMjEuMjFabTAtOS41NmEuMjEuMjEsMCwwLDEtLjIxLjIxSDQxLjc5YS4yMS4yMSwwLDAsMS0uMjEtLjIxVjcxYS4yMS4yMSwwLDAsMSwuMjEtLjIxaDMuNzRhLjIxLjIxLDAsMCwxLC4yMS4yMVptMC05LjU2YS4yMS4yMSwwLDAsMS0uMjEuMjFINDEuNzlhLjIxLjIxLDAsMCwxLS4yMS0uMjFWNjEuNDVhLjIxLjIxLDAsMCwxLC4yMS0uMjFoMy43NGEuMjEuMjEsMCwwLDEsLjIxLjIxWm0wLTkuNTZhLjIxLjIxLDAsMCwxLS4yMS4yMUg0MS43OWEuMjEuMjEsMCwwLDEtLjIxLS4yMVY1MS44OWEuMjEuMjEsMCwwLDEsLjIxLS4yMWgzLjc0YS4yMS4yMSwwLDAsMSwuMjEuMjFabTcuMzMsMzguMjRhLjIyLjIyLDAsMCwxLS4yMi4yMUg0OS4xMmEuMjEuMjEsMCwwLDEtLjIxLS4yMVY5MC4xM2EuMjEuMjEsMCwwLDEsLjIxLS4yMWgzLjczYS4yMS4yMSwwLDAsMSwuMjIuMjFabTAtOS41NmEuMjEuMjEsMCwwLDEtLjIyLjIxSDQ5LjEyYS4yMS4yMSwwLDAsMS0uMjEtLjIxVjgwLjU3YS4yMS4yMSwwLDAsMSwuMjEtLjIxaDMuNzNhLjIxLjIxLDAsMCwxLC4yMi4yMVptMC05LjU2YS4yMi4yMiwwLDAsMS0uMjIuMjFINDkuMTJhLjIxLjIxLDAsMCwxLS4yMS0uMjFWNzFhLjIxLjIxLDAsMCwxLC4yMS0uMjFoMy43M2EuMjIuMjIsMCwwLDEsLjIyLjIxWm0wLTkuNTZhLjIyLjIyLDAsMCwxLS4yMi4yMUg0OS4xMmEuMjEuMjEsMCwwLDEtLjIxLS4yMVY2MS40NWEuMjEuMjEsMCwwLDEsLjIxLS4yMWgzLjczYS4yMS4yMSwwLDAsMSwuMjIuMjFabTAtOS41NmEuMjEuMjEsMCwwLDEtLjIyLjIxSDQ5LjEyYS4yMS4yMSwwLDAsMS0uMjEtLjIxVjUxLjg5YS4yMS4yMSwwLDAsMSwuMjEtLjIxaDMuNzNhLjIxLjIxLDAsMCwxLC4yMi4yMVoiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9Ijc3LjE0IiB5PSI3Ny43OCIgd2lkdGg9IjE3LjQ1IiBoZWlnaHQ9IjQuMDMiIHJ4PSIwLjM0IiByeT0iMC4zNCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTc1LjE2LDU0LjYyYS40My40MywwLDAsMC0uNDEtLjMxLjQyLjQyLDAsMCwwLS4yMy4wOGwwLDAtLjE0LjE3LTE2LDIwLjM0LS4wNy4xYS40Ni40NiwwLDAsMC0uMTQuMzJ2MjVhLjQuNCwwLDAsMCwuNC40SDc0LjhhLjQuNCwwLDAsMCwuNC0uNFY1NC43OEEuNC40LDAsMCwwLDc1LjE2LDU0LjYyWm0tNi43NSwxMSwuMTEtLjE0YzEuMS0xLjQxLDIuOTUtMy42OCwzLjg1LTQuNzlsLjEyLS4xNGEuNDcuNDcsMCwwLDEsLjM2LS4xNy40Ni40NiwwLDAsMSwuNDQuMzd2NS4xNWEuNDYuNDYsMCwwLDEtLjQ0LjQ2SDY4Ljc2YS40Ni40NiwwLDAsMS0uMzUtLjczWk02NS44Nyw5NC4xNWEuNC40LDAsMCwxLS40LjRINjAuNjFhLjQuNCwwLDAsMS0uNC0uNHYtM2EuNC40LDAsMCwxLC40LS40aDQuODZhLjQuNCwwLDAsMSwuNC40Wm0wLTUuNjJhLjQuNCwwLDAsMS0uNC40SDYwLjYxYS40LjQsMCwwLDEtLjQtLjR2LTNhLjQuNCwwLDAsMSwuNC0uNGg0Ljg2YS40LjQsMCwwLDEsLjQuNFptMC01LjYyYS40LjQsMCwwLDEtLjQuNEg2MC42MWEuNC40LDAsMCwxLS40LS40di0zYS40LjQsMCwwLDEsLjQtLjRoNC44NmEuNC40LDAsMCwxLC40LjRabTAtMTIuMzN2Ni43MWEuNC40LDAsMCwxLS40LjRINjAuNjJhLjQuNCwwLDAsMS0uNC0uNHYtLjg0YS40NS40NSwwLDAsMSwwLS4xNWwwLDAsMC0uMDUsMC0uMDZjLjYyLS44OSwzLjQzLTQuMzQsNC42LTUuNzlsLjEyLS4xNGEuNDcuNDcsMCwwLDEsLjM2LS4xNy40Ni40NiwwLDAsMSwuNDQuMzdaTTczLjMsOTQuMTVhLjQuNCwwLDAsMS0uNC40SDY4YS40LjQsMCwwLDEtLjQtLjR2LTNhLjQuNCwwLDAsMSwuNC0uNEg3Mi45YS40LjQsMCwwLDEsLjQuNFptMC01LjYyYS40LjQsMCwwLDEtLjQuNEg2OGEuNC40LDAsMCwxLS40LS40di0zYS40LjQsMCwwLDEsLjQtLjRINzIuOWEuNC40LDAsMCwxLC40LjRabTAtNS42MmEuNC40LDAsMCwxLS40LjRINjhhLjQuNCwwLDAsMS0uNC0uNHYtM2EuNC40LDAsMCwxLC40LS40SDcyLjlhLjQuNCwwLDAsMSwuNC40Wm0wLTUuNjNhLjQuNCwwLDAsMS0uNC40SDY4YS40LjQsMCwwLDEtLjQtLjR2LTNhLjQuNCwwLDAsMSwuNC0uNEg3Mi45YS40LjQsMCwwLDEsLjQuNFptMC01LjYzYS40LjQsMCwwLDEtLjQuNEg2OGEuNC40LDAsMCwxLS40LS40di0zYS40LjQsMCwwLDEsLjQtLjRINzIuOWEuNC40LDAsMCwxLC40LjRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzIuNywxOC42YTIsMiwwLDAsMCwyLjI0LTIuMTRWMTZhMy4wNywzLjA3LDAsMCwwLTEuMjQtMi4zN2wtMS0xYy0uNDQtLjQzLS43My0uNzMtLjczLTEuMjR2LS4xOWEuNjcuNjcsMCwwLDEsLjczLS43NmMuNDgsMCwuNzMuMjYuNzMuNzh2Ljc5aDEuNHYtLjc0YzAtMS4zMi0uNi0yLjA4LTIuMTQtMi4wOGExLjkxLDEuOTEsMCwwLDAtMi4xNiwydi4zMUEzLjA4LDMuMDgsMCwwLDAsMzEuODIsMTRsLjkuOWExLjY1LDEuNjUsMCwwLDEsLjY5LDEuMjl2LjM1YzAsLjQ5LS4yMi44MS0uNy44MXMtLjc1LS4zLS43NS0uODFWMTUuM0gzMC41M3YxLjIzQTEuOSwxLjksMCwwLDAsMzIuNywxOC42Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDAuMDYsMTYuMjdWOS4zNUgzOC42NXY3LjA2YzAsLjU0LS4yMi45LS43Ni45cy0uNzUtLjM2LS43NS0uOVY5LjM1SDM1LjZ2Ni45MmEyLjA2LDIuMDYsMCwwLDAsMi4yOSwyLjMzYzEuNTYsMCwyLjE3LS45MiwyLjE3LTIuMzMiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NS4yNSwxNi40NVYxNkEzLjA4LDMuMDgsMCwwLDAsNDQsMTMuNjRsLTEtMWMtLjQ0LS40My0uNzMtLjczLS43My0xLjI0di0uMTlhLjY4LjY4LDAsMCwxLC43My0uNzZjLjQ5LDAsLjczLjI1LjczLjc4di43OWgxLjR2LS43NGMwLTEuMzItLjYtMi4wOC0yLjE0LTIuMDhhMS45MSwxLjkxLDAsMCwwLTIuMTYsMnYuMzFBMy4wOCwzLjA4LDAsMCwwLDQyLjE0LDE0bC45LjlhMS42NSwxLjY1LDAsMCwxLC42OSwxLjI5di4zNWMwLC40OC0uMjEuODEtLjcuODFzLS43NS0uMy0uNzUtLjgxVjE1LjNINDAuODV2MS4yM0ExLjksMS45LDAsMCwwLDQzLDE4LjZhMiwyLDAsMCwwLDIuMjQtMi4xNCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI0OS43IDkuMzUgNDUuNjIgOS4zNSA0NS42MiAxMC42MSA0Ni44OSAxMC42MSA0Ni44OSAxOC40OSA0OC40NCAxOC40OSA0OC40NCAxMC42MSA0OS43IDEwLjYxIDQ5LjcgOS4zNSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUyLjg5LDkuMzVINTEuMTRsLTEuNzIsOS4xNGgxLjQ2bC4yNy0xLjY3aDEuNjNsLjI4LDEuNjdoMS41OFptLTEuNTUsNi4yNC42LTMuNjdoMGwuNjEsMy42N1oiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjU1LjI1IiB5PSI5LjM1IiB3aWR0aD0iMS41NCIgaGVpZ2h0PSI5LjE0Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjYyLjExIDE4LjQ5IDYyLjExIDkuMzUgNjAuODMgOS4zNSA2MC44MyAxNC41OSA1OS4xNyA5LjM1IDU3LjY2IDkuMzUgNTcuNjYgMTguNDkgNTguOTUgMTguNDkgNTguOTUgMTIuNzUgNjAuNzYgMTguNDkgNjIuMTEgMTguNDkiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02NC4zMywxNi44Mkg2NmwuMjgsMS42N2gxLjU4TDY2LjA4LDkuMzVINjQuMzNMNjIuNiwxOC40OWgxLjQ2Wm0uODEtNC44OWgwbC42MSwzLjY3SDY0LjUzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTcyLjU4LDEyLjI5di0uOTNjMC0xLjI5LS41MS0yLTItMkg2OC4zMXY5LjE0SDcwLjdjMS41NCwwLDIuMTEtLjcxLDIuMTEtMlYxNS4yN2ExLjM5LDEuMzksMCwwLDAtMS4xNC0xLjUyLDEuMzMsMS4zMywwLDAsMCwuOTItMS40Nm0tMi43My0xLjY4aC41M2EuNjUuNjUsMCwwLDEsLjc0Ljc0djEuMTJhLjY1LjY1LDAsMCwxLS43My43NGgtLjU0Wm0xLjQzLDUuODlhLjY2LjY2LDAsMCwxLS43NS43NGgtLjY3VjE0LjM4aC42NmMuNTQsMCwuNzcuMjYuNzcuNzRaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9Ijc0Ljk4IDkuMzUgNzMuNDQgOS4zNSA3My40NCAxOC40OSA3Ni44MSAxOC40OSA3Ni44MSAxNy4yNCA3NC45OCAxNy4yNCA3NC45OCA5LjM1Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjgxLjA0IDEwLjYxIDgxLjA0IDkuMzUgNzcuMzcgOS4zNSA3Ny4zNyAxOC40OSA4MS4wNCAxOC40OSA4MS4wNCAxNy4yNCA3OC45MSAxNy4yNCA3OC45MSAxNC40NiA4MC40MyAxNC40NiA4MC40MyAxMy4yMiA3OC45MSAxMy4yMiA3OC45MSAxMC42MSA4MS4wNCAxMC42MSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg1LjkxLDE4LjZjMS42MywwLDIuMTctMSwyLjE3LTIuMjhWMTQuNzRoLTEuNHYxLjY5YzAsLjU0LS4xOS44OS0uNzQuODlzLS43OC0uMzktLjc4LS45NFYxMS40N2MwLS41NS4yMy0uOTQuNzgtLjk0cy43NC4zMi43NC44OXYxLjJoMS40VjExLjU0YzAtMS4zNS0uNDctMi4yOS0yLjE3LTIuMjlhMi4xNiwyLjE2LDAsMCwwLTIuMjksMi40N3Y0LjQyYTIuMTYsMi4xNiwwLDAsMCwyLjI5LDIuNDciLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9Ijg4LjgiIHk9IjkuMzUiIHdpZHRoPSIxLjUzIiBoZWlnaHQ9IjkuMTQiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iOTMuNzQgMTguNDkgOTMuNzQgMTAuNjEgOTUgMTAuNjEgOTUgOS4zNSA5MC45MiA5LjM1IDkwLjkyIDEwLjYxIDkyLjE5IDEwLjYxIDkyLjE5IDE4LjQ5IDkzLjc0IDE4LjQ5Ii8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI5NS42MSIgeT0iOS4zNSIgd2lkdGg9IjEuNTMiIGhlaWdodD0iOS4xNCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI5Ny45MyAxOC40OSAxMDEuNTkgMTguNDkgMTAxLjU5IDE3LjI0IDk5LjQ3IDE3LjI0IDk5LjQ3IDE0LjQ2IDEwMC45OSAxNC40NiAxMDAuOTkgMTMuMjIgOTkuNDcgMTMuMjIgOTkuNDcgMTAuNjEgMTAxLjU5IDEwLjYxIDEwMS41OSA5LjM1IDk3LjkzIDkuMzUgOTcuOTMgMTguNDkiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xMDQuMiwxMi42N2MtLjQ0LS40My0uNzMtLjczLS43My0xLjI0di0uMTlhLjY3LjY3LDAsMCwxLC43My0uNzZjLjQ5LDAsLjczLjI2LjczLjc4di43OWgxLjR2LS43NGMwLTEuMzItLjYxLTIuMDgtMi4xNC0yLjA4YTEuOSwxLjksMCwwLDAtMi4xNSwydi4zMUEzLjA4LDMuMDgsMCwwLDAsMTAzLjMxLDE0bC45LjlhMS42NCwxLjY0LDAsMCwxLC42OSwxLjI5di4zNWMwLC40OS0uMjEuODEtLjcuODFzLS43NS0uMy0uNzUtLjgxVjE1LjNIMTAydjEuMjNhMS45LDEuOSwwLDAsMCwyLjE3LDIuMDgsMiwyLDAsMCwwLDIuMjQtMi4xNFYxNmEzLjA4LDMuMDgsMCwwLDAtMS4yNC0yLjM3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMyLjI4LDIyLjc3LDMwLjU1LDMxLjlIMzJsLjI3LTEuNjdoMS42M2wuMjgsMS42N2gxLjU4TDM0LDIyLjc3Wm0uMiw2LjI0LjYtMy42N2gwTDMzLjcsMjlaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjM5LjcgMjguMDEgMzguMDQgMjIuNzcgMzYuNTMgMjIuNzcgMzYuNTMgMzEuOSAzNy44MyAzMS45IDM3LjgzIDI2LjE2IDM5LjYzIDMxLjkgNDAuOTggMzEuOSA0MC45OCAyMi43NyAzOS43IDIyLjc3IDM5LjcgMjguMDEiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NC4zNiwyMi43Nkg0MlYzMS45aDIuMzdjMS42NCwwLDIuMjItMS4wNSwyLjIyLTIuNDVWMjUuMjJjMC0xLjQxLS41OC0yLjQ1LTIuMjItMi40NW0uNjksN2MwLC41NS0uMjQuOTMtLjg3LjkzaC0uNjVWMjRoLjY1YS44LjgsMCwwLDEsLjg3LjkyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUxLjQ0LDIyLjY2YTIuMTYsMi4xNiwwLDAsMC0yLjI5LDIuNDd2NC40MkEyLjE2LDIuMTYsMCwwLDAsNTEuNDQsMzJjMS42MywwLDIuMTctMSwyLjE3LTIuMjhWMjguMTZINTIuMnYxLjY4YzAsLjU0LS4xOS44OS0uNzQuODlzLS43OC0uMzktLjc4LS45NFYyNC44OGMwLS41NS4yMy0uOTQuNzgtLjk0cy43NC4zMi43NC44OVYyNmgxLjRWMjQuOTVjMC0xLjM1LS40Ny0yLjI5LTIuMTctMi4yOSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU2LjksMjIuNjZhMi4xNywyLjE3LDAsMCwwLTIuMzIsMi40N3Y0LjQyYTIuMzMsMi4zMywwLDEsMCw0LjY1LDBWMjUuMTJhMi4xOCwyLjE4LDAsMCwwLTIuMzMtMi40N20uNzksNy4xM2MwLC41NS0uMjQuOTQtLjc5Ljk0cy0uNzgtLjM5LS43OC0uOTRWMjQuODhjMC0uNTUuMjQtLjk0Ljc4LS45NHMuNzkuMzkuNzkuOTRaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjYzLjA0IDI3LjkxIDYzLjAyIDI3LjkxIDYyLjAzIDIyLjc2IDYwLjI0IDIyLjc2IDYwLjI0IDMxLjkgNjEuNSAzMS45IDYxLjUgMjUuOTcgNjEuNTMgMjUuOTcgNjIuNjcgMzEuOSA2My4zOSAzMS45IDY0LjQyIDI1Ljk3IDY0LjQ3IDI1Ljk3IDY0LjQ3IDMxLjkgNjUuODcgMzEuOSA2NS44NyAyMi43NiA2My45MyAyMi43NiA2My4wNCAyNy45MSIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI2OS42OCAyNy45MSA2OS42NyAyNy45MSA2OC42NyAyMi43NiA2Ni44OCAyMi43NiA2Ni44OCAzMS45IDY4LjE1IDMxLjkgNjguMTUgMjUuOTcgNjguMTcgMjUuOTcgNjkuMzIgMzEuOSA3MC4wMyAzMS45IDcxLjA3IDI1Ljk3IDcxLjExIDI1Ljk3IDcxLjExIDMxLjkgNzIuNTEgMzEuOSA3Mi41MSAyMi43NiA3MC41NyAyMi43NiA2OS42OCAyNy45MSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTc2LjU3LDI5LjgzYzAsLjU0LS4yMS45LS43NS45cy0uNzUtLjM2LS43NS0uOVYyMi43N0g3My41MnY2LjkxQTIuMDYsMi4wNiwwLDAsMCw3NS44MSwzMmMxLjU2LDAsMi4xNy0uOTIsMi4xNy0yLjMzVjIyLjc3SDc2LjU3WiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI4Mi4xNiAyOC4wMSA4MC41IDIyLjc3IDc4Ljk5IDIyLjc3IDc4Ljk5IDMxLjkgODAuMjkgMzEuOSA4MC4yOSAyNi4xNiA4Mi4wOSAzMS45IDgzLjQ0IDMxLjkgODMuNDQgMjIuNzcgODIuMTYgMjIuNzcgODIuMTYgMjguMDEiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9Ijg0LjQ1IiB5PSIyMi43NiIgd2lkdGg9IjEuNTQiIGhlaWdodD0iOS4xNCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI4Ni44MiAyNC4wMiA4OC4wOSAyNC4wMiA4OC4wOSAzMS45IDg5LjY0IDMxLjkgODkuNjQgMjQuMDIgOTAuOTEgMjQuMDIgOTAuOTEgMjIuNzYgODYuODIgMjIuNzYgODYuODIgMjQuMDIiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjkxLjc1IiB5PSIyMi43NiIgd2lkdGg9IjEuNTQiIGhlaWdodD0iOS4xNCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI5NC4zMiAzMS45IDk3Ljk4IDMxLjkgOTcuOTggMzAuNjUgOTUuODUgMzAuNjUgOTUuODUgMjcuODcgOTcuMzggMjcuODcgOTcuMzggMjYuNjMgOTUuODUgMjYuNjMgOTUuODUgMjQuMDIgOTcuOTggMjQuMDIgOTcuOTggMjIuNzYgOTQuMzIgMjIuNzYgOTQuMzIgMzEuOSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEwMSwyNi4wOGMtLjQ0LS40My0uNzMtLjczLS43My0xLjI0di0uMTlhLjY3LjY3LDAsMCwxLC43My0uNzVjLjQ5LDAsLjczLjI2LjczLjc4di44aDEuNHYtLjc0YzAtMS4zMi0uNjEtMi4wOC0yLjE0LTIuMDhhMS45MSwxLjkxLDAsMCwwLTIuMTYsMlYyNWEzLjA4LDMuMDgsMCwwLDAsMS4yOCwyLjQ0bC45LjlhMS42NSwxLjY1LDAsMCwxLC42OSwxLjI5VjMwYzAsLjQ4LS4yMi44MS0uNy44MXMtLjc1LS4zLS43NS0uODFWMjguNzFIOTguNzh2MS4yM0ExLjksMS45LDAsMCwwLDEwMC45NSwzMmEyLDIsMCwwLDAsMi4yNC0yLjE0di0uNDVhMy4wNywzLjA3LDAsMCwwLTEuMjQtMi4zN1oiLz48L2c+PGcgaWQ9Ik5VTUJFUlNfT05MWSIgZGF0YS1uYW1lPSJOVU1CRVJTIE9OTFkiPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI4LjcyIDEzLjIgOC43MiAxNy4xMyA4Ljc1IDE3LjEzIDExLjQgMTQuMzkgMTEuNDMgMTQuMzkgMTEuNDMgMzEuNTUgMTUuMiAzMS41NSAxNS4yIDkuMTMgMTIuMTkgOS4xMyA4LjcyIDEzLjIiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMTcuMzIgMTMuMiAxNy4zMiAxNy4xMyAxNy4zNSAxNy4xMyAyMCAxNC4zOSAyMC4wMyAxNC4zOSAyMC4wMyAzMS41NSAyMy44IDMxLjU1IDIzLjggOS4xMyAyMC43OSA5LjEzIDE3LjMyIDEzLjIiLz48L2c+PC9zdmc+"
-
-/***/ },
-/* 178 */
-/*!******************************!*\
-  !*** ./src/images/sdg12.svg ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2JlOGIyYzt9LmNscy0ye2ZpbGw6I2ZmZjt9LmNscy0ze2ZpbGw6bm9uZTtzdHJva2U6I2ZmZjtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2Utd2lkdGg6MC43M3B4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjA8L3RpdGxlPjxnIGlkPSJFbmdsaXNoIj48cmVjdCBjbGFzcz0iY2xzLTEiIHg9Ii0xLjU1IiB5PSItMS44MyIgd2lkdGg9IjExNy40MSIgaGVpZ2h0PSIxMTguMzMiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04NC4yNiw1Ny45NUExOC4zMywxOC4zMywwLDAsMCw3MC40LDU0LjU0bC0uMjguMDZjLTIuNzYuNjUtNy4xNSwxLjczLTEyLjI5LDguMTFsLS4wOS4xMS0uMDcuMDhhLjQyLjQyLDAsMCwwLDAsLjQ2bC4xMi4yYy42NSwxLjA4LDEuNDYsMi40NywyLjE1LDMuNzVsMCwwYS40NC40NCwwLDAsMCwuMzkuMjQuNDMuNDMsMCwwLDAsLjMtLjEybC4wOS0uMTNjNC41Ni02LjMxLDguMTUtNy4xOCwxMC41Ny03Ljc1bC4yOS0uMDdBMTMuMjgsMTMuMjgsMCwwLDEsODEuMDksNjJjMi43LDIuMTMsNC4wNyw1LjUyLDQuMDcsMTAuMDcsMCw3LjY0LTMuNzEsMTAuNjItNi44MywxMS43OWExMi43NCwxMi43NCwwLDAsMS05LjQ5LS42M2wtLjIxLS4xQzY2LDgxLjk0LDYyLDc5LjU0LDU4LjI5LDcyLjA1Yy03LjUyLTE1LjEtMTMuODEtMTYuNTItMTgtMTcuNDdsLS4yMiwwYTE4LDE4LDAsMCwwLTEzLjY1LDMuNGMtMi43LDIuMTYtNS45Miw2LjM1LTUuOTIsMTQuMDcsMCw0LjcxLDEsNy44MSwzLjQ1LDExLjA4LjU0Ljc0LDYuMTEsNy45LDE2Ljg4LDUuODRhMTYuMTcsMTYuMTcsMCwwLDAsNi42Mi0zLjA4TDQ5Ljg1LDg4YS4zOS4zOSwwLDAsMCwuNTQsMCwuMzYuMzYsMCwwLDAsLjA5LS4yNnYwTDUyLjIsNzcuMTVWNzdhLjM4LjM4LDAsMCwwLS4xMy0uMjguMzUuMzUsMCwwLDAtLjI1LS4wOWgtLjE4TDQxLjU2LDc5LjQ5bC0uMTgsMGEuMzUuMzUsMCwwLDAtLjE5LjExLjM4LjM4LDAsMCwwLDAsLjU1bC4xMi4xMSwyLjI2LDJhMTAuNTEsMTAuNTEsMCwwLDEtMy43LDEuNTZjLTcuNzksMS40OS0xMS42My0zLjYyLTExLjc4LTMuODJMMjguMDYsODBjLTEuODEtMi4zOC0yLjQyLTQuNC0yLjQyLTgsMC00LjU3LDEuMzQtOCw0LTEwLjA3QTEyLjg5LDEyLjg5LDAsMCwxLDM5LDU5LjUybC4yMy4wNWMzLjQxLjc3LDguMDgsMS44MywxNC41MiwxNC43NkM1Nyw4MSw2MS4yNCw4NS40Myw2Ni41MSw4Ny43NGExOC42MSwxOC42MSwwLDAsMCw4LDEuODYsMTYsMTYsMCwwLDAsNS41OS0xYzMuMDUtMS4xNCwxMC4xNi01LDEwLjE2LTE2LjU4LDAtNy43Mi0zLjI3LTExLjkyLTYtMTQuMDgiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik04NC4yNiw1Ny45NUExOC4zMywxOC4zMywwLDAsMCw3MC40LDU0LjU0bC0uMjguMDZjLTIuNzYuNjUtNy4xNSwxLjczLTEyLjI5LDguMTFsLS4wOS4xMS0uMDcuMDhhLjQyLjQyLDAsMCwwLDAsLjQ2bC4xMi4yYy42NSwxLjA4LDEuNDYsMi40NywyLjE1LDMuNzVsMCwwYS40NC40NCwwLDAsMCwuMzkuMjQuNDMuNDMsMCwwLDAsLjMtLjEybC4wOS0uMTNjNC41Ni02LjMxLDguMTUtNy4xOCwxMC41Ny03Ljc1bC4yOS0uMDdBMTMuMjgsMTMuMjgsMCwwLDEsODEuMDksNjJjMi43LDIuMTMsNC4wNyw1LjUyLDQuMDcsMTAuMDcsMCw3LjY0LTMuNzEsMTAuNjItNi44MywxMS43OWExMi43NCwxMi43NCwwLDAsMS05LjQ5LS42M2wtLjIxLS4xQzY2LDgxLjk0LDYyLDc5LjU0LDU4LjI5LDcyLjA1Yy03LjUyLTE1LjEtMTMuODEtMTYuNTItMTgtMTcuNDdsLS4yMiwwYTE4LDE4LDAsMCwwLTEzLjY1LDMuNGMtMi43LDIuMTYtNS45Miw2LjM1LTUuOTIsMTQuMDcsMCw0LjcxLDEsNy44MSwzLjQ1LDExLjA4LjU0Ljc0LDYuMTEsNy45LDE2Ljg4LDUuODRhMTYuMTcsMTYuMTcsMCwwLDAsNi42Mi0zLjA4TDQ5Ljg1LDg4YS4zOS4zOSwwLDAsMCwuNTQsMCwuMzYuMzYsMCwwLDAsLjA5LS4yNnYwTDUyLjIsNzcuMTVWNzdhLjM4LjM4LDAsMCwwLS4xMy0uMjguMzUuMzUsMCwwLDAtLjI1LS4wOWgtLjE4TDQxLjU2LDc5LjQ5bC0uMTgsMGEuMzUuMzUsMCwwLDAtLjE5LjExLjM4LjM4LDAsMCwwLDAsLjU1bC4xMi4xMSwyLjI2LDJhMTAuNTEsMTAuNTEsMCwwLDEtMy43LDEuNTZjLTcuNzksMS40OS0xMS42My0zLjYyLTExLjc4LTMuODJMMjguMDYsODBjLTEuODEtMi4zOC0yLjQyLTQuNC0yLjQyLTgsMC00LjU3LDEuMzQtOCw0LTEwLjA3QTEyLjg5LDEyLjg5LDAsMCwxLDM5LDU5LjUybC4yMy4wNWMzLjQxLjc3LDguMDgsMS44MywxNC41MiwxNC43NkM1Nyw4MSw2MS4yNCw4NS40Myw2Ni41MSw4Ny43NGExOC42MSwxOC42MSwwLDAsMCw4LDEuODYsMTYsMTYsMCwwLDAsNS41OS0xYzMuMDUtMS4xNCwxMC4xNi01LDEwLjE2LTE2LjU4LDAtNy43Mi0zLjI3LTExLjkyLTYtMTQuMDgiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNy41NCwxNC40OHY0LjMySDM2VjkuMzhoMi4zYzEuNiwwLDIuMTguNzksMi4xOCwyLjExVjEyLjdjMCwxLS4zNiwxLjYxLTEuMjYsMS44MmwxLjUxLDQuMjhIMzlabTAtMy44VjEzLjZoLjUzYS42OS42OSwwLDAsMCwuNzgtLjc4VjExLjQ0YzAtLjUxLS4yNC0uNzYtLjc4LS43NloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00MS4xMSw5LjM4aDMuNzh2MS4yOUg0Mi42OXYyLjY5aDEuNTd2MS4yOEg0Mi42OVYxNy41aDIuMTl2MS4yOUg0MS4xMVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NS4zOCwxNi43N1YxNS41aDEuNDdWMTYuOGMwLC41My4yNC44My43OC44M3MuNzItLjMzLjcyLS44M3YtLjM2YTEuNywxLjcsMCwwLDAtLjcxLTEuMzNsLS45My0uOTNhMy4xNywzLjE3LDAsMCwxLTEuMzItMi41MXYtLjMyYTIsMiwwLDAsMSwyLjIyLTIuMDdjMS41OCwwLDIuMjEuNzgsMi4yMSwyLjE0di43Nkg0OC4zOHYtLjgyYzAtLjU0LS4yNS0uODEtLjc1LS44MWEuNjkuNjksMCwwLDAtLjc1Ljc4di4xOWMwLC41My4yOS44My43NSwxLjI4bDEsMWEzLjE2LDMuMTYsMCwwLDEsMS4yOCwyLjQ0di40NmEyLDIsMCwwLDEtMi4zLDIuMjFBMiwyLDAsMCwxLDQ1LjM4LDE2Ljc3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUwLjU2LDkuMzhINTIuOWMxLjYsMCwyLjE4Ljc5LDIuMTgsMi4xMXYyYzAsMS4zMi0uNTgsMi4xMi0yLjE4LDIuMTJoLS43NnYzLjE5SDUwLjU2Wm0xLjU4LDEuMjl2My43MWguNThhLjY4LjY4LDAsMCwwLC43OC0uNzhWMTEuNDRjMC0uNTEtLjI0LS43Ni0uNzgtLjc2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU1LjcxLDE2LjM2VjExLjgxYTIuNCwyLjQsMCwxLDEsNC43OSwwdjQuNTVhMi40LDIuNCwwLDEsMS00Ljc5LDBabTMuMjEuMjVWMTEuNTZjMC0uNTctLjI1LTEtLjgyLTFzLS44MS40LS44MSwxdjUuMDVjMCwuNTcuMjUsMSwuODEsMVM1OC45MiwxNy4xOCw1OC45MiwxNi42MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02Mi41NCwxMi44OHY1LjkxSDYxLjJWOS4zOGgxLjU1bDEuNzEsNS40VjkuMzhoMS4zMnY5LjQxSDY0LjRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjYuNDEsMTYuNzdWMTUuNWgxLjQ3VjE2LjhjMCwuNTMuMjQuODMuNzguODNzLjcyLS4zMy43Mi0uODN2LS4zNmExLjcsMS43LDAsMCwwLS43MS0xLjMzbC0uOTMtLjkzYTMuMTcsMy4xNywwLDAsMS0xLjMyLTIuNTF2LS4zMmEyLDIsMCwwLDEsMi4yMi0yLjA3YzEuNTgsMCwyLjIxLjc4LDIuMjEsMi4xNHYuNzZINjkuNDF2LS44MmMwLS41NC0uMjUtLjgxLS43NS0uODFhLjY5LjY5LDAsMCwwLS43NS43OHYuMTljMCwuNTMuMjkuODMuNzUsMS4yOGwxLDFhMy4xNiwzLjE2LDAsMCwxLDEuMjgsMi40NHYuNDZhMiwyLDAsMCwxLTIuMzEsMi4yMUEyLDIsMCwwLDEsNjYuNDEsMTYuNzdaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzEuNTksOS4zOGgxLjU4djkuNDFINzEuNTlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzMuODksOS4zOGgyLjI5YzEuNTgsMCwyLjExLjc0LDIuMTEsMi4wN3YxYTEuMzcsMS4zNywwLDAsMS0uOTQsMS41LDEuNDMsMS40MywwLDAsMSwxLjE4LDEuNTd2MS4yNWMwLDEuMzMtLjYsMi4wNy0yLjE4LDIuMDdINzMuODlabTEuNTgsNEg3NmEuNjcuNjcsMCwwLDAsLjc1LS43NlYxMS40NGEuNjcuNjcsMCwwLDAtLjc2LS43NmgtLjU0Wm0wLDEuMjFWMTcuNWguNjlhLjY4LjY4LDAsMCwwLC43OC0uNzZWMTUuMzJjMC0uNS0uMjQtLjc2LS43OS0uNzZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzkuMTIsOS4zOGgxLjU4VjE3LjVoMS44OXYxLjI5SDc5LjEyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgzLjEyLDkuMzhIODYuOXYxLjI5SDg0Ljd2Mi42OWgxLjU3djEuMjhIODQuN1YxNy41SDg2Ljl2MS4yOUg4My4xMloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNiwyOS41NVYyNWMwLTEuNDcuNjktMi41NCwyLjM2LTIuNTRzMi4yNCwxLDIuMjQsMi4zNnYxLjExSDM5LjExVjI0LjY5YzAtLjU4LS4xOS0uOTItLjc2LS45MnMtLjgxLjQtLjgxLDFWMjkuOGMwLC41Ny4yNCwxLC44MSwxcy43Ni0uMzYuNzYtLjkyVjI4LjEyaDEuNDR2MS42MmMwLDEuMzUtLjU2LDIuMzUtMi4yNCwyLjM1QTIuMjMsMi4yMywwLDAsMSwzNiwyOS41NVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00MS4yMiwyOS41NVYyNUEyLjQsMi40LDAsMSwxLDQ2LDI1djQuNTVhMi40LDIuNCwwLDEsMS00Ljc5LDBabTMuMjEuMjVWMjQuNzVjMC0uNTctLjI1LTEtLjgyLTFzLS44MS40LS44MSwxVjI5LjhjMCwuNTcuMjUsMSwuODEsMVM0NC40MiwzMC4zNyw0NC40MiwyOS44WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ4LDI2LjA3VjMySDQ2LjcxVjIyLjU3aDEuNTVMNTAsMjh2LTUuNGgxLjMyVjMySDQ5LjkxWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUxLjkyLDMwVjI4LjY5aDEuNDdWMzBjMCwuNTMuMjQuODMuNzguODNzLjcyLS4zMy43Mi0uODN2LS4zNmExLjcsMS43LDAsMCwwLS43MS0xLjMzbC0uOTMtLjkzYTMuMTcsMy4xNywwLDAsMS0xLjMyLTIuNTF2LS4zMmEyLDIsMCwwLDEsMi4yMi0yLjA3YzEuNTgsMCwyLjIxLjc4LDIuMjEsMi4xNHYuNzZINTQuOTJ2LS44MmMwLS41NC0uMjUtLjgxLS43NS0uODFhLjY5LjY5LDAsMCwwLS43NS43OHYuMTljMCwuNTMuMjkuODMuNzUsMS4yOGwxLDFhMy4xNiwzLjE2LDAsMCwxLDEuMjgsMi40NHYuNDZhMiwyLDAsMCwxLTIuMywyLjIxQTIsMiwwLDAsMSw1MS45MiwzMFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02MS42OSwyMi41N3Y3LjEyYzAsMS40Ni0uNjIsMi40LTIuMjQsMi40YTIuMTIsMi4xMiwwLDAsMS0yLjM2LTIuNFYyMi41N2gxLjU4djcuMjdjMCwuNTYuMjIuOTMuNzguOTNzLjc4LS4zNy43OC0uOTNWMjIuNTdaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjYuNzYsMjUuODdoMEw2NS42NSwzMmgtLjc0bC0xLjE4LTYuMTFoMFYzMkg2Mi40VjIyLjU3aDEuODVsMSw1LjNoMGwuOTItNS4zaDJWMzJINjYuNzZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjguOTEsMjIuNTdoMi4zNWMxLjYsMCwyLjE4Ljc5LDIuMTgsMi4xMXYyYzAsMS4zMi0uNTgsMi4xMi0yLjE4LDIuMTJoLS43NlYzMkg2OC45MVptMS41OCwxLjI5djMuNzFoLjU4YS42OC42OCwwLDAsMCwuNzgtLjc4VjI0LjYyYzAtLjUxLS4yNC0uNzYtLjc4LS43NloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03My44MSwyMi41N0g3OHYxLjI5SDc2LjcxVjMyaC0xLjZWMjMuODZoLTEuM1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03OC41NSwyMi41N2gxLjU4VjMySDc4LjU1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgwLjg2LDI5LjU1VjI1YTIuNCwyLjQsMCwxLDEsNC43OSwwdjQuNTVhMi40LDIuNCwwLDEsMS00Ljc5LDBabTMuMjEuMjVWMjQuNzVjMC0uNTctLjI1LTEtLjgyLTFzLS44MS40LS44MSwxVjI5LjhjMCwuNTcuMjUsMSwuODEsMVM4NC4wNiwzMC4zNyw4NC4wNiwyOS44WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg3LjY5LDI2LjA3VjMySDg2LjM1VjIyLjU3aDEuNTVMODkuNjIsMjh2LTUuNGgxLjMyVjMySDg5LjU1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM1LjcxLDQ1LjE3bDEuNzgtOS40MWgxLjhsMS43OSw5LjQxSDM5LjQ1bC0uMjktMS43MkgzNy40OGwtLjI4LDEuNzJabTItM0gzOWwtLjYyLTMuNzhoMFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00Mi44NywzOS4yNXY1LjkxSDQxLjU0VjM1Ljc1aDEuNTVsMS43MSw1LjR2LTUuNGgxLjMydjkuNDFINDQuNzNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTEuNTYsMzguMjh2NC4zNmMwLDEuNDQtLjYsMi41My0yLjI5LDIuNTNINDYuODJWMzUuNzVoMi40NEM1MSwzNS43NSw1MS41NiwzNi44Miw1MS41NiwzOC4yOFptLTIuNDgsNS42Yy42NSwwLC45LS4zOS45LTFWMzhhLjgyLjgyLDAsMCwwLS45LS45NGgtLjY3djYuODNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTMuNTMsMzUuNzVoMi4zNWMxLjYsMCwyLjE4Ljc5LDIuMTgsMi4xMXYyYzAsMS4zMi0uNTgsMi4xMi0yLjE4LDIuMTJoLS43NnYzLjE5SDUzLjUzWk01NS4xMSwzN3YzLjcxaC41OGEuNjguNjgsMCwwLDAsLjc4LS43OFYzNy44MWMwLS41MS0uMjQtLjc2LS43OC0uNzZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjAuMjYsNDAuODV2NC4zMkg1OC42OFYzNS43NUg2MWMxLjYsMCwyLjE4Ljc5LDIuMTgsMi4xMXYxLjIxYzAsMS0uMzYsMS42MS0xLjI2LDEuODJsMS41MSw0LjI4SDYxLjc0Wm0wLTMuOFY0MGguNTNhLjY5LjY5LDAsMCwwLC43OC0uNzhWMzcuODFjMC0uNTEtLjI0LS43Ni0uNzgtLjc2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYzLjgzLDQyLjc0VjM4LjE4YTIuNCwyLjQsMCwxLDEsNC43OSwwdjQuNTVhMi40LDIuNCwwLDEsMS00Ljc5LDBaTTY3LDQzVjM3LjkzYzAtLjU3LS4yNS0xLS44Mi0xcy0uODEuNC0uODEsMVY0M2MwLC41Ny4yNSwxLC44MSwxUzY3LDQzLjU2LDY3LDQzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTc0LjA2LDM4LjI4djQuMzZjMCwxLjQ0LS42LDIuNTMtMi4yOSwyLjUzSDY5LjMyVjM1Ljc1aDIuNDRDNzMuNDYsMzUuNzUsNzQuMDYsMzYuODIsNzQuMDYsMzguMjhabS0yLjQ4LDUuNmMuNjUsMCwuOS0uMzkuOS0xVjM4YS44Mi44MiwwLDAsMC0uOS0uOTRoLS42N3Y2LjgzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTc5LjM2LDM1Ljc1djcuMTJjMCwxLjQ2LS42MiwyLjQtMi4yNCwyLjRhMi4xMiwyLjEyLDAsMCwxLTIuMzYtMi40VjM1Ljc1aDEuNThWNDNjMCwuNTYuMjIuOTMuNzguOTNzLjc4LS4zNy43OC0uOTNWMzUuNzVaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODAuMDcsNDIuNzRWMzguMThjMC0xLjQ3LjY5LTIuNTQsMi4zNi0yLjU0czIuMjQsMSwyLjI0LDIuMzZ2MS4xMUg4My4yMlYzNy44OGMwLS41OC0uMTktLjkyLS43Ni0uOTJzLS44MS40LS44MSwxVjQzYzAsLjU3LjI0LDEsLjgxLDFzLjc2LS4zNi43Ni0uOTJWNDEuMzFoMS40NHYxLjYyYzAsMS4zNS0uNTYsMi4zNS0yLjI0LDIuMzVBMi4yMywyLjIzLDAsMCwxLDgwLjA3LDQyLjc0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg1LDM1Ljc1aDQuMjFWMzdIODcuOTF2OC4xMmgtMS42VjM3SDg1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg5Ljc1LDM1Ljc1aDEuNTh2OS40MUg4OS43NVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik05Mi4wNiw0Mi43NFYzOC4xOGEyLjQsMi40LDAsMSwxLDQuNzksMHY0LjU1YTIuNCwyLjQsMCwxLDEtNC43OSwwWm0zLjIxLjI1VjM3LjkzYzAtLjU3LS4yNS0xLS44Mi0xcy0uODEuNC0uODEsMVY0M2MwLC41Ny4yNSwxLC44MSwxUzk1LjI3LDQzLjU2LDk1LjI3LDQzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTk4Ljg5LDM5LjI1djUuOTFIOTcuNTVWMzUuNzVoMS41NWwxLjcxLDUuNHYtNS40aDEuMzJ2OS40MWgtMS4zOVoiLz48L2c+PGcgaWQ9Ik5VTUJFUlNfT05MWSIgZGF0YS1uYW1lPSJOVU1CRVJTIE9OTFkiPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxMS4yMyAxNC42OCAxMS4yNiAxNC42OCAxMS4yNiAzMS45MSAxNS4wNSAzMS45MSAxNS4wNSA5LjM5IDEyLjAzIDkuMzkgOC41NCAxMy40OCA4LjU0IDE3LjQzIDguNTcgMTcuNDMgMTEuMjMgMTQuNjgiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNy4zMSwxNHYyLjcyaDMuNDVWMTMuOTRjMC0xLjM2LjY3LTEuNzYsMS40Ni0xLjc2czEuMzYuMywxLjM2LDEuNjl2MS44NmMwLDEuODYtLjE3LDIuNTktMS40LDMuODlsLTIuMTIsMi4yNmMtMi4wNiwyLjE5LTIuODIsMy42NS0yLjgyLDUuODh2NC4xNWg5LjgzVjI4LjgySDIwLjg2VjI3Ljc2YTQuMyw0LjMsMCwwLDEsMS41OS0zLjQ1bDIuNDItMi41NmMyLTIuMDksMi4zOS0zLjQyLDIuMzktNS42OFYxMy44OGMwLTMuMjItMS41Ni00Ljc1LTQuOTUtNC43NXMtNSwxLjc2LTUsNC45MiIvPjwvZz48L3N2Zz4="
-
-/***/ },
-/* 179 */
-/*!******************************!*\
-  !*** ./src/images/sdg13.svg ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzQxN2Y0NTt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDIxPC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMS45MiIgeT0iLTMuMyIgd2lkdGg9IjExNi4zMSIgaGVpZ2h0PSIxMTkuMjQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik05Ny43NCw3MGE1MS4xMiw1MS4xMiwwLDAsMC04MiwwbC0uMzIuNDYuMzIuNDZhNTEuMTIsNTEuMTIsMCwwLDAsODIsMGMuMTMtLjE4LjIzLS4zMy4zMi0uNDZMOTcuNzQsNzBNNDIuOSw1OS43OGMuMjItLjMzLDEtMS4yNiwxLjA1LTEuMzhhMS4zMiwxLjMyLDAsMCwxLC44My0uMzRjLjI2LS4wNS42MS4xLjY2LjI5YTIuMywyLjMsMCwwLDEtLjIzLDEuMSwyLjg2LDIuODYsMCwwLDEtMS44My44M2MtLjQtLjA2LS41Ni0uMzctLjQ4LS40OU00Miw2MS41NGwuMDktLjFhMi4zMSwyLjMxLDAsMCwxLDEuMzYtLjVjLjQzLS4wNywxLC4xNCwxLjA3LjQzcy0xLjA4LjgtMS4yOSwxYy0uNi41NS0xLjUzLDEuNjctMi4wNywxLjc5YS42NS42NSwwLDAsMS0uNDUsMEExNy4wOCwxNy4wOCwwLDAsMSw0Miw2MS41NG05LjI3LDE5YTQuOTEsNC45MSwwLDAsMS0xLjA2LDIuMjEsMy41NywzLjU3LDAsMCwxLTIuMzUuOWMtLjc4LS4wNi0uODktMi4xNS0uODktMy4yMywwLS4zNy0uNTMuNzMtLjgtMS41MS0uMTgtMS40My0xLjEuMTUtMS4xNi0uODFzLS41My0uNzYtMS0xLjM2LTEuMDguMDYtMS43NS4zNi0uMzkuNDUtMS4zNC4xNWwtLjA2LDBhMTcuMTksMTcuMTksMCwwLDEtMS4zNi02LjcxYzAtLjU4LDAtMS4xNi4wOS0xLjcyYTEsMSwwLDAsMSwuMTEtLjE2Yy45MS0xLjA4Ljg5LTEuMzMuODktMS4zM2wxLS4zNWExNi44NywxNi44NywwLDAsMSwyLjgzLjcxYzEsLjM4LDIuNTcsMS4yMiwzLjQ5Ljg1LjY2LS4yNywxLjE4LS42MywxLjEyLTEuMTlzLS42Mi0uODYtMS4yOC0uMzljLS4yNC4xNy0uNzYtMS0xLjE3LTFzLjUsMS40My4xNiwxLjQ4LTEtMS40Mi0xLjE2LTEuNjYtLjY1LS44My0xLjEzLS4zOGMtMSwxLTIuNjcuOTEtMywxLjE2LTEsLjc2LTEuMjgtLjI1LTEuMjUtLjg2bC4xMy0uNDJhMi4wNiwyLjA2LDAsMCwxLDEuOTItLjIxYy40NS4zLjc3LS4wOC45NC0uMjZhLjYyLjYyLDAsMCwwLDAtLjdjLS4xMS0uMjQuMjItLjQyLjQ1LS40OGExMi4xNCwxMi4xNCwwLDAsMCwxLjMxLS43OCw0LjMsNC4zLDAsMCwxLDIuNjIsMCwxLjM5LDEuMzksMCwwLDAsMS43Mi0uMzUsNC42Miw0LjYyLDAsMCwxLDEuMjUtMWMuMjUtLjEyLS42Mi0uOTItMS4zMywwcy0xLjA4LDEtMS40MSwxLTIuMzMtLjUtMi41Ny0xLjEzLjYyLTEuMSwxLjM2LTEuNDZhMTgsMTgsMCwwLDEsMy4yNi0uNDZjMS0uMjMsMi4zOC0uNzUsMy4wNS0uM3MtMi44MSwxLjI0LTEuNjcsMS44NmMuNDEuMjIsMi4yNS0xLjA2LDIuODgtMS4zOSwxLjQ4LS43Ny0xLjQ0LTEtMS4wNi0yLjU3LjQzLTEuNzYtMy41OC0xLjA4LTUuNTgtLjkzYTE3LjI0LDE3LjI0LDAsMCwxLDI2LjA2LDEwLjUsMi44MywyLjgzLDAsMCwxLS4wOC44LDEuMTMsMS4xMywwLDAsMS0yLC4xNmMtLjE3LS4yNS0uOTEtMS0uODkuMjRzMS4xNiwxLjMyLjA2LDJhNC4yNSw0LjI1LDAsMCwxLTEuODEuNzMsMi4zNCwyLjM0LDAsMCwwLS44OCwyLjA3Yy4xMi42NiwxLjcsMi40Ni41MywyLjM4YTYuNzQsNi43NCwwLDAsMS0yLjY3LTIuMzNjLS4zNi0xLS43NS0xLjg5LTEtMi42YTEsMSwwLDAsMC0xLjYzLS40OGMtLjYxLjQyLjE3Ljg0LS4yNywxLjc0cy0uNzYsMS43LTEuNCwxYy0xLjY4LTEuOTMtNC4xMy0xLTQuNTEtMy4xMi0uMjEtMS4xNi0xLjIxLTEuMDUtMi0xLjcxcy0xLjMxLTEtMS40NS0uNTRTNTYsNjkuNDIsNTYuMjQsNzBjLjI5LjgzLS44MywxLjU3LTEuNjUsMS43N3MtMS4xOC0uNDYtMi0xLjNTNTEuNDUsNjksNTEuNCw2OS42N0EzLjc3LDMuNzcsMCwwLDAsNTMsNzIuNTNjLjcuNDQsMS40OC42NCwxLjI1LDEuMzZzMCwuMzEtLjc5LDEuMDlhMi4xMSwyLjExLDAsMCwwLS44OCwyLjFjLjA2LDEuMDgtLjIyLDEuMTQtLjM5LDJzLS41Ni4xMi0uODksMS40M20xOC41LTYuODhjLjU4LDAsMS40NS43NiwxLjExLDEuMDdhMS41NCwxLjU0LDAsMCwxLTEuNjQtLjE1Yy0uNDMtLjM0LjI3LS45LjUzLS45Mm0tLjczLS41M2MtLjE5LS4wNy0uMzUtLjI1LS40OS0uNjdhLjM5LjM5LDAsMCwxLC41Ni0uNDksMS42NywxLjY3LDAsMCwxLC44MSwxYzAsLjI4LS43LjI1LS44OS4xN20tNy42MSwwQTEuNTYsMS41NiwwLDAsMSw1OS43OSw3M2MtLjQzLS4zNC4yOC0uOS41My0uOTIuNTgtLjA1LDEuNDUuNzYsMS4xMSwxLjA3bS03LDMuNDJjLS4yNC4zOS0uODksMy4yOS0xLjMyLDNzLjE4LTMuMzYuMy0zLjU5Yy42OC0xLjI1LDIuMTUtMS4xOSwxLC42NG0yLjM1LDExLjI0YTE3LjI2LDE3LjI2LDAsMCwxLTQuODUtLjY5LjcxLjcxLDAsMCwxLS4yMS0uODRjLjUzLTEuMzksMi4xMi0xLjk0LDMuMzgtMi4wNiwyLjgtLjI3LDYuNDcsMS44Miw3LjA2LDEuNDhzMS43Ny0xLjg3LDMuNS0xLjgxYTIuNzIsMi43MiwwLDAsMSwxLjU3LjM5LDE3LjE4LDE3LjE4LDAsMCwxLTEwLjQ2LDMuNTNtMTIuMTYtNWEzLDMsMCwwLDEtLjU0LS4yYy0uOTQtLjQ4LS44My4yOS0xLjI5LjEycy41Mi0xLjI1LS44Ny0uMzQtMS0uMTQtMS42MS0xLjY3QTMuMTMsMy4xMywwLDAsMSw2Ni4zOCw3N2EyMS44OCwyMS44OCwwLDAsMSwzLjEzLS44M2MyLjA3LS41MiwyLjUxLTEuNzUsMi44OS0xbC4yLjRhMi43MywyLjczLDAsMCwxLC4yNywxLjEyLDE3LjI3LDE3LjI3LDAsMCwxLTQsNi4wOE03My42Myw3NGMtLjQ2LS4xMy0yLjQtMi44LS44Ny00LjU3LjI1LS4yOS0uNTEtMS4xNC0uMy0xLjE2YTEuNCwxLjQsMCwwLDEsMS41LDEuMmMwLC4zMywwLC42NiwwLDFBMTcuNCwxNy40LDAsMCwxLDczLjYzLDc0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzUuNjYsMTYuMjdWMTEuNzZjMC0xLjQ2LjY5LTIuNTIsMi4zNC0yLjUyczIuMjEsMSwyLjIxLDIuMzR2MS4xSDM4Ljc5VjExLjQ2YzAtLjU4LS4xOS0uOTEtLjc2LS45MXMtLjguNC0uOCwxdjVjMCwuNTYuMjMsMSwuOCwxcy43Ni0uMzYuNzYtLjkxVjE0Ljg2aDEuNDN2MS42MWMwLDEuMzMtLjU1LDIuMzMtMi4yMSwyLjMzQTIuMjEsMi4yMSwwLDAsMSwzNS42NiwxNi4yN1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00MS4yMSw5LjM1aDEuNTd2OGgxLjg3djEuMjhINDEuMjFaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDUuNDksOS4zNWgxLjU3djkuMzNINDUuNDlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTIuNTUsMTIuNjNoMGwtMS4wNiw2LjA1aC0uNzNsLTEuMTctNi4wNWgwdjYuMDVINDguMjNWOS4zNWgxLjgzbDEsNS4yNWgwTDUyLDkuMzVoMnY5LjMzSDUyLjU1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU0Ljc2LDE4LjY4bDEuNzYtOS4zM2gxLjc5bDEuNzcsOS4zM0g1OC40OEw1OC4xOSwxN0g1Ni41M2wtLjI4LDEuNzFabTItM0g1OEw1Ny4zNiwxMmgwWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU5Ljg4LDkuMzVINjR2MS4yOEg2Mi43NXY4SDYxLjE3di04SDU5Ljg4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY0LjkxLDkuMzVoMy43NHYxLjI4SDY2LjQ4VjEzLjNINjh2MS4yN0g2Ni40OFYxNy40aDIuMTd2MS4yOEg2NC45MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNS4zOSwzMS45bDEuNzYtOS4zM2gxLjc5bDEuNzcsOS4zM0gzOS4xbC0uMjktMS43MUgzNy4xNWwtLjI4LDEuNzFabTItM2gxLjI1TDM4LDI1LjJoMFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00MS4xNiwyOS40OVYyNWMwLTEuNDYuNjktMi41MiwyLjM0LTIuNTJzMi4yMSwxLDIuMjEsMi4zNHYxLjFINDQuMjlWMjQuNjhjMC0uNTgtLjE5LS45MS0uNzYtLjkxcy0uOC40LS44LDF2NWMwLC41Ni4yMywxLC44LDFzLjc2LS4zNi43Ni0uOTFWMjguMDhoMS40M3YxLjYxQzQ1LjcyLDMxLDQ1LjE3LDMyLDQzLjUsMzJBMi4yMSwyLjIxLDAsMCwxLDQxLjE2LDI5LjQ5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ2LjI2LDIyLjU4aDQuMTd2MS4yOEg0OS4xNHY4SDQ3LjU2di04SDQ2LjI2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUxLjMsMjIuNThoMS41N1YzMS45SDUxLjNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTMuOTEsMjkuNDlWMjVhMi4zOCwyLjM4LDAsMSwxLDQuNzUsMHY0LjUxYTIuMzgsMi4zOCwwLDEsMS00Ljc1LDBabTMuMTguMjV2LTVjMC0uNTYtLjI1LTEtLjgxLTFzLS44LjQtLjgsMXY1YzAsLjU2LjI1LDEsLjgsMVM1Ny4wOSwzMC4zMSw1Ny4wOSwyOS43NFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02MSwyNlYzMS45SDU5LjY5VjIyLjU4aDEuNTRsMS42OSw1LjM1VjIyLjU4aDEuMzFWMzEuOUg2Mi44NVoiLz48L2c+PGcgaWQ9Ik5VTUJFUlNfT05MWSIgZGF0YS1uYW1lPSJOVU1CRVJTIE9OTFkiPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxNy4yNiA4LjQ5IDE3LjI2IDMwLjkgMTMuNDkgMzAuOSAxMy40OSAxMy43NSAxMy40NSAxMy43NSAxMC44MSAxNi40OSAxMC43OCAxNi40OSAxMC43OCAxMi41NSAxNC4yNSA4LjQ5IDE3LjI2IDguNDkiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yOS42OSwxMy4zNVYxNS4zYTMuNTksMy41OSwwLDAsMS0yLjU4LDMuNjRjMS44OC40MywyLjc4LDEuNzUsMi43OCwzLjhWMjZjMCwzLjExLTEuNjUsNS4xMi01LjQ1LDUuMTJTMTkuMjQsMjksMTkuMjQsMjUuNThWMjIuNjRoMy40NHYzLjIxYzAsMS4zMi40NiwyLjE4LDEuNzUsMi4xOHMxLjY4LS44MywxLjY4LTJ2LTMuN2MwLTEuMTktLjUzLTEuODItMS44NS0xLjgySDIyLjY4VjE3LjYxSDI0LjFjMS4yMiwwLDItLjYzLDItMS44MlYxMy4zOGMwLTEuMjItLjQzLTItMS42Mi0ycy0xLjYyLjc5LTEuNjIsMi4xOHYyLjI4SDE5LjQ0di0yYzAtMy4zMSwxLjM2LTUuNjIsNS4yNi01LjYyLDMuNDcsMCw1LDIsNSw1LjEzIi8+PC9nPjwvc3ZnPg=="
-
-/***/ },
-/* 180 */
-/*!******************************!*\
-  !*** ./src/images/sdg14.svg ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFjOTdkNDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDIyPC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMi4wNSIgeT0iLTMuMyIgd2lkdGg9IjExNi4xNyIgaGVpZ2h0PSIxMTkuMjQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04NS43NSw4MS40OUM4NC4zNCw3OS41OSw3NS4yNiw2OCw2Mi41NCw2OCw1MS40OCw2OCwzOS42Niw3OCwzOS42Niw3OHMtNC40NC05LjA5LTEzLjUzLTEwSDI1LjlhLjM3LjM3LDAsMCwwLS4zNS4zNiwxLDEsMCwwLDAsLjE0LjMzYzEuMTcsMS45NCw0LjE2LDcuNDgsNC4xNiwxM3MtMywxMS4wOS00LjE3LDEzbC0uMDguMTJhLjM2LjM2LDAsMCwwLC4yOC41NWguMTljOS4xMS0uODUsMTMuNTctMTAsMTMuNTctMTBzMTEuODIsMTAsMjIuODgsMTBDNzUuMjYsOTUuNSw4NC4zNCw4My45Miw4NS43NSw4MmwuMS0uMTNhLjM4LjM4LDAsMCwwLDAtLjE0LjM3LjM3LDAsMCwwLDAtLjE0bC0uMS0uMTNNNjkuNjEsODMuMjJhMy43MSwzLjcxLDAsMSwxLDMuNzItMy43MiwzLjcyLDMuNzIsMCwwLDEtMy43MiwzLjcyIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjUuODQsNDYuMjZsLS4wNywwYS4zNy4zNywwLDAsMC0uMzcuMzd2Mi41M2EuMzYuMzYsMCwwLDAsLjExLjI2YzYuMTQsNS4zNCwxMiwuMzQsMTMuMzEtMWEuMzQuMzQsMCwwLDEsLjEtLjEuMzcuMzcsMCwwLDEsLjItLjA3LjM2LjM2LDAsMCwxLC4yNS4xbDAsMGM2Ljk0LDYuNjIsMTQuMjIsMS4yNiwxNS43MywwbC4xNS0uMTRhLjMyLjMyLDAsMCwxLC4xNCwwLC4zNC4zNCwwLDAsMSwuMTQsMGwuMTUuMTRjMS41MSwxLjI2LDguNzksNi42MiwxNS43MywwdjBhLjM1LjM1LDAsMCwxLC4yNS0uMS4zNi4zNiwwLDAsMSwuMi4wNy4zOC4zOCwwLDAsMSwuMS4xYzEuMzUsMS4zMiw3LjE2LDYuMzIsMTMuMzEsMWEuMzcuMzcsMCwwLDAsLjExLS4yNlY0Ni42MWEuMzYuMzYsMCwwLDAtLjM2LS4zN2wtLjA4LDAtLjE4LjFhMTEuMTgsMTEuMTgsMCwwLDEtMTMuMDctMS44NGwtLjE1LS4xNWEuMzkuMzksMCwwLDAtLjE2LDBsLS4xMSwwYS40MS40MSwwLDAsMC0uMTkuMTRjLTEuNTksMS4yMS04Ljg2LDYuMTQtMTUuMzQuMDlsLS4wOS0uMDlhLjQuNCwwLDAsMC0uMjYtLjExLjM5LjM5LDAsMCwwLS4yNS4xMWwtLjEuMDljLTYuNDgsNi0xMy43NiwxLjEyLTE1LjM1LS4wOWEuMzkuMzksMCwwLDAtLjE4LS4xNGwtLjEyLDBhLjQxLjQxLDAsMCwwLS4xNSwwbC0uMTYuMTVBMTEuMTgsMTEuMTgsMCwwLDEsMjYsNDYuMzVsLS4xOS0uMSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM4LjgyLDU3LjY0YS4zOS4zOSwwLDAsMSwuMS0uMS4zOC4zOCwwLDAsMSwuMi0uMDcuMzYuMzYsMCwwLDEsLjI1LjFsMCwwYzYuOTQsNi42MSwxNC4yMiwxLjI1LDE1LjczLDBsLjE1LS4xNC4xNCwwYS40LjQsMCwwLDEsLjE1LDBsLjE1LjE0YzEuNTEsMS4yNSw4Ljc5LDYuNjEsMTUuNzMsMHYwYS4zNS4zNSwwLDAsMSwuMjUtLjEuMzcuMzcsMCwwLDEsLjIuMDcuNC40LDAsMCwxLC4xLjFjMS4zNCwxLjMyLDcuMTYsNi4zMywxMy4zMSwxYS4zNi4zNiwwLDAsMCwuMTEtLjI2VjU1LjgzYS4zNi4zNiwwLDAsMC0uMzYtLjM2bC0uMDgsMC0uMTguMDlhMTEuMTksMTEuMTksMCwwLDEtMTMuMDctMS44M2wtLjE1LS4xNWEuMy4zLDAsMCwwLS4xNiwwLC4yMy4yMywwLDAsMC0uMTEsMCwuMzEuMzEsMCwwLDAtLjE5LjE0Yy0xLjU4LDEuMjEtOC44Niw2LjE0LTE1LjM1LjA5bC0uMDktLjA5YS4zNy4zNywwLDAsMC0uMjYtLjEuMzYuMzYsMCwwLDAtLjI1LjFsLS4xLjA5Yy02LjQ4LDYtMTMuNzYsMS4xMi0xNS4zNS0uMDlhLjMuMywwLDAsMC0uMTgtLjE0bC0uMTIsMGEuMy4zLDAsMCwwLS4xNSwwbC0uMTYuMTVBMTEuMTksMTEuMTksMCwwLDEsMjYsNTUuNTdsLS4xOS0uMDktLjA3LDBhLjM2LjM2LDAsMCwwLS4zNy4zNnYyLjU0YS4zNS4zNSwwLDAsMCwuMTEuMjZjNi4xNSw1LjM0LDEyLC4zNCwxMy4zMS0xIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzYuNDcsOS4yN2gxLjU4djguMTJoMS44OXYxLjI5SDM2LjQ3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQwLjY3LDkuMjdoMS41OHY5LjQxSDQwLjY3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQzLjE2LDkuMjdoMy43MXYxLjI5SDQ0Ljc1djIuNjloMS41OHYxLjI4SDQ0Ljc1djQuMTVINDMuMTZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDcuNTcsOS4yN2gzLjc4djEuMjlINDkuMTV2Mi42OWgxLjU3djEuMjhINDkuMTV2Mi44NmgyLjE5djEuMjlINDcuNTdaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzYuNDcsMjIuNDZoMi4yOWMxLjU4LDAsMi4xMS43NCwyLjExLDIuMDd2MWExLjM3LDEuMzcsMCwwLDEtLjk0LDEuNSwxLjQzLDEuNDMsMCwwLDEsMS4xOCwxLjU3VjI5LjhjMCwxLjMzLS42LDIuMDctMi4xOCwyLjA3SDM2LjQ3Wm0xLjU4LDRoLjU2YS42Ny42NywwLDAsMCwuNzUtLjc2VjI0LjUxYS42Ny42NywwLDAsMC0uNzYtLjc2aC0uNTRabTAsMS4yMXYyLjk0aC42OWEuNjguNjgsMCwwLDAsLjc4LS43NlYyOC40YzAtLjUtLjI0LS43Ni0uNzktLjc2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQxLjksMjIuNDZoMy43OHYxLjI5SDQzLjQ4djIuNjloMS41N3YxLjI4SDQzLjQ4djIuODZoMi4xOXYxLjI5SDQxLjlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDYuNTIsMjIuNDZoMS41OHY4LjEySDUwdjEuMjlINDYuNTJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTAuNjUsMjkuNDRWMjQuODlhMi40LDIuNCwwLDEsMSw0Ljc5LDB2NC41NWEyLjQsMi40LDAsMSwxLTQuNzksMFptMy4yMS4yNVYyNC42NGMwLS41Ny0uMjUtMS0uODItMXMtLjgxLjQtLjgxLDF2NS4wNWMwLC41Ny4yNSwxLC44MSwxUzUzLjg1LDMwLjI2LDUzLjg1LDI5LjY5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU5LjYxLDI2LjA1bC0uODksNS44Mkg1Ny4yNEw1NiwyMi40Nkg1Ny41bC43NCw2aDBsLjc5LTZoMS4yOWwuODcsNmgwbC43Mi02aDEuMzNsLTEuMjIsOS40MWgtMS41bC0uOTMtNS44MloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02OC44MywyNi4wNWwtLjg5LDUuODJINjYuNDVsLTEuMjYtOS40MWgxLjUzbC43NCw2aDBsLjc5LTZoMS4yOWwuODcsNmgwbC43Mi02aDEuMzNsLTEuMjIsOS40MWgtMS41bC0uOTMtNS44MloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03Mi4zNywzMS44N2wxLjc4LTkuNDFoMS44bDEuNzksOS40MUg3Ni4xMmwtLjI5LTEuNzJINzQuMTRsLS4yOCwxLjcyWm0yLTNoMS4yNkw3NSwyNS4xMWgwWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTc3LjUyLDIyLjQ2aDQuMjF2MS4yOUg4MC40MnY4LjEyaC0xLjZWMjMuNzVoLTEuM1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04Mi40NiwyMi40NmgzLjc4djEuMjlIODR2Mi42OWgxLjU3djEuMjhIODR2Mi44NmgyLjE5djEuMjlIODIuNDZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODguNjYsMjcuNTV2NC4zMkg4Ny4wOFYyMi40NmgyLjNjMS42LDAsMi4xOC43OSwyLjE4LDIuMTF2MS4yMWMwLDEtLjM2LDEuNjEtMS4yNiwxLjgybDEuNTEsNC4yOEg5MC4xNVptMC0zLjh2Mi45M2guNTNBLjY5LjY5LDAsMCwwLDkwLDI1LjlWMjQuNTFjMC0uNTEtLjI0LS43Ni0uNzgtLjc2WiIvPjwvZz48ZyBpZD0iTlVNQkVSU19PTkxZIiBkYXRhLW5hbWU9Ik5VTUJFUlMgT05MWSI+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjE0LjU1IDkuNCAxNC41NSAzMS45MSAxMC43NyAzMS45MSAxMC43NyAxNC42OCAxMC43MyAxNC42OCA4LjA4IDE3LjQzIDguMDQgMTcuNDMgOC4wNCAxMy40OCAxMS41MyA5LjQgMTQuNTUgOS40Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjYuMDgsMzAuOTFWMjcuMjZIMjcuNnYtM0gyNi4wOFY4LjM5SDIyLjM2TDE1LjgxLDI0LjkzdjIuMzNoNi42OHYzLjY1Wk0xOS4xMywyNC4zLDIyLjUyLDE1aDBWMjQuM1oiLz48L2c+PC9zdmc+"
-
-/***/ },
-/* 181 */
-/*!******************************!*\
-  !*** ./src/images/sdg15.svg ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzVjYmE0Nzt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDIzPC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMi41NSIgeT0iLTMuMyIgd2lkdGg9IjExNy42NyIgaGVpZ2h0PSIxMTkuMjQiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjQyLjc0IiB5PSI3NS41NyIgd2lkdGg9IjMuNzkiIGhlaWdodD0iOC42MyIgcng9IjAuMjUiIHJ5PSIwLjI1Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODIuNDUsODcuN0gyOC4xOGEuMjUuMjUsMCwwLDAtLjI1LjI2djMuMzJhLjI1LjI1LDAsMCwwLC4yNS4yNEg4Mi40NWEuMjUuMjUsMCwwLDAsLjI1LS4yNFY4OGEuMjYuMjYsMCwwLDAtLjI1LS4yNiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgyLjQ1LDk0LjI5SDI4LjE4YS4yNS4yNSwwLDAsMC0uMjUuMjR2My4zM2EuMjUuMjUsMCwwLDAsLjI1LjI0SDgyLjQ1YS4yNS4yNSwwLDAsMCwuMjUtLjI0Vjk0LjUzYS4yNS4yNSwwLDAsMC0uMjUtLjI0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzIuMTIsNjYuNTZhOCw4LDAsMCwwLTQuNjktMS43Nyw2LjI3LDYuMjcsMCwwLDAtNC4zNiwxLjg1LjQ3LjQ3LDAsMCwwLS4xNS4zNHYuM2EuNDcuNDcsMCwwLDAsLjE1LjM3LjQ0LjQ0LDAsMCwwLC4zOC4wOWwuMSwwYS43My43MywwLDAsMCwuMjctLjE3QTQuMzgsNC4zOCwwLDAsMSw2Niw2Ny4wOWE4LjIxLDguMjEsMCwwLDEsNS41OSwyLjM0bC4wNSwwYS42NS42NSwwLDAsMCwuNDcuMi42NC42NCwwLDAsMCwuNDYtLjE5bDAsMGE4LjI0LDguMjQsMCwwLDEsNS42LTIuMzUsNC4zOSw0LjM5LDAsMCwxLDIuMTguNDUuOC44LDAsMCwwLC4zLjE4LjY3LjY3LDAsMCwwLC4zMiwwLC40Ny40NywwLDAsMCwuMzQtLjQ1VjY3YS40Ny40NywwLDAsMC0uMTUtLjM0LDYuMjksNi4yOSwwLDAsMC00LjQxLTEuOSw4LDgsMCwwLDAtNC42OSwxLjc3Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjguNzUsNDQuOTNhLjQ1LjQ1LDAsMCwwLS4yNC4yOWwtLjA1LjE4YS40Ni40NiwwLDAsMCwuMDcuNDEuNDUuNDUsMCwwLDAsLjM0LjE4aC4wN2EuNTkuNTksMCwwLDAsLjI2LS4wNywxLjM3LDEuMzcsMCwwLDEsLjMzLDAsNC43MSw0LjcxLDAsMCwxLDMuODgsMi41M2wwLDBhLjU2LjU2LDAsMCwwLC4zNS4yOGwuMTcsMGEuNTguNTgsMCwwLDAsLjI3LS4wN2wwLDBhNS40MSw1LjQxLDAsMCwxLDIuNDItLjYsMy42OSwzLjY5LDAsMCwxLDIuNDcuNzkuNjMuNjMsMCwwLDAsLjE4LjJsLjE4LjA4aC4xM2EuNDcuNDcsMCwwLDAsLjIyLS4wNS40Ni40NiwwLDAsMCwuMjMtLjI4bDAtLjE2YS40Mi40MiwwLDAsMCwwLS4xMy40NC40NCwwLDAsMC0uMDYtLjIzQTQuMDgsNC4wOCwwLDAsMCw3Ni40LDQ2LjFhNS43OSw1Ljc5LDAsMCwwLTIsLjM3LDQuNzQsNC43NCwwLDAsMC0zLjY2LTIuMDUsNC41MSw0LjUxLDAsMCwwLTIsLjUyIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTcuMjksNTMuMjhsMCwuMjRhLjQ2LjQ2LDAsMCwwLC41OC40MmwuMDgsMGEuNTkuNTksMCwwLDAsLjIzLS4xNyw0LDQsMCwwLDEsMi4wNy0uNDcsNi43MSw2LjcxLDAsMCwxLDQuMjksMS42MmwwLDBhLjY0LjY0LDAsMCwwLC40Mi4xNmgwYS42My42MywwLDAsMCwuNDMtLjJsMCwwYTYuNTIsNi41MiwwLDAsMSw0Ljc2LTIuMiwzLjIzLDMuMjMsMCwwLDEsMS40MS4yNi43MS43MSwwLDAsMCwuMjguMTUuNjMuNjMsMCwwLDAsLjIsMGwuMTEsMGEuNDYuNDYsMCwwLDAsLjMxLS40N3YtLjIxYS40Ni40NiwwLDAsMC0uMTYtLjMyLDUuMzIsNS4zMiwwLDAsMC0zLjQ3LTEuMzcsNi40Nyw2LjQ3LDAsMCwwLTQuMDYsMS42OCw2Ljc4LDYuNzgsMCwwLDAtMy42Mi0xLjIsNS4xOCw1LjE4LDAsMCwwLTMuODUsMS43OC40OC40OCwwLDAsMC0uMTMuMzUiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yOS44Miw1Ny42NGE1Ljg4LDUuODgsMCwwLDEsNS44OC01Ljg4bC4zOCwwYTgsOCwwLDEsMSwxNS4wOSw0LjA3LDguODksOC44OSwwLDAsMS0xLjkzLDE3LjU4bC0xMS44Ny0uMDdoMGE2LjI5LDYuMjksMCwwLDEtNC41OC0xMC42MUE1Ljg4LDUuODgsMCwwLDEsMjkuODIsNTcuNjRaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjM1LjcyIDkuMzYgMzUuNzIgMTguNSAzOS4wOSAxOC41IDM5LjA5IDE3LjI0IDM3LjI1IDE3LjI0IDM3LjI1IDkuMzYgMzUuNzIgOS4zNiIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iMzkuOTIiIHk9IjkuMzYiIHdpZHRoPSIxLjU0IiBoZWlnaHQ9IjkuMTQiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNDIuNDcgMTguNSA0NCAxOC41IDQ0IDE0LjQ2IDQ1LjU0IDE0LjQ2IDQ1LjU0IDEzLjIyIDQ0IDEzLjIyIDQ0IDEwLjYxIDQ2LjA2IDEwLjYxIDQ2LjA2IDkuMzYgNDIuNDcgOS4zNiA0Mi40NyAxOC41Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjQ2Ljg3IDE4LjUgNTAuNTQgMTguNSA1MC41NCAxNy4yNCA0OC40MSAxNy4yNCA0OC40MSAxNC40NiA0OS45MyAxNC40NiA0OS45MyAxMy4yMiA0OC40MSAxMy4yMiA0OC40MSAxMC42MSA1MC41NCAxMC42MSA1MC41NCA5LjM2IDQ2Ljg3IDkuMzYgNDYuODcgMTguNSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM1LjcxLDI5LjU0di00LjRhMi4zMiwyLjMyLDAsMSwxLDQuNjMsMHY0LjRhMi4zMiwyLjMyLDAsMSwxLTQuNjMsMG0zLjEuMjRWMjQuOWMwLS41NS0uMjQtLjk0LS43OS0uOTRzLS43OC4zOS0uNzguOTR2NC44OWMwLC41NS4yNC45NC43OC45NHMuNzktLjM5Ljc5LS45NCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI0Mi41IDI2LjE3IDQyLjUgMzEuODkgNDEuMjEgMzEuODkgNDEuMjEgMjIuNzkgNDIuNzEgMjIuNzkgNDQuMzYgMjguMDEgNDQuMzYgMjIuNzkgNDUuNjQgMjIuNzkgNDUuNjQgMzEuODkgNDQuMyAzMS44OSA0Mi41IDI2LjE3Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjQ4Ljk2IDIyLjc5IDUwLjQ5IDIyLjc5IDUwLjQ5IDMwLjY0IDUyLjMxIDMwLjY0IDUyLjMxIDMxLjg5IDQ4Ljk2IDMxLjg5IDQ4Ljk2IDIyLjc5Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTIuNzcsMzEuODlsMS43Mi05LjFoMS43NUw1OCwzMS44OUg1Ni4zOWwtLjI4LTEuNjZINTQuNDhsLS4yNywxLjY2Wk01NC42OSwyOWgxLjIybC0uNi0zLjY1aDBaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjU5Ljg4IDI2LjE3IDU5Ljg4IDMxLjg5IDU4LjU5IDMxLjg5IDU4LjU5IDIyLjc5IDYwLjA5IDIyLjc5IDYxLjc0IDI4LjAxIDYxLjc0IDIyLjc5IDYzLjAyIDIyLjc5IDYzLjAyIDMxLjg5IDYxLjY4IDMxLjg5IDU5Ljg4IDI2LjE3Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjguNTksMjUuMjN2NC4yMmMwLDEuNC0uNTgsMi40NC0yLjIyLDIuNDRINjR2LTkuMWgyLjM2YzEuNjQsMCwyLjIyLDEsMi4yMiwyLjQ0bS0yLjQsNS40MWMuNjMsMCwuODctLjM4Ljg3LS45M1YyNWEuOC44LDAsMCwwLS44Ny0uOTFoLS42NXY2LjYxWiIvPjwvZz48ZyBpZD0iTlVNQkVSU19PTkxZIiBkYXRhLW5hbWU9Ik5VTUJFUlMgT05MWSI+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjEwLjEzIDEyLjU0IDEwLjEzIDE2LjQ3IDEwLjE2IDE2LjQ3IDEyLjggMTMuNzMgMTIuODQgMTMuNzMgMTIuODQgMzAuODkgMTYuNjEgMzAuODkgMTYuNjEgOC40NyAxMy42IDguNDcgMTAuMTMgMTIuNTQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNS41NywxNS41OGEzLjQsMy40LDAsMCwwLTMuMTcsMS41NWgwVjExLjU1aDYuNDhWOC40N0gxOC45MlYyMS4xaDMuNDR2LS41YzAtMS4zMi42LTIsMS42NS0yczEuNjIuNzksMS42MiwyVjI2YzAsMS4xOS0uNDMsMi0xLjU5LDJzLTEuNzUtLjg2LTEuNzUtMi4xOFYyM0gxOC44NnYyLjU1YzAsMy40MSwxLjM2LDUuNTksNS4xOSw1LjU5czUuMzYtMiw1LjM2LTUuMTNWMjAuNTRjMC0zLjU0LTEuODItNS0zLjg0LTUiLz48L2c+PC9zdmc+"
-
-/***/ },
-/* 182 */
-/*!******************************!*\
-  !*** ./src/images/sdg16.svg ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzA3Njk5ZTt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDI0PC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMC45NSIgeT0iLTMuMyIgd2lkdGg9IjExOC4xOSIgaGVpZ2h0PSIxMTkuMjQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04MC4xOCw1MGE0LjIyLDQuMjIsMCwwLDAtLjgxLDMsNC4yMiw0LjIyLDAsMCwwLDIsMi4zNSw0LjIxLDQuMjEsMCwwLDAsLjgxLTMsNC4yMSw0LjIxLDAsMCwwLTItMi4zNSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTc4LjMyLDU4LjY0YTQuMjIsNC4yMiwwLDAsMCwuODEtMyw0LjIxLDQuMjEsMCwwLDAtMi0yLjM1LDQuMjEsNC4yMSwwLDAsMC0uODEsMyw0LjIyLDQuMjIsMCwwLDAsMiwyLjM1Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODMsNTdhMy43NSwzLjc1LDAsMCwwLDIuNTcsMS4wOUEzLjkxLDMuOTEsMCwwLDAsODgsNTYuNThhMy43NSwzLjc1LDAsMCwwLTIuNTctMS4wOUEzLjkyLDMuOTIsMCwwLDAsODMsNTciLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04NSw1MC41M2E0LjUzLDQuNTMsMCwwLDAtMSwzLjEzLDQuMzMsNC4zMywwLDAsMCwzLjA4LTEsNC41Myw0LjUzLDAsMCwwLDEtMy4xMyw0LjMzLDQuMzMsMCwwLDAtMy4wOCwxIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODIuNTIsNjEuNTJhMy45MSwzLjkxLDAsMCwwLDIuNjUtMSwzLjc1LDMuNzUsMCwwLDAtMi4zLTEuNiwzLjkyLDMuOTIsMCwwLDAtMi42NSwxLDMuNzUsMy43NSwwLDAsMCwyLjMsMS41OSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgzLjc0LDgzLjQ4SDczLjUzYTEuNDQsMS40NCwwLDEsMCwwLDIuODlIODMuNzRhMS40NCwxLjQ0LDAsMCwwLDAtMi44OSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgzLjc0LDk5LjQxSDczLjUzYTEuNDQsMS40NCwwLDEsMCwwLDIuODlIODMuNzRhMS40NCwxLjQ0LDAsMCwwLDAtMi44OSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM3LjgxLDgwYTYuMzYsNi4zNiwwLDAsMC0uNzEtLjE4cy4yNi4wOC43MS4xOCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgzLjM2LDg3LjM4SDczLjlhLjgyLjgyLDAsMCwwLS44Mi44MnYyLjg3bC02LjE4LjY4LTktLjIxVjg2YTI0LjgzLDI0LjgzLDAsMCwwLDMuNTktLjczQzcwLjE1LDgyLjg1LDcyLDc3LjQ0LDcxLjg2LDcyLjQ3czEuNDMtNywzLjc2LTcuOWExMC41LDEwLjUsMCwwLDEsMS45My0uNTEsMTUuNDgsMTUuNDgsMCwwLDAsLjgzLDQuNDFsLjYyLS4wNUExNC42NCwxNC42NCwwLDAsMSw3OC4xNCw2NGExMC44MywxMC44MywwLDAsMSwyLjA2LS4wNiwxMy4wOSwxMy4wOSwwLDAsMS0yLTEuNGMuMzktMi40LDEuODItMy44NywzLjI5LTUuMzdhMTcuNjcsMTcuNjcsMCwwLDAsMi4zLTIuN2wtLjUxLS4zM2ExNy4wNSwxNy4wNSwwLDAsMS0yLjIzLDIuNjFjLTEuNDMsMS40Ny0yLjg4LDMtMy4zNyw1LjM1YTE5LjQyLDE5LjQyLDAsMCwxLTEuNDktMS41Yy0yLjE0LTIuNC00LjktLjY0LTguODMsM3MtOC44OCwzLjc4LTEzLjcxLTEuMTZjLTYuMzctNi41My0xMS45My02LjQ5LTE1Ljc1LTYuMTIsMi42MSwxLjExLDMuNTIsMy41NSw0Ljg0LDkuNzQsMS4zOCw2LjUsNC44Nyw5LjQ0LDkuNjUsOS44NS0yLjIxLjM2LTIuNzkuNjctNi4zNCwzLjEyLTIuNzgsMS45Mi02LjY5LDEuMzEtOC4yNywxLDIuOTEuOTEsNi4zNSw0LDkuNDQsNWEyMi44MywyMi44MywwLDAsMCw1LjYzLDEuMTV2NS4yOGwtMTcuMTItLjM3djMuNjhMNjYuOSw5NGw2LjE4LjY4djIuODZhLjgyLjgyLDAsMCwwLC44Mi44Mmg5LjQ2YS44My44MywwLDAsMCwuODItLjgyVjg4LjJBLjgyLjgyLDAsMCwwLDgzLjM2LDg3LjM4Wm0tMjktMS4xNWMuNjcsMCwxLjM1LDAsMi0uMDV2NS4zM2wtMiwwWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM0Ljg4LDk0LjEzYTEuMzIsMS4zMiwwLDAsMS0xLjIxLDEuNDFoLS43M2ExLjMyLDEuMzIsMCwwLDEtMS4yMS0xLjQxVjkxLjU4YTEuMzIsMS4zMiwwLDAsMSwxLjIxLTEuNDFoLjczYTEuMzIsMS4zMiwwLDAsMSwxLjIxLDEuNDFaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzUuMzksOS4xNGgyLjM3YzEuNjEsMCwyLjIuOCwyLjIsMi4xM3YyYzAsMS4zMy0uNTksMi4xNC0yLjIsMi4xNEgzN3YzLjIyaC0xLjZabTEuNiwxLjN2My43NGguNTlhLjY5LjY5LDAsMCwwLC43OC0uNzlWMTEuMjFjMC0uNTItLjI0LS43Ny0uNzgtLjc3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQwLjUyLDkuMTRoMy44MXYxLjNINDIuMTF2Mi43Mkg0My43djEuMjlINDIuMTF2Mi44OWgyLjIxdjEuM0g0MC41MloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NC42NiwxOC42NGwxLjc5LTkuNWgxLjgybDEuODEsOS41SDQ4LjQ0bC0uMjktMS43NGgtMS43bC0uMjgsMS43NFptMi0zaDEuMjdsLS42My0zLjgxaDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTAuMjYsMTYuMTlWMTEuNTljMC0xLjQ4LjctMi41NiwyLjM4LTIuNTZzMi4yNSwxLDIuMjUsMi4zOHYxLjEySDUzLjQ0VjExLjI4YzAtLjU5LS4yLS45Mi0uNzctLjkycy0uODEuNDEtLjgxLDF2NS4xYzAsLjU3LjI0LDEsLjgxLDFzLjc3LS4zNi43Ny0uOTJWMTQuNzRINTQuOXYxLjY0YzAsMS4zNi0uNTYsMi4zNy0yLjI1LDIuMzdBMi4yNSwyLjI1LDAsMCwxLDUwLjI2LDE2LjE5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU1LjUsOS4xNGgzLjgxdjEuM0g1Ny4xdjIuNzJoMS41OHYxLjI5SDU3LjF2Mi44OWgyLjIxdjEuM0g1NS41WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYxLjUzLDE3LjI0bC0uODEsMi4xNGgtLjlsLjItMi4yN2gxLjUxWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY3LjYyLDkuMTR2Ny4zNGEyLDIsMCwwLDEtMi4yLDIuMjdjLTEuNjUsMC0yLjEtLjkxLTIuMS0yLjEyVjE0Ljc0aDEuNTF2MS45MmMwLC40OC4xNy43Ni41OS43NnMuNi0uMjguNi0uNzdWOS4xNFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03Mi44OSw5LjE0djcuMTljMCwxLjQ3LS42MywyLjQyLTIuMjUsMi40MmEyLjE0LDIuMTQsMCwwLDEtMi4zOC0yLjQyVjkuMTRoMS42djcuMzRjMCwuNTYuMjIuOTQuNzguOTRzLjc4LS4zOC43OC0uOTRWOS4xNFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03My40NSwxNi41OVYxNS4zMmgxLjQ4djEuM2MwLC41My4yNC44NC43OC44NHMuNzMtLjM0LjczLS44NHYtLjM2YTEuNzEsMS43MSwwLDAsMC0uNzEtMS4zNEw3NC43OSwxNGEzLjIsMy4yLDAsMCwxLTEuMzMtMi41NHYtLjMyQTIsMiwwLDAsMSw3NS43LDljMS42LDAsMi4yMy43OCwyLjIzLDIuMTZWMTJINzYuNDd2LS44M2MwLS41NS0uMjUtLjgxLS43Ni0uODFhLjcuNywwLDAsMC0uNzYuNzh2LjJjMCwuNTMuMjkuODQuNzYsMS4yOWwxLDFBMy4xOSwzLjE5LDAsMCwxLDc4LDE2LjA2di40NmEyLjA2LDIuMDYsMCwwLDEtMi4zMywyLjIzQTIsMiwwLDAsMSw3My40NSwxNi41OVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03OC4yMSw5LjE0aDQuMjR2MS4zSDgxLjEzdjguMTlINzkuNTJWMTAuNDRINzguMjFaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODIuOTIsOS4xNGgxLjZ2OS41aC0xLjZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODUuMTgsMTYuMTlWMTEuNTljMC0xLjQ4LjctMi41NiwyLjM4LTIuNTZzMi4yNSwxLDIuMjUsMi4zOHYxLjEySDg4LjM2VjExLjI4YzAtLjU5LS4yLS45Mi0uNzctLjkycy0uODEuNDEtLjgxLDF2NS4xYzAsLjU3LjI0LDEsLjgxLDFzLjc3LS4zNi43Ny0uOTJWMTQuNzRoMS40NnYxLjY0YzAsMS4zNi0uNTYsMi4zNy0yLjI1LDIuMzdBMi4yNSwyLjI1LDAsMCwxLDg1LjE4LDE2LjE5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTkwLjQxLDkuMTRoMy44MXYxLjNIOTJ2Mi43MmgxLjU4djEuMjlIOTJ2Mi44OWgyLjIxdjEuM0g5MC40MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNS4xNCwzMS4zNGwxLjc5LTkuNWgxLjgybDEuODEsOS41SDM4LjkybC0uMjktMS43NGgtMS43bC0uMjgsMS43NFptMi0zaDEuMjdsLS42My0zLjgxaDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDIuMywyNS4zN3Y2SDQxdi05LjVoMS41N2wxLjcyLDUuNDVWMjEuODRoMS4zM3Y5LjVoLTEuNFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01MSwyNC4zOXY0LjRjMCwxLjQ2LS42LDIuNTUtMi4zMSwyLjU1SDQ2LjIydi05LjVoMi40NkM1MC4zOSwyMS44NCw1MSwyMi45Miw1MSwyNC4zOVpNNDguNDgsMzBjLjY2LDAsLjkxLS4zOS45MS0xdi01YS44My44MywwLDAsMC0uOTEtMWgtLjY3VjMwWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUyLjc1LDI5LjI5VjI4aDEuNDh2MS4zYzAsLjUzLjI0Ljg0Ljc4Ljg0cy43My0uMzQuNzMtLjg0VjI5QTEuNzEsMS43MSwwLDAsMCw1NSwyNy42MWwtLjk0LS45NGEzLjIsMy4yLDAsMCwxLTEuMzMtMi41NHYtLjMyQTIsMiwwLDAsMSw1NSwyMS43M2MxLjYsMCwyLjIzLjc4LDIuMjMsMi4xNnYuNzdINTUuNzh2LS44M2MwLS41NS0uMjUtLjgxLS43Ni0uODFhLjcuNywwLDAsMC0uNzYuNzhWMjRjMCwuNTMuMjkuODQuNzYsMS4yOWwxLDFhMy4xOSwzLjE5LDAsMCwxLDEuMjksMi40N3YuNDZBMi4wNiwyLjA2LDAsMCwxLDU1LDMxLjQ1LDIsMiwwLDAsMSw1Mi43NSwyOS4yOVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01Ny41MSwyMS44NGg0LjI0djEuM0g2MC40NHY4LjE5SDU4LjgzVjIzLjE0SDU3LjUxWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYzLjgzLDI3djQuMzZoLTEuNnYtOS41aDIuMzNjMS42MSwwLDIuMi44LDIuMiwyLjEzdjEuMjJjMCwxLS4zNiwxLjYzLTEuMjgsMS44NEw2NywzMS4zNEg2NS4zM1ptMC0zLjg0djNoLjUzYS42OS42OSwwLDAsMCwuNzgtLjc4di0xLjRjMC0uNTItLjI0LS43Ny0uNzgtLjc3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY3LjM2LDI4Ljg5VjI0LjI5YTIuNDIsMi40MiwwLDEsMSw0LjgzLDB2NC41OWEyLjQyLDIuNDIsMCwxLDEtNC44MywwWm0zLjI0LjI1VjI0YzAtLjU3LS4yNS0xLS44My0xcy0uODEuNDEtLjgxLDF2NS4xYzAsLjU3LjI1LDEsLjgxLDFTNzAuNTksMjkuNzEsNzAuNTksMjkuMTRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzQuMTcsMjUuMzd2Nkg3Mi44M3YtOS41SDc0LjRsMS43Miw1LjQ1VjIxLjg0aDEuMzN2OS41aC0xLjRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODAuNSwyNi4yN2gyLjI3djUuMDdIODEuNjJ2LTFhMS40NCwxLjQ0LDAsMCwxLTEuNTMsMS4xNWMtMS4zNywwLTItMS4wOS0yLTIuNTZWMjQuMjlhMi4yNSwyLjI1LDAsMCwxLDIuMzktMi41NmMxLjc3LDAsMi4yOCwxLDIuMjgsMi4zOFYyNUg4MS4zMlYyNGMwLS41OS0uMjItLjkyLS44LS45MnMtLjgzLjQxLS44MywxdjUuMWMwLC41Ny4yNCwxLC43OCwxcy43OC0uMjkuNzgtLjkxVjI3LjUzSDgwLjVaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzUuMzksMzQuNTRIMzdWNDRoLTEuNloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zOSwzOC4wN3Y2SDM3LjY1di05LjVoMS41N0w0MC45NCw0MFYzNC41NGgxLjMzVjQ0aC0xLjRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDIuODMsNDJWNDAuNzJoMS40OFY0MmMwLC41My4yNC44NC43OC44NHMuNzMtLjM0LjczLS44NHYtLjM2YTEuNzEsMS43MSwwLDAsMC0uNzEtMS4zNGwtLjk0LS45NGEzLjIsMy4yLDAsMCwxLTEuMzMtMi41NHYtLjMyYTIsMiwwLDAsMSwyLjI0LTIuMDljMS42LDAsMi4yMy43OCwyLjIzLDIuMTZ2Ljc3SDQ1Ljg1di0uODNjMC0uNTUtLjI1LS44MS0uNzYtLjgxYS43LjcsMCwwLDAtLjc2Ljc4di4yYzAsLjUzLjI5Ljg0Ljc2LDEuMjlsMSwxYTMuMTksMy4xOSwwLDAsMSwxLjI5LDIuNDd2LjQ2YTIuMDYsMi4wNiwwLDAsMS0yLjMzLDIuMjNBMiwyLDAsMCwxLDQyLjgzLDQyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ3LjU5LDM0LjU0aDQuMjR2MS4zSDUwLjUyVjQ0SDQ4LjlWMzUuODRINDcuNTlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTIuMzEsMzQuNTRoMS42VjQ0aC0xLjZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTQuMzgsMzQuNTRoNC4yNHYxLjNINTcuM1Y0NEg1NS42OVYzNS44NEg1NC4zOFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02My43MywzNC41NHY3LjE5YzAsMS40Ny0uNjMsMi40Mi0yLjI1LDIuNDJhMi4xNCwyLjE0LDAsMCwxLTIuMzgtMi40MlYzNC41NGgxLjZ2Ny4zNGMwLC41Ni4yMi45NC43OC45NHMuNzgtLjM4Ljc4LS45NFYzNC41NFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02NC4xOSwzNC41NGg0LjI0djEuM0g2Ny4xMlY0NEg2NS41MVYzNS44NEg2NC4xOVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02OC45MSwzNC41NGgxLjZWNDRoLTEuNloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03MS4xNiw0MS41OVYzN0EyLjQyLDIuNDIsMCwxLDEsNzYsMzd2NC41OWEyLjQyLDIuNDIsMCwxLDEtNC44MywwWm0zLjI0LjI1di01LjFjMC0uNTctLjI1LTEtLjgzLTFzLS44MS40MS0uODEsMXY1LjFjMCwuNTcuMjUsMSwuODEsMVM3NC40LDQyLjQxLDc0LjQsNDEuODRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzgsMzguMDd2Nkg3Ni42NHYtOS41aDEuNTdMNzkuOTMsNDBWMzQuNTRoMS4zM1Y0NGgtMS40WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgxLjgyLDQyVjQwLjcySDgzLjNWNDJjMCwuNTMuMjQuODQuNzguODRzLjczLS4zNC43My0uODR2LS4zNmExLjcxLDEuNzEsMCwwLDAtLjcxLTEuMzRsLS45NC0uOTRhMy4yLDMuMiwwLDAsMS0xLjMzLTIuNTR2LS4zMmEyLDIsMCwwLDEsMi4yNC0yLjA5YzEuNiwwLDIuMjMuNzgsMi4yMywyLjE2di43N0g4NC44NHYtLjgzYzAtLjU1LS4yNS0uODEtLjc2LS44MWEuNy43LDAsMCwwLS43Ni43OHYuMmMwLC41My4yOS44NC43NiwxLjI5bDEsMWEzLjE5LDMuMTksMCwwLDEsMS4yOSwyLjQ3di40NmEyLjA2LDIuMDYsMCwwLDEtMi4zMywyLjIzQTIsMiwwLDAsMSw4MS44Miw0MloiLz48L2c+PGcgaWQ9Ik5VTUJFUlNfT05MWSIgZGF0YS1uYW1lPSJOVU1CRVJTIE9OTFkiPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI4LjU5IDEyLjQ1IDguNTkgMTYuNDEgOC42MyAxNi40MSAxMS4yOCAxMy42NSAxMS4zMiAxMy42NSAxMS4zMiAzMC44OSAxNS4xIDMwLjg5IDE1LjEgOC4zNyAxMi4wOCA4LjM3IDguNTkgMTIuNDUiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yOC4zNiwyNS40N1YyMi4xNWMwLTMuNjktMS40Ni01LjU1LTQuMTgtNS41NUEzLjI0LDMuMjQsMCwwLDAsMjEsMTguNDNoMFYxMy41OGMwLTEuMzYuNDMtMi4zMywxLjc5LTIuMzNzMS43Ni44LDEuNzYsMi4xOXYxLjVIMjh2LTEuMmMwLTMuMzItMS4xLTUuNjUtNS4yOC01LjY1LTQsMC01LjQ4LDIuNTYtNS40OCw2LjA4djExYzAsMy40OSwxLjUzLDYsNS41MSw2czUuNTgtMi4xOSw1LjU4LTUuNjhtLTMuNzUuMzNjMCwxLjQzLS41MywyLjI2LTEuODMsMi4yNlMyMSwyNy4yLDIxLDI1LjgxVjIxLjY5Yy4wNy0xLjI2LjYtMi4wNiwxLjc5LTIuMDZzMS43OS44LDEuNzksMi4yNloiLz48L2c+PC9zdmc+"
-
-/***/ },
-/* 183 */
-/*!******************************!*\
-  !*** ./src/images/sdg17.svg ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTEuNzYgMTExLjc3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzE4NDk2Yjt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDI1PC90aXRsZT48ZyBpZD0iRW5nbGlzaCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMi41NSIgeT0iLTMuMyIgd2lkdGg9IjExOC44MiIgaGVpZ2h0PSIxMTkuMjQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04NC4yOSw2Ny43OWExNC41NywxNC41NywwLDAsMC0xNC0xNC41NSwxNC41NiwxNC41NiwwLDAsMC0yNy40NSwwLDE0LjU1LDE0LjU1LDAsMCwwLTguNCwyNiwxNC41NSwxNC41NSwwLDAsMCwyMi4yLDE2QTE0LjU1LDE0LjU1LDAsMCwwLDc4LjY5LDc5LjI0YTE0LjU0LDE0LjU0LDAsMCwwLDUuNTktMTEuNDZtLTE2LjEyLTkuN2ExMS42MywxMS42MywwLDAsMS05LjkxLDExLjQ4QTExLjUyLDExLjUyLDAsMCwxLDY4LDU2LjNhMTEuNTYsMTEuNTYsMCwwLDEsLjE1LDEuNzlNNTYuNTksOTEuNTNBMTEuNTksMTEuNTksMCwwLDEsNTYuNDksNzVhMTEuNTksMTEuNTksMCwwLDEsLjExLDE2LjU2TTQ1LjA3LDU2LjNhMTEuNTEsMTEuNTEsMCwwLDEsOS43NiwxMy4yN0ExMS41MiwxMS41MiwwLDAsMSw0NS4wNyw1Ni4zTTUzLjczLDczQTExLjU4LDExLjU4LDAsMCwxLDM4LDc4LjEsMTEuNTgsMTEuNTgsMCwwLDEsNTMuNzMsNzNtNS41Ny0uMDhhMTEuNTksMTEuNTksMCwwLDEsMTUuOCw1LjE3LDExLjU5LDExLjU5LDAsMCwxLTE1LjgtNS4xN001Ni41NCw0Ni40NmExMS42NCwxMS42NCwwLDAsMSwxMC42Niw3LDE0LjYsMTQuNiwwLDAsMC0xMC42Niw4LjE4LDE0LjU5LDE0LjU5LDAsMCwwLTEwLjY2LTguMTgsMTEuNjQsMTEuNjQsMCwwLDEsMTAuNjYtN00zMS43Myw2Ny43OUExMS42NCwxMS42NCwwLDAsMSw0Mi4xMSw1Ni4yMywxNC43OCwxNC43OCwwLDAsMCw0Miw1OC4wOWExNC41MywxNC41MywwLDAsMCw0Ljc2LDEwLjc1QTE0LjU5LDE0LjU5LDAsMCwwLDM1LjU4LDc2LjRhMTEuNTksMTEuNTksMCwwLDEtMy44NS04LjYybTUsMTUuNTJBMTEuNTEsMTEuNTEsMCwwLDEsMzcsODAuODlhMTQuNTMsMTQuNTMsMCwwLDAsMTMuMzYtLjM3LDE0LjQ5LDE0LjQ5LDAsMCwwLDMuODYsMTIuOCwxMS42LDExLjYsMCwwLDEtMTcuNDgtMTBtMzkuNTQtLjFBMTEuNjEsMTEuNjEsMCwwLDEsNTksOTMuM2ExNC41LDE0LjUsMCwwLDAsMy43My0xMi43OSwxNC41MiwxNC41MiwwLDAsMCwxMy40LjM3LDExLjUyLDExLjUyLDAsMCwxLC4yNCwyLjMyTTY2LjQzLDY4Ljc1QTE0LjUyLDE0LjUyLDAsMCwwLDcxLjEsNTguMDksMTQuNzgsMTQuNzgsMCwwLDAsNzEsNTYuMjNhMTEuNjEsMTEuNjEsMCwwLDEsNi41NiwyMC4xNSwxNC41OCwxNC41OCwwLDAsMC0xMS4xLTcuNjIiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNS42Niw5LjM1aDIuMjhjMS41NSwwLDIuMTEuNzcsMi4xMSwydjEuOTNjMCwxLjI4LS41NywyLjA2LTIuMTEsMi4wNkgzNy4ydjMuMUgzNS42NlptMS41NCwxLjI1djMuNmguNTZhLjY2LjY2LDAsMCwwLC43NS0uNzV2LTIuMWMwLS41LS4yMy0uNzQtLjc1LS43NFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00MC4yNSwxOC40OSw0Miw5LjM1aDEuNzVsMS43NCw5LjE0SDQzLjg4bC0uMjgtMS42N0g0MmwtLjI3LDEuNjdabTEuOTMtMi45SDQzLjRsLS42MS0zLjY3aDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDcuNzYsMTQuM3Y0LjE5SDQ2LjIzVjkuMzVoMi4yNGMxLjU1LDAsMi4xMS43NywyLjExLDJ2MS4xN2MwLDEtLjM1LDEuNTYtMS4yMywxLjc3bDEuNDcsNC4xNUg0OS4yWm0wLTMuNjl2Mi44NGguNTFBLjY3LjY3LDAsMCwwLDQ5LDEyLjdWMTEuMzVjMC0uNS0uMjMtLjc0LS43Ni0uNzRaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjUxLjEzIDkuMzUgNTUuMjEgOS4zNSA1NS4yMSAxMC42MSA1My45NCAxMC42MSA1My45NCAxOC40OSA1Mi4zOSAxOC40OSA1Mi4zOSAxMC42MSA1MS4xMyAxMC42MSA1MS4xMyA5LjM1Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjU3LjQ4IDEyLjc1IDU3LjQ4IDE4LjQ5IDU2LjE4IDE4LjQ5IDU2LjE4IDkuMzUgNTcuNjkgOS4zNSA1OS4zNSAxNC42IDU5LjM1IDkuMzUgNjAuNjMgOS4zNSA2MC42MyAxOC40OSA1OS4yOCAxOC40OSA1Ny40OCAxMi43NSIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI2MS44OSA5LjM1IDY1LjU1IDkuMzUgNjUuNTUgMTAuNjEgNjMuNDMgMTAuNjEgNjMuNDMgMTMuMjIgNjQuOTUgMTMuMjIgNjQuOTUgMTQuNDYgNjMuNDMgMTQuNDYgNjMuNDMgMTcuMjQgNjUuNTUgMTcuMjQgNjUuNTUgMTguNDkgNjEuODkgMTguNDkgNjEuODkgOS4zNSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY4LDE0LjN2NC4xOUg2Ni41MVY5LjM1aDIuMjRjMS41NSwwLDIuMTIuNzcsMi4xMiwydjEuMTdjMCwxLS4zNSwxLjU2LTEuMjMsMS43N2wxLjQ3LDQuMTVINjkuNDlabTAtMy42OXYyLjg0aC41MWEuNjcuNjcsMCwwLDAsLjc1LS43NVYxMS4zNWMwLS41LS4yMy0uNzQtLjc1LS43NFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03MS42MywxNi41MlYxNS4zaDEuNDN2MS4yNWMwLC41MS4yMy44MS43NS44MXMuNy0uMzIuNy0uODFWMTYuMmExLjY1LDEuNjUsMCwwLDAtLjY5LTEuM2wtLjktLjlhMy4wOCwzLjA4LDAsMCwxLTEuMjgtMi40NHYtLjMxYTEuOTEsMS45MSwwLDAsMSwyLjE2LTJjMS41NCwwLDIuMTQuNzUsMi4xNCwyLjA4di43NGgtMS40di0uOGMwLS41My0uMjQtLjc4LS43My0uNzhhLjY3LjY3LDAsMCwwLS43My43NnYuMTljMCwuNTEuMjguODEuNzMsMS4yNGwxLDFBMy4wNywzLjA3LDAsMCwxLDc2LDE2di40NEEyLDIsMCwwLDEsNzMuOCwxOC42YTEuOSwxLjksMCwwLDEtMi4xNy0yLjA4Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjgwIDE0LjQ2IDc4LjUyIDE0LjQ2IDc4LjUyIDE4LjQ5IDc2Ljk4IDE4LjQ5IDc2Ljk4IDkuMzUgNzguNTIgOS4zNSA3OC41MiAxMy4yMiA4MCAxMy4yMiA4MCA5LjM1IDgxLjU0IDkuMzUgODEuNTQgMTguNDkgODAgMTguNDkgODAgMTQuNDYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjgyLjU2IiB5PSI5LjM1IiB3aWR0aD0iMS41NCIgaGVpZ2h0PSI5LjE0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODUuMTIsOS4zNWgyLjI4YzEuNTUsMCwyLjExLjc3LDIuMTEsMnYxLjkzYzAsMS4yOC0uNTcsMi4wNi0yLjExLDIuMDZoLS43NHYzLjFIODUuMTJabTEuNTQsMS4yNXYzLjZoLjU2YS42Ni42NiwwLDAsMCwuNzYtLjc1di0yLjFjMC0uNS0uMjMtLjc0LS43Ni0uNzRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOTAuMTEsMTYuNTJWMTUuM2gxLjQzdjEuMjVjMCwuNTEuMjMuODEuNzYuODFzLjctLjMyLjctLjgxVjE2LjJhMS42NSwxLjY1LDAsMCwwLS42OS0xLjNsLS45LS45YTMuMDgsMy4wOCwwLDAsMS0xLjI4LTIuNDR2LS4zMWExLjkxLDEuOTEsMCwwLDEsMi4xNS0yYzEuNTQsMCwyLjE0Ljc1LDIuMTQsMi4wOHYuNzRIOTN2LS44YzAtLjUzLS4yNC0uNzgtLjczLS43OGEuNjcuNjcsMCwwLDAtLjczLjc2di4xOWMwLC41MS4yOC44MS43MywxLjI0bDEsMUEzLjA3LDMuMDcsMCwwLDEsOTQuNTEsMTZ2LjQ0YTIsMiwwLDAsMS0yLjI0LDIuMTQsMS45LDEuOSwwLDAsMS0yLjE3LTIuMDgiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMzUuNjcgMjIuNjMgMzkuMzIgMjIuNjMgMzkuMzIgMjMuOSAzNy4yMyAyMy45IDM3LjIzIDI2LjU2IDM4Ljc5IDI2LjU2IDM4Ljc5IDI3LjgxIDM3LjIzIDI3LjgxIDM3LjIzIDMxLjkxIDM1LjY3IDMxLjkxIDM1LjY3IDIyLjYzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzkuODcsMjkuNTFWMjVhMi4zNiwyLjM2LDAsMSwxLDQuNzIsMHY0LjQ5YTIuMzYsMi4zNiwwLDEsMS00LjcyLDBtMy4xNi4yNXYtNWMwLS41Ni0uMjUtMS0uODEtMXMtLjc5LjQtLjc5LDF2NWMwLC41Ni4yNSwxLC43OSwxcy44MS0uNC44MS0xIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDcuMTYsMjcuNjV2NC4yNUg0NS42VjIyLjYzaDIuMjdjMS41NywwLDIuMTUuNzgsMi4xNSwyLjA4VjI1LjljMCwxLS4zNiwxLjU5LTEuMjUsMS43OWwxLjQ5LDQuMjFINDguNjJabTAtMy43NXYyLjg5aC41MmEuNjguNjgsMCwwLDAsLjc3LS43N1YyNC42NWMwLS41MS0uMjMtLjc1LS43Ny0uNzVaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjUyLjQ5IDIyLjYzIDU2LjYzIDIyLjYzIDU2LjYzIDIzLjkgNTUuMzUgMjMuOSA1NS4zNSAzMS45MSA1My43NyAzMS45MSA1My43NyAyMy45IDUyLjQ5IDIzLjkgNTIuNDkgMjIuNjMiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNjAuNDIgMjcuODEgNTguOTIgMjcuODEgNTguOTIgMzEuOTEgNTcuMzYgMzEuOTEgNTcuMzYgMjIuNjMgNTguOTIgMjIuNjMgNTguOTIgMjYuNTYgNjAuNDIgMjYuNTYgNjAuNDIgMjIuNjMgNjIgMjIuNjMgNjIgMzEuOTEgNjAuNDIgMzEuOTEgNjAuNDIgMjcuODEiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNjMuMDEgMjIuNjMgNjYuNzMgMjIuNjMgNjYuNzMgMjMuOSA2NC41NyAyMy45IDY0LjU3IDI2LjU2IDY2LjEyIDI2LjU2IDY2LjEyIDI3LjgxIDY0LjU3IDI3LjgxIDY0LjU3IDMwLjYzIDY2LjczIDMwLjYzIDY2LjczIDMxLjkxIDYzLjAxIDMxLjkxIDYzLjAxIDIyLjYzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzEuNzIsMjdoMi4yMnY1SDcyLjgxdi0xQTEuNCwxLjQsMCwwLDEsNzEuMzIsMzJjLTEuMzQsMC0yLTEuMDctMi0yLjVWMjVhMi4yLDIuMiwwLDAsMSwyLjM0LTIuNWMxLjcyLDAsMi4yMywxLDIuMjMsMi4zM3YuODJINzIuNTF2LS45NGMwLS41OC0uMjItLjktLjc4LS45cy0uODEuNC0uODEsMXY1YzAsLjU2LjIzLDEsLjc3LDFzLjc3LS4yOS43Ny0uODlWMjguMThoLS43NFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03NC44MiwyOS41MVYyNWEyLjM2LDIuMzYsMCwxLDEsNC43MiwwdjQuNDlhMi4zNiwyLjM2LDAsMSwxLTQuNzIsMG0zLjE2LjI1di01YzAtLjU2LS4yNS0xLS44MS0xcy0uNzkuNC0uNzksMXY1YzAsLjU2LjI1LDEsLjc5LDFzLjgxLS40LjgxLTEiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04MCwzMS45MWwxLjc1LTkuMjhoMS43OGwxLjc2LDkuMjhoLTEuNmwtLjI5LTEuN0g4MS43M2wtLjI3LDEuN1ptMi0yLjk0aDEuMjVsLS42Mi0zLjcyaDBaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9Ijg2LjE3IDIyLjYzIDg3LjczIDIyLjYzIDg3LjczIDMwLjYzIDg5LjU5IDMwLjYzIDg5LjU5IDMxLjkxIDg2LjE3IDMxLjkxIDg2LjE3IDIyLjYzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOTAuMTUsMjkuOTFWMjguNjZIOTEuNnYxLjI3YzAsLjUyLjIzLjgyLjc2Ljgycy43MS0uMzMuNzEtLjgydi0uMzZhMS42OCwxLjY4LDAsMCwwLS43LTEuMzFsLS45Mi0uOTJhMy4xMywzLjEzLDAsMCwxLTEuMy0yLjQ4di0uMzFhMS45MywxLjkzLDAsMCwxLDIuMTktMmMxLjU2LDAsMi4xOC43NywyLjE4LDIuMTF2Ljc1SDkzLjF2LS44MWMwLS41My0uMjUtLjc5LS43NC0uNzlhLjY4LjY4LDAsMCwwLS43NC43N3YuMTljMCwuNTIuMjkuODIuNzQsMS4yNmwxLDFhMy4xMSwzLjExLDAsMCwxLDEuMjYsMi40MXYuNDVBMiwyLDAsMCwxLDkyLjM1LDMyYTEuOTMsMS45MywwLDAsMS0yLjItMi4xMSIvPjwvZz48ZyBpZD0iTlVNQkVSU19PTkxZIiBkYXRhLW5hbWU9Ik5VTUJFUlMgT05MWSI+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjE3LjM5IDguNDggMTcuMzkgMzAuOSAxMy42MiAzMC45IDEzLjYyIDEzLjc0IDEzLjU5IDEzLjc0IDEwLjk0IDE2LjQ4IDEwLjkxIDE2LjQ4IDEwLjkxIDEyLjU1IDE0LjM4IDguNDggMTcuMzkgOC40OCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxOS4xMSA4LjQ4IDI4LjU3IDguNDggMjguNTcgMTEuOTUgMjMuNjQgMzAuOSAxOS45MSAzMC45IDI0LjkzIDExLjU2IDE5LjExIDExLjU2IDE5LjExIDguNDgiLz48L2c+PC9zdmc+"
-
-/***/ },
-/* 184 */
-/*!******************************!*\
-  !*** ./src/images/sdg18.svg ***!
+  !*** ./~/lodash/_baseHas.js ***!
   \******************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "febc8bd9a0e7d0f22bb4f32408786100.svg";
+	var getPrototype = __webpack_require__(/*! ./_getPrototype */ 177);
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * The base implementation of `_.has` without support for deep paths.
+	 *
+	 * @private
+	 * @param {Object} [object] The object to query.
+	 * @param {Array|string} key The key to check.
+	 * @returns {boolean} Returns `true` if `key` exists, else `false`.
+	 */
+	function baseHas(object, key) {
+	  // Avoid a bug in IE 10-11 where objects with a [[Prototype]] of `null`,
+	  // that are composed entirely of index properties, return `false` for
+	  // `hasOwnProperty` checks of them.
+	  return object != null &&
+	    (hasOwnProperty.call(object, key) ||
+	      (typeof object == 'object' && key in object && getPrototype(object) === null));
+	}
+	
+	module.exports = baseHas;
+
+
+/***/ },
+/* 177 */
+/*!***********************************!*\
+  !*** ./~/lodash/_getPrototype.js ***!
+  \***********************************/
+/***/ function(module, exports) {
+
+	/* Built-in method references for those with the same name as other `lodash` methods. */
+	var nativeGetPrototype = Object.getPrototypeOf;
+	
+	/**
+	 * Gets the `[[Prototype]]` of `value`.
+	 *
+	 * @private
+	 * @param {*} value The value to query.
+	 * @returns {null|Object} Returns the `[[Prototype]]`.
+	 */
+	function getPrototype(value) {
+	  return nativeGetPrototype(Object(value));
+	}
+	
+	module.exports = getPrototype;
+
+
+/***/ },
+/* 178 */
+/*!*******************************!*\
+  !*** ./~/lodash/_baseKeys.js ***!
+  \*******************************/
+/***/ function(module, exports) {
+
+	/* Built-in method references for those with the same name as other `lodash` methods. */
+	var nativeKeys = Object.keys;
+	
+	/**
+	 * The base implementation of `_.keys` which doesn't skip the constructor
+	 * property of prototypes or treat sparse arrays as dense.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the array of property names.
+	 */
+	function baseKeys(object) {
+	  return nativeKeys(Object(object));
+	}
+	
+	module.exports = baseKeys;
+
+
+/***/ },
+/* 179 */
+/*!********************************!*\
+  !*** ./~/lodash/_indexKeys.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseTimes = __webpack_require__(/*! ./_baseTimes */ 180),
+	    isArguments = __webpack_require__(/*! ./isArguments */ 181),
+	    isArray = __webpack_require__(/*! ./isArray */ 190),
+	    isLength = __webpack_require__(/*! ./isLength */ 188),
+	    isString = __webpack_require__(/*! ./isString */ 191);
+	
+	/**
+	 * Creates an array of index keys for `object` values of arrays,
+	 * `arguments` objects, and strings, otherwise `null` is returned.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array|null} Returns index keys, else `null`.
+	 */
+	function indexKeys(object) {
+	  var length = object ? object.length : undefined;
+	  if (isLength(length) &&
+	      (isArray(object) || isString(object) || isArguments(object))) {
+	    return baseTimes(length, String);
+	  }
+	  return null;
+	}
+	
+	module.exports = indexKeys;
+
+
+/***/ },
+/* 180 */
+/*!********************************!*\
+  !*** ./~/lodash/_baseTimes.js ***!
+  \********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * The base implementation of `_.times` without support for iteratee shorthands
+	 * or max array length checks.
+	 *
+	 * @private
+	 * @param {number} n The number of times to invoke `iteratee`.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Array} Returns the array of results.
+	 */
+	function baseTimes(n, iteratee) {
+	  var index = -1,
+	      result = Array(n);
+	
+	  while (++index < n) {
+	    result[index] = iteratee(index);
+	  }
+	  return result;
+	}
+	
+	module.exports = baseTimes;
+
+
+/***/ },
+/* 181 */
+/*!*********************************!*\
+  !*** ./~/lodash/isArguments.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArrayLikeObject = __webpack_require__(/*! ./isArrayLikeObject */ 182);
+	
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/** Built-in value references. */
+	var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+	
+	/**
+	 * Checks if `value` is likely an `arguments` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isArguments(function() { return arguments; }());
+	 * // => true
+	 *
+	 * _.isArguments([1, 2, 3]);
+	 * // => false
+	 */
+	function isArguments(value) {
+	  // Safari 8.1 incorrectly makes `arguments.callee` enumerable in strict mode.
+	  return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') &&
+	    (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+	}
+	
+	module.exports = isArguments;
+
+
+/***/ },
+/* 182 */
+/*!***************************************!*\
+  !*** ./~/lodash/isArrayLikeObject.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArrayLike = __webpack_require__(/*! ./isArrayLike */ 183),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 189);
+	
+	/**
+	 * This method is like `_.isArrayLike` except that it also checks if `value`
+	 * is an object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an array-like object,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isArrayLikeObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArrayLikeObject(document.body.children);
+	 * // => true
+	 *
+	 * _.isArrayLikeObject('abc');
+	 * // => false
+	 *
+	 * _.isArrayLikeObject(_.noop);
+	 * // => false
+	 */
+	function isArrayLikeObject(value) {
+	  return isObjectLike(value) && isArrayLike(value);
+	}
+	
+	module.exports = isArrayLikeObject;
+
+
+/***/ },
+/* 183 */
+/*!*********************************!*\
+  !*** ./~/lodash/isArrayLike.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getLength = __webpack_require__(/*! ./_getLength */ 184),
+	    isFunction = __webpack_require__(/*! ./isFunction */ 186),
+	    isLength = __webpack_require__(/*! ./isLength */ 188);
+	
+	/**
+	 * Checks if `value` is array-like. A value is considered array-like if it's
+	 * not a function and has a `value.length` that's an integer greater than or
+	 * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+	 * @example
+	 *
+	 * _.isArrayLike([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArrayLike(document.body.children);
+	 * // => true
+	 *
+	 * _.isArrayLike('abc');
+	 * // => true
+	 *
+	 * _.isArrayLike(_.noop);
+	 * // => false
+	 */
+	function isArrayLike(value) {
+	  return value != null && isLength(getLength(value)) && !isFunction(value);
+	}
+	
+	module.exports = isArrayLike;
+
+
+/***/ },
+/* 184 */
+/*!********************************!*\
+  !*** ./~/lodash/_getLength.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseProperty = __webpack_require__(/*! ./_baseProperty */ 185);
+	
+	/**
+	 * Gets the "length" property value of `object`.
+	 *
+	 * **Note:** This function is used to avoid a
+	 * [JIT bug](https://bugs.webkit.org/show_bug.cgi?id=142792) that affects
+	 * Safari on at least iOS 8.1-8.3 ARM64.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {*} Returns the "length" value.
+	 */
+	var getLength = baseProperty('length');
+	
+	module.exports = getLength;
+
 
 /***/ },
 /* 185 */
+/*!***********************************!*\
+  !*** ./~/lodash/_baseProperty.js ***!
+  \***********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * The base implementation of `_.property` without support for deep paths.
+	 *
+	 * @private
+	 * @param {string} key The key of the property to get.
+	 * @returns {Function} Returns the new accessor function.
+	 */
+	function baseProperty(key) {
+	  return function(object) {
+	    return object == null ? undefined : object[key];
+	  };
+	}
+	
+	module.exports = baseProperty;
+
+
+/***/ },
+/* 186 */
+/*!********************************!*\
+  !*** ./~/lodash/isFunction.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(/*! ./isObject */ 187);
+	
+	/** `Object#toString` result references. */
+	var funcTag = '[object Function]',
+	    genTag = '[object GeneratorFunction]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a `Function` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isFunction(_);
+	 * // => true
+	 *
+	 * _.isFunction(/abc/);
+	 * // => false
+	 */
+	function isFunction(value) {
+	  // The use of `Object#toString` avoids issues with the `typeof` operator
+	  // in Safari 8 which returns 'object' for typed array and weak map constructors,
+	  // and PhantomJS 1.9 which returns 'function' for `NodeList` instances.
+	  var tag = isObject(value) ? objectToString.call(value) : '';
+	  return tag == funcTag || tag == genTag;
+	}
+	
+	module.exports = isFunction;
+
+
+/***/ },
+/* 187 */
+/*!******************************!*\
+  !*** ./~/lodash/isObject.js ***!
+  \******************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is the
+	 * [language type](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-types)
+	 * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+	 * @example
+	 *
+	 * _.isObject({});
+	 * // => true
+	 *
+	 * _.isObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObject(_.noop);
+	 * // => true
+	 *
+	 * _.isObject(null);
+	 * // => false
+	 */
+	function isObject(value) {
+	  var type = typeof value;
+	  return !!value && (type == 'object' || type == 'function');
+	}
+	
+	module.exports = isObject;
+
+
+/***/ },
+/* 188 */
+/*!******************************!*\
+  !*** ./~/lodash/isLength.js ***!
+  \******************************/
+/***/ function(module, exports) {
+
+	/** Used as references for various `Number` constants. */
+	var MAX_SAFE_INTEGER = 9007199254740991;
+	
+	/**
+	 * Checks if `value` is a valid array-like length.
+	 *
+	 * **Note:** This function is loosely based on
+	 * [`ToLength`](http://ecma-international.org/ecma-262/6.0/#sec-tolength).
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a valid length,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isLength(3);
+	 * // => true
+	 *
+	 * _.isLength(Number.MIN_VALUE);
+	 * // => false
+	 *
+	 * _.isLength(Infinity);
+	 * // => false
+	 *
+	 * _.isLength('3');
+	 * // => false
+	 */
+	function isLength(value) {
+	  return typeof value == 'number' &&
+	    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+	}
+	
+	module.exports = isLength;
+
+
+/***/ },
+/* 189 */
+/*!**********************************!*\
+  !*** ./~/lodash/isObjectLike.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is object-like. A value is object-like if it's not `null`
+	 * and has a `typeof` result of "object".
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+	 * @example
+	 *
+	 * _.isObjectLike({});
+	 * // => true
+	 *
+	 * _.isObjectLike([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObjectLike(_.noop);
+	 * // => false
+	 *
+	 * _.isObjectLike(null);
+	 * // => false
+	 */
+	function isObjectLike(value) {
+	  return !!value && typeof value == 'object';
+	}
+	
+	module.exports = isObjectLike;
+
+
+/***/ },
+/* 190 */
+/*!*****************************!*\
+  !*** ./~/lodash/isArray.js ***!
+  \*****************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is classified as an `Array` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @type {Function}
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isArray([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArray(document.body.children);
+	 * // => false
+	 *
+	 * _.isArray('abc');
+	 * // => false
+	 *
+	 * _.isArray(_.noop);
+	 * // => false
+	 */
+	var isArray = Array.isArray;
+	
+	module.exports = isArray;
+
+
+/***/ },
+/* 191 */
+/*!******************************!*\
+  !*** ./~/lodash/isString.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArray = __webpack_require__(/*! ./isArray */ 190),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 189);
+	
+	/** `Object#toString` result references. */
+	var stringTag = '[object String]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a `String` primitive or object.
+	 *
+	 * @static
+	 * @since 0.1.0
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isString('abc');
+	 * // => true
+	 *
+	 * _.isString(1);
+	 * // => false
+	 */
+	function isString(value) {
+	  return typeof value == 'string' ||
+	    (!isArray(value) && isObjectLike(value) && objectToString.call(value) == stringTag);
+	}
+	
+	module.exports = isString;
+
+
+/***/ },
+/* 192 */
+/*!******************************!*\
+  !*** ./~/lodash/_isIndex.js ***!
+  \******************************/
+/***/ function(module, exports) {
+
+	/** Used as references for various `Number` constants. */
+	var MAX_SAFE_INTEGER = 9007199254740991;
+	
+	/** Used to detect unsigned integer values. */
+	var reIsUint = /^(?:0|[1-9]\d*)$/;
+	
+	/**
+	 * Checks if `value` is a valid array-like index.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+	 * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+	 */
+	function isIndex(value, length) {
+	  length = length == null ? MAX_SAFE_INTEGER : length;
+	  return !!length &&
+	    (typeof value == 'number' || reIsUint.test(value)) &&
+	    (value > -1 && value % 1 == 0 && value < length);
+	}
+	
+	module.exports = isIndex;
+
+
+/***/ },
+/* 193 */
+/*!**********************************!*\
+  !*** ./~/lodash/_isPrototype.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Checks if `value` is likely a prototype object.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
+	 */
+	function isPrototype(value) {
+	  var Ctor = value && value.constructor,
+	      proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
+	
+	  return value === proto;
+	}
+	
+	module.exports = isPrototype;
+
+
+/***/ },
+/* 194 */
+/*!*************************************!*\
+  !*** ./~/lodash/_createBaseEach.js ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArrayLike = __webpack_require__(/*! ./isArrayLike */ 183);
+	
+	/**
+	 * Creates a `baseEach` or `baseEachRight` function.
+	 *
+	 * @private
+	 * @param {Function} eachFunc The function to iterate over a collection.
+	 * @param {boolean} [fromRight] Specify iterating from right to left.
+	 * @returns {Function} Returns the new base function.
+	 */
+	function createBaseEach(eachFunc, fromRight) {
+	  return function(collection, iteratee) {
+	    if (collection == null) {
+	      return collection;
+	    }
+	    if (!isArrayLike(collection)) {
+	      return eachFunc(collection, iteratee);
+	    }
+	    var length = collection.length,
+	        index = fromRight ? length : -1,
+	        iterable = Object(collection);
+	
+	    while ((fromRight ? index-- : ++index < length)) {
+	      if (iteratee(iterable[index], index, iterable) === false) {
+	        break;
+	      }
+	    }
+	    return collection;
+	  };
+	}
+	
+	module.exports = createBaseEach;
+
+
+/***/ },
+/* 195 */
+/*!***********************************!*\
+  !*** ./~/lodash/_baseIteratee.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseMatches = __webpack_require__(/*! ./_baseMatches */ 196),
+	    baseMatchesProperty = __webpack_require__(/*! ./_baseMatchesProperty */ 259),
+	    identity = __webpack_require__(/*! ./identity */ 273),
+	    isArray = __webpack_require__(/*! ./isArray */ 190),
+	    property = __webpack_require__(/*! ./property */ 274);
+	
+	/**
+	 * The base implementation of `_.iteratee`.
+	 *
+	 * @private
+	 * @param {*} [value=_.identity] The value to convert to an iteratee.
+	 * @returns {Function} Returns the iteratee.
+	 */
+	function baseIteratee(value) {
+	  // Don't store the `typeof` result in a variable to avoid a JIT bug in Safari 9.
+	  // See https://bugs.webkit.org/show_bug.cgi?id=156034 for more details.
+	  if (typeof value == 'function') {
+	    return value;
+	  }
+	  if (value == null) {
+	    return identity;
+	  }
+	  if (typeof value == 'object') {
+	    return isArray(value)
+	      ? baseMatchesProperty(value[0], value[1])
+	      : baseMatches(value);
+	  }
+	  return property(value);
+	}
+	
+	module.exports = baseIteratee;
+
+
+/***/ },
+/* 196 */
+/*!**********************************!*\
+  !*** ./~/lodash/_baseMatches.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseIsMatch = __webpack_require__(/*! ./_baseIsMatch */ 197),
+	    getMatchData = __webpack_require__(/*! ./_getMatchData */ 256),
+	    matchesStrictComparable = __webpack_require__(/*! ./_matchesStrictComparable */ 258);
+	
+	/**
+	 * The base implementation of `_.matches` which doesn't clone `source`.
+	 *
+	 * @private
+	 * @param {Object} source The object of property values to match.
+	 * @returns {Function} Returns the new spec function.
+	 */
+	function baseMatches(source) {
+	  var matchData = getMatchData(source);
+	  if (matchData.length == 1 && matchData[0][2]) {
+	    return matchesStrictComparable(matchData[0][0], matchData[0][1]);
+	  }
+	  return function(object) {
+	    return object === source || baseIsMatch(object, source, matchData);
+	  };
+	}
+	
+	module.exports = baseMatches;
+
+
+/***/ },
+/* 197 */
+/*!**********************************!*\
+  !*** ./~/lodash/_baseIsMatch.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Stack = __webpack_require__(/*! ./_Stack */ 198),
+	    baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ 237);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * The base implementation of `_.isMatch` without support for iteratee shorthands.
+	 *
+	 * @private
+	 * @param {Object} object The object to inspect.
+	 * @param {Object} source The object of property values to match.
+	 * @param {Array} matchData The property names, values, and compare flags to match.
+	 * @param {Function} [customizer] The function to customize comparisons.
+	 * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+	 */
+	function baseIsMatch(object, source, matchData, customizer) {
+	  var index = matchData.length,
+	      length = index,
+	      noCustomizer = !customizer;
+	
+	  if (object == null) {
+	    return !length;
+	  }
+	  object = Object(object);
+	  while (index--) {
+	    var data = matchData[index];
+	    if ((noCustomizer && data[2])
+	          ? data[1] !== object[data[0]]
+	          : !(data[0] in object)
+	        ) {
+	      return false;
+	    }
+	  }
+	  while (++index < length) {
+	    data = matchData[index];
+	    var key = data[0],
+	        objValue = object[key],
+	        srcValue = data[1];
+	
+	    if (noCustomizer && data[2]) {
+	      if (objValue === undefined && !(key in object)) {
+	        return false;
+	      }
+	    } else {
+	      var stack = new Stack;
+	      if (customizer) {
+	        var result = customizer(objValue, srcValue, key, object, source, stack);
+	      }
+	      if (!(result === undefined
+	            ? baseIsEqual(srcValue, objValue, customizer, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG, stack)
+	            : result
+	          )) {
+	        return false;
+	      }
+	    }
+	  }
+	  return true;
+	}
+	
+	module.exports = baseIsMatch;
+
+
+/***/ },
+/* 198 */
+/*!****************************!*\
+  !*** ./~/lodash/_Stack.js ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var ListCache = __webpack_require__(/*! ./_ListCache */ 199),
+	    stackClear = __webpack_require__(/*! ./_stackClear */ 207),
+	    stackDelete = __webpack_require__(/*! ./_stackDelete */ 208),
+	    stackGet = __webpack_require__(/*! ./_stackGet */ 209),
+	    stackHas = __webpack_require__(/*! ./_stackHas */ 210),
+	    stackSet = __webpack_require__(/*! ./_stackSet */ 211);
+	
+	/**
+	 * Creates a stack cache object to store key-value pairs.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function Stack(entries) {
+	  this.__data__ = new ListCache(entries);
+	}
+	
+	// Add methods to `Stack`.
+	Stack.prototype.clear = stackClear;
+	Stack.prototype['delete'] = stackDelete;
+	Stack.prototype.get = stackGet;
+	Stack.prototype.has = stackHas;
+	Stack.prototype.set = stackSet;
+	
+	module.exports = Stack;
+
+
+/***/ },
+/* 199 */
+/*!********************************!*\
+  !*** ./~/lodash/_ListCache.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var listCacheClear = __webpack_require__(/*! ./_listCacheClear */ 200),
+	    listCacheDelete = __webpack_require__(/*! ./_listCacheDelete */ 201),
+	    listCacheGet = __webpack_require__(/*! ./_listCacheGet */ 204),
+	    listCacheHas = __webpack_require__(/*! ./_listCacheHas */ 205),
+	    listCacheSet = __webpack_require__(/*! ./_listCacheSet */ 206);
+	
+	/**
+	 * Creates an list cache object.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function ListCache(entries) {
+	  var index = -1,
+	      length = entries ? entries.length : 0;
+	
+	  this.clear();
+	  while (++index < length) {
+	    var entry = entries[index];
+	    this.set(entry[0], entry[1]);
+	  }
+	}
+	
+	// Add methods to `ListCache`.
+	ListCache.prototype.clear = listCacheClear;
+	ListCache.prototype['delete'] = listCacheDelete;
+	ListCache.prototype.get = listCacheGet;
+	ListCache.prototype.has = listCacheHas;
+	ListCache.prototype.set = listCacheSet;
+	
+	module.exports = ListCache;
+
+
+/***/ },
+/* 200 */
+/*!*************************************!*\
+  !*** ./~/lodash/_listCacheClear.js ***!
+  \*************************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Removes all key-value entries from the list cache.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf ListCache
+	 */
+	function listCacheClear() {
+	  this.__data__ = [];
+	}
+	
+	module.exports = listCacheClear;
+
+
+/***/ },
+/* 201 */
+/*!**************************************!*\
+  !*** ./~/lodash/_listCacheDelete.js ***!
+  \**************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 202);
+	
+	/** Used for built-in method references. */
+	var arrayProto = Array.prototype;
+	
+	/** Built-in value references. */
+	var splice = arrayProto.splice;
+	
+	/**
+	 * Removes `key` and its value from the list cache.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf ListCache
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function listCacheDelete(key) {
+	  var data = this.__data__,
+	      index = assocIndexOf(data, key);
+	
+	  if (index < 0) {
+	    return false;
+	  }
+	  var lastIndex = data.length - 1;
+	  if (index == lastIndex) {
+	    data.pop();
+	  } else {
+	    splice.call(data, index, 1);
+	  }
+	  return true;
+	}
+	
+	module.exports = listCacheDelete;
+
+
+/***/ },
+/* 202 */
+/*!***********************************!*\
+  !*** ./~/lodash/_assocIndexOf.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var eq = __webpack_require__(/*! ./eq */ 203);
+	
+	/**
+	 * Gets the index at which the `key` is found in `array` of key-value pairs.
+	 *
+	 * @private
+	 * @param {Array} array The array to search.
+	 * @param {*} key The key to search for.
+	 * @returns {number} Returns the index of the matched value, else `-1`.
+	 */
+	function assocIndexOf(array, key) {
+	  var length = array.length;
+	  while (length--) {
+	    if (eq(array[length][0], key)) {
+	      return length;
+	    }
+	  }
+	  return -1;
+	}
+	
+	module.exports = assocIndexOf;
+
+
+/***/ },
+/* 203 */
+/*!************************!*\
+  !*** ./~/lodash/eq.js ***!
+  \************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Performs a
+	 * [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
+	 * comparison between two values to determine if they are equivalent.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to compare.
+	 * @param {*} other The other value to compare.
+	 * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+	 * @example
+	 *
+	 * var object = { 'user': 'fred' };
+	 * var other = { 'user': 'fred' };
+	 *
+	 * _.eq(object, object);
+	 * // => true
+	 *
+	 * _.eq(object, other);
+	 * // => false
+	 *
+	 * _.eq('a', 'a');
+	 * // => true
+	 *
+	 * _.eq('a', Object('a'));
+	 * // => false
+	 *
+	 * _.eq(NaN, NaN);
+	 * // => true
+	 */
+	function eq(value, other) {
+	  return value === other || (value !== value && other !== other);
+	}
+	
+	module.exports = eq;
+
+
+/***/ },
+/* 204 */
+/*!***********************************!*\
+  !*** ./~/lodash/_listCacheGet.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 202);
+	
+	/**
+	 * Gets the list cache value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf ListCache
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function listCacheGet(key) {
+	  var data = this.__data__,
+	      index = assocIndexOf(data, key);
+	
+	  return index < 0 ? undefined : data[index][1];
+	}
+	
+	module.exports = listCacheGet;
+
+
+/***/ },
+/* 205 */
+/*!***********************************!*\
+  !*** ./~/lodash/_listCacheHas.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 202);
+	
+	/**
+	 * Checks if a list cache value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf ListCache
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function listCacheHas(key) {
+	  return assocIndexOf(this.__data__, key) > -1;
+	}
+	
+	module.exports = listCacheHas;
+
+
+/***/ },
+/* 206 */
+/*!***********************************!*\
+  !*** ./~/lodash/_listCacheSet.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 202);
+	
+	/**
+	 * Sets the list cache `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf ListCache
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the list cache instance.
+	 */
+	function listCacheSet(key, value) {
+	  var data = this.__data__,
+	      index = assocIndexOf(data, key);
+	
+	  if (index < 0) {
+	    data.push([key, value]);
+	  } else {
+	    data[index][1] = value;
+	  }
+	  return this;
+	}
+	
+	module.exports = listCacheSet;
+
+
+/***/ },
+/* 207 */
+/*!*********************************!*\
+  !*** ./~/lodash/_stackClear.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var ListCache = __webpack_require__(/*! ./_ListCache */ 199);
+	
+	/**
+	 * Removes all key-value entries from the stack.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf Stack
+	 */
+	function stackClear() {
+	  this.__data__ = new ListCache;
+	}
+	
+	module.exports = stackClear;
+
+
+/***/ },
+/* 208 */
+/*!**********************************!*\
+  !*** ./~/lodash/_stackDelete.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Removes `key` and its value from the stack.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf Stack
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function stackDelete(key) {
+	  return this.__data__['delete'](key);
+	}
+	
+	module.exports = stackDelete;
+
+
+/***/ },
+/* 209 */
+/*!*******************************!*\
+  !*** ./~/lodash/_stackGet.js ***!
+  \*******************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Gets the stack value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf Stack
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function stackGet(key) {
+	  return this.__data__.get(key);
+	}
+	
+	module.exports = stackGet;
+
+
+/***/ },
+/* 210 */
+/*!*******************************!*\
+  !*** ./~/lodash/_stackHas.js ***!
+  \*******************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if a stack value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf Stack
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function stackHas(key) {
+	  return this.__data__.has(key);
+	}
+	
+	module.exports = stackHas;
+
+
+/***/ },
+/* 211 */
+/*!*******************************!*\
+  !*** ./~/lodash/_stackSet.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var ListCache = __webpack_require__(/*! ./_ListCache */ 199),
+	    MapCache = __webpack_require__(/*! ./_MapCache */ 212);
+	
+	/** Used as the size to enable large array optimizations. */
+	var LARGE_ARRAY_SIZE = 200;
+	
+	/**
+	 * Sets the stack `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf Stack
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the stack cache instance.
+	 */
+	function stackSet(key, value) {
+	  var cache = this.__data__;
+	  if (cache instanceof ListCache && cache.__data__.length == LARGE_ARRAY_SIZE) {
+	    cache = this.__data__ = new MapCache(cache.__data__);
+	  }
+	  cache.set(key, value);
+	  return this;
+	}
+	
+	module.exports = stackSet;
+
+
+/***/ },
+/* 212 */
+/*!*******************************!*\
+  !*** ./~/lodash/_MapCache.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var mapCacheClear = __webpack_require__(/*! ./_mapCacheClear */ 213),
+	    mapCacheDelete = __webpack_require__(/*! ./_mapCacheDelete */ 231),
+	    mapCacheGet = __webpack_require__(/*! ./_mapCacheGet */ 234),
+	    mapCacheHas = __webpack_require__(/*! ./_mapCacheHas */ 235),
+	    mapCacheSet = __webpack_require__(/*! ./_mapCacheSet */ 236);
+	
+	/**
+	 * Creates a map cache object to store key-value pairs.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function MapCache(entries) {
+	  var index = -1,
+	      length = entries ? entries.length : 0;
+	
+	  this.clear();
+	  while (++index < length) {
+	    var entry = entries[index];
+	    this.set(entry[0], entry[1]);
+	  }
+	}
+	
+	// Add methods to `MapCache`.
+	MapCache.prototype.clear = mapCacheClear;
+	MapCache.prototype['delete'] = mapCacheDelete;
+	MapCache.prototype.get = mapCacheGet;
+	MapCache.prototype.has = mapCacheHas;
+	MapCache.prototype.set = mapCacheSet;
+	
+	module.exports = MapCache;
+
+
+/***/ },
+/* 213 */
+/*!************************************!*\
+  !*** ./~/lodash/_mapCacheClear.js ***!
+  \************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Hash = __webpack_require__(/*! ./_Hash */ 214),
+	    ListCache = __webpack_require__(/*! ./_ListCache */ 199),
+	    Map = __webpack_require__(/*! ./_Map */ 230);
+	
+	/**
+	 * Removes all key-value entries from the map.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf MapCache
+	 */
+	function mapCacheClear() {
+	  this.__data__ = {
+	    'hash': new Hash,
+	    'map': new (Map || ListCache),
+	    'string': new Hash
+	  };
+	}
+	
+	module.exports = mapCacheClear;
+
+
+/***/ },
+/* 214 */
+/*!***************************!*\
+  !*** ./~/lodash/_Hash.js ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var hashClear = __webpack_require__(/*! ./_hashClear */ 215),
+	    hashDelete = __webpack_require__(/*! ./_hashDelete */ 226),
+	    hashGet = __webpack_require__(/*! ./_hashGet */ 227),
+	    hashHas = __webpack_require__(/*! ./_hashHas */ 228),
+	    hashSet = __webpack_require__(/*! ./_hashSet */ 229);
+	
+	/**
+	 * Creates a hash object.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function Hash(entries) {
+	  var index = -1,
+	      length = entries ? entries.length : 0;
+	
+	  this.clear();
+	  while (++index < length) {
+	    var entry = entries[index];
+	    this.set(entry[0], entry[1]);
+	  }
+	}
+	
+	// Add methods to `Hash`.
+	Hash.prototype.clear = hashClear;
+	Hash.prototype['delete'] = hashDelete;
+	Hash.prototype.get = hashGet;
+	Hash.prototype.has = hashHas;
+	Hash.prototype.set = hashSet;
+	
+	module.exports = Hash;
+
+
+/***/ },
+/* 215 */
+/*!********************************!*\
+  !*** ./~/lodash/_hashClear.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 216);
+	
+	/**
+	 * Removes all key-value entries from the hash.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf Hash
+	 */
+	function hashClear() {
+	  this.__data__ = nativeCreate ? nativeCreate(null) : {};
+	}
+	
+	module.exports = hashClear;
+
+
+/***/ },
+/* 216 */
+/*!***********************************!*\
+  !*** ./~/lodash/_nativeCreate.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 217);
+	
+	/* Built-in method references that are verified to be native. */
+	var nativeCreate = getNative(Object, 'create');
+	
+	module.exports = nativeCreate;
+
+
+/***/ },
+/* 217 */
+/*!********************************!*\
+  !*** ./~/lodash/_getNative.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseIsNative = __webpack_require__(/*! ./_baseIsNative */ 218),
+	    getValue = __webpack_require__(/*! ./_getValue */ 225);
+	
+	/**
+	 * Gets the native function at `key` of `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {string} key The key of the method to get.
+	 * @returns {*} Returns the function if it's native, else `undefined`.
+	 */
+	function getNative(object, key) {
+	  var value = getValue(object, key);
+	  return baseIsNative(value) ? value : undefined;
+	}
+	
+	module.exports = getNative;
+
+
+/***/ },
+/* 218 */
+/*!***********************************!*\
+  !*** ./~/lodash/_baseIsNative.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isFunction = __webpack_require__(/*! ./isFunction */ 186),
+	    isHostObject = __webpack_require__(/*! ./_isHostObject */ 219),
+	    isMasked = __webpack_require__(/*! ./_isMasked */ 220),
+	    isObject = __webpack_require__(/*! ./isObject */ 187),
+	    toSource = __webpack_require__(/*! ./_toSource */ 224);
+	
+	/**
+	 * Used to match `RegExp`
+	 * [syntax characters](http://ecma-international.org/ecma-262/6.0/#sec-patterns).
+	 */
+	var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
+	
+	/** Used to detect host constructors (Safari). */
+	var reIsHostCtor = /^\[object .+?Constructor\]$/;
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to resolve the decompiled source of functions. */
+	var funcToString = Function.prototype.toString;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/** Used to detect if a method is native. */
+	var reIsNative = RegExp('^' +
+	  funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\$&')
+	  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
+	);
+	
+	/**
+	 * The base implementation of `_.isNative` without bad shim checks.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a native function,
+	 *  else `false`.
+	 */
+	function baseIsNative(value) {
+	  if (!isObject(value) || isMasked(value)) {
+	    return false;
+	  }
+	  var pattern = (isFunction(value) || isHostObject(value)) ? reIsNative : reIsHostCtor;
+	  return pattern.test(toSource(value));
+	}
+	
+	module.exports = baseIsNative;
+
+
+/***/ },
+/* 219 */
+/*!***********************************!*\
+  !*** ./~/lodash/_isHostObject.js ***!
+  \***********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is a host object in IE < 9.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a host object, else `false`.
+	 */
+	function isHostObject(value) {
+	  // Many host objects are `Object` objects that can coerce to strings
+	  // despite having improperly defined `toString` methods.
+	  var result = false;
+	  if (value != null && typeof value.toString != 'function') {
+	    try {
+	      result = !!(value + '');
+	    } catch (e) {}
+	  }
+	  return result;
+	}
+	
+	module.exports = isHostObject;
+
+
+/***/ },
+/* 220 */
+/*!*******************************!*\
+  !*** ./~/lodash/_isMasked.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var coreJsData = __webpack_require__(/*! ./_coreJsData */ 221);
+	
+	/** Used to detect methods masquerading as native. */
+	var maskSrcKey = (function() {
+	  var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
+	  return uid ? ('Symbol(src)_1.' + uid) : '';
+	}());
+	
+	/**
+	 * Checks if `func` has its source masked.
+	 *
+	 * @private
+	 * @param {Function} func The function to check.
+	 * @returns {boolean} Returns `true` if `func` is masked, else `false`.
+	 */
+	function isMasked(func) {
+	  return !!maskSrcKey && (maskSrcKey in func);
+	}
+	
+	module.exports = isMasked;
+
+
+/***/ },
+/* 221 */
+/*!*********************************!*\
+  !*** ./~/lodash/_coreJsData.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var root = __webpack_require__(/*! ./_root */ 222);
+	
+	/** Used to detect overreaching core-js shims. */
+	var coreJsData = root['__core-js_shared__'];
+	
+	module.exports = coreJsData;
+
+
+/***/ },
+/* 222 */
+/*!***************************!*\
+  !*** ./~/lodash/_root.js ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {var checkGlobal = __webpack_require__(/*! ./_checkGlobal */ 223);
+	
+	/** Detect free variable `global` from Node.js. */
+	var freeGlobal = checkGlobal(typeof global == 'object' && global);
+	
+	/** Detect free variable `self`. */
+	var freeSelf = checkGlobal(typeof self == 'object' && self);
+	
+	/** Detect `this` as the global object. */
+	var thisGlobal = checkGlobal(typeof this == 'object' && this);
+	
+	/** Used as a reference to the global object. */
+	var root = freeGlobal || freeSelf || thisGlobal || Function('return this')();
+	
+	module.exports = root;
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 223 */
+/*!**********************************!*\
+  !*** ./~/lodash/_checkGlobal.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is a global object.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {null|Object} Returns `value` if it's a global object, else `null`.
+	 */
+	function checkGlobal(value) {
+	  return (value && value.Object === Object) ? value : null;
+	}
+	
+	module.exports = checkGlobal;
+
+
+/***/ },
+/* 224 */
+/*!*******************************!*\
+  !*** ./~/lodash/_toSource.js ***!
+  \*******************************/
+/***/ function(module, exports) {
+
+	/** Used to resolve the decompiled source of functions. */
+	var funcToString = Function.prototype.toString;
+	
+	/**
+	 * Converts `func` to its source code.
+	 *
+	 * @private
+	 * @param {Function} func The function to process.
+	 * @returns {string} Returns the source code.
+	 */
+	function toSource(func) {
+	  if (func != null) {
+	    try {
+	      return funcToString.call(func);
+	    } catch (e) {}
+	    try {
+	      return (func + '');
+	    } catch (e) {}
+	  }
+	  return '';
+	}
+	
+	module.exports = toSource;
+
+
+/***/ },
+/* 225 */
+/*!*******************************!*\
+  !*** ./~/lodash/_getValue.js ***!
+  \*******************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Gets the value at `key` of `object`.
+	 *
+	 * @private
+	 * @param {Object} [object] The object to query.
+	 * @param {string} key The key of the property to get.
+	 * @returns {*} Returns the property value.
+	 */
+	function getValue(object, key) {
+	  return object == null ? undefined : object[key];
+	}
+	
+	module.exports = getValue;
+
+
+/***/ },
+/* 226 */
+/*!*********************************!*\
+  !*** ./~/lodash/_hashDelete.js ***!
+  \*********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Removes `key` and its value from the hash.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf Hash
+	 * @param {Object} hash The hash to modify.
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function hashDelete(key) {
+	  return this.has(key) && delete this.__data__[key];
+	}
+	
+	module.exports = hashDelete;
+
+
+/***/ },
+/* 227 */
+/*!******************************!*\
+  !*** ./~/lodash/_hashGet.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 216);
+	
+	/** Used to stand-in for `undefined` hash values. */
+	var HASH_UNDEFINED = '__lodash_hash_undefined__';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * Gets the hash value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf Hash
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function hashGet(key) {
+	  var data = this.__data__;
+	  if (nativeCreate) {
+	    var result = data[key];
+	    return result === HASH_UNDEFINED ? undefined : result;
+	  }
+	  return hasOwnProperty.call(data, key) ? data[key] : undefined;
+	}
+	
+	module.exports = hashGet;
+
+
+/***/ },
+/* 228 */
+/*!******************************!*\
+  !*** ./~/lodash/_hashHas.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 216);
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * Checks if a hash value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf Hash
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function hashHas(key) {
+	  var data = this.__data__;
+	  return nativeCreate ? data[key] !== undefined : hasOwnProperty.call(data, key);
+	}
+	
+	module.exports = hashHas;
+
+
+/***/ },
+/* 229 */
+/*!******************************!*\
+  !*** ./~/lodash/_hashSet.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 216);
+	
+	/** Used to stand-in for `undefined` hash values. */
+	var HASH_UNDEFINED = '__lodash_hash_undefined__';
+	
+	/**
+	 * Sets the hash `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf Hash
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the hash instance.
+	 */
+	function hashSet(key, value) {
+	  var data = this.__data__;
+	  data[key] = (nativeCreate && value === undefined) ? HASH_UNDEFINED : value;
+	  return this;
+	}
+	
+	module.exports = hashSet;
+
+
+/***/ },
+/* 230 */
+/*!**************************!*\
+  !*** ./~/lodash/_Map.js ***!
+  \**************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 217),
+	    root = __webpack_require__(/*! ./_root */ 222);
+	
+	/* Built-in method references that are verified to be native. */
+	var Map = getNative(root, 'Map');
+	
+	module.exports = Map;
+
+
+/***/ },
+/* 231 */
+/*!*************************************!*\
+  !*** ./~/lodash/_mapCacheDelete.js ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 232);
+	
+	/**
+	 * Removes `key` and its value from the map.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf MapCache
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function mapCacheDelete(key) {
+	  return getMapData(this, key)['delete'](key);
+	}
+	
+	module.exports = mapCacheDelete;
+
+
+/***/ },
+/* 232 */
+/*!*********************************!*\
+  !*** ./~/lodash/_getMapData.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isKeyable = __webpack_require__(/*! ./_isKeyable */ 233);
+	
+	/**
+	 * Gets the data for `map`.
+	 *
+	 * @private
+	 * @param {Object} map The map to query.
+	 * @param {string} key The reference key.
+	 * @returns {*} Returns the map data.
+	 */
+	function getMapData(map, key) {
+	  var data = map.__data__;
+	  return isKeyable(key)
+	    ? data[typeof key == 'string' ? 'string' : 'hash']
+	    : data.map;
+	}
+	
+	module.exports = getMapData;
+
+
+/***/ },
+/* 233 */
+/*!********************************!*\
+  !*** ./~/lodash/_isKeyable.js ***!
+  \********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is suitable for use as unique object key.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
+	 */
+	function isKeyable(value) {
+	  var type = typeof value;
+	  return (type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean')
+	    ? (value !== '__proto__')
+	    : (value === null);
+	}
+	
+	module.exports = isKeyable;
+
+
+/***/ },
+/* 234 */
+/*!**********************************!*\
+  !*** ./~/lodash/_mapCacheGet.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 232);
+	
+	/**
+	 * Gets the map value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf MapCache
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function mapCacheGet(key) {
+	  return getMapData(this, key).get(key);
+	}
+	
+	module.exports = mapCacheGet;
+
+
+/***/ },
+/* 235 */
+/*!**********************************!*\
+  !*** ./~/lodash/_mapCacheHas.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 232);
+	
+	/**
+	 * Checks if a map value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf MapCache
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function mapCacheHas(key) {
+	  return getMapData(this, key).has(key);
+	}
+	
+	module.exports = mapCacheHas;
+
+
+/***/ },
+/* 236 */
+/*!**********************************!*\
+  !*** ./~/lodash/_mapCacheSet.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 232);
+	
+	/**
+	 * Sets the map `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf MapCache
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the map cache instance.
+	 */
+	function mapCacheSet(key, value) {
+	  getMapData(this, key).set(key, value);
+	  return this;
+	}
+	
+	module.exports = mapCacheSet;
+
+
+/***/ },
+/* 237 */
+/*!**********************************!*\
+  !*** ./~/lodash/_baseIsEqual.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseIsEqualDeep = __webpack_require__(/*! ./_baseIsEqualDeep */ 238),
+	    isObject = __webpack_require__(/*! ./isObject */ 187),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 189);
+	
+	/**
+	 * The base implementation of `_.isEqual` which supports partial comparisons
+	 * and tracks traversed objects.
+	 *
+	 * @private
+	 * @param {*} value The value to compare.
+	 * @param {*} other The other value to compare.
+	 * @param {Function} [customizer] The function to customize comparisons.
+	 * @param {boolean} [bitmask] The bitmask of comparison flags.
+	 *  The bitmask may be composed of the following flags:
+	 *     1 - Unordered comparison
+	 *     2 - Partial comparison
+	 * @param {Object} [stack] Tracks traversed `value` and `other` objects.
+	 * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+	 */
+	function baseIsEqual(value, other, customizer, bitmask, stack) {
+	  if (value === other) {
+	    return true;
+	  }
+	  if (value == null || other == null || (!isObject(value) && !isObjectLike(other))) {
+	    return value !== value && other !== other;
+	  }
+	  return baseIsEqualDeep(value, other, baseIsEqual, customizer, bitmask, stack);
+	}
+	
+	module.exports = baseIsEqual;
+
+
+/***/ },
+/* 238 */
+/*!**************************************!*\
+  !*** ./~/lodash/_baseIsEqualDeep.js ***!
+  \**************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Stack = __webpack_require__(/*! ./_Stack */ 198),
+	    equalArrays = __webpack_require__(/*! ./_equalArrays */ 239),
+	    equalByTag = __webpack_require__(/*! ./_equalByTag */ 244),
+	    equalObjects = __webpack_require__(/*! ./_equalObjects */ 249),
+	    getTag = __webpack_require__(/*! ./_getTag */ 250),
+	    isArray = __webpack_require__(/*! ./isArray */ 190),
+	    isHostObject = __webpack_require__(/*! ./_isHostObject */ 219),
+	    isTypedArray = __webpack_require__(/*! ./isTypedArray */ 255);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var PARTIAL_COMPARE_FLAG = 2;
+	
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]',
+	    arrayTag = '[object Array]',
+	    objectTag = '[object Object]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * A specialized version of `baseIsEqual` for arrays and objects which performs
+	 * deep comparisons and tracks traversed objects enabling objects with circular
+	 * references to be compared.
+	 *
+	 * @private
+	 * @param {Object} object The object to compare.
+	 * @param {Object} other The other object to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} [customizer] The function to customize comparisons.
+	 * @param {number} [bitmask] The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} [stack] Tracks traversed `object` and `other` objects.
+	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+	 */
+	function baseIsEqualDeep(object, other, equalFunc, customizer, bitmask, stack) {
+	  var objIsArr = isArray(object),
+	      othIsArr = isArray(other),
+	      objTag = arrayTag,
+	      othTag = arrayTag;
+	
+	  if (!objIsArr) {
+	    objTag = getTag(object);
+	    objTag = objTag == argsTag ? objectTag : objTag;
+	  }
+	  if (!othIsArr) {
+	    othTag = getTag(other);
+	    othTag = othTag == argsTag ? objectTag : othTag;
+	  }
+	  var objIsObj = objTag == objectTag && !isHostObject(object),
+	      othIsObj = othTag == objectTag && !isHostObject(other),
+	      isSameTag = objTag == othTag;
+	
+	  if (isSameTag && !objIsObj) {
+	    stack || (stack = new Stack);
+	    return (objIsArr || isTypedArray(object))
+	      ? equalArrays(object, other, equalFunc, customizer, bitmask, stack)
+	      : equalByTag(object, other, objTag, equalFunc, customizer, bitmask, stack);
+	  }
+	  if (!(bitmask & PARTIAL_COMPARE_FLAG)) {
+	    var objIsWrapped = objIsObj && hasOwnProperty.call(object, '__wrapped__'),
+	        othIsWrapped = othIsObj && hasOwnProperty.call(other, '__wrapped__');
+	
+	    if (objIsWrapped || othIsWrapped) {
+	      var objUnwrapped = objIsWrapped ? object.value() : object,
+	          othUnwrapped = othIsWrapped ? other.value() : other;
+	
+	      stack || (stack = new Stack);
+	      return equalFunc(objUnwrapped, othUnwrapped, customizer, bitmask, stack);
+	    }
+	  }
+	  if (!isSameTag) {
+	    return false;
+	  }
+	  stack || (stack = new Stack);
+	  return equalObjects(object, other, equalFunc, customizer, bitmask, stack);
+	}
+	
+	module.exports = baseIsEqualDeep;
+
+
+/***/ },
+/* 239 */
+/*!**********************************!*\
+  !*** ./~/lodash/_equalArrays.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var SetCache = __webpack_require__(/*! ./_SetCache */ 240),
+	    arraySome = __webpack_require__(/*! ./_arraySome */ 243);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * A specialized version of `baseIsEqualDeep` for arrays with support for
+	 * partial deep comparisons.
+	 *
+	 * @private
+	 * @param {Array} array The array to compare.
+	 * @param {Array} other The other array to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} customizer The function to customize comparisons.
+	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} stack Tracks traversed `array` and `other` objects.
+	 * @returns {boolean} Returns `true` if the arrays are equivalent, else `false`.
+	 */
+	function equalArrays(array, other, equalFunc, customizer, bitmask, stack) {
+	  var isPartial = bitmask & PARTIAL_COMPARE_FLAG,
+	      arrLength = array.length,
+	      othLength = other.length;
+	
+	  if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
+	    return false;
+	  }
+	  // Assume cyclic values are equal.
+	  var stacked = stack.get(array);
+	  if (stacked) {
+	    return stacked == other;
+	  }
+	  var index = -1,
+	      result = true,
+	      seen = (bitmask & UNORDERED_COMPARE_FLAG) ? new SetCache : undefined;
+	
+	  stack.set(array, other);
+	
+	  // Ignore non-index properties.
+	  while (++index < arrLength) {
+	    var arrValue = array[index],
+	        othValue = other[index];
+	
+	    if (customizer) {
+	      var compared = isPartial
+	        ? customizer(othValue, arrValue, index, other, array, stack)
+	        : customizer(arrValue, othValue, index, array, other, stack);
+	    }
+	    if (compared !== undefined) {
+	      if (compared) {
+	        continue;
+	      }
+	      result = false;
+	      break;
+	    }
+	    // Recursively compare arrays (susceptible to call stack limits).
+	    if (seen) {
+	      if (!arraySome(other, function(othValue, othIndex) {
+	            if (!seen.has(othIndex) &&
+	                (arrValue === othValue || equalFunc(arrValue, othValue, customizer, bitmask, stack))) {
+	              return seen.add(othIndex);
+	            }
+	          })) {
+	        result = false;
+	        break;
+	      }
+	    } else if (!(
+	          arrValue === othValue ||
+	            equalFunc(arrValue, othValue, customizer, bitmask, stack)
+	        )) {
+	      result = false;
+	      break;
+	    }
+	  }
+	  stack['delete'](array);
+	  return result;
+	}
+	
+	module.exports = equalArrays;
+
+
+/***/ },
+/* 240 */
+/*!*******************************!*\
+  !*** ./~/lodash/_SetCache.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var MapCache = __webpack_require__(/*! ./_MapCache */ 212),
+	    setCacheAdd = __webpack_require__(/*! ./_setCacheAdd */ 241),
+	    setCacheHas = __webpack_require__(/*! ./_setCacheHas */ 242);
+	
+	/**
+	 *
+	 * Creates an array cache object to store unique values.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [values] The values to cache.
+	 */
+	function SetCache(values) {
+	  var index = -1,
+	      length = values ? values.length : 0;
+	
+	  this.__data__ = new MapCache;
+	  while (++index < length) {
+	    this.add(values[index]);
+	  }
+	}
+	
+	// Add methods to `SetCache`.
+	SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
+	SetCache.prototype.has = setCacheHas;
+	
+	module.exports = SetCache;
+
+
+/***/ },
+/* 241 */
+/*!**********************************!*\
+  !*** ./~/lodash/_setCacheAdd.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/** Used to stand-in for `undefined` hash values. */
+	var HASH_UNDEFINED = '__lodash_hash_undefined__';
+	
+	/**
+	 * Adds `value` to the array cache.
+	 *
+	 * @private
+	 * @name add
+	 * @memberOf SetCache
+	 * @alias push
+	 * @param {*} value The value to cache.
+	 * @returns {Object} Returns the cache instance.
+	 */
+	function setCacheAdd(value) {
+	  this.__data__.set(value, HASH_UNDEFINED);
+	  return this;
+	}
+	
+	module.exports = setCacheAdd;
+
+
+/***/ },
+/* 242 */
+/*!**********************************!*\
+  !*** ./~/lodash/_setCacheHas.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is in the array cache.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf SetCache
+	 * @param {*} value The value to search for.
+	 * @returns {number} Returns `true` if `value` is found, else `false`.
+	 */
+	function setCacheHas(value) {
+	  return this.__data__.has(value);
+	}
+	
+	module.exports = setCacheHas;
+
+
+/***/ },
+/* 243 */
+/*!********************************!*\
+  !*** ./~/lodash/_arraySome.js ***!
+  \********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * A specialized version of `_.some` for arrays without support for iteratee
+	 * shorthands.
+	 *
+	 * @private
+	 * @param {Array} [array] The array to iterate over.
+	 * @param {Function} predicate The function invoked per iteration.
+	 * @returns {boolean} Returns `true` if any element passes the predicate check,
+	 *  else `false`.
+	 */
+	function arraySome(array, predicate) {
+	  var index = -1,
+	      length = array ? array.length : 0;
+	
+	  while (++index < length) {
+	    if (predicate(array[index], index, array)) {
+	      return true;
+	    }
+	  }
+	  return false;
+	}
+	
+	module.exports = arraySome;
+
+
+/***/ },
+/* 244 */
+/*!*********************************!*\
+  !*** ./~/lodash/_equalByTag.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Symbol = __webpack_require__(/*! ./_Symbol */ 245),
+	    Uint8Array = __webpack_require__(/*! ./_Uint8Array */ 246),
+	    equalArrays = __webpack_require__(/*! ./_equalArrays */ 239),
+	    mapToArray = __webpack_require__(/*! ./_mapToArray */ 247),
+	    setToArray = __webpack_require__(/*! ./_setToArray */ 248);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/** `Object#toString` result references. */
+	var boolTag = '[object Boolean]',
+	    dateTag = '[object Date]',
+	    errorTag = '[object Error]',
+	    mapTag = '[object Map]',
+	    numberTag = '[object Number]',
+	    regexpTag = '[object RegExp]',
+	    setTag = '[object Set]',
+	    stringTag = '[object String]',
+	    symbolTag = '[object Symbol]';
+	
+	var arrayBufferTag = '[object ArrayBuffer]',
+	    dataViewTag = '[object DataView]';
+	
+	/** Used to convert symbols to primitives and strings. */
+	var symbolProto = Symbol ? Symbol.prototype : undefined,
+	    symbolValueOf = symbolProto ? symbolProto.valueOf : undefined;
+	
+	/**
+	 * A specialized version of `baseIsEqualDeep` for comparing objects of
+	 * the same `toStringTag`.
+	 *
+	 * **Note:** This function only supports comparing values with tags of
+	 * `Boolean`, `Date`, `Error`, `Number`, `RegExp`, or `String`.
+	 *
+	 * @private
+	 * @param {Object} object The object to compare.
+	 * @param {Object} other The other object to compare.
+	 * @param {string} tag The `toStringTag` of the objects to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} customizer The function to customize comparisons.
+	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} stack Tracks traversed `object` and `other` objects.
+	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+	 */
+	function equalByTag(object, other, tag, equalFunc, customizer, bitmask, stack) {
+	  switch (tag) {
+	    case dataViewTag:
+	      if ((object.byteLength != other.byteLength) ||
+	          (object.byteOffset != other.byteOffset)) {
+	        return false;
+	      }
+	      object = object.buffer;
+	      other = other.buffer;
+	
+	    case arrayBufferTag:
+	      if ((object.byteLength != other.byteLength) ||
+	          !equalFunc(new Uint8Array(object), new Uint8Array(other))) {
+	        return false;
+	      }
+	      return true;
+	
+	    case boolTag:
+	    case dateTag:
+	      // Coerce dates and booleans to numbers, dates to milliseconds and
+	      // booleans to `1` or `0` treating invalid dates coerced to `NaN` as
+	      // not equal.
+	      return +object == +other;
+	
+	    case errorTag:
+	      return object.name == other.name && object.message == other.message;
+	
+	    case numberTag:
+	      // Treat `NaN` vs. `NaN` as equal.
+	      return (object != +object) ? other != +other : object == +other;
+	
+	    case regexpTag:
+	    case stringTag:
+	      // Coerce regexes to strings and treat strings, primitives and objects,
+	      // as equal. See http://www.ecma-international.org/ecma-262/6.0/#sec-regexp.prototype.tostring
+	      // for more details.
+	      return object == (other + '');
+	
+	    case mapTag:
+	      var convert = mapToArray;
+	
+	    case setTag:
+	      var isPartial = bitmask & PARTIAL_COMPARE_FLAG;
+	      convert || (convert = setToArray);
+	
+	      if (object.size != other.size && !isPartial) {
+	        return false;
+	      }
+	      // Assume cyclic values are equal.
+	      var stacked = stack.get(object);
+	      if (stacked) {
+	        return stacked == other;
+	      }
+	      bitmask |= UNORDERED_COMPARE_FLAG;
+	      stack.set(object, other);
+	
+	      // Recursively compare objects (susceptible to call stack limits).
+	      return equalArrays(convert(object), convert(other), equalFunc, customizer, bitmask, stack);
+	
+	    case symbolTag:
+	      if (symbolValueOf) {
+	        return symbolValueOf.call(object) == symbolValueOf.call(other);
+	      }
+	  }
+	  return false;
+	}
+	
+	module.exports = equalByTag;
+
+
+/***/ },
+/* 245 */
+/*!*****************************!*\
+  !*** ./~/lodash/_Symbol.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var root = __webpack_require__(/*! ./_root */ 222);
+	
+	/** Built-in value references. */
+	var Symbol = root.Symbol;
+	
+	module.exports = Symbol;
+
+
+/***/ },
+/* 246 */
+/*!*********************************!*\
+  !*** ./~/lodash/_Uint8Array.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var root = __webpack_require__(/*! ./_root */ 222);
+	
+	/** Built-in value references. */
+	var Uint8Array = root.Uint8Array;
+	
+	module.exports = Uint8Array;
+
+
+/***/ },
+/* 247 */
+/*!*********************************!*\
+  !*** ./~/lodash/_mapToArray.js ***!
+  \*********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Converts `map` to its key-value pairs.
+	 *
+	 * @private
+	 * @param {Object} map The map to convert.
+	 * @returns {Array} Returns the key-value pairs.
+	 */
+	function mapToArray(map) {
+	  var index = -1,
+	      result = Array(map.size);
+	
+	  map.forEach(function(value, key) {
+	    result[++index] = [key, value];
+	  });
+	  return result;
+	}
+	
+	module.exports = mapToArray;
+
+
+/***/ },
+/* 248 */
+/*!*********************************!*\
+  !*** ./~/lodash/_setToArray.js ***!
+  \*********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Converts `set` to an array of its values.
+	 *
+	 * @private
+	 * @param {Object} set The set to convert.
+	 * @returns {Array} Returns the values.
+	 */
+	function setToArray(set) {
+	  var index = -1,
+	      result = Array(set.size);
+	
+	  set.forEach(function(value) {
+	    result[++index] = value;
+	  });
+	  return result;
+	}
+	
+	module.exports = setToArray;
+
+
+/***/ },
+/* 249 */
+/*!***********************************!*\
+  !*** ./~/lodash/_equalObjects.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseHas = __webpack_require__(/*! ./_baseHas */ 176),
+	    keys = __webpack_require__(/*! ./keys */ 175);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * A specialized version of `baseIsEqualDeep` for objects with support for
+	 * partial deep comparisons.
+	 *
+	 * @private
+	 * @param {Object} object The object to compare.
+	 * @param {Object} other The other object to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} customizer The function to customize comparisons.
+	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} stack Tracks traversed `object` and `other` objects.
+	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+	 */
+	function equalObjects(object, other, equalFunc, customizer, bitmask, stack) {
+	  var isPartial = bitmask & PARTIAL_COMPARE_FLAG,
+	      objProps = keys(object),
+	      objLength = objProps.length,
+	      othProps = keys(other),
+	      othLength = othProps.length;
+	
+	  if (objLength != othLength && !isPartial) {
+	    return false;
+	  }
+	  var index = objLength;
+	  while (index--) {
+	    var key = objProps[index];
+	    if (!(isPartial ? key in other : baseHas(other, key))) {
+	      return false;
+	    }
+	  }
+	  // Assume cyclic values are equal.
+	  var stacked = stack.get(object);
+	  if (stacked) {
+	    return stacked == other;
+	  }
+	  var result = true;
+	  stack.set(object, other);
+	
+	  var skipCtor = isPartial;
+	  while (++index < objLength) {
+	    key = objProps[index];
+	    var objValue = object[key],
+	        othValue = other[key];
+	
+	    if (customizer) {
+	      var compared = isPartial
+	        ? customizer(othValue, objValue, key, other, object, stack)
+	        : customizer(objValue, othValue, key, object, other, stack);
+	    }
+	    // Recursively compare objects (susceptible to call stack limits).
+	    if (!(compared === undefined
+	          ? (objValue === othValue || equalFunc(objValue, othValue, customizer, bitmask, stack))
+	          : compared
+	        )) {
+	      result = false;
+	      break;
+	    }
+	    skipCtor || (skipCtor = key == 'constructor');
+	  }
+	  if (result && !skipCtor) {
+	    var objCtor = object.constructor,
+	        othCtor = other.constructor;
+	
+	    // Non `Object` object instances with different constructors are not equal.
+	    if (objCtor != othCtor &&
+	        ('constructor' in object && 'constructor' in other) &&
+	        !(typeof objCtor == 'function' && objCtor instanceof objCtor &&
+	          typeof othCtor == 'function' && othCtor instanceof othCtor)) {
+	      result = false;
+	    }
+	  }
+	  stack['delete'](object);
+	  return result;
+	}
+	
+	module.exports = equalObjects;
+
+
+/***/ },
+/* 250 */
+/*!*****************************!*\
+  !*** ./~/lodash/_getTag.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var DataView = __webpack_require__(/*! ./_DataView */ 251),
+	    Map = __webpack_require__(/*! ./_Map */ 230),
+	    Promise = __webpack_require__(/*! ./_Promise */ 252),
+	    Set = __webpack_require__(/*! ./_Set */ 253),
+	    WeakMap = __webpack_require__(/*! ./_WeakMap */ 254),
+	    toSource = __webpack_require__(/*! ./_toSource */ 224);
+	
+	/** `Object#toString` result references. */
+	var mapTag = '[object Map]',
+	    objectTag = '[object Object]',
+	    promiseTag = '[object Promise]',
+	    setTag = '[object Set]',
+	    weakMapTag = '[object WeakMap]';
+	
+	var dataViewTag = '[object DataView]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/** Used to detect maps, sets, and weakmaps. */
+	var dataViewCtorString = toSource(DataView),
+	    mapCtorString = toSource(Map),
+	    promiseCtorString = toSource(Promise),
+	    setCtorString = toSource(Set),
+	    weakMapCtorString = toSource(WeakMap);
+	
+	/**
+	 * Gets the `toStringTag` of `value`.
+	 *
+	 * @private
+	 * @param {*} value The value to query.
+	 * @returns {string} Returns the `toStringTag`.
+	 */
+	function getTag(value) {
+	  return objectToString.call(value);
+	}
+	
+	// Fallback for data views, maps, sets, and weak maps in IE 11,
+	// for data views in Edge, and promises in Node.js.
+	if ((DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag) ||
+	    (Map && getTag(new Map) != mapTag) ||
+	    (Promise && getTag(Promise.resolve()) != promiseTag) ||
+	    (Set && getTag(new Set) != setTag) ||
+	    (WeakMap && getTag(new WeakMap) != weakMapTag)) {
+	  getTag = function(value) {
+	    var result = objectToString.call(value),
+	        Ctor = result == objectTag ? value.constructor : undefined,
+	        ctorString = Ctor ? toSource(Ctor) : undefined;
+	
+	    if (ctorString) {
+	      switch (ctorString) {
+	        case dataViewCtorString: return dataViewTag;
+	        case mapCtorString: return mapTag;
+	        case promiseCtorString: return promiseTag;
+	        case setCtorString: return setTag;
+	        case weakMapCtorString: return weakMapTag;
+	      }
+	    }
+	    return result;
+	  };
+	}
+	
+	module.exports = getTag;
+
+
+/***/ },
+/* 251 */
+/*!*******************************!*\
+  !*** ./~/lodash/_DataView.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 217),
+	    root = __webpack_require__(/*! ./_root */ 222);
+	
+	/* Built-in method references that are verified to be native. */
+	var DataView = getNative(root, 'DataView');
+	
+	module.exports = DataView;
+
+
+/***/ },
+/* 252 */
+/*!******************************!*\
+  !*** ./~/lodash/_Promise.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 217),
+	    root = __webpack_require__(/*! ./_root */ 222);
+	
+	/* Built-in method references that are verified to be native. */
+	var Promise = getNative(root, 'Promise');
+	
+	module.exports = Promise;
+
+
+/***/ },
+/* 253 */
+/*!**************************!*\
+  !*** ./~/lodash/_Set.js ***!
+  \**************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 217),
+	    root = __webpack_require__(/*! ./_root */ 222);
+	
+	/* Built-in method references that are verified to be native. */
+	var Set = getNative(root, 'Set');
+	
+	module.exports = Set;
+
+
+/***/ },
+/* 254 */
+/*!******************************!*\
+  !*** ./~/lodash/_WeakMap.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 217),
+	    root = __webpack_require__(/*! ./_root */ 222);
+	
+	/* Built-in method references that are verified to be native. */
+	var WeakMap = getNative(root, 'WeakMap');
+	
+	module.exports = WeakMap;
+
+
+/***/ },
+/* 255 */
+/*!**********************************!*\
+  !*** ./~/lodash/isTypedArray.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isLength = __webpack_require__(/*! ./isLength */ 188),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 189);
+	
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]',
+	    arrayTag = '[object Array]',
+	    boolTag = '[object Boolean]',
+	    dateTag = '[object Date]',
+	    errorTag = '[object Error]',
+	    funcTag = '[object Function]',
+	    mapTag = '[object Map]',
+	    numberTag = '[object Number]',
+	    objectTag = '[object Object]',
+	    regexpTag = '[object RegExp]',
+	    setTag = '[object Set]',
+	    stringTag = '[object String]',
+	    weakMapTag = '[object WeakMap]';
+	
+	var arrayBufferTag = '[object ArrayBuffer]',
+	    dataViewTag = '[object DataView]',
+	    float32Tag = '[object Float32Array]',
+	    float64Tag = '[object Float64Array]',
+	    int8Tag = '[object Int8Array]',
+	    int16Tag = '[object Int16Array]',
+	    int32Tag = '[object Int32Array]',
+	    uint8Tag = '[object Uint8Array]',
+	    uint8ClampedTag = '[object Uint8ClampedArray]',
+	    uint16Tag = '[object Uint16Array]',
+	    uint32Tag = '[object Uint32Array]';
+	
+	/** Used to identify `toStringTag` values of typed arrays. */
+	var typedArrayTags = {};
+	typedArrayTags[float32Tag] = typedArrayTags[float64Tag] =
+	typedArrayTags[int8Tag] = typedArrayTags[int16Tag] =
+	typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] =
+	typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] =
+	typedArrayTags[uint32Tag] = true;
+	typedArrayTags[argsTag] = typedArrayTags[arrayTag] =
+	typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] =
+	typedArrayTags[dataViewTag] = typedArrayTags[dateTag] =
+	typedArrayTags[errorTag] = typedArrayTags[funcTag] =
+	typedArrayTags[mapTag] = typedArrayTags[numberTag] =
+	typedArrayTags[objectTag] = typedArrayTags[regexpTag] =
+	typedArrayTags[setTag] = typedArrayTags[stringTag] =
+	typedArrayTags[weakMapTag] = false;
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a typed array.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 3.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isTypedArray(new Uint8Array);
+	 * // => true
+	 *
+	 * _.isTypedArray([]);
+	 * // => false
+	 */
+	function isTypedArray(value) {
+	  return isObjectLike(value) &&
+	    isLength(value.length) && !!typedArrayTags[objectToString.call(value)];
+	}
+	
+	module.exports = isTypedArray;
+
+
+/***/ },
+/* 256 */
+/*!***********************************!*\
+  !*** ./~/lodash/_getMatchData.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ 257),
+	    keys = __webpack_require__(/*! ./keys */ 175);
+	
+	/**
+	 * Gets the property names, values, and compare flags of `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the match data of `object`.
+	 */
+	function getMatchData(object) {
+	  var result = keys(object),
+	      length = result.length;
+	
+	  while (length--) {
+	    var key = result[length],
+	        value = object[key];
+	
+	    result[length] = [key, value, isStrictComparable(value)];
+	  }
+	  return result;
+	}
+	
+	module.exports = getMatchData;
+
+
+/***/ },
+/* 257 */
+/*!*****************************************!*\
+  !*** ./~/lodash/_isStrictComparable.js ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(/*! ./isObject */ 187);
+	
+	/**
+	 * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` if suitable for strict
+	 *  equality comparisons, else `false`.
+	 */
+	function isStrictComparable(value) {
+	  return value === value && !isObject(value);
+	}
+	
+	module.exports = isStrictComparable;
+
+
+/***/ },
+/* 258 */
+/*!**********************************************!*\
+  !*** ./~/lodash/_matchesStrictComparable.js ***!
+  \**********************************************/
+/***/ function(module, exports) {
+
+	/**
+	 * A specialized version of `matchesProperty` for source values suitable
+	 * for strict equality comparisons, i.e. `===`.
+	 *
+	 * @private
+	 * @param {string} key The key of the property to get.
+	 * @param {*} srcValue The value to match.
+	 * @returns {Function} Returns the new spec function.
+	 */
+	function matchesStrictComparable(key, srcValue) {
+	  return function(object) {
+	    if (object == null) {
+	      return false;
+	    }
+	    return object[key] === srcValue &&
+	      (srcValue !== undefined || (key in Object(object)));
+	  };
+	}
+	
+	module.exports = matchesStrictComparable;
+
+
+/***/ },
+/* 259 */
+/*!******************************************!*\
+  !*** ./~/lodash/_baseMatchesProperty.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ 237),
+	    get = __webpack_require__(/*! ./get */ 260),
+	    hasIn = __webpack_require__(/*! ./hasIn */ 270),
+	    isKey = __webpack_require__(/*! ./_isKey */ 268),
+	    isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ 257),
+	    matchesStrictComparable = __webpack_require__(/*! ./_matchesStrictComparable */ 258),
+	    toKey = __webpack_require__(/*! ./_toKey */ 269);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * The base implementation of `_.matchesProperty` which doesn't clone `srcValue`.
+	 *
+	 * @private
+	 * @param {string} path The path of the property to get.
+	 * @param {*} srcValue The value to match.
+	 * @returns {Function} Returns the new spec function.
+	 */
+	function baseMatchesProperty(path, srcValue) {
+	  if (isKey(path) && isStrictComparable(srcValue)) {
+	    return matchesStrictComparable(toKey(path), srcValue);
+	  }
+	  return function(object) {
+	    var objValue = get(object, path);
+	    return (objValue === undefined && objValue === srcValue)
+	      ? hasIn(object, path)
+	      : baseIsEqual(srcValue, objValue, undefined, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG);
+	  };
+	}
+	
+	module.exports = baseMatchesProperty;
+
+
+/***/ },
+/* 260 */
+/*!*************************!*\
+  !*** ./~/lodash/get.js ***!
+  \*************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseGet = __webpack_require__(/*! ./_baseGet */ 261);
+	
+	/**
+	 * Gets the value at `path` of `object`. If the resolved value is
+	 * `undefined`, the `defaultValue` is used in its place.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 3.7.0
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path of the property to get.
+	 * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+	 * @returns {*} Returns the resolved value.
+	 * @example
+	 *
+	 * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+	 *
+	 * _.get(object, 'a[0].b.c');
+	 * // => 3
+	 *
+	 * _.get(object, ['a', '0', 'b', 'c']);
+	 * // => 3
+	 *
+	 * _.get(object, 'a.b.c', 'default');
+	 * // => 'default'
+	 */
+	function get(object, path, defaultValue) {
+	  var result = object == null ? undefined : baseGet(object, path);
+	  return result === undefined ? defaultValue : result;
+	}
+	
+	module.exports = get;
+
+
+/***/ },
+/* 261 */
+/*!******************************!*\
+  !*** ./~/lodash/_baseGet.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var castPath = __webpack_require__(/*! ./_castPath */ 262),
+	    isKey = __webpack_require__(/*! ./_isKey */ 268),
+	    toKey = __webpack_require__(/*! ./_toKey */ 269);
+	
+	/**
+	 * The base implementation of `_.get` without support for default values.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path of the property to get.
+	 * @returns {*} Returns the resolved value.
+	 */
+	function baseGet(object, path) {
+	  path = isKey(path, object) ? [path] : castPath(path);
+	
+	  var index = 0,
+	      length = path.length;
+	
+	  while (object != null && index < length) {
+	    object = object[toKey(path[index++])];
+	  }
+	  return (index && index == length) ? object : undefined;
+	}
+	
+	module.exports = baseGet;
+
+
+/***/ },
+/* 262 */
+/*!*******************************!*\
+  !*** ./~/lodash/_castPath.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArray = __webpack_require__(/*! ./isArray */ 190),
+	    stringToPath = __webpack_require__(/*! ./_stringToPath */ 263);
+	
+	/**
+	 * Casts `value` to a path array if it's not one.
+	 *
+	 * @private
+	 * @param {*} value The value to inspect.
+	 * @returns {Array} Returns the cast property path array.
+	 */
+	function castPath(value) {
+	  return isArray(value) ? value : stringToPath(value);
+	}
+	
+	module.exports = castPath;
+
+
+/***/ },
+/* 263 */
+/*!***********************************!*\
+  !*** ./~/lodash/_stringToPath.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var memoize = __webpack_require__(/*! ./memoize */ 264),
+	    toString = __webpack_require__(/*! ./toString */ 265);
+	
+	/** Used to match property names within property paths. */
+	var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(\.|\[\])(?:\4|$))/g;
+	
+	/** Used to match backslashes in property paths. */
+	var reEscapeChar = /\\(\\)?/g;
+	
+	/**
+	 * Converts `string` to a property path array.
+	 *
+	 * @private
+	 * @param {string} string The string to convert.
+	 * @returns {Array} Returns the property path array.
+	 */
+	var stringToPath = memoize(function(string) {
+	  var result = [];
+	  toString(string).replace(rePropName, function(match, number, quote, string) {
+	    result.push(quote ? string.replace(reEscapeChar, '$1') : (number || match));
+	  });
+	  return result;
+	});
+	
+	module.exports = stringToPath;
+
+
+/***/ },
+/* 264 */
+/*!*****************************!*\
+  !*** ./~/lodash/memoize.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var MapCache = __webpack_require__(/*! ./_MapCache */ 212);
+	
+	/** Used as the `TypeError` message for "Functions" methods. */
+	var FUNC_ERROR_TEXT = 'Expected a function';
+	
+	/**
+	 * Creates a function that memoizes the result of `func`. If `resolver` is
+	 * provided, it determines the cache key for storing the result based on the
+	 * arguments provided to the memoized function. By default, the first argument
+	 * provided to the memoized function is used as the map cache key. The `func`
+	 * is invoked with the `this` binding of the memoized function.
+	 *
+	 * **Note:** The cache is exposed as the `cache` property on the memoized
+	 * function. Its creation may be customized by replacing the `_.memoize.Cache`
+	 * constructor with one whose instances implement the
+	 * [`Map`](http://ecma-international.org/ecma-262/6.0/#sec-properties-of-the-map-prototype-object)
+	 * method interface of `delete`, `get`, `has`, and `set`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Function
+	 * @param {Function} func The function to have its output memoized.
+	 * @param {Function} [resolver] The function to resolve the cache key.
+	 * @returns {Function} Returns the new memoized function.
+	 * @example
+	 *
+	 * var object = { 'a': 1, 'b': 2 };
+	 * var other = { 'c': 3, 'd': 4 };
+	 *
+	 * var values = _.memoize(_.values);
+	 * values(object);
+	 * // => [1, 2]
+	 *
+	 * values(other);
+	 * // => [3, 4]
+	 *
+	 * object.a = 2;
+	 * values(object);
+	 * // => [1, 2]
+	 *
+	 * // Modify the result cache.
+	 * values.cache.set(object, ['a', 'b']);
+	 * values(object);
+	 * // => ['a', 'b']
+	 *
+	 * // Replace `_.memoize.Cache`.
+	 * _.memoize.Cache = WeakMap;
+	 */
+	function memoize(func, resolver) {
+	  if (typeof func != 'function' || (resolver && typeof resolver != 'function')) {
+	    throw new TypeError(FUNC_ERROR_TEXT);
+	  }
+	  var memoized = function() {
+	    var args = arguments,
+	        key = resolver ? resolver.apply(this, args) : args[0],
+	        cache = memoized.cache;
+	
+	    if (cache.has(key)) {
+	      return cache.get(key);
+	    }
+	    var result = func.apply(this, args);
+	    memoized.cache = cache.set(key, result);
+	    return result;
+	  };
+	  memoized.cache = new (memoize.Cache || MapCache);
+	  return memoized;
+	}
+	
+	// Assign cache to `_.memoize`.
+	memoize.Cache = MapCache;
+	
+	module.exports = memoize;
+
+
+/***/ },
+/* 265 */
+/*!******************************!*\
+  !*** ./~/lodash/toString.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseToString = __webpack_require__(/*! ./_baseToString */ 266);
+	
+	/**
+	 * Converts `value` to a string. An empty string is returned for `null`
+	 * and `undefined` values. The sign of `-0` is preserved.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to process.
+	 * @returns {string} Returns the string.
+	 * @example
+	 *
+	 * _.toString(null);
+	 * // => ''
+	 *
+	 * _.toString(-0);
+	 * // => '-0'
+	 *
+	 * _.toString([1, 2, 3]);
+	 * // => '1,2,3'
+	 */
+	function toString(value) {
+	  return value == null ? '' : baseToString(value);
+	}
+	
+	module.exports = toString;
+
+
+/***/ },
+/* 266 */
+/*!***********************************!*\
+  !*** ./~/lodash/_baseToString.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Symbol = __webpack_require__(/*! ./_Symbol */ 245),
+	    isSymbol = __webpack_require__(/*! ./isSymbol */ 267);
+	
+	/** Used as references for various `Number` constants. */
+	var INFINITY = 1 / 0;
+	
+	/** Used to convert symbols to primitives and strings. */
+	var symbolProto = Symbol ? Symbol.prototype : undefined,
+	    symbolToString = symbolProto ? symbolProto.toString : undefined;
+	
+	/**
+	 * The base implementation of `_.toString` which doesn't convert nullish
+	 * values to empty strings.
+	 *
+	 * @private
+	 * @param {*} value The value to process.
+	 * @returns {string} Returns the string.
+	 */
+	function baseToString(value) {
+	  // Exit early for strings to avoid a performance hit in some environments.
+	  if (typeof value == 'string') {
+	    return value;
+	  }
+	  if (isSymbol(value)) {
+	    return symbolToString ? symbolToString.call(value) : '';
+	  }
+	  var result = (value + '');
+	  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+	}
+	
+	module.exports = baseToString;
+
+
+/***/ },
+/* 267 */
+/*!******************************!*\
+  !*** ./~/lodash/isSymbol.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObjectLike = __webpack_require__(/*! ./isObjectLike */ 189);
+	
+	/** `Object#toString` result references. */
+	var symbolTag = '[object Symbol]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a `Symbol` primitive or object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isSymbol(Symbol.iterator);
+	 * // => true
+	 *
+	 * _.isSymbol('abc');
+	 * // => false
+	 */
+	function isSymbol(value) {
+	  return typeof value == 'symbol' ||
+	    (isObjectLike(value) && objectToString.call(value) == symbolTag);
+	}
+	
+	module.exports = isSymbol;
+
+
+/***/ },
+/* 268 */
+/*!****************************!*\
+  !*** ./~/lodash/_isKey.js ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArray = __webpack_require__(/*! ./isArray */ 190),
+	    isSymbol = __webpack_require__(/*! ./isSymbol */ 267);
+	
+	/** Used to match property names within property paths. */
+	var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
+	    reIsPlainProp = /^\w*$/;
+	
+	/**
+	 * Checks if `value` is a property name and not a property path.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @param {Object} [object] The object to query keys on.
+	 * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
+	 */
+	function isKey(value, object) {
+	  if (isArray(value)) {
+	    return false;
+	  }
+	  var type = typeof value;
+	  if (type == 'number' || type == 'symbol' || type == 'boolean' ||
+	      value == null || isSymbol(value)) {
+	    return true;
+	  }
+	  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) ||
+	    (object != null && value in Object(object));
+	}
+	
+	module.exports = isKey;
+
+
+/***/ },
+/* 269 */
+/*!****************************!*\
+  !*** ./~/lodash/_toKey.js ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isSymbol = __webpack_require__(/*! ./isSymbol */ 267);
+	
+	/** Used as references for various `Number` constants. */
+	var INFINITY = 1 / 0;
+	
+	/**
+	 * Converts `value` to a string key if it's not a string or symbol.
+	 *
+	 * @private
+	 * @param {*} value The value to inspect.
+	 * @returns {string|symbol} Returns the key.
+	 */
+	function toKey(value) {
+	  if (typeof value == 'string' || isSymbol(value)) {
+	    return value;
+	  }
+	  var result = (value + '');
+	  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+	}
+	
+	module.exports = toKey;
+
+
+/***/ },
+/* 270 */
+/*!***************************!*\
+  !*** ./~/lodash/hasIn.js ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseHasIn = __webpack_require__(/*! ./_baseHasIn */ 271),
+	    hasPath = __webpack_require__(/*! ./_hasPath */ 272);
+	
+	/**
+	 * Checks if `path` is a direct or inherited property of `object`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path to check.
+	 * @returns {boolean} Returns `true` if `path` exists, else `false`.
+	 * @example
+	 *
+	 * var object = _.create({ 'a': _.create({ 'b': 2 }) });
+	 *
+	 * _.hasIn(object, 'a');
+	 * // => true
+	 *
+	 * _.hasIn(object, 'a.b');
+	 * // => true
+	 *
+	 * _.hasIn(object, ['a', 'b']);
+	 * // => true
+	 *
+	 * _.hasIn(object, 'b');
+	 * // => false
+	 */
+	function hasIn(object, path) {
+	  return object != null && hasPath(object, path, baseHasIn);
+	}
+	
+	module.exports = hasIn;
+
+
+/***/ },
+/* 271 */
+/*!********************************!*\
+  !*** ./~/lodash/_baseHasIn.js ***!
+  \********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * The base implementation of `_.hasIn` without support for deep paths.
+	 *
+	 * @private
+	 * @param {Object} [object] The object to query.
+	 * @param {Array|string} key The key to check.
+	 * @returns {boolean} Returns `true` if `key` exists, else `false`.
+	 */
+	function baseHasIn(object, key) {
+	  return object != null && key in Object(object);
+	}
+	
+	module.exports = baseHasIn;
+
+
+/***/ },
+/* 272 */
+/*!******************************!*\
+  !*** ./~/lodash/_hasPath.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var castPath = __webpack_require__(/*! ./_castPath */ 262),
+	    isArguments = __webpack_require__(/*! ./isArguments */ 181),
+	    isArray = __webpack_require__(/*! ./isArray */ 190),
+	    isIndex = __webpack_require__(/*! ./_isIndex */ 192),
+	    isKey = __webpack_require__(/*! ./_isKey */ 268),
+	    isLength = __webpack_require__(/*! ./isLength */ 188),
+	    isString = __webpack_require__(/*! ./isString */ 191),
+	    toKey = __webpack_require__(/*! ./_toKey */ 269);
+	
+	/**
+	 * Checks if `path` exists on `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path to check.
+	 * @param {Function} hasFunc The function to check properties.
+	 * @returns {boolean} Returns `true` if `path` exists, else `false`.
+	 */
+	function hasPath(object, path, hasFunc) {
+	  path = isKey(path, object) ? [path] : castPath(path);
+	
+	  var result,
+	      index = -1,
+	      length = path.length;
+	
+	  while (++index < length) {
+	    var key = toKey(path[index]);
+	    if (!(result = object != null && hasFunc(object, key))) {
+	      break;
+	    }
+	    object = object[key];
+	  }
+	  if (result) {
+	    return result;
+	  }
+	  var length = object ? object.length : 0;
+	  return !!length && isLength(length) && isIndex(key, length) &&
+	    (isArray(object) || isString(object) || isArguments(object));
+	}
+	
+	module.exports = hasPath;
+
+
+/***/ },
+/* 273 */
+/*!******************************!*\
+  !*** ./~/lodash/identity.js ***!
+  \******************************/
+/***/ function(module, exports) {
+
+	/**
+	 * This method returns the first argument given to it.
+	 *
+	 * @static
+	 * @since 0.1.0
+	 * @memberOf _
+	 * @category Util
+	 * @param {*} value Any value.
+	 * @returns {*} Returns `value`.
+	 * @example
+	 *
+	 * var object = { 'user': 'fred' };
+	 *
+	 * console.log(_.identity(object) === object);
+	 * // => true
+	 */
+	function identity(value) {
+	  return value;
+	}
+	
+	module.exports = identity;
+
+
+/***/ },
+/* 274 */
+/*!******************************!*\
+  !*** ./~/lodash/property.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseProperty = __webpack_require__(/*! ./_baseProperty */ 185),
+	    basePropertyDeep = __webpack_require__(/*! ./_basePropertyDeep */ 275),
+	    isKey = __webpack_require__(/*! ./_isKey */ 268),
+	    toKey = __webpack_require__(/*! ./_toKey */ 269);
+	
+	/**
+	 * Creates a function that returns the value at `path` of a given object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 2.4.0
+	 * @category Util
+	 * @param {Array|string} path The path of the property to get.
+	 * @returns {Function} Returns the new accessor function.
+	 * @example
+	 *
+	 * var objects = [
+	 *   { 'a': { 'b': 2 } },
+	 *   { 'a': { 'b': 1 } }
+	 * ];
+	 *
+	 * _.map(objects, _.property('a.b'));
+	 * // => [2, 1]
+	 *
+	 * _.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');
+	 * // => [1, 2]
+	 */
+	function property(path) {
+	  return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+	}
+	
+	module.exports = property;
+
+
+/***/ },
+/* 275 */
+/*!***************************************!*\
+  !*** ./~/lodash/_basePropertyDeep.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseGet = __webpack_require__(/*! ./_baseGet */ 261);
+	
+	/**
+	 * A specialized version of `baseProperty` which supports deep paths.
+	 *
+	 * @private
+	 * @param {Array|string} path The path of the property to get.
+	 * @returns {Function} Returns the new accessor function.
+	 */
+	function basePropertyDeep(path) {
+	  return function(object) {
+	    return baseGet(object, path);
+	  };
+	}
+	
+	module.exports = basePropertyDeep;
+
+
+/***/ },
+/* 276 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg2.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg2",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#dea73a;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 6'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-2.33', y: '-3.25', width: '119.95', height: '118.41' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M44.58,95v1.57a.12.12,0,0,0,0,.07.74.74,0,0,0,.73.71h18.5a.74.74,0,0,0,.73-.74h0V94.79C74.91,91.39,82.69,83,84.4,72.73v-.06a.59.59,0,0,0,0-.1.74.74,0,0,0-.75-.75H24.91a.74.74,0,0,0-.75.75l0,.33C26,83.25,34,91.71,44.58,95' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M64.52,46.74c-.24.34-5.92,8.52.13,15.13,2.77,3,2.53,5.71,1.74,7.52h3.88c.79-2.67.46-6-2.69-9.46-4.45-4.87.06-11.45.12-11.55a1.45,1.45,0,0,0-.63-2.17,2.06,2.06,0,0,0-2.55.54' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M54.69,69.38h3.88c.78-2.67.46-6-2.69-9.46-4.46-4.87.05-11.45.12-11.56a1.45,1.45,0,0,0-.63-2.17,2.06,2.06,0,0,0-2.55.54c-.24.34-5.93,8.52.13,15.13,2.77,3,2.53,5.71,1.74,7.52' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.13,46.74c-.25.34-5.92,8.52.12,15.13,2.77,3,2.53,5.71,1.74,7.52h3.88c.78-2.67.46-6-2.69-9.46-4.46-4.87.06-11.45.13-11.56a1.45,1.45,0,0,0-.63-2.17,2.05,2.05,0,0,0-2.55.54' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M33.42,17.25h2.33V18.5H31.82V17.25l2.41-6.63H32.06V9.37h3.79v1.25Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M36.79,9.37h3.66v1.25H38.33v2.61h1.52v1.24H38.33v2.77h2.13V18.5H36.79Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M42.95,14.31V18.5H41.41V9.37h2.24c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.76L46,18.5H44.39Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V11.36c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M46.74,16.14V11.73a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S49.85,16.94,49.85,16.39Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M34.92,27.86H33.44v4H31.91V22.75h1.54v3.87h1.48V22.75h1.55v9.13H34.92Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.94,22.75v6.91c0,1.41-.61,2.33-2.17,2.33a2.06,2.06,0,0,1-2.29-2.33V22.75H39v7.06c0,.54.22.9.75.9s.75-.36.75-.9V22.75Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M44.25,26.15v5.74H43V22.75h1.51L46.12,28V22.75H47.4v9.13H46.05Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M50.73,27h2.18v4.88h-1.1v-1A1.38,1.38,0,0,1,50.34,32c-1.32,0-1.93-1.05-1.93-2.47V25.11a2.16,2.16,0,0,1,2.3-2.46c1.7,0,2.2.94,2.2,2.29v.81h-1.4v-.93c0-.57-.22-.89-.77-.89s-.79.39-.79.94v4.9c0,.55.23.94.75.94s.75-.28.75-.88V28.22h-.73Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M53.92,22.75h3.66V24H55.46v2.61H57v1.24H55.46v2.77h2.13v1.25H53.92Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M60.08,27.7v4.19H58.54V22.75h2.24c1.55,0,2.11.77,2.11,2V26c0,1-.35,1.56-1.23,1.76l1.47,4.15H61.52Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V24.75c0-.5-.23-.74-.75-.74Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'cls-2', d: 'M23.4,27.79H17.22V26.73a4.28,4.28,0,0,1,1.59-3.44l2.41-2.55c2-2.08,2.38-3.41,2.38-5.66V12.91c0-3.21-1.55-4.73-4.93-4.73s-5,1.75-5,4.9v2.71h3.44V13c0-1.35.66-1.75,1.46-1.75s1.36.3,1.36,1.69v1.85c0,1.85-.17,2.58-1.39,3.87l-2.12,2.25c-2,2.18-2.81,3.64-2.81,5.85v4.13H23.4Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 277 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg3.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg3",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.76" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#4ca046;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 7'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-2.83', y: '-1.93', width: '118.46', height: '117.08' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M60.06,94.51H60a1.28,1.28,0,0,1-1.19-1.07l-4-23.16-6,11.17a1.29,1.29,0,0,1-2.4-.43L43.83,63.15,39.15,73.66a1.29,1.29,0,0,1-1.17.76H19.79a1.29,1.29,0,1,1,0-2.57H37.14L43.3,58a1.29,1.29,0,0,1,2.45.34L48.38,76.8l5.94-11a1.29,1.29,0,0,1,2.4.39L60.4,87.63,73.82,43a1.29,1.29,0,0,1,2.39-.19L83.27,57.5A1.29,1.29,0,0,1,81,58.61L75.33,46.95l-14,46.65A1.28,1.28,0,0,1,60.06,94.51Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M33.55,13.52H35.8v5H34.66v-1a1.43,1.43,0,0,1-1.51,1.14c-1.36,0-2-1.08-2-2.54V11.57A2.23,2.23,0,0,1,33.54,9c1.75,0,2.26,1,2.26,2.36v.83H34.36v-1c0-.58-.22-.92-.79-.92s-.82.4-.82,1v5.05c0,.57.24,1,.78,1s.78-.29.78-.9V14.77h-.75Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M36.7,16.12V11.57a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V11.32c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S39.91,16.94,39.91,16.37Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M42.39,16.12V11.57a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V11.32c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S45.6,16.94,45.6,16.37Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M52.82,11.66V16c0,1.44-.6,2.53-2.29,2.53H48.08V9.14h2.44C52.22,9.14,52.82,10.21,52.82,11.66Zm-2.48,5.6c.65,0,.9-.39.9-1V11.37a.82.82,0,0,0-.9-.94h-.67v6.83Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M58.28,14.4H56.76v4.15H55.17V9.14h1.58v4h1.53v-4h1.6v9.41h-1.6Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M60.78,9.14h3.78v1.29H62.36v2.69h1.57V14.4H62.36v2.86h2.19v1.29H60.78Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M65.15,18.55l1.78-9.41h1.8l1.79,9.41H68.9l-.29-1.72H66.93l-.28,1.72Zm2-3H68.4l-.62-3.78h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M71.18,9.14h1.58v8.12h1.89v1.29H71.18Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M74.29,9.14h4.21v1.29H77.19v8.12h-1.6V10.43h-1.3Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.34,14.4H80.81v4.15H79.23V9.14h1.58v4h1.53v-4h1.6v9.41h-1.6Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M30.91,31.74l1.78-9.41h1.8l1.79,9.41H34.66L34.37,30H32.69l-.28,1.72Zm2-3h1.26L33.54,25h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M38.27,25.82v5.91H36.94V22.32h1.55l1.71,5.4v-5.4h1.32v9.41H40.13Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M47.15,24.85v4.36c0,1.44-.6,2.53-2.29,2.53H42.42V22.32h2.44C46.55,22.32,47.15,23.39,47.15,24.85Zm-2.48,5.6c.65,0,.9-.39.9-1V24.56a.82.82,0,0,0-.9-.94H44v6.83Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M52.93,25.92,52,31.74H50.55l-1.26-9.41h1.53l.74,6h0l.79-6h1.29l.87,6h0l.72-6h1.33l-1.22,9.41h-1.5l-.93-5.82Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M57.27,22.32H61v1.29H58.85v2.69h1.57v1.28H58.85v2.86H61v1.29H57.27Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M61.89,22.32h1.58v8.12h1.89v1.29H61.89Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M66.08,22.32h1.58v8.12h1.89v1.29H66.08Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M72.6,22.32h2.29c1.58,0,2.11.74,2.11,2.07v1a1.37,1.37,0,0,1-.94,1.5,1.43,1.43,0,0,1,1.18,1.57v1.25c0,1.33-.6,2.07-2.18,2.07H72.6Zm1.58,4h.56a.67.67,0,0,0,.75-.76V24.38a.67.67,0,0,0-.76-.76h-.54Zm0,1.21v2.94h.69a.68.68,0,0,0,.78-.76V28.26c0-.5-.24-.76-.79-.76Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M78,22.32H81.8v1.29H79.61v2.69h1.57v1.28H79.61v2.86H81.8v1.29H78Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.65,22.32h1.58v9.41H82.65Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M86.48,25.82v5.91H85.15V22.32H86.7l1.71,5.4v-5.4h1.32v9.41H88.34Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M93,26.71h2.25v5H94.13v-1a1.43,1.43,0,0,1-1.51,1.14c-1.36,0-2-1.08-2-2.54V24.75A2.23,2.23,0,0,1,93,22.21c1.75,0,2.26,1,2.26,2.36v.83H93.82v-1c0-.58-.22-.92-.79-.92s-.82.4-.82,1v5.05c0,.57.24,1,.78,1s.78-.29.78-.9V28H93Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M68.94,26.12h2.24v1.29H68.94Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'cls-2', d: 'M16,31.22c3.82,0,5.48-2,5.48-5.15V22.76c0-2.06-.9-3.39-2.79-3.82a3.6,3.6,0,0,0,2.59-3.65v-2c0-3.19-1.53-5.15-5-5.15C12.32,8.18,11,10.5,11,13.82v2h3.45V13.52c0-1.39.43-2.19,1.63-2.19s1.63.8,1.63,2v2.42c0,1.2-.8,1.83-2,1.83H14.22V20.5h1.6c1.33,0,1.86.63,1.86,1.83V26c0,1.19-.53,2-1.69,2s-1.76-.86-1.76-2.19V22.66H10.77v3c0,3.42,1.36,5.61,5.21,5.61' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M93.39,69.84c0-3.14-2-5.69-5.07-5.69-1.53,0-3.37,1.67-4.37,2.7-1-1-2.72-2.7-4.25-2.7-3.05,0-5.19,2.55-5.19,5.69a5.75,5.75,0,0,0,1.62,4h0L84,81.71l7.82-7.83h0A5.76,5.76,0,0,0,93.39,69.84Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 278 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg4.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg4",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#c5202e;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 12'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '0.11', y: '-1.93', width: '115.21', height: '117.09' }),
+	                React.createElement('rect', { className: 'cls-2', x: '52.65', y: '9.35', width: '1.54', height: '9.14' }),
+	                React.createElement('rect', { className: 'cls-2', x: '62.48', y: '22.75', width: '1.54', height: '9.14' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '49.56 59.93 29.52 48.35 29.52 85.8 49.56 91.84 49.56 59.93' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '51.76 60.01 51.76 91.86 71.94 85.79 71.94 48.36 51.76 60.01' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '83.52 85.13 82.93 85.13 85.31 93.42 87.67 85.13 87.08 85.13 87.67 85.13 87.67 51.82 87.08 51.82 86.5 51.82 85.87 51.82 84.69 51.82 84.11 51.82 83.52 51.82 82.93 51.82 82.93 85.13 83.52 85.13' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '76.24 49.96 74.1 48.27 74.1 86.81 51.82 94.01 50.79 94.01 50.59 94.01 49.56 94.01 27.39 87.81 27.39 48.27 25.24 49.96 25.24 89.32 49.46 96.03 50.59 96.03 50.79 96.03 51.92 96.03 74.27 88.93 76.24 88.35 76.24 49.96' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '51.94 17.24 50.11 17.24 50.11 9.35 48.57 9.35 48.57 18.49 51.94 18.49 51.94 17.24' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '56.18 18.49 57.72 18.49 57.72 10.61 58.99 10.61 58.99 9.35 54.91 9.35 54.91 10.61 56.18 10.61 56.18 18.49' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '61.17 18.49 62.71 18.49 62.71 15.01 64.41 9.35 62.94 9.35 62.01 12.82 61.99 12.82 61.06 9.35 59.46 9.35 61.17 15.01 61.17 18.49' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '35.58 30.64 33.45 30.64 33.45 27.86 34.97 27.86 34.97 26.62 33.45 26.62 33.45 24.01 35.58 24.01 35.58 22.75 31.91 22.75 31.91 31.89 35.58 31.89 35.58 30.64' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '57.55 24.01 58.81 24.01 58.81 31.89 60.36 31.89 60.36 24.01 61.63 24.01 61.63 22.75 57.55 22.75 57.55 24.01' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '71.99 26.15 73.8 31.89 75.15 31.89 75.15 22.75 73.86 22.75 73.86 28 72.21 22.75 70.7 22.75 70.7 31.89 71.99 31.89 71.99 26.15' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M87.67,47.41a2.37,2.37,0,1,0-4.74,0V50h4.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M33.67,18.49v.62l2.9.54V18.51l-1.13-.22a2.19,2.19,0,0,0,1.13-2.16V11.71a2.33,2.33,0,1,0-4.65,0v4.42a2.1,2.1,0,0,0,1.75,2.36m-.21-7c0-.55.24-.94.78-.94s.79.39.79.94v5c0,.54-.24.94-.79.94s-.78-.41-.78-.94Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M39.87,18.6c1.56,0,2.17-.92,2.17-2.33V9.35H40.62v7.06c0,.54-.22.9-.75.9s-.75-.36-.75-.9V9.35H37.57v6.92a2.06,2.06,0,0,0,2.29,2.33' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M44.31,16.82h1.63l.28,1.67H47.8L46.06,9.35H44.31l-1.73,9.14H44Zm.81-4.89h0l.61,3.67H44.51Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.11,29.44V25.21c0-1.42-.58-2.45-2.22-2.45H36.52v9.14h2.37c1.64,0,2.22-1.05,2.22-2.45m-3.06,1.2V24h.65a.8.8,0,0,1,.87.92v4.79c0,.55-.24.93-.87.93Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M42.13,22.75v6.92A2.06,2.06,0,0,0,44.42,32c1.56,0,2.17-.92,2.17-2.33V22.75H45.17v7.06c0,.54-.22.9-.76.9s-.75-.36-.75-.9V22.75Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M47.6,29.53A2.16,2.16,0,0,0,49.89,32c1.63,0,2.17-1,2.17-2.28V28.14h-1.4v1.68c0,.54-.19.89-.74.89s-.78-.39-.78-.94V24.87c0-.55.23-.94.78-.94s.74.32.74.89V26h1.4V24.94c0-1.35-.47-2.29-2.17-2.29a2.16,2.16,0,0,0-2.29,2.47Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M54.25,30.22h1.63l.28,1.67h1.58L56,22.75H54.25l-1.73,9.14H54Zm.81-4.89h0L55.68,29H54.45Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M67.36,32a2.18,2.18,0,0,0,2.33-2.47V25.11a2.33,2.33,0,1,0-4.65,0v4.42A2.18,2.18,0,0,0,67.36,32m-.78-7.13c0-.55.24-.94.78-.94s.79.39.79.94v4.91c0,.55-.24.94-.79.94s-.78-.39-.78-.94Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'cls-2', d: 'M18.79,30.6h3.57V27h1.52V24H22.36V8.18h-3.7L12.14,24.65V27h6.65ZM15.45,24l3.37-9.23h0V24Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 279 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg5.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg5",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#ef412c;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 13'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-1.93', y: '-1.93', width: '117.68', height: '117.09' }),
+	                React.createElement('rect', { className: 'cls-2', x: '57.54', y: '22.75', width: '1.54', height: '9.14' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M81.41,42.29H67.52a.18.18,0,0,0-.18.18v4.62a.18.18,0,0,0,.18.18H73L66.91,53.4A18.19,18.19,0,1,0,53.34,85.75v5.32H47.86a.18.18,0,0,0-.18.18v4.95a.18.18,0,0,0,.18.18h5.48v5.23a.18.18,0,0,0,.18.18h4.95a.18.18,0,0,0,.18-.18V96.37h5.48a.18.18,0,0,0,.18-.18V91.24a.18.18,0,0,0-.18-.18H58.64V85.66A18.18,18.18,0,0,0,70.56,57.25l6.05-6.05v5.17a.18.18,0,0,0,.18.18h4.61a.18.18,0,0,0,.18-.18V42.47a.18.18,0,0,0-.18-.18M55.69,81.1A13.39,13.39,0,1,1,69.08,67.71,13.41,13.41,0,0,1,55.69,81.1' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M63.87,62.22H47.63a.17.17,0,0,0-.18.16v3.93a.17.17,0,0,0,.18.16H63.87a.17.17,0,0,0,.18-.16V62.37a.17.17,0,0,0-.18-.16' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M63.87,69.24H47.63a.17.17,0,0,0-.18.16v3.93a.17.17,0,0,0,.18.16H63.87a.17.17,0,0,0,.18-.16V69.4a.17.17,0,0,0-.18-.16' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M33.84,18.6a1.38,1.38,0,0,0,1.47-1.1v1h1.1V13.61H34.23v1.21H35v1.62c0,.59-.26.88-.76.88s-.75-.39-.75-.94V11.47c0-.55.24-.94.8-.94s.77.32.77.89v.93h1.4v-.81c0-1.35-.5-2.29-2.19-2.29a2.16,2.16,0,0,0-2.3,2.47v4.42c0,1.41.61,2.47,1.92,2.47' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M52.1,16V11.81c0-1.41-.58-2.45-2.22-2.45H47.51v9.14h2.37c1.64,0,2.22-1.05,2.22-2.45M49,17.24V10.61h.65a.8.8,0,0,1,.87.92v4.79c0,.55-.24.93-.87.93Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M59.26,14.3l1.44,4.19h1.62l-1.47-4.15c.87-.2,1.23-.78,1.23-1.77V11.4c0-1.28-.57-2-2.11-2H57.72v9.14h1.54Zm0-3.69h.51c.53,0,.75.24.75.74v1.35a.66.66,0,0,1-.75.76h-.51Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M38.28,31.89v.62l2.89.54V31.9L40,31.69a2.19,2.19,0,0,0,1.13-2.16V25.11a2.33,2.33,0,1,0-4.65,0v4.42a2.1,2.1,0,0,0,1.75,2.36m-.22-7c0-.55.24-.94.78-.94s.79.39.79.94v5c0,.54-.24.94-.79.94s-.78-.4-.78-.94Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M42.17,22.75v6.91A2.06,2.06,0,0,0,44.46,32c1.56,0,2.17-.92,2.17-2.33V22.75H45.21v7.06c0,.54-.22.9-.76.9s-.75-.36-.75-.9V22.75Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M49.11,30.22h1.63L51,31.89H52.6l-1.74-9.14H49.11l-1.72,9.14h1.46Zm.81-4.89h0l.6,3.67H49.31Z' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '41.09 17.24 38.96 17.24 38.96 14.46 40.48 14.46 40.48 13.22 38.96 13.22 38.96 10.61 41.09 10.61 41.09 9.35 37.43 9.35 37.43 18.49 41.09 18.49 41.09 17.24' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '43.34 12.75 45.15 18.49 46.49 18.49 46.49 9.35 45.22 9.35 45.22 14.6 43.56 9.35 42.05 9.35 42.05 18.49 43.34 18.49 43.34 12.75' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '56.77 17.24 54.65 17.24 54.65 14.46 56.17 14.46 56.17 13.22 54.65 13.22 54.65 10.61 56.77 10.61 56.77 9.35 53.11 9.35 53.11 18.49 56.77 18.49 56.77 17.24' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '35.58 30.64 33.45 30.64 33.45 27.86 34.97 27.86 34.97 26.62 33.45 26.62 33.45 24 35.58 24 35.58 22.75 31.92 22.75 31.92 31.89 35.58 31.89 35.58 30.64' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '53.35 22.75 53.35 31.89 56.72 31.89 56.72 30.64 54.89 30.64 54.89 22.75 53.35 22.75' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '62.73 31.89 62.73 24 64 24 64 22.75 59.92 22.75 59.92 24 61.18 24 61.18 31.89 62.73 31.89' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '66.29 31.89 67.83 31.89 67.83 28.41 69.52 22.75 68.05 22.75 67.12 26.22 67.11 26.22 66.18 22.75 64.58 22.75 66.29 28.41 66.29 31.89' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'cls-2', d: 'M18.48,15.29a3.4,3.4,0,0,0-3.17,1.55h0V11.25h6.48V8.18H11.84V20.81h3.44v-.5c0-1.32.6-2.05,1.65-2.05s1.62.79,1.62,2V25.7c0,1.19-.43,2-1.59,2s-1.75-.86-1.75-2.18V22.73H11.77v2.55c0,3.41,1.36,5.59,5.19,5.59s5.36-2,5.36-5.13V20.25c0-3.54-1.82-5-3.84-5' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 280 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg6.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg6",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#29bee2;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 14'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-1.97', y: '-1.93', width: '117.83', height: '117.09' }),
+	                React.createElement('rect', { className: 'cls-2', x: '67.71', y: '22.75', width: '1.54', height: '9.14' }),
+	                React.createElement('rect', { className: 'cls-2', x: '83.32', y: '22.75', width: '1.54', height: '9.14' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M76.46,45.19A.49.49,0,0,0,76.1,45H35.55a.46.46,0,0,0-.47.54l6.81,41.2a.48.48,0,0,0,.47.4h8.36l.57,6.71H47.78L56,102.08l8.21-8.2H60.65l.57-6.7h8.51a.47.47,0,0,0,.47-.4l6.37-41.19A.48.48,0,0,0,76.46,45.19Zm-15.67,33A6.51,6.51,0,0,1,56,79.87a6.51,6.51,0,0,1-4.84-1.69c-3-3-2-6.81-.9-8.76.65-1.22,5.32-8.23,5.72-8.83v0l0,0,0,0v0c.39.6,5.07,7.61,5.72,8.83C62.75,71.37,63.83,75.14,60.79,78.18ZM73.66,53.86a5,5,0,0,0-3.83.23c-5,2-8.45,2.77-13.75,1.12-3.33-1-6.45-3.23-10.14-1.9A20.88,20.88,0,0,1,38.45,55l-1.6-8.19H74.8Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M34.25,18.52c1.63,0,2.17-1,2.17-2.28V14.67H35v1.69c0,.54-.19.89-.74.89s-.78-.39-.78-.94V11.39c0-.55.23-.94.78-.94s.74.32.74.89v1.2h1.4V11.46c0-1.35-.47-2.29-2.17-2.29A2.16,2.16,0,0,0,32,11.64v4.42a2.16,2.16,0,0,0,2.29,2.47' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M47.7,16.75h1.63l.28,1.67h1.58L49.45,9.28H47.7L46,18.42h1.46Zm.81-4.89h0l.61,3.66H47.9Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M68.28,16.75h1.63l.28,1.67h1.58L70,9.28H68.28l-1.72,9.14H68Zm.81-4.89h0l.61,3.66H68.48Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.41,14.22l1.44,4.19h1.62L84,14.26c.88-.2,1.23-.78,1.23-1.76V11.33c0-1.28-.57-2.05-2.12-2.05H80.88v9.14h1.54Zm0-3.69h.51c.52,0,.75.24.75.74v1.35a.67.67,0,0,1-.75.76h-.51Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M33.51,30.22h1.63l.28,1.67H37l-1.74-9.14H33.51l-1.72,9.14h1.46Zm.81-4.89h0l.6,3.67H33.71Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M43.2,31.89h2.37c1.64,0,2.22-1.05,2.22-2.45V25.21c0-1.41-.58-2.45-2.22-2.45H43.2ZM44.73,24h.65a.8.8,0,0,1,.87.92v4.79c0,.55-.24.93-.87.93h-.65Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M51.2,28.7v1.23A1.9,1.9,0,0,0,53.37,32a2,2,0,0,0,2.24-2.14v-.44A3.07,3.07,0,0,0,54.37,27l-1-1c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.75c.49,0,.73.26.73.78v.8h1.4v-.74c0-1.32-.61-2.08-2.14-2.08a1.91,1.91,0,0,0-2.15,2V25A3.08,3.08,0,0,0,52.5,27.4l.9.9a1.64,1.64,0,0,1,.69,1.29V30c0,.48-.21.81-.7.81s-.75-.3-.75-.81V28.7Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M57.5,31.89l.27-1.67H59.4l.28,1.67h1.58l-1.74-9.14H57.77L56,31.89Zm1.08-6.56h0L59.2,29H58Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M77.15,22.75H75.4l-1.73,9.14h1.45l.27-1.67H77l.28,1.67h1.58ZM75.6,29l.61-3.67h0L76.83,29Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M88.17,32a2.18,2.18,0,0,0,2.33-2.47V25.11a2.33,2.33,0,1,0-4.65,0v4.42A2.18,2.18,0,0,0,88.17,32m-.78-7.13c0-.55.24-.94.78-.94s.79.39.79.94v4.91c0,.55-.24.94-.79.94s-.78-.39-.78-.94Z' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '40.76 17.16 38.93 17.16 38.93 9.28 37.39 9.28 37.39 18.42 40.76 18.42 40.76 17.16' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '45.26 17.16 43.13 17.16 43.13 14.39 44.66 14.39 44.66 13.14 43.13 13.14 43.13 10.53 45.26 10.53 45.26 9.28 41.6 9.28 41.6 18.42 45.26 18.42 45.26 17.16' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '53.25 12.67 55.06 18.42 56.4 18.42 56.4 9.28 55.13 9.28 55.13 14.52 53.47 9.28 51.96 9.28 51.96 18.42 53.25 18.42 53.25 12.67' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '62.11 18.42 62.98 12.77 62.99 12.77 63.89 18.42 65.35 18.42 66.53 9.28 65.24 9.28 64.54 15.07 64.52 15.07 63.68 9.28 62.42 9.28 61.66 15.07 61.64 15.07 60.93 9.28 59.44 9.28 60.67 18.42 62.11 18.42' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '72.84 18.42 74.39 18.42 74.39 10.53 75.66 10.53 75.66 9.28 71.57 9.28 71.57 10.53 72.84 10.53 72.84 18.42' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '80.05 17.16 77.92 17.16 77.92 14.39 79.44 14.39 79.44 13.14 77.92 13.14 77.92 10.53 80.05 10.53 80.05 9.28 76.38 9.28 76.38 18.42 80.05 18.42 80.05 17.16' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '37.63 22.75 37.63 31.89 38.92 31.89 38.92 26.15 40.73 31.89 42.07 31.89 42.07 22.75 40.8 22.75 40.8 28 39.14 22.75 37.63 22.75' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '65.18 28 63.53 22.75 62.02 22.75 62.02 31.89 63.31 31.89 63.31 26.15 65.12 31.89 66.46 31.89 66.46 22.75 65.18 22.75 65.18 28' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '72.76 31.89 72.76 24.01 74.03 24.01 74.03 22.75 69.94 22.75 69.94 24.01 71.21 24.01 71.21 31.89 72.76 31.89' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '82.48 22.75 78.4 22.75 78.4 24.01 79.67 24.01 79.67 31.89 81.22 31.89 81.22 24.01 82.48 24.01 82.48 22.75' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '95.94 31.89 95.94 22.75 94.66 22.75 94.66 28 93.01 22.75 91.5 22.75 91.5 31.89 92.79 31.89 92.79 26.15 94.6 31.89 95.94 31.89' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'cls-2', d: 'M17,31.13c4,0,5.56-2.18,5.56-5.66V22.16c0-3.67-1.46-5.52-4.17-5.52a3.23,3.23,0,0,0-3.11,1.82h0V13.63c0-1.36.43-2.32,1.79-2.32s1.75.8,1.75,2.18V15h3.44V13.8c0-3.31-1.09-5.62-5.26-5.62-4,0-5.46,2.55-5.46,6.05V25.14c0,3.47,1.52,6,5.49,6M15.21,21.7c.07-1.26.6-2,1.79-2s1.79.79,1.79,2.25v3.9c0,1.42-.53,2.25-1.82,2.25s-1.75-.86-1.75-2.25Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 281 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg7.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg7",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#fac315;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 15'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-1.31', y: '-1.83', width: '116.82', height: '118.33' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M55.92,54.15A16.38,16.38,0,1,0,72.3,70.53,16.38,16.38,0,0,0,55.92,54.15m-1.21,6.47a1.22,1.22,0,0,1,2.43,0v5.62a1.22,1.22,0,0,1-2.43,0Zm1.22,18.3a8.52,8.52,0,0,1-2.53-16.66v3.17a5.58,5.58,0,1,0,5,0V62.26a8.52,8.52,0,0,1-2.52,16.66' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M37.12,70.39A1.37,1.37,0,0,0,35.86,69H28.69a1.35,1.35,0,0,0,0,2.69h7.17a1.37,1.37,0,0,0,1.26-1.35' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M84.43,70.39A1.37,1.37,0,0,0,83.18,69H76a1.35,1.35,0,0,0,0,2.69h7.17a1.37,1.37,0,0,0,1.26-1.35' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M55.93,51.58a1.37,1.37,0,0,0,1.34-1.26V43.15a1.35,1.35,0,0,0-2.69,0v7.17a1.37,1.37,0,0,0,1.35,1.26' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M55.93,98.9a1.37,1.37,0,0,0,1.34-1.26V90.47a1.35,1.35,0,0,0-2.69,0v7.17a1.37,1.37,0,0,0,1.35,1.26' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M39.6,61a1.37,1.37,0,0,0-.42-1.79L33,55.69A1.35,1.35,0,0,0,31.62,58l6.23,3.56A1.37,1.37,0,0,0,39.6,61' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M80.67,84.55a1.37,1.37,0,0,0-.42-1.79L74,79.19a1.35,1.35,0,0,0-1.34,2.34l6.23,3.56a1.37,1.37,0,0,0,1.76-.55' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M65.27,54.07a1.37,1.37,0,0,0,1.79-.42l3.56-6.23a1.35,1.35,0,0,0-2.34-1.34l-3.56,6.22a1.37,1.37,0,0,0,.55,1.76' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.77,95.13a1.37,1.37,0,0,0,1.79-.43l3.56-6.22a1.35,1.35,0,0,0-2.34-1.34l-3.56,6.23a1.37,1.37,0,0,0,.55,1.76' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M46.55,54.09a1.37,1.37,0,0,0,.54-1.76l-3.58-6.22a1.35,1.35,0,0,0-2.33,1.34l3.58,6.22a1.37,1.37,0,0,0,1.8.42' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M70.14,95.1a1.37,1.37,0,0,0,.54-1.76L67.1,87.12a1.35,1.35,0,0,0-2.33,1.34l3.58,6.22a1.37,1.37,0,0,0,1.8.42' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M72.23,61a1.37,1.37,0,0,0,1.76.54L80.21,58a1.35,1.35,0,0,0-1.34-2.34l-6.22,3.58a1.37,1.37,0,0,0-.42,1.8' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M31.22,84.6a1.37,1.37,0,0,0,1.76.54l6.22-3.58a1.35,1.35,0,0,0-1.34-2.34l-6.22,3.58a1.37,1.37,0,0,0-.42,1.8' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M31.69,18.49l1.72-9.13h1.75l1.74,9.13H35.33L35,16.82H33.42l-.27,1.67Zm1.93-2.9h1.23l-.61-3.66h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M37.47,9.36h3.6v1.25H39v2.61h1.54v1.24H39v4H37.47Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.67,9.36h3.6v1.25H43.21v2.61h1.54v1.24H43.21v4H41.67Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M45.74,16.13V11.71a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S48.86,16.93,48.86,16.37Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M52.74,14.3v4.19H51.2V9.36h2.24c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.76l1.47,4.15H54.18Zm0-3.69v2.84h.51A.66.66,0,0,0,54,12.7V11.35c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M60.91,11.81V16c0,1.4-.58,2.45-2.22,2.45H56.32V9.36h2.37C60.34,9.36,60.91,10.39,60.91,11.81ZM58.5,17.24c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M61.28,18.49,63,9.36h1.75l1.74,9.13H64.92l-.28-1.67H63l-.27,1.67Zm1.93-2.9h1.23l-.61-3.66h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M67.06,9.36h2.22c1.54,0,2,.71,2,2v.93a1.33,1.33,0,0,1-.92,1.45,1.39,1.39,0,0,1,1.15,1.52v1.21c0,1.29-.58,2-2.11,2H67.06Zm1.54,3.85h.54a.65.65,0,0,0,.73-.74V11.35a.65.65,0,0,0-.74-.74h-.53Zm0,1.17v2.86h.67a.66.66,0,0,0,.75-.74V15.12c0-.48-.23-.74-.77-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M72.26,9.36H73.8v7.88h1.83v1.25H72.26Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M76.26,9.36h3.66v1.25H77.8v2.61h1.52v1.24H77.8v2.77h2.13v1.25H76.26Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M81.79,18.49l1.72-9.13h1.75L87,18.49H85.42l-.28-1.67H83.51l-.27,1.67Zm1.93-2.9h1.23l-.61-3.66h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M88.86,12.75v5.74H87.57V9.36h1.51l1.66,5.24V9.36H92v9.13H90.66Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M97.41,11.81V16c0,1.4-.58,2.45-2.22,2.45H92.82V9.36h2.37C96.83,9.36,97.41,10.39,97.41,11.81ZM95,17.24c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M31.92,29.54v-4.4a2.14,2.14,0,0,1,2.28-2.45c1.69,0,2.16.94,2.16,2.28V26H35V24.85c0-.56-.19-.88-.74-.88s-.78.39-.78.94v4.88c0,.55.23.94.78.94s.74-.35.74-.88V28.16h1.39v1.57c0,1.3-.54,2.27-2.16,2.27A2.15,2.15,0,0,1,31.92,29.54Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M37.32,22.8h1.53v7.84h1.82v1.25H37.32Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.51,22.8h3.65V24H43v2.6h1.52v1.23H43v2.76h2.12v1.25H41.51Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M45.86,31.89l1.72-9.09h1.74l1.73,9.09H49.48l-.28-1.66H47.58l-.27,1.66ZM47.78,29H49l-.6-3.65h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M53.1,26.18v5.71H51.81V22.8h1.5L55,28V22.8h1.27v9.09H54.9Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M60.32,22.8H64V24H61.85v2.6h1.52v1.23H61.85v2.76H64v1.25H60.32Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M66.17,26.18v5.71H64.88V22.8h1.5L68,28V22.8h1.27v9.09H68Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M70.3,22.8h3.65V24H71.83v2.6h1.52v1.23H71.83v2.76h2.12v1.25H70.3Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M76.4,27.72v4.17H74.87V22.8h2.23c1.54,0,2.1.76,2.1,2V26c0,1-.35,1.55-1.22,1.76l1.46,4.13H77.83Zm0-3.67v2.83h.51a.66.66,0,0,0,.75-.75V24.78c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.47,27h2.17v4.85h-1.1v-1A1.38,1.38,0,0,1,82.08,32c-1.31,0-1.92-1-1.92-2.45v-4.4a2.15,2.15,0,0,1,2.29-2.45c1.69,0,2.19.94,2.19,2.28v.8H83.25v-.93c0-.56-.21-.88-.76-.88s-.79.39-.79.94v4.88c0,.55.23.94.75.94s.75-.28.75-.87V28.24h-.72Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M88.59,28.43v3.46H87.07V28.43l-1.7-5.63H87l.93,3.45h0l.93-3.45h1.46Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'cls-2', points: '14.63 12.21 20.45 12.21 15.42 31.55 19.16 31.55 24.09 12.6 24.09 9.13 14.63 9.13 14.63 12.21' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 282 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg8.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg8",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#a21c44;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 16'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-2.05', y: '-1.83', width: '119.92', height: '118.33' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M77.09,55,65.73,65.79a1.88,1.88,0,0,0-.65,1.62V97.7a.65.65,0,0,0,.65.65H77.46a.65.65,0,0,0,.65-.65V55.26c0-.36-.28-1-1-.27' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M44.36,69.07,33,79.87a1.88,1.88,0,0,0-.65,1.62V97.7a.65.65,0,0,0,.65.65H44.74a.65.65,0,0,0,.65-.65V69.34c0-.36-.28-1-1-.27' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.25,41.88a.32.32,0,0,0-.1-.25.34.34,0,0,0-.21-.09h-.16l-8.7,2-.16,0a.35.35,0,0,0-.17.09.33.33,0,0,0,0,.47l.1.1,2,2L55.14,65.88,46,56.78a.26.26,0,0,0-.37,0l-2.47,2.47h0L28.6,73.84a.26.26,0,0,0,0,.37l2.47,2.47a.26.26,0,0,0,.37,0L45.85,62.28l6.61,6.61,0,0L55,71.38a.26.26,0,0,0,.37,0L77.69,49l2.09,2.08a.33.33,0,0,0,.46,0,.32.32,0,0,0,.09-.21v0L82.25,42Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M60.79,71l-5.5,5.54a.26.26,0,0,1-.35,0l-5-5.08c-.91-.91-1.11-.17-1.11.19V97.7a.64.64,0,0,0,.64.65H61.23a.65.65,0,0,0,.65-.65V71.17c0-.36-.28-1-1.09-.2' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M30,22.77H33.7V24H31.57v2.61H33.1v1.24H31.57v2.77H33.7V31.9H30Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M34.38,29.55V25.13a2.15,2.15,0,0,1,2.29-2.46c1.7,0,2.17.94,2.17,2.29V26h-1.4v-1.2c0-.57-.19-.89-.74-.89s-.78.39-.78.94v4.9c0,.55.23.94.78.94s.74-.35.74-.89V28.16h1.4v1.58C38.84,31,38.3,32,36.67,32A2.16,2.16,0,0,1,34.38,29.55Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M39.67,29.55V25.13a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S42.78,30.34,42.78,29.79Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M46.49,26.17V31.9H45.2V22.77H46.7L48.36,28V22.77h1.28V31.9H48.29Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M50.52,29.55V25.13a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S53.63,30.34,53.63,29.79Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M60.27,26h0l-1,5.93h-.71L57.34,26h0V31.9H56V22.77h1.79l1,5.15h0l.89-5.15h1.94V31.9h-1.4Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M62.55,22.77h1.54V31.9H62.55Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M64.95,29.55V25.13a2.15,2.15,0,0,1,2.29-2.46c1.7,0,2.17.94,2.17,2.29V26H68v-1.2c0-.57-.19-.89-.74-.89s-.78.39-.78.94v4.9c0,.55.23.94.78.94s.74-.35.74-.89V28.16h1.4v1.58c0,1.31-.54,2.28-2.17,2.28A2.16,2.16,0,0,1,64.95,29.55Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M74.34,27h2.18V31.9h-1.1v-1A1.38,1.38,0,0,1,73.95,32C72.63,32,72,31,72,29.55V25.13a2.16,2.16,0,0,1,2.3-2.46c1.7,0,2.2.94,2.2,2.29v.81h-1.4v-.93c0-.57-.22-.89-.77-.89s-.79.39-.79.94v4.9c0,.55.23.94.75.94s.75-.28.75-.88V28.24h-.73Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M78.93,27.72V31.9H77.4V22.77h2.24c1.55,0,2.11.77,2.11,2V26c0,1-.35,1.56-1.23,1.76L82,31.9H80.37Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V24.77c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.45,29.55V25.13a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S85.56,30.34,85.56,29.79Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M91,26.26l-.86,5.64H88.73L87.5,22.77H89l.71,5.79h0l.77-5.79h1.25l.85,5.79h0l.7-5.79h1.29L93.4,31.9H91.95L91,26.26Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M95.06,22.77h4.08V24H97.88V31.9H96.33V24H95.06Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M102.63,27.88h-1.48v4H99.61V22.77h1.54v3.87h1.48V22.77h1.55V31.9h-1.55Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M34.63,11.81V16c0,1.4-.58,2.45-2.22,2.45H30V9.36h2.37C34.05,9.36,34.63,10.39,34.63,11.81Zm-2.41,5.43c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M35.6,9.36h3.66v1.25H37.14v2.61h1.52v1.24H37.14v2.77h2.13v1.25H35.6Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M40,16.13V11.71a2.15,2.15,0,0,1,2.29-2.46c1.7,0,2.17.94,2.17,2.29v1.08h-1.4v-1.2c0-.57-.19-.89-.74-.89s-.78.39-.78.94v4.9c0,.55.23.94.78.94s.74-.35.74-.89V14.74h1.4v1.58c0,1.31-.54,2.28-2.17,2.28A2.16,2.16,0,0,1,40,16.13Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M45.44,9.36H49.1v1.25H47v2.61H48.5v1.24H47v2.77H49.1v1.25H45.44Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M51.31,12.75v5.74H50V9.36h1.51l1.66,5.24V9.36h1.28v9.13H53.12Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M55.26,9.36h4.08v1.25H58.08v7.88H56.53V10.61H55.26Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M65,12.84l-.86,5.64H62.67L61.45,9.36h1.48l.71,5.79h0l.77-5.79h1.25l.85,5.79h0l.7-5.79h1.29l-1.19,9.13H65.89L65,12.84Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M69.15,16.13V11.71a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S72.26,16.93,72.26,16.37Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M76.31,14.3v4.19H74.77V9.36H77c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.76l1.47,4.15H77.75Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V11.35c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M81.59,14v4.44H80.05V9.36h1.54v4l1.67-4h1.51L83,13.46l1.82,5H83.19Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M87,18.49l1.72-9.13h1.75l1.74,9.13H90.59l-.28-1.67H88.67l-.27,1.67Zm1.93-2.9H90.1l-.61-3.66h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M94,12.75v5.74H92.68V9.36h1.51l1.66,5.24V9.36h1.28v9.13H95.77Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M102.73,11.81V16c0,1.4-.58,2.45-2.22,2.45H98.13V9.36h2.37C102.15,9.36,102.73,10.39,102.73,11.81Zm-2.41,5.43c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'cls-2', d: 'M24.21,26.29V23.85c0-2.15-.76-3.7-2.51-4.5a4,4,0,0,0,2.18-3.9v-.93c0-3.51-1.82-5.39-5.29-5.39S13.36,11,13.36,14.52v.93a4,4,0,0,0,2.12,3.9c-1.75.79-2.48,2.35-2.48,4.5v2.45c0,3.41,1.62,5.79,5.59,5.79s5.62-2.38,5.62-5.79m-7.31-12c0-1.36.46-2.15,1.69-2.15s1.72.79,1.72,2.15v1.52c0,1.36-.46,2.15-1.72,2.15s-1.69-.8-1.69-2.15Zm3.54,12.4c0,1.36-.5,2.32-1.85,2.32s-1.82-1-1.82-2.32V23.05c0-1.36.5-2.31,1.82-2.31s1.85,1,1.85,2.31Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 283 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg9.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg9",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#f26a2c;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 17'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-2.75', y: '-1.83', width: '118.29', height: '118.33' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M84.43,73.46,71.15,65.79V50.45a.91.91,0,0,0-.45-.79L57,41.74a.91.91,0,0,0-.91,0L42.31,49.67a.91.91,0,0,0-.45.79V65.79L28.58,73.46a.91.91,0,0,0-.45.78V90.11a.91.91,0,0,0,.45.79l13.74,7.93a.91.91,0,0,0,.91,0L56.5,91.16l13.28,7.67a.91.91,0,0,0,.91,0L84.43,90.9a.91.91,0,0,0,.45-.79V74.25A.91.91,0,0,0,84.43,73.46ZM55.6,88.54l-11-6.36,11-6.36ZM68.43,66.32l-11,6.36V60ZM55.6,72.68l-11-6.36L55.6,60Zm2.72,1.57,11.92-6.88,11.93,6.88L70.24,81.13Zm11-9.5-11-6.36,11-6.36ZM54.69,58.39l-11,6.36V52ZM41.86,96.47,29.94,89.59V75.82L41.86,82.7Zm1.81,0V83.75l11,6.36Zm39.4-6.88L71.15,96.47V82.7l11.93-6.89Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M26.39,9.55h1.46v8.71H26.39Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M29.75,12.78v5.47H28.51V9.55H30l1.58,5v-5h1.22v8.71H31.47Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M37.78,11.88v4c0,1.34-.55,2.34-2.12,2.34H33.4V9.55h2.26C37.22,9.55,37.78,10.54,37.78,11.88Zm-2.3,5.18c.6,0,.83-.36.83-.89V11.62a.76.76,0,0,0-.83-.87h-.62v6.32Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M42.67,9.55v6.59c0,1.35-.58,2.22-2.07,2.22a2,2,0,0,1-2.18-2.22V9.55h1.46v6.73c0,.51.21.86.72.86s.72-.35.72-.86V9.55Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M43.24,16.38V15.21H44.6v1.19c0,.49.22.77.72.77s.67-.31.67-.77v-.33a1.57,1.57,0,0,0-.65-1.23L44.47,14a2.94,2.94,0,0,1-1.22-2.32v-.3a1.82,1.82,0,0,1,2.06-1.91c1.46,0,2,.72,2,2v.71H46v-.76c0-.5-.23-.75-.69-.75a.64.64,0,0,0-.69.72v.18c0,.49.27.77.69,1.18l.94.92a2.92,2.92,0,0,1,1.18,2.26v.42a1.89,1.89,0,0,1-2.13,2A1.81,1.81,0,0,1,43.24,16.38Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M47.53,9.55h3.89v1.19H50.21v7.51H48.74V10.74H47.53Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M53.37,14.26v4H51.91V9.55H54c1.48,0,2,.73,2,2v1.12c0,.94-.33,1.49-1.17,1.68l1.4,4H54.75Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V11.45c0-.48-.22-.71-.72-.71Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M59.19,14.94v3.31H57.73V14.94L56.1,9.55h1.53l.89,3.3h0l.89-3.3h1.4Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M62.07,17l-.74,2h-.82l.18-2.08h1.39Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M63.87,9.55h1.46v8.71H63.87Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M67.23,12.78v5.47H66V9.55h1.44l1.58,5v-5h1.22v8.71H68.95Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M72.11,12.78v5.47H70.88V9.55h1.44l1.58,5v-5h1.22v8.71H73.83Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M75.76,16V11.8a2.22,2.22,0,1,1,4.43,0V16a2.22,2.22,0,1,1-4.43,0Zm3,.23V11.56c0-.53-.23-.9-.76-.9s-.75.37-.75.9v4.68c0,.53.23.9.75.9S78.73,16.77,78.73,16.24Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M85.52,9.55l-1.66,8.71H82.27L80.62,9.55h1.49l1,6.08h0l1-6.08Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M85.06,18.26l1.64-8.71h1.67L90,18.26h-1.5l-.27-1.59H86.71l-.26,1.59Zm1.84-2.76h1.17L87.49,12h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M89.63,9.55h3.89v1.19H92.32v7.51H90.84V10.74H89.63Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M94,9.55h1.46v8.71H94Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M96.14,16V11.8a2.22,2.22,0,1,1,4.43,0V16a2.22,2.22,0,1,1-4.43,0Zm3,.23V11.56c0-.53-.23-.9-.76-.9s-.75.37-.75.9v4.68c0,.53.23.9.75.9S99.1,16.77,99.1,16.24Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M102.44,12.78v5.47h-1.23V9.55h1.44l1.58,5v-5h1.22v8.71h-1.28Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M26.16,31.68,27.8,23h1.67l1.66,8.71h-1.5l-.27-1.59H27.8l-.26,1.59ZM28,28.92h1.17l-.58-3.49h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M32.9,26.21v5.47H31.67V23h1.44l1.58,5V23h1.22v8.71H34.62Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.06,25.31v4c0,1.34-.55,2.34-2.12,2.34H36.68V23h2.26C40.51,23,41.06,24,41.06,25.31Zm-2.3,5.18c.6,0,.83-.36.83-.89V25a.76.76,0,0,0-.83-.87h-.62v6.32Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M43.12,23h1.46v8.71H43.12Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M46.6,26.21v5.47H45.36V23H46.8l1.58,5V23H49.6v8.71H48.32Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M50.38,23h3.43v1.19h-2v2.49H53.3v1.18H51.84v3.84H50.38Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M55.85,27.69v4H54.38V23h2.13c1.48,0,2,.73,2,2V26c0,.94-.33,1.49-1.17,1.68l1.4,4H57.22Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V24.87c0-.48-.22-.71-.72-.71Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M59,31.68,60.68,23h1.67L64,31.68H62.5l-.27-1.59H60.68l-.26,1.59Zm1.84-2.76H62l-.58-3.49h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M64.34,29.81V28.64H65.7v1.19c0,.49.22.77.72.77s.67-.31.67-.77V29.5a1.58,1.58,0,0,0-.65-1.23l-.86-.86a2.94,2.94,0,0,1-1.22-2.32v-.3a1.82,1.82,0,0,1,2.06-1.91c1.46,0,2,.72,2,2v.71H67.12V24.8c0-.5-.23-.75-.69-.75a.64.64,0,0,0-.69.72V25c0,.49.27.77.69,1.18l.94.92a2.92,2.92,0,0,1,1.18,2.26v.42a1.89,1.89,0,0,1-2.13,2A1.81,1.81,0,0,1,64.34,29.81Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M68.89,23h3.89v1.19H71.57v7.51H70.1V24.17H68.89Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M74.86,27.69v4H73.4V23h2.13c1.48,0,2,.73,2,2V26c0,.94-.33,1.49-1.17,1.68l1.4,4H76.24Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V24.87c0-.48-.22-.71-.72-.71Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.53,23v6.59c0,1.35-.58,2.22-2.07,2.22a2,2,0,0,1-2.18-2.22V23h1.46V29.7c0,.51.21.86.72.86s.72-.35.72-.86V23Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M83.31,29.43V25.22a2.05,2.05,0,0,1,2.18-2.35c1.62,0,2.07.9,2.07,2.18v1H86.22V24.94c0-.54-.18-.85-.71-.85s-.75.37-.75.9v4.68c0,.53.22.9.75.9s.71-.33.71-.85V28.11h1.34v1.5c0,1.25-.51,2.17-2.07,2.17A2.06,2.06,0,0,1,83.31,29.43Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M87.8,23h3.89v1.19H90.49v7.51H89V24.17H87.8Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M96.56,23v6.59c0,1.35-.58,2.22-2.07,2.22a2,2,0,0,1-2.18-2.22V23h1.46V29.7c0,.51.21.86.72.86s.72-.35.72-.86V23Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M98.8,27.69v4H97.34V23h2.13c1.48,0,2,.73,2,2V26c0,.94-.33,1.49-1.17,1.68l1.4,4h-1.54Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V24.87c0-.48-.22-.71-.72-.71Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M102.22,23h3.49v1.19h-2v2.49h1.45v1.18h-1.45v2.65h2v1.19h-3.49Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'cls-2', d: 'M22.35,15.11c0-3.47-1.52-6-5.49-6s-5.55,2.18-5.55,5.65v3.31c0,3.67,1.45,5.52,4.17,5.52a3.22,3.22,0,0,0,3.11-1.82h0v4.82c0,1.36-.53,2.31-1.88,2.31s-1.85-.79-1.85-2.18V25.26H11.44v1.19c0,3.3,1.19,5.62,5.36,5.62,4,0,5.55-2.55,5.55-6Zm-3.74,3.44c-.07,1.26-.59,2-1.78,2S15,19.81,15,18.35v-3.9c0-1.42.53-2.25,1.82-2.25s1.75.86,1.75,2.25Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 284 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg10.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg10",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#dd1768;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 18'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-2.55', y: '-1.83', width: '118.82', height: '118.33' }),
+	                React.createElement('rect', { className: 'cls-2', x: '35.67', y: '22.62', width: '1.56', height: '9.28' }),
+	                React.createElement('rect', { className: 'cls-2', x: '68.62', y: '22.62', width: '1.56', height: '9.28' }),
+	                React.createElement('rect', { className: 'cls-2', x: '75.75', y: '22.62', width: '1.56', height: '9.28' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M67.42,73.83H45.08a.24.24,0,0,0-.24.24v5.06a.24.24,0,0,0,.24.24H67.42a.24.24,0,0,0,.25-.24V74.07a.24.24,0,0,0-.25-.24' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M67.67,64.56a.24.24,0,0,0-.25-.24H45.08a.24.24,0,0,0-.24.24v5.06a.24.24,0,0,0,.24.24H67.42a.24.24,0,0,0,.25-.24Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M80.59,66.54a25.82,25.82,0,0,0-4.79-9.77l-.05,0a24.15,24.15,0,0,1,1.91,3.39A23.72,23.72,0,0,1,37.59,85.41a22.39,22.39,0,0,1,32.5-30.52l.14.13a.84.84,0,0,0,.51.19A.86.86,0,0,0,71.3,55l.09-.09,2.84-2.81.19-.18a.82.82,0,0,0,0-1.08l-.09-.08A27.51,27.51,0,1,0,38.94,92.86,26,26,0,0,0,80.59,66.54' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M37.23,14.36l1.46,4.26h1.64L38.85,14.4c.89-.2,1.25-.79,1.25-1.79V11.42c0-1.3-.58-2.08-2.15-2.08H35.67v9.28h1.56Zm0-3.75h.52c.54,0,.77.25.77.75v1.37a.68.68,0,0,1-.77.77h-.52Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M48.19,9.34H45.78v9.28h2.41c1.67,0,2.26-1.07,2.26-2.49v-4.3c0-1.44-.59-2.49-2.26-2.49m.7,7.06c0,.56-.25.94-.89.94h-.66V10.61H48a.81.81,0,0,1,.89.93Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M53,9.34H51.47v7a2.09,2.09,0,0,0,2.33,2.37c1.59,0,2.2-.93,2.2-2.37v-7H54.56v7.17c0,.55-.22.92-.77.92s-.76-.37-.76-.92Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M57,11.74v4.49a2.2,2.2,0,0,0,2.33,2.51c1.66,0,2.2-1,2.2-2.31v-1.6H60.14v1.71c0,.55-.19.9-.75.9s-.79-.4-.79-1v-5c0-.56.23-1,.79-1s.75.33.75.9v1.22h1.42V11.56c0-1.37-.48-2.33-2.2-2.33A2.19,2.19,0,0,0,57,11.74' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M67.24,9.34v9.28h2.41c1.67,0,2.26-1.07,2.26-2.49v-4.3c0-1.44-.59-2.49-2.26-2.49Zm3.11,2.2V16.4c0,.56-.25.94-.89.94H68.8V10.61h.66a.81.81,0,0,1,.89.93' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M50.29,22.51A2.21,2.21,0,0,0,47.94,25V29.5a2.14,2.14,0,0,0,1.78,2.4v.63l2.94.55V31.91l-1.15-.22a2.23,2.23,0,0,0,1.15-2.19V25a2.21,2.21,0,0,0-2.37-2.5m.81,7.32c0,.55-.25,1-.81,1s-.79-.41-.79-1V24.77c0-.56.25-1,.79-1s.81.4.81,1Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M53.54,22.62v7A2.09,2.09,0,0,0,55.86,32c1.59,0,2.2-.93,2.2-2.37v-7H56.63v7.17c0,.55-.22.92-.77.92s-.77-.37-.77-.92V22.62Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M60.32,22.62,58.57,31.9h1.48l.27-1.7H62l.29,1.7h1.6L62.1,22.62ZM60.53,29l.62-3.72h0L61.77,29Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.54,28.66V29.9A1.93,1.93,0,0,0,84.74,32,2,2,0,0,0,87,29.83v-.45A3.12,3.12,0,0,0,85.76,27l-1-1c-.45-.44-.74-.74-.74-1.26v-.19a.68.68,0,0,1,.74-.77c.49,0,.74.26.74.79v.81h1.42v-.75c0-1.34-.62-2.11-2.18-2.11a1.94,1.94,0,0,0-2.19,2v.32a3.12,3.12,0,0,0,1.3,2.48l.92.92a1.67,1.67,0,0,1,.7,1.31v.36c0,.49-.22.82-.71.82s-.77-.3-.77-.82V28.66Z' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '44.8 17.35 42.64 17.35 42.64 14.53 44.19 14.53 44.19 13.27 42.64 13.27 42.64 10.61 44.8 10.61 44.8 9.34 41.08 9.34 41.08 18.62 44.8 18.62 44.8 17.35' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '62.55 18.62 66.27 18.62 66.27 17.35 64.11 17.35 64.11 14.53 65.65 14.53 65.65 13.27 64.11 13.27 64.11 10.61 66.27 10.61 66.27 9.34 62.55 9.34 62.55 18.62' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '42.77 22.62 41.47 22.62 41.47 27.94 39.78 22.62 38.25 22.62 38.25 31.9 39.56 31.9 39.56 26.07 41.4 31.9 42.77 31.9 42.77 22.62' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '47.37 23.89 47.37 22.62 43.64 22.62 43.64 31.9 47.37 31.9 47.37 30.63 45.2 30.63 45.2 27.81 46.75 27.81 46.75 26.55 45.2 26.55 45.2 23.89 47.37 23.89' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '64.5 22.62 64.5 31.9 67.92 31.9 67.92 30.63 66.06 30.63 66.06 22.62 64.5 22.62' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '73.75 31.9 73.75 23.89 75.04 23.89 75.04 22.62 70.89 22.62 70.89 23.89 72.18 23.89 72.18 31.9 73.75 31.9' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '81.92 30.63 79.76 30.63 79.76 27.81 81.31 27.81 81.31 26.55 79.76 26.55 79.76 23.89 81.92 23.89 81.92 22.62 78.2 22.62 78.2 31.9 81.92 31.9 81.92 30.63' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'cls-2', points: '12.1 14.66 12.1 31.84 15.87 31.84 15.87 9.39 12.86 9.39 9.38 13.47 9.38 17.41 9.42 17.41 12.06 14.66 12.1 14.66' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M29.64,26V15.19c0-3.51-1.75-6.06-5.59-6.06s-5.56,2.55-5.56,6.06V26c0,3.47,1.76,6.06,5.56,6.06s5.59-2.58,5.59-6.06m-7.38.6V14.59c0-1.36.5-2.32,1.79-2.32s1.82,1,1.82,2.32V26.64C25.87,28,25.37,29,24,29s-1.79-1-1.79-2.32' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 285 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg11.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg11",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#f99d28;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 19'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-1.23', y: '-1.83', width: '117.51', height: '118.33' }),
+	                React.createElement('rect', { className: 'cls-2', x: '77.14', y: '77.78', width: '17.45', height: '4.03', rx: '0.34', ry: '0.34' }),
+	                React.createElement('rect', { className: 'cls-2', x: '55.25', y: '9.35', width: '1.54', height: '9.14' }),
+	                React.createElement('rect', { className: 'cls-2', x: '88.8', y: '9.35', width: '1.53', height: '9.14' }),
+	                React.createElement('rect', { className: 'cls-2', x: '95.61', y: '9.35', width: '1.53', height: '9.14' }),
+	                React.createElement('rect', { className: 'cls-2', x: '84.45', y: '22.76', width: '1.54', height: '9.14' }),
+	                React.createElement('rect', { className: 'cls-2', x: '91.75', y: '22.76', width: '1.54', height: '9.14' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M19.23,85.09H36a.41.41,0,0,0,.3-.69l0,0L28,73.55l-.08-.09a.41.41,0,0,0-.3-.13.42.42,0,0,0-.27.11l-.05.06-.08.09L19,84.29l-.13.15a.41.41,0,0,0-.07.23A.41.41,0,0,0,19.23,85.09Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M36,86.61H19.14a.41.41,0,0,0-.41.41v13.18a.41.41,0,0,0,.41.41h5.42V92.33a.41.41,0,0,1,.41-.41h5a.41.41,0,0,1,.41.41v8.29H36a.41.41,0,0,0,.41-.41V87A.41.41,0,0,0,36,86.61Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M94.21,83.16H77.53a.4.4,0,0,0-.41.4V100.4a.4.4,0,0,0,.41.4H94.21a.4.4,0,0,0,.41-.4V83.56a.4.4,0,0,0-.41-.4m-9.12,11a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Zm0-5.59a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Zm7.61,5.59a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Zm0-5.59a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M55.45,44.09H39.13a.4.4,0,0,0-.4.4v55.76a.4.4,0,0,0,.4.4H55.45a.4.4,0,0,0,.4-.4V44.49a.4.4,0,0,0-.4-.4M45.74,94.29a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V90.13a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V80.57a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V71a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V61.45a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V51.89a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm7.33,38.24a.22.22,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V90.13a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Zm0-9.56a.21.21,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V80.57a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Zm0-9.56a.22.22,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V71a.21.21,0,0,1,.21-.21h3.73a.22.22,0,0,1,.22.21Zm0-9.56a.22.22,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V61.45a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Zm0-9.56a.21.21,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V51.89a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M75.16,54.62a.43.43,0,0,0-.41-.31.42.42,0,0,0-.23.08l0,0-.14.17-16,20.34-.07.1a.46.46,0,0,0-.14.32v25a.4.4,0,0,0,.4.4H74.8a.4.4,0,0,0,.4-.4V54.78A.4.4,0,0,0,75.16,54.62Zm-6.75,11,.11-.14c1.1-1.41,2.95-3.68,3.85-4.79l.12-.14a.47.47,0,0,1,.36-.17.46.46,0,0,1,.44.37v5.15a.46.46,0,0,1-.44.46H68.76a.46.46,0,0,1-.35-.73ZM65.87,94.15a.4.4,0,0,1-.4.4H60.61a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4h4.86a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H60.61a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4h4.86a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H60.61a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4h4.86a.4.4,0,0,1,.4.4Zm0-12.33v6.71a.4.4,0,0,1-.4.4H60.62a.4.4,0,0,1-.4-.4v-.84a.45.45,0,0,1,0-.15l0,0,0-.05,0-.06c.62-.89,3.43-4.34,4.6-5.79l.12-.14a.47.47,0,0,1,.36-.17.46.46,0,0,1,.44.37ZM73.3,94.15a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.63a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.63a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M32.7,18.6a2,2,0,0,0,2.24-2.14V16a3.07,3.07,0,0,0-1.24-2.37l-1-1c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.76c.48,0,.73.26.73.78v.79h1.4v-.74c0-1.32-.6-2.08-2.14-2.08a1.91,1.91,0,0,0-2.16,2v.31A3.08,3.08,0,0,0,31.82,14l.9.9a1.65,1.65,0,0,1,.69,1.29v.35c0,.49-.22.81-.7.81s-.75-.3-.75-.81V15.3H30.53v1.23A1.9,1.9,0,0,0,32.7,18.6' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M40.06,16.27V9.35H38.65v7.06c0,.54-.22.9-.76.9s-.75-.36-.75-.9V9.35H35.6v6.92a2.06,2.06,0,0,0,2.29,2.33c1.56,0,2.17-.92,2.17-2.33' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M45.25,16.45V16A3.08,3.08,0,0,0,44,13.64l-1-1c-.44-.43-.73-.73-.73-1.24v-.19a.68.68,0,0,1,.73-.76c.49,0,.73.25.73.78v.79h1.4v-.74c0-1.32-.6-2.08-2.14-2.08a1.91,1.91,0,0,0-2.16,2v.31A3.08,3.08,0,0,0,42.14,14l.9.9a1.65,1.65,0,0,1,.69,1.29v.35c0,.48-.21.81-.7.81s-.75-.3-.75-.81V15.3H40.85v1.23A1.9,1.9,0,0,0,43,18.6a2,2,0,0,0,2.24-2.14' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M52.89,9.35H51.14l-1.72,9.14h1.46l.27-1.67h1.63l.28,1.67h1.58Zm-1.55,6.24.6-3.67h0l.61,3.67Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M64.33,16.82H66l.28,1.67h1.58L66.08,9.35H64.33L62.6,18.49h1.46Zm.81-4.89h0l.61,3.67H64.53Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M72.58,12.29v-.93c0-1.29-.51-2-2-2H68.31v9.14H70.7c1.54,0,2.11-.71,2.11-2V15.27a1.39,1.39,0,0,0-1.14-1.52,1.33,1.33,0,0,0,.92-1.46m-2.73-1.68h.53a.65.65,0,0,1,.74.74v1.12a.65.65,0,0,1-.73.74h-.54Zm1.43,5.89a.66.66,0,0,1-.75.74h-.67V14.38h.66c.54,0,.77.26.77.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M85.91,18.6c1.63,0,2.17-1,2.17-2.28V14.74h-1.4v1.69c0,.54-.19.89-.74.89s-.78-.39-.78-.94V11.47c0-.55.23-.94.78-.94s.74.32.74.89v1.2h1.4V11.54c0-1.35-.47-2.29-2.17-2.29a2.16,2.16,0,0,0-2.29,2.47v4.42a2.16,2.16,0,0,0,2.29,2.47' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M104.2,12.67c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.76c.49,0,.73.26.73.78v.79h1.4v-.74c0-1.32-.61-2.08-2.14-2.08a1.9,1.9,0,0,0-2.15,2v.31A3.08,3.08,0,0,0,103.31,14l.9.9a1.64,1.64,0,0,1,.69,1.29v.35c0,.49-.21.81-.7.81s-.75-.3-.75-.81V15.3H102v1.23a1.9,1.9,0,0,0,2.17,2.08,2,2,0,0,0,2.24-2.14V16a3.08,3.08,0,0,0-1.24-2.37Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M32.28,22.77,30.55,31.9H32l.27-1.67h1.63l.28,1.67h1.58L34,22.77Zm.2,6.24.6-3.67h0L33.7,29Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M44.36,22.76H42V31.9h2.37c1.64,0,2.22-1.05,2.22-2.45V25.22c0-1.41-.58-2.45-2.22-2.45m.69,7c0,.55-.24.93-.87.93h-.65V24h.65a.8.8,0,0,1,.87.92Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M51.44,22.66a2.16,2.16,0,0,0-2.29,2.47v4.42A2.16,2.16,0,0,0,51.44,32c1.63,0,2.17-1,2.17-2.28V28.16H52.2v1.68c0,.54-.19.89-.74.89s-.78-.39-.78-.94V24.88c0-.55.23-.94.78-.94s.74.32.74.89V26h1.4V24.95c0-1.35-.47-2.29-2.17-2.29' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M56.9,22.66a2.17,2.17,0,0,0-2.32,2.47v4.42a2.33,2.33,0,1,0,4.65,0V25.12a2.18,2.18,0,0,0-2.33-2.47m.79,7.13c0,.55-.24.94-.79.94s-.78-.39-.78-.94V24.88c0-.55.24-.94.78-.94s.79.39.79.94Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M76.57,29.83c0,.54-.21.9-.75.9s-.75-.36-.75-.9V22.77H73.52v6.91A2.06,2.06,0,0,0,75.81,32c1.56,0,2.17-.92,2.17-2.33V22.77H76.57Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M101,26.08c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.75c.49,0,.73.26.73.78v.8h1.4v-.74c0-1.32-.61-2.08-2.14-2.08a1.91,1.91,0,0,0-2.16,2V25a3.08,3.08,0,0,0,1.28,2.44l.9.9a1.65,1.65,0,0,1,.69,1.29V30c0,.48-.22.81-.7.81s-.75-.3-.75-.81V28.71H98.78v1.23A1.9,1.9,0,0,0,100.95,32a2,2,0,0,0,2.24-2.14v-.45a3.07,3.07,0,0,0-1.24-2.37Z' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '49.7 9.35 45.62 9.35 45.62 10.61 46.89 10.61 46.89 18.49 48.44 18.49 48.44 10.61 49.7 10.61 49.7 9.35' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '62.11 18.49 62.11 9.35 60.83 9.35 60.83 14.59 59.17 9.35 57.66 9.35 57.66 18.49 58.95 18.49 58.95 12.75 60.76 18.49 62.11 18.49' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '74.98 9.35 73.44 9.35 73.44 18.49 76.81 18.49 76.81 17.24 74.98 17.24 74.98 9.35' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '81.04 10.61 81.04 9.35 77.37 9.35 77.37 18.49 81.04 18.49 81.04 17.24 78.91 17.24 78.91 14.46 80.43 14.46 80.43 13.22 78.91 13.22 78.91 10.61 81.04 10.61' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '93.74 18.49 93.74 10.61 95 10.61 95 9.35 90.92 9.35 90.92 10.61 92.19 10.61 92.19 18.49 93.74 18.49' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '97.93 18.49 101.59 18.49 101.59 17.24 99.47 17.24 99.47 14.46 100.99 14.46 100.99 13.22 99.47 13.22 99.47 10.61 101.59 10.61 101.59 9.35 97.93 9.35 97.93 18.49' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '39.7 28.01 38.04 22.77 36.53 22.77 36.53 31.9 37.83 31.9 37.83 26.16 39.63 31.9 40.98 31.9 40.98 22.77 39.7 22.77 39.7 28.01' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '63.04 27.91 63.02 27.91 62.03 22.76 60.24 22.76 60.24 31.9 61.5 31.9 61.5 25.97 61.53 25.97 62.67 31.9 63.39 31.9 64.42 25.97 64.47 25.97 64.47 31.9 65.87 31.9 65.87 22.76 63.93 22.76 63.04 27.91' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '69.68 27.91 69.67 27.91 68.67 22.76 66.88 22.76 66.88 31.9 68.15 31.9 68.15 25.97 68.17 25.97 69.32 31.9 70.03 31.9 71.07 25.97 71.11 25.97 71.11 31.9 72.51 31.9 72.51 22.76 70.57 22.76 69.68 27.91' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '82.16 28.01 80.5 22.77 78.99 22.77 78.99 31.9 80.29 31.9 80.29 26.16 82.09 31.9 83.44 31.9 83.44 22.77 82.16 22.77 82.16 28.01' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '86.82 24.02 88.09 24.02 88.09 31.9 89.64 31.9 89.64 24.02 90.91 24.02 90.91 22.76 86.82 22.76 86.82 24.02' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '94.32 31.9 97.98 31.9 97.98 30.65 95.85 30.65 95.85 27.87 97.38 27.87 97.38 26.63 95.85 26.63 95.85 24.02 97.98 24.02 97.98 22.76 94.32 22.76 94.32 31.9' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'cls-2', points: '8.72 13.2 8.72 17.13 8.75 17.13 11.4 14.39 11.43 14.39 11.43 31.55 15.2 31.55 15.2 9.13 12.19 9.13 8.72 13.2' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '17.32 13.2 17.32 17.13 17.35 17.13 20 14.39 20.03 14.39 20.03 31.55 23.8 31.55 23.8 9.13 20.79 9.13 17.32 13.2' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 286 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg12.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg12",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#be8b2c;}.cls-2{fill:#fff;}.cls-3{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.73px;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 20'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-1.55', y: '-1.83', width: '117.41', height: '118.33' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M84.26,57.95A18.33,18.33,0,0,0,70.4,54.54l-.28.06c-2.76.65-7.15,1.73-12.29,8.11l-.09.11-.07.08a.42.42,0,0,0,0,.46l.12.2c.65,1.08,1.46,2.47,2.15,3.75l0,0a.44.44,0,0,0,.39.24.43.43,0,0,0,.3-.12l.09-.13c4.56-6.31,8.15-7.18,10.57-7.75l.29-.07A13.28,13.28,0,0,1,81.09,62c2.7,2.13,4.07,5.52,4.07,10.07,0,7.64-3.71,10.62-6.83,11.79a12.74,12.74,0,0,1-9.49-.63l-.21-.1C66,81.94,62,79.54,58.29,72.05c-7.52-15.1-13.81-16.52-18-17.47l-.22,0a18,18,0,0,0-13.65,3.4c-2.7,2.16-5.92,6.35-5.92,14.07,0,4.71,1,7.81,3.45,11.08.54.74,6.11,7.9,16.88,5.84a16.17,16.17,0,0,0,6.62-3.08L49.85,88a.39.39,0,0,0,.54,0,.36.36,0,0,0,.09-.26v0L52.2,77.15V77a.38.38,0,0,0-.13-.28.35.35,0,0,0-.25-.09h-.18L41.56,79.49l-.18,0a.35.35,0,0,0-.19.11.38.38,0,0,0,0,.55l.12.11,2.26,2a10.51,10.51,0,0,1-3.7,1.56c-7.79,1.49-11.63-3.62-11.78-3.82L28.06,80c-1.81-2.38-2.42-4.4-2.42-8,0-4.57,1.34-8,4-10.07A12.89,12.89,0,0,1,39,59.52l.23.05c3.41.77,8.08,1.83,14.52,14.76C57,81,61.24,85.43,66.51,87.74a18.61,18.61,0,0,0,8,1.86,16,16,0,0,0,5.59-1c3.05-1.14,10.16-5,10.16-16.58,0-7.72-3.27-11.92-6-14.08' }),
+	                React.createElement('path', { className: 'cls-3', d: 'M84.26,57.95A18.33,18.33,0,0,0,70.4,54.54l-.28.06c-2.76.65-7.15,1.73-12.29,8.11l-.09.11-.07.08a.42.42,0,0,0,0,.46l.12.2c.65,1.08,1.46,2.47,2.15,3.75l0,0a.44.44,0,0,0,.39.24.43.43,0,0,0,.3-.12l.09-.13c4.56-6.31,8.15-7.18,10.57-7.75l.29-.07A13.28,13.28,0,0,1,81.09,62c2.7,2.13,4.07,5.52,4.07,10.07,0,7.64-3.71,10.62-6.83,11.79a12.74,12.74,0,0,1-9.49-.63l-.21-.1C66,81.94,62,79.54,58.29,72.05c-7.52-15.1-13.81-16.52-18-17.47l-.22,0a18,18,0,0,0-13.65,3.4c-2.7,2.16-5.92,6.35-5.92,14.07,0,4.71,1,7.81,3.45,11.08.54.74,6.11,7.9,16.88,5.84a16.17,16.17,0,0,0,6.62-3.08L49.85,88a.39.39,0,0,0,.54,0,.36.36,0,0,0,.09-.26v0L52.2,77.15V77a.38.38,0,0,0-.13-.28.35.35,0,0,0-.25-.09h-.18L41.56,79.49l-.18,0a.35.35,0,0,0-.19.11.38.38,0,0,0,0,.55l.12.11,2.26,2a10.51,10.51,0,0,1-3.7,1.56c-7.79,1.49-11.63-3.62-11.78-3.82L28.06,80c-1.81-2.38-2.42-4.4-2.42-8,0-4.57,1.34-8,4-10.07A12.89,12.89,0,0,1,39,59.52l.23.05c3.41.77,8.08,1.83,14.52,14.76C57,81,61.24,85.43,66.51,87.74a18.61,18.61,0,0,0,8,1.86,16,16,0,0,0,5.59-1c3.05-1.14,10.16-5,10.16-16.58,0-7.72-3.27-11.92-6-14.08' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M37.54,14.48v4.32H36V9.38h2.3c1.6,0,2.18.79,2.18,2.11V12.7c0,1-.36,1.61-1.26,1.82l1.51,4.28H39Zm0-3.8V13.6h.53a.69.69,0,0,0,.78-.78V11.44c0-.51-.24-.76-.78-.76Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.11,9.38h3.78v1.29H42.69v2.69h1.57v1.28H42.69V17.5h2.19v1.29H41.11Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M45.38,16.77V15.5h1.47V16.8c0,.53.24.83.78.83s.72-.33.72-.83v-.36a1.7,1.7,0,0,0-.71-1.33l-.93-.93a3.17,3.17,0,0,1-1.32-2.51v-.32a2,2,0,0,1,2.22-2.07c1.58,0,2.21.78,2.21,2.14v.76H48.38v-.82c0-.54-.25-.81-.75-.81a.69.69,0,0,0-.75.78v.19c0,.53.29.83.75,1.28l1,1a3.16,3.16,0,0,1,1.28,2.44v.46a2,2,0,0,1-2.3,2.21A2,2,0,0,1,45.38,16.77Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M50.56,9.38H52.9c1.6,0,2.18.79,2.18,2.11v2c0,1.32-.58,2.12-2.18,2.12h-.76v3.19H50.56Zm1.58,1.29v3.71h.58a.68.68,0,0,0,.78-.78V11.44c0-.51-.24-.76-.78-.76Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M55.71,16.36V11.81a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V11.56c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S58.92,17.18,58.92,16.61Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M62.54,12.88v5.91H61.2V9.38h1.55l1.71,5.4V9.38h1.32v9.41H64.4Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M66.41,16.77V15.5h1.47V16.8c0,.53.24.83.78.83s.72-.33.72-.83v-.36a1.7,1.7,0,0,0-.71-1.33l-.93-.93a3.17,3.17,0,0,1-1.32-2.51v-.32a2,2,0,0,1,2.22-2.07c1.58,0,2.21.78,2.21,2.14v.76H69.41v-.82c0-.54-.25-.81-.75-.81a.69.69,0,0,0-.75.78v.19c0,.53.29.83.75,1.28l1,1a3.16,3.16,0,0,1,1.28,2.44v.46a2,2,0,0,1-2.31,2.21A2,2,0,0,1,66.41,16.77Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M71.59,9.38h1.58v9.41H71.59Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M73.89,9.38h2.29c1.58,0,2.11.74,2.11,2.07v1a1.37,1.37,0,0,1-.94,1.5,1.43,1.43,0,0,1,1.18,1.57v1.25c0,1.33-.6,2.07-2.18,2.07H73.89Zm1.58,4H76a.67.67,0,0,0,.75-.76V11.44a.67.67,0,0,0-.76-.76h-.54Zm0,1.21V17.5h.69a.68.68,0,0,0,.78-.76V15.32c0-.5-.24-.76-.79-.76Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M79.12,9.38h1.58V17.5h1.89v1.29H79.12Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M83.12,9.38H86.9v1.29H84.7v2.69h1.57v1.28H84.7V17.5H86.9v1.29H83.12Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M36,29.55V25c0-1.47.69-2.54,2.36-2.54s2.24,1,2.24,2.36v1.11H39.11V24.69c0-.58-.19-.92-.76-.92s-.81.4-.81,1V29.8c0,.57.24,1,.81,1s.76-.36.76-.92V28.12h1.44v1.62c0,1.35-.56,2.35-2.24,2.35A2.23,2.23,0,0,1,36,29.55Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.22,29.55V25A2.4,2.4,0,1,1,46,25v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V24.75c0-.57-.25-1-.82-1s-.81.4-.81,1V29.8c0,.57.25,1,.81,1S44.42,30.37,44.42,29.8Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M48,26.07V32H46.71V22.57h1.55L50,28v-5.4h1.32V32H49.91Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M51.92,30V28.69h1.47V30c0,.53.24.83.78.83s.72-.33.72-.83v-.36a1.7,1.7,0,0,0-.71-1.33l-.93-.93a3.17,3.17,0,0,1-1.32-2.51v-.32a2,2,0,0,1,2.22-2.07c1.58,0,2.21.78,2.21,2.14v.76H54.92v-.82c0-.54-.25-.81-.75-.81a.69.69,0,0,0-.75.78v.19c0,.53.29.83.75,1.28l1,1a3.16,3.16,0,0,1,1.28,2.44v.46a2,2,0,0,1-2.3,2.21A2,2,0,0,1,51.92,30Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M61.69,22.57v7.12c0,1.46-.62,2.4-2.24,2.4a2.12,2.12,0,0,1-2.36-2.4V22.57h1.58v7.27c0,.56.22.93.78.93s.78-.37.78-.93V22.57Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M66.76,25.87h0L65.65,32h-.74l-1.18-6.11h0V32H62.4V22.57h1.85l1,5.3h0l.92-5.3h2V32H66.76Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M68.91,22.57h2.35c1.6,0,2.18.79,2.18,2.11v2c0,1.32-.58,2.12-2.18,2.12h-.76V32H68.91Zm1.58,1.29v3.71h.58a.68.68,0,0,0,.78-.78V24.62c0-.51-.24-.76-.78-.76Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M73.81,22.57H78v1.29H76.71V32h-1.6V23.86h-1.3Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M78.55,22.57h1.58V32H78.55Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M80.86,29.55V25a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V24.75c0-.57-.25-1-.82-1s-.81.4-.81,1V29.8c0,.57.25,1,.81,1S84.06,30.37,84.06,29.8Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M87.69,26.07V32H86.35V22.57h1.55L89.62,28v-5.4h1.32V32H89.55Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M35.71,45.17l1.78-9.41h1.8l1.79,9.41H39.45l-.29-1.72H37.48l-.28,1.72Zm2-3H39l-.62-3.78h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M42.87,39.25v5.91H41.54V35.75h1.55l1.71,5.4v-5.4h1.32v9.41H44.73Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M51.56,38.28v4.36c0,1.44-.6,2.53-2.29,2.53H46.82V35.75h2.44C51,35.75,51.56,36.82,51.56,38.28Zm-2.48,5.6c.65,0,.9-.39.9-1V38a.82.82,0,0,0-.9-.94h-.67v6.83Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M53.53,35.75h2.35c1.6,0,2.18.79,2.18,2.11v2c0,1.32-.58,2.12-2.18,2.12h-.76v3.19H53.53ZM55.11,37v3.71h.58a.68.68,0,0,0,.78-.78V37.81c0-.51-.24-.76-.78-.76Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M60.26,40.85v4.32H58.68V35.75H61c1.6,0,2.18.79,2.18,2.11v1.21c0,1-.36,1.61-1.26,1.82l1.51,4.28H61.74Zm0-3.8V40h.53a.69.69,0,0,0,.78-.78V37.81c0-.51-.24-.76-.78-.76Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M63.83,42.74V38.18a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0ZM67,43V37.93c0-.57-.25-1-.82-1s-.81.4-.81,1V43c0,.57.25,1,.81,1S67,43.56,67,43Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M74.06,38.28v4.36c0,1.44-.6,2.53-2.29,2.53H69.32V35.75h2.44C73.46,35.75,74.06,36.82,74.06,38.28Zm-2.48,5.6c.65,0,.9-.39.9-1V38a.82.82,0,0,0-.9-.94h-.67v6.83Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M79.36,35.75v7.12c0,1.46-.62,2.4-2.24,2.4a2.12,2.12,0,0,1-2.36-2.4V35.75h1.58V43c0,.56.22.93.78.93s.78-.37.78-.93V35.75Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M80.07,42.74V38.18c0-1.47.69-2.54,2.36-2.54s2.24,1,2.24,2.36v1.11H83.22V37.88c0-.58-.19-.92-.76-.92s-.81.4-.81,1V43c0,.57.24,1,.81,1s.76-.36.76-.92V41.31h1.44v1.62c0,1.35-.56,2.35-2.24,2.35A2.23,2.23,0,0,1,80.07,42.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M85,35.75h4.21V37H87.91v8.12h-1.6V37H85Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M89.75,35.75h1.58v9.41H89.75Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M92.06,42.74V38.18a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V37.93c0-.57-.25-1-.82-1s-.81.4-.81,1V43c0,.57.25,1,.81,1S95.27,43.56,95.27,43Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M98.89,39.25v5.91H97.55V35.75h1.55l1.71,5.4v-5.4h1.32v9.41h-1.39Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'cls-2', points: '11.23 14.68 11.26 14.68 11.26 31.91 15.05 31.91 15.05 9.39 12.03 9.39 8.54 13.48 8.54 17.43 8.57 17.43 11.23 14.68' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M17.31,14v2.72h3.45V13.94c0-1.36.67-1.76,1.46-1.76s1.36.3,1.36,1.69v1.86c0,1.86-.17,2.59-1.4,3.89l-2.12,2.26c-2.06,2.19-2.82,3.65-2.82,5.88v4.15h9.83V28.82H20.86V27.76a4.3,4.3,0,0,1,1.59-3.45l2.42-2.56c2-2.09,2.39-3.42,2.39-5.68V13.88c0-3.22-1.56-4.75-4.95-4.75s-5,1.76-5,4.92' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 287 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg13.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg13",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#417f45;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 21'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-1.92', y: '-3.3', width: '116.31', height: '119.24' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M97.74,70a51.12,51.12,0,0,0-82,0l-.32.46.32.46a51.12,51.12,0,0,0,82,0c.13-.18.23-.33.32-.46L97.74,70M42.9,59.78c.22-.33,1-1.26,1.05-1.38a1.32,1.32,0,0,1,.83-.34c.26-.05.61.1.66.29a2.3,2.3,0,0,1-.23,1.1,2.86,2.86,0,0,1-1.83.83c-.4-.06-.56-.37-.48-.49M42,61.54l.09-.1a2.31,2.31,0,0,1,1.36-.5c.43-.07,1,.14,1.07.43s-1.08.8-1.29,1c-.6.55-1.53,1.67-2.07,1.79a.65.65,0,0,1-.45,0A17.08,17.08,0,0,1,42,61.54m9.27,19a4.91,4.91,0,0,1-1.06,2.21,3.57,3.57,0,0,1-2.35.9c-.78-.06-.89-2.15-.89-3.23,0-.37-.53.73-.8-1.51-.18-1.43-1.1.15-1.16-.81s-.53-.76-1-1.36-1.08.06-1.75.36-.39.45-1.34.15l-.06,0a17.19,17.19,0,0,1-1.36-6.71c0-.58,0-1.16.09-1.72a1,1,0,0,1,.11-.16c.91-1.08.89-1.33.89-1.33l1-.35a16.87,16.87,0,0,1,2.83.71c1,.38,2.57,1.22,3.49.85.66-.27,1.18-.63,1.12-1.19s-.62-.86-1.28-.39c-.24.17-.76-1-1.17-1s.5,1.43.16,1.48-1-1.42-1.16-1.66-.65-.83-1.13-.38c-1,1-2.67.91-3,1.16-1,.76-1.28-.25-1.25-.86l.13-.42a2.06,2.06,0,0,1,1.92-.21c.45.3.77-.08.94-.26a.62.62,0,0,0,0-.7c-.11-.24.22-.42.45-.48a12.14,12.14,0,0,0,1.31-.78,4.3,4.3,0,0,1,2.62,0,1.39,1.39,0,0,0,1.72-.35,4.62,4.62,0,0,1,1.25-1c.25-.12-.62-.92-1.33,0s-1.08,1-1.41,1-2.33-.5-2.57-1.13.62-1.1,1.36-1.46a18,18,0,0,1,3.26-.46c1-.23,2.38-.75,3.05-.3s-2.81,1.24-1.67,1.86c.41.22,2.25-1.06,2.88-1.39,1.48-.77-1.44-1-1.06-2.57.43-1.76-3.58-1.08-5.58-.93a17.24,17.24,0,0,1,26.06,10.5,2.83,2.83,0,0,1-.08.8,1.13,1.13,0,0,1-2,.16c-.17-.25-.91-1-.89.24s1.16,1.32.06,2a4.25,4.25,0,0,1-1.81.73,2.34,2.34,0,0,0-.88,2.07c.12.66,1.7,2.46.53,2.38a6.74,6.74,0,0,1-2.67-2.33c-.36-1-.75-1.89-1-2.6a1,1,0,0,0-1.63-.48c-.61.42.17.84-.27,1.74s-.76,1.7-1.4,1c-1.68-1.93-4.13-1-4.51-3.12-.21-1.16-1.21-1.05-2-1.71s-1.31-1-1.45-.54S56,69.42,56.24,70c.29.83-.83,1.57-1.65,1.77s-1.18-.46-2-1.3S51.45,69,51.4,69.67A3.77,3.77,0,0,0,53,72.53c.7.44,1.48.64,1.25,1.36s0,.31-.79,1.09a2.11,2.11,0,0,0-.88,2.1c.06,1.08-.22,1.14-.39,2s-.56.12-.89,1.43m18.5-6.88c.58,0,1.45.76,1.11,1.07a1.54,1.54,0,0,1-1.64-.15c-.43-.34.27-.9.53-.92m-.73-.53c-.19-.07-.35-.25-.49-.67a.39.39,0,0,1,.56-.49,1.67,1.67,0,0,1,.81,1c0,.28-.7.25-.89.17m-7.61,0A1.56,1.56,0,0,1,59.79,73c-.43-.34.28-.9.53-.92.58-.05,1.45.76,1.11,1.07m-7,3.42c-.24.39-.89,3.29-1.32,3s.18-3.36.3-3.59c.68-1.25,2.15-1.19,1,.64m2.35,11.24a17.26,17.26,0,0,1-4.85-.69.71.71,0,0,1-.21-.84c.53-1.39,2.12-1.94,3.38-2.06,2.8-.27,6.47,1.82,7.06,1.48s1.77-1.87,3.5-1.81a2.72,2.72,0,0,1,1.57.39,17.18,17.18,0,0,1-10.46,3.53m12.16-5a3,3,0,0,1-.54-.2c-.94-.48-.83.29-1.29.12s.52-1.25-.87-.34-1-.14-1.61-1.67A3.13,3.13,0,0,1,66.38,77a21.88,21.88,0,0,1,3.13-.83c2.07-.52,2.51-1.75,2.89-1l.2.4a2.73,2.73,0,0,1,.27,1.12,17.27,17.27,0,0,1-4,6.08M73.63,74c-.46-.13-2.4-2.8-.87-4.57.25-.29-.51-1.14-.3-1.16a1.4,1.4,0,0,1,1.5,1.2c0,.33,0,.66,0,1A17.4,17.4,0,0,1,73.63,74' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M35.66,16.27V11.76c0-1.46.69-2.52,2.34-2.52s2.21,1,2.21,2.34v1.1H38.79V11.46c0-.58-.19-.91-.76-.91s-.8.4-.8,1v5c0,.56.23,1,.8,1s.76-.36.76-.91V14.86h1.43v1.61c0,1.33-.55,2.33-2.21,2.33A2.21,2.21,0,0,1,35.66,16.27Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.21,9.35h1.57v8h1.87v1.28H41.21Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M45.49,9.35h1.57v9.33H45.49Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M52.55,12.63h0l-1.06,6.05h-.73l-1.17-6.05h0v6.05H48.23V9.35h1.83l1,5.25h0L52,9.35h2v9.33H52.55Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M54.76,18.68l1.76-9.33h1.79l1.77,9.33H58.48L58.19,17H56.53l-.28,1.71Zm2-3H58L57.36,12h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M59.88,9.35H64v1.28H62.75v8H61.17v-8H59.88Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M64.91,9.35h3.74v1.28H66.48V13.3H68v1.27H66.48V17.4h2.17v1.28H64.91Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M35.39,31.9l1.76-9.33h1.79l1.77,9.33H39.1l-.29-1.71H37.15l-.28,1.71Zm2-3h1.25L38,25.2h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.16,29.49V25c0-1.46.69-2.52,2.34-2.52s2.21,1,2.21,2.34v1.1H44.29V24.68c0-.58-.19-.91-.76-.91s-.8.4-.8,1v5c0,.56.23,1,.8,1s.76-.36.76-.91V28.08h1.43v1.61C45.72,31,45.17,32,43.5,32A2.21,2.21,0,0,1,41.16,29.49Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M46.26,22.58h4.17v1.28H49.14v8H47.56v-8H46.26Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M51.3,22.58h1.57V31.9H51.3Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M53.91,29.49V25a2.38,2.38,0,1,1,4.75,0v4.51a2.38,2.38,0,1,1-4.75,0Zm3.18.25v-5c0-.56-.25-1-.81-1s-.8.4-.8,1v5c0,.56.25,1,.8,1S57.09,30.31,57.09,29.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M61,26V31.9H59.69V22.58h1.54l1.69,5.35V22.58h1.31V31.9H62.85Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'cls-2', points: '17.26 8.49 17.26 30.9 13.49 30.9 13.49 13.75 13.45 13.75 10.81 16.49 10.78 16.49 10.78 12.55 14.25 8.49 17.26 8.49' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M29.69,13.35V15.3a3.59,3.59,0,0,1-2.58,3.64c1.88.43,2.78,1.75,2.78,3.8V26c0,3.11-1.65,5.12-5.45,5.12S19.24,29,19.24,25.58V22.64h3.44v3.21c0,1.32.46,2.18,1.75,2.18s1.68-.83,1.68-2v-3.7c0-1.19-.53-1.82-1.85-1.82H22.68V17.61H24.1c1.22,0,2-.63,2-1.82V13.38c0-1.22-.43-2-1.62-2s-1.62.79-1.62,2.18v2.28H19.44v-2c0-3.31,1.36-5.62,5.26-5.62,3.47,0,5,2,5,5.13' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 288 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg14.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg14",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#1c97d4;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 22'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-2.05', y: '-3.3', width: '116.17', height: '119.24' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M85.75,81.49C84.34,79.59,75.26,68,62.54,68,51.48,68,39.66,78,39.66,78s-4.44-9.09-13.53-10H25.9a.37.37,0,0,0-.35.36,1,1,0,0,0,.14.33c1.17,1.94,4.16,7.48,4.16,13s-3,11.09-4.17,13l-.08.12a.36.36,0,0,0,.28.55h.19c9.11-.85,13.57-10,13.57-10s11.82,10,22.88,10C75.26,95.5,84.34,83.92,85.75,82l.1-.13a.38.38,0,0,0,0-.14.37.37,0,0,0,0-.14l-.1-.13M69.61,83.22a3.71,3.71,0,1,1,3.72-3.72,3.72,3.72,0,0,1-3.72,3.72' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M25.84,46.26l-.07,0a.37.37,0,0,0-.37.37v2.53a.36.36,0,0,0,.11.26c6.14,5.34,12,.34,13.31-1a.34.34,0,0,1,.1-.1.37.37,0,0,1,.2-.07.36.36,0,0,1,.25.1l0,0c6.94,6.62,14.22,1.26,15.73,0l.15-.14a.32.32,0,0,1,.14,0,.34.34,0,0,1,.14,0l.15.14c1.51,1.26,8.79,6.62,15.73,0v0a.35.35,0,0,1,.25-.1.36.36,0,0,1,.2.07.38.38,0,0,1,.1.1c1.35,1.32,7.16,6.32,13.31,1a.37.37,0,0,0,.11-.26V46.61a.36.36,0,0,0-.36-.37l-.08,0-.18.1a11.18,11.18,0,0,1-13.07-1.84l-.15-.15a.39.39,0,0,0-.16,0l-.11,0a.41.41,0,0,0-.19.14c-1.59,1.21-8.86,6.14-15.34.09l-.09-.09a.4.4,0,0,0-.26-.11.39.39,0,0,0-.25.11l-.1.09c-6.48,6-13.76,1.12-15.35-.09a.39.39,0,0,0-.18-.14l-.12,0a.41.41,0,0,0-.15,0l-.16.15A11.18,11.18,0,0,1,26,46.35l-.19-.1' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M38.82,57.64a.39.39,0,0,1,.1-.1.38.38,0,0,1,.2-.07.36.36,0,0,1,.25.1l0,0c6.94,6.61,14.22,1.25,15.73,0l.15-.14.14,0a.4.4,0,0,1,.15,0l.15.14c1.51,1.25,8.79,6.61,15.73,0v0a.35.35,0,0,1,.25-.1.37.37,0,0,1,.2.07.4.4,0,0,1,.1.1c1.34,1.32,7.16,6.33,13.31,1a.36.36,0,0,0,.11-.26V55.83a.36.36,0,0,0-.36-.36l-.08,0-.18.09a11.19,11.19,0,0,1-13.07-1.83l-.15-.15a.3.3,0,0,0-.16,0,.23.23,0,0,0-.11,0,.31.31,0,0,0-.19.14c-1.58,1.21-8.86,6.14-15.35.09l-.09-.09a.37.37,0,0,0-.26-.1.36.36,0,0,0-.25.1l-.1.09c-6.48,6-13.76,1.12-15.35-.09a.3.3,0,0,0-.18-.14l-.12,0a.3.3,0,0,0-.15,0l-.16.15A11.19,11.19,0,0,1,26,55.57l-.19-.09-.07,0a.36.36,0,0,0-.37.36v2.54a.35.35,0,0,0,.11.26c6.15,5.34,12,.34,13.31-1' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M36.47,9.27h1.58v8.12h1.89v1.29H36.47Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M40.67,9.27h1.58v9.41H40.67Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M43.16,9.27h3.71v1.29H44.75v2.69h1.58v1.28H44.75v4.15H43.16Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M47.57,9.27h3.78v1.29H49.15v2.69h1.57v1.28H49.15v2.86h2.19v1.29H47.57Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M36.47,22.46h2.29c1.58,0,2.11.74,2.11,2.07v1a1.37,1.37,0,0,1-.94,1.5,1.43,1.43,0,0,1,1.18,1.57V29.8c0,1.33-.6,2.07-2.18,2.07H36.47Zm1.58,4h.56a.67.67,0,0,0,.75-.76V24.51a.67.67,0,0,0-.76-.76h-.54Zm0,1.21v2.94h.69a.68.68,0,0,0,.78-.76V28.4c0-.5-.24-.76-.79-.76Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M41.9,22.46h3.78v1.29H43.48v2.69h1.57v1.28H43.48v2.86h2.19v1.29H41.9Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M46.52,22.46h1.58v8.12H50v1.29H46.52Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M50.65,29.44V24.89a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V24.64c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S53.85,30.26,53.85,29.69Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M59.61,26.05l-.89,5.82H57.24L56,22.46H57.5l.74,6h0l.79-6h1.29l.87,6h0l.72-6h1.33l-1.22,9.41h-1.5l-.93-5.82Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M68.83,26.05l-.89,5.82H66.45l-1.26-9.41h1.53l.74,6h0l.79-6h1.29l.87,6h0l.72-6h1.33l-1.22,9.41h-1.5l-.93-5.82Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M72.37,31.87l1.78-9.41h1.8l1.79,9.41H76.12l-.29-1.72H74.14l-.28,1.72Zm2-3h1.26L75,25.11h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M77.52,22.46h4.21v1.29H80.42v8.12h-1.6V23.75h-1.3Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.46,22.46h3.78v1.29H84v2.69h1.57v1.28H84v2.86h2.19v1.29H82.46Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M88.66,27.55v4.32H87.08V22.46h2.3c1.6,0,2.18.79,2.18,2.11v1.21c0,1-.36,1.61-1.26,1.82l1.51,4.28H90.15Zm0-3.8v2.93h.53A.69.69,0,0,0,90,25.9V24.51c0-.51-.24-.76-.78-.76Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'cls-2', points: '14.55 9.4 14.55 31.91 10.77 31.91 10.77 14.68 10.73 14.68 8.08 17.43 8.04 17.43 8.04 13.48 11.53 9.4 14.55 9.4' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M26.08,30.91V27.26H27.6v-3H26.08V8.39H22.36L15.81,24.93v2.33h6.68v3.65ZM19.13,24.3,22.52,15h0V24.3Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 289 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg15.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg15",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#5cba47;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 23'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-2.55', y: '-3.3', width: '117.67', height: '119.24' }),
+	                React.createElement('rect', { className: 'cls-2', x: '42.74', y: '75.57', width: '3.79', height: '8.63', rx: '0.25', ry: '0.25' }),
+	                React.createElement('rect', { className: 'cls-2', x: '39.92', y: '9.36', width: '1.54', height: '9.14' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.45,87.7H28.18a.25.25,0,0,0-.25.26v3.32a.25.25,0,0,0,.25.24H82.45a.25.25,0,0,0,.25-.24V88a.26.26,0,0,0-.25-.26' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.45,94.29H28.18a.25.25,0,0,0-.25.24v3.33a.25.25,0,0,0,.25.24H82.45a.25.25,0,0,0,.25-.24V94.53a.25.25,0,0,0-.25-.24' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M72.12,66.56a8,8,0,0,0-4.69-1.77,6.27,6.27,0,0,0-4.36,1.85.47.47,0,0,0-.15.34v.3a.47.47,0,0,0,.15.37.44.44,0,0,0,.38.09l.1,0a.73.73,0,0,0,.27-.17A4.38,4.38,0,0,1,66,67.09a8.21,8.21,0,0,1,5.59,2.34l.05,0a.65.65,0,0,0,.47.2.64.64,0,0,0,.46-.19l0,0a8.24,8.24,0,0,1,5.6-2.35,4.39,4.39,0,0,1,2.18.45.8.8,0,0,0,.3.18.67.67,0,0,0,.32,0,.47.47,0,0,0,.34-.45V67a.47.47,0,0,0-.15-.34,6.29,6.29,0,0,0-4.41-1.9,8,8,0,0,0-4.69,1.77' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M68.75,44.93a.45.45,0,0,0-.24.29l-.05.18a.46.46,0,0,0,.07.41.45.45,0,0,0,.34.18h.07a.59.59,0,0,0,.26-.07,1.37,1.37,0,0,1,.33,0,4.71,4.71,0,0,1,3.88,2.53l0,0a.56.56,0,0,0,.35.28l.17,0a.58.58,0,0,0,.27-.07l0,0a5.41,5.41,0,0,1,2.42-.6,3.69,3.69,0,0,1,2.47.79.63.63,0,0,0,.18.2l.18.08h.13a.47.47,0,0,0,.22-.05.46.46,0,0,0,.23-.28l0-.16a.42.42,0,0,0,0-.13.44.44,0,0,0-.06-.23A4.08,4.08,0,0,0,76.4,46.1a5.79,5.79,0,0,0-2,.37,4.74,4.74,0,0,0-3.66-2.05,4.51,4.51,0,0,0-2,.52' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M57.29,53.28l0,.24a.46.46,0,0,0,.58.42l.08,0a.59.59,0,0,0,.23-.17,4,4,0,0,1,2.07-.47,6.71,6.71,0,0,1,4.29,1.62l0,0a.64.64,0,0,0,.42.16h0a.63.63,0,0,0,.43-.2l0,0a6.52,6.52,0,0,1,4.76-2.2,3.23,3.23,0,0,1,1.41.26.71.71,0,0,0,.28.15.63.63,0,0,0,.2,0l.11,0a.46.46,0,0,0,.31-.47v-.21a.46.46,0,0,0-.16-.32,5.32,5.32,0,0,0-3.47-1.37,6.47,6.47,0,0,0-4.06,1.68,6.78,6.78,0,0,0-3.62-1.2,5.18,5.18,0,0,0-3.85,1.78.48.48,0,0,0-.13.35' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M29.82,57.64a5.88,5.88,0,0,1,5.88-5.88l.38,0a8,8,0,1,1,15.09,4.07,8.89,8.89,0,0,1-1.93,17.58l-11.87-.07h0a6.29,6.29,0,0,1-4.58-10.61A5.88,5.88,0,0,1,29.82,57.64Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M35.71,29.54v-4.4a2.32,2.32,0,1,1,4.63,0v4.4a2.32,2.32,0,1,1-4.63,0m3.1.24V24.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.89c0,.55.24.94.78.94s.79-.39.79-.94' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M52.77,31.89l1.72-9.1h1.75L58,31.89H56.39l-.28-1.66H54.48l-.27,1.66ZM54.69,29h1.22l-.6-3.65h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M68.59,25.23v4.22c0,1.4-.58,2.44-2.22,2.44H64v-9.1h2.36c1.64,0,2.22,1,2.22,2.44m-2.4,5.41c.63,0,.87-.38.87-.93V25a.8.8,0,0,0-.87-.91h-.65v6.61Z' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '35.72 9.36 35.72 18.5 39.09 18.5 39.09 17.24 37.25 17.24 37.25 9.36 35.72 9.36' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '42.47 18.5 44 18.5 44 14.46 45.54 14.46 45.54 13.22 44 13.22 44 10.61 46.06 10.61 46.06 9.36 42.47 9.36 42.47 18.5' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '46.87 18.5 50.54 18.5 50.54 17.24 48.41 17.24 48.41 14.46 49.93 14.46 49.93 13.22 48.41 13.22 48.41 10.61 50.54 10.61 50.54 9.36 46.87 9.36 46.87 18.5' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '42.5 26.17 42.5 31.89 41.21 31.89 41.21 22.79 42.71 22.79 44.36 28.01 44.36 22.79 45.64 22.79 45.64 31.89 44.3 31.89 42.5 26.17' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '48.96 22.79 50.49 22.79 50.49 30.64 52.31 30.64 52.31 31.89 48.96 31.89 48.96 22.79' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '59.88 26.17 59.88 31.89 58.59 31.89 58.59 22.79 60.09 22.79 61.74 28.01 61.74 22.79 63.02 22.79 63.02 31.89 61.68 31.89 59.88 26.17' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'cls-2', points: '10.13 12.54 10.13 16.47 10.16 16.47 12.8 13.73 12.84 13.73 12.84 30.89 16.61 30.89 16.61 8.47 13.6 8.47 10.13 12.54' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M25.57,15.58a3.4,3.4,0,0,0-3.17,1.55h0V11.55h6.48V8.47H18.92V21.1h3.44v-.5c0-1.32.6-2,1.65-2s1.62.79,1.62,2V26c0,1.19-.43,2-1.59,2s-1.75-.86-1.75-2.18V23H18.86v2.55c0,3.41,1.36,5.59,5.19,5.59s5.36-2,5.36-5.13V20.54c0-3.54-1.82-5-3.84-5' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 290 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg16.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg16",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#07699e;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 24'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-0.95', y: '-3.3', width: '118.19', height: '119.24' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M80.18,50a4.22,4.22,0,0,0-.81,3,4.22,4.22,0,0,0,2,2.35,4.21,4.21,0,0,0,.81-3,4.21,4.21,0,0,0-2-2.35' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M78.32,58.64a4.22,4.22,0,0,0,.81-3,4.21,4.21,0,0,0-2-2.35,4.21,4.21,0,0,0-.81,3,4.22,4.22,0,0,0,2,2.35' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M83,57a3.75,3.75,0,0,0,2.57,1.09A3.91,3.91,0,0,0,88,56.58a3.75,3.75,0,0,0-2.57-1.09A3.92,3.92,0,0,0,83,57' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M85,50.53a4.53,4.53,0,0,0-1,3.13,4.33,4.33,0,0,0,3.08-1,4.53,4.53,0,0,0,1-3.13,4.33,4.33,0,0,0-3.08,1' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.52,61.52a3.91,3.91,0,0,0,2.65-1,3.75,3.75,0,0,0-2.3-1.6,3.92,3.92,0,0,0-2.65,1,3.75,3.75,0,0,0,2.3,1.59' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M83.74,83.48H73.53a1.44,1.44,0,1,0,0,2.89H83.74a1.44,1.44,0,0,0,0-2.89' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M83.74,99.41H73.53a1.44,1.44,0,1,0,0,2.89H83.74a1.44,1.44,0,0,0,0-2.89' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M37.81,80a6.36,6.36,0,0,0-.71-.18s.26.08.71.18' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M83.36,87.38H73.9a.82.82,0,0,0-.82.82v2.87l-6.18.68-9-.21V86a24.83,24.83,0,0,0,3.59-.73C70.15,82.85,72,77.44,71.86,72.47s1.43-7,3.76-7.9a10.5,10.5,0,0,1,1.93-.51,15.48,15.48,0,0,0,.83,4.41l.62-.05A14.64,14.64,0,0,1,78.14,64a10.83,10.83,0,0,1,2.06-.06,13.09,13.09,0,0,1-2-1.4c.39-2.4,1.82-3.87,3.29-5.37a17.67,17.67,0,0,0,2.3-2.7l-.51-.33a17.05,17.05,0,0,1-2.23,2.61c-1.43,1.47-2.88,3-3.37,5.35a19.42,19.42,0,0,1-1.49-1.5c-2.14-2.4-4.9-.64-8.83,3s-8.88,3.78-13.71-1.16c-6.37-6.53-11.93-6.49-15.75-6.12,2.61,1.11,3.52,3.55,4.84,9.74,1.38,6.5,4.87,9.44,9.65,9.85-2.21.36-2.79.67-6.34,3.12-2.78,1.92-6.69,1.31-8.27,1,2.91.91,6.35,4,9.44,5a22.83,22.83,0,0,0,5.63,1.15v5.28l-17.12-.37v3.68L66.9,94l6.18.68v2.86a.82.82,0,0,0,.82.82h9.46a.83.83,0,0,0,.82-.82V88.2A.82.82,0,0,0,83.36,87.38Zm-29-1.15c.67,0,1.35,0,2-.05v5.33l-2,0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M34.88,94.13a1.32,1.32,0,0,1-1.21,1.41h-.73a1.32,1.32,0,0,1-1.21-1.41V91.58a1.32,1.32,0,0,1,1.21-1.41h.73a1.32,1.32,0,0,1,1.21,1.41Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M35.39,9.14h2.37c1.61,0,2.2.8,2.2,2.13v2c0,1.33-.59,2.14-2.2,2.14H37v3.22h-1.6Zm1.6,1.3v3.74h.59a.69.69,0,0,0,.78-.79V11.21c0-.52-.24-.77-.78-.77Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M40.52,9.14h3.81v1.3H42.11v2.72H43.7v1.29H42.11v2.89h2.21v1.3H40.52Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M44.66,18.64l1.79-9.5h1.82l1.81,9.5H48.44l-.29-1.74h-1.7l-.28,1.74Zm2-3h1.27l-.63-3.81h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M50.26,16.19V11.59c0-1.48.7-2.56,2.38-2.56s2.25,1,2.25,2.38v1.12H53.44V11.28c0-.59-.2-.92-.77-.92s-.81.41-.81,1v5.1c0,.57.24,1,.81,1s.77-.36.77-.92V14.74H54.9v1.64c0,1.36-.56,2.37-2.25,2.37A2.25,2.25,0,0,1,50.26,16.19Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M55.5,9.14h3.81v1.3H57.1v2.72h1.58v1.29H57.1v2.89h2.21v1.3H55.5Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M61.53,17.24l-.81,2.14h-.9l.2-2.27h1.51Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M67.62,9.14v7.34a2,2,0,0,1-2.2,2.27c-1.65,0-2.1-.91-2.1-2.12V14.74h1.51v1.92c0,.48.17.76.59.76s.6-.28.6-.77V9.14Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M72.89,9.14v7.19c0,1.47-.63,2.42-2.25,2.42a2.14,2.14,0,0,1-2.38-2.42V9.14h1.6v7.34c0,.56.22.94.78.94s.78-.38.78-.94V9.14Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M73.45,16.59V15.32h1.48v1.3c0,.53.24.84.78.84s.73-.34.73-.84v-.36a1.71,1.71,0,0,0-.71-1.34L74.79,14a3.2,3.2,0,0,1-1.33-2.54v-.32A2,2,0,0,1,75.7,9c1.6,0,2.23.78,2.23,2.16V12H76.47v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78v.2c0,.53.29.84.76,1.29l1,1A3.19,3.19,0,0,1,78,16.06v.46a2.06,2.06,0,0,1-2.33,2.23A2,2,0,0,1,73.45,16.59Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M78.21,9.14h4.24v1.3H81.13v8.19H79.52V10.44H78.21Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M82.92,9.14h1.6v9.5h-1.6Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M85.18,16.19V11.59c0-1.48.7-2.56,2.38-2.56s2.25,1,2.25,2.38v1.12H88.36V11.28c0-.59-.2-.92-.77-.92s-.81.41-.81,1v5.1c0,.57.24,1,.81,1s.77-.36.77-.92V14.74h1.46v1.64c0,1.36-.56,2.37-2.25,2.37A2.25,2.25,0,0,1,85.18,16.19Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M90.41,9.14h3.81v1.3H92v2.72h1.58v1.29H92v2.89h2.21v1.3H90.41Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M35.14,31.34l1.79-9.5h1.82l1.81,9.5H38.92l-.29-1.74h-1.7l-.28,1.74Zm2-3h1.27l-.63-3.81h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M42.3,25.37v6H41v-9.5h1.57l1.72,5.45V21.84h1.33v9.5h-1.4Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M51,24.39v4.4c0,1.46-.6,2.55-2.31,2.55H46.22v-9.5h2.46C50.39,21.84,51,22.92,51,24.39ZM48.48,30c.66,0,.91-.39.91-1v-5a.83.83,0,0,0-.91-1h-.67V30Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M52.75,29.29V28h1.48v1.3c0,.53.24.84.78.84s.73-.34.73-.84V29A1.71,1.71,0,0,0,55,27.61l-.94-.94a3.2,3.2,0,0,1-1.33-2.54v-.32A2,2,0,0,1,55,21.73c1.6,0,2.23.78,2.23,2.16v.77H55.78v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78V24c0,.53.29.84.76,1.29l1,1a3.19,3.19,0,0,1,1.29,2.47v.46A2.06,2.06,0,0,1,55,31.45,2,2,0,0,1,52.75,29.29Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M57.51,21.84h4.24v1.3H60.44v8.19H58.83V23.14H57.51Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M63.83,27v4.36h-1.6v-9.5h2.33c1.61,0,2.2.8,2.2,2.13v1.22c0,1-.36,1.63-1.28,1.84L67,31.34H65.33Zm0-3.84v3h.53a.69.69,0,0,0,.78-.78v-1.4c0-.52-.24-.77-.78-.77Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M67.36,28.89V24.29a2.42,2.42,0,1,1,4.83,0v4.59a2.42,2.42,0,1,1-4.83,0Zm3.24.25V24c0-.57-.25-1-.83-1s-.81.41-.81,1v5.1c0,.57.25,1,.81,1S70.59,29.71,70.59,29.14Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M74.17,25.37v6H72.83v-9.5H74.4l1.72,5.45V21.84h1.33v9.5h-1.4Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M80.5,26.27h2.27v5.07H81.62v-1a1.44,1.44,0,0,1-1.53,1.15c-1.37,0-2-1.09-2-2.56V24.29a2.25,2.25,0,0,1,2.39-2.56c1.77,0,2.28,1,2.28,2.38V25H81.32V24c0-.59-.22-.92-.8-.92s-.83.41-.83,1v5.1c0,.57.24,1,.78,1s.78-.29.78-.91V27.53H80.5Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M35.39,34.54H37V44h-1.6Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M39,38.07v6H37.65v-9.5h1.57L40.94,40V34.54h1.33V44h-1.4Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M42.83,42V40.72h1.48V42c0,.53.24.84.78.84s.73-.34.73-.84v-.36a1.71,1.71,0,0,0-.71-1.34l-.94-.94a3.2,3.2,0,0,1-1.33-2.54v-.32a2,2,0,0,1,2.24-2.09c1.6,0,2.23.78,2.23,2.16v.77H45.85v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78v.2c0,.53.29.84.76,1.29l1,1a3.19,3.19,0,0,1,1.29,2.47v.46a2.06,2.06,0,0,1-2.33,2.23A2,2,0,0,1,42.83,42Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M47.59,34.54h4.24v1.3H50.52V44H48.9V35.84H47.59Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M52.31,34.54h1.6V44h-1.6Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M54.38,34.54h4.24v1.3H57.3V44H55.69V35.84H54.38Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M63.73,34.54v7.19c0,1.47-.63,2.42-2.25,2.42a2.14,2.14,0,0,1-2.38-2.42V34.54h1.6v7.34c0,.56.22.94.78.94s.78-.38.78-.94V34.54Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M64.19,34.54h4.24v1.3H67.12V44H65.51V35.84H64.19Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M68.91,34.54h1.6V44h-1.6Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M71.16,41.59V37A2.42,2.42,0,1,1,76,37v4.59a2.42,2.42,0,1,1-4.83,0Zm3.24.25v-5.1c0-.57-.25-1-.83-1s-.81.41-.81,1v5.1c0,.57.25,1,.81,1S74.4,42.41,74.4,41.84Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M78,38.07v6H76.64v-9.5h1.57L79.93,40V34.54h1.33V44h-1.4Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M81.82,42V40.72H83.3V42c0,.53.24.84.78.84s.73-.34.73-.84v-.36a1.71,1.71,0,0,0-.71-1.34l-.94-.94a3.2,3.2,0,0,1-1.33-2.54v-.32a2,2,0,0,1,2.24-2.09c1.6,0,2.23.78,2.23,2.16v.77H84.84v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78v.2c0,.53.29.84.76,1.29l1,1a3.19,3.19,0,0,1,1.29,2.47v.46a2.06,2.06,0,0,1-2.33,2.23A2,2,0,0,1,81.82,42Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'cls-2', points: '8.59 12.45 8.59 16.41 8.63 16.41 11.28 13.65 11.32 13.65 11.32 30.89 15.1 30.89 15.1 8.37 12.08 8.37 8.59 12.45' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M28.36,25.47V22.15c0-3.69-1.46-5.55-4.18-5.55A3.24,3.24,0,0,0,21,18.43h0V13.58c0-1.36.43-2.33,1.79-2.33s1.76.8,1.76,2.19v1.5H28v-1.2c0-3.32-1.1-5.65-5.28-5.65-4,0-5.48,2.56-5.48,6.08v11c0,3.49,1.53,6,5.51,6s5.58-2.19,5.58-5.68m-3.75.33c0,1.43-.53,2.26-1.83,2.26S21,27.2,21,25.81V21.69c.07-1.26.6-2.06,1.79-2.06s1.79.8,1.79,2.26Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 291 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg17.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg17",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#18496b;}.cls-2{fill:#fff;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 25'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'cls-1', x: '-2.55', y: '-3.3', width: '118.82', height: '119.24' }),
+	                React.createElement('rect', { className: 'cls-2', x: '82.56', y: '9.35', width: '1.54', height: '9.14' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M84.29,67.79a14.57,14.57,0,0,0-14-14.55,14.56,14.56,0,0,0-27.45,0,14.55,14.55,0,0,0-8.4,26,14.55,14.55,0,0,0,22.2,16A14.55,14.55,0,0,0,78.69,79.24a14.54,14.54,0,0,0,5.59-11.46m-16.12-9.7a11.63,11.63,0,0,1-9.91,11.48A11.52,11.52,0,0,1,68,56.3a11.56,11.56,0,0,1,.15,1.79M56.59,91.53A11.59,11.59,0,0,1,56.49,75a11.59,11.59,0,0,1,.11,16.56M45.07,56.3a11.51,11.51,0,0,1,9.76,13.27A11.52,11.52,0,0,1,45.07,56.3M53.73,73A11.58,11.58,0,0,1,38,78.1,11.58,11.58,0,0,1,53.73,73m5.57-.08a11.59,11.59,0,0,1,15.8,5.17,11.59,11.59,0,0,1-15.8-5.17M56.54,46.46a11.64,11.64,0,0,1,10.66,7,14.6,14.6,0,0,0-10.66,8.18,14.59,14.59,0,0,0-10.66-8.18,11.64,11.64,0,0,1,10.66-7M31.73,67.79A11.64,11.64,0,0,1,42.11,56.23,14.78,14.78,0,0,0,42,58.09a14.53,14.53,0,0,0,4.76,10.75A14.59,14.59,0,0,0,35.58,76.4a11.59,11.59,0,0,1-3.85-8.62m5,15.52A11.51,11.51,0,0,1,37,80.89a14.53,14.53,0,0,0,13.36-.37,14.49,14.49,0,0,0,3.86,12.8,11.6,11.6,0,0,1-17.48-10m39.54-.1A11.61,11.61,0,0,1,59,93.3a14.5,14.5,0,0,0,3.73-12.79,14.52,14.52,0,0,0,13.4.37,11.52,11.52,0,0,1,.24,2.32M66.43,68.75A14.52,14.52,0,0,0,71.1,58.09,14.78,14.78,0,0,0,71,56.23a11.61,11.61,0,0,1,6.56,20.15,14.58,14.58,0,0,0-11.1-7.62' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M35.66,9.35h2.28c1.55,0,2.11.77,2.11,2v1.93c0,1.28-.57,2.06-2.11,2.06H37.2v3.1H35.66Zm1.54,1.25v3.6h.56a.66.66,0,0,0,.75-.75v-2.1c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M40.25,18.49,42,9.35h1.75l1.74,9.14H43.88l-.28-1.67H42l-.27,1.67Zm1.93-2.9H43.4l-.61-3.67h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M47.76,14.3v4.19H46.23V9.35h2.24c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.77l1.47,4.15H49.2Zm0-3.69v2.84h.51A.67.67,0,0,0,49,12.7V11.35c0-.5-.23-.74-.76-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M68,14.3v4.19H66.51V9.35h2.24c1.55,0,2.12.77,2.12,2v1.17c0,1-.35,1.56-1.23,1.77l1.47,4.15H69.49Zm0-3.69v2.84h.51a.67.67,0,0,0,.75-.75V11.35c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M71.63,16.52V15.3h1.43v1.25c0,.51.23.81.75.81s.7-.32.7-.81V16.2a1.65,1.65,0,0,0-.69-1.3l-.9-.9a3.08,3.08,0,0,1-1.28-2.44v-.31a1.91,1.91,0,0,1,2.16-2c1.54,0,2.14.75,2.14,2.08v.74h-1.4v-.8c0-.53-.24-.78-.73-.78a.67.67,0,0,0-.73.76v.19c0,.51.28.81.73,1.24l1,1A3.07,3.07,0,0,1,76,16v.44A2,2,0,0,1,73.8,18.6a1.9,1.9,0,0,1-2.17-2.08' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M85.12,9.35h2.28c1.55,0,2.11.77,2.11,2v1.93c0,1.28-.57,2.06-2.11,2.06h-.74v3.1H85.12Zm1.54,1.25v3.6h.56a.66.66,0,0,0,.76-.75v-2.1c0-.5-.23-.74-.76-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M90.11,16.52V15.3h1.43v1.25c0,.51.23.81.76.81s.7-.32.7-.81V16.2a1.65,1.65,0,0,0-.69-1.3l-.9-.9a3.08,3.08,0,0,1-1.28-2.44v-.31a1.91,1.91,0,0,1,2.15-2c1.54,0,2.14.75,2.14,2.08v.74H93v-.8c0-.53-.24-.78-.73-.78a.67.67,0,0,0-.73.76v.19c0,.51.28.81.73,1.24l1,1A3.07,3.07,0,0,1,94.51,16v.44a2,2,0,0,1-2.24,2.14,1.9,1.9,0,0,1-2.17-2.08' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M39.87,29.51V25a2.36,2.36,0,1,1,4.72,0v4.49a2.36,2.36,0,1,1-4.72,0m3.16.25v-5c0-.56-.25-1-.81-1s-.79.4-.79,1v5c0,.56.25,1,.79,1s.81-.4.81-1' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M47.16,27.65v4.25H45.6V22.63h2.27c1.57,0,2.15.78,2.15,2.08V25.9c0,1-.36,1.59-1.25,1.79l1.49,4.21H48.62Zm0-3.75v2.89h.52a.68.68,0,0,0,.77-.77V24.65c0-.51-.23-.75-.77-.75Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M71.72,27h2.22v5H72.81v-1A1.4,1.4,0,0,1,71.32,32c-1.34,0-2-1.07-2-2.5V25a2.2,2.2,0,0,1,2.34-2.5c1.72,0,2.23,1,2.23,2.33v.82H72.51v-.94c0-.58-.22-.9-.78-.9s-.81.4-.81,1v5c0,.56.23,1,.77,1s.77-.29.77-.89V28.18h-.74Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M74.82,29.51V25a2.36,2.36,0,1,1,4.72,0v4.49a2.36,2.36,0,1,1-4.72,0m3.16.25v-5c0-.56-.25-1-.81-1s-.79.4-.79,1v5c0,.56.25,1,.79,1s.81-.4.81-1' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M80,31.91l1.75-9.28h1.78l1.76,9.28h-1.6l-.29-1.7H81.73l-.27,1.7Zm2-2.94h1.25l-.62-3.72h0Z' }),
+	                React.createElement('path', { className: 'cls-2', d: 'M90.15,29.91V28.66H91.6v1.27c0,.52.23.82.76.82s.71-.33.71-.82v-.36a1.68,1.68,0,0,0-.7-1.31l-.92-.92a3.13,3.13,0,0,1-1.3-2.48v-.31a1.93,1.93,0,0,1,2.19-2c1.56,0,2.18.77,2.18,2.11v.75H93.1v-.81c0-.53-.25-.79-.74-.79a.68.68,0,0,0-.74.77v.19c0,.52.29.82.74,1.26l1,1a3.11,3.11,0,0,1,1.26,2.41v.45A2,2,0,0,1,92.35,32a1.93,1.93,0,0,1-2.2-2.11' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '51.13 9.35 55.21 9.35 55.21 10.61 53.94 10.61 53.94 18.49 52.39 18.49 52.39 10.61 51.13 10.61 51.13 9.35' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '57.48 12.75 57.48 18.49 56.18 18.49 56.18 9.35 57.69 9.35 59.35 14.6 59.35 9.35 60.63 9.35 60.63 18.49 59.28 18.49 57.48 12.75' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '61.89 9.35 65.55 9.35 65.55 10.61 63.43 10.61 63.43 13.22 64.95 13.22 64.95 14.46 63.43 14.46 63.43 17.24 65.55 17.24 65.55 18.49 61.89 18.49 61.89 9.35' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '80 14.46 78.52 14.46 78.52 18.49 76.98 18.49 76.98 9.35 78.52 9.35 78.52 13.22 80 13.22 80 9.35 81.54 9.35 81.54 18.49 80 18.49 80 14.46' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '35.67 22.63 39.32 22.63 39.32 23.9 37.23 23.9 37.23 26.56 38.79 26.56 38.79 27.81 37.23 27.81 37.23 31.91 35.67 31.91 35.67 22.63' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '52.49 22.63 56.63 22.63 56.63 23.9 55.35 23.9 55.35 31.91 53.77 31.91 53.77 23.9 52.49 23.9 52.49 22.63' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '60.42 27.81 58.92 27.81 58.92 31.91 57.36 31.91 57.36 22.63 58.92 22.63 58.92 26.56 60.42 26.56 60.42 22.63 62 22.63 62 31.91 60.42 31.91 60.42 27.81' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '63.01 22.63 66.73 22.63 66.73 23.9 64.57 23.9 64.57 26.56 66.12 26.56 66.12 27.81 64.57 27.81 64.57 30.63 66.73 30.63 66.73 31.91 63.01 31.91 63.01 22.63' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '86.17 22.63 87.73 22.63 87.73 30.63 89.59 30.63 89.59 31.91 86.17 31.91 86.17 22.63' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'cls-2', points: '17.39 8.48 17.39 30.9 13.62 30.9 13.62 13.74 13.59 13.74 10.94 16.48 10.91 16.48 10.91 12.55 14.38 8.48 17.39 8.48' }),
+	                React.createElement('polygon', { className: 'cls-2', points: '19.11 8.48 28.57 8.48 28.57 11.95 23.64 30.9 19.91 30.9 24.93 11.56 19.11 11.56 19.11 8.48' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 292 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg18.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 168)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg18",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "id": "English", "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.83 111.66" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#f2f2f2;}.cls-2{fill:#29abe2;}.cls-3{fill:#3e8ede;}.cls-4{fill:#5fba47;}.cls-5{fill:#e4b632;}.cls-6{fill:#c4202f;}.cls-7{fill:#4b9f46;}.cls-8{fill:#418045;}.cls-9{fill:#f8c219;}.cls-10{fill:#ee422a;}.cls-11{fill:#f99e29;}.cls-12{fill:#1d95d3;}.cls-13{fill:#a21c44;}.cls-14{fill:#29bce1;}.cls-15{fill:#f16b2d;}.cls-16{fill:#e6253d;}.cls-17{fill:#dc1769;}.cls-18{fill:#16496b;}.cls-19{fill:#c5962e;}.cls-20{fill:#086a9d;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 26'
+	            ),
+	            React.createElement('rect', { className: 'cls-1', x: '-1.16', y: '-3.33', width: '117.02', height: '119.16' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M6.62,59.53H10.2c3.22,0,5.3,2.22,5.3,5.48v.14c0,3.25-2.08,5.49-5.3,5.49H6.62Zm2.3,2.08v7h1.27c1.75,0,2.94-1.22,2.94-3.43V65c0-2.21-1.19-3.44-2.94-3.44Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M16.72,59.53h7.16V61.6H19V64H23.3v2.08H19v2.48h4.94v2.08H16.72Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M24.33,59.53h2.49l2.35,7.65,2.35-7.65h2.43L30.2,70.7H28.07Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M34.74,59.53h7.16V61.6H37V64h4.29v2.08H37v2.48H42v2.08H34.74Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M43.18,59.53h2.3v9H50v2.11H43.18Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M50,65.19V65c0-3.33,2.1-5.67,5-5.67s5,2.32,5,5.63v.19c0,3.32-2.09,5.67-5,5.67S50,68.51,50,65.19Zm7.67,0V65c0-2.19-1.11-3.57-2.65-3.57S52.32,62.83,52.32,65v.11c0,2.19,1.13,3.57,2.67,3.57S57.62,67.33,57.62,65.14Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M61.24,59.53h3.7C67.43,59.53,69,61,69,63.33v0c0,2.56-1.83,3.84-4.16,3.89h-1.3v3.38h-2.3Zm3.59,5.67a1.7,1.7,0,0,0,1.86-1.78v0a1.66,1.66,0,0,0-1.89-1.79H63.54v3.59Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M69.92,59.53h2.41L74.81,64l2.44-4.51h2.43V70.63H77.43V63.54l-2.62,4.59h0l-2.6-4.55v7.06H69.92Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M81.31,59.53h7.16V61.6H83.6V64h4.29v2.08H83.6v2.48h4.94v2.08H81.31Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M89.75,59.53h2.11L96.12,66V59.53h2.25V70.63h-2L92,63.92v6.71H89.75Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M102.13,61.65H99.34V59.53h7.87v2.13h-2.79v9h-2.29Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M5.81,54.29l1.5-1.86a4.68,4.68,0,0,0,3,1.38c1,0,1.57-.49,1.57-1.2v0c0-.61-.35-1-2.09-1.65-2.16-.84-3.5-1.65-3.5-3.74v0c0-2.12,1.64-3.57,4-3.57a5.8,5.8,0,0,1,3.93,1.5L12.82,47a4.26,4.26,0,0,0-2.59-1.13c-.87,0-1.41.44-1.41,1.06v0c0,.7.42,1,2.31,1.81,2.12.84,3.27,1.74,3.27,3.64v0c0,2.26-1.72,3.66-4.09,3.66A6.54,6.54,0,0,1,5.81,54.29Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M15.47,51.19V43.74H18v7.47c0,1.72.82,2.58,2.12,2.58s2.12-.84,2.12-2.52V43.74h2.51v7.4c0,3.36-1.85,5-4.66,5S15.47,54.48,15.47,51.19Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M25.49,54.29,27,52.42a4.68,4.68,0,0,0,3,1.38c1,0,1.57-.49,1.57-1.2v0c0-.61-.35-1-2.09-1.65-2.16-.84-3.5-1.65-3.5-3.74v0c0-2.12,1.64-3.57,4-3.57a5.79,5.79,0,0,1,3.93,1.5L32.5,47a4.26,4.26,0,0,0-2.59-1.13c-.87,0-1.41.44-1.41,1.06v0c0,.7.42,1,2.31,1.81,2.12.84,3.27,1.74,3.27,3.64v0c0,2.26-1.72,3.66-4.09,3.66A6.54,6.54,0,0,1,25.49,54.29Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M37.38,46.07H34.31V43.74h8.63v2.33H39.88v9.85H37.38Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M46.2,43.67h2.4L53,55.92H50.36l-.9-2.65H45.26l-.89,2.65H41.83ZM48.69,51l-1.32-4L46,51Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M53.93,43.74h2.52V55.92H53.93Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M58.33,43.74h2.31l4.66,7.1v-7.1h2.47V55.92H65.62L60.8,48.56v7.36H58.33Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M73,43.67h2.4l4.37,12.25H77.18l-.9-2.65H72.08l-.89,2.65H68.65ZM75.51,51l-1.32-4-1.34,4Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M80.66,43.74h4.53a4.45,4.45,0,0,1,3.18,1.06,2.82,2.82,0,0,1,.82,2.07v.05a2.85,2.85,0,0,1-1.65,2.66,2.9,2.9,0,0,1,2.18,2.91v.09c0,2.19-1.76,3.34-4.4,3.34H80.66Zm6,3.59c0-.89-.63-1.36-1.71-1.36H83.11v2.75h1.76c1.11,0,1.83-.45,1.83-1.38Zm-1.37,3.52H83.11v2.85h2.26c1.13,0,1.85-.49,1.85-1.43v0C87.22,51.38,86.58,50.84,85.32,50.84Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M90.89,43.74h2.52v9.87h4.93v2.31H90.89Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M99.39,43.74h7.85V46h-5.34v2.63h4.7v2.28h-4.7v2.72h5.41v2.28H99.39Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M16.81,84.81H27.94c-.19,8.94-5.13,13.43-11.77,13.43-7.15,0-11.73-6-11.73-12.5S9,73.24,16.17,73.24c7.92,0,10.1,4.94,11,7.5l-5,.32c-.87-2.12-2.6-3.53-6-3.53-3.78,0-6.73,3.08-6.73,8.21,0,4.33,2.72,8.21,7.05,8.21a6,6,0,0,0,6.09-5H16.81Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M67.68,92.76H58.87l-1.57,5H52.1l8.78-24.11H66L74.61,97.8H69.32ZM62.83,79.49h-.06l-3,9.36H65.9Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M75.47,73.76h4.8V93.32h9.24V97.8h-14Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M103,80.09c0-1.66-1.6-2.69-3.52-2.69-2.4,0-3.84,1.05-3.84,2.65s1.6,2.46,2.78,2.85l4.41,1.41c3.2,1,5.47,2.88,5.47,6.59,0,2.94-2.11,7.35-8.76,7.35-8.35,0-9.11-5.4-9.11-7.55l4.8-.1c0,2.56,2,3.55,4.35,3.55,1.63,0,3.93-.8,3.93-2.65,0-1.28-.54-2-2.91-2.81L95.33,86.8a6.52,6.52,0,0,1-4.51-6c0-3.07,2.11-7.48,8.35-7.48,7.42,0,8.6,4.92,8.6,6.68Z' }),
+	            React.createElement('path', { className: 'cls-4', d: 'M35.61,82.79a6.74,6.74,0,0,1,1.06-1.37L33.18,77.6A11.94,11.94,0,0,0,31,80.48Z' }),
+	            React.createElement('path', { className: 'cls-5', d: 'M44.15,80.09a6.65,6.65,0,0,1,1.46.92l3.5-3.82A11.91,11.91,0,0,0,46,75.25Z' }),
+	            React.createElement('path', { className: 'cls-6', d: 'M52.16,81.24l-4.64,2.31A6.63,6.63,0,0,1,48,85.18l5.16-.49a11.76,11.76,0,0,0-1-3.46' }),
+	            React.createElement('path', { className: 'cls-7', d: 'M47.2,82.88l4.63-2.31a11.92,11.92,0,0,0-2.17-2.88l-3.5,3.82a6.71,6.71,0,0,1,1,1.37' }),
+	            React.createElement('path', { className: 'cls-8', d: 'M34.68,86.17c0-.1,0-.21,0-.31l-5.16-.46c0,.26,0,.51,0,.77A11.89,11.89,0,0,0,29.86,89l5-1.43a6.7,6.7,0,0,1-.16-1.44' }),
+	            React.createElement('path', { className: 'cls-9', d: 'M46.55,90.41a6.77,6.77,0,0,1-1.26,1.18L48,96a12,12,0,0,0,2.67-2.48Z' }),
+	            React.createElement('path', { className: 'cls-10', d: 'M48.06,86.17a6.61,6.61,0,0,1-.15,1.42l5,1.43a11.83,11.83,0,0,0,.35-2.85q0-.37,0-.73l-5.16.49c0,.08,0,.16,0,.24' }),
+	            React.createElement('path', { className: 'cls-11', d: 'M36.29,90.51l-4.12,3.13a12,12,0,0,0,2.69,2.44l2.72-4.4a6.76,6.76,0,0,1-1.29-1.17' }),
+	            React.createElement('path', { className: 'cls-12', d: 'M34.77,85.11a6.61,6.61,0,0,1,.49-1.66l-4.63-2.31a11.79,11.79,0,0,0-1,3.51Z' }),
+	            React.createElement('path', { className: 'cls-13', d: 'M47.38,96.4,44.66,92a6.66,6.66,0,0,1-1.59.64l1,5.09a11.78,11.78,0,0,0,3.35-1.34' }),
+	            React.createElement('path', { className: 'cls-14', d: 'M47.71,88.32A6.69,6.69,0,0,1,47,89.81l4.14,3.12a11.82,11.82,0,0,0,1.57-3.18Z' }),
+	            React.createElement('path', { className: 'cls-15', d: 'M42.34,92.79a6.63,6.63,0,0,1-1.74,0l-1,5.09a11.92,11.92,0,0,0,3.66,0Z' }),
+	            React.createElement('path', { className: 'cls-16', d: 'M41.8,79.49a6.63,6.63,0,0,1,1.66.32L45.32,75a11.79,11.79,0,0,0-3.52-.67Z' }),
+	            React.createElement('path', { className: 'cls-17', d: 'M39.86,92.69a6.64,6.64,0,0,1-1.64-.62l-2.72,4.41a11.82,11.82,0,0,0,3.41,1.3Z' }),
+	            React.createElement('path', { className: 'cls-18', d: 'M39.36,79.79a6.63,6.63,0,0,1,1.69-.3V74.31a11.81,11.81,0,0,0-3.56.65Z' }),
+	            React.createElement('path', { className: 'cls-19', d: 'M35.83,89.91A6.65,6.65,0,0,1,35,88.33l-5,1.43A11.82,11.82,0,0,0,31.71,93Z' }),
+	            React.createElement('path', { className: 'cls-20', d: 'M37.23,80.92a6.7,6.7,0,0,1,1.43-.87l-1.87-4.83a11.87,11.87,0,0,0-3.05,1.87Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M64.82,22.42a9.39,9.39,0,0,1,.62,6.66,9.56,9.56,0,0,1-14.51,5.38A9.55,9.55,0,0,1,52,18a10,10,0,0,1,4.31-1A9.52,9.52,0,0,1,64.82,22.42Zm-8.34-4.94a6.64,6.64,0,0,1,0,1.31.2.2,0,0,1,0-.11c.07,0,.12,0,.15.07s0,.18,0,.22.09,0,.14,0a7.07,7.07,0,0,1,3,.91v0c.18-.09.42-.21.61,0,.23-.09.27.19.45.23a1,1,0,0,1,.5.64c0,.09.18.15.19.24a3.64,3.64,0,0,1,.72-.83l.16-.07a8.83,8.83,0,0,0-5-2.38A7.34,7.34,0,0,1,56.48,17.48Zm-.53,0a9.21,9.21,0,0,0-5.09,1.8c-.29.2-.54.5-.84.67h0a8.09,8.09,0,0,1,1,1l0-.07a7.51,7.51,0,0,1,4.84-2l0-.11V17.66Zm1.62.72-.68.29c-.06,0-.17-.05-.2,0s0,.06,0,.08c.25.32.69.14,1,.08a.6.6,0,0,0,.62-.16v0A1,1,0,0,0,57.57,18.24Zm-1.1,1.17,0,.09c0,.44,0,.91,0,1.32a1.5,1.5,0,0,1,.54,0,5.55,5.55,0,0,1,2.55,1,.68.68,0,0,1-.22-.34.05.05,0,0,1,.06,0c0-.15-.15-.22-.17-.36a.1.1,0,0,1,.1,0,3.06,3.06,0,0,1,.42.49c.1,0,.19,0,.27.08s.05.26.16.35c0,.28.36.44.34.71,0,.07.09,0,.11,0l.28.35a.14.14,0,0,0,0,.19c.13.06.2-.1.33-.08s0,.23,0,.34.16-.06.22,0-.09.17-.13.24.09.08.16.1a.13.13,0,0,1,.11.17c.24.25-.07.51,0,.77a.45.45,0,0,1-.12.46c0,.21-.18.34-.26.51l-.24,0c-.13.13.11.28,0,.36h.53l-.06-.06a.78.78,0,0,1,.07-.67,1.52,1.52,0,0,1,.25-.52S62,25,62,25a1,1,0,0,1-.08.49,1.45,1.45,0,0,1,.15.77c.47,0,.93,0,1.39,0l0-.09a6.8,6.8,0,0,0-.62-2.45c-.1,0-.17.09-.28.06a.09.09,0,0,1-.06-.09,6.7,6.7,0,0,0-.52-.58c-.24,0-.35-.26-.57-.28s-.06-.39-.34-.31a.46.46,0,0,1-.3-.32.78.78,0,0,0-.27-.67c-.17-.06-.24.17-.41.13s-.05-.17-.08-.25-.11-.12-.1-.22c.22-.29-.27-.29-.16-.58s-.24-.29-.35-.45a7.68,7.68,0,0,0-2.3-.66A1.59,1.59,0,0,1,56.47,19.41Zm4.28,0c-.1.09-.18-.09-.27,0a.19.19,0,0,0,0,.14c.2.07.22.36.48.29.08-.09,0-.18,0-.28A.28.28,0,0,0,60.75,19.42Zm-8.5,1.27c-.29.2-.56.47-.87.65a7.6,7.6,0,0,1,1,.89l0,.09a5.68,5.68,0,0,1,2.84-1.44,2.51,2.51,0,0,1,.75-.06,9.35,9.35,0,0,1,0-1.36A7.28,7.28,0,0,0,52.26,20.69Zm10.52-.43a10.92,10.92,0,0,1-.94,1l-.16,0c.1,0,.13.14.19.21.35.18.44.55.74.76s.56.63.58,1a7.51,7.51,0,0,1,.72,2.94l0,.06a.2.2,0,0,0,.11,0l1.36,0c-.09-.13-.05-.33-.08-.49A9.36,9.36,0,0,0,62.78,20.26Zm-13,0a9.31,9.31,0,0,0-2.42,5.17c-.05.28,0,.58-.08.87a9.45,9.45,0,0,1,1.46,0l0-.18a7.7,7.7,0,0,1,1.42-4.06,3.9,3.9,0,0,1,.63-.72c-.31-.29-.63-.62-1-.94Zm6.23,1-.08,0a5.53,5.53,0,0,0-3.16,1.34,12.69,12.69,0,0,1,1,.94l.07-.1a4.34,4.34,0,0,1,1.44-.75,2.15,2.15,0,0,1,.71-.08A6.26,6.26,0,0,1,56,21.28Zm.5,0,0,.1v1.28l.12,0a4.16,4.16,0,0,1,2.13.87l0,.1c.21-.3.53-.55.79-.84l.24-.14-.11,0a5.52,5.52,0,0,0-1.7-1A8.38,8.38,0,0,0,56.48,21.29ZM51,21.65v.09l-.51.65a7.55,7.55,0,0,0-1.35,3.93l1.3,0,.12,0c-.05,0,0-.09-.06-.14A5.71,5.71,0,0,1,52,22.65,9.5,9.5,0,0,1,51,21.65ZM60.11,23l0,.06c-.44.45-.91.92-1.33,1.39a.33.33,0,0,0,.13.14c0-.11.08-.21.09-.33s.28-.06.43,0a3.23,3.23,0,0,1,.67,0c.17.09.18.3.34.39a.13.13,0,0,1,0,.18c0,.35.22-.09.4,0s.17,0,.23.1.21.12.22.26-.09.09-.14.13-.15.23-.08.38c.27.05.28-.27.41-.41a2.55,2.55,0,0,0-.27-.71c-.16,0-.25-.22-.41-.25s0-.31,0-.49A5.69,5.69,0,0,0,60.11,23Zm-7.7,0a5.58,5.58,0,0,0-1.27,2.62,4.31,4.31,0,0,1-.11.71,1.19,1.19,0,0,1,.59,0c-.11-.06,0-.19-.08-.27s0-.27.08-.34.19-.29.21-.47.28-.07.39-.17,0-.1,0-.16.24-.12.35-.19a1,1,0,0,1,.32-.33c.28,0,.29-.39.56-.4A11.3,11.3,0,0,1,52.4,23Zm4.09.16a8.93,8.93,0,0,1,.07,1l.34.11c.1-.17.32-.2.41-.35s.13,0,.18.06a1,1,0,0,1-.06.38c-.13.26-.43.29-.6.47.11.06.17-.05.26-.08a.57.57,0,0,1,.32.21c.09,0,.17,0,.24,0,.05-.39.54-.34.69-.71l-.09,0c0-.05-.13,0-.13-.11a1,1,0,0,1,.28-.23,4.83,4.83,0,0,0-1.35-.62A4.5,4.5,0,0,1,56.49,23.17Zm-2.55,1H54c.11.11.3.09.38.24s-.08.08-.08.15.06,0,.08.06.07-.05.1-.09.14.11.25.11a.18.18,0,0,1,.25,0c.08-.07.24,0,.26-.13s.07-.4.28-.5,0,.11,0,.18.31-.12.43,0a3,3,0,0,1-.07-1A3.23,3.23,0,0,0,53.95,24.16Zm2.3.79c-.08-.09-.24,0-.34,0,.09.09.06.27.11.38a.9.9,0,0,1-.6.36c-.06.08,0,.24-.19.23s-.21.17-.15.32a2.92,2.92,0,0,0-.08.54c-.28.18-.2-.23-.34-.32l0,.08c-.06,0-.09,0-.13-.06s-.11,0-.15,0-.16.19-.13.33S54,26.87,54,27a2.7,2.7,0,0,0,.48-.07c.11,0,.2-.05.31-.06a.1.1,0,0,1,.07.11h0a.19.19,0,0,0,.08-.23c0-.1.12-.1.18-.13s0,.09,0,.14c.21.08-.05.24-.08.35s0,.29-.18.27a.07.07,0,0,1,0-.08h0a.24.24,0,0,0,.13.21c.13-.11.14-.29.33-.32s0-.27.1-.35.51-.11.71.09c0,.09,0,.12,0,.19a.94.94,0,0,1-.17.32.16.16,0,0,1,0,.18c-.07.29-.4.15-.59.25a1.5,1.5,0,0,0,1,.28c.2,0,.11-.26.22-.37.07-.33.37-.1.55-.19a1.33,1.33,0,0,0,.16-.44.31.31,0,0,1-.13-.36c-.08-.11-.07-.31-.25-.33a.09.09,0,0,1,0-.11c0-.1.1-.14.13-.22S57,25.89,57,25.8c-.18.05-.2-.19-.34-.24s-.15-.13-.25-.15-.27-.17-.44-.24c0-.05-.06-.13,0-.17s.2,0,.3,0Zm-4.11,1.17c-.38.12.06.41,0,.65s-.19,0-.29.07l0,.25c-.06.15-.24,0-.33.14s0,.19.06.27c-.13.3.3.4.29.67s0,.42.17.57c0,.31,0,.72.23,1l0,.29c.06.2-.24.15-.2.33.06,0,.07,0,.08.07h0a12.51,12.51,0,0,1,1.22-1.24L53.14,29a4.73,4.73,0,0,1-.73-1.62l-.14-.07c0,.15-.08.27-.07.42l0,.06c-.1,0-.16-.09-.25-.14s-.07-.14,0-.18a.16.16,0,0,1,.11,0c0-.05,0-.13,0-.19s-.09-.22,0-.32.16.1.19.16.16,0,.24-.08.11-.19,0-.24a1.12,1.12,0,0,0,0-.56C52.43,26.07,52.26,26.1,52.13,26.11Zm8.86.16s-.09,0-.14,0A.34.34,0,0,1,61,26.27Zm-.29.46.15.15c.15.1,0,.31.2.4s.25.31.33.47a.5.5,0,0,0,0-.14c.07-.26.06-.55.14-.81A2,2,0,0,1,60.7,26.74Zm3.24.07-.08-.06,0,.13a7.63,7.63,0,0,1-1.5,4.2,3.14,3.14,0,0,1-.56.61,10,10,0,0,1,1.06,1l0-.07a9.11,9.11,0,0,0,2.36-5.78l.06-.11-.07,0Zm-1.9,0a5.12,5.12,0,0,1-.07.85l.16.17a.17.17,0,0,1,0,.22.19.19,0,0,1-.22,0A6.19,6.19,0,0,1,61,29.81c-.16.2-.31.47-.51.58l.43.38s0-.06,0-.09,0-.12.1-.11.21.22.33.33.13.32.08.49a7,7,0,0,0,1.9-4.51l.07-.08c-.43,0-.88,0-1.32,0Zm-11,0,.07.11a3.83,3.83,0,0,1,.07.93c.05-.09.07-.21.18-.27s-.11-.11-.1-.19,0-.46.24-.54A.54.54,0,0,1,51,26.78Zm-2.28,0-.13,0H47.27A9.65,9.65,0,0,0,48.43,31a15.49,15.49,0,0,0,1.26,1.77l.94-1,.11,0a2.87,2.87,0,0,1-.44-.45.65.65,0,0,1-.4-.3c0-.05,0-.15-.06-.18l-.06.07c-.17.08-.23-.09-.34-.16s-.08-.36-.27-.31-.1-.09-.15-.14-.23-.18-.33-.28,0,.1-.06.13-.26-.19-.38-.28-.06.05-.1,0a.55.55,0,0,1-.19-.4c-.16-.18-.09-.45-.06-.67,0-.06.11-.09.09-.16s.15-.11.25-.11a.25.25,0,0,1,.09.09c.06,0,.2,0,.15-.13a.62.62,0,0,1,.31-.11,2,2,0,0,0,.21.29l-.07-.1a7.48,7.48,0,0,1-.23-1.44s-.06,0,0-.07h0A1.49,1.49,0,0,1,48.71,26.8Zm1.85,0-.1,0a11,11,0,0,1-1.32,0l.06.08.1.87a6.69,6.69,0,0,1,.18,1c.05-.07,0-.21.15-.23-.05-.1.1-.19,0-.28a1,1,0,0,1,.27-.62c.24,0,.26-.33.5-.34s.2.16.25.22A.9.9,0,0,1,50.56,26.8Zm2.43.58c.13.25.2.53.34.77s.27.39.36.6a3.28,3.28,0,0,1,.4-.46.25.25,0,0,0,0-.18c0-.1,0-.24-.08-.33s0,.17,0,.24a.08.08,0,0,1-.11-.06.31.31,0,0,1-.23-.21c.09-.06,0-.08,0-.13s-.05,0-.09,0a.12.12,0,0,1-.07,0C53.41,27.37,53.11,27.53,53,27.39Zm1.49.37a.68.68,0,0,1-.19.31h0c.11-.08.19-.23.34-.24Zm3.74.39a.35.35,0,0,0,.08.23c.18,0,.1.23.27.2s0-.11,0-.17-.17-.16-.26-.24,0-.05,0-.08S58.26,28.1,58.22,28.15Zm2.68,0c-.14,0-.3.07-.42,0s-.07,0-.07.06-.09.16-.2.13-.09-.13-.11-.19a.51.51,0,0,1,0,.15,1.62,1.62,0,0,0-.2.32c-.1.11-.26.07-.36.16s-.27.18-.41.25,0,0,0,.06a.18.18,0,0,0,.2,0c.2.05.16-.2.27-.28s.19-.1.3,0a.67.67,0,0,1,.11.48c-.11.11-.06.3-.14.43s-.17.23-.15.38a.33.33,0,0,1-.26.08,4.44,4.44,0,0,0-1.18-.27.08.08,0,0,0-.06.09c.17.09.38.09.56.17s.27.24.47.18.45.06.57-.12.13-.3.21-.45h.06c.09.1.09.25.13.35.13-.14.24-.3.36-.44a4.23,4.23,0,0,0,.69-1.46A1.41,1.41,0,0,0,60.9,28.16Zm-6,0a7.38,7.38,0,0,1-.88.94,3.61,3.61,0,0,0,1.7.79c0-.13,0-.29,0-.4s.18-.1.27-.08a.08.08,0,0,0,.06-.12c-.14,0-.08-.18-.12-.26s.09,0,.07-.1,0-.16,0-.24.06-.08.1-.08c-.3.16-.62,0-.89-.15S55,28.31,54.94,28.16Zm2.75.83s-.07.1,0,.13.36-.11.36-.28C57.88,28.81,57.8,28.9,57.69,29Zm.53.36c-.15,0-.22.11-.33.2s-.2-.14-.31-.09,0,0,0,0a.11.11,0,0,1,0,.14c-.16.15-.24-.07-.39-.06v.06s0,.09-.06.07-.29-.1-.38-.24-.12,0-.16,0-.18,0-.15.11c-.12,0-.13.17-.22.25s-.21.14-.35.14c0,0,0,.08,0,.08a.48.48,0,0,0,.27,0c.14-.23.38,0,.58-.12s0,.16.13.2.34.17.5,0c0-.22.24-.2.38-.26s.45-.3.43-.58Zm-4.57.13a7,7,0,0,1-.94,1c.15,0,.23.17.35.24a5.91,5.91,0,0,0,2.42,1.08l-.23-.1c-.17-.19-.41-.42-.42-.69.17-.06.15-.25.21-.37a1,1,0,0,1,.5-.27c-.48.2-.89-.16-1.29-.34A1.84,1.84,0,0,1,53.65,29.47Zm6.58,1.32,0-.09A.78.78,0,0,1,60,31c0,.08,0,.19.07.24s.44.18.48.41-.47.4-.23.63c.08.11-.11.16-.08.25l.07-.09a6.58,6.58,0,0,0,.84-.71h0c-.06,0-.13,0-.19,0a.3.3,0,0,1-.16-.32ZM52.62,31l0,0,0,.06Zm.15.2a.21.21,0,0,1-.11-.15Zm0,0c0,.11.18.18.14.33a.4.4,0,0,1-.38.13c-.27,0-.47.16-.72.19s-.31-.21-.53-.19a7.45,7.45,0,0,0,4.58,2l.13.09L56,33.56V32.31l-.11,0A5.48,5.48,0,0,1,52.8,31.22Zm8.75.89,0-.11a2.55,2.55,0,0,1-.65.62c-.31.31-.81.37-1,.82-.17.15-.22.39-.45.47s-.33.21-.46.38c-.4.36-.65-.23-1-.3l-.72.13a2.28,2.28,0,0,1-.74,0,11.14,11.14,0,0,1,0,1.49l.09-.06a9.22,9.22,0,0,0,5.94-2.5ZM51,32.09v.06l-1,1a9.59,9.59,0,0,0,5,2.36,7.85,7.85,0,0,1,.94.11L56,35.49V34.2l0-.07-.15,0A7.47,7.47,0,0,1,51,32.09Zm5.41.33.07.1a9.66,9.66,0,0,1,0,1.17,7.28,7.28,0,0,1,1.14-.16.4.4,0,0,1-.21-.12c-.22,0-.33-.25-.4-.42s.05-.23.1-.34-.39-.05-.56-.12S56.51,32.43,56.45,32.42Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M65.15,18.81a4.19,4.19,0,0,1,1.21,2.26l.11.27a10,10,0,0,1-2.57-2.73l-.79-.8A6.68,6.68,0,0,1,65.15,18.81Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M47.55,20A15.14,15.14,0,0,1,46,21.49a10,10,0,0,1,.7-1.83,4.52,4.52,0,0,1,2.58-1.72A11.71,11.71,0,0,0,47.55,20Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M67.61,21.09c.22,1-.1,2,.1,3h0C67.17,23,66,22.5,65.23,21.65a3.4,3.4,0,0,1-.77-1.78c.45,1.09,1.68,1.34,2.38,2.25a3,3,0,0,1,.46.75l0,0a20.49,20.49,0,0,1-.82-2.75,2.15,2.15,0,0,0-.8-1A2.76,2.76,0,0,1,67.61,21.09Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M46.69,19.23c-.94.64-.88,1.8-1.17,2.76-.09.36-.26.68-.34,1l0,0A3.25,3.25,0,0,1,46,21.92c.67-.62,1.65-1,2-1.91,0,1.26-1.07,2.26-2.08,3a4.21,4.21,0,0,0-1,1.25c0-.32,0-.64,0-1-.11-1.1-.19-2.36.59-3.18A2.35,2.35,0,0,1,46.69,19.23Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M68.21,21.31a4.44,4.44,0,0,1,.41,4.25,7.47,7.47,0,0,0-.48,1.75c0-.1-.05-.25-.09-.36-.33-1.27-1.54-2.18-2-3.39a6.31,6.31,0,0,1-.36-1.23c.53,1,1.84,1.49,2.19,2.57a4.91,4.91,0,0,1,.23.91,0,0,0,0,0,0,0,12.39,12.39,0,0,1,0-3.38,2.79,2.79,0,0,0-.4-1.63C68,20.89,68.06,21.12,68.21,21.31Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M44.69,21c-.72,1.09-.12,2.47-.16,3.72l-.09,1.27s0,0,0,0,.05-.29.08-.44a4.77,4.77,0,0,1,1.84-2.47,2,2,0,0,0,.4-.59,5.25,5.25,0,0,1-.44,1.5c-.61,1.18-1.73,2.15-1.93,3.51-.1-1.3-1-2.27-.89-3.65A4.38,4.38,0,0,1,44.63,21S44.66,20.95,44.69,21Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M69,28.68c-.5.71-1.1,1.36-1.56,2.08a4,4,0,0,0-.1-1.81,15.68,15.68,0,0,1-.83-3.61v-.49c.29,1.3,1.57,2.2,1.49,3.65a3.2,3.2,0,0,1-.15,1l0,0,.06-.07a14.5,14.5,0,0,1,.58-2.14,5.2,5.2,0,0,0,.73-3.09A5.25,5.25,0,0,1,69,28.68Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M44.32,28.22a12,12,0,0,0,.36,1.44s0,0,0,0c-.49-1.36.21-2.63.92-3.69A3.59,3.59,0,0,0,46,25a8,8,0,0,1-.17,2c-.17.81-.43,1.59-.65,2.38a3.72,3.72,0,0,0,0,1.57l-.07-.06c-.52-1-1.54-1.69-1.84-2.74A5.8,5.8,0,0,1,43,25.43a5.06,5.06,0,0,1,.29-1C43,25.88,44,26.94,44.32,28.22Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M67,30.92a3.4,3.4,0,0,1-.58,1.72h.06a21.69,21.69,0,0,1,1.34-1.8,4.7,4.7,0,0,0,1.77-2.71,4.66,4.66,0,0,1-2.28,4.5c-.63.41-1.27.8-1.87,1.26v-.06c.93-1.54.47-3.66,1-5.35l.21-.57C66.61,29,67.07,29.86,67,30.92Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M46.71,33c.1.35.3.66.44,1-1.41-1-3.33-1.87-4-3.64a4.38,4.38,0,0,1-.24-2.05c.11,1.57,1.8,2.4,2.58,3.69a4.28,4.28,0,0,0,.59.78c0-.17-.19-.31-.25-.48a3.37,3.37,0,0,1-.31-1.85,9.32,9.32,0,0,0,.28-2.39C46.53,29.56,46.32,31.41,46.71,33Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M64.93,34.18a4.69,4.69,0,0,1-1,1.16c.12,0,.23-.11.34-.18,1-1,2.34-1.3,3.44-2.12a3.32,3.32,0,0,0,1-1.31,5.15,5.15,0,0,1-3.46,3.76c-.81.22-1.69.29-2.48.56,1.34-1.15,1.26-2.93,2.16-4.28a13.83,13.83,0,0,1,.85-1.15C65.32,31.7,65.56,33.12,64.93,34.18Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M48,32.76c.47,1.16.65,2.48,1.75,3.36-1.18-.39-2.57-.28-3.61-1a5,5,0,0,1-2.37-3.2c.79,1.78,2.76,1.93,4.08,3a3.29,3.29,0,0,0,.77.53h0a4.55,4.55,0,0,1-.87-.94c-.77-1.07-.5-2.58-1.08-3.74A8.69,8.69,0,0,1,48,32.76Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M62.07,36.22a7.28,7.28,0,0,1-1,.36,10,10,0,0,0,1.24-.18c1.56-.25,3.35,0,4.45-1.33a4.2,4.2,0,0,1-2.35,2c-1.6.6-3.2-.14-4.73-.38l-.29,0h0a4.29,4.29,0,0,0,2-.91A20.69,20.69,0,0,1,64,33.45C63.31,34.35,63.23,35.64,62.07,36.22Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M51.12,35.79a4.41,4.41,0,0,0,2.1.93c-.18.07-.43,0-.62.1-1.38.34-2.91.89-4.37.4a4.24,4.24,0,0,1-2.41-2c1.26,1.43,3.32,1,5,1.33a2.35,2.35,0,0,0,.71.09c-.2-.13-.48-.11-.7-.23-1.32-.46-1.51-1.89-2.23-2.85A20.27,20.27,0,0,1,51.12,35.79Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M61.4,37.74a3.65,3.65,0,0,0,3.22-.35,3.83,3.83,0,0,1-1.7,1.19,4.25,4.25,0,0,1-4-.87c-.45-.28-.85-.7-1.43-.66a2,2,0,0,0-.59.06,11,11,0,0,1,3,2.08,4.49,4.49,0,0,1-.54.49,10.64,10.64,0,0,0-3-2.4,1.92,1.92,0,0,0-.61.26,9.13,9.13,0,0,0-2.43,2.17l-.57-.47a10.4,10.4,0,0,1,3-2.14c-1.08-.34-1.78.56-2.6,1A3.81,3.81,0,0,1,48,37.5a3.7,3.7,0,0,0,3.3.28c1.39-.6,2.83-1.36,4.5-1,.26,0,.52.27.76,0a5.34,5.34,0,0,1,3.72.47Z' }),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 293 */
 /*!*************************************!*\
   !*** ./src/Components/Row/row.scss ***!
   \*************************************/
@@ -21362,8 +26667,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 186 */,
-/* 187 */
+/* 294 */,
+/* 295 */
 /*!******************************************************!*\
   !*** ./src/Components/ViewerWindow/ViewerWindow.jsx ***!
   \******************************************************/
@@ -21383,15 +26688,15 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	var _TitleBar = __webpack_require__(/*! ../TitleBar/TitleBar.jsx */ 188);
+	var _TitleBar = __webpack_require__(/*! ../TitleBar/TitleBar.jsx */ 296);
 	
 	var _TitleBar2 = _interopRequireDefault(_TitleBar);
 	
-	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 191);
+	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 299);
 	
 	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
 	
-	__webpack_require__(/*! ./viewerWindow.scss */ 201);
+	__webpack_require__(/*! ./viewerWindow.scss */ 309);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21417,7 +26722,7 @@
 	exports.default = ViewerWindow;
 
 /***/ },
-/* 188 */
+/* 296 */
 /*!**********************************************!*\
   !*** ./src/Components/TitleBar/TitleBar.jsx ***!
   \**********************************************/
@@ -21437,7 +26742,7 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	__webpack_require__(/*! ./titleBar.scss */ 189);
+	__webpack_require__(/*! ./titleBar.scss */ 297);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21470,7 +26775,7 @@
 	exports.default = TitleBar;
 
 /***/ },
-/* 189 */
+/* 297 */
 /*!***********************************************!*\
   !*** ./src/Components/TitleBar/titleBar.scss ***!
   \***********************************************/
@@ -21479,8 +26784,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 190 */,
-/* 191 */
+/* 298 */,
+/* 299 */
 /*!********************************************************************!*\
   !*** ./src/Components/ViewerWindowContent/ViewerWindowContent.jsx ***!
   \********************************************************************/
@@ -21500,11 +26805,11 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 192);
+	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 300);
 	
 	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
 	
-	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 198);
+	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 306);
 	
 	var _ImpactStories2 = _interopRequireDefault(_ImpactStories);
 	
@@ -21544,7 +26849,7 @@
 	exports.default = ViewerWindowContent;
 
 /***/ },
-/* 192 */
+/* 300 */
 /*!******************************************************!*\
   !*** ./src/Components/FocusTargets/FocusTargets.jsx ***!
   \******************************************************/
@@ -21560,11 +26865,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 193);
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 301);
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	__webpack_require__(/*! ./focusTargets.scss */ 196);
+	__webpack_require__(/*! ./focusTargets.scss */ 304);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21586,7 +26891,7 @@
 	exports.default = FocusTargets;
 
 /***/ },
-/* 193 */
+/* 301 */
 /*!******************************************!*\
   !*** ./src/Components/Bullet/Bullet.jsx ***!
   \******************************************/
@@ -21602,7 +26907,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(/*! ./bullet.scss */ 194);
+	__webpack_require__(/*! ./bullet.scss */ 302);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21641,7 +26946,7 @@
 	exports.default = Bullet;
 
 /***/ },
-/* 194 */
+/* 302 */
 /*!*******************************************!*\
   !*** ./src/Components/Bullet/bullet.scss ***!
   \*******************************************/
@@ -21650,8 +26955,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 195 */,
-/* 196 */
+/* 303 */,
+/* 304 */
 /*!*******************************************************!*\
   !*** ./src/Components/FocusTargets/focusTargets.scss ***!
   \*******************************************************/
@@ -21660,8 +26965,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 197 */,
-/* 198 */
+/* 305 */,
+/* 306 */
 /*!********************************************************!*\
   !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
   \********************************************************/
@@ -21677,11 +26982,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 193);
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 301);
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	__webpack_require__(/*! ./impactStories.scss */ 199);
+	__webpack_require__(/*! ./impactStories.scss */ 307);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -21709,7 +27014,7 @@
 	exports.default = ImpactStories;
 
 /***/ },
-/* 199 */
+/* 307 */
 /*!*********************************************************!*\
   !*** ./src/Components/ImpactStories/impactStories.scss ***!
   \*********************************************************/
@@ -21718,8 +27023,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 200 */,
-/* 201 */
+/* 308 */,
+/* 309 */
 /*!*******************************************************!*\
   !*** ./src/Components/ViewerWindow/viewerWindow.scss ***!
   \*******************************************************/
@@ -21728,8 +27033,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 202 */,
-/* 203 */
+/* 310 */,
+/* 311 */
 /*!******************************!*\
   !*** ./src/styles/base.scss ***!
   \******************************/
@@ -21738,8 +27043,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 204 */,
-/* 205 */
+/* 312 */,
+/* 313 */
 /*!*****************************************************!*\
   !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
   \*****************************************************/
