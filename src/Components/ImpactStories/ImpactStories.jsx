@@ -22,10 +22,12 @@ const ImpactStories = React.createClass({
 				<h3>Impact Stories</h3>
 				<div  className="stories-wrapper">
 					<div>
-						<a href={this.props.impactStories[this.props.currentStory].url} target="_blank">
-							<h2>{this.props.impactStories[this.props.currentStory].title}</h2>
-						</a>
-						<p>{this.props.impactStories[this.props.currentStory].blurb}</p>
+						<div className="title-blurb-wrapper">
+							<a href={this.props.impactStories[this.props.currentStory].url} target="_blank">
+								<h2>{this.props.impactStories[this.props.currentStory].title}</h2>
+							</a>
+							<p>{this.props.impactStories[this.props.currentStory].blurb}</p>
+						</div>
 						<div className="targetSelector">
 							<h4>View more:</h4>
 							<ul className="bullets">
