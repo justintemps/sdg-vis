@@ -207,7 +207,8 @@
   display: inline;
   font-size: 1.3em;
   color: #fff;
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+  width: 95%; }
 /* -- Bullets -- */
 .bullets {
   margin: 0;
