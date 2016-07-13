@@ -28,11 +28,13 @@ const ViewerWindowContent = React.createClass({
 					focusTargets={focusTargets}
 					focusTarget={this.props.focusTarget}
 					selectFocusTarget={this.props.selectFocusTarget}
+					currentSDG = {this.props.sdgNumber}
 				/>
 				<ImpactStories
 					impactStories={impactStories}
 					currentStory={this.props.currentStory}
 					selectStory={this.props.selectStory}
+					currentSDG = {this.props.sdgNumber}
 				/>
 			</div>
 		);

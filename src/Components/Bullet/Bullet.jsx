@@ -1,4 +1,5 @@
 import React from "react";
+import data from "!json!../../data.json";
 import "./bullet.scss";
 
 const Bullet = React.createClass({
@@ -14,9 +15,13 @@ const Bullet = React.createClass({
 	render() {
 		let isSelected = false;
 
+		const selected = {color: data[this.props.currentSDG].sdgColor};
+		const unselected = {color: data[this.props.currentSDG].sdgColor, opacity: 0.3 };
+/*
 		const selected = {color: "#3bc3e4"};
 		const unselected = {color: "#bdebf6"};
 
+*/
 		if (this.props.type === "focusTarget") {
 			if (this.props.id === this.props.focusTarget) {
 				isSelected = true;

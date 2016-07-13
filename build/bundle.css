@@ -293,7 +293,7 @@ a {
   flex-wrap: wrap;
   display: flex;
   flex-wrap: nowrap;
-  margin: 5px 0; }
+  margin: 0; }
 /* Impact Stories */
 /* -- Typography -- */
 /* -- Mixins -- */
@@ -420,7 +420,7 @@ a {
   flex-wrap: wrap;
   display: flex;
   flex-wrap: nowrap;
-  margin: 5px 0; }
+  margin: 0; }
 
 .impactStories {
   margin: 10px 0;

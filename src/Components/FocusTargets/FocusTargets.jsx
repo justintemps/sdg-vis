@@ -13,6 +13,7 @@ const FocusTargets = React.createClass({
 					id={i}
 					focusTarget={this.props.focusTarget}
 					selectFocusTarget={this.props.selectFocusTarget}
+					currentSDG = {this.props.currentSDG}
 				/>
 			);
 		});

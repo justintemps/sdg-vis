@@ -26681,11 +26681,13 @@
 			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, {
 				focusTargets: focusTargets,
 				focusTarget: this.props.focusTarget,
-				selectFocusTarget: this.props.selectFocusTarget
+				selectFocusTarget: this.props.selectFocusTarget,
+				currentSDG: this.props.sdgNumber
 			}), _react2.default.createElement(_ImpactStories2.default, {
 				impactStories: impactStories,
 				currentStory: this.props.currentStory,
-				selectStory: this.props.selectStory
+				selectStory: this.props.selectStory,
+				currentSDG: this.props.sdgNumber
 			}));
 		}
 	});
@@ -26729,7 +26731,8 @@
 					key: i,
 					id: i,
 					focusTarget: _this.props.focusTarget,
-					selectFocusTarget: _this.props.selectFocusTarget
+					selectFocusTarget: _this.props.selectFocusTarget,
+					currentSDG: _this.props.currentSDG
 				});
 			});
 	
@@ -26756,6 +26759,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _data = __webpack_require__(/*! json!../../data.json */ 161);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
 	__webpack_require__(/*! ./bullet.scss */ 302);
 	
 	function _interopRequireDefault(obj) {
@@ -26773,9 +26780,13 @@
 		render: function render() {
 			var isSelected = false;
 	
-			var selected = { color: "#3bc3e4" };
-			var unselected = { color: "#bdebf6" };
-	
+			var selected = { color: _data2.default[this.props.currentSDG].sdgColor };
+			var unselected = { color: _data2.default[this.props.currentSDG].sdgColor, opacity: 0.3 };
+			/*
+	  		const selected = {color: "#3bc3e4"};
+	  		const unselected = {color: "#bdebf6"};
+	  
+	  */
 			if (this.props.type === "focusTarget") {
 				if (this.props.id === this.props.focusTarget) {
 					isSelected = true;
@@ -26852,7 +26863,8 @@
 					key: i,
 					id: i,
 					currentStory: _this.props.currentStory,
-					selectStory: _this.props.selectStory
+					selectStory: _this.props.selectStory,
+					currentSDG: _this.props.currentSDG
 				});
 			});
 	

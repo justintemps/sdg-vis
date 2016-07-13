@@ -13,6 +13,7 @@ const ImpactStories = React.createClass({
 					id={i}
 					currentStory={this.props.currentStory}
 					selectStory={this.props.selectStory}
+					currentSDG = {this.props.currentSDG}
 				/>
 			);
 		});
