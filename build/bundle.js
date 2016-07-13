@@ -26786,8 +26786,8 @@
 		render: function render() {
 			var isSelected = false;
 	
-			var selected = { color: _data2.default[this.props.currentSDG].sdgColor };
-			var unselected = { color: _data2.default[this.props.currentSDG].sdgColor, opacity: 0.3 };
+			var selected = { color: _data2.default[this.props.currentSDG].sdgColor, opacity: 1 };
+			var unselected = { color: _data2.default[this.props.currentSDG].sdgColor };
 			/*
 	  		const selected = {color: "#3bc3e4"};
 	  		const unselected = {color: "#bdebf6"};

@@ -15,8 +15,8 @@ const Bullet = React.createClass({
 	render() {
 		let isSelected = false;
 
-		const selected = {color: data[this.props.currentSDG].sdgColor};
-		const unselected = {color: data[this.props.currentSDG].sdgColor, opacity: 0.3 };
+		const selected = {color: data[this.props.currentSDG].sdgColor, opacity: 1};
+		const unselected = {color: data[this.props.currentSDG].sdgColor};
 /*
 		const selected = {color: "#3bc3e4"};
 		const unselected = {color: "#bdebf6"};

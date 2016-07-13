@@ -11,8 +11,14 @@
 	font-size: 3em;
 	line-height: 50%;
 	margin: 0 10px 0 10px;
+	opacity: 0.3;
 	position: relative;
 	top: 3.2px;
+	transition: opacity 0.17s ease;
+}
+
+.bullet:hover{
+	opacity: 1;
 }
 
 .bullet::before {
