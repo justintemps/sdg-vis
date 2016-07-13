@@ -58,5 +58,3 @@ const Icon = React.createClass({
 });
 
 export default Icon;
-
-/*	<img className="icon" src={sdg[this.props.sdg]} onClick={this.clickHandler}/>*/
