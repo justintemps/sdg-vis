@@ -1,758 +1,583 @@
-[
-	{
-		"sdgNumber" : 1,
-		"sdgName" : "End poverty in all its forms everywhere",
-		"sdgIcon" : "./src/images/sdg1.svg",
-		"sdgColor" : "#e5243b",
-		"focusTargets" : [
-			{
-				"number" : "1.1",
-				"description" : "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
-			},
-			{
-				"number" : "1.2",
-				"description" : "By 2030, reduce at least by half the proportion of men, women and children living in poverty in all its dimensions according to national definitions"
-			},
-			{
-				"number" : "1.3",
-				"description" : "Implement nationally appropriate social protection systems"
-			},
-			{
-				"number" : "1.5",
-				"description" : "Ensure that all men and women, have equal rights to economic resources, including microfinance"
-			},
-			{
-				"number" : "1.5",
-				"description" : "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
-			},
-			{
-				"number" : "1.b",
-				"description" : "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
-			}
+[{
+	"sdgNumber": 1,
+	"sdgName": "End poverty in all its forms everywhere",
+	"sdgIcon": "./src/images/sdg1.svg",
+	"sdgColor": "#e5243b",
+	"focusTargets": [{
+			"number": "1.1",
+			"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
+		}, {
+			"number": "1.2",
+			"description": "By 2030, reduce at least by half the proportion of men, women and children living in poverty in all its dimensions according to national definitions"
+		}, {
+			"number": "1.3",
+			"description": "Implement nationally appropriate social protection systems"
+		}, {
+			"number": "1.5",
+			"description": "Ensure that all men and women, have equal rights to economic resources, including microfinance"
+		}, {
+			"number": "1.5",
+			"description": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
+		}, {
+			"number": "1.b",
+			"description": "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
+		}
 
-		],
-		"stories" : [
-			{
-				"title" : "Breaking the cycle of poverty in Tunisia",
-				"blurb" : "Cooperation between government and social partners, and effective collective bargaining, can promote a more equitable distribution of a country's wealth and income.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/multimedia/features/tunisia/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_481717.jpg"
-			},
-			{
-				"title" : "Working out of poverty in Timor-Leste",
-				"blurb" : "ILO’s Business Opportunities and Support Services (BOSS) project helped local communities to improve farming practices, develop market access, create jobs and develop small and medium-sized enterprises.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493379.jpg"
-			},
-			{
-				"title" : "How Zambia is greening its way out of poverty",
-				"blurb" : "The Zambia Green Jobs Programme promotes the development of sustainable enterprises by boosting competitiveness and business growth thanks to green technologies.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/multimedia/features/zambia/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---ed_emp/---gjp/documents/image/wcms_492376.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 2,
-		"sdgName" : "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
-		"sdgIcon" : "./src/images/sdg2.svg",
-		"sdgColor" : "#dda63a",
-		"focusTargets" : [
-			{
-				"number" : "2.3",
-				"description" : "Double the agricultural productivity and incomes of small-scale food producers"
-			},
-			{
-				"number" : "2.4",
-				"description" : "Implement resilient agricultural practices that increase productivity and production"
-			}
+	],
+	"stories": [{
+		"title": "Breaking the cycle of poverty in Tunisia",
+		"blurb": "Cooperation between government and social partners, and effective collective bargaining, can promote a more equitable distribution of a country's wealth and income.",
+		"url": "http://www.ilo.org/global/about-the-ilo/multimedia/features/tunisia/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_481717.jpg"
+	}, {
+		"title": "Working out of poverty in Timor-Leste",
+		"blurb": "ILO’s Business Opportunities and Support Services (BOSS) project helped local communities to improve farming practices, develop market access, create jobs and develop small and medium-sized enterprises.",
+		"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493379.jpg"
+	}, {
+		"title": "How Zambia is greening its way out of poverty",
+		"blurb": "The Zambia Green Jobs Programme promotes the development of sustainable enterprises by boosting competitiveness and business growth thanks to green technologies.",
+		"url": "http://www.ilo.org/global/about-the-ilo/multimedia/features/zambia/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---ed_emp/---gjp/documents/image/wcms_492376.jpg"
+	}]
+}, {
+	"sdgNumber": 2,
+	"sdgName": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+	"sdgIcon": "./src/images/sdg2.svg",
+	"sdgColor": "#dda63a",
+	"focusTargets": [{
+			"number": "2.3",
+			"description": "Double the agricultural productivity and incomes of small-scale food producers"
+		}, {
+			"number": "2.4",
+			"description": "Implement resilient agricultural practices that increase productivity and production"
+		}
 
-		],
-		"stories" : [
-			{
-				"title" : "Women in agriculture: Cooking their way to empowerment and visibility",
-				"blurb" : "An ILO initiative in north Lebanon is training women on food preparation and marketing, to help them make a living, market excess produce, and carve a visible role for themselves in the agricultural sector.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_453247/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_453854.jpg"
-			},
-			{
-				"title" : "Mushrooms mean opportunities for disabled persons in Bangladesh",
-				"blurb" : "Farming mushrooms is offering a valuable income stream for disabled people in Bangladesh, helping give them more confidence and control over their future.",
-				"url" : "http://www.ilo.org/dhaka/Informationresources/Publicinformation/features/WCMS_451901/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-dhaka/documents/image/wcms_451925.jpg"
-			},
-			{
-				"title" : "Olive festival supports Jordan host communities in face of refugee crisis",
-				"blurb" : "Local farmers and businesses came together to showcase products and explore avenues to develop the olive industry.",
-				"url" : "http://www.ilo.org/beirut/media-centre/fs/WCMS_321418/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_321628.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 3,
-		"sdgName" : "Ensure healthy lives and promote well-being for all at all ages",
-		"sdgIcon" : "./src/images/sdg3.svg",
-		"sdgColor" : "#4c9f38",
-		"focusTargets" : [
-			{
-				"number" : "3.3",
-				"description" : "By 2030, end the epidemic of AIDS"
-			},
-			{
-				"number" : "3.8",
-				"description" : "Achieve universal health coverage"
-			},
-			{
-				"number" : "3.9",
-				"description" : "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination"
-			}
+	],
+	"stories": [{
+		"title": "Women in agriculture: Cooking their way to empowerment and visibility",
+		"blurb": "An ILO initiative in north Lebanon is training women on food preparation and marketing, to help them make a living, market excess produce, and carve a visible role for themselves in the agricultural sector.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_453247/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_453854.jpg"
+	}, {
+		"title": "Mushrooms mean opportunities for disabled persons in Bangladesh",
+		"blurb": "Farming mushrooms is offering a valuable income stream for disabled people in Bangladesh, helping give them more confidence and control over their future.",
+		"url": "http://www.ilo.org/dhaka/Informationresources/Publicinformation/features/WCMS_451901/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-dhaka/documents/image/wcms_451925.jpg"
+	}, {
+		"title": "Olive festival supports Jordan host communities in face of refugee crisis",
+		"blurb": "Local farmers and businesses came together to showcase products and explore avenues to develop the olive industry.",
+		"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_321418/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_321628.jpg"
+	}]
+}, {
+	"sdgNumber": 3,
+	"sdgName": "Ensure healthy lives and promote well-being for all at all ages",
+	"sdgIcon": "./src/images/sdg3.svg",
+	"sdgColor": "#4c9f38",
+	"focusTargets": [{
+			"number": "3.3",
+			"description": "By 2030, end the epidemic of AIDS"
+		}, {
+			"number": "3.8",
+			"description": "Achieve universal health coverage"
+		}, {
+			"number": "3.9",
+			"description": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination"
+		}
 
-		],
-		"stories" : [
-			{
-				"title" : "Educated, empowered, inspired: HIV risk reduced",
-				"blurb" : "A novel programme helped HIV vulnerable women in southern Africa build business to improve their lives and the wellbeing of their families.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_481049/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_481605.jpg"
-			},
-			{
-				"title" : "Ergonomics in China: Tackling workplace stress",
-				"blurb" : "The ILO works with unions and the government in China to reduce the impact of stress and poor ergonomics on workers.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_472313/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_474879.jpg"
-			},
-			{
-				"title" : "On the fire safety frontline: Lessons from Bangladeshi fire fighters",
-				"blurb" : "Bangladeshi fire fighters received ILO-supported training, focusing on fire and building safety in garment factories.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_465067/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_465071.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 4,
-		"sdgName" : "Ensure inclusive and quality education for all and promote lifelong learning",
-		"sdgIcon" : "./src/images/sdg4.svg",
-		"sdgColor" : "#c5192d",
-		"focusTargets" : [
-			{
-				"number" : "4.4",
-				"description" : "By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship"
-			},
-			{
-				"number" : "4.5",
-				"description" : "Eliminate gender disparities in education and ensure equal access to all levels of education"
-			},
-			{
-				"number" : "4.b",
-				"description" : "By 2020, substantially expand globally the number of scholarships available to developing countries for enrolment in higher education, including vocational training"
-			},
-			{
-				"number" : "4.c",
-				"description" : "By 2030, substantially increase the supply of qualified teachers"
-			}
+	],
+	"stories": [{
+		"title": "Educated, empowered, inspired: HIV risk reduced",
+		"blurb": "A novel programme helped HIV vulnerable women in southern Africa build business to improve their lives and the wellbeing of their families.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_481049/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_481605.jpg"
+	}, {
+		"title": "Ergonomics in China: Tackling workplace stress",
+		"blurb": "The ILO works with unions and the government in China to reduce the impact of stress and poor ergonomics on workers.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_472313/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_474879.jpg"
+	}, {
+		"title": "On the fire safety frontline: Lessons from Bangladeshi fire fighters",
+		"blurb": "Bangladeshi fire fighters received ILO-supported training, focusing on fire and building safety in garment factories.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_465067/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_465071.jpg"
+	}]
+}, {
+	"sdgNumber": 4,
+	"sdgName": "Ensure inclusive and quality education for all and promote lifelong learning",
+	"sdgIcon": "./src/images/sdg4.svg",
+	"sdgColor": "#c5192d",
+	"focusTargets": [{
+			"number": "4.4",
+			"description": "By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship"
+		}, {
+			"number": "4.5",
+			"description": "Eliminate gender disparities in education and ensure equal access to all levels of education"
+		}, {
+			"number": "4.b",
+			"description": "By 2020, substantially expand globally the number of scholarships available to developing countries for enrolment in higher education, including vocational training"
+		}, {
+			"number": "4.c",
+			"description": "By 2030, substantially increase the supply of qualified teachers"
+		}
 
-		],
-		"stories" : [
-			{
-				"title" : "Jordan: Eager teens enthused by entrepreneurship education",
-				"blurb" : "Nearly 550 Jordanian youth learned how to set up and run a business through the “Know about Business” course which fills a big gap in entrepreneurship education.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_389391/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_389395.jpg"
-			},
-			{
-				"title" : "Apprenticeship programme offers escape from child labour in Jordan",
-				"blurb" : "A youth apprenticeship programme launched by the International Labour Organization and the International Youth Foundation makes gains in the fight against child labour in Jordan.",
-				"url" : "http://www.ilo.org/beirut/media-centre/fs/WCMS_478557/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_478560.jpg"
-			},
-			{
-				"title" : "Vocational training changed my life",
-				"blurb" : "The vocational training path has led to success for one Bangladeshi woman.",
-				"url" : "http://www.ilo.org/dhaka/Informationresources/Publicinformation/features/WCMS_462057/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-dhaka/documents/image/wcms_462055.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 5,
-		"sdgName" : "Achieve gender equality and empower all women and girls",
-		"sdgIcon" : "./src/images/sdg5.svg",
-		"sdgColor" : "#ff3a21",
-		"focusTargets" : [
-			{
-				"number" : "5.1",
-				"description" : "End all forms of discrimination against all women and girls"
-			},
-			{
-				"number" : "5.2",
-				"description" : "Eliminate all forms of violence against all women and girls in the public and private spheres, including trafficking"
-			},
-			{
-				"number" : "5.4",
-				"description" : "Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies and the promotion of shared responsibility within the household and the family as nationally appropriate"
-			},
-			{
-				"number" : "5.5",
-				"description" : "Ensure women’s full and effective participation and equal opportunities for leadership at all levels of decision-making in political, economic and public life"
-			},
-			{
-				"number" : "5.a",
-				"description" : "Undertake reforms to give women equal rights to economic resources"
-			},
-			{
-				"number" : "5.c",
-				"description" : "Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Women weave a better future",
-				"blurb" : "The ILO has set up weaving centres in one of Pakistan’s poorest provinces to boost the quality of the products, and improve skills and income of the weavers.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_418970/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_418977.jpg"
-			},
-			{
-				"title" : "Protecting pregnant workers’ rights in Lesotho",
-				"blurb" : "How the Better Work Programme of the ILO and the International Finance Cooperation (IFC) promotes decent work for young women in Lesotho’s garment industry.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_403759/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_403763.jpg"
-			},
-			{
-				"title" : "Global momentum means more women move into management",
-				"blurb" : "New study shows positive link between female leadership and business performance and urges boost from current 5 per cent of women in top positions.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_333678/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_334074.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 6,
-		"sdgName" : "Ensure access to water and sanitation for all",
-		"sdgIcon" : "./src/images/sdg6.svg",
-		"sdgColor" : "#26bde2",
-		"focusTargets" : [
-			{
-				"number" : "6.3",
-				"description" : "By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Irrigation projects aim to ease strain of Syria refugee crisis in Jordan",
-				"blurb" : "A labour-intensive ILO initiative to develop water catchment and drip irrigation systems is playing a pivotal role in creating decent work opportunities in northern Jordan.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_463108/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_463116.jpg"
-			},
-			{
-				"title" : "Monrovia post Ebola: The quest for clean water and youth employment",
-				"blurb" : "A new programme to strengthen the capacity of local communities in Liberia to improve sanitation highlights the importance of access to clean water.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_460487/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_460968.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 7,
-		"sdgName" : "Ensure access to affordable, reliable, sustainable and modern energy for all ",
-		"sdgIcon" : "./src/images/sdg7.svg",
-		"sdgColor" : "#fcc30b",
-		"focusTargets" : [
-			{
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Bangladesh: Lighting the Way to a Greener World of Work",
-				"blurb" : "Solar power is increasingly seen as a convenient, affordable and environmentally friendly alternative for many in Bangladesh.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_183892/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_183890.jpg"
-			},
-			{
-				"title" : "Title Environmental sustainability is not a job killer",
-				"blurb" : "ILO Green Jobs Programme coordinator, Peter Poschen, outlines the business and job opportunities that could emerge from a shift to a greener economy.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_205526/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_487323.jpg"
-			},
-			{
-				"title" : "Solar home systems: Lighting the way to a greener world of work in Bangladesh",
-				"blurb" : "The move toward greater use of solar energy is being encouraged by the Bangladesh government and is officially endorsed in its current sixth five-year development plan.",
-				"url" : "http://www.ilo.org/asia/info/public/WCMS_216757/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_216976.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 8,
-		"sdgName" : "Promote inclusive and sustainable economic growth, employment and decent work for all ",
-		"sdgIcon" : "./src/images/sdg8.svg",
-		"sdgColor" : "#a21942",
-		"focusTargets" : [
-			{
-				"number" : "8.1",
-				"description" : "Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries"
-			},
-			{
-				"number" : "8.2",
-				"description" : "Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors"
-			},
-			{
-				"number" : "8.3",
-				"description" : "Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services"
-			},
-			{
-				"number" : "8.4",
-				"description" : "Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10-year framework of programmes on sustainable consumption and production, with developed countries taking the lead"
-			},
-			{
-				"number" : "8.5",
-				"description" : "By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value"
-			},
-			{
-				"number" : "8.6",
-				"description" : "By 2020, substantially reduce the proportion of youth not in employment, education or training"
-			},
-			{
-				"number" : "8.7",
-				"description" : "Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms"
-			},
-			{
-				"number" : "8.8",
-				"description" : "Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms"
-			},
-			{
-				"number" : "8.9",
-				"description" : "By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products"
-			},
-			{
-				"number" : "8.10",
-				"description" : "Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all"
-			},
-			{
-				"number" : "8.a",
-				"description" : "Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-Related Technical Assistance to Least Developed Countries"
-			},
-			{
-				"number" : "8.b",
-				"description" : "By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Rising to the top of the footwear industry through Decent Work",
-				"blurb" : "Bethlehem Tilahun Alemu, a young Ethiopian entrepreneur created one of the world’s fastest growing footwear brands by betting on Decent Work.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_346716/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_346758.jpg"
-			},
-			{
-				"title" : "Diversity brings prosperity in Northern Sri Lanka",
-				"blurb" : "The ILO and Australian government are working to reduce vulnerability and strengthen market networks for Sri Lankan smallholders.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_486061/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_486063.jpg"
-			},
-			{
-				"title" : "From refugee in Kenya to business owner in Somalia",
-				"blurb" : "The story of one of the beneficiaries of ILO’s Durable Solutions for Somali refugee returnees through Repatriation, Assistance and Promoting Sustainable Livelihood project.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 9,
-		"sdgName" : "Build resilient infrastructure, promote sustainable industrialization and foster innovation",
-		"sdgIcon" : "./src/images/sdg9.svg",
-		"sdgColor" : "#fd6925",
-		"focusTargets" : [
-			{
-				"number" : "9.1",
-				"description" : "Develop quality, reliable, sustainable and resilient infrastructure to support economic development and human well-being"
-			},
-			{
-				"number" : "9.2",
-				"description" : "Promote inclusive and sustainable industrialization and significantly raise industry's share of employment"
-			},
-			{
-				"number" : "9.3",
-				"description" : "Increase the access of small-scale industrial and other enterprises, to financial services, value chains"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Technology transforming industries critical for growth and jobs in ASEAN",
-				"blurb" : "A new study by the International Labour Organization’s Bureau for Employers’ Activities shows that the robot age is already a reality in ASEAN countries. More than 60 per cent of enterprises surveyed in the region see new technologies as a positive for increasing sales, labour productivity and employment of highly skilled workers..",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_496766/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496752.jpg"
-			},
-			{
-				"title" : "LDCs should focus on jobs and decent work for inclusive growth and economic transformation, says ILO",
-				"blurb" : "Conference participants discuss the importance of developing globalised value chains, building infrastructure, boosting access to energy as well as women’s empowerment.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_250882/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_250888.jpg"
-			},
-			{
-				"title" : "Ryder: Rana Plaza legacy must be improved working conditions globally",
-				"blurb" : "The ILO Director-General highlights the human cost of poor working conditions and calls for action to ensure the Rana Plaza tragedy is not repeated.",
-				"url" : "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_240371/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_241118.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 10,
-		"sdgName" : "Reduce inequality within and among countries",
-		"sdgIcon" : "./src/images/sdg10.svg",
-		"sdgColor" : "#dd1367",
-		"focusTargets" : [
-			{
-				"number" : "10.1",
-				"description" : "Progressively achieve and sustain income growth of the bottom 40 per cent of the population"
-			},
-			{
-				"number" : "10.2",
-				"description" : "Empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status"
-			},
-			{
-				"number" : "10.3",
-				"description" : "Ensure equal opportunity and reduce inequalities of outcome, including by eliminating discriminatory laws, policies and practices and promoting appropriate legislation, policies and action"
-			},
-			{
-				"number" : "10.4",
-				"description" : "Adopt policies, especially fiscal, wage and social protection policies, and progressively achieve gender equality"
-			},
-			{
-				"number" : "10.5",
-				"description" : "Improve the regulation and monitoring of global financial markets and institutions and strengthen the implementation of such regulations"
-			},
-			{
-				"number" : "10.6",
-				"description" : "Ensure enhanced representation and voice for developing countries in decision-making in global international economic and financial institutions in order to deliver more effective, credible, accountable and legitimate institutions"
-			},
-			{
-				"number" : "10.7",
-				"description" : "Facilitate orderly, safe, regular and responsible migration"
-			},
-			{
-				"number" : "10.c",
-				"description" : "By 2030, reduce to less than 3 per cent the transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5 per cent"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "The vital role of social protection in the fight against inequality",
-				"blurb" : "When I talk about schools and hospitals in the fight against poverty and inequality, people generally nod in agreement. They may have different ideas about how they should be run and paid for, but we agree on the power of health and the power of education.",
-				"url" : "https://iloblog.org/2015/11/20/the-vital-role-of-social-protection-in-the-fight-against-inequality-2/",
-				"imageUrl" : "https://iloblogdotorg.files.wordpress.com/2015/11/profile-photo.jpg?w=219"
-			},
-			{
-				"title" : "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-				"blurb" : "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-				"url" : "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-			},
-			{
-				"title" : "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-				"blurb" : "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 11,
-		"sdgName" : "Make cities inclusive, safe, resilient and sustainable",
-		"sdgIcon" : "./src/images/sdg11.svg",
-		"sdgColor" : "#fd9d24",
-		"focusTargets" : [
-			{
-				"number" : "11.1",
-				"description" : "By 2030, ensure access for all to adequate, safe and affordable housing and basic services"
-			},
-			{
-				"number" : "11.2",
-				"description" : "Provide access to safe, affordable, accessible and sustainable transport systems for all"
-			},
-			{
-				"number" : "11.c",
-				"description" : "Support least developed countries in building sustainable and resilient buildings utilizing local materials"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-				"blurb" : "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-			},
-			{
-				"title" : "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-				"blurb" : "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-				"url" : "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-			},
-			{
-				"title" : "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-				"blurb" : "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 12,
-		"sdgName" : "Ensure sustainable consumption and production patterns",
-		"sdgIcon" : "./src/images/sdg12.svg",
-		"sdgColor" : "#bf8b2e",
-		"focusTargets" : [
-			{
-				"number" : "12.1",
-				"description" : "Implement the 10-year framework of programmes on sustainable consumption and production"
-			},
-			{
-				"number" : "12.4",
-				"description" : "By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment"
-			},
-			{
-				"number" : "12.6",
-				"description" : "Encourage companies to adopt sustainable practices and to integrate sustainability information into their reporting cycle"
-			},
-			{
-				"number" : "12.a",
-				"description" : "Support developing countries to strengthen their scientific and technological capacity to move towards more sustainable patterns of consumption and production"
-			},
-			{
-				"number" : "12.b",
-				"description" : "Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-				"blurb" : "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-			},
-			{
-				"title" : "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-				"blurb" : "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-				"url" : "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-			},
-			{
-				"title" : "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-				"blurb" : "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 13,
-		"sdgName" : "Take urgent action to combat climate change and its impacts",
-		"sdgIcon" : "./src/images/sdg13.svg",
-		"sdgColor" : "#3f7e44",
-		"focusTargets" : [
-			{
-				"number" : "13.1",
-				"description" : "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-				"blurb" : "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-			},
-			{
-				"title" : "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-				"blurb" : "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-				"url" : "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-			},
-			{
-				"title" : "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-				"blurb" : "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 14,
-		"sdgName" : "Conserve and sustainably use the oceans, seas and marine resources",
-		"sdgIcon" : "./src/images/sdg14.svg",
-		"sdgColor" : "#0a97d9",
-		"focusTargets" : [
-			{
-				"number" : "14.4",
-				"description" : "Effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing"
-			},
-			{
-				"number" : "14.6",
-				"description" : "By 2020, prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing, eliminate subsidies that contribute to illegal, unreported and unregulated fishing"
-			},
-			{
-				"number" : "14.7",
-				"description" : "By 2030, increase the economic benefits to Small Island developing States and least developed countries from the sustainable use of marine resources, including through sustainable management of fisheries, aquaculture and tourism"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-				"blurb" : "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-			},
-			{
-				"title" : "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-				"blurb" : "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-				"url" : "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-			},
-			{
-				"title" : "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-				"blurb" : "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 15,
-		"sdgName" : "Sustainably manage forests, combat desertification, halt and reverse land degradation, halt biodiversity loss",
-		"sdgIcon" : "./src/images/sdg15.svg",
-		"sdgColor": "#56c02b",
-		"focusTargets" : [
-			{
-				"number" : "15.b",
-				"description" : "Mobilize significant resources from all sources and at all levels to finance sustainable forest management"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-				"blurb" : "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-			},
-			{
-				"title" : "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-				"blurb" : "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-				"url" : "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-			},
-			{
-				"title" : "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-				"blurb" : "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 16,
-		"sdgName" : "Promote just, peaceful and inclusive societies",
-		"sdgIcon" : "./src/images/sdg16.svg",
-		"sdgColor" : "#00689d",
-		"focusTargets" : [
-			{
-				"number" : "16.2",
-				"description" : "End abuse, exploitation, trafficking and all forms of violence against and torture of children"
-			},
-			{
-				"number" : "16.3",
-				"description" : "Promote the rule of law at the national and international levels and ensure equal access to justice for all"
-			},
-			{
-				"number" : "16.6",
-				"description" : "Develop effective, accountable and transparent institutions at all levels"
-			},
-			{
-				"number" : "16.7",
-				"description" : "Ensure responsive, inclusive, participatory and representative decision-making at all levels"
-			},
-			{
-				"number" : "16.8",
-				"description" : "Broaden and strengthen the participation of developing countries in the institutions of global governance"
-			},
-			{
-				"number" : "16.10",
-				"description" : "Ensure public access to information and protect fundamental freedoms, in accordance with international agreements"
-			},
-			{
-				"number" : "16.a",
-				"description" : "Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, to prevent violence and combat terrorism and crime"
-			},
-			{
-				"number" : "16.b",
-				"description" : "Promote and enforce non-discriminatory laws and policies for sustainable development"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-				"blurb" : "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-			},
-			{
-				"title" : "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-				"blurb" : "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-				"url" : "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-			},
-			{
-				"title" : "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-				"blurb" : "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
-			}
-		]
-	},
-	{
-		"sdgNumber" : 17,
-		"sdgName" : "Revitalize the global partnership for sustainable development",
-		"sdgIcon" : "./src/images/sdg17.svg",
-		"sdgColor" : "#19486a",
-		"focusTargets" : [
-			{
-				"number" : "17.9",
-				"description" : "Enhance international support for implementing effective and targeted capacity-building in developing countries"
-			},
-			{
-				"number" : "17.13",
-				"description" : "Enhance global macroeconomic stability, including through policy coordination and policy coherence"
-			},
-			{
-				"number" : "17.14",
-				"description" : "Enhance policy coherence for sustainable development"
-			},
-			{
-				"number" : "17.17",
-				"description" : "Encourage and promote effective public, public-private and civil society partnerships"
-			}
-		],
-		"stories" : [
-			{
-				"title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-				"blurb" : "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-			},
-			{
-				"title" : "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-				"blurb" : "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-				"url" : "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-			},
-			{
-				"title" : "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-				"blurb" : "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-				"url" : "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-				"imageUrl" : "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
-			}
-		]
-	}
-]
+	],
+	"stories": [{
+		"title": "Jordan: Eager teens enthused by entrepreneurship education",
+		"blurb": "Nearly 550 Jordanian youth learned how to set up and run a business through the “Know about Business” course which fills a big gap in entrepreneurship education.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_389391/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_389395.jpg"
+	}, {
+		"title": "Apprenticeship programme offers escape from child labour in Jordan",
+		"blurb": "A youth apprenticeship programme launched by the International Labour Organization and the International Youth Foundation makes gains in the fight against child labour in Jordan.",
+		"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_478557/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_478560.jpg"
+	}, {
+		"title": "Vocational training changed my life",
+		"blurb": "The vocational training path has led to success for one Bangladeshi woman.",
+		"url": "http://www.ilo.org/dhaka/Informationresources/Publicinformation/features/WCMS_462057/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-dhaka/documents/image/wcms_462055.jpg"
+	}]
+}, {
+	"sdgNumber": 5,
+	"sdgName": "Achieve gender equality and empower all women and girls",
+	"sdgIcon": "./src/images/sdg5.svg",
+	"sdgColor": "#ff3a21",
+	"focusTargets": [{
+		"number": "5.1",
+		"description": "End all forms of discrimination against all women and girls"
+	}, {
+		"number": "5.2",
+		"description": "Eliminate all forms of violence against all women and girls in the public and private spheres, including trafficking"
+	}, {
+		"number": "5.4",
+		"description": "Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies and the promotion of shared responsibility within the household and the family as nationally appropriate"
+	}, {
+		"number": "5.5",
+		"description": "Ensure women’s full and effective participation and equal opportunities for leadership at all levels of decision-making in political, economic and public life"
+	}, {
+		"number": "5.a",
+		"description": "Undertake reforms to give women equal rights to economic resources"
+	}, {
+		"number": "5.c",
+		"description": "Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels"
+	}],
+	"stories": [{
+		"title": "Women weave a better future",
+		"blurb": "The ILO has set up weaving centres in one of Pakistan’s poorest provinces to boost the quality of the products, and improve skills and income of the weavers.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_418970/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_418977.jpg"
+	}, {
+		"title": "Protecting pregnant workers’ rights in Lesotho",
+		"blurb": "How the Better Work Programme of the ILO and the International Finance Cooperation (IFC) promotes decent work for young women in Lesotho’s garment industry.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_403759/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_403763.jpg"
+	}, {
+		"title": "Global momentum means more women move into management",
+		"blurb": "New study shows positive link between female leadership and business performance and urges boost from current 5 per cent of women in top positions.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_333678/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_334074.jpg"
+	}]
+}, {
+	"sdgNumber": 6,
+	"sdgName": "Ensure access to water and sanitation for all",
+	"sdgIcon": "./src/images/sdg6.svg",
+	"sdgColor": "#26bde2",
+	"focusTargets": [{
+		"number": "6.3",
+		"description": "By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally"
+	}],
+	"stories": [{
+		"title": "Irrigation projects aim to ease strain of Syria refugee crisis in Jordan",
+		"blurb": "A labour-intensive ILO initiative to develop water catchment and drip irrigation systems is playing a pivotal role in creating decent work opportunities in northern Jordan.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_463108/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_463116.jpg"
+	}, {
+		"title": "Monrovia post Ebola: The quest for clean water and youth employment",
+		"blurb": "A new programme to strengthen the capacity of local communities in Liberia to improve sanitation highlights the importance of access to clean water.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_460487/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_460968.jpg"
+	}]
+}, {
+	"sdgNumber": 7,
+	"sdgName": "Ensure access to affordable, reliable, sustainable and modern energy for all ",
+	"sdgIcon": "./src/images/sdg7.svg",
+	"sdgColor": "#fcc30b",
+	"focusTargets": [{}],
+	"stories": [{
+		"title": "Bangladesh: Lighting the Way to a Greener World of Work",
+		"blurb": "Solar power is increasingly seen as a convenient, affordable and environmentally friendly alternative for many in Bangladesh.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_183892/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_183890.jpg"
+	}, {
+		"title": "Title Environmental sustainability is not a job killer",
+		"blurb": "ILO Green Jobs Programme coordinator, Peter Poschen, outlines the business and job opportunities that could emerge from a shift to a greener economy.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_205526/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_487323.jpg"
+	}, {
+		"title": "Solar home systems: Lighting the way to a greener world of work in Bangladesh",
+		"blurb": "The move toward greater use of solar energy is being encouraged by the Bangladesh government and is officially endorsed in its current sixth five-year development plan.",
+		"url": "http://www.ilo.org/asia/info/public/WCMS_216757/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_216976.jpg"
+	}]
+}, {
+	"sdgNumber": 8,
+	"sdgName": "Promote inclusive and sustainable economic growth, employment and decent work for all ",
+	"sdgIcon": "./src/images/sdg8.svg",
+	"sdgColor": "#a21942",
+	"focusTargets": [{
+		"number": "8.1",
+		"description": "Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries"
+	}, {
+		"number": "8.2",
+		"description": "Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors"
+	}, {
+		"number": "8.3",
+		"description": "Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services"
+	}, {
+		"number": "8.4",
+		"description": "Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10-year framework of programmes on sustainable consumption and production, with developed countries taking the lead"
+	}, {
+		"number": "8.5",
+		"description": "By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value"
+	}, {
+		"number": "8.6",
+		"description": "By 2020, substantially reduce the proportion of youth not in employment, education or training"
+	}, {
+		"number": "8.7",
+		"description": "Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms"
+	}, {
+		"number": "8.8",
+		"description": "Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms"
+	}, {
+		"number": "8.9",
+		"description": "By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products"
+	}, {
+		"number": "8.10",
+		"description": "Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all"
+	}, {
+		"number": "8.a",
+		"description": "Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-Related Technical Assistance to Least Developed Countries"
+	}, {
+		"number": "8.b",
+		"description": "By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization"
+	}],
+	"stories": [{
+		"title": "Rising to the top of the footwear industry through Decent Work",
+		"blurb": "Bethlehem Tilahun Alemu, a young Ethiopian entrepreneur created one of the world’s fastest growing footwear brands by betting on Decent Work.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_346716/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_346758.jpg"
+	}, {
+		"title": "Diversity brings prosperity in Northern Sri Lanka",
+		"blurb": "The ILO and Australian government are working to reduce vulnerability and strengthen market networks for Sri Lankan smallholders.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_486061/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_486063.jpg"
+	}, {
+		"title": "From refugee in Kenya to business owner in Somalia",
+		"blurb": "The story of one of the beneficiaries of ILO’s Durable Solutions for Somali refugee returnees through Repatriation, Assistance and Promoting Sustainable Livelihood project.",
+		"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+	}]
+}, {
+	"sdgNumber": 9,
+	"sdgName": "Build resilient infrastructure, promote sustainable industrialization and foster innovation",
+	"sdgIcon": "./src/images/sdg9.svg",
+	"sdgColor": "#fd6925",
+	"focusTargets": [{
+		"number": "9.1",
+		"description": "Develop quality, reliable, sustainable and resilient infrastructure to support economic development and human well-being"
+	}, {
+		"number": "9.2",
+		"description": "Promote inclusive and sustainable industrialization and significantly raise industry's share of employment"
+	}, {
+		"number": "9.3",
+		"description": "Increase the access of small-scale industrial and other enterprises, to financial services, value chains"
+	}],
+	"stories": [{
+		"title": "Technology transforming industries critical for growth and jobs in ASEAN",
+		"blurb": "A new study by the International Labour Organization’s Bureau for Employers’ Activities shows that the robot age is already a reality in ASEAN countries. More than 60 per cent of enterprises surveyed in the region see new technologies as a positive for increasing sales, labour productivity and employment of highly skilled workers..",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_496766/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496752.jpg"
+	}, {
+		"title": "LDCs should focus on jobs and decent work for inclusive growth and economic transformation, says ILO",
+		"blurb": "Conference participants discuss the importance of developing globalised value chains, building infrastructure, boosting access to energy as well as women’s empowerment.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_250882/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_250888.jpg"
+	}, {
+		"title": "Ryder: Rana Plaza legacy must be improved working conditions globally",
+		"blurb": "The ILO Director-General highlights the human cost of poor working conditions and calls for action to ensure the Rana Plaza tragedy is not repeated.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_240371/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_241118.jpg"
+	}]
+}, {
+	"sdgNumber": 10,
+	"sdgName": "Reduce inequality within and among countries",
+	"sdgIcon": "./src/images/sdg10.svg",
+	"sdgColor": "#dd1367",
+	"focusTargets": [{
+		"number": "10.1",
+		"description": "Progressively achieve and sustain income growth of the bottom 40 per cent of the population"
+	}, {
+		"number": "10.2",
+		"description": "Empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status"
+	}, {
+		"number": "10.3",
+		"description": "Ensure equal opportunity and reduce inequalities of outcome, including by eliminating discriminatory laws, policies and practices and promoting appropriate legislation, policies and action"
+	}, {
+		"number": "10.4",
+		"description": "Adopt policies, especially fiscal, wage and social protection policies, and progressively achieve gender equality"
+	}, {
+		"number": "10.5",
+		"description": "Improve the regulation and monitoring of global financial markets and institutions and strengthen the implementation of such regulations"
+	}, {
+		"number": "10.6",
+		"description": "Ensure enhanced representation and voice for developing countries in decision-making in global international economic and financial institutions in order to deliver more effective, credible, accountable and legitimate institutions"
+	}, {
+		"number": "10.7",
+		"description": "Facilitate orderly, safe, regular and responsible migration"
+	}, {
+		"number": "10.c",
+		"description": "By 2030, reduce to less than 3 per cent the transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5 per cent"
+	}],
+	"stories": [{
+		"title": "The vital role of social protection in the fight against inequality",
+		"blurb": "When I talk about schools and hospitals in the fight against poverty and inequality, people generally nod in agreement. They may have different ideas about how they should be run and paid for, but we agree on the power of health and the power of education.",
+		"url": "https://iloblog.org/2015/11/20/the-vital-role-of-social-protection-in-the-fight-against-inequality-2/",
+		"imageUrl": "https://iloblogdotorg.files.wordpress.com/2015/11/profile-photo.jpg?w=219"
+	}, {
+		"title": "ILO Director-General says addressing inequality can boost economic growth",
+		"blurb": "Reversing the trend of sluggish growth is vital for success of the 2030 Agenda for sustainable development, including the goal of promoting inclusive growth and decent work for all.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_425578/lang--en/index.htm",
+		"imageUrl": "http: //www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_425070.jpg"
+	}, {
+		"title": "ILO: Labour market policies in Latin America must be reoriented to protect social achievements and address productivity gaps",
+		"blurb": "At a time when governments in the region face the dual challenges of creating quality jobs and safeguarding achievements in social inclusion and work quality, an ILO report highlights the need for a new approach based on active labour market policies to address the current economic slowdown.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_490982/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_482948.png"
+	}]
+}, {
+	"sdgNumber": 11,
+	"sdgName": "Make cities inclusive, safe, resilient and sustainable",
+	"sdgIcon": "./src/images/sdg11.svg",
+	"sdgColor": "#fd9d24",
+	"focusTargets": [{
+		"number": "11.1",
+		"description": "By 2030, ensure access for all to adequate, safe and affordable housing and basic services"
+	}, {
+		"number": "11.2",
+		"description": "Provide access to safe, affordable, accessible and sustainable transport systems for all"
+	}, {
+		"number": "11.c",
+		"description": "Support least developed countries in building sustainable and resilient buildings utilizing local materials"
+	}],
+	"stories": [{
+		"title": "More than half of the global rural population excluded from health care",
+		"blurb": "ILO report shows huge differences in health care access between rural and urban areas worldwide.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_362525/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_363237.jpg"
+	}, {
+		"title": "From the depths of an African shantytown, a nascent youth employment movement grows",
+		"blurb": "In Africa’s second largest slum, youth unemployment is sky high. But cooperative projects are helping youth find work and slowly lift themselves out of poverty through such projects as raising food in community gardens, processing waste for bio-fuel or providing improved sanitation. Journalist Anne Holmes reports on how this emerging economic revival is making a small but significant dent in a major ongoing challenge.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_170345/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_170349.jpg"
+	}, {
+		"title": "Building back better in the Philippines",
+		"blurb": "ILO activities in the Philippines are a good example of what can be done to facilitate the transition from the informal to the formal economy, as they not only brought immediate income to typhoon victims, but also a guaranteed minimum wage, social protection and safety and health.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_384775/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_384805.jpg"
+	}]
+}, {
+	"sdgNumber": 12,
+	"sdgName": "Ensure sustainable consumption and production patterns",
+	"sdgIcon": "./src/images/sdg12.svg",
+	"sdgColor": "#bf8b2e",
+	"focusTargets": [{
+		"number": "12.1",
+		"description": "Implement the 10-year framework of programmes on sustainable consumption and production"
+	}, {
+		"number": "12.4",
+		"description": "By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment"
+	}, {
+		"number": "12.6",
+		"description": "Encourage companies to adopt sustainable practices and to integrate sustainability information into their reporting cycle"
+	}, {
+		"number": "12.a",
+		"description": "Support developing countries to strengthen their scientific and technological capacity to move towards more sustainable patterns of consumption and production"
+	}, {
+		"number": "12.b",
+		"description": "Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs"
+	}],
+	"stories": [{
+		"title": "Sustainable tourism: A driving force of job creation, economic growth and development",
+		"blurb": "ILO Tourism Specialist Lucie Servoz explains how sustainable tourism can be a driving force for decent work, economic growth and sustainable development.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_480824/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/---publ/documents/image/wcms_480964.jpg"
+	}, {
+		"title": "Do we have to choose between creating jobs and protecting the climate?",
+		"blurb": "Peter Poschen, Director of the ILO Enterprises Department, argues that the world of work has a central role to play in tackling climate change and ensuring a just transition to a green economy.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_373207/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_373208.jpg"
+	}, {
+		"title": "Olive festival supports Jordan host communities in face of refugee crisis",
+		"blurb": "As part of the ILO’s efforts to support communities in Jordan most affected by the Syrian refugee crisis, the 2014 Irbid Olive and Rural Produce Festival brought together local farmers and businesses to showcase products and explore avenues to develop the olive industry..",
+		"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_321418/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_321628.jpg"
+	}]
+}, {
+	"sdgNumber": 13,
+	"sdgName": "Take urgent action to combat climate change and its impacts",
+	"sdgIcon": "./src/images/sdg13.svg",
+	"sdgColor": "#3f7e44",
+	"focusTargets": [{
+		"number": "13.1",
+		"description": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries"
+	}],
+	"stories": [{
+		"title": "10 action points towards a greener economy",
+		"blurb": "Just before the opening of the Paris climate conference that is expected to set new ambitious targets to move to a low-carbon economy, ILO Green Jobs Programme Coordinator Kees van der Ree outlines ten steps that can facilitate a transition to a green economy.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_429777/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_429793.jpg"
+	}, {
+		"title": "Climate change is a world of work issue",
+		"blurb": "Dr. Esther Byer-Suckoo, Minister of Labour for Barbados and chair of an ILO expert meeting on transitioning to a sustainable economy, spoke to ILO news about green jobs and decent work.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_413213/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_413214.jpg"
+	}, {
+		"title": "Ryder: World of work critical to greening the economy",
+		"blurb": "ILO Director-General calls on EU environment and labour ministers to align policies for sustainable development.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_249743/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_249772.jpg"
+	}]
+}, {
+	"sdgNumber": 14,
+	"sdgName": "Conserve and sustainably use the oceans, seas and marine resources",
+	"sdgIcon": "./src/images/sdg14.svg",
+	"sdgColor": "#0a97d9",
+	"focusTargets": [{
+		"number": "14.4",
+		"description": "Effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing"
+	}, {
+		"number": "14.6",
+		"description": "By 2020, prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing, eliminate subsidies that contribute to illegal, unreported and unregulated fishing"
+	}, {
+		"number": "14.7",
+		"description": "By 2030, increase the economic benefits to Small Island developing States and least developed countries from the sustainable use of marine resources, including through sustainable management of fisheries, aquaculture and tourism"
+	}],
+	"stories": [{
+		"title": "Green ambitions in Mauritius",
+		"blurb": "The ILO is partnering with Mauritius as it rolls out its green economy action plan ahead of the UN Conference on Small Island Developing States (SIDS) in Samoa.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_301423/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_250981.jpg"
+	}, {
+		"title": "Decent work and sustainability intertwined for small states battling climate change",
+		"blurb": "The international community has just concluded its discussion in Samoa about small island developing states, with decent work for all emerging as a key commitment, writes Bob Kyloh, senior ILO economist, who attended the conference.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_304816/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_304812.jpg"
+	}, {
+		"title": "FAO and ILO urge countries to better protect children working in fisheries and aquaculture",
+		"blurb": "Many children are exposed to harsh and hazardous working conditions that harm their health and learning abilities.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_216830/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_216767.jpg"
+	}]
+}, {
+	"sdgNumber": 15,
+	"sdgName": "Sustainably manage forests, combat desertification, halt and reverse land degradation, halt biodiversity loss",
+	"sdgIcon": "./src/images/sdg15.svg",
+	"sdgColor": "#56c02b",
+	"focusTargets": [{
+		"number": "15.b",
+		"description": "Mobilize significant resources from all sources and at all levels to finance sustainable forest management"
+	}],
+	"stories": [{
+		"title": "Peru: The world of work can help save the environment",
+		"blurb": "The Peruvian Ambassador to the United Nations in Geneva, Luis Enrique Chavez Basagoitia shared his thoughts on opportunities for humanity that can be provided by the green economy; challenges that developing countries, including Peru, must overcome and the key role of technology. He also spoke about the joint appeal of Peru and France in the lead-up to major talks on climate change at the end of this year.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_381760/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_381621.jpg"
+	}, {
+		"title": "Transition to green economy could yield up to 60 million jobs, ILO says",
+		"blurb": "The transformation to a greener economy could generate 15 to 60 million additional jobs globally over the next two decades and lift tens of millions of workers out of poverty, according to a new report led by the Green Jobs Initiative.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_181795/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_181789.jpg"
+	}, {
+		"title": "Environmental sustainability is not a job killer ",
+		"blurb": "ILO Green Jobs Programme coordinator, Peter Poschen, outlines the business and job opportunities that could emerge from a shift to a greener economy.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_205526/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_205478.jpg"
+	}]
+}, {
+	"sdgNumber": 16,
+	"sdgName": "Promote just, peaceful and inclusive societies",
+	"sdgIcon": "./src/images/sdg16.svg",
+	"sdgColor": "#00689d",
+	"focusTargets": [{
+		"number": "16.2",
+		"description": "End abuse, exploitation, trafficking and all forms of violence against and torture of children"
+	}, {
+		"number": "16.3",
+		"description": "Promote the rule of law at the national and international levels and ensure equal access to justice for all"
+	}, {
+		"number": "16.6",
+		"description": "Develop effective, accountable and transparent institutions at all levels"
+	}, {
+		"number": "16.7",
+		"description": "Ensure responsive, inclusive, participatory and representative decision-making at all levels"
+	}, {
+		"number": "16.8",
+		"description": "Broaden and strengthen the participation of developing countries in the institutions of global governance"
+	}, {
+		"number": "16.10",
+		"description": "Ensure public access to information and protect fundamental freedoms, in accordance with international agreements"
+	}, {
+		"number": "16.a",
+		"description": "Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, to prevent violence and combat terrorism and crime"
+	}, {
+		"number": "16.b",
+		"description": "Promote and enforce non-discriminatory laws and policies for sustainable development"
+	}],
+	"stories": [{
+		"title": "ILO calls for renewed efforts to promote peace, decent jobs and social justice for Palestinian workers",
+		"blurb": "Applying the principles of social justice and decent work could help to address persistent inequalities, tensions and vulnerability in the West Bank and Gaza.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_483830/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_483826.jpg"
+	}, {
+		"title": "Migrant Worker Resource Centres: Supporting justice and fair treatment",
+		"blurb": "Imagine that you had a family to feed and moving abroad was your only option to earn a decent wage — but you didn’t know where or how to find work overseas. Or imagine that your daughter works abroad but that you haven’t had any word from her for months and months.",
+		"url": "https://iloblog.org/2015/06/23/migrant-worker-resource-centres-supporting-justice-and-fair-treatment/",
+		"imageUrl": "https://iloblogdotorg.files.wordpress.com/2015/06/4-far-in-rayong.jpg?w=462&h=351"
+	}, {
+		"title": "New UAE-ILO programme to set example in developing labour market governance",
+		"blurb": "The ILO and UAE launch a new joint programme to improve labour market information systems and governance in the Gulf State, the first such example of collaboration with the ILO in the Gulf Cooperation Council region.",
+		"url": "http://www.ilo.org/beirut/media-centre/news/WCMS_483841/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_484118.jpg"
+	}]
+}, {
+	"sdgNumber": 17,
+	"sdgName": "Revitalize the global partnership for sustainable development",
+	"sdgIcon": "./src/images/sdg17.svg",
+	"sdgColor": "#19486a",
+	"focusTargets": [{
+		"number": "17.9",
+		"description": "Enhance international support for implementing effective and targeted capacity-building in developing countries"
+	}, {
+		"number": "17.13",
+		"description": "Enhance global macroeconomic stability, including through policy coordination and policy coherence"
+	}, {
+		"number": "17.14",
+		"description": "Enhance policy coherence for sustainable development"
+	}, {
+		"number": "17.17",
+		"description": "Encourage and promote effective public, public-private and civil society partnerships"
+	}],
+	"stories": [{
+		"title": "International cooperation is essential to promote migrant domestic workers’ rights",
+		"blurb": "Sharing good practice and experience in both countries sending and receiving workers is key to improve migrant domestic workers’ rights, says Maria Elena Valenzuela, Project Coordinator, ILO Global Action Programme on Migrant Domestic Workers and Their families. outlines the findings of the latest research on the impact of stress in the workplace.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_484794/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_484795.jpg"
+	}, {
+		"title": "Building a global alliance against child labour and forced labour",
+		"blurb": "Beate Andrees, Chief of the ILO’s Fundamental Principles and Rights at Work Branch explains how we can achieve target 8.7 of the United Nations’ SDGs which calls for an end to forced labour and child labour by 2025.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_421016/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_421207.jpg"
+	}]
+}]

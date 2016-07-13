@@ -20757,16 +20757,16 @@
 					"imageUrl": "https://iloblogdotorg.files.wordpress.com/2015/11/profile-photo.jpg?w=219"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "ILO Director-General says addressing inequality can boost economic growth",
+					"blurb": "Reversing the trend of sluggish growth is vital for success of the 2030 Agenda for sustainable development, including the goal of promoting inclusive growth and decent work for all.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_425578/lang--en/index.htm",
+					"imageUrl": "http: //www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_425070.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "ILO: Labour market policies in Latin America must be reoriented to protect social achievements and address productivity gaps",
+					"blurb": "At a time when governments in the region face the dual challenges of creating quality jobs and safeguarding achievements in social inclusion and work quality, an ILO report highlights the need for a new approach based on active labour market policies to address the current economic slowdown.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_490982/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_482948.png"
 				}
 			]
 		},
@@ -20791,22 +20791,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "More than half of the global rural population excluded from health care",
+					"blurb": "ILO report shows huge differences in health care access between rural and urban areas worldwide.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_362525/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_363237.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "From the depths of an African shantytown, a nascent youth employment movement grows",
+					"blurb": "In Africa’s second largest slum, youth unemployment is sky high. But cooperative projects are helping youth find work and slowly lift themselves out of poverty through such projects as raising food in community gardens, processing waste for bio-fuel or providing improved sanitation. Journalist Anne Holmes reports on how this emerging economic revival is making a small but significant dent in a major ongoing challenge.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_170345/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_170349.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Building back better in the Philippines",
+					"blurb": "ILO activities in the Philippines are a good example of what can be done to facilitate the transition from the informal to the formal economy, as they not only brought immediate income to typhoon victims, but also a guaranteed minimum wage, social protection and safety and health.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_384775/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_384805.jpg"
 				}
 			]
 		},
@@ -20839,22 +20839,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Sustainable tourism: A driving force of job creation, economic growth and development",
+					"blurb": "ILO Tourism Specialist Lucie Servoz explains how sustainable tourism can be a driving force for decent work, economic growth and sustainable development.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_480824/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/---publ/documents/image/wcms_480964.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "Do we have to choose between creating jobs and protecting the climate?",
+					"blurb": "Peter Poschen, Director of the ILO Enterprises Department, argues that the world of work has a central role to play in tackling climate change and ensuring a just transition to a green economy.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_373207/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_373208.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Olive festival supports Jordan host communities in face of refugee crisis",
+					"blurb": "As part of the ILO’s efforts to support communities in Jordan most affected by the Syrian refugee crisis, the 2014 Irbid Olive and Rural Produce Festival brought together local farmers and businesses to showcase products and explore avenues to develop the olive industry..",
+					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_321418/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_321628.jpg"
 				}
 			]
 		},
@@ -20871,22 +20871,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "10 action points towards a greener economy",
+					"blurb": "Just before the opening of the Paris climate conference that is expected to set new ambitious targets to move to a low-carbon economy, ILO Green Jobs Programme Coordinator Kees van der Ree outlines ten steps that can facilitate a transition to a green economy.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_429777/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_429793.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "Climate change is a world of work issue",
+					"blurb": "Dr. Esther Byer-Suckoo, Minister of Labour for Barbados and chair of an ILO expert meeting on transitioning to a sustainable economy, spoke to ILO news about green jobs and decent work.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_413213/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_413214.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Ryder: World of work critical to greening the economy",
+					"blurb": "ILO Director-General calls on EU environment and labour ministers to align policies for sustainable development.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_249743/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_249772.jpg"
 				}
 			]
 		},
@@ -20911,22 +20911,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Green ambitions in Mauritius",
+					"blurb": "The ILO is partnering with Mauritius as it rolls out its green economy action plan ahead of the UN Conference on Small Island Developing States (SIDS) in Samoa.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_301423/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_250981.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "Decent work and sustainability intertwined for small states battling climate change",
+					"blurb": "The international community has just concluded its discussion in Samoa about small island developing states, with decent work for all emerging as a key commitment, writes Bob Kyloh, senior ILO economist, who attended the conference.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_304816/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_304812.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "FAO and ILO urge countries to better protect children working in fisheries and aquaculture",
+					"blurb": "Many children are exposed to harsh and hazardous working conditions that harm their health and learning abilities.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_216830/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_216767.jpg"
 				}
 			]
 		},
@@ -20943,22 +20943,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "Peru: The world of work can help save the environment",
+					"blurb": "The Peruvian Ambassador to the United Nations in Geneva, Luis Enrique Chavez Basagoitia shared his thoughts on opportunities for humanity that can be provided by the green economy; challenges that developing countries, including Peru, must overcome and the key role of technology. He also spoke about the joint appeal of Peru and France in the lead-up to major talks on climate change at the end of this year.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_381760/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_381621.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "Transition to green economy could yield up to 60 million jobs, ILO says",
+					"blurb": "The transformation to a greener economy could generate 15 to 60 million additional jobs globally over the next two decades and lift tens of millions of workers out of poverty, according to a new report led by the Green Jobs Initiative.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_181795/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_181789.jpg"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Environmental sustainability is not a job killer ",
+					"blurb": "ILO Green Jobs Programme coordinator, Peter Poschen, outlines the business and job opportunities that could emerge from a shift to a greener economy.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_205526/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_205478.jpg"
 				}
 			]
 		},
@@ -21003,22 +21003,22 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "ILO calls for renewed efforts to promote peace, decent jobs and social justice for Palestinian workers",
+					"blurb": "Applying the principles of social justice and decent work could help to address persistent inequalities, tensions and vulnerability in the West Bank and Gaza.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_483830/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_483826.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
+					"title": "Migrant Worker Resource Centres: Supporting justice and fair treatment",
+					"blurb": "Imagine that you had a family to feed and moving abroad was your only option to earn a decent wage — but you didn’t know where or how to find work overseas. Or imagine that your daughter works abroad but that you haven’t had any word from her for months and months.",
+					"url": "https://iloblog.org/2015/06/23/migrant-worker-resource-centres-supporting-justice-and-fair-treatment/",
+					"imageUrl": "https://iloblogdotorg.files.wordpress.com/2015/06/4-far-in-rayong.jpg?w=462&h=351"
 				},
 				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "New UAE-ILO programme to set example in developing labour market governance",
+					"blurb": "The ILO and UAE launch a new joint programme to improve labour market information systems and governance in the Gulf State, the first such example of collaboration with the ILO in the Gulf Cooperation Council region.",
+					"url": "http://www.ilo.org/beirut/media-centre/news/WCMS_483841/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_484118.jpg"
 				}
 			]
 		},
@@ -21047,22 +21047,16 @@
 			],
 			"stories": [
 				{
-					"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit majorum vitem",
-					"blurb": "Vivamus mollis sollicitudin eleifend. Nam a elit lorem. Nunc ut mauris mauris. Morbi auctor egestas tellus, a scelerisque tellus dapibus non.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
+					"title": "International cooperation is essential to promote migrant domestic workers’ rights",
+					"blurb": "Sharing good practice and experience in both countries sending and receiving workers is key to improve migrant domestic workers’ rights, says Maria Elena Valenzuela, Project Coordinator, ILO Global Action Programme on Migrant Domestic Workers and Their families. outlines the findings of the latest research on the impact of stress in the workplace.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_484794/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_484795.jpg"
 				},
 				{
-					"title": "Ut vel sem ac sapien placerat iaculis vitae eu nulla",
-					"blurb": "Mauris sed elit placerat, mollis nunc nec, lacinia ante. Donec quis tristique tellus. Sed blandit blandit felis eu hendrerit.",
-					"url": "http://www.ilo.org/beirut/media-centre/fs/WCMS_493964/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_493959.jpg"
-				},
-				{
-					"title": "Nunc fermentum urna rutrum sem aliquet, et tristique leo vestibulum",
-					"blurb": "Aenean id velit quis ante fermentum sagittis. Aenean consectetur orci nec tellus pulvinar consectetur. Duis imperdiet neque et quam malesuada finibus.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493380.jpg"
+					"title": "Building a global alliance against child labour and forced labour",
+					"blurb": "Beate Andrees, Chief of the ILO’s Fundamental Principles and Rights at Work Branch explains how we can achieve target 8.7 of the United Nations’ SDGs which calls for an end to forced labour and child labour by 2025.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_421016/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_421207.jpg"
 				}
 			]
 		}
@@ -21181,8 +21175,6 @@
 	});
 	
 	exports.default = Icon;
-	
-	/*	<img className="icon" src={sdg[this.props.sdg]} onClick={this.clickHandler}/>*/
 
 /***/ },
 /* 163 */
