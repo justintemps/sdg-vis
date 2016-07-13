@@ -173,7 +173,7 @@
   padding: 0;
   position: relative;
   text-align: left;
-  width: calc(100% - 10px); }
+  width: 100%; }
 
 .sdgNumber {
   align-self: center;
@@ -245,11 +245,10 @@ body,
   text-align: center; }
 
 h2 {
-  box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
-  color: #26bde2;
+  color: #0080b0;
   margin: 0 0 5px;
   padding: 0; }
 
@@ -316,11 +315,10 @@ body,
   text-align: center; }
 
 h2 {
-  box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
-  color: #26bde2;
+  color: #0080b0;
   margin: 0 0 5px;
   padding: 0; }
 
@@ -374,11 +372,10 @@ body,
   text-align: center; }
 
 h2 {
-  box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
-  color: #26bde2;
+  color: #0080b0;
   margin: 0 0 5px;
   padding: 0; }
 
@@ -474,11 +471,10 @@ body,
   text-align: center; }
 
 h2 {
-  box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
-  color: #26bde2;
+  color: #0080b0;
   margin: 0 0 5px;
   padding: 0; }
 
@@ -528,11 +524,10 @@ body,
   text-align: center; }
 
 h2 {
-  box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
-  color: #26bde2;
+  color: #0080b0;
   margin: 0 0 5px;
   padding: 0; }
 
