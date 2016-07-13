@@ -19,7 +19,12 @@ const ImpactStories = React.createClass({
 
 		return(
 			<div className="impactStories">
-				<h3>Impact Stories</h3>
+				<div className="targetSelector">
+					<h3>Impact Stories</h3>
+					<ul className="bullets">
+						{bullets}
+					</ul>
+				</div>
 				<div  className="stories-wrapper">
 					<div>
 						<div className="title-blurb-wrapper">
@@ -27,12 +32,6 @@ const ImpactStories = React.createClass({
 								<h2>{this.props.impactStories[this.props.currentStory].title}</h2>
 							</a>
 							<p>{this.props.impactStories[this.props.currentStory].blurb}</p>
-						</div>
-						<div className="targetSelector">
-							<h4>View more:</h4>
-							<ul className="bullets">
-								{bullets}
-							</ul>
 						</div>
 					</div>
 					<div className="thumbnail-wrapper">

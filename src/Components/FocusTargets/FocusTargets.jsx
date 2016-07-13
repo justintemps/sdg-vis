@@ -8,20 +8,24 @@ const FocusTargets = React.createClass({
 
 		const bullets = this.props.focusTargets.map( (target, i) => {
 			return (
-				<Bullet type="focusTarget" key={i} id={i} focusTarget={this.props.focusTarget} selectFocusTarget={this.props.selectFocusTarget} />
+				<Bullet type="focusTarget"
+					key={i}
+					id={i}
+					focusTarget={this.props.focusTarget}
+					selectFocusTarget={this.props.selectFocusTarget}
+				/>
 			);
 		});
 
 		return (
 			<div className="focusTargets">
-				<h3>Focus Targets</h3>
+					<div className="targetSelector">
+						<h3>Focus Targets</h3>
+						<ul className="bullets">
+							{bullets}
+						</ul>
+					</div>
 				<p>{this.props.focusTargets[this.props.focusTarget]}</p>
-				<div className="targetSelector">
-					<h4>View more:</h4>
-					<ul className="bullets">
-						{bullets}
-					</ul>
-				</div>
 			</div>
 		);
 	}

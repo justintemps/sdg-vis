@@ -220,7 +220,7 @@
   line-height: 50%;
   margin: 0 10px 0 10px;
   position: relative;
-  top: 5px; }
+  top: 3.2px; }
 
 .bullet::before {
   content: "\2022"; }

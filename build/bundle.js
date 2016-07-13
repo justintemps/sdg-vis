@@ -26725,10 +26725,15 @@
 			var _this = this;
 	
 			var bullets = this.props.focusTargets.map(function (target, i) {
-				return _react2.default.createElement(_Bullet2.default, { type: "focusTarget", key: i, id: i, focusTarget: _this.props.focusTarget, selectFocusTarget: _this.props.selectFocusTarget });
+				return _react2.default.createElement(_Bullet2.default, { type: "focusTarget",
+					key: i,
+					id: i,
+					focusTarget: _this.props.focusTarget,
+					selectFocusTarget: _this.props.selectFocusTarget
+				});
 			});
 	
-			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget]), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets)));
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget]));
 		}
 	});
 	
@@ -26851,7 +26856,7 @@
 				});
 			});
 	
-			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("h3", null, "Impact Stories"), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb)), _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h4", null, "View more:"), _react2.default.createElement("ul", { className: "bullets" }, bullets))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", null, "Impact Stories"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
 		}
 	});
 	
