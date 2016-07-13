@@ -26715,6 +26715,10 @@
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
+	var _data = __webpack_require__(/*! json!../../data.json */ 161);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
 	__webpack_require__(/*! ./focusTargets.scss */ 304);
 	
 	function _interopRequireDefault(obj) {
@@ -26736,7 +26740,9 @@
 				});
 			});
 	
-			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", null, "Focus Targets"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget]));
+			var style = { color: _data2.default[this.props.currentSDG].sdgColor };
+	
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "Focus Targets"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget]));
 		}
 	});
 	
@@ -26846,6 +26852,10 @@
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
+	var _data = __webpack_require__(/*! json!../../data.json */ 161);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
 	__webpack_require__(/*! ./impactStories.scss */ 307);
 	
 	function _interopRequireDefault(obj) {
@@ -26868,7 +26878,9 @@
 				});
 			});
 	
-			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", null, "Impact Stories"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
+			var style = { color: _data2.default[this.props.currentSDG].sdgColor };
+	
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "Impact Stories"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
 		}
 	});
 	

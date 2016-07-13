@@ -1,5 +1,6 @@
 import React from "react";
 import Bullet from "../Bullet/Bullet.jsx";
+import data from "!json!../../data.json";
 import "./focusTargets.scss";
 
 const FocusTargets = React.createClass({
@@ -18,10 +19,12 @@ const FocusTargets = React.createClass({
 			);
 		});
 
+		const style = {color: data[this.props.currentSDG].sdgColor};
+
 		return (
 			<div className="focusTargets">
 					<div className="targetSelector">
-						<h3>Focus Targets</h3>
+						<h3 style={style}>Focus Targets</h3>
 						<ul className="bullets">
 							{bullets}
 						</ul>
