@@ -93,8 +93,8 @@ module.exports = {
 			{
 				test: /\.scss/,
 				loader: ExtractPlugin.extract("style", "css!sass")
-			},
-			{
+			}
+/*			{
 				test: /\.svg$/,
 				loader: "babel!svg-react"
 			}

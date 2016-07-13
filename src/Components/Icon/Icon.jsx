@@ -1,6 +1,7 @@
 import React from "react";
 import data from "!json!../../data.json";
 import "./icon.scss";
+
 import Sdg1 from "!babel!svg-react!../../images/sdg1.svg";
 import Sdg2 from "!babel!svg-react!../../images/sdg2.svg";
 import Sdg3 from "!babel!svg-react!../../images/sdg3.svg";
@@ -20,9 +21,24 @@ import Sdg16 from "!babel!svg-react!../../images/sdg16.svg";
 import Sdg17 from "!babel!svg-react!../../images/sdg17.svg";
 import Sdg18 from "!babel!svg-react!../../images/sdg18.svg";
 
-const sdg = [
-	<Sdg1 />, <Sdg2 />, <Sdg3 />, <Sdg4 />, <Sdg5 />, <Sdg6 />, <Sdg7 />, <Sdg8 />, <Sdg9 />,
-	<Sdg10 />, <Sdg11 />, <Sdg12 />, <Sdg13 />, <Sdg14 />, <Sdg15 />, <Sdg16 />, <Sdg17 />
+const sdgs  = [
+	<Sdg1 className="sdg1" opacity={0.5} />,
+	<Sdg2 className="sdg2" opacity={0.5} />,
+	<Sdg3 className="sdg3" opacity={0.5} />,
+	<Sdg4 className="sdg4" opacity={0.5} />,
+	<Sdg5 className="sdg5" opacity={0.5} />,
+	<Sdg6 className="sdg6" opacity={0.5} />,
+	<Sdg7 className="sdg7" opacity={0.5} />,
+	<Sdg8 className="sdg8" opacity={0.5} />,
+	<Sdg9 className="sdg9" opacity={0.5} />,
+	<Sdg10 className="sdg10" opacity={0.5} />,
+	<Sdg11 className="sdg11" opacity={0.5} />,
+	<Sdg12 className="sdg12" opacity={0.5} />,
+	<Sdg13 className="sdg13" opacity={0.5} />,
+	<Sdg14 className="sdg14" opacity={0.5} />,
+	<Sdg15 className="sdg15" opacity={0.5} />,
+	<Sdg16 className="sdg16" opacity={0.5} />,
+	<Sdg17 className="sdg17" opacity={0.5} />
 ];
 
 const Icon = React.createClass({
@@ -32,10 +48,9 @@ const Icon = React.createClass({
 	},
 
 	render() {
-
 		return (
 			<div className="icon" onClick={this.clickHandler}>
-				{sdg[this.props.sdg]}
+				{sdgs[this.props.sdg]}
 			</div>
 		);
 	}

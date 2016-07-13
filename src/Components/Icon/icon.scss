@@ -7,6 +7,18 @@
 	width: 16.6666%;
 }
 
+.sdg1, .sdg2, .sdg3, .sdg4,
+.sdg5, .sdg6, .sdg7, .sdg8,
+.sdg9, .sdg10, .sdg11, .sdg12,
+.sdg13, .sdg14, .sdg15, .sdg16,
+.sdg17 {
+	opacity: 0.5;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
 /* SDG1 */
 .sdg1-1 {fill:#e3253c;}
 .sdg1-2, .sdg1-3 {fill:#fff;}
