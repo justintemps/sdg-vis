@@ -19,7 +19,6 @@ const TitleBar = React.createClass({
 			margin: "2px 0",
 			position: "relative",
 			height: 0,
-			transition: "border-color 200ms linear",
 			width: 0
 		};
 

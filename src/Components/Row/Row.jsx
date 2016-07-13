@@ -13,6 +13,7 @@ const Row = React.createClass({
 				src={data[i].sdgIcon}
 				color={data[i].sdgColor}
 				handler={this.props.handler}
+				currentSdg={this.props.currentSdg}
 			/> );
 		}
 		return (

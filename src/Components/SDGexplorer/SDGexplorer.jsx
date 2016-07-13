@@ -8,7 +8,7 @@ const SDGexplorer = React.createClass({
 
 	getInitialState() {
 		return({
-			sdg : 7,
+			currentSdg : 7,
 			focusTarget : 0,
 			currentStory : 0
 		});
@@ -16,7 +16,7 @@ const SDGexplorer = React.createClass({
 
 	selectSDG(sdg) {
 		this.setState({
-			sdg: sdg,
+			currentSdg: sdg,
 			focusTarget : 0,
 			currentStory : 0
 		});
@@ -43,9 +43,10 @@ const SDGexplorer = React.createClass({
 						numberIcons={12}
 						key={1}
 						handler={this.selectSDG}
+						currentSdg={this.state.currentSdg}
 					/>
 					<ViewerWindow
-						sdg={this.state.sdg}
+						sdg={this.state.currentSdg}
 						focusTarget={this.state.focusTarget}
 						selectFocusTarget={this.selectFocusTarget}
 						currentStory={this.state.currentStory}
@@ -56,6 +57,7 @@ const SDGexplorer = React.createClass({
 						numberIcons={6}
 						key={2}
 						handler={this.selectSDG}
+						currentSdg={this.state.currentSdg}
 					/>
 				</div>
 			</div>

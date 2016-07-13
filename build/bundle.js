@@ -20209,14 +20209,14 @@
 		displayName: "SDGexplorer",
 		getInitialState: function getInitialState() {
 			return {
-				sdg: 7,
+				currentSdg: 7,
 				focusTarget: 0,
 				currentStory: 0
 			};
 		},
 		selectSDG: function selectSDG(sdg) {
 			this.setState({
-				sdg: sdg,
+				currentSdg: sdg,
 				focusTarget: 0,
 				currentStory: 0
 			});
@@ -20236,9 +20236,10 @@
 				startFrom: 1,
 				numberIcons: 12,
 				key: 1,
-				handler: this.selectSDG
+				handler: this.selectSDG,
+				currentSdg: this.state.currentSdg
 			}), _react2.default.createElement(_ViewerWindow2.default, {
-				sdg: this.state.sdg,
+				sdg: this.state.currentSdg,
 				focusTarget: this.state.focusTarget,
 				selectFocusTarget: this.selectFocusTarget,
 				currentStory: this.state.currentStory,
@@ -20247,7 +20248,8 @@
 				startFrom: 12,
 				numberIcons: 6,
 				key: 2,
-				handler: this.selectSDG
+				handler: this.selectSDG,
+				currentSdg: this.state.currentSdg
 			})));
 		}
 	});
@@ -20295,7 +20297,8 @@
 					key: _data2.default[i].sdgNumber,
 					src: _data2.default[i].sdgIcon,
 					color: _data2.default[i].sdgColor,
-					handler: this.props.handler
+					handler: this.props.handler,
+					currentSdg: this.props.currentSdg
 				}));
 			}
 			return _react2.default.createElement("div", { className: "row" }, icons);
@@ -21164,14 +21167,15 @@
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	var sdgs = [_react2.default.createElement(_sdg2.default, { className: "sdg1", opacity: 0.6 }), _react2.default.createElement(_sdg4.default, { className: "sdg2", opacity: 0.6 }), _react2.default.createElement(_sdg6.default, { className: "sdg3", opacity: 0.6 }), _react2.default.createElement(_sdg8.default, { className: "sdg4", opacity: 0.6 }), _react2.default.createElement(_sdg10.default, { className: "sdg5", opacity: 0.6 }), _react2.default.createElement(_sdg12.default, { className: "sdg6", opacity: 0.6 }), _react2.default.createElement(_sdg14.default, { className: "sdg7", opacity: 0.6 }), _react2.default.createElement(_sdg16.default, { className: "sdg8", opacity: 0.6 }), _react2.default.createElement(_sdg18.default, { className: "sdg9", opacity: 0.6 }), _react2.default.createElement(_sdg20.default, { className: "sdg10", opacity: 0.6 }), _react2.default.createElement(_sdg22.default, { className: "sdg11", opacity: 0.6 }), _react2.default.createElement(_sdg24.default, { className: "sdg12", opacity: 0.6 }), _react2.default.createElement(_sdg26.default, { className: "sdg13", opacity: 0.6 }), _react2.default.createElement(_sdg28.default, { className: "sdg14", opacity: 0.6 }), _react2.default.createElement(_sdg30.default, { className: "sdg15", opacity: 0.6 }), _react2.default.createElement(_sdg32.default, { className: "sdg16", opacity: 0.6 }), _react2.default.createElement(_sdg34.default, { className: "sdg17", opacity: 0.6 })];
-	
 	var Icon = _react2.default.createClass({
 		displayName: "Icon",
 		clickHandler: function clickHandler() {
 			this.props.handler(this.props.sdg);
 		},
 		render: function render() {
+	
+			var sdgs = [_react2.default.createElement(_sdg2.default, { className: "sdg1", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg4.default, { className: "sdg2", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg6.default, { className: "sdg3", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg8.default, { className: "sdg4", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg10.default, { className: "sdg5", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg12.default, { className: "sdg6", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg14.default, { className: "sdg7", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg16.default, { className: "sdg8", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg18.default, { className: "sdg9", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg20.default, { className: "sdg10", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg22.default, { className: "sdg11", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg24.default, { className: "sdg12", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg26.default, { className: "sdg13", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg28.default, { className: "sdg14", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg30.default, { className: "sdg15", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg32.default, { className: "sdg16", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg34.default, { className: "sdg17", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 })];
+	
 			return _react2.default.createElement("div", { className: "icon", onClick: this.clickHandler }, sdgs[this.props.sdg]);
 		}
 	});
@@ -26613,7 +26617,6 @@
 				margin: "2px 0",
 				position: "relative",
 				height: 0,
-				transition: "border-color 200ms linear",
 				width: 0
 			};
 	
