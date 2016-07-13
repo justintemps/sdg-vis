@@ -3,97 +3,98 @@
   box-sizing: border-box;
   cursor: pointer;
   flex-basis: auto;
-  padding: 1px;
+  padding: 5px;
   width: 16.6666%; }
 
 /* SDG1 */
 .sdg1-1 {
-  fill: #fff; }
-
-.sdg1-2, .sdg1-3 {
   fill: #e3253c; }
 
+.sdg1-2, .sdg1-3 {
+  fill: #fff; }
+
 .sdg1-3 {
+  stroke: #fff;
   stroke-linecap: round;
   stroke-miterlimit: 10;
   stroke-width: 1.31px; }
 
 /* SDG2 */
 .sdg2-2 {
-  fill: #dea73a; }
-
-.sdg2-1 {
   fill: #fff; }
 
+.sdg2-1 {
+  fill: #dea73a; }
+
 /* SDG3 */
-.sdg3-2 {
+.sdg3-1 {
   fill: #4ca046; }
 
-.sdg3-1 {
+.sdg3-2 {
   fill: #fff; }
 
 /* SDG4 */
-.sdg4-2 {
+.sdg4-1 {
   fill: #c5202e; }
 
-.sdg4-1 {
+.sdg4-2 {
   fill: #fff; }
 
 /* SDG5 */
-.sdg5-2 {
+.sdg5-1 {
   fill: #ef412c; }
 
-.sdg5-1 {
+.sdg5-2 {
   fill: #fff; }
 
 /* SDG6 */
-.sdg6-2 {
+.sdg6-1 {
   fill: #29bee2; }
 
-.sdg6-1 {
+.sdg6-2 {
   fill: #fff; }
 
 /* SDG7 */
-.sdg7-2 {
+.sdg7-1 {
   fill: #fac315; }
 
-.sdg7-1 {
+.sdg7-2 {
   fill: #fff; }
 
 /* SDG8 */
 .sdg8-1 {
-  fill: #fff; }
+  fill: #a21c44; }
 
 .sdg8-2 {
-  fill: #a21c44; }
+  fill: #fff; }
 
 /* SDG9 */
 .sdg9-1 {
-  fill: #fff; }
+  fill: #f26a2c; }
 
 .sdg9-2 {
-  fill: #f26a2c; }
+  fill: #fff; }
 
 /* SDG10 */
 .sdg10-1 {
-  fill: #fff; }
+  fill: #dd1768; }
 
 .sdg10-2 {
-  fill: #dd1768; }
+  fill: #fff; }
 
 /* SDG11 */
 .sdg11-1 {
-  fill: #fff; }
+  fill: #f99d28; }
 
 .sdg11-2 {
-  fill: #f99d28; }
+  fill: #fff; }
 
 /* SDG12 */
 .sdg12-1 {
-  fill: #fff; }
+  fill: #be8b2c; }
 
 .sdg12-2 {
-  fill: #be8b2c; }
+  fill: #fff; }
 
 .sdg12-3 {
   fill: none;
@@ -103,38 +104,38 @@
 
 /* SDG13 */
 .sdg13-1 {
-  fill: #fff; }
+  fill: #417f45; }
 
 .sdg13-2 {
-  fill: #417f45; }
+  fill: #fff; }
 
 /* SDG14 */
 .sdg14-1 {
-  fill: #fff; }
+  fill: #1c97d4; }
 
 .sdg14-2 {
-  fill: #1c97d4; }
+  fill: #fff; }
 
 /* SDG15 */
 .sdg15-1 {
-  fill: #fff; }
+  fill: #5cba47; }
 
 .sdg15-2 {
-  fill: #5cba47; }
+  fill: #fff; }
 
 /* SDG16 */
 .sdg16-1 {
-  fill: #fff; }
-
-.sdg16-2 {
   fill: #07699e; }
 
-/* SDG16 */
-.sdg17-1 {
+.sdg16-2 {
   fill: #fff; }
 
-.sdg17-2 {
+/* SDG17 */
+.sdg17-1 {
   fill: #18496b; }
+
+.sdg17-2 {
+  fill: #fff; }
 /* Row */
 .row {
   align-items: center;

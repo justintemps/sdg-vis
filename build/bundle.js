@@ -21173,11 +21173,7 @@
 		},
 		render: function render() {
 	
-			var border = {
-				border: "1px solid " + this.props.color
-			};
-	
-			return _react2.default.createElement("div", { className: "icon", style: border, onClick: this.clickHandler }, sdg[this.props.sdg]);
+			return _react2.default.createElement("div", { className: "icon", onClick: this.clickHandler }, sdg[this.props.sdg]);
 		}
 	});
 	
