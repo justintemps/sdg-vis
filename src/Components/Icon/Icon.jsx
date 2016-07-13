@@ -22,23 +22,23 @@ import Sdg17 from "!babel!svg-react!../../images/sdg17.svg";
 import Sdg18 from "!babel!svg-react!../../images/sdg18.svg";
 
 const sdgs  = [
-	<Sdg1 className="sdg1" opacity={0.5} />,
-	<Sdg2 className="sdg2" opacity={0.5} />,
-	<Sdg3 className="sdg3" opacity={0.5} />,
-	<Sdg4 className="sdg4" opacity={0.5} />,
-	<Sdg5 className="sdg5" opacity={0.5} />,
-	<Sdg6 className="sdg6" opacity={0.5} />,
-	<Sdg7 className="sdg7" opacity={0.5} />,
-	<Sdg8 className="sdg8" opacity={0.5} />,
-	<Sdg9 className="sdg9" opacity={0.5} />,
-	<Sdg10 className="sdg10" opacity={0.5} />,
-	<Sdg11 className="sdg11" opacity={0.5} />,
-	<Sdg12 className="sdg12" opacity={0.5} />,
-	<Sdg13 className="sdg13" opacity={0.5} />,
-	<Sdg14 className="sdg14" opacity={0.5} />,
-	<Sdg15 className="sdg15" opacity={0.5} />,
-	<Sdg16 className="sdg16" opacity={0.5} />,
-	<Sdg17 className="sdg17" opacity={0.5} />
+	<Sdg1 className="sdg1" opacity={0.6} />,
+	<Sdg2 className="sdg2" opacity={0.6} />,
+	<Sdg3 className="sdg3" opacity={0.6} />,
+	<Sdg4 className="sdg4" opacity={0.6} />,
+	<Sdg5 className="sdg5" opacity={0.6} />,
+	<Sdg6 className="sdg6" opacity={0.6} />,
+	<Sdg7 className="sdg7" opacity={0.6} />,
+	<Sdg8 className="sdg8" opacity={0.6} />,
+	<Sdg9 className="sdg9" opacity={0.6} />,
+	<Sdg10 className="sdg10" opacity={0.6} />,
+	<Sdg11 className="sdg11" opacity={0.6} />,
+	<Sdg12 className="sdg12" opacity={0.6} />,
+	<Sdg13 className="sdg13" opacity={0.6} />,
+	<Sdg14 className="sdg14" opacity={0.6} />,
+	<Sdg15 className="sdg15" opacity={0.6} />,
+	<Sdg16 className="sdg16" opacity={0.6} />,
+	<Sdg17 className="sdg17" opacity={0.6} />
 ];
 
 const Icon = React.createClass({

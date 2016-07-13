@@ -7,7 +7,7 @@ const TitleBar = React.createClass({
 	render() {
 
 		const color = {
-			background : this.props.sdgColor
+			backgroundColor : this.props.sdgColor
 		};
 
 		const triangle = {
@@ -19,6 +19,7 @@ const TitleBar = React.createClass({
 			margin: "2px 0",
 			position: "relative",
 			height: 0,
+			transition: "border-color 200ms linear",
 			width: 0
 		};
 

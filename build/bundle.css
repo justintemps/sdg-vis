@@ -11,6 +11,7 @@
 .sdg9, .sdg10, .sdg11, .sdg12,
 .sdg13, .sdg14, .sdg15, .sdg16,
 .sdg17 {
+  transition: opacity 0.2s ease;
   opacity: 0.5; }
   .sdg1:hover, .sdg2:hover, .sdg3:hover, .sdg4:hover,
   .sdg5:hover, .sdg6:hover, .sdg7:hover, .sdg8:hover,
@@ -173,6 +174,7 @@
   padding: 0;
   position: relative;
   text-align: left;
+  transition: background-color 300ms linear;
   width: calc(100% - 10px); }
 
 .sdgNumber {
