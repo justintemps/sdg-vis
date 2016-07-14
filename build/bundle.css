@@ -1,4 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);/* Icon */
+/* Typography */
+@font-face {
+  font-family: "GiorgioSans-Bold";
+  src: url(build/d0244610c0a8af902a32ac5113c03e53.woff) format("woff"), url(build/GiorgioSans-Bold.ttf) format("truetype"); }
+/* Icon */
 .icon {
   box-sizing: border-box;
   cursor: pointer;
@@ -177,7 +181,7 @@
 
 .sdgNumber {
   align-self: center;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: 8em;
   bottom: 5px;
   color: #fff;
@@ -207,7 +211,7 @@
   display: inline;
   font-size: 1.3em;
   color: #fff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   width: 95%; }
 /* -- Bullets -- */
 .bullets {
@@ -251,7 +255,7 @@ body,
   text-align: center; }
 
 h2 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   color: #0080b0;
@@ -259,7 +263,7 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .88em;
   font-weight: 600;
   margin: 0;
@@ -268,7 +272,7 @@ h3 {
 
 h4 {
   color: #3bc3e4;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
@@ -276,7 +280,7 @@ h4 {
   position: relative; }
 
 p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .86em;
   color: #2a2a2a;
   margin: 0;
@@ -320,7 +324,7 @@ body,
   text-align: center; }
 
 h2 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   color: #0080b0;
@@ -328,7 +332,7 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .88em;
   font-weight: 600;
   margin: 0;
@@ -337,7 +341,7 @@ h3 {
 
 h4 {
   color: #3bc3e4;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
@@ -345,7 +349,7 @@ h4 {
   position: relative; }
 
 p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .86em;
   color: #2a2a2a;
   margin: 0;
@@ -376,7 +380,7 @@ body,
   text-align: center; }
 
 h2 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   color: #0080b0;
@@ -384,7 +388,7 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .88em;
   font-weight: 600;
   margin: 0;
@@ -393,7 +397,7 @@ h3 {
 
 h4 {
   color: #3bc3e4;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
@@ -401,7 +405,7 @@ h4 {
   position: relative; }
 
 p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .86em;
   color: #2a2a2a;
   margin: 0;
@@ -474,7 +478,7 @@ body,
   text-align: center; }
 
 h2 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   color: #0080b0;
@@ -482,7 +486,7 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .88em;
   font-weight: 600;
   margin: 0;
@@ -491,7 +495,7 @@ h3 {
 
 h4 {
   color: #3bc3e4;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
@@ -499,7 +503,7 @@ h4 {
   position: relative; }
 
 p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .86em;
   color: #2a2a2a;
   margin: 0;
@@ -509,6 +513,7 @@ p {
 a {
   text-decoration: none; }
 /* SDGexplorer */
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"); */
 /* -- Typography -- */
 /* -- Mixins -- */
 /* -- Color Palette -- */
@@ -526,7 +531,7 @@ body,
   text-align: center; }
 
 h2 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   color: #0080b0;
@@ -534,7 +539,7 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .88em;
   font-weight: 600;
   margin: 0;
@@ -543,7 +548,7 @@ h3 {
 
 h4 {
   color: #3bc3e4;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
@@ -551,7 +556,7 @@ h4 {
   position: relative; }
 
 p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "GiorgioSans-Bold", sans-serif;
   font-size: .86em;
   color: #2a2a2a;
   margin: 0;

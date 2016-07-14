@@ -95,22 +95,12 @@ module.exports = {
 				loader: ExtractPlugin.extract("style", "css!sass")
 			},
 			{
-				test: /\.woff$/,
-				// Inline small woff files and output them below font/.
-				// Set mimetype just in case.
-				loader: "url",
-				query: {
-					name: "font/[hash].[ext]",
-					limit: 5000,
-					mimetype: "application/font-woff"
-				}
+				test: /\.ttf$/,
+				loader: "file-loader?mimetype=application/octet-stream&name=[name].[ext]"
 			},
 			{
-				test: /\.ttf$|\.eot$/,
-				loader: "file",
-				query: {
-					name: "font/[hash].[ext]"
-				}
+				test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
+				loader: "url?limit=10000&mimetype=application/font-woff"
 			}
 		]
 	}
