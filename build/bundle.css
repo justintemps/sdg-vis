@@ -1,7 +1,21 @@
-/* Typography */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);/* Typography */
 @font-face {
   font-family: "GiorgioSans-Bold";
-  src: url(build/d0244610c0a8af902a32ac5113c03e53.woff) format("woff"), url(build/GiorgioSans-Bold.ttf) format("truetype"); }
+  src: url(GiorgioSans-Bold.woff) format("woff"), url(GiorgioSans-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Apex New Bold";
+  src: url(ApexNewBold.woff) format("woff"), url(ApexNew-Bold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Apex New Book";
+  src: url(ApexNew-Book.woff) format("woff"), url(ApexNew-Book.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 /* Icon */
 .icon {
   box-sizing: border-box;
@@ -174,6 +188,7 @@
   flex-wrap: wrap;
   display: flex;
   flex-wrap: nowrap;
+  min-height: 110px;
   padding: 0;
   position: relative;
   text-align: left;
@@ -181,16 +196,15 @@
 
 .sdgNumber {
   align-self: center;
-  font-family: "GiorgioSans-Bold", sans-serif;
-  font-size: 8em;
-  bottom: 5px;
+  font-family: "GiorgioSans-Bold", "Source Sans Pro", sans-serif;
+  font-size: 8.5em;
+  bottom: 10px;
   color: #fff;
-  left: -12px;
-  letter-spacing: -0.09em;
+  left: 2px;
   line-height: 75%;
-  margin: 0;
-  padding: 0;
-  position: relative; }
+  margin: 0 15px 0 2px;
+  position: relative;
+  right: 8px; }
 
 .viewerWindow > div:first-child {
   margin: 0;
@@ -208,11 +222,13 @@
   width: 0; }
 
 .sdgName {
+  bottom: 5px;
   display: inline;
-  font-size: 1.3em;
+  font-size: 2.2em;
   color: #fff;
-  font-family: "GiorgioSans-Bold", sans-serif;
-  width: 95%; }
+  font-family: "GiorgioSans-Bold", "Source Sans Pro", sans-serif;
+  position: relative;
+  width: 90%; }
 /* -- Bullets -- */
 .bullets {
   margin: 0;
@@ -248,14 +264,16 @@ body,
 #app,
 .wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
 
 .wrapper {
   max-width: 750px;
   text-align: center; }
 
 h2 {
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   color: #0080b0;
@@ -263,7 +281,7 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: .88em;
   font-weight: 600;
   margin: 0;
@@ -272,7 +290,7 @@ h3 {
 
 h4 {
   color: #3bc3e4;
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
@@ -280,9 +298,10 @@ h4 {
   position: relative; }
 
 p {
-  font-family: "GiorgioSans-Bold", sans-serif;
-  font-size: .86em;
+  font-family: "Apex New Book", sans-serif;
+  font-size: .95em;
   color: #2a2a2a;
+  line-height: 1.3em;
   margin: 0;
   min-height: 55px;
   padding: 0; }
@@ -317,14 +336,16 @@ body,
 #app,
 .wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
 
 .wrapper {
   max-width: 750px;
   text-align: center; }
 
 h2 {
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   color: #0080b0;
@@ -332,7 +353,7 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: .88em;
   font-weight: 600;
   margin: 0;
@@ -341,7 +362,7 @@ h3 {
 
 h4 {
   color: #3bc3e4;
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
@@ -349,9 +370,10 @@ h4 {
   position: relative; }
 
 p {
-  font-family: "GiorgioSans-Bold", sans-serif;
-  font-size: .86em;
+  font-family: "Apex New Book", sans-serif;
+  font-size: .95em;
   color: #2a2a2a;
+  line-height: 1.3em;
   margin: 0;
   min-height: 55px;
   padding: 0; }
@@ -373,14 +395,16 @@ body,
 #app,
 .wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
 
 .wrapper {
   max-width: 750px;
   text-align: center; }
 
 h2 {
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   color: #0080b0;
@@ -388,7 +412,7 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: .88em;
   font-weight: 600;
   margin: 0;
@@ -397,7 +421,7 @@ h3 {
 
 h4 {
   color: #3bc3e4;
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
@@ -405,9 +429,10 @@ h4 {
   position: relative; }
 
 p {
-  font-family: "GiorgioSans-Bold", sans-serif;
-  font-size: .86em;
+  font-family: "Apex New Book", sans-serif;
+  font-size: .95em;
   color: #2a2a2a;
+  line-height: 1.3em;
   margin: 0;
   min-height: 55px;
   padding: 0; }
@@ -471,14 +496,16 @@ body,
 #app,
 .wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
 
 .wrapper {
   max-width: 750px;
   text-align: center; }
 
 h2 {
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   color: #0080b0;
@@ -486,7 +513,7 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: .88em;
   font-weight: 600;
   margin: 0;
@@ -495,7 +522,7 @@ h3 {
 
 h4 {
   color: #3bc3e4;
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
@@ -503,9 +530,10 @@ h4 {
   position: relative; }
 
 p {
-  font-family: "GiorgioSans-Bold", sans-serif;
-  font-size: .86em;
+  font-family: "Apex New Book", sans-serif;
+  font-size: .95em;
   color: #2a2a2a;
+  line-height: 1.3em;
   margin: 0;
   min-height: 55px;
   padding: 0; }
@@ -513,7 +541,6 @@ p {
 a {
   text-decoration: none; }
 /* SDGexplorer */
-/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"); */
 /* -- Typography -- */
 /* -- Mixins -- */
 /* -- Color Palette -- */
@@ -524,14 +551,16 @@ body,
 .wrapper,
 .sdgExplorer {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
 
 .wrapper, .sdgExplorer {
   max-width: 750px;
   text-align: center; }
 
 h2 {
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   color: #0080b0;
@@ -539,7 +568,7 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: .88em;
   font-weight: 600;
   margin: 0;
@@ -548,7 +577,7 @@ h3 {
 
 h4 {
   color: #3bc3e4;
-  font-family: "GiorgioSans-Bold", sans-serif;
+  font-family: "Apex New Book", sans-serif;
   font-size: .9em;
   font-weight: 400;
   margin: 0;
@@ -556,9 +585,10 @@ h4 {
   position: relative; }
 
 p {
-  font-family: "GiorgioSans-Bold", sans-serif;
-  font-size: .86em;
+  font-family: "Apex New Book", sans-serif;
+  font-size: .95em;
   color: #2a2a2a;
+  line-height: 1.3em;
   margin: 0;
   min-height: 55px;
   padding: 0; }

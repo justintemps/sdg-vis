@@ -3,5 +3,23 @@
 @font-face {
 	font-family: "GiorgioSans-Bold";
 	src: url("GiorgioSans-Bold.woff") format("woff"),
-	url("GiorgioSans-Bold.ttf")  format("truetype")
+	url("GiorgioSans-Bold.ttf")  format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Apex New Bold";
+	src: url("ApexNewBold.woff") format("woff"),
+	url("ApexNew-Bold.ttf")  format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Apex New Book";
+	src: url("ApexNew-Book.woff") format("woff"),
+	url("ApexNew-Book.ttf")  format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }

@@ -60,8 +60,8 @@ module.exports = {
 	output: {
 		path:          "build",
 		filename:      production ? "[name]-[hash].js" : "bundle.js",
-		chunkFilename: "[name]-[chunkhash].js",
-		publicPath:    "build/"
+		chunkFilename: "[name]-[chunkhash].js"
+	//	publicPath:    "build/"
 	},
 	plugins: plugins,
 	module: {
@@ -95,12 +95,16 @@ module.exports = {
 				loader: ExtractPlugin.extract("style", "css!sass")
 			},
 			{
+				test: /\.svg$/,
+				loader: "babel!svg-react"
+			},
+			{
 				test: /\.ttf$/,
 				loader: "file-loader?mimetype=application/octet-stream&name=[name].[ext]"
 			},
 			{
 				test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-				loader: "url?limit=10000&mimetype=application/font-woff"
+				loader: "url?limit=10000&mimetype=application/font-woff&name=[name].[ext]"
 			}
 		]
 	}
