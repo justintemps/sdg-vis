@@ -93,19 +93,25 @@ module.exports = {
 			{
 				test: /\.scss/,
 				loader: ExtractPlugin.extract("style", "css!sass")
-			}
-/*			{
-				test: /\.svg$/,
-				loader: "babel!svg-react"
-			}
-/*			{
-				test:   /\.(png|gif|jpe?g|svg|webp)$/i,
+			},
+			{
+				test: /\.woff$/,
+				// Inline small woff files and output them below font/.
+				// Set mimetype just in case.
 				loader: "url",
 				query: {
-					limit: 10000
+					name: "font/[hash].[ext]",
+					limit: 5000,
+					mimetype: "application/font-woff"
+				}
+			},
+			{
+				test: /\.ttf$|\.eot$/,
+				loader: "file",
+				query: {
+					name: "font/[hash].[ext]"
 				}
 			}
-*/
 		]
 	}
 };
