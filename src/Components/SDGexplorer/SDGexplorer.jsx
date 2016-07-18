@@ -8,7 +8,7 @@ const SDGexplorer = React.createClass({
 
 	getInitialState() {
 		return({
-			currentSdg : 7,
+			currentSdg : 0,
 			focusTarget : 0,
 			currentStory : 0
 		});
@@ -39,7 +39,7 @@ const SDGexplorer = React.createClass({
 			<div className="wrapper">
 				<div className="sdgExplorer">
 					<Row
-						startFrom={1}
+						startFrom={0}
 						numberIcons={12}
 						key={1}
 						handler={this.selectSDG}

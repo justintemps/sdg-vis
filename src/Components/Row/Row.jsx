@@ -6,10 +6,10 @@ import "./row.scss";
 const Row = React.createClass({
 	render() {
 		const icons = [];
-		for ( let i = (this.props.startFrom - 1); i < (this.props.numberIcons + this.props.startFrom - 1); i++ ) {
+		for ( let i = (this.props.startFrom); i < (this.props.numberIcons + this.props.startFrom); i++ ) {
 			icons.push( <Icon
-				sdg={data[i].sdgNumber - 1}
-				key={data[i].sdgNumber}
+				sdg={data[i].sdgNumber}
+				key={i}
 				src={data[i].sdgIcon}
 				color={data[i].sdgColor}
 				handler={this.props.handler}

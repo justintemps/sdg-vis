@@ -20229,7 +20229,7 @@
 		displayName: "SDGexplorer",
 		getInitialState: function getInitialState() {
 			return {
-				currentSdg: 7,
+				currentSdg: 0,
 				focusTarget: 0,
 				currentStory: 0
 			};
@@ -20253,7 +20253,7 @@
 		},
 		render: function render() {
 			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, {
-				startFrom: 1,
+				startFrom: 0,
 				numberIcons: 12,
 				key: 1,
 				handler: this.selectSDG,
@@ -20311,10 +20311,10 @@
 		displayName: "Row",
 		render: function render() {
 			var icons = [];
-			for (var i = this.props.startFrom - 1; i < this.props.numberIcons + this.props.startFrom - 1; i++) {
+			for (var i = this.props.startFrom; i < this.props.numberIcons + this.props.startFrom; i++) {
 				icons.push(_react2.default.createElement(_Icon2.default, {
-					sdg: _data2.default[i].sdgNumber - 1,
-					key: _data2.default[i].sdgNumber,
+					sdg: _data2.default[i].sdgNumber,
+					key: i,
 					src: _data2.default[i].sdgIcon,
 					color: _data2.default[i].sdgColor,
 					handler: this.props.handler,
@@ -20335,6 +20335,58 @@
 /***/ function(module, exports) {
 
 	module.exports = [
+		{
+			"sdgNumber": 0,
+			"sdgName": "End poverty in all its forms everywhere",
+			"sdgIcon": "./src/images/sdg18.svg",
+			"sdgColor": "#e5243b",
+			"focusTargets": [
+				{
+					"number": "1.1",
+					"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
+				},
+				{
+					"number": "1.2",
+					"description": "By 2030, reduce at least by half the proportion of men, women and children living in poverty in all its dimensions according to national definitions"
+				},
+				{
+					"number": "1.3",
+					"description": "Implement nationally appropriate social protection systems"
+				},
+				{
+					"number": "1.5",
+					"description": "Ensure that all men and women, have equal rights to economic resources, including microfinance"
+				},
+				{
+					"number": "1.5",
+					"description": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
+				},
+				{
+					"number": "1.b",
+					"description": "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
+				}
+			],
+			"stories": [
+				{
+					"title": "Breaking the cycle of poverty in Tunisia",
+					"blurb": "Cooperation between government and social partners, and effective collective bargaining, can promote a more equitable distribution of a country's wealth and income.",
+					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/features/tunisia/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_481717.jpg"
+				},
+				{
+					"title": "Working out of poverty in Timor-Leste",
+					"blurb": "ILO’s Business Opportunities and Support Services (BOSS) project helped local communities to improve farming practices, develop market access, create jobs and develop small and medium-sized enterprises.",
+					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493379.jpg"
+				},
+				{
+					"title": "How Zambia is greening its way out of poverty",
+					"blurb": "The Zambia Green Jobs Programme promotes the development of sustainable enterprises by boosting competitiveness and business growth thanks to green technologies.",
+					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/features/zambia/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---ed_emp/---gjp/documents/image/wcms_492376.jpg"
+				}
+			]
+		},
 		{
 			"sdgNumber": 1,
 			"sdgName": "End poverty in all its forms everywhere",
@@ -20591,7 +20643,18 @@
 			"sdgIcon": "./src/images/sdg7.svg",
 			"sdgColor": "#fcc30b",
 			"focusTargets": [
-				{}
+				{
+					"number": "7.1",
+					"description": "By 2030, ensure universal access to affordable, reliable and modern energy services."
+				},
+				{
+					"number": "7.2",
+					"description": "By 2030, increase substantially the share of renewable energy in the global energy mix."
+				},
+				{
+					"number": "7.b",
+					"description": "By 2030, expand infrastructure and upgrade technology for supplying modern and sustainable energy services for all in developing countries, in particular least developed countries, small island developing States and land-locked developing countries, in accordance with their respective programmes of support."
+				}
 			],
 			"stories": [
 				{
@@ -21182,7 +21245,7 @@
 		},
 		render: function render() {
 	
-			var sdgs = [_react2.default.createElement(_sdg2.default, { className: "sdg1", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg4.default, { className: "sdg2", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg6.default, { className: "sdg3", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg8.default, { className: "sdg4", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg10.default, { className: "sdg5", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg12.default, { className: "sdg6", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg14.default, { className: "sdg7", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg16.default, { className: "sdg8", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg18.default, { className: "sdg9", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg20.default, { className: "sdg10", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg22.default, { className: "sdg11", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg24.default, { className: "sdg12", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg26.default, { className: "sdg13", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg28.default, { className: "sdg14", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg30.default, { className: "sdg15", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg32.default, { className: "sdg16", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg34.default, { className: "sdg17", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 })];
+			var sdgs = [_react2.default.createElement(_sdg36.default, { className: "sdg0", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg2.default, { className: "sdg1", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg4.default, { className: "sdg2", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg6.default, { className: "sdg3", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg8.default, { className: "sdg4", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg10.default, { className: "sdg5", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg12.default, { className: "sdg6", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg14.default, { className: "sdg7", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg16.default, { className: "sdg8", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg18.default, { className: "sdg9", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg20.default, { className: "sdg10", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg22.default, { className: "sdg11", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg24.default, { className: "sdg12", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg26.default, { className: "sdg13", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg28.default, { className: "sdg14", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg30.default, { className: "sdg15", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg32.default, { className: "sdg16", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg34.default, { className: "sdg17", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 })];
 	
 			return _react2.default.createElement("div", { className: "icon", onClick: this.clickHandler }, sdgs[this.props.sdg]);
 		}

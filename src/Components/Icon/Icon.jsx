@@ -19,7 +19,7 @@ import Sdg14 from "!babel!svg-react!../../images/sdg14.svg";
 import Sdg15 from "!babel!svg-react!../../images/sdg15.svg";
 import Sdg16 from "!babel!svg-react!../../images/sdg16.svg";
 import Sdg17 from "!babel!svg-react!../../images/sdg17.svg";
-import Sdg18 from "!babel!svg-react!../../images/sdg18.svg";
+import Sdg0 from "!babel!svg-react!../../images/sdg18.svg";
 
 const Icon = React.createClass({
 
@@ -30,6 +30,7 @@ const Icon = React.createClass({
 	render() {
 
 		const sdgs  = [
+			<Sdg0 className="sdg0" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
 			<Sdg1 className="sdg1" opacity={this.props.sdg === this.props.currentSdg ? 1: 0.3} />,
 			<Sdg2 className="sdg2" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
 			<Sdg3 className="sdg3" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
