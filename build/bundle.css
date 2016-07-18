@@ -203,7 +203,7 @@
   color: #fff;
   left: 2px;
   line-height: 75%;
-  margin: 0 15px 0 2px;
+  margin: 0 0px 0 2px;
   position: relative;
   right: 8px; }
 
@@ -222,7 +222,7 @@
   height: 0;
   width: 0; }
 
-.sdgName {
+.sdgName, .decentWork {
   bottom: 5px;
   display: inline;
   font-size: 2.2em;
@@ -230,7 +230,13 @@
   font-family: "GiorgioSans-Bold", "Source Sans Pro", sans-serif;
   position: relative;
   letter-spacing: 0.024em;
+  margin: 0 0 0 15px;
   width: 90%; }
+
+.decentWork {
+  font-size: 4.8em;
+  margin: 0 0 0 3px;
+  text-decoration: underline; }
 /* -- Bullets -- */
 .bullets {
   margin: 0;

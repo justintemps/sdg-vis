@@ -32,12 +32,10 @@ const Icon = React.createClass({
 	},
 
 	render() {
-
 		const sdgs = icons.map( (svg, i) => React.createElement(svg, {
 			className: "sdg"+ i,
 			opacity: (this.props.sdg === this.props.currentSdg ? 1 : 0.3)
 		}));
-
 		return(
 			<div className="icon" onClick={this.clickHandler}>
 				{sdgs[this.props.sdg]}

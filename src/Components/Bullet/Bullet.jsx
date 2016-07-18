@@ -17,11 +17,7 @@ const Bullet = React.createClass({
 
 		const selected = {color: data[this.props.currentSDG].sdgColor, opacity: 1};
 		const unselected = {color: data[this.props.currentSDG].sdgColor};
-/*
-		const selected = {color: "#3bc3e4"};
-		const unselected = {color: "#bdebf6"};
 
-*/
 		if (this.props.type === "focusTarget") {
 			if (this.props.id === this.props.focusTarget) {
 				isSelected = true;

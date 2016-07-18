@@ -1,8 +1,8 @@
 [{
 	"sdgNumber": 0,
-	"sdgName": "End poverty in all its forms everywhere",
+	"sdgName": "and the 2030 Agenda for Sustainable Development",
 	"sdgIcon": "./src/images/sdg18.svg",
-	"sdgColor": "#e5243b",
+	"sdgColor": "#37468E",
 	"focusTargets": [{
 			"number": "1.1",
 			"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"

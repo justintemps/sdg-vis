@@ -24,19 +24,41 @@ const TitleBar = React.createClass({
 			width: 0
 		};
 
-		return(
-			<div>
-				<div className="titleBar" style={color}>
-					<div className="sdgNumber">
-						{this.props.sdgNumber}
+		// Titlebar to display for the SDGs
+		if (this.props.sdgNumber > 0) {
+			return(
+				<div>
+					<div className="titleBar" style={color}>
+						<div className="sdgNumber">
+							{this.props.sdgNumber}
+						</div>
+						<div className="sdgName">
+							{this.props.sdgName}
+						</div>
 					</div>
-					<div className="sdgName">
-						{this.props.sdgName}
-					</div>
+					<div style={triangle}></div>
 				</div>
-				<div style={triangle}></div>
-			</div>
-		);
+			);
+
+		// Titlebar to display for the Intro Screen
+		} else {
+			return(
+				<div>
+					<div className="titleBar" style={color}>
+						<div className="sdgNumber">
+							D
+						</div>
+						<div className="decentWork">
+							ECENT WORK
+						</div>
+						<div className="sdgName">
+							{this.props.sdgName}
+						</div>
+					</div>
+					<div style={triangle}></div>
+				</div>
+			);
+		}
 	}
 });
 

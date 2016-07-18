@@ -19,7 +19,7 @@
 	color: #fff;
 	left: 2px;
 	line-height: 75%;
-	margin: 0 15px 0 2px;
+	margin: 0 0px 0 2px;
 	position: relative;
 	right: 8px;
 }
@@ -49,5 +49,13 @@
 	font-family: $sdg-number;
 	position: relative;
 	letter-spacing: 0.024em;
+	margin: 0 0 0 15px;
 	width: 90%;
+}
+
+.decentWork {
+	@extend .sdgName;
+	font-size: 4.8em;
+	margin: 0 0 0 3px;
+	text-decoration: underline;
 }

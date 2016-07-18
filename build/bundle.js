@@ -20451,7 +20451,6 @@
 					opacity: _this.props.sdg === _this.props.currentSdg ? 1 : 0.3
 				});
 			});
-	
 			return _react2.default.createElement("div", { className: "icon", onClick: this.clickHandler }, sdgs[this.props.sdg]);
 		}
 	});
@@ -25855,9 +25854,9 @@
 	module.exports = [
 		{
 			"sdgNumber": 0,
-			"sdgName": "End poverty in all its forms everywhere",
+			"sdgName": "and the 2030 Agenda for Sustainable Development",
 			"sdgIcon": "./src/images/sdg18.svg",
-			"sdgColor": "#e5243b",
+			"sdgColor": "#37468E",
 			"focusTargets": [
 				{
 					"number": "1.1",
@@ -26706,7 +26705,14 @@
 				width: 0
 			};
 	
-			return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)), _react2.default.createElement("div", { style: triangle }));
+			// Titlebar to display for the SDGs
+			if (this.props.sdgNumber > 0) {
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)), _react2.default.createElement("div", { style: triangle }));
+	
+				// Titlebar to display for the Intro Screen
+			} else {
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "sdgNumber" }, "D"), _react2.default.createElement("div", { className: "decentWork" }, "ECENT WORK"), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)), _react2.default.createElement("div", { style: triangle }));
+			}
 		}
 	});
 	
@@ -26882,11 +26888,7 @@
 	
 			var selected = { color: _data2.default[this.props.currentSDG].sdgColor, opacity: 1 };
 			var unselected = { color: _data2.default[this.props.currentSDG].sdgColor };
-			/*
-	  		const selected = {color: "#3bc3e4"};
-	  		const unselected = {color: "#bdebf6"};
-	  
-	  */
+	
 			if (this.props.type === "focusTarget") {
 				if (this.props.id === this.props.focusTarget) {
 					isSelected = true;
