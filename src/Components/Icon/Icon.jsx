@@ -1,6 +1,7 @@
 import React from "react";
 import "./icon.scss";
 
+// Load SVGs with Webpack
 import Sdg1 from "!babel!svg-react!../../images/sdg1.svg";
 import Sdg2 from "!babel!svg-react!../../images/sdg2.svg";
 import Sdg3 from "!babel!svg-react!../../images/sdg3.svg";
@@ -20,6 +21,10 @@ import Sdg16 from "!babel!svg-react!../../images/sdg16.svg";
 import Sdg17 from "!babel!svg-react!../../images/sdg17.svg";
 import Sdg0 from "!babel!svg-react!../../images/sdg18.svg";
 
+const icons = [ Sdg0, Sdg1, Sdg2, Sdg3, Sdg4, Sdg5, Sdg6, Sdg7, Sdg8,
+	Sdg9, Sdg10, Sdg11, Sdg12, Sdg13, Sdg14, Sdg15, Sdg16, Sdg17 ];
+
+
 const Icon = React.createClass({
 
 	clickHandler() {
@@ -28,28 +33,12 @@ const Icon = React.createClass({
 
 	render() {
 
-		const sdgs  = [
-			<Sdg0 className="sdg0" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg1 className="sdg1" opacity={this.props.sdg === this.props.currentSdg ? 1: 0.3} />,
-			<Sdg2 className="sdg2" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg3 className="sdg3" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg4 className="sdg4" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg5 className="sdg5" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg6 className="sdg6" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg7 className="sdg7" opacity={this.props.sdg === this.props.currentSdg ? 1 : 0.3} />,
-			<Sdg8 className="sdg8" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg9 className="sdg9" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg10 className="sdg10" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg11 className="sdg11" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg12 className="sdg12" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg13 className="sdg13" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg14 className="sdg14" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg15 className="sdg15"opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg16 className="sdg16"opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />,
-			<Sdg17 className="sdg17" opacity={(this.props.sdg === this.props.currentSdg) ? 1 : 0.3} />
-		];
+		const sdgs = icons.map( (svg, i) => React.createElement(svg, {
+			className: "sdg"+ i,
+			opacity: (this.props.sdg === this.props.currentSdg ? 1 : 0.3)
+		}));
 
-		return (
+		return(
 			<div className="icon" onClick={this.clickHandler}>
 				{sdgs[this.props.sdg]}
 			</div>

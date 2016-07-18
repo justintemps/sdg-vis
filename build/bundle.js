@@ -20213,11 +20213,11 @@
 	
 	var _Row2 = _interopRequireDefault(_Row);
 	
-	var _ViewerWindow = __webpack_require__(/*! ../ViewerWindow/ViewerWindow.jsx */ 303);
+	var _ViewerWindow = __webpack_require__(/*! ../ViewerWindow/ViewerWindow.jsx */ 302);
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 171);
+	var _data = __webpack_require__(/*! json!../../data.json */ 303);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -20300,11 +20300,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Icon = __webpack_require__(/*! ../Icon/Icon.jsx */ 172);
+	var _Icon = __webpack_require__(/*! ../Icon/Icon.jsx */ 171);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
-	__webpack_require__(/*! ./row.scss */ 301);
+	__webpack_require__(/*! ./row.scss */ 300);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -20315,6 +20315,7 @@
 	
 		icons: [],
 	
+		// Gets icons according to startFrom and numberIcons props passed from SDGExplorer
 		getIcons: function getIcons() {
 			this.icons = [];
 			for (var i = this.props.startFrom; i < this.props.numberIcons + this.props.startFrom; i++) {
@@ -20339,6 +20340,5513 @@
 
 /***/ },
 /* 171 */
+/*!**************************************!*\
+  !*** ./src/Components/Icon/Icon.jsx ***!
+  \**************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(/*! ./icon.scss */ 172);
+	
+	var _sdg = __webpack_require__(/*! babel!svg-react!../../images/sdg1.svg */ 174);
+	
+	var _sdg2 = _interopRequireDefault(_sdg);
+	
+	var _sdg3 = __webpack_require__(/*! babel!svg-react!../../images/sdg2.svg */ 283);
+	
+	var _sdg4 = _interopRequireDefault(_sdg3);
+	
+	var _sdg5 = __webpack_require__(/*! babel!svg-react!../../images/sdg3.svg */ 284);
+	
+	var _sdg6 = _interopRequireDefault(_sdg5);
+	
+	var _sdg7 = __webpack_require__(/*! babel!svg-react!../../images/sdg4.svg */ 285);
+	
+	var _sdg8 = _interopRequireDefault(_sdg7);
+	
+	var _sdg9 = __webpack_require__(/*! babel!svg-react!../../images/sdg5.svg */ 286);
+	
+	var _sdg10 = _interopRequireDefault(_sdg9);
+	
+	var _sdg11 = __webpack_require__(/*! babel!svg-react!../../images/sdg6.svg */ 287);
+	
+	var _sdg12 = _interopRequireDefault(_sdg11);
+	
+	var _sdg13 = __webpack_require__(/*! babel!svg-react!../../images/sdg7.svg */ 288);
+	
+	var _sdg14 = _interopRequireDefault(_sdg13);
+	
+	var _sdg15 = __webpack_require__(/*! babel!svg-react!../../images/sdg8.svg */ 289);
+	
+	var _sdg16 = _interopRequireDefault(_sdg15);
+	
+	var _sdg17 = __webpack_require__(/*! babel!svg-react!../../images/sdg9.svg */ 290);
+	
+	var _sdg18 = _interopRequireDefault(_sdg17);
+	
+	var _sdg19 = __webpack_require__(/*! babel!svg-react!../../images/sdg10.svg */ 291);
+	
+	var _sdg20 = _interopRequireDefault(_sdg19);
+	
+	var _sdg21 = __webpack_require__(/*! babel!svg-react!../../images/sdg11.svg */ 292);
+	
+	var _sdg22 = _interopRequireDefault(_sdg21);
+	
+	var _sdg23 = __webpack_require__(/*! babel!svg-react!../../images/sdg12.svg */ 293);
+	
+	var _sdg24 = _interopRequireDefault(_sdg23);
+	
+	var _sdg25 = __webpack_require__(/*! babel!svg-react!../../images/sdg13.svg */ 294);
+	
+	var _sdg26 = _interopRequireDefault(_sdg25);
+	
+	var _sdg27 = __webpack_require__(/*! babel!svg-react!../../images/sdg14.svg */ 295);
+	
+	var _sdg28 = _interopRequireDefault(_sdg27);
+	
+	var _sdg29 = __webpack_require__(/*! babel!svg-react!../../images/sdg15.svg */ 296);
+	
+	var _sdg30 = _interopRequireDefault(_sdg29);
+	
+	var _sdg31 = __webpack_require__(/*! babel!svg-react!../../images/sdg16.svg */ 297);
+	
+	var _sdg32 = _interopRequireDefault(_sdg31);
+	
+	var _sdg33 = __webpack_require__(/*! babel!svg-react!../../images/sdg17.svg */ 298);
+	
+	var _sdg34 = _interopRequireDefault(_sdg33);
+	
+	var _sdg35 = __webpack_require__(/*! babel!svg-react!../../images/sdg18.svg */ 299);
+	
+	var _sdg36 = _interopRequireDefault(_sdg35);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	// Load SVGs with Webpack
+	
+	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default];
+	
+	var Icon = _react2.default.createClass({
+		displayName: "Icon",
+		clickHandler: function clickHandler() {
+			this.props.handler(this.props.sdg);
+		},
+		render: function render() {
+			var _this = this;
+	
+			var sdgs = icons.map(function (svg, i) {
+				return _react2.default.createElement(svg, {
+					className: "sdg" + i,
+					opacity: _this.props.sdg === _this.props.currentSdg ? 1 : 0.3
+				});
+			});
+	
+			return _react2.default.createElement("div", { className: "icon", onClick: this.clickHandler }, sdgs[this.props.sdg]);
+		}
+	});
+	
+	exports.default = Icon;
+
+/***/ },
+/* 172 */
+/*!***************************************!*\
+  !*** ./src/Components/Icon/icon.scss ***!
+  \***************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 173 */,
+/* 174 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg1.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg1",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.76" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG1 No Poverty'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg1-1', x: '-2.49', y: '-2.17', width: '117.33', height: '117.33' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M86.07,53.32a3.09,3.09,0,1,1,3.1,3.09,3.1,3.1,0,0,1-3.1-3.09' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M92.78,57.61a4.12,4.12,0,0,1,3.74,4.11V70.3a1.2,1.2,0,0,1-2.4,0V62.93c0-.28-.08-.65-.59-.65-.35,0-.42.37-.43.61V85a1.72,1.72,0,0,1-3.45,0V72.24a.47.47,0,0,0-.49-.51h0a.47.47,0,0,0-.5.51V85a1.72,1.72,0,1,1-3.45,0V62.89c0-.24-.09-.61-.43-.61-.51,0-.58.37-.58.65V70.3a1.2,1.2,0,0,1-2.4,0V61.72a4.12,4.12,0,0,1,3.75-4.11l.23,0h6.76l.24,0' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M67.67,54.95a2.93,2.93,0,1,0-2.93,2.93,2.93,2.93,0,0,0,2.93-2.93' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M58.84,61.59l-2.44,7.93s-.43,1.45.8,1.82,1.6-1.06,1.6-1.06l2-6.62s.11-.51.49-.4.24.65.24.65l-3.42,12.4h3.18V85.2a1.53,1.53,0,0,0,3.05,0V76.31h.87V85.2a1.53,1.53,0,0,0,3.05,0V76.31h3.18L68,63.91s-.14-.54.24-.65.49.4.49.4l2,6.62s.37,1.42,1.6,1.06.8-1.82.8-1.82l-2.44-7.93s-.87-2.29-2.8-2.29H61.64c-1.93,0-2.8,2.29-2.8,2.29' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M50.13,54.95a2.93,2.93,0,1,0-2.93,2.93,2.93,2.93,0,0,0,2.93-2.93' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M41.29,61.59l-2.43,7.93s-.44,1.45.8,1.82,1.6-1.06,1.6-1.06l2-6.62s.11-.51.49-.4.24.65.24.65l-3.42,12.4h3.18V85.2a1.53,1.53,0,0,0,3.05,0V76.31h.87V85.2a1.53,1.53,0,0,0,3.05,0V76.31h3.18l-3.41-12.4s-.15-.54.24-.65.49.4.49.4l2,6.62s.37,1.42,1.6,1.06.8-1.82.8-1.82L53.1,61.59s-.87-2.29-2.8-2.29H44.09c-1.93,0-2.8,2.29-2.8,2.29' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M77.51,71.35a2.44,2.44,0,1,0-2.44-2.44,2.44,2.44,0,0,0,2.44,2.44' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M71.67,78.92A.85.85,0,0,0,72,80.08a.81.81,0,0,0,1-.34l1.33-4.23s.23-.28.23,0v10h0a1.25,1.25,0,1,0,2.5,0V81.54s-.07-.56.38-.56.38.56.38.56v3.93a1.25,1.25,0,0,0,2.51,0v-10c0-.29.15-.08.15-.08l1,2.9a6.92,6.92,0,0,0,.59,1.35.92.92,0,0,0,1.21-.5.91.91,0,0,0-.1-.89h0c0-.09-1.55-3.83-1.73-4.35C81,72.32,80,72.34,79,72.31s-1.54,0-1.54,0-.62,0-1.89,0-1.67.69-3.07,4.3c-.2.52-.88,2.2-.89,2.3Z' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M24,53.32a3.09,3.09,0,1,0-3.1,3.09A3.1,3.1,0,0,0,24,53.32' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M17.25,57.61a4.13,4.13,0,0,0-3.75,4.11V70.3a1.2,1.2,0,0,0,2.4,0V62.93c0-.28.08-.65.59-.65.35,0,.42.37.44.61V85a1.72,1.72,0,1,0,3.44,0V72.24a.47.47,0,0,1,.49-.51h0a.47.47,0,0,1,.5.51V85a1.72,1.72,0,1,0,3.45,0V62.89c0-.24.09-.61.43-.61.51,0,.58.37.58.65V70.3a1.2,1.2,0,0,0,2.4,0V61.72a4.12,4.12,0,0,0-3.75-4.11l-.23,0H17.49l-.24,0' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M29.69,70.07a.89.89,0,0,0-1.64.47,1.62,1.62,0,0,0,.09.39l2.46,4.45a1.57,1.57,0,0,1,.15.59v9.55h0a1.2,1.2,0,1,0,2.4,0V81.75s-.07-.53.36-.53.36.53.36.53v3.77a1.2,1.2,0,0,0,2.41,0V76a1.59,1.59,0,0,1,.15-.59l2.27-4.11a4,4,0,0,0,.28-.73.89.89,0,0,0-1.64-.47h0c-.07.06-1.21,2.09-1.59,2.46a1,1,0,0,1-.75.36H32a1,1,0,0,1-.75-.36c-.38-.38-1.51-2.4-1.59-2.46Z' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M33.52,71.35a2.44,2.44,0,1,0-2.44-2.44,2.44,2.44,0,0,0,2.44,2.44' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M39.91,18.5A2.18,2.18,0,0,0,42.24,16V11.61a2.33,2.33,0,1,0-4.65,0V16a2.18,2.18,0,0,0,2.32,2.47m-.78-7.13c0-.55.24-.94.78-.94s.8.39.8.94v4.91c0,.55-.24.94-.8.94s-.78-.39-.78-.94Z' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M33.67,28.8h.74c1.55,0,2.12-.78,2.12-2.06V24.81c0-1.28-.57-2-2.12-2H32.14V31.9h1.54Zm0-4.78h.57c.53,0,.75.24.75.74v2.1a.66.66,0,0,1-.75.76h-.57Z' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M39.77,32a2.18,2.18,0,0,0,2.33-2.47V25.12a2.33,2.33,0,1,0-4.65,0v4.42A2.18,2.18,0,0,0,39.77,32M39,24.87c0-.55.24-.94.78-.94s.8.39.8.94v4.9c0,.55-.24.94-.8.94s-.78-.39-.78-.94Z' }),
+	                React.createElement('path', { className: 'sdg1-2', d: 'M54.67,27.7l1.44,4.19h1.62l-1.47-4.15c.88-.2,1.23-.78,1.23-1.77V24.81c0-1.28-.57-2-2.12-2H53.13V31.9h1.54Zm0-3.69h.51c.53,0,.76.24.76.74V26.1a.67.67,0,0,1-.76.75h-.51Z' }),
+	                React.createElement('line', { className: 'sdg1-3', x1: '14.55', y1: '71.54', x2: '11.8', y2: '86.11' }),
+	                React.createElement('polygon', { className: 'sdg1-2', points: '33.52 74.77 36.28 76.78 37.59 81.6 33.52 81.6 29.45 81.6 30.76 76.78 33.52 74.77' }),
+	                React.createElement('polygon', { className: 'sdg1-2', points: '33.43 12.65 33.43 18.39 32.14 18.39 32.14 9.25 33.65 9.25 35.3 14.5 35.3 9.25 36.59 9.25 36.59 18.39 35.24 18.39 33.43 12.65' }),
+	                React.createElement('polygon', { className: 'sdg1-2', points: '46.02 31.9 47.76 22.76 46.31 22.76 45.24 29.13 45.22 29.13 44.17 22.76 42.61 22.76 44.35 31.9 46.02 31.9' }),
+	                React.createElement('polygon', { className: 'sdg1-2', points: '52.19 30.64 50.06 30.64 50.06 27.86 51.59 27.86 51.59 26.63 50.06 26.63 50.06 24.01 52.19 24.01 52.19 22.76 48.52 22.76 48.52 31.9 52.19 31.9 52.19 30.64' }),
+	                React.createElement('polygon', { className: 'sdg1-2', points: '59.4 31.9 60.95 31.9 60.95 24.01 62.22 24.01 62.22 22.76 58.13 22.76 58.13 24.01 59.4 24.01 59.4 31.9' }),
+	                React.createElement('polygon', { className: 'sdg1-2', points: '64.52 31.9 66.06 31.9 66.06 28.42 67.75 22.76 66.29 22.76 65.36 26.22 65.34 26.22 64.41 22.76 62.81 22.76 64.52 28.42 64.52 31.9' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'sdg1-2', points: '15.61 13.46 15.64 13.46 15.64 30.71 19.43 30.71 19.43 8.18 16.4 8.18 12.91 12.27 12.91 16.22 12.95 16.22 15.61 13.46' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 175 */
+/*!***************************************!*\
+  !*** ./~/svg-react-loader/helpers.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var forEach  = __webpack_require__(/*! lodash/forEach */ 176);
+	var ATTR_KEY = 'data-svgreactloader';
+	
+	var MODULE = {
+	    /**
+	     * @param {HTMLElement}
+	     */
+	    applyAttributes: function (el) {
+	        var data = MODULE.hasXmlAttributes(el);
+	        if (data) {
+	            forEach(JSON.parse(data), function (args) {
+	                var method = 'setAttribute' + (args.length === 3 ? 'NS' : '');
+	                el[method].apply(el, args);
+	            });
+	        }
+	    },
+	    /**
+	     * @param {HTMLElement}
+	     */
+	    hasXmlAttributes: function (el) {
+	        return el && el.getAttribute(ATTR_KEY);
+	    },
+	    /**
+	     * @param {React.Component}
+	     */
+	    applyXmlAttributes: function (component) {
+	        var domEl = MODULE.reactDOM.findDOMNode(component);
+	        var fn = MODULE.applyAttributes;
+	
+	        if (domEl) {
+	            fn(domEl);
+	            forEach(domEl.querySelectorAll('[' + ATTR_KEY + ']'), fn);
+	        }
+	    }
+	};
+	
+	module.exports = function helpers (reactDOM) {
+	    if (!MODULE.reactDOM) {
+	        MODULE.reactDOM = reactDOM;
+	    }
+	    return MODULE;
+	};
+
+
+/***/ },
+/* 176 */
+/*!*****************************!*\
+  !*** ./~/lodash/forEach.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var arrayEach = __webpack_require__(/*! ./_arrayEach */ 177),
+	    baseEach = __webpack_require__(/*! ./_baseEach */ 178),
+	    baseIteratee = __webpack_require__(/*! ./_baseIteratee */ 202),
+	    isArray = __webpack_require__(/*! ./isArray */ 197);
+	
+	/**
+	 * Iterates over elements of `collection` and invokes `iteratee` for each element.
+	 * The iteratee is invoked with three arguments: (value, index|key, collection).
+	 * Iteratee functions may exit iteration early by explicitly returning `false`.
+	 *
+	 * **Note:** As with other "Collections" methods, objects with a "length"
+	 * property are iterated like arrays. To avoid this behavior use `_.forIn`
+	 * or `_.forOwn` for object iteration.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @alias each
+	 * @category Collection
+	 * @param {Array|Object} collection The collection to iterate over.
+	 * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	 * @returns {Array|Object} Returns `collection`.
+	 * @see _.forEachRight
+	 * @example
+	 *
+	 * _([1, 2]).forEach(function(value) {
+	 *   console.log(value);
+	 * });
+	 * // => Logs `1` then `2`.
+	 *
+	 * _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+	 *   console.log(key);
+	 * });
+	 * // => Logs 'a' then 'b' (iteration order is not guaranteed).
+	 */
+	function forEach(collection, iteratee) {
+	  var func = isArray(collection) ? arrayEach : baseEach;
+	  return func(collection, baseIteratee(iteratee, 3));
+	}
+	
+	module.exports = forEach;
+
+
+/***/ },
+/* 177 */
+/*!********************************!*\
+  !*** ./~/lodash/_arrayEach.js ***!
+  \********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * A specialized version of `_.forEach` for arrays without support for
+	 * iteratee shorthands.
+	 *
+	 * @private
+	 * @param {Array} [array] The array to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Array} Returns `array`.
+	 */
+	function arrayEach(array, iteratee) {
+	  var index = -1,
+	      length = array ? array.length : 0;
+	
+	  while (++index < length) {
+	    if (iteratee(array[index], index, array) === false) {
+	      break;
+	    }
+	  }
+	  return array;
+	}
+	
+	module.exports = arrayEach;
+
+
+/***/ },
+/* 178 */
+/*!*******************************!*\
+  !*** ./~/lodash/_baseEach.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseForOwn = __webpack_require__(/*! ./_baseForOwn */ 179),
+	    createBaseEach = __webpack_require__(/*! ./_createBaseEach */ 201);
+	
+	/**
+	 * The base implementation of `_.forEach` without support for iteratee shorthands.
+	 *
+	 * @private
+	 * @param {Array|Object} collection The collection to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Array|Object} Returns `collection`.
+	 */
+	var baseEach = createBaseEach(baseForOwn);
+	
+	module.exports = baseEach;
+
+
+/***/ },
+/* 179 */
+/*!*********************************!*\
+  !*** ./~/lodash/_baseForOwn.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseFor = __webpack_require__(/*! ./_baseFor */ 180),
+	    keys = __webpack_require__(/*! ./keys */ 182);
+	
+	/**
+	 * The base implementation of `_.forOwn` without support for iteratee shorthands.
+	 *
+	 * @private
+	 * @param {Object} object The object to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Object} Returns `object`.
+	 */
+	function baseForOwn(object, iteratee) {
+	  return object && baseFor(object, iteratee, keys);
+	}
+	
+	module.exports = baseForOwn;
+
+
+/***/ },
+/* 180 */
+/*!******************************!*\
+  !*** ./~/lodash/_baseFor.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var createBaseFor = __webpack_require__(/*! ./_createBaseFor */ 181);
+	
+	/**
+	 * The base implementation of `baseForOwn` which iterates over `object`
+	 * properties returned by `keysFunc` and invokes `iteratee` for each property.
+	 * Iteratee functions may exit iteration early by explicitly returning `false`.
+	 *
+	 * @private
+	 * @param {Object} object The object to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @param {Function} keysFunc The function to get the keys of `object`.
+	 * @returns {Object} Returns `object`.
+	 */
+	var baseFor = createBaseFor();
+	
+	module.exports = baseFor;
+
+
+/***/ },
+/* 181 */
+/*!************************************!*\
+  !*** ./~/lodash/_createBaseFor.js ***!
+  \************************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Creates a base function for methods like `_.forIn` and `_.forOwn`.
+	 *
+	 * @private
+	 * @param {boolean} [fromRight] Specify iterating from right to left.
+	 * @returns {Function} Returns the new base function.
+	 */
+	function createBaseFor(fromRight) {
+	  return function(object, iteratee, keysFunc) {
+	    var index = -1,
+	        iterable = Object(object),
+	        props = keysFunc(object),
+	        length = props.length;
+	
+	    while (length--) {
+	      var key = props[fromRight ? length : ++index];
+	      if (iteratee(iterable[key], key, iterable) === false) {
+	        break;
+	      }
+	    }
+	    return object;
+	  };
+	}
+	
+	module.exports = createBaseFor;
+
+
+/***/ },
+/* 182 */
+/*!**************************!*\
+  !*** ./~/lodash/keys.js ***!
+  \**************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseHas = __webpack_require__(/*! ./_baseHas */ 183),
+	    baseKeys = __webpack_require__(/*! ./_baseKeys */ 185),
+	    indexKeys = __webpack_require__(/*! ./_indexKeys */ 186),
+	    isArrayLike = __webpack_require__(/*! ./isArrayLike */ 190),
+	    isIndex = __webpack_require__(/*! ./_isIndex */ 199),
+	    isPrototype = __webpack_require__(/*! ./_isPrototype */ 200);
+	
+	/**
+	 * Creates an array of the own enumerable property names of `object`.
+	 *
+	 * **Note:** Non-object values are coerced to objects. See the
+	 * [ES spec](http://ecma-international.org/ecma-262/6.0/#sec-object.keys)
+	 * for more details.
+	 *
+	 * @static
+	 * @since 0.1.0
+	 * @memberOf _
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the array of property names.
+	 * @example
+	 *
+	 * function Foo() {
+	 *   this.a = 1;
+	 *   this.b = 2;
+	 * }
+	 *
+	 * Foo.prototype.c = 3;
+	 *
+	 * _.keys(new Foo);
+	 * // => ['a', 'b'] (iteration order is not guaranteed)
+	 *
+	 * _.keys('hi');
+	 * // => ['0', '1']
+	 */
+	function keys(object) {
+	  var isProto = isPrototype(object);
+	  if (!(isProto || isArrayLike(object))) {
+	    return baseKeys(object);
+	  }
+	  var indexes = indexKeys(object),
+	      skipIndexes = !!indexes,
+	      result = indexes || [],
+	      length = result.length;
+	
+	  for (var key in object) {
+	    if (baseHas(object, key) &&
+	        !(skipIndexes && (key == 'length' || isIndex(key, length))) &&
+	        !(isProto && key == 'constructor')) {
+	      result.push(key);
+	    }
+	  }
+	  return result;
+	}
+	
+	module.exports = keys;
+
+
+/***/ },
+/* 183 */
+/*!******************************!*\
+  !*** ./~/lodash/_baseHas.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getPrototype = __webpack_require__(/*! ./_getPrototype */ 184);
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * The base implementation of `_.has` without support for deep paths.
+	 *
+	 * @private
+	 * @param {Object} [object] The object to query.
+	 * @param {Array|string} key The key to check.
+	 * @returns {boolean} Returns `true` if `key` exists, else `false`.
+	 */
+	function baseHas(object, key) {
+	  // Avoid a bug in IE 10-11 where objects with a [[Prototype]] of `null`,
+	  // that are composed entirely of index properties, return `false` for
+	  // `hasOwnProperty` checks of them.
+	  return object != null &&
+	    (hasOwnProperty.call(object, key) ||
+	      (typeof object == 'object' && key in object && getPrototype(object) === null));
+	}
+	
+	module.exports = baseHas;
+
+
+/***/ },
+/* 184 */
+/*!***********************************!*\
+  !*** ./~/lodash/_getPrototype.js ***!
+  \***********************************/
+/***/ function(module, exports) {
+
+	/* Built-in method references for those with the same name as other `lodash` methods. */
+	var nativeGetPrototype = Object.getPrototypeOf;
+	
+	/**
+	 * Gets the `[[Prototype]]` of `value`.
+	 *
+	 * @private
+	 * @param {*} value The value to query.
+	 * @returns {null|Object} Returns the `[[Prototype]]`.
+	 */
+	function getPrototype(value) {
+	  return nativeGetPrototype(Object(value));
+	}
+	
+	module.exports = getPrototype;
+
+
+/***/ },
+/* 185 */
+/*!*******************************!*\
+  !*** ./~/lodash/_baseKeys.js ***!
+  \*******************************/
+/***/ function(module, exports) {
+
+	/* Built-in method references for those with the same name as other `lodash` methods. */
+	var nativeKeys = Object.keys;
+	
+	/**
+	 * The base implementation of `_.keys` which doesn't skip the constructor
+	 * property of prototypes or treat sparse arrays as dense.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the array of property names.
+	 */
+	function baseKeys(object) {
+	  return nativeKeys(Object(object));
+	}
+	
+	module.exports = baseKeys;
+
+
+/***/ },
+/* 186 */
+/*!********************************!*\
+  !*** ./~/lodash/_indexKeys.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseTimes = __webpack_require__(/*! ./_baseTimes */ 187),
+	    isArguments = __webpack_require__(/*! ./isArguments */ 188),
+	    isArray = __webpack_require__(/*! ./isArray */ 197),
+	    isLength = __webpack_require__(/*! ./isLength */ 195),
+	    isString = __webpack_require__(/*! ./isString */ 198);
+	
+	/**
+	 * Creates an array of index keys for `object` values of arrays,
+	 * `arguments` objects, and strings, otherwise `null` is returned.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array|null} Returns index keys, else `null`.
+	 */
+	function indexKeys(object) {
+	  var length = object ? object.length : undefined;
+	  if (isLength(length) &&
+	      (isArray(object) || isString(object) || isArguments(object))) {
+	    return baseTimes(length, String);
+	  }
+	  return null;
+	}
+	
+	module.exports = indexKeys;
+
+
+/***/ },
+/* 187 */
+/*!********************************!*\
+  !*** ./~/lodash/_baseTimes.js ***!
+  \********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * The base implementation of `_.times` without support for iteratee shorthands
+	 * or max array length checks.
+	 *
+	 * @private
+	 * @param {number} n The number of times to invoke `iteratee`.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Array} Returns the array of results.
+	 */
+	function baseTimes(n, iteratee) {
+	  var index = -1,
+	      result = Array(n);
+	
+	  while (++index < n) {
+	    result[index] = iteratee(index);
+	  }
+	  return result;
+	}
+	
+	module.exports = baseTimes;
+
+
+/***/ },
+/* 188 */
+/*!*********************************!*\
+  !*** ./~/lodash/isArguments.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArrayLikeObject = __webpack_require__(/*! ./isArrayLikeObject */ 189);
+	
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/** Built-in value references. */
+	var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+	
+	/**
+	 * Checks if `value` is likely an `arguments` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isArguments(function() { return arguments; }());
+	 * // => true
+	 *
+	 * _.isArguments([1, 2, 3]);
+	 * // => false
+	 */
+	function isArguments(value) {
+	  // Safari 8.1 incorrectly makes `arguments.callee` enumerable in strict mode.
+	  return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') &&
+	    (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+	}
+	
+	module.exports = isArguments;
+
+
+/***/ },
+/* 189 */
+/*!***************************************!*\
+  !*** ./~/lodash/isArrayLikeObject.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArrayLike = __webpack_require__(/*! ./isArrayLike */ 190),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 196);
+	
+	/**
+	 * This method is like `_.isArrayLike` except that it also checks if `value`
+	 * is an object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an array-like object,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isArrayLikeObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArrayLikeObject(document.body.children);
+	 * // => true
+	 *
+	 * _.isArrayLikeObject('abc');
+	 * // => false
+	 *
+	 * _.isArrayLikeObject(_.noop);
+	 * // => false
+	 */
+	function isArrayLikeObject(value) {
+	  return isObjectLike(value) && isArrayLike(value);
+	}
+	
+	module.exports = isArrayLikeObject;
+
+
+/***/ },
+/* 190 */
+/*!*********************************!*\
+  !*** ./~/lodash/isArrayLike.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getLength = __webpack_require__(/*! ./_getLength */ 191),
+	    isFunction = __webpack_require__(/*! ./isFunction */ 193),
+	    isLength = __webpack_require__(/*! ./isLength */ 195);
+	
+	/**
+	 * Checks if `value` is array-like. A value is considered array-like if it's
+	 * not a function and has a `value.length` that's an integer greater than or
+	 * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+	 * @example
+	 *
+	 * _.isArrayLike([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArrayLike(document.body.children);
+	 * // => true
+	 *
+	 * _.isArrayLike('abc');
+	 * // => true
+	 *
+	 * _.isArrayLike(_.noop);
+	 * // => false
+	 */
+	function isArrayLike(value) {
+	  return value != null && isLength(getLength(value)) && !isFunction(value);
+	}
+	
+	module.exports = isArrayLike;
+
+
+/***/ },
+/* 191 */
+/*!********************************!*\
+  !*** ./~/lodash/_getLength.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseProperty = __webpack_require__(/*! ./_baseProperty */ 192);
+	
+	/**
+	 * Gets the "length" property value of `object`.
+	 *
+	 * **Note:** This function is used to avoid a
+	 * [JIT bug](https://bugs.webkit.org/show_bug.cgi?id=142792) that affects
+	 * Safari on at least iOS 8.1-8.3 ARM64.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {*} Returns the "length" value.
+	 */
+	var getLength = baseProperty('length');
+	
+	module.exports = getLength;
+
+
+/***/ },
+/* 192 */
+/*!***********************************!*\
+  !*** ./~/lodash/_baseProperty.js ***!
+  \***********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * The base implementation of `_.property` without support for deep paths.
+	 *
+	 * @private
+	 * @param {string} key The key of the property to get.
+	 * @returns {Function} Returns the new accessor function.
+	 */
+	function baseProperty(key) {
+	  return function(object) {
+	    return object == null ? undefined : object[key];
+	  };
+	}
+	
+	module.exports = baseProperty;
+
+
+/***/ },
+/* 193 */
+/*!********************************!*\
+  !*** ./~/lodash/isFunction.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(/*! ./isObject */ 194);
+	
+	/** `Object#toString` result references. */
+	var funcTag = '[object Function]',
+	    genTag = '[object GeneratorFunction]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a `Function` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isFunction(_);
+	 * // => true
+	 *
+	 * _.isFunction(/abc/);
+	 * // => false
+	 */
+	function isFunction(value) {
+	  // The use of `Object#toString` avoids issues with the `typeof` operator
+	  // in Safari 8 which returns 'object' for typed array and weak map constructors,
+	  // and PhantomJS 1.9 which returns 'function' for `NodeList` instances.
+	  var tag = isObject(value) ? objectToString.call(value) : '';
+	  return tag == funcTag || tag == genTag;
+	}
+	
+	module.exports = isFunction;
+
+
+/***/ },
+/* 194 */
+/*!******************************!*\
+  !*** ./~/lodash/isObject.js ***!
+  \******************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is the
+	 * [language type](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-types)
+	 * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+	 * @example
+	 *
+	 * _.isObject({});
+	 * // => true
+	 *
+	 * _.isObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObject(_.noop);
+	 * // => true
+	 *
+	 * _.isObject(null);
+	 * // => false
+	 */
+	function isObject(value) {
+	  var type = typeof value;
+	  return !!value && (type == 'object' || type == 'function');
+	}
+	
+	module.exports = isObject;
+
+
+/***/ },
+/* 195 */
+/*!******************************!*\
+  !*** ./~/lodash/isLength.js ***!
+  \******************************/
+/***/ function(module, exports) {
+
+	/** Used as references for various `Number` constants. */
+	var MAX_SAFE_INTEGER = 9007199254740991;
+	
+	/**
+	 * Checks if `value` is a valid array-like length.
+	 *
+	 * **Note:** This function is loosely based on
+	 * [`ToLength`](http://ecma-international.org/ecma-262/6.0/#sec-tolength).
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a valid length,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isLength(3);
+	 * // => true
+	 *
+	 * _.isLength(Number.MIN_VALUE);
+	 * // => false
+	 *
+	 * _.isLength(Infinity);
+	 * // => false
+	 *
+	 * _.isLength('3');
+	 * // => false
+	 */
+	function isLength(value) {
+	  return typeof value == 'number' &&
+	    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+	}
+	
+	module.exports = isLength;
+
+
+/***/ },
+/* 196 */
+/*!**********************************!*\
+  !*** ./~/lodash/isObjectLike.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is object-like. A value is object-like if it's not `null`
+	 * and has a `typeof` result of "object".
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+	 * @example
+	 *
+	 * _.isObjectLike({});
+	 * // => true
+	 *
+	 * _.isObjectLike([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObjectLike(_.noop);
+	 * // => false
+	 *
+	 * _.isObjectLike(null);
+	 * // => false
+	 */
+	function isObjectLike(value) {
+	  return !!value && typeof value == 'object';
+	}
+	
+	module.exports = isObjectLike;
+
+
+/***/ },
+/* 197 */
+/*!*****************************!*\
+  !*** ./~/lodash/isArray.js ***!
+  \*****************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is classified as an `Array` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @type {Function}
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isArray([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArray(document.body.children);
+	 * // => false
+	 *
+	 * _.isArray('abc');
+	 * // => false
+	 *
+	 * _.isArray(_.noop);
+	 * // => false
+	 */
+	var isArray = Array.isArray;
+	
+	module.exports = isArray;
+
+
+/***/ },
+/* 198 */
+/*!******************************!*\
+  !*** ./~/lodash/isString.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArray = __webpack_require__(/*! ./isArray */ 197),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 196);
+	
+	/** `Object#toString` result references. */
+	var stringTag = '[object String]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a `String` primitive or object.
+	 *
+	 * @static
+	 * @since 0.1.0
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isString('abc');
+	 * // => true
+	 *
+	 * _.isString(1);
+	 * // => false
+	 */
+	function isString(value) {
+	  return typeof value == 'string' ||
+	    (!isArray(value) && isObjectLike(value) && objectToString.call(value) == stringTag);
+	}
+	
+	module.exports = isString;
+
+
+/***/ },
+/* 199 */
+/*!******************************!*\
+  !*** ./~/lodash/_isIndex.js ***!
+  \******************************/
+/***/ function(module, exports) {
+
+	/** Used as references for various `Number` constants. */
+	var MAX_SAFE_INTEGER = 9007199254740991;
+	
+	/** Used to detect unsigned integer values. */
+	var reIsUint = /^(?:0|[1-9]\d*)$/;
+	
+	/**
+	 * Checks if `value` is a valid array-like index.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+	 * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+	 */
+	function isIndex(value, length) {
+	  length = length == null ? MAX_SAFE_INTEGER : length;
+	  return !!length &&
+	    (typeof value == 'number' || reIsUint.test(value)) &&
+	    (value > -1 && value % 1 == 0 && value < length);
+	}
+	
+	module.exports = isIndex;
+
+
+/***/ },
+/* 200 */
+/*!**********************************!*\
+  !*** ./~/lodash/_isPrototype.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Checks if `value` is likely a prototype object.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
+	 */
+	function isPrototype(value) {
+	  var Ctor = value && value.constructor,
+	      proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
+	
+	  return value === proto;
+	}
+	
+	module.exports = isPrototype;
+
+
+/***/ },
+/* 201 */
+/*!*************************************!*\
+  !*** ./~/lodash/_createBaseEach.js ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArrayLike = __webpack_require__(/*! ./isArrayLike */ 190);
+	
+	/**
+	 * Creates a `baseEach` or `baseEachRight` function.
+	 *
+	 * @private
+	 * @param {Function} eachFunc The function to iterate over a collection.
+	 * @param {boolean} [fromRight] Specify iterating from right to left.
+	 * @returns {Function} Returns the new base function.
+	 */
+	function createBaseEach(eachFunc, fromRight) {
+	  return function(collection, iteratee) {
+	    if (collection == null) {
+	      return collection;
+	    }
+	    if (!isArrayLike(collection)) {
+	      return eachFunc(collection, iteratee);
+	    }
+	    var length = collection.length,
+	        index = fromRight ? length : -1,
+	        iterable = Object(collection);
+	
+	    while ((fromRight ? index-- : ++index < length)) {
+	      if (iteratee(iterable[index], index, iterable) === false) {
+	        break;
+	      }
+	    }
+	    return collection;
+	  };
+	}
+	
+	module.exports = createBaseEach;
+
+
+/***/ },
+/* 202 */
+/*!***********************************!*\
+  !*** ./~/lodash/_baseIteratee.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseMatches = __webpack_require__(/*! ./_baseMatches */ 203),
+	    baseMatchesProperty = __webpack_require__(/*! ./_baseMatchesProperty */ 266),
+	    identity = __webpack_require__(/*! ./identity */ 280),
+	    isArray = __webpack_require__(/*! ./isArray */ 197),
+	    property = __webpack_require__(/*! ./property */ 281);
+	
+	/**
+	 * The base implementation of `_.iteratee`.
+	 *
+	 * @private
+	 * @param {*} [value=_.identity] The value to convert to an iteratee.
+	 * @returns {Function} Returns the iteratee.
+	 */
+	function baseIteratee(value) {
+	  // Don't store the `typeof` result in a variable to avoid a JIT bug in Safari 9.
+	  // See https://bugs.webkit.org/show_bug.cgi?id=156034 for more details.
+	  if (typeof value == 'function') {
+	    return value;
+	  }
+	  if (value == null) {
+	    return identity;
+	  }
+	  if (typeof value == 'object') {
+	    return isArray(value)
+	      ? baseMatchesProperty(value[0], value[1])
+	      : baseMatches(value);
+	  }
+	  return property(value);
+	}
+	
+	module.exports = baseIteratee;
+
+
+/***/ },
+/* 203 */
+/*!**********************************!*\
+  !*** ./~/lodash/_baseMatches.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseIsMatch = __webpack_require__(/*! ./_baseIsMatch */ 204),
+	    getMatchData = __webpack_require__(/*! ./_getMatchData */ 263),
+	    matchesStrictComparable = __webpack_require__(/*! ./_matchesStrictComparable */ 265);
+	
+	/**
+	 * The base implementation of `_.matches` which doesn't clone `source`.
+	 *
+	 * @private
+	 * @param {Object} source The object of property values to match.
+	 * @returns {Function} Returns the new spec function.
+	 */
+	function baseMatches(source) {
+	  var matchData = getMatchData(source);
+	  if (matchData.length == 1 && matchData[0][2]) {
+	    return matchesStrictComparable(matchData[0][0], matchData[0][1]);
+	  }
+	  return function(object) {
+	    return object === source || baseIsMatch(object, source, matchData);
+	  };
+	}
+	
+	module.exports = baseMatches;
+
+
+/***/ },
+/* 204 */
+/*!**********************************!*\
+  !*** ./~/lodash/_baseIsMatch.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Stack = __webpack_require__(/*! ./_Stack */ 205),
+	    baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ 244);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * The base implementation of `_.isMatch` without support for iteratee shorthands.
+	 *
+	 * @private
+	 * @param {Object} object The object to inspect.
+	 * @param {Object} source The object of property values to match.
+	 * @param {Array} matchData The property names, values, and compare flags to match.
+	 * @param {Function} [customizer] The function to customize comparisons.
+	 * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+	 */
+	function baseIsMatch(object, source, matchData, customizer) {
+	  var index = matchData.length,
+	      length = index,
+	      noCustomizer = !customizer;
+	
+	  if (object == null) {
+	    return !length;
+	  }
+	  object = Object(object);
+	  while (index--) {
+	    var data = matchData[index];
+	    if ((noCustomizer && data[2])
+	          ? data[1] !== object[data[0]]
+	          : !(data[0] in object)
+	        ) {
+	      return false;
+	    }
+	  }
+	  while (++index < length) {
+	    data = matchData[index];
+	    var key = data[0],
+	        objValue = object[key],
+	        srcValue = data[1];
+	
+	    if (noCustomizer && data[2]) {
+	      if (objValue === undefined && !(key in object)) {
+	        return false;
+	      }
+	    } else {
+	      var stack = new Stack;
+	      if (customizer) {
+	        var result = customizer(objValue, srcValue, key, object, source, stack);
+	      }
+	      if (!(result === undefined
+	            ? baseIsEqual(srcValue, objValue, customizer, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG, stack)
+	            : result
+	          )) {
+	        return false;
+	      }
+	    }
+	  }
+	  return true;
+	}
+	
+	module.exports = baseIsMatch;
+
+
+/***/ },
+/* 205 */
+/*!****************************!*\
+  !*** ./~/lodash/_Stack.js ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var ListCache = __webpack_require__(/*! ./_ListCache */ 206),
+	    stackClear = __webpack_require__(/*! ./_stackClear */ 214),
+	    stackDelete = __webpack_require__(/*! ./_stackDelete */ 215),
+	    stackGet = __webpack_require__(/*! ./_stackGet */ 216),
+	    stackHas = __webpack_require__(/*! ./_stackHas */ 217),
+	    stackSet = __webpack_require__(/*! ./_stackSet */ 218);
+	
+	/**
+	 * Creates a stack cache object to store key-value pairs.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function Stack(entries) {
+	  this.__data__ = new ListCache(entries);
+	}
+	
+	// Add methods to `Stack`.
+	Stack.prototype.clear = stackClear;
+	Stack.prototype['delete'] = stackDelete;
+	Stack.prototype.get = stackGet;
+	Stack.prototype.has = stackHas;
+	Stack.prototype.set = stackSet;
+	
+	module.exports = Stack;
+
+
+/***/ },
+/* 206 */
+/*!********************************!*\
+  !*** ./~/lodash/_ListCache.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var listCacheClear = __webpack_require__(/*! ./_listCacheClear */ 207),
+	    listCacheDelete = __webpack_require__(/*! ./_listCacheDelete */ 208),
+	    listCacheGet = __webpack_require__(/*! ./_listCacheGet */ 211),
+	    listCacheHas = __webpack_require__(/*! ./_listCacheHas */ 212),
+	    listCacheSet = __webpack_require__(/*! ./_listCacheSet */ 213);
+	
+	/**
+	 * Creates an list cache object.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function ListCache(entries) {
+	  var index = -1,
+	      length = entries ? entries.length : 0;
+	
+	  this.clear();
+	  while (++index < length) {
+	    var entry = entries[index];
+	    this.set(entry[0], entry[1]);
+	  }
+	}
+	
+	// Add methods to `ListCache`.
+	ListCache.prototype.clear = listCacheClear;
+	ListCache.prototype['delete'] = listCacheDelete;
+	ListCache.prototype.get = listCacheGet;
+	ListCache.prototype.has = listCacheHas;
+	ListCache.prototype.set = listCacheSet;
+	
+	module.exports = ListCache;
+
+
+/***/ },
+/* 207 */
+/*!*************************************!*\
+  !*** ./~/lodash/_listCacheClear.js ***!
+  \*************************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Removes all key-value entries from the list cache.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf ListCache
+	 */
+	function listCacheClear() {
+	  this.__data__ = [];
+	}
+	
+	module.exports = listCacheClear;
+
+
+/***/ },
+/* 208 */
+/*!**************************************!*\
+  !*** ./~/lodash/_listCacheDelete.js ***!
+  \**************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 209);
+	
+	/** Used for built-in method references. */
+	var arrayProto = Array.prototype;
+	
+	/** Built-in value references. */
+	var splice = arrayProto.splice;
+	
+	/**
+	 * Removes `key` and its value from the list cache.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf ListCache
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function listCacheDelete(key) {
+	  var data = this.__data__,
+	      index = assocIndexOf(data, key);
+	
+	  if (index < 0) {
+	    return false;
+	  }
+	  var lastIndex = data.length - 1;
+	  if (index == lastIndex) {
+	    data.pop();
+	  } else {
+	    splice.call(data, index, 1);
+	  }
+	  return true;
+	}
+	
+	module.exports = listCacheDelete;
+
+
+/***/ },
+/* 209 */
+/*!***********************************!*\
+  !*** ./~/lodash/_assocIndexOf.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var eq = __webpack_require__(/*! ./eq */ 210);
+	
+	/**
+	 * Gets the index at which the `key` is found in `array` of key-value pairs.
+	 *
+	 * @private
+	 * @param {Array} array The array to search.
+	 * @param {*} key The key to search for.
+	 * @returns {number} Returns the index of the matched value, else `-1`.
+	 */
+	function assocIndexOf(array, key) {
+	  var length = array.length;
+	  while (length--) {
+	    if (eq(array[length][0], key)) {
+	      return length;
+	    }
+	  }
+	  return -1;
+	}
+	
+	module.exports = assocIndexOf;
+
+
+/***/ },
+/* 210 */
+/*!************************!*\
+  !*** ./~/lodash/eq.js ***!
+  \************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Performs a
+	 * [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
+	 * comparison between two values to determine if they are equivalent.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to compare.
+	 * @param {*} other The other value to compare.
+	 * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+	 * @example
+	 *
+	 * var object = { 'user': 'fred' };
+	 * var other = { 'user': 'fred' };
+	 *
+	 * _.eq(object, object);
+	 * // => true
+	 *
+	 * _.eq(object, other);
+	 * // => false
+	 *
+	 * _.eq('a', 'a');
+	 * // => true
+	 *
+	 * _.eq('a', Object('a'));
+	 * // => false
+	 *
+	 * _.eq(NaN, NaN);
+	 * // => true
+	 */
+	function eq(value, other) {
+	  return value === other || (value !== value && other !== other);
+	}
+	
+	module.exports = eq;
+
+
+/***/ },
+/* 211 */
+/*!***********************************!*\
+  !*** ./~/lodash/_listCacheGet.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 209);
+	
+	/**
+	 * Gets the list cache value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf ListCache
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function listCacheGet(key) {
+	  var data = this.__data__,
+	      index = assocIndexOf(data, key);
+	
+	  return index < 0 ? undefined : data[index][1];
+	}
+	
+	module.exports = listCacheGet;
+
+
+/***/ },
+/* 212 */
+/*!***********************************!*\
+  !*** ./~/lodash/_listCacheHas.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 209);
+	
+	/**
+	 * Checks if a list cache value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf ListCache
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function listCacheHas(key) {
+	  return assocIndexOf(this.__data__, key) > -1;
+	}
+	
+	module.exports = listCacheHas;
+
+
+/***/ },
+/* 213 */
+/*!***********************************!*\
+  !*** ./~/lodash/_listCacheSet.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 209);
+	
+	/**
+	 * Sets the list cache `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf ListCache
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the list cache instance.
+	 */
+	function listCacheSet(key, value) {
+	  var data = this.__data__,
+	      index = assocIndexOf(data, key);
+	
+	  if (index < 0) {
+	    data.push([key, value]);
+	  } else {
+	    data[index][1] = value;
+	  }
+	  return this;
+	}
+	
+	module.exports = listCacheSet;
+
+
+/***/ },
+/* 214 */
+/*!*********************************!*\
+  !*** ./~/lodash/_stackClear.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var ListCache = __webpack_require__(/*! ./_ListCache */ 206);
+	
+	/**
+	 * Removes all key-value entries from the stack.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf Stack
+	 */
+	function stackClear() {
+	  this.__data__ = new ListCache;
+	}
+	
+	module.exports = stackClear;
+
+
+/***/ },
+/* 215 */
+/*!**********************************!*\
+  !*** ./~/lodash/_stackDelete.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Removes `key` and its value from the stack.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf Stack
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function stackDelete(key) {
+	  return this.__data__['delete'](key);
+	}
+	
+	module.exports = stackDelete;
+
+
+/***/ },
+/* 216 */
+/*!*******************************!*\
+  !*** ./~/lodash/_stackGet.js ***!
+  \*******************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Gets the stack value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf Stack
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function stackGet(key) {
+	  return this.__data__.get(key);
+	}
+	
+	module.exports = stackGet;
+
+
+/***/ },
+/* 217 */
+/*!*******************************!*\
+  !*** ./~/lodash/_stackHas.js ***!
+  \*******************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if a stack value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf Stack
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function stackHas(key) {
+	  return this.__data__.has(key);
+	}
+	
+	module.exports = stackHas;
+
+
+/***/ },
+/* 218 */
+/*!*******************************!*\
+  !*** ./~/lodash/_stackSet.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var ListCache = __webpack_require__(/*! ./_ListCache */ 206),
+	    MapCache = __webpack_require__(/*! ./_MapCache */ 219);
+	
+	/** Used as the size to enable large array optimizations. */
+	var LARGE_ARRAY_SIZE = 200;
+	
+	/**
+	 * Sets the stack `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf Stack
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the stack cache instance.
+	 */
+	function stackSet(key, value) {
+	  var cache = this.__data__;
+	  if (cache instanceof ListCache && cache.__data__.length == LARGE_ARRAY_SIZE) {
+	    cache = this.__data__ = new MapCache(cache.__data__);
+	  }
+	  cache.set(key, value);
+	  return this;
+	}
+	
+	module.exports = stackSet;
+
+
+/***/ },
+/* 219 */
+/*!*******************************!*\
+  !*** ./~/lodash/_MapCache.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var mapCacheClear = __webpack_require__(/*! ./_mapCacheClear */ 220),
+	    mapCacheDelete = __webpack_require__(/*! ./_mapCacheDelete */ 238),
+	    mapCacheGet = __webpack_require__(/*! ./_mapCacheGet */ 241),
+	    mapCacheHas = __webpack_require__(/*! ./_mapCacheHas */ 242),
+	    mapCacheSet = __webpack_require__(/*! ./_mapCacheSet */ 243);
+	
+	/**
+	 * Creates a map cache object to store key-value pairs.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function MapCache(entries) {
+	  var index = -1,
+	      length = entries ? entries.length : 0;
+	
+	  this.clear();
+	  while (++index < length) {
+	    var entry = entries[index];
+	    this.set(entry[0], entry[1]);
+	  }
+	}
+	
+	// Add methods to `MapCache`.
+	MapCache.prototype.clear = mapCacheClear;
+	MapCache.prototype['delete'] = mapCacheDelete;
+	MapCache.prototype.get = mapCacheGet;
+	MapCache.prototype.has = mapCacheHas;
+	MapCache.prototype.set = mapCacheSet;
+	
+	module.exports = MapCache;
+
+
+/***/ },
+/* 220 */
+/*!************************************!*\
+  !*** ./~/lodash/_mapCacheClear.js ***!
+  \************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Hash = __webpack_require__(/*! ./_Hash */ 221),
+	    ListCache = __webpack_require__(/*! ./_ListCache */ 206),
+	    Map = __webpack_require__(/*! ./_Map */ 237);
+	
+	/**
+	 * Removes all key-value entries from the map.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf MapCache
+	 */
+	function mapCacheClear() {
+	  this.__data__ = {
+	    'hash': new Hash,
+	    'map': new (Map || ListCache),
+	    'string': new Hash
+	  };
+	}
+	
+	module.exports = mapCacheClear;
+
+
+/***/ },
+/* 221 */
+/*!***************************!*\
+  !*** ./~/lodash/_Hash.js ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var hashClear = __webpack_require__(/*! ./_hashClear */ 222),
+	    hashDelete = __webpack_require__(/*! ./_hashDelete */ 233),
+	    hashGet = __webpack_require__(/*! ./_hashGet */ 234),
+	    hashHas = __webpack_require__(/*! ./_hashHas */ 235),
+	    hashSet = __webpack_require__(/*! ./_hashSet */ 236);
+	
+	/**
+	 * Creates a hash object.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function Hash(entries) {
+	  var index = -1,
+	      length = entries ? entries.length : 0;
+	
+	  this.clear();
+	  while (++index < length) {
+	    var entry = entries[index];
+	    this.set(entry[0], entry[1]);
+	  }
+	}
+	
+	// Add methods to `Hash`.
+	Hash.prototype.clear = hashClear;
+	Hash.prototype['delete'] = hashDelete;
+	Hash.prototype.get = hashGet;
+	Hash.prototype.has = hashHas;
+	Hash.prototype.set = hashSet;
+	
+	module.exports = Hash;
+
+
+/***/ },
+/* 222 */
+/*!********************************!*\
+  !*** ./~/lodash/_hashClear.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 223);
+	
+	/**
+	 * Removes all key-value entries from the hash.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf Hash
+	 */
+	function hashClear() {
+	  this.__data__ = nativeCreate ? nativeCreate(null) : {};
+	}
+	
+	module.exports = hashClear;
+
+
+/***/ },
+/* 223 */
+/*!***********************************!*\
+  !*** ./~/lodash/_nativeCreate.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 224);
+	
+	/* Built-in method references that are verified to be native. */
+	var nativeCreate = getNative(Object, 'create');
+	
+	module.exports = nativeCreate;
+
+
+/***/ },
+/* 224 */
+/*!********************************!*\
+  !*** ./~/lodash/_getNative.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseIsNative = __webpack_require__(/*! ./_baseIsNative */ 225),
+	    getValue = __webpack_require__(/*! ./_getValue */ 232);
+	
+	/**
+	 * Gets the native function at `key` of `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {string} key The key of the method to get.
+	 * @returns {*} Returns the function if it's native, else `undefined`.
+	 */
+	function getNative(object, key) {
+	  var value = getValue(object, key);
+	  return baseIsNative(value) ? value : undefined;
+	}
+	
+	module.exports = getNative;
+
+
+/***/ },
+/* 225 */
+/*!***********************************!*\
+  !*** ./~/lodash/_baseIsNative.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isFunction = __webpack_require__(/*! ./isFunction */ 193),
+	    isHostObject = __webpack_require__(/*! ./_isHostObject */ 226),
+	    isMasked = __webpack_require__(/*! ./_isMasked */ 227),
+	    isObject = __webpack_require__(/*! ./isObject */ 194),
+	    toSource = __webpack_require__(/*! ./_toSource */ 231);
+	
+	/**
+	 * Used to match `RegExp`
+	 * [syntax characters](http://ecma-international.org/ecma-262/6.0/#sec-patterns).
+	 */
+	var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
+	
+	/** Used to detect host constructors (Safari). */
+	var reIsHostCtor = /^\[object .+?Constructor\]$/;
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to resolve the decompiled source of functions. */
+	var funcToString = Function.prototype.toString;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/** Used to detect if a method is native. */
+	var reIsNative = RegExp('^' +
+	  funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\$&')
+	  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
+	);
+	
+	/**
+	 * The base implementation of `_.isNative` without bad shim checks.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a native function,
+	 *  else `false`.
+	 */
+	function baseIsNative(value) {
+	  if (!isObject(value) || isMasked(value)) {
+	    return false;
+	  }
+	  var pattern = (isFunction(value) || isHostObject(value)) ? reIsNative : reIsHostCtor;
+	  return pattern.test(toSource(value));
+	}
+	
+	module.exports = baseIsNative;
+
+
+/***/ },
+/* 226 */
+/*!***********************************!*\
+  !*** ./~/lodash/_isHostObject.js ***!
+  \***********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is a host object in IE < 9.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a host object, else `false`.
+	 */
+	function isHostObject(value) {
+	  // Many host objects are `Object` objects that can coerce to strings
+	  // despite having improperly defined `toString` methods.
+	  var result = false;
+	  if (value != null && typeof value.toString != 'function') {
+	    try {
+	      result = !!(value + '');
+	    } catch (e) {}
+	  }
+	  return result;
+	}
+	
+	module.exports = isHostObject;
+
+
+/***/ },
+/* 227 */
+/*!*******************************!*\
+  !*** ./~/lodash/_isMasked.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var coreJsData = __webpack_require__(/*! ./_coreJsData */ 228);
+	
+	/** Used to detect methods masquerading as native. */
+	var maskSrcKey = (function() {
+	  var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
+	  return uid ? ('Symbol(src)_1.' + uid) : '';
+	}());
+	
+	/**
+	 * Checks if `func` has its source masked.
+	 *
+	 * @private
+	 * @param {Function} func The function to check.
+	 * @returns {boolean} Returns `true` if `func` is masked, else `false`.
+	 */
+	function isMasked(func) {
+	  return !!maskSrcKey && (maskSrcKey in func);
+	}
+	
+	module.exports = isMasked;
+
+
+/***/ },
+/* 228 */
+/*!*********************************!*\
+  !*** ./~/lodash/_coreJsData.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var root = __webpack_require__(/*! ./_root */ 229);
+	
+	/** Used to detect overreaching core-js shims. */
+	var coreJsData = root['__core-js_shared__'];
+	
+	module.exports = coreJsData;
+
+
+/***/ },
+/* 229 */
+/*!***************************!*\
+  !*** ./~/lodash/_root.js ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {var checkGlobal = __webpack_require__(/*! ./_checkGlobal */ 230);
+	
+	/** Detect free variable `global` from Node.js. */
+	var freeGlobal = checkGlobal(typeof global == 'object' && global);
+	
+	/** Detect free variable `self`. */
+	var freeSelf = checkGlobal(typeof self == 'object' && self);
+	
+	/** Detect `this` as the global object. */
+	var thisGlobal = checkGlobal(typeof this == 'object' && this);
+	
+	/** Used as a reference to the global object. */
+	var root = freeGlobal || freeSelf || thisGlobal || Function('return this')();
+	
+	module.exports = root;
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 230 */
+/*!**********************************!*\
+  !*** ./~/lodash/_checkGlobal.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is a global object.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {null|Object} Returns `value` if it's a global object, else `null`.
+	 */
+	function checkGlobal(value) {
+	  return (value && value.Object === Object) ? value : null;
+	}
+	
+	module.exports = checkGlobal;
+
+
+/***/ },
+/* 231 */
+/*!*******************************!*\
+  !*** ./~/lodash/_toSource.js ***!
+  \*******************************/
+/***/ function(module, exports) {
+
+	/** Used to resolve the decompiled source of functions. */
+	var funcToString = Function.prototype.toString;
+	
+	/**
+	 * Converts `func` to its source code.
+	 *
+	 * @private
+	 * @param {Function} func The function to process.
+	 * @returns {string} Returns the source code.
+	 */
+	function toSource(func) {
+	  if (func != null) {
+	    try {
+	      return funcToString.call(func);
+	    } catch (e) {}
+	    try {
+	      return (func + '');
+	    } catch (e) {}
+	  }
+	  return '';
+	}
+	
+	module.exports = toSource;
+
+
+/***/ },
+/* 232 */
+/*!*******************************!*\
+  !*** ./~/lodash/_getValue.js ***!
+  \*******************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Gets the value at `key` of `object`.
+	 *
+	 * @private
+	 * @param {Object} [object] The object to query.
+	 * @param {string} key The key of the property to get.
+	 * @returns {*} Returns the property value.
+	 */
+	function getValue(object, key) {
+	  return object == null ? undefined : object[key];
+	}
+	
+	module.exports = getValue;
+
+
+/***/ },
+/* 233 */
+/*!*********************************!*\
+  !*** ./~/lodash/_hashDelete.js ***!
+  \*********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Removes `key` and its value from the hash.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf Hash
+	 * @param {Object} hash The hash to modify.
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function hashDelete(key) {
+	  return this.has(key) && delete this.__data__[key];
+	}
+	
+	module.exports = hashDelete;
+
+
+/***/ },
+/* 234 */
+/*!******************************!*\
+  !*** ./~/lodash/_hashGet.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 223);
+	
+	/** Used to stand-in for `undefined` hash values. */
+	var HASH_UNDEFINED = '__lodash_hash_undefined__';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * Gets the hash value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf Hash
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function hashGet(key) {
+	  var data = this.__data__;
+	  if (nativeCreate) {
+	    var result = data[key];
+	    return result === HASH_UNDEFINED ? undefined : result;
+	  }
+	  return hasOwnProperty.call(data, key) ? data[key] : undefined;
+	}
+	
+	module.exports = hashGet;
+
+
+/***/ },
+/* 235 */
+/*!******************************!*\
+  !*** ./~/lodash/_hashHas.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 223);
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * Checks if a hash value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf Hash
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function hashHas(key) {
+	  var data = this.__data__;
+	  return nativeCreate ? data[key] !== undefined : hasOwnProperty.call(data, key);
+	}
+	
+	module.exports = hashHas;
+
+
+/***/ },
+/* 236 */
+/*!******************************!*\
+  !*** ./~/lodash/_hashSet.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 223);
+	
+	/** Used to stand-in for `undefined` hash values. */
+	var HASH_UNDEFINED = '__lodash_hash_undefined__';
+	
+	/**
+	 * Sets the hash `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf Hash
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the hash instance.
+	 */
+	function hashSet(key, value) {
+	  var data = this.__data__;
+	  data[key] = (nativeCreate && value === undefined) ? HASH_UNDEFINED : value;
+	  return this;
+	}
+	
+	module.exports = hashSet;
+
+
+/***/ },
+/* 237 */
+/*!**************************!*\
+  !*** ./~/lodash/_Map.js ***!
+  \**************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 224),
+	    root = __webpack_require__(/*! ./_root */ 229);
+	
+	/* Built-in method references that are verified to be native. */
+	var Map = getNative(root, 'Map');
+	
+	module.exports = Map;
+
+
+/***/ },
+/* 238 */
+/*!*************************************!*\
+  !*** ./~/lodash/_mapCacheDelete.js ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 239);
+	
+	/**
+	 * Removes `key` and its value from the map.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf MapCache
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function mapCacheDelete(key) {
+	  return getMapData(this, key)['delete'](key);
+	}
+	
+	module.exports = mapCacheDelete;
+
+
+/***/ },
+/* 239 */
+/*!*********************************!*\
+  !*** ./~/lodash/_getMapData.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isKeyable = __webpack_require__(/*! ./_isKeyable */ 240);
+	
+	/**
+	 * Gets the data for `map`.
+	 *
+	 * @private
+	 * @param {Object} map The map to query.
+	 * @param {string} key The reference key.
+	 * @returns {*} Returns the map data.
+	 */
+	function getMapData(map, key) {
+	  var data = map.__data__;
+	  return isKeyable(key)
+	    ? data[typeof key == 'string' ? 'string' : 'hash']
+	    : data.map;
+	}
+	
+	module.exports = getMapData;
+
+
+/***/ },
+/* 240 */
+/*!********************************!*\
+  !*** ./~/lodash/_isKeyable.js ***!
+  \********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is suitable for use as unique object key.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
+	 */
+	function isKeyable(value) {
+	  var type = typeof value;
+	  return (type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean')
+	    ? (value !== '__proto__')
+	    : (value === null);
+	}
+	
+	module.exports = isKeyable;
+
+
+/***/ },
+/* 241 */
+/*!**********************************!*\
+  !*** ./~/lodash/_mapCacheGet.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 239);
+	
+	/**
+	 * Gets the map value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf MapCache
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function mapCacheGet(key) {
+	  return getMapData(this, key).get(key);
+	}
+	
+	module.exports = mapCacheGet;
+
+
+/***/ },
+/* 242 */
+/*!**********************************!*\
+  !*** ./~/lodash/_mapCacheHas.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 239);
+	
+	/**
+	 * Checks if a map value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf MapCache
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function mapCacheHas(key) {
+	  return getMapData(this, key).has(key);
+	}
+	
+	module.exports = mapCacheHas;
+
+
+/***/ },
+/* 243 */
+/*!**********************************!*\
+  !*** ./~/lodash/_mapCacheSet.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 239);
+	
+	/**
+	 * Sets the map `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf MapCache
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the map cache instance.
+	 */
+	function mapCacheSet(key, value) {
+	  getMapData(this, key).set(key, value);
+	  return this;
+	}
+	
+	module.exports = mapCacheSet;
+
+
+/***/ },
+/* 244 */
+/*!**********************************!*\
+  !*** ./~/lodash/_baseIsEqual.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseIsEqualDeep = __webpack_require__(/*! ./_baseIsEqualDeep */ 245),
+	    isObject = __webpack_require__(/*! ./isObject */ 194),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 196);
+	
+	/**
+	 * The base implementation of `_.isEqual` which supports partial comparisons
+	 * and tracks traversed objects.
+	 *
+	 * @private
+	 * @param {*} value The value to compare.
+	 * @param {*} other The other value to compare.
+	 * @param {Function} [customizer] The function to customize comparisons.
+	 * @param {boolean} [bitmask] The bitmask of comparison flags.
+	 *  The bitmask may be composed of the following flags:
+	 *     1 - Unordered comparison
+	 *     2 - Partial comparison
+	 * @param {Object} [stack] Tracks traversed `value` and `other` objects.
+	 * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+	 */
+	function baseIsEqual(value, other, customizer, bitmask, stack) {
+	  if (value === other) {
+	    return true;
+	  }
+	  if (value == null || other == null || (!isObject(value) && !isObjectLike(other))) {
+	    return value !== value && other !== other;
+	  }
+	  return baseIsEqualDeep(value, other, baseIsEqual, customizer, bitmask, stack);
+	}
+	
+	module.exports = baseIsEqual;
+
+
+/***/ },
+/* 245 */
+/*!**************************************!*\
+  !*** ./~/lodash/_baseIsEqualDeep.js ***!
+  \**************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Stack = __webpack_require__(/*! ./_Stack */ 205),
+	    equalArrays = __webpack_require__(/*! ./_equalArrays */ 246),
+	    equalByTag = __webpack_require__(/*! ./_equalByTag */ 251),
+	    equalObjects = __webpack_require__(/*! ./_equalObjects */ 256),
+	    getTag = __webpack_require__(/*! ./_getTag */ 257),
+	    isArray = __webpack_require__(/*! ./isArray */ 197),
+	    isHostObject = __webpack_require__(/*! ./_isHostObject */ 226),
+	    isTypedArray = __webpack_require__(/*! ./isTypedArray */ 262);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var PARTIAL_COMPARE_FLAG = 2;
+	
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]',
+	    arrayTag = '[object Array]',
+	    objectTag = '[object Object]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * A specialized version of `baseIsEqual` for arrays and objects which performs
+	 * deep comparisons and tracks traversed objects enabling objects with circular
+	 * references to be compared.
+	 *
+	 * @private
+	 * @param {Object} object The object to compare.
+	 * @param {Object} other The other object to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} [customizer] The function to customize comparisons.
+	 * @param {number} [bitmask] The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} [stack] Tracks traversed `object` and `other` objects.
+	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+	 */
+	function baseIsEqualDeep(object, other, equalFunc, customizer, bitmask, stack) {
+	  var objIsArr = isArray(object),
+	      othIsArr = isArray(other),
+	      objTag = arrayTag,
+	      othTag = arrayTag;
+	
+	  if (!objIsArr) {
+	    objTag = getTag(object);
+	    objTag = objTag == argsTag ? objectTag : objTag;
+	  }
+	  if (!othIsArr) {
+	    othTag = getTag(other);
+	    othTag = othTag == argsTag ? objectTag : othTag;
+	  }
+	  var objIsObj = objTag == objectTag && !isHostObject(object),
+	      othIsObj = othTag == objectTag && !isHostObject(other),
+	      isSameTag = objTag == othTag;
+	
+	  if (isSameTag && !objIsObj) {
+	    stack || (stack = new Stack);
+	    return (objIsArr || isTypedArray(object))
+	      ? equalArrays(object, other, equalFunc, customizer, bitmask, stack)
+	      : equalByTag(object, other, objTag, equalFunc, customizer, bitmask, stack);
+	  }
+	  if (!(bitmask & PARTIAL_COMPARE_FLAG)) {
+	    var objIsWrapped = objIsObj && hasOwnProperty.call(object, '__wrapped__'),
+	        othIsWrapped = othIsObj && hasOwnProperty.call(other, '__wrapped__');
+	
+	    if (objIsWrapped || othIsWrapped) {
+	      var objUnwrapped = objIsWrapped ? object.value() : object,
+	          othUnwrapped = othIsWrapped ? other.value() : other;
+	
+	      stack || (stack = new Stack);
+	      return equalFunc(objUnwrapped, othUnwrapped, customizer, bitmask, stack);
+	    }
+	  }
+	  if (!isSameTag) {
+	    return false;
+	  }
+	  stack || (stack = new Stack);
+	  return equalObjects(object, other, equalFunc, customizer, bitmask, stack);
+	}
+	
+	module.exports = baseIsEqualDeep;
+
+
+/***/ },
+/* 246 */
+/*!**********************************!*\
+  !*** ./~/lodash/_equalArrays.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var SetCache = __webpack_require__(/*! ./_SetCache */ 247),
+	    arraySome = __webpack_require__(/*! ./_arraySome */ 250);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * A specialized version of `baseIsEqualDeep` for arrays with support for
+	 * partial deep comparisons.
+	 *
+	 * @private
+	 * @param {Array} array The array to compare.
+	 * @param {Array} other The other array to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} customizer The function to customize comparisons.
+	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} stack Tracks traversed `array` and `other` objects.
+	 * @returns {boolean} Returns `true` if the arrays are equivalent, else `false`.
+	 */
+	function equalArrays(array, other, equalFunc, customizer, bitmask, stack) {
+	  var isPartial = bitmask & PARTIAL_COMPARE_FLAG,
+	      arrLength = array.length,
+	      othLength = other.length;
+	
+	  if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
+	    return false;
+	  }
+	  // Assume cyclic values are equal.
+	  var stacked = stack.get(array);
+	  if (stacked) {
+	    return stacked == other;
+	  }
+	  var index = -1,
+	      result = true,
+	      seen = (bitmask & UNORDERED_COMPARE_FLAG) ? new SetCache : undefined;
+	
+	  stack.set(array, other);
+	
+	  // Ignore non-index properties.
+	  while (++index < arrLength) {
+	    var arrValue = array[index],
+	        othValue = other[index];
+	
+	    if (customizer) {
+	      var compared = isPartial
+	        ? customizer(othValue, arrValue, index, other, array, stack)
+	        : customizer(arrValue, othValue, index, array, other, stack);
+	    }
+	    if (compared !== undefined) {
+	      if (compared) {
+	        continue;
+	      }
+	      result = false;
+	      break;
+	    }
+	    // Recursively compare arrays (susceptible to call stack limits).
+	    if (seen) {
+	      if (!arraySome(other, function(othValue, othIndex) {
+	            if (!seen.has(othIndex) &&
+	                (arrValue === othValue || equalFunc(arrValue, othValue, customizer, bitmask, stack))) {
+	              return seen.add(othIndex);
+	            }
+	          })) {
+	        result = false;
+	        break;
+	      }
+	    } else if (!(
+	          arrValue === othValue ||
+	            equalFunc(arrValue, othValue, customizer, bitmask, stack)
+	        )) {
+	      result = false;
+	      break;
+	    }
+	  }
+	  stack['delete'](array);
+	  return result;
+	}
+	
+	module.exports = equalArrays;
+
+
+/***/ },
+/* 247 */
+/*!*******************************!*\
+  !*** ./~/lodash/_SetCache.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var MapCache = __webpack_require__(/*! ./_MapCache */ 219),
+	    setCacheAdd = __webpack_require__(/*! ./_setCacheAdd */ 248),
+	    setCacheHas = __webpack_require__(/*! ./_setCacheHas */ 249);
+	
+	/**
+	 *
+	 * Creates an array cache object to store unique values.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [values] The values to cache.
+	 */
+	function SetCache(values) {
+	  var index = -1,
+	      length = values ? values.length : 0;
+	
+	  this.__data__ = new MapCache;
+	  while (++index < length) {
+	    this.add(values[index]);
+	  }
+	}
+	
+	// Add methods to `SetCache`.
+	SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
+	SetCache.prototype.has = setCacheHas;
+	
+	module.exports = SetCache;
+
+
+/***/ },
+/* 248 */
+/*!**********************************!*\
+  !*** ./~/lodash/_setCacheAdd.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/** Used to stand-in for `undefined` hash values. */
+	var HASH_UNDEFINED = '__lodash_hash_undefined__';
+	
+	/**
+	 * Adds `value` to the array cache.
+	 *
+	 * @private
+	 * @name add
+	 * @memberOf SetCache
+	 * @alias push
+	 * @param {*} value The value to cache.
+	 * @returns {Object} Returns the cache instance.
+	 */
+	function setCacheAdd(value) {
+	  this.__data__.set(value, HASH_UNDEFINED);
+	  return this;
+	}
+	
+	module.exports = setCacheAdd;
+
+
+/***/ },
+/* 249 */
+/*!**********************************!*\
+  !*** ./~/lodash/_setCacheHas.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is in the array cache.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf SetCache
+	 * @param {*} value The value to search for.
+	 * @returns {number} Returns `true` if `value` is found, else `false`.
+	 */
+	function setCacheHas(value) {
+	  return this.__data__.has(value);
+	}
+	
+	module.exports = setCacheHas;
+
+
+/***/ },
+/* 250 */
+/*!********************************!*\
+  !*** ./~/lodash/_arraySome.js ***!
+  \********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * A specialized version of `_.some` for arrays without support for iteratee
+	 * shorthands.
+	 *
+	 * @private
+	 * @param {Array} [array] The array to iterate over.
+	 * @param {Function} predicate The function invoked per iteration.
+	 * @returns {boolean} Returns `true` if any element passes the predicate check,
+	 *  else `false`.
+	 */
+	function arraySome(array, predicate) {
+	  var index = -1,
+	      length = array ? array.length : 0;
+	
+	  while (++index < length) {
+	    if (predicate(array[index], index, array)) {
+	      return true;
+	    }
+	  }
+	  return false;
+	}
+	
+	module.exports = arraySome;
+
+
+/***/ },
+/* 251 */
+/*!*********************************!*\
+  !*** ./~/lodash/_equalByTag.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Symbol = __webpack_require__(/*! ./_Symbol */ 252),
+	    Uint8Array = __webpack_require__(/*! ./_Uint8Array */ 253),
+	    equalArrays = __webpack_require__(/*! ./_equalArrays */ 246),
+	    mapToArray = __webpack_require__(/*! ./_mapToArray */ 254),
+	    setToArray = __webpack_require__(/*! ./_setToArray */ 255);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/** `Object#toString` result references. */
+	var boolTag = '[object Boolean]',
+	    dateTag = '[object Date]',
+	    errorTag = '[object Error]',
+	    mapTag = '[object Map]',
+	    numberTag = '[object Number]',
+	    regexpTag = '[object RegExp]',
+	    setTag = '[object Set]',
+	    stringTag = '[object String]',
+	    symbolTag = '[object Symbol]';
+	
+	var arrayBufferTag = '[object ArrayBuffer]',
+	    dataViewTag = '[object DataView]';
+	
+	/** Used to convert symbols to primitives and strings. */
+	var symbolProto = Symbol ? Symbol.prototype : undefined,
+	    symbolValueOf = symbolProto ? symbolProto.valueOf : undefined;
+	
+	/**
+	 * A specialized version of `baseIsEqualDeep` for comparing objects of
+	 * the same `toStringTag`.
+	 *
+	 * **Note:** This function only supports comparing values with tags of
+	 * `Boolean`, `Date`, `Error`, `Number`, `RegExp`, or `String`.
+	 *
+	 * @private
+	 * @param {Object} object The object to compare.
+	 * @param {Object} other The other object to compare.
+	 * @param {string} tag The `toStringTag` of the objects to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} customizer The function to customize comparisons.
+	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} stack Tracks traversed `object` and `other` objects.
+	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+	 */
+	function equalByTag(object, other, tag, equalFunc, customizer, bitmask, stack) {
+	  switch (tag) {
+	    case dataViewTag:
+	      if ((object.byteLength != other.byteLength) ||
+	          (object.byteOffset != other.byteOffset)) {
+	        return false;
+	      }
+	      object = object.buffer;
+	      other = other.buffer;
+	
+	    case arrayBufferTag:
+	      if ((object.byteLength != other.byteLength) ||
+	          !equalFunc(new Uint8Array(object), new Uint8Array(other))) {
+	        return false;
+	      }
+	      return true;
+	
+	    case boolTag:
+	    case dateTag:
+	      // Coerce dates and booleans to numbers, dates to milliseconds and
+	      // booleans to `1` or `0` treating invalid dates coerced to `NaN` as
+	      // not equal.
+	      return +object == +other;
+	
+	    case errorTag:
+	      return object.name == other.name && object.message == other.message;
+	
+	    case numberTag:
+	      // Treat `NaN` vs. `NaN` as equal.
+	      return (object != +object) ? other != +other : object == +other;
+	
+	    case regexpTag:
+	    case stringTag:
+	      // Coerce regexes to strings and treat strings, primitives and objects,
+	      // as equal. See http://www.ecma-international.org/ecma-262/6.0/#sec-regexp.prototype.tostring
+	      // for more details.
+	      return object == (other + '');
+	
+	    case mapTag:
+	      var convert = mapToArray;
+	
+	    case setTag:
+	      var isPartial = bitmask & PARTIAL_COMPARE_FLAG;
+	      convert || (convert = setToArray);
+	
+	      if (object.size != other.size && !isPartial) {
+	        return false;
+	      }
+	      // Assume cyclic values are equal.
+	      var stacked = stack.get(object);
+	      if (stacked) {
+	        return stacked == other;
+	      }
+	      bitmask |= UNORDERED_COMPARE_FLAG;
+	      stack.set(object, other);
+	
+	      // Recursively compare objects (susceptible to call stack limits).
+	      return equalArrays(convert(object), convert(other), equalFunc, customizer, bitmask, stack);
+	
+	    case symbolTag:
+	      if (symbolValueOf) {
+	        return symbolValueOf.call(object) == symbolValueOf.call(other);
+	      }
+	  }
+	  return false;
+	}
+	
+	module.exports = equalByTag;
+
+
+/***/ },
+/* 252 */
+/*!*****************************!*\
+  !*** ./~/lodash/_Symbol.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var root = __webpack_require__(/*! ./_root */ 229);
+	
+	/** Built-in value references. */
+	var Symbol = root.Symbol;
+	
+	module.exports = Symbol;
+
+
+/***/ },
+/* 253 */
+/*!*********************************!*\
+  !*** ./~/lodash/_Uint8Array.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var root = __webpack_require__(/*! ./_root */ 229);
+	
+	/** Built-in value references. */
+	var Uint8Array = root.Uint8Array;
+	
+	module.exports = Uint8Array;
+
+
+/***/ },
+/* 254 */
+/*!*********************************!*\
+  !*** ./~/lodash/_mapToArray.js ***!
+  \*********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Converts `map` to its key-value pairs.
+	 *
+	 * @private
+	 * @param {Object} map The map to convert.
+	 * @returns {Array} Returns the key-value pairs.
+	 */
+	function mapToArray(map) {
+	  var index = -1,
+	      result = Array(map.size);
+	
+	  map.forEach(function(value, key) {
+	    result[++index] = [key, value];
+	  });
+	  return result;
+	}
+	
+	module.exports = mapToArray;
+
+
+/***/ },
+/* 255 */
+/*!*********************************!*\
+  !*** ./~/lodash/_setToArray.js ***!
+  \*********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Converts `set` to an array of its values.
+	 *
+	 * @private
+	 * @param {Object} set The set to convert.
+	 * @returns {Array} Returns the values.
+	 */
+	function setToArray(set) {
+	  var index = -1,
+	      result = Array(set.size);
+	
+	  set.forEach(function(value) {
+	    result[++index] = value;
+	  });
+	  return result;
+	}
+	
+	module.exports = setToArray;
+
+
+/***/ },
+/* 256 */
+/*!***********************************!*\
+  !*** ./~/lodash/_equalObjects.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseHas = __webpack_require__(/*! ./_baseHas */ 183),
+	    keys = __webpack_require__(/*! ./keys */ 182);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * A specialized version of `baseIsEqualDeep` for objects with support for
+	 * partial deep comparisons.
+	 *
+	 * @private
+	 * @param {Object} object The object to compare.
+	 * @param {Object} other The other object to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} customizer The function to customize comparisons.
+	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} stack Tracks traversed `object` and `other` objects.
+	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+	 */
+	function equalObjects(object, other, equalFunc, customizer, bitmask, stack) {
+	  var isPartial = bitmask & PARTIAL_COMPARE_FLAG,
+	      objProps = keys(object),
+	      objLength = objProps.length,
+	      othProps = keys(other),
+	      othLength = othProps.length;
+	
+	  if (objLength != othLength && !isPartial) {
+	    return false;
+	  }
+	  var index = objLength;
+	  while (index--) {
+	    var key = objProps[index];
+	    if (!(isPartial ? key in other : baseHas(other, key))) {
+	      return false;
+	    }
+	  }
+	  // Assume cyclic values are equal.
+	  var stacked = stack.get(object);
+	  if (stacked) {
+	    return stacked == other;
+	  }
+	  var result = true;
+	  stack.set(object, other);
+	
+	  var skipCtor = isPartial;
+	  while (++index < objLength) {
+	    key = objProps[index];
+	    var objValue = object[key],
+	        othValue = other[key];
+	
+	    if (customizer) {
+	      var compared = isPartial
+	        ? customizer(othValue, objValue, key, other, object, stack)
+	        : customizer(objValue, othValue, key, object, other, stack);
+	    }
+	    // Recursively compare objects (susceptible to call stack limits).
+	    if (!(compared === undefined
+	          ? (objValue === othValue || equalFunc(objValue, othValue, customizer, bitmask, stack))
+	          : compared
+	        )) {
+	      result = false;
+	      break;
+	    }
+	    skipCtor || (skipCtor = key == 'constructor');
+	  }
+	  if (result && !skipCtor) {
+	    var objCtor = object.constructor,
+	        othCtor = other.constructor;
+	
+	    // Non `Object` object instances with different constructors are not equal.
+	    if (objCtor != othCtor &&
+	        ('constructor' in object && 'constructor' in other) &&
+	        !(typeof objCtor == 'function' && objCtor instanceof objCtor &&
+	          typeof othCtor == 'function' && othCtor instanceof othCtor)) {
+	      result = false;
+	    }
+	  }
+	  stack['delete'](object);
+	  return result;
+	}
+	
+	module.exports = equalObjects;
+
+
+/***/ },
+/* 257 */
+/*!*****************************!*\
+  !*** ./~/lodash/_getTag.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var DataView = __webpack_require__(/*! ./_DataView */ 258),
+	    Map = __webpack_require__(/*! ./_Map */ 237),
+	    Promise = __webpack_require__(/*! ./_Promise */ 259),
+	    Set = __webpack_require__(/*! ./_Set */ 260),
+	    WeakMap = __webpack_require__(/*! ./_WeakMap */ 261),
+	    toSource = __webpack_require__(/*! ./_toSource */ 231);
+	
+	/** `Object#toString` result references. */
+	var mapTag = '[object Map]',
+	    objectTag = '[object Object]',
+	    promiseTag = '[object Promise]',
+	    setTag = '[object Set]',
+	    weakMapTag = '[object WeakMap]';
+	
+	var dataViewTag = '[object DataView]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/** Used to detect maps, sets, and weakmaps. */
+	var dataViewCtorString = toSource(DataView),
+	    mapCtorString = toSource(Map),
+	    promiseCtorString = toSource(Promise),
+	    setCtorString = toSource(Set),
+	    weakMapCtorString = toSource(WeakMap);
+	
+	/**
+	 * Gets the `toStringTag` of `value`.
+	 *
+	 * @private
+	 * @param {*} value The value to query.
+	 * @returns {string} Returns the `toStringTag`.
+	 */
+	function getTag(value) {
+	  return objectToString.call(value);
+	}
+	
+	// Fallback for data views, maps, sets, and weak maps in IE 11,
+	// for data views in Edge, and promises in Node.js.
+	if ((DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag) ||
+	    (Map && getTag(new Map) != mapTag) ||
+	    (Promise && getTag(Promise.resolve()) != promiseTag) ||
+	    (Set && getTag(new Set) != setTag) ||
+	    (WeakMap && getTag(new WeakMap) != weakMapTag)) {
+	  getTag = function(value) {
+	    var result = objectToString.call(value),
+	        Ctor = result == objectTag ? value.constructor : undefined,
+	        ctorString = Ctor ? toSource(Ctor) : undefined;
+	
+	    if (ctorString) {
+	      switch (ctorString) {
+	        case dataViewCtorString: return dataViewTag;
+	        case mapCtorString: return mapTag;
+	        case promiseCtorString: return promiseTag;
+	        case setCtorString: return setTag;
+	        case weakMapCtorString: return weakMapTag;
+	      }
+	    }
+	    return result;
+	  };
+	}
+	
+	module.exports = getTag;
+
+
+/***/ },
+/* 258 */
+/*!*******************************!*\
+  !*** ./~/lodash/_DataView.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 224),
+	    root = __webpack_require__(/*! ./_root */ 229);
+	
+	/* Built-in method references that are verified to be native. */
+	var DataView = getNative(root, 'DataView');
+	
+	module.exports = DataView;
+
+
+/***/ },
+/* 259 */
+/*!******************************!*\
+  !*** ./~/lodash/_Promise.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 224),
+	    root = __webpack_require__(/*! ./_root */ 229);
+	
+	/* Built-in method references that are verified to be native. */
+	var Promise = getNative(root, 'Promise');
+	
+	module.exports = Promise;
+
+
+/***/ },
+/* 260 */
+/*!**************************!*\
+  !*** ./~/lodash/_Set.js ***!
+  \**************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 224),
+	    root = __webpack_require__(/*! ./_root */ 229);
+	
+	/* Built-in method references that are verified to be native. */
+	var Set = getNative(root, 'Set');
+	
+	module.exports = Set;
+
+
+/***/ },
+/* 261 */
+/*!******************************!*\
+  !*** ./~/lodash/_WeakMap.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(/*! ./_getNative */ 224),
+	    root = __webpack_require__(/*! ./_root */ 229);
+	
+	/* Built-in method references that are verified to be native. */
+	var WeakMap = getNative(root, 'WeakMap');
+	
+	module.exports = WeakMap;
+
+
+/***/ },
+/* 262 */
+/*!**********************************!*\
+  !*** ./~/lodash/isTypedArray.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isLength = __webpack_require__(/*! ./isLength */ 195),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 196);
+	
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]',
+	    arrayTag = '[object Array]',
+	    boolTag = '[object Boolean]',
+	    dateTag = '[object Date]',
+	    errorTag = '[object Error]',
+	    funcTag = '[object Function]',
+	    mapTag = '[object Map]',
+	    numberTag = '[object Number]',
+	    objectTag = '[object Object]',
+	    regexpTag = '[object RegExp]',
+	    setTag = '[object Set]',
+	    stringTag = '[object String]',
+	    weakMapTag = '[object WeakMap]';
+	
+	var arrayBufferTag = '[object ArrayBuffer]',
+	    dataViewTag = '[object DataView]',
+	    float32Tag = '[object Float32Array]',
+	    float64Tag = '[object Float64Array]',
+	    int8Tag = '[object Int8Array]',
+	    int16Tag = '[object Int16Array]',
+	    int32Tag = '[object Int32Array]',
+	    uint8Tag = '[object Uint8Array]',
+	    uint8ClampedTag = '[object Uint8ClampedArray]',
+	    uint16Tag = '[object Uint16Array]',
+	    uint32Tag = '[object Uint32Array]';
+	
+	/** Used to identify `toStringTag` values of typed arrays. */
+	var typedArrayTags = {};
+	typedArrayTags[float32Tag] = typedArrayTags[float64Tag] =
+	typedArrayTags[int8Tag] = typedArrayTags[int16Tag] =
+	typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] =
+	typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] =
+	typedArrayTags[uint32Tag] = true;
+	typedArrayTags[argsTag] = typedArrayTags[arrayTag] =
+	typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] =
+	typedArrayTags[dataViewTag] = typedArrayTags[dateTag] =
+	typedArrayTags[errorTag] = typedArrayTags[funcTag] =
+	typedArrayTags[mapTag] = typedArrayTags[numberTag] =
+	typedArrayTags[objectTag] = typedArrayTags[regexpTag] =
+	typedArrayTags[setTag] = typedArrayTags[stringTag] =
+	typedArrayTags[weakMapTag] = false;
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a typed array.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 3.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isTypedArray(new Uint8Array);
+	 * // => true
+	 *
+	 * _.isTypedArray([]);
+	 * // => false
+	 */
+	function isTypedArray(value) {
+	  return isObjectLike(value) &&
+	    isLength(value.length) && !!typedArrayTags[objectToString.call(value)];
+	}
+	
+	module.exports = isTypedArray;
+
+
+/***/ },
+/* 263 */
+/*!***********************************!*\
+  !*** ./~/lodash/_getMatchData.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ 264),
+	    keys = __webpack_require__(/*! ./keys */ 182);
+	
+	/**
+	 * Gets the property names, values, and compare flags of `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the match data of `object`.
+	 */
+	function getMatchData(object) {
+	  var result = keys(object),
+	      length = result.length;
+	
+	  while (length--) {
+	    var key = result[length],
+	        value = object[key];
+	
+	    result[length] = [key, value, isStrictComparable(value)];
+	  }
+	  return result;
+	}
+	
+	module.exports = getMatchData;
+
+
+/***/ },
+/* 264 */
+/*!*****************************************!*\
+  !*** ./~/lodash/_isStrictComparable.js ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(/*! ./isObject */ 194);
+	
+	/**
+	 * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` if suitable for strict
+	 *  equality comparisons, else `false`.
+	 */
+	function isStrictComparable(value) {
+	  return value === value && !isObject(value);
+	}
+	
+	module.exports = isStrictComparable;
+
+
+/***/ },
+/* 265 */
+/*!**********************************************!*\
+  !*** ./~/lodash/_matchesStrictComparable.js ***!
+  \**********************************************/
+/***/ function(module, exports) {
+
+	/**
+	 * A specialized version of `matchesProperty` for source values suitable
+	 * for strict equality comparisons, i.e. `===`.
+	 *
+	 * @private
+	 * @param {string} key The key of the property to get.
+	 * @param {*} srcValue The value to match.
+	 * @returns {Function} Returns the new spec function.
+	 */
+	function matchesStrictComparable(key, srcValue) {
+	  return function(object) {
+	    if (object == null) {
+	      return false;
+	    }
+	    return object[key] === srcValue &&
+	      (srcValue !== undefined || (key in Object(object)));
+	  };
+	}
+	
+	module.exports = matchesStrictComparable;
+
+
+/***/ },
+/* 266 */
+/*!******************************************!*\
+  !*** ./~/lodash/_baseMatchesProperty.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ 244),
+	    get = __webpack_require__(/*! ./get */ 267),
+	    hasIn = __webpack_require__(/*! ./hasIn */ 277),
+	    isKey = __webpack_require__(/*! ./_isKey */ 275),
+	    isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ 264),
+	    matchesStrictComparable = __webpack_require__(/*! ./_matchesStrictComparable */ 265),
+	    toKey = __webpack_require__(/*! ./_toKey */ 276);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * The base implementation of `_.matchesProperty` which doesn't clone `srcValue`.
+	 *
+	 * @private
+	 * @param {string} path The path of the property to get.
+	 * @param {*} srcValue The value to match.
+	 * @returns {Function} Returns the new spec function.
+	 */
+	function baseMatchesProperty(path, srcValue) {
+	  if (isKey(path) && isStrictComparable(srcValue)) {
+	    return matchesStrictComparable(toKey(path), srcValue);
+	  }
+	  return function(object) {
+	    var objValue = get(object, path);
+	    return (objValue === undefined && objValue === srcValue)
+	      ? hasIn(object, path)
+	      : baseIsEqual(srcValue, objValue, undefined, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG);
+	  };
+	}
+	
+	module.exports = baseMatchesProperty;
+
+
+/***/ },
+/* 267 */
+/*!*************************!*\
+  !*** ./~/lodash/get.js ***!
+  \*************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseGet = __webpack_require__(/*! ./_baseGet */ 268);
+	
+	/**
+	 * Gets the value at `path` of `object`. If the resolved value is
+	 * `undefined`, the `defaultValue` is used in its place.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 3.7.0
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path of the property to get.
+	 * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+	 * @returns {*} Returns the resolved value.
+	 * @example
+	 *
+	 * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+	 *
+	 * _.get(object, 'a[0].b.c');
+	 * // => 3
+	 *
+	 * _.get(object, ['a', '0', 'b', 'c']);
+	 * // => 3
+	 *
+	 * _.get(object, 'a.b.c', 'default');
+	 * // => 'default'
+	 */
+	function get(object, path, defaultValue) {
+	  var result = object == null ? undefined : baseGet(object, path);
+	  return result === undefined ? defaultValue : result;
+	}
+	
+	module.exports = get;
+
+
+/***/ },
+/* 268 */
+/*!******************************!*\
+  !*** ./~/lodash/_baseGet.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var castPath = __webpack_require__(/*! ./_castPath */ 269),
+	    isKey = __webpack_require__(/*! ./_isKey */ 275),
+	    toKey = __webpack_require__(/*! ./_toKey */ 276);
+	
+	/**
+	 * The base implementation of `_.get` without support for default values.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path of the property to get.
+	 * @returns {*} Returns the resolved value.
+	 */
+	function baseGet(object, path) {
+	  path = isKey(path, object) ? [path] : castPath(path);
+	
+	  var index = 0,
+	      length = path.length;
+	
+	  while (object != null && index < length) {
+	    object = object[toKey(path[index++])];
+	  }
+	  return (index && index == length) ? object : undefined;
+	}
+	
+	module.exports = baseGet;
+
+
+/***/ },
+/* 269 */
+/*!*******************************!*\
+  !*** ./~/lodash/_castPath.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArray = __webpack_require__(/*! ./isArray */ 197),
+	    stringToPath = __webpack_require__(/*! ./_stringToPath */ 270);
+	
+	/**
+	 * Casts `value` to a path array if it's not one.
+	 *
+	 * @private
+	 * @param {*} value The value to inspect.
+	 * @returns {Array} Returns the cast property path array.
+	 */
+	function castPath(value) {
+	  return isArray(value) ? value : stringToPath(value);
+	}
+	
+	module.exports = castPath;
+
+
+/***/ },
+/* 270 */
+/*!***********************************!*\
+  !*** ./~/lodash/_stringToPath.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var memoize = __webpack_require__(/*! ./memoize */ 271),
+	    toString = __webpack_require__(/*! ./toString */ 272);
+	
+	/** Used to match property names within property paths. */
+	var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(\.|\[\])(?:\4|$))/g;
+	
+	/** Used to match backslashes in property paths. */
+	var reEscapeChar = /\\(\\)?/g;
+	
+	/**
+	 * Converts `string` to a property path array.
+	 *
+	 * @private
+	 * @param {string} string The string to convert.
+	 * @returns {Array} Returns the property path array.
+	 */
+	var stringToPath = memoize(function(string) {
+	  var result = [];
+	  toString(string).replace(rePropName, function(match, number, quote, string) {
+	    result.push(quote ? string.replace(reEscapeChar, '$1') : (number || match));
+	  });
+	  return result;
+	});
+	
+	module.exports = stringToPath;
+
+
+/***/ },
+/* 271 */
+/*!*****************************!*\
+  !*** ./~/lodash/memoize.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var MapCache = __webpack_require__(/*! ./_MapCache */ 219);
+	
+	/** Used as the `TypeError` message for "Functions" methods. */
+	var FUNC_ERROR_TEXT = 'Expected a function';
+	
+	/**
+	 * Creates a function that memoizes the result of `func`. If `resolver` is
+	 * provided, it determines the cache key for storing the result based on the
+	 * arguments provided to the memoized function. By default, the first argument
+	 * provided to the memoized function is used as the map cache key. The `func`
+	 * is invoked with the `this` binding of the memoized function.
+	 *
+	 * **Note:** The cache is exposed as the `cache` property on the memoized
+	 * function. Its creation may be customized by replacing the `_.memoize.Cache`
+	 * constructor with one whose instances implement the
+	 * [`Map`](http://ecma-international.org/ecma-262/6.0/#sec-properties-of-the-map-prototype-object)
+	 * method interface of `delete`, `get`, `has`, and `set`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Function
+	 * @param {Function} func The function to have its output memoized.
+	 * @param {Function} [resolver] The function to resolve the cache key.
+	 * @returns {Function} Returns the new memoized function.
+	 * @example
+	 *
+	 * var object = { 'a': 1, 'b': 2 };
+	 * var other = { 'c': 3, 'd': 4 };
+	 *
+	 * var values = _.memoize(_.values);
+	 * values(object);
+	 * // => [1, 2]
+	 *
+	 * values(other);
+	 * // => [3, 4]
+	 *
+	 * object.a = 2;
+	 * values(object);
+	 * // => [1, 2]
+	 *
+	 * // Modify the result cache.
+	 * values.cache.set(object, ['a', 'b']);
+	 * values(object);
+	 * // => ['a', 'b']
+	 *
+	 * // Replace `_.memoize.Cache`.
+	 * _.memoize.Cache = WeakMap;
+	 */
+	function memoize(func, resolver) {
+	  if (typeof func != 'function' || (resolver && typeof resolver != 'function')) {
+	    throw new TypeError(FUNC_ERROR_TEXT);
+	  }
+	  var memoized = function() {
+	    var args = arguments,
+	        key = resolver ? resolver.apply(this, args) : args[0],
+	        cache = memoized.cache;
+	
+	    if (cache.has(key)) {
+	      return cache.get(key);
+	    }
+	    var result = func.apply(this, args);
+	    memoized.cache = cache.set(key, result);
+	    return result;
+	  };
+	  memoized.cache = new (memoize.Cache || MapCache);
+	  return memoized;
+	}
+	
+	// Assign cache to `_.memoize`.
+	memoize.Cache = MapCache;
+	
+	module.exports = memoize;
+
+
+/***/ },
+/* 272 */
+/*!******************************!*\
+  !*** ./~/lodash/toString.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseToString = __webpack_require__(/*! ./_baseToString */ 273);
+	
+	/**
+	 * Converts `value` to a string. An empty string is returned for `null`
+	 * and `undefined` values. The sign of `-0` is preserved.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to process.
+	 * @returns {string} Returns the string.
+	 * @example
+	 *
+	 * _.toString(null);
+	 * // => ''
+	 *
+	 * _.toString(-0);
+	 * // => '-0'
+	 *
+	 * _.toString([1, 2, 3]);
+	 * // => '1,2,3'
+	 */
+	function toString(value) {
+	  return value == null ? '' : baseToString(value);
+	}
+	
+	module.exports = toString;
+
+
+/***/ },
+/* 273 */
+/*!***********************************!*\
+  !*** ./~/lodash/_baseToString.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Symbol = __webpack_require__(/*! ./_Symbol */ 252),
+	    isSymbol = __webpack_require__(/*! ./isSymbol */ 274);
+	
+	/** Used as references for various `Number` constants. */
+	var INFINITY = 1 / 0;
+	
+	/** Used to convert symbols to primitives and strings. */
+	var symbolProto = Symbol ? Symbol.prototype : undefined,
+	    symbolToString = symbolProto ? symbolProto.toString : undefined;
+	
+	/**
+	 * The base implementation of `_.toString` which doesn't convert nullish
+	 * values to empty strings.
+	 *
+	 * @private
+	 * @param {*} value The value to process.
+	 * @returns {string} Returns the string.
+	 */
+	function baseToString(value) {
+	  // Exit early for strings to avoid a performance hit in some environments.
+	  if (typeof value == 'string') {
+	    return value;
+	  }
+	  if (isSymbol(value)) {
+	    return symbolToString ? symbolToString.call(value) : '';
+	  }
+	  var result = (value + '');
+	  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+	}
+	
+	module.exports = baseToString;
+
+
+/***/ },
+/* 274 */
+/*!******************************!*\
+  !*** ./~/lodash/isSymbol.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObjectLike = __webpack_require__(/*! ./isObjectLike */ 196);
+	
+	/** `Object#toString` result references. */
+	var symbolTag = '[object Symbol]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a `Symbol` primitive or object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isSymbol(Symbol.iterator);
+	 * // => true
+	 *
+	 * _.isSymbol('abc');
+	 * // => false
+	 */
+	function isSymbol(value) {
+	  return typeof value == 'symbol' ||
+	    (isObjectLike(value) && objectToString.call(value) == symbolTag);
+	}
+	
+	module.exports = isSymbol;
+
+
+/***/ },
+/* 275 */
+/*!****************************!*\
+  !*** ./~/lodash/_isKey.js ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArray = __webpack_require__(/*! ./isArray */ 197),
+	    isSymbol = __webpack_require__(/*! ./isSymbol */ 274);
+	
+	/** Used to match property names within property paths. */
+	var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
+	    reIsPlainProp = /^\w*$/;
+	
+	/**
+	 * Checks if `value` is a property name and not a property path.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @param {Object} [object] The object to query keys on.
+	 * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
+	 */
+	function isKey(value, object) {
+	  if (isArray(value)) {
+	    return false;
+	  }
+	  var type = typeof value;
+	  if (type == 'number' || type == 'symbol' || type == 'boolean' ||
+	      value == null || isSymbol(value)) {
+	    return true;
+	  }
+	  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) ||
+	    (object != null && value in Object(object));
+	}
+	
+	module.exports = isKey;
+
+
+/***/ },
+/* 276 */
+/*!****************************!*\
+  !*** ./~/lodash/_toKey.js ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var isSymbol = __webpack_require__(/*! ./isSymbol */ 274);
+	
+	/** Used as references for various `Number` constants. */
+	var INFINITY = 1 / 0;
+	
+	/**
+	 * Converts `value` to a string key if it's not a string or symbol.
+	 *
+	 * @private
+	 * @param {*} value The value to inspect.
+	 * @returns {string|symbol} Returns the key.
+	 */
+	function toKey(value) {
+	  if (typeof value == 'string' || isSymbol(value)) {
+	    return value;
+	  }
+	  var result = (value + '');
+	  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+	}
+	
+	module.exports = toKey;
+
+
+/***/ },
+/* 277 */
+/*!***************************!*\
+  !*** ./~/lodash/hasIn.js ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseHasIn = __webpack_require__(/*! ./_baseHasIn */ 278),
+	    hasPath = __webpack_require__(/*! ./_hasPath */ 279);
+	
+	/**
+	 * Checks if `path` is a direct or inherited property of `object`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path to check.
+	 * @returns {boolean} Returns `true` if `path` exists, else `false`.
+	 * @example
+	 *
+	 * var object = _.create({ 'a': _.create({ 'b': 2 }) });
+	 *
+	 * _.hasIn(object, 'a');
+	 * // => true
+	 *
+	 * _.hasIn(object, 'a.b');
+	 * // => true
+	 *
+	 * _.hasIn(object, ['a', 'b']);
+	 * // => true
+	 *
+	 * _.hasIn(object, 'b');
+	 * // => false
+	 */
+	function hasIn(object, path) {
+	  return object != null && hasPath(object, path, baseHasIn);
+	}
+	
+	module.exports = hasIn;
+
+
+/***/ },
+/* 278 */
+/*!********************************!*\
+  !*** ./~/lodash/_baseHasIn.js ***!
+  \********************************/
+/***/ function(module, exports) {
+
+	/**
+	 * The base implementation of `_.hasIn` without support for deep paths.
+	 *
+	 * @private
+	 * @param {Object} [object] The object to query.
+	 * @param {Array|string} key The key to check.
+	 * @returns {boolean} Returns `true` if `key` exists, else `false`.
+	 */
+	function baseHasIn(object, key) {
+	  return object != null && key in Object(object);
+	}
+	
+	module.exports = baseHasIn;
+
+
+/***/ },
+/* 279 */
+/*!******************************!*\
+  !*** ./~/lodash/_hasPath.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var castPath = __webpack_require__(/*! ./_castPath */ 269),
+	    isArguments = __webpack_require__(/*! ./isArguments */ 188),
+	    isArray = __webpack_require__(/*! ./isArray */ 197),
+	    isIndex = __webpack_require__(/*! ./_isIndex */ 199),
+	    isKey = __webpack_require__(/*! ./_isKey */ 275),
+	    isLength = __webpack_require__(/*! ./isLength */ 195),
+	    isString = __webpack_require__(/*! ./isString */ 198),
+	    toKey = __webpack_require__(/*! ./_toKey */ 276);
+	
+	/**
+	 * Checks if `path` exists on `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path to check.
+	 * @param {Function} hasFunc The function to check properties.
+	 * @returns {boolean} Returns `true` if `path` exists, else `false`.
+	 */
+	function hasPath(object, path, hasFunc) {
+	  path = isKey(path, object) ? [path] : castPath(path);
+	
+	  var result,
+	      index = -1,
+	      length = path.length;
+	
+	  while (++index < length) {
+	    var key = toKey(path[index]);
+	    if (!(result = object != null && hasFunc(object, key))) {
+	      break;
+	    }
+	    object = object[key];
+	  }
+	  if (result) {
+	    return result;
+	  }
+	  var length = object ? object.length : 0;
+	  return !!length && isLength(length) && isIndex(key, length) &&
+	    (isArray(object) || isString(object) || isArguments(object));
+	}
+	
+	module.exports = hasPath;
+
+
+/***/ },
+/* 280 */
+/*!******************************!*\
+  !*** ./~/lodash/identity.js ***!
+  \******************************/
+/***/ function(module, exports) {
+
+	/**
+	 * This method returns the first argument given to it.
+	 *
+	 * @static
+	 * @since 0.1.0
+	 * @memberOf _
+	 * @category Util
+	 * @param {*} value Any value.
+	 * @returns {*} Returns `value`.
+	 * @example
+	 *
+	 * var object = { 'user': 'fred' };
+	 *
+	 * console.log(_.identity(object) === object);
+	 * // => true
+	 */
+	function identity(value) {
+	  return value;
+	}
+	
+	module.exports = identity;
+
+
+/***/ },
+/* 281 */
+/*!******************************!*\
+  !*** ./~/lodash/property.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseProperty = __webpack_require__(/*! ./_baseProperty */ 192),
+	    basePropertyDeep = __webpack_require__(/*! ./_basePropertyDeep */ 282),
+	    isKey = __webpack_require__(/*! ./_isKey */ 275),
+	    toKey = __webpack_require__(/*! ./_toKey */ 276);
+	
+	/**
+	 * Creates a function that returns the value at `path` of a given object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 2.4.0
+	 * @category Util
+	 * @param {Array|string} path The path of the property to get.
+	 * @returns {Function} Returns the new accessor function.
+	 * @example
+	 *
+	 * var objects = [
+	 *   { 'a': { 'b': 2 } },
+	 *   { 'a': { 'b': 1 } }
+	 * ];
+	 *
+	 * _.map(objects, _.property('a.b'));
+	 * // => [2, 1]
+	 *
+	 * _.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');
+	 * // => [1, 2]
+	 */
+	function property(path) {
+	  return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+	}
+	
+	module.exports = property;
+
+
+/***/ },
+/* 282 */
+/*!***************************************!*\
+  !*** ./~/lodash/_basePropertyDeep.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseGet = __webpack_require__(/*! ./_baseGet */ 268);
+	
+	/**
+	 * A specialized version of `baseProperty` which supports deep paths.
+	 *
+	 * @private
+	 * @param {Array|string} path The path of the property to get.
+	 * @returns {Function} Returns the new accessor function.
+	 */
+	function basePropertyDeep(path) {
+	  return function(object) {
+	    return baseGet(object, path);
+	  };
+	}
+	
+	module.exports = basePropertyDeep;
+
+
+/***/ },
+/* 283 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg2.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg2",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG2 Zero Hunger'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg2-1', x: '-2.33', y: '-3.25', width: '119.95', height: '118.41' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M44.58,95v1.57a.12.12,0,0,0,0,.07.74.74,0,0,0,.73.71h18.5a.74.74,0,0,0,.73-.74h0V94.79C74.91,91.39,82.69,83,84.4,72.73v-.06a.59.59,0,0,0,0-.1.74.74,0,0,0-.75-.75H24.91a.74.74,0,0,0-.75.75l0,.33C26,83.25,34,91.71,44.58,95' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M64.52,46.74c-.24.34-5.92,8.52.13,15.13,2.77,3,2.53,5.71,1.74,7.52h3.88c.79-2.67.46-6-2.69-9.46-4.45-4.87.06-11.45.12-11.55a1.45,1.45,0,0,0-.63-2.17,2.06,2.06,0,0,0-2.55.54' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M54.69,69.38h3.88c.78-2.67.46-6-2.69-9.46-4.46-4.87.05-11.45.12-11.56a1.45,1.45,0,0,0-.63-2.17,2.06,2.06,0,0,0-2.55.54c-.24.34-5.93,8.52.13,15.13,2.77,3,2.53,5.71,1.74,7.52' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M41.13,46.74c-.25.34-5.92,8.52.12,15.13,2.77,3,2.53,5.71,1.74,7.52h3.88c.78-2.67.46-6-2.69-9.46-4.46-4.87.06-11.45.13-11.56a1.45,1.45,0,0,0-.63-2.17,2.05,2.05,0,0,0-2.55.54' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M33.42,17.25h2.33V18.5H31.82V17.25l2.41-6.63H32.06V9.37h3.79v1.25Z' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M36.79,9.37h3.66v1.25H38.33v2.61h1.52v1.24H38.33v2.77h2.13V18.5H36.79Z' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M42.95,14.31V18.5H41.41V9.37h2.24c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.76L46,18.5H44.39Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V11.36c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M46.74,16.14V11.73a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S49.85,16.94,49.85,16.39Z' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M34.92,27.86H33.44v4H31.91V22.75h1.54v3.87h1.48V22.75h1.55v9.13H34.92Z' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M41.94,22.75v6.91c0,1.41-.61,2.33-2.17,2.33a2.06,2.06,0,0,1-2.29-2.33V22.75H39v7.06c0,.54.22.9.75.9s.75-.36.75-.9V22.75Z' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M44.25,26.15v5.74H43V22.75h1.51L46.12,28V22.75H47.4v9.13H46.05Z' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M50.73,27h2.18v4.88h-1.1v-1A1.38,1.38,0,0,1,50.34,32c-1.32,0-1.93-1.05-1.93-2.47V25.11a2.16,2.16,0,0,1,2.3-2.46c1.7,0,2.2.94,2.2,2.29v.81h-1.4v-.93c0-.57-.22-.89-.77-.89s-.79.39-.79.94v4.9c0,.55.23.94.75.94s.75-.28.75-.88V28.22h-.73Z' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M53.92,22.75h3.66V24H55.46v2.61H57v1.24H55.46v2.77h2.13v1.25H53.92Z' }),
+	                React.createElement('path', { className: 'sdg2-2', d: 'M60.08,27.7v4.19H58.54V22.75h2.24c1.55,0,2.11.77,2.11,2V26c0,1-.35,1.56-1.23,1.76l1.47,4.15H61.52Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V24.75c0-.5-.23-.74-.75-.74Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'sdg2-2', d: 'M23.4,27.79H17.22V26.73a4.28,4.28,0,0,1,1.59-3.44l2.41-2.55c2-2.08,2.38-3.41,2.38-5.66V12.91c0-3.21-1.55-4.73-4.93-4.73s-5,1.75-5,4.9v2.71h3.44V13c0-1.35.66-1.75,1.46-1.75s1.36.3,1.36,1.69v1.85c0,1.85-.17,2.58-1.39,3.87l-2.12,2.25c-2,2.18-2.81,3.64-2.81,5.85v4.13H23.4Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 284 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg3.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg3",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.76" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG3 Good Health and Well-Being'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg3-1', x: '-2.83', y: '-1.93', width: '118.46', height: '117.08' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M60.06,94.51H60a1.28,1.28,0,0,1-1.19-1.07l-4-23.16-6,11.17a1.29,1.29,0,0,1-2.4-.43L43.83,63.15,39.15,73.66a1.29,1.29,0,0,1-1.17.76H19.79a1.29,1.29,0,1,1,0-2.57H37.14L43.3,58a1.29,1.29,0,0,1,2.45.34L48.38,76.8l5.94-11a1.29,1.29,0,0,1,2.4.39L60.4,87.63,73.82,43a1.29,1.29,0,0,1,2.39-.19L83.27,57.5A1.29,1.29,0,0,1,81,58.61L75.33,46.95l-14,46.65A1.28,1.28,0,0,1,60.06,94.51Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M33.55,13.52H35.8v5H34.66v-1a1.43,1.43,0,0,1-1.51,1.14c-1.36,0-2-1.08-2-2.54V11.57A2.23,2.23,0,0,1,33.54,9c1.75,0,2.26,1,2.26,2.36v.83H34.36v-1c0-.58-.22-.92-.79-.92s-.82.4-.82,1v5.05c0,.57.24,1,.78,1s.78-.29.78-.9V14.77h-.75Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M36.7,16.12V11.57a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V11.32c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S39.91,16.94,39.91,16.37Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M42.39,16.12V11.57a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V11.32c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S45.6,16.94,45.6,16.37Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M52.82,11.66V16c0,1.44-.6,2.53-2.29,2.53H48.08V9.14h2.44C52.22,9.14,52.82,10.21,52.82,11.66Zm-2.48,5.6c.65,0,.9-.39.9-1V11.37a.82.82,0,0,0-.9-.94h-.67v6.83Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M58.28,14.4H56.76v4.15H55.17V9.14h1.58v4h1.53v-4h1.6v9.41h-1.6Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M60.78,9.14h3.78v1.29H62.36v2.69h1.57V14.4H62.36v2.86h2.19v1.29H60.78Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M65.15,18.55l1.78-9.41h1.8l1.79,9.41H68.9l-.29-1.72H66.93l-.28,1.72Zm2-3H68.4l-.62-3.78h0Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M71.18,9.14h1.58v8.12h1.89v1.29H71.18Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M74.29,9.14h4.21v1.29H77.19v8.12h-1.6V10.43h-1.3Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M82.34,14.4H80.81v4.15H79.23V9.14h1.58v4h1.53v-4h1.6v9.41h-1.6Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M30.91,31.74l1.78-9.41h1.8l1.79,9.41H34.66L34.37,30H32.69l-.28,1.72Zm2-3h1.26L33.54,25h0Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M38.27,25.82v5.91H36.94V22.32h1.55l1.71,5.4v-5.4h1.32v9.41H40.13Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M47.15,24.85v4.36c0,1.44-.6,2.53-2.29,2.53H42.42V22.32h2.44C46.55,22.32,47.15,23.39,47.15,24.85Zm-2.48,5.6c.65,0,.9-.39.9-1V24.56a.82.82,0,0,0-.9-.94H44v6.83Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M52.93,25.92,52,31.74H50.55l-1.26-9.41h1.53l.74,6h0l.79-6h1.29l.87,6h0l.72-6h1.33l-1.22,9.41h-1.5l-.93-5.82Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M57.27,22.32H61v1.29H58.85v2.69h1.57v1.28H58.85v2.86H61v1.29H57.27Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M61.89,22.32h1.58v8.12h1.89v1.29H61.89Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M66.08,22.32h1.58v8.12h1.89v1.29H66.08Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M72.6,22.32h2.29c1.58,0,2.11.74,2.11,2.07v1a1.37,1.37,0,0,1-.94,1.5,1.43,1.43,0,0,1,1.18,1.57v1.25c0,1.33-.6,2.07-2.18,2.07H72.6Zm1.58,4h.56a.67.67,0,0,0,.75-.76V24.38a.67.67,0,0,0-.76-.76h-.54Zm0,1.21v2.94h.69a.68.68,0,0,0,.78-.76V28.26c0-.5-.24-.76-.79-.76Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M78,22.32H81.8v1.29H79.61v2.69h1.57v1.28H79.61v2.86H81.8v1.29H78Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M82.65,22.32h1.58v9.41H82.65Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M86.48,25.82v5.91H85.15V22.32H86.7l1.71,5.4v-5.4h1.32v9.41H88.34Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M93,26.71h2.25v5H94.13v-1a1.43,1.43,0,0,1-1.51,1.14c-1.36,0-2-1.08-2-2.54V24.75A2.23,2.23,0,0,1,93,22.21c1.75,0,2.26,1,2.26,2.36v.83H93.82v-1c0-.58-.22-.92-.79-.92s-.82.4-.82,1v5.05c0,.57.24,1,.78,1s.78-.29.78-.9V28H93Z' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M68.94,26.12h2.24v1.29H68.94Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'sdg3-2', d: 'M16,31.22c3.82,0,5.48-2,5.48-5.15V22.76c0-2.06-.9-3.39-2.79-3.82a3.6,3.6,0,0,0,2.59-3.65v-2c0-3.19-1.53-5.15-5-5.15C12.32,8.18,11,10.5,11,13.82v2h3.45V13.52c0-1.39.43-2.19,1.63-2.19s1.63.8,1.63,2v2.42c0,1.2-.8,1.83-2,1.83H14.22V20.5h1.6c1.33,0,1.86.63,1.86,1.83V26c0,1.19-.53,2-1.69,2s-1.76-.86-1.76-2.19V22.66H10.77v3c0,3.42,1.36,5.61,5.21,5.61' }),
+	                React.createElement('path', { className: 'sdg3-2', d: 'M93.39,69.84c0-3.14-2-5.69-5.07-5.69-1.53,0-3.37,1.67-4.37,2.7-1-1-2.72-2.7-4.25-2.7-3.05,0-5.19,2.55-5.19,5.69a5.75,5.75,0,0,0,1.62,4h0L84,81.71l7.82-7.83h0A5.76,5.76,0,0,0,93.39,69.84Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 285 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg4.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg4",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG4 Quality Education'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg4-1', x: '0.11', y: '-1.93', width: '115.21', height: '117.09' }),
+	                React.createElement('rect', { className: 'sdg4-2', x: '52.65', y: '9.35', width: '1.54', height: '9.14' }),
+	                React.createElement('rect', { className: 'sdg4-2', x: '62.48', y: '22.75', width: '1.54', height: '9.14' }),
+	                React.createElement('polygon', { className: 'sdg4-2', points: '49.56 59.93 29.52 48.35 29.52 85.8 49.56 91.84 49.56 59.93' }),
+	                React.createElement('polygon', { className: 'sdg4-2', points: '51.76 60.01 51.76 91.86 71.94 85.79 71.94 48.36 51.76 60.01' }),
+	                React.createElement('polygon', { className: 'sdg4-2', points: '83.52 85.13 82.93 85.13 85.31 93.42 87.67 85.13 87.08 85.13 87.67 85.13 87.67 51.82 87.08 51.82 86.5 51.82 85.87 51.82 84.69 51.82 84.11 51.82 83.52 51.82 82.93 51.82 82.93 85.13 83.52 85.13' }),
+	                React.createElement('polygon', { className: 'sdg4-2', points: '76.24 49.96 74.1 48.27 74.1 86.81 51.82 94.01 50.79 94.01 50.59 94.01 49.56 94.01 27.39 87.81 27.39 48.27 25.24 49.96 25.24 89.32 49.46 96.03 50.59 96.03 50.79 96.03 51.92 96.03 74.27 88.93 76.24 88.35 76.24 49.96' }),
+	                React.createElement('polygon', { className: 'sdg4-2', points: '51.94 17.24 50.11 17.24 50.11 9.35 48.57 9.35 48.57 18.49 51.94 18.49 51.94 17.24' }),
+	                React.createElement('polygon', { className: 'sdg4-2', points: '56.18 18.49 57.72 18.49 57.72 10.61 58.99 10.61 58.99 9.35 54.91 9.35 54.91 10.61 56.18 10.61 56.18 18.49' }),
+	                React.createElement('polygon', { className: 'sdg4-2', points: '61.17 18.49 62.71 18.49 62.71 15.01 64.41 9.35 62.94 9.35 62.01 12.82 61.99 12.82 61.06 9.35 59.46 9.35 61.17 15.01 61.17 18.49' }),
+	                React.createElement('polygon', { className: 'sdg4-2', points: '35.58 30.64 33.45 30.64 33.45 27.86 34.97 27.86 34.97 26.62 33.45 26.62 33.45 24.01 35.58 24.01 35.58 22.75 31.91 22.75 31.91 31.89 35.58 31.89 35.58 30.64' }),
+	                React.createElement('polygon', { className: 'sdg4-2', points: '57.55 24.01 58.81 24.01 58.81 31.89 60.36 31.89 60.36 24.01 61.63 24.01 61.63 22.75 57.55 22.75 57.55 24.01' }),
+	                React.createElement('polygon', { className: 'sdg4-2', points: '71.99 26.15 73.8 31.89 75.15 31.89 75.15 22.75 73.86 22.75 73.86 28 72.21 22.75 70.7 22.75 70.7 31.89 71.99 31.89 71.99 26.15' }),
+	                React.createElement('path', { className: 'sdg4-2', d: 'M87.67,47.41a2.37,2.37,0,1,0-4.74,0V50h4.74Z' }),
+	                React.createElement('path', { className: 'sdg4-2', d: 'M33.67,18.49v.62l2.9.54V18.51l-1.13-.22a2.19,2.19,0,0,0,1.13-2.16V11.71a2.33,2.33,0,1,0-4.65,0v4.42a2.1,2.1,0,0,0,1.75,2.36m-.21-7c0-.55.24-.94.78-.94s.79.39.79.94v5c0,.54-.24.94-.79.94s-.78-.41-.78-.94Z' }),
+	                React.createElement('path', { className: 'sdg4-2', d: 'M39.87,18.6c1.56,0,2.17-.92,2.17-2.33V9.35H40.62v7.06c0,.54-.22.9-.75.9s-.75-.36-.75-.9V9.35H37.57v6.92a2.06,2.06,0,0,0,2.29,2.33' }),
+	                React.createElement('path', { className: 'sdg4-2', d: 'M44.31,16.82h1.63l.28,1.67H47.8L46.06,9.35H44.31l-1.73,9.14H44Zm.81-4.89h0l.61,3.67H44.51Z' }),
+	                React.createElement('path', { className: 'sdg4-2', d: 'M41.11,29.44V25.21c0-1.42-.58-2.45-2.22-2.45H36.52v9.14h2.37c1.64,0,2.22-1.05,2.22-2.45m-3.06,1.2V24h.65a.8.8,0,0,1,.87.92v4.79c0,.55-.24.93-.87.93Z' }),
+	                React.createElement('path', { className: 'sdg4-2', d: 'M42.13,22.75v6.92A2.06,2.06,0,0,0,44.42,32c1.56,0,2.17-.92,2.17-2.33V22.75H45.17v7.06c0,.54-.22.9-.76.9s-.75-.36-.75-.9V22.75Z' }),
+	                React.createElement('path', { className: 'sdg4-2', d: 'M47.6,29.53A2.16,2.16,0,0,0,49.89,32c1.63,0,2.17-1,2.17-2.28V28.14h-1.4v1.68c0,.54-.19.89-.74.89s-.78-.39-.78-.94V24.87c0-.55.23-.94.78-.94s.74.32.74.89V26h1.4V24.94c0-1.35-.47-2.29-2.17-2.29a2.16,2.16,0,0,0-2.29,2.47Z' }),
+	                React.createElement('path', { className: 'sdg4-2', d: 'M54.25,30.22h1.63l.28,1.67h1.58L56,22.75H54.25l-1.73,9.14H54Zm.81-4.89h0L55.68,29H54.45Z' }),
+	                React.createElement('path', { className: 'sdg4-2', d: 'M67.36,32a2.18,2.18,0,0,0,2.33-2.47V25.11a2.33,2.33,0,1,0-4.65,0v4.42A2.18,2.18,0,0,0,67.36,32m-.78-7.13c0-.55.24-.94.78-.94s.79.39.79.94v4.91c0,.55-.24.94-.79.94s-.78-.39-.78-.94Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'sdg4-2', d: 'M18.79,30.6h3.57V27h1.52V24H22.36V8.18h-3.7L12.14,24.65V27h6.65ZM15.45,24l3.37-9.23h0V24Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 286 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg5.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg5",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG5 Gender Equality'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg5-1', x: '-1.93', y: '-1.93', width: '117.68', height: '117.09' }),
+	                React.createElement('rect', { className: 'sdg5-2', x: '57.54', y: '22.75', width: '1.54', height: '9.14' }),
+	                React.createElement('path', { className: 'sdg5-2', d: 'M81.41,42.29H67.52a.18.18,0,0,0-.18.18v4.62a.18.18,0,0,0,.18.18H73L66.91,53.4A18.19,18.19,0,1,0,53.34,85.75v5.32H47.86a.18.18,0,0,0-.18.18v4.95a.18.18,0,0,0,.18.18h5.48v5.23a.18.18,0,0,0,.18.18h4.95a.18.18,0,0,0,.18-.18V96.37h5.48a.18.18,0,0,0,.18-.18V91.24a.18.18,0,0,0-.18-.18H58.64V85.66A18.18,18.18,0,0,0,70.56,57.25l6.05-6.05v5.17a.18.18,0,0,0,.18.18h4.61a.18.18,0,0,0,.18-.18V42.47a.18.18,0,0,0-.18-.18M55.69,81.1A13.39,13.39,0,1,1,69.08,67.71,13.41,13.41,0,0,1,55.69,81.1' }),
+	                React.createElement('path', { className: 'sdg5-2', d: 'M63.87,62.22H47.63a.17.17,0,0,0-.18.16v3.93a.17.17,0,0,0,.18.16H63.87a.17.17,0,0,0,.18-.16V62.37a.17.17,0,0,0-.18-.16' }),
+	                React.createElement('path', { className: 'sdg5-2', d: 'M63.87,69.24H47.63a.17.17,0,0,0-.18.16v3.93a.17.17,0,0,0,.18.16H63.87a.17.17,0,0,0,.18-.16V69.4a.17.17,0,0,0-.18-.16' }),
+	                React.createElement('path', { className: 'sdg5-2', d: 'M33.84,18.6a1.38,1.38,0,0,0,1.47-1.1v1h1.1V13.61H34.23v1.21H35v1.62c0,.59-.26.88-.76.88s-.75-.39-.75-.94V11.47c0-.55.24-.94.8-.94s.77.32.77.89v.93h1.4v-.81c0-1.35-.5-2.29-2.19-2.29a2.16,2.16,0,0,0-2.3,2.47v4.42c0,1.41.61,2.47,1.92,2.47' }),
+	                React.createElement('path', { className: 'sdg5-2', d: 'M52.1,16V11.81c0-1.41-.58-2.45-2.22-2.45H47.51v9.14h2.37c1.64,0,2.22-1.05,2.22-2.45M49,17.24V10.61h.65a.8.8,0,0,1,.87.92v4.79c0,.55-.24.93-.87.93Z' }),
+	                React.createElement('path', { className: 'sdg5-2', d: 'M59.26,14.3l1.44,4.19h1.62l-1.47-4.15c.87-.2,1.23-.78,1.23-1.77V11.4c0-1.28-.57-2-2.11-2H57.72v9.14h1.54Zm0-3.69h.51c.53,0,.75.24.75.74v1.35a.66.66,0,0,1-.75.76h-.51Z' }),
+	                React.createElement('path', { className: 'sdg5-2', d: 'M38.28,31.89v.62l2.89.54V31.9L40,31.69a2.19,2.19,0,0,0,1.13-2.16V25.11a2.33,2.33,0,1,0-4.65,0v4.42a2.1,2.1,0,0,0,1.75,2.36m-.22-7c0-.55.24-.94.78-.94s.79.39.79.94v5c0,.54-.24.94-.79.94s-.78-.4-.78-.94Z' }),
+	                React.createElement('path', { className: 'sdg5-2', d: 'M42.17,22.75v6.91A2.06,2.06,0,0,0,44.46,32c1.56,0,2.17-.92,2.17-2.33V22.75H45.21v7.06c0,.54-.22.9-.76.9s-.75-.36-.75-.9V22.75Z' }),
+	                React.createElement('path', { className: 'sdg5-2', d: 'M49.11,30.22h1.63L51,31.89H52.6l-1.74-9.14H49.11l-1.72,9.14h1.46Zm.81-4.89h0l.6,3.67H49.31Z' }),
+	                React.createElement('polygon', { className: 'sdg5-2', points: '41.09 17.24 38.96 17.24 38.96 14.46 40.48 14.46 40.48 13.22 38.96 13.22 38.96 10.61 41.09 10.61 41.09 9.35 37.43 9.35 37.43 18.49 41.09 18.49 41.09 17.24' }),
+	                React.createElement('polygon', { className: 'sdg5-2', points: '43.34 12.75 45.15 18.49 46.49 18.49 46.49 9.35 45.22 9.35 45.22 14.6 43.56 9.35 42.05 9.35 42.05 18.49 43.34 18.49 43.34 12.75' }),
+	                React.createElement('polygon', { className: 'sdg5-2', points: '56.77 17.24 54.65 17.24 54.65 14.46 56.17 14.46 56.17 13.22 54.65 13.22 54.65 10.61 56.77 10.61 56.77 9.35 53.11 9.35 53.11 18.49 56.77 18.49 56.77 17.24' }),
+	                React.createElement('polygon', { className: 'sdg5-2', points: '35.58 30.64 33.45 30.64 33.45 27.86 34.97 27.86 34.97 26.62 33.45 26.62 33.45 24 35.58 24 35.58 22.75 31.92 22.75 31.92 31.89 35.58 31.89 35.58 30.64' }),
+	                React.createElement('polygon', { className: 'sdg5-2', points: '53.35 22.75 53.35 31.89 56.72 31.89 56.72 30.64 54.89 30.64 54.89 22.75 53.35 22.75' }),
+	                React.createElement('polygon', { className: 'sdg5-2', points: '62.73 31.89 62.73 24 64 24 64 22.75 59.92 22.75 59.92 24 61.18 24 61.18 31.89 62.73 31.89' }),
+	                React.createElement('polygon', { className: 'sdg5-2', points: '66.29 31.89 67.83 31.89 67.83 28.41 69.52 22.75 68.05 22.75 67.12 26.22 67.11 26.22 66.18 22.75 64.58 22.75 66.29 28.41 66.29 31.89' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'sdg5-2', d: 'M18.48,15.29a3.4,3.4,0,0,0-3.17,1.55h0V11.25h6.48V8.18H11.84V20.81h3.44v-.5c0-1.32.6-2.05,1.65-2.05s1.62.79,1.62,2V25.7c0,1.19-.43,2-1.59,2s-1.75-.86-1.75-2.18V22.73H11.77v2.55c0,3.41,1.36,5.59,5.19,5.59s5.36-2,5.36-5.13V20.25c0-3.54-1.82-5-3.84-5' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 287 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg6.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg6",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG6 Clean Water and Sanitation'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg6-1', x: '-1.97', y: '-1.93', width: '117.83', height: '117.09' }),
+	                React.createElement('rect', { className: 'sdg6-2', x: '67.71', y: '22.75', width: '1.54', height: '9.14' }),
+	                React.createElement('rect', { className: 'sdg6-2', x: '83.32', y: '22.75', width: '1.54', height: '9.14' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M76.46,45.19A.49.49,0,0,0,76.1,45H35.55a.46.46,0,0,0-.47.54l6.81,41.2a.48.48,0,0,0,.47.4h8.36l.57,6.71H47.78L56,102.08l8.21-8.2H60.65l.57-6.7h8.51a.47.47,0,0,0,.47-.4l6.37-41.19A.48.48,0,0,0,76.46,45.19Zm-15.67,33A6.51,6.51,0,0,1,56,79.87a6.51,6.51,0,0,1-4.84-1.69c-3-3-2-6.81-.9-8.76.65-1.22,5.32-8.23,5.72-8.83v0l0,0,0,0v0c.39.6,5.07,7.61,5.72,8.83C62.75,71.37,63.83,75.14,60.79,78.18ZM73.66,53.86a5,5,0,0,0-3.83.23c-5,2-8.45,2.77-13.75,1.12-3.33-1-6.45-3.23-10.14-1.9A20.88,20.88,0,0,1,38.45,55l-1.6-8.19H74.8Z' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M34.25,18.52c1.63,0,2.17-1,2.17-2.28V14.67H35v1.69c0,.54-.19.89-.74.89s-.78-.39-.78-.94V11.39c0-.55.23-.94.78-.94s.74.32.74.89v1.2h1.4V11.46c0-1.35-.47-2.29-2.17-2.29A2.16,2.16,0,0,0,32,11.64v4.42a2.16,2.16,0,0,0,2.29,2.47' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M47.7,16.75h1.63l.28,1.67h1.58L49.45,9.28H47.7L46,18.42h1.46Zm.81-4.89h0l.61,3.66H47.9Z' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M68.28,16.75h1.63l.28,1.67h1.58L70,9.28H68.28l-1.72,9.14H68Zm.81-4.89h0l.61,3.66H68.48Z' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M82.41,14.22l1.44,4.19h1.62L84,14.26c.88-.2,1.23-.78,1.23-1.76V11.33c0-1.28-.57-2.05-2.12-2.05H80.88v9.14h1.54Zm0-3.69h.51c.52,0,.75.24.75.74v1.35a.67.67,0,0,1-.75.76h-.51Z' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M33.51,30.22h1.63l.28,1.67H37l-1.74-9.14H33.51l-1.72,9.14h1.46Zm.81-4.89h0l.6,3.67H33.71Z' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M43.2,31.89h2.37c1.64,0,2.22-1.05,2.22-2.45V25.21c0-1.41-.58-2.45-2.22-2.45H43.2ZM44.73,24h.65a.8.8,0,0,1,.87.92v4.79c0,.55-.24.93-.87.93h-.65Z' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M51.2,28.7v1.23A1.9,1.9,0,0,0,53.37,32a2,2,0,0,0,2.24-2.14v-.44A3.07,3.07,0,0,0,54.37,27l-1-1c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.75c.49,0,.73.26.73.78v.8h1.4v-.74c0-1.32-.61-2.08-2.14-2.08a1.91,1.91,0,0,0-2.15,2V25A3.08,3.08,0,0,0,52.5,27.4l.9.9a1.64,1.64,0,0,1,.69,1.29V30c0,.48-.21.81-.7.81s-.75-.3-.75-.81V28.7Z' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M57.5,31.89l.27-1.67H59.4l.28,1.67h1.58l-1.74-9.14H57.77L56,31.89Zm1.08-6.56h0L59.2,29H58Z' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M77.15,22.75H75.4l-1.73,9.14h1.45l.27-1.67H77l.28,1.67h1.58ZM75.6,29l.61-3.67h0L76.83,29Z' }),
+	                React.createElement('path', { className: 'sdg6-2', d: 'M88.17,32a2.18,2.18,0,0,0,2.33-2.47V25.11a2.33,2.33,0,1,0-4.65,0v4.42A2.18,2.18,0,0,0,88.17,32m-.78-7.13c0-.55.24-.94.78-.94s.79.39.79.94v4.91c0,.55-.24.94-.79.94s-.78-.39-.78-.94Z' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '40.76 17.16 38.93 17.16 38.93 9.28 37.39 9.28 37.39 18.42 40.76 18.42 40.76 17.16' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '45.26 17.16 43.13 17.16 43.13 14.39 44.66 14.39 44.66 13.14 43.13 13.14 43.13 10.53 45.26 10.53 45.26 9.28 41.6 9.28 41.6 18.42 45.26 18.42 45.26 17.16' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '53.25 12.67 55.06 18.42 56.4 18.42 56.4 9.28 55.13 9.28 55.13 14.52 53.47 9.28 51.96 9.28 51.96 18.42 53.25 18.42 53.25 12.67' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '62.11 18.42 62.98 12.77 62.99 12.77 63.89 18.42 65.35 18.42 66.53 9.28 65.24 9.28 64.54 15.07 64.52 15.07 63.68 9.28 62.42 9.28 61.66 15.07 61.64 15.07 60.93 9.28 59.44 9.28 60.67 18.42 62.11 18.42' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '72.84 18.42 74.39 18.42 74.39 10.53 75.66 10.53 75.66 9.28 71.57 9.28 71.57 10.53 72.84 10.53 72.84 18.42' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '80.05 17.16 77.92 17.16 77.92 14.39 79.44 14.39 79.44 13.14 77.92 13.14 77.92 10.53 80.05 10.53 80.05 9.28 76.38 9.28 76.38 18.42 80.05 18.42 80.05 17.16' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '37.63 22.75 37.63 31.89 38.92 31.89 38.92 26.15 40.73 31.89 42.07 31.89 42.07 22.75 40.8 22.75 40.8 28 39.14 22.75 37.63 22.75' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '65.18 28 63.53 22.75 62.02 22.75 62.02 31.89 63.31 31.89 63.31 26.15 65.12 31.89 66.46 31.89 66.46 22.75 65.18 22.75 65.18 28' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '72.76 31.89 72.76 24.01 74.03 24.01 74.03 22.75 69.94 22.75 69.94 24.01 71.21 24.01 71.21 31.89 72.76 31.89' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '82.48 22.75 78.4 22.75 78.4 24.01 79.67 24.01 79.67 31.89 81.22 31.89 81.22 24.01 82.48 24.01 82.48 22.75' }),
+	                React.createElement('polygon', { className: 'sdg6-2', points: '95.94 31.89 95.94 22.75 94.66 22.75 94.66 28 93.01 22.75 91.5 22.75 91.5 31.89 92.79 31.89 92.79 26.15 94.6 31.89 95.94 31.89' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'sdg6-2', d: 'M17,31.13c4,0,5.56-2.18,5.56-5.66V22.16c0-3.67-1.46-5.52-4.17-5.52a3.23,3.23,0,0,0-3.11,1.82h0V13.63c0-1.36.43-2.32,1.79-2.32s1.75.8,1.75,2.18V15h3.44V13.8c0-3.31-1.09-5.62-5.26-5.62-4,0-5.46,2.55-5.46,6.05V25.14c0,3.47,1.52,6,5.49,6M15.21,21.7c.07-1.26.6-2,1.79-2s1.79.79,1.79,2.25v3.9c0,1.42-.53,2.25-1.82,2.25s-1.75-.86-1.75-2.25Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 288 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg7.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg7",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG7 Affordable and Clean Energy'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg7-1', x: '-1.31', y: '-1.83', width: '116.82', height: '118.33' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M55.92,54.15A16.38,16.38,0,1,0,72.3,70.53,16.38,16.38,0,0,0,55.92,54.15m-1.21,6.47a1.22,1.22,0,0,1,2.43,0v5.62a1.22,1.22,0,0,1-2.43,0Zm1.22,18.3a8.52,8.52,0,0,1-2.53-16.66v3.17a5.58,5.58,0,1,0,5,0V62.26a8.52,8.52,0,0,1-2.52,16.66' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M37.12,70.39A1.37,1.37,0,0,0,35.86,69H28.69a1.35,1.35,0,0,0,0,2.69h7.17a1.37,1.37,0,0,0,1.26-1.35' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M84.43,70.39A1.37,1.37,0,0,0,83.18,69H76a1.35,1.35,0,0,0,0,2.69h7.17a1.37,1.37,0,0,0,1.26-1.35' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M55.93,51.58a1.37,1.37,0,0,0,1.34-1.26V43.15a1.35,1.35,0,0,0-2.69,0v7.17a1.37,1.37,0,0,0,1.35,1.26' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M55.93,98.9a1.37,1.37,0,0,0,1.34-1.26V90.47a1.35,1.35,0,0,0-2.69,0v7.17a1.37,1.37,0,0,0,1.35,1.26' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M39.6,61a1.37,1.37,0,0,0-.42-1.79L33,55.69A1.35,1.35,0,0,0,31.62,58l6.23,3.56A1.37,1.37,0,0,0,39.6,61' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M80.67,84.55a1.37,1.37,0,0,0-.42-1.79L74,79.19a1.35,1.35,0,0,0-1.34,2.34l6.23,3.56a1.37,1.37,0,0,0,1.76-.55' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M65.27,54.07a1.37,1.37,0,0,0,1.79-.42l3.56-6.23a1.35,1.35,0,0,0-2.34-1.34l-3.56,6.22a1.37,1.37,0,0,0,.55,1.76' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M41.77,95.13a1.37,1.37,0,0,0,1.79-.43l3.56-6.22a1.35,1.35,0,0,0-2.34-1.34l-3.56,6.23a1.37,1.37,0,0,0,.55,1.76' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M46.55,54.09a1.37,1.37,0,0,0,.54-1.76l-3.58-6.22a1.35,1.35,0,0,0-2.33,1.34l3.58,6.22a1.37,1.37,0,0,0,1.8.42' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M70.14,95.1a1.37,1.37,0,0,0,.54-1.76L67.1,87.12a1.35,1.35,0,0,0-2.33,1.34l3.58,6.22a1.37,1.37,0,0,0,1.8.42' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M72.23,61a1.37,1.37,0,0,0,1.76.54L80.21,58a1.35,1.35,0,0,0-1.34-2.34l-6.22,3.58a1.37,1.37,0,0,0-.42,1.8' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M31.22,84.6a1.37,1.37,0,0,0,1.76.54l6.22-3.58a1.35,1.35,0,0,0-1.34-2.34l-6.22,3.58a1.37,1.37,0,0,0-.42,1.8' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M31.69,18.49l1.72-9.13h1.75l1.74,9.13H35.33L35,16.82H33.42l-.27,1.67Zm1.93-2.9h1.23l-.61-3.66h0Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M37.47,9.36h3.6v1.25H39v2.61h1.54v1.24H39v4H37.47Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M41.67,9.36h3.6v1.25H43.21v2.61h1.54v1.24H43.21v4H41.67Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M45.74,16.13V11.71a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S48.86,16.93,48.86,16.37Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M52.74,14.3v4.19H51.2V9.36h2.24c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.76l1.47,4.15H54.18Zm0-3.69v2.84h.51A.66.66,0,0,0,54,12.7V11.35c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M60.91,11.81V16c0,1.4-.58,2.45-2.22,2.45H56.32V9.36h2.37C60.34,9.36,60.91,10.39,60.91,11.81ZM58.5,17.24c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M61.28,18.49,63,9.36h1.75l1.74,9.13H64.92l-.28-1.67H63l-.27,1.67Zm1.93-2.9h1.23l-.61-3.66h0Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M67.06,9.36h2.22c1.54,0,2,.71,2,2v.93a1.33,1.33,0,0,1-.92,1.45,1.39,1.39,0,0,1,1.15,1.52v1.21c0,1.29-.58,2-2.11,2H67.06Zm1.54,3.85h.54a.65.65,0,0,0,.73-.74V11.35a.65.65,0,0,0-.74-.74h-.53Zm0,1.17v2.86h.67a.66.66,0,0,0,.75-.74V15.12c0-.48-.23-.74-.77-.74Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M72.26,9.36H73.8v7.88h1.83v1.25H72.26Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M76.26,9.36h3.66v1.25H77.8v2.61h1.52v1.24H77.8v2.77h2.13v1.25H76.26Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M81.79,18.49l1.72-9.13h1.75L87,18.49H85.42l-.28-1.67H83.51l-.27,1.67Zm1.93-2.9h1.23l-.61-3.66h0Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M88.86,12.75v5.74H87.57V9.36h1.51l1.66,5.24V9.36H92v9.13H90.66Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M97.41,11.81V16c0,1.4-.58,2.45-2.22,2.45H92.82V9.36h2.37C96.83,9.36,97.41,10.39,97.41,11.81ZM95,17.24c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M31.92,29.54v-4.4a2.14,2.14,0,0,1,2.28-2.45c1.69,0,2.16.94,2.16,2.28V26H35V24.85c0-.56-.19-.88-.74-.88s-.78.39-.78.94v4.88c0,.55.23.94.78.94s.74-.35.74-.88V28.16h1.39v1.57c0,1.3-.54,2.27-2.16,2.27A2.15,2.15,0,0,1,31.92,29.54Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M37.32,22.8h1.53v7.84h1.82v1.25H37.32Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M41.51,22.8h3.65V24H43v2.6h1.52v1.23H43v2.76h2.12v1.25H41.51Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M45.86,31.89l1.72-9.09h1.74l1.73,9.09H49.48l-.28-1.66H47.58l-.27,1.66ZM47.78,29H49l-.6-3.65h0Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M53.1,26.18v5.71H51.81V22.8h1.5L55,28V22.8h1.27v9.09H54.9Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M60.32,22.8H64V24H61.85v2.6h1.52v1.23H61.85v2.76H64v1.25H60.32Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M66.17,26.18v5.71H64.88V22.8h1.5L68,28V22.8h1.27v9.09H68Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M70.3,22.8h3.65V24H71.83v2.6h1.52v1.23H71.83v2.76h2.12v1.25H70.3Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M76.4,27.72v4.17H74.87V22.8h2.23c1.54,0,2.1.76,2.1,2V26c0,1-.35,1.55-1.22,1.76l1.46,4.13H77.83Zm0-3.67v2.83h.51a.66.66,0,0,0,.75-.75V24.78c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M82.47,27h2.17v4.85h-1.1v-1A1.38,1.38,0,0,1,82.08,32c-1.31,0-1.92-1-1.92-2.45v-4.4a2.15,2.15,0,0,1,2.29-2.45c1.69,0,2.19.94,2.19,2.28v.8H83.25v-.93c0-.56-.21-.88-.76-.88s-.79.39-.79.94v4.88c0,.55.23.94.75.94s.75-.28.75-.87V28.24h-.72Z' }),
+	                React.createElement('path', { className: 'sdg7-2', d: 'M88.59,28.43v3.46H87.07V28.43l-1.7-5.63H87l.93,3.45h0l.93-3.45h1.46Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'sdg7-2', points: '14.63 12.21 20.45 12.21 15.42 31.55 19.16 31.55 24.09 12.6 24.09 9.13 14.63 9.13 14.63 12.21' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 289 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg8.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg8",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG8 Decent Work and Economic Growth'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg8-1', x: '-2.05', y: '-1.83', width: '119.92', height: '118.33' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M77.09,55,65.73,65.79a1.88,1.88,0,0,0-.65,1.62V97.7a.65.65,0,0,0,.65.65H77.46a.65.65,0,0,0,.65-.65V55.26c0-.36-.28-1-1-.27' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M44.36,69.07,33,79.87a1.88,1.88,0,0,0-.65,1.62V97.7a.65.65,0,0,0,.65.65H44.74a.65.65,0,0,0,.65-.65V69.34c0-.36-.28-1-1-.27' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M82.25,41.88a.32.32,0,0,0-.1-.25.34.34,0,0,0-.21-.09h-.16l-8.7,2-.16,0a.35.35,0,0,0-.17.09.33.33,0,0,0,0,.47l.1.1,2,2L55.14,65.88,46,56.78a.26.26,0,0,0-.37,0l-2.47,2.47h0L28.6,73.84a.26.26,0,0,0,0,.37l2.47,2.47a.26.26,0,0,0,.37,0L45.85,62.28l6.61,6.61,0,0L55,71.38a.26.26,0,0,0,.37,0L77.69,49l2.09,2.08a.33.33,0,0,0,.46,0,.32.32,0,0,0,.09-.21v0L82.25,42Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M60.79,71l-5.5,5.54a.26.26,0,0,1-.35,0l-5-5.08c-.91-.91-1.11-.17-1.11.19V97.7a.64.64,0,0,0,.64.65H61.23a.65.65,0,0,0,.65-.65V71.17c0-.36-.28-1-1.09-.2' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M30,22.77H33.7V24H31.57v2.61H33.1v1.24H31.57v2.77H33.7V31.9H30Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M34.38,29.55V25.13a2.15,2.15,0,0,1,2.29-2.46c1.7,0,2.17.94,2.17,2.29V26h-1.4v-1.2c0-.57-.19-.89-.74-.89s-.78.39-.78.94v4.9c0,.55.23.94.78.94s.74-.35.74-.89V28.16h1.4v1.58C38.84,31,38.3,32,36.67,32A2.16,2.16,0,0,1,34.38,29.55Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M39.67,29.55V25.13a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S42.78,30.34,42.78,29.79Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M46.49,26.17V31.9H45.2V22.77H46.7L48.36,28V22.77h1.28V31.9H48.29Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M50.52,29.55V25.13a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S53.63,30.34,53.63,29.79Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M60.27,26h0l-1,5.93h-.71L57.34,26h0V31.9H56V22.77h1.79l1,5.15h0l.89-5.15h1.94V31.9h-1.4Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M62.55,22.77h1.54V31.9H62.55Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M64.95,29.55V25.13a2.15,2.15,0,0,1,2.29-2.46c1.7,0,2.17.94,2.17,2.29V26H68v-1.2c0-.57-.19-.89-.74-.89s-.78.39-.78.94v4.9c0,.55.23.94.78.94s.74-.35.74-.89V28.16h1.4v1.58c0,1.31-.54,2.28-2.17,2.28A2.16,2.16,0,0,1,64.95,29.55Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M74.34,27h2.18V31.9h-1.1v-1A1.38,1.38,0,0,1,73.95,32C72.63,32,72,31,72,29.55V25.13a2.16,2.16,0,0,1,2.3-2.46c1.7,0,2.2.94,2.2,2.29v.81h-1.4v-.93c0-.57-.22-.89-.77-.89s-.79.39-.79.94v4.9c0,.55.23.94.75.94s.75-.28.75-.88V28.24h-.73Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M78.93,27.72V31.9H77.4V22.77h2.24c1.55,0,2.11.77,2.11,2V26c0,1-.35,1.56-1.23,1.76L82,31.9H80.37Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V24.77c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M82.45,29.55V25.13a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S85.56,30.34,85.56,29.79Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M91,26.26l-.86,5.64H88.73L87.5,22.77H89l.71,5.79h0l.77-5.79h1.25l.85,5.79h0l.7-5.79h1.29L93.4,31.9H91.95L91,26.26Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M95.06,22.77h4.08V24H97.88V31.9H96.33V24H95.06Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M102.63,27.88h-1.48v4H99.61V22.77h1.54v3.87h1.48V22.77h1.55V31.9h-1.55Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M34.63,11.81V16c0,1.4-.58,2.45-2.22,2.45H30V9.36h2.37C34.05,9.36,34.63,10.39,34.63,11.81Zm-2.41,5.43c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M35.6,9.36h3.66v1.25H37.14v2.61h1.52v1.24H37.14v2.77h2.13v1.25H35.6Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M40,16.13V11.71a2.15,2.15,0,0,1,2.29-2.46c1.7,0,2.17.94,2.17,2.29v1.08h-1.4v-1.2c0-.57-.19-.89-.74-.89s-.78.39-.78.94v4.9c0,.55.23.94.78.94s.74-.35.74-.89V14.74h1.4v1.58c0,1.31-.54,2.28-2.17,2.28A2.16,2.16,0,0,1,40,16.13Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M45.44,9.36H49.1v1.25H47v2.61H48.5v1.24H47v2.77H49.1v1.25H45.44Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M51.31,12.75v5.74H50V9.36h1.51l1.66,5.24V9.36h1.28v9.13H53.12Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M55.26,9.36h4.08v1.25H58.08v7.88H56.53V10.61H55.26Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M65,12.84l-.86,5.64H62.67L61.45,9.36h1.48l.71,5.79h0l.77-5.79h1.25l.85,5.79h0l.7-5.79h1.29l-1.19,9.13H65.89L65,12.84Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M69.15,16.13V11.71a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S72.26,16.93,72.26,16.37Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M76.31,14.3v4.19H74.77V9.36H77c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.76l1.47,4.15H77.75Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V11.35c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M81.59,14v4.44H80.05V9.36h1.54v4l1.67-4h1.51L83,13.46l1.82,5H83.19Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M87,18.49l1.72-9.13h1.75l1.74,9.13H90.59l-.28-1.67H88.67l-.27,1.67Zm1.93-2.9H90.1l-.61-3.66h0Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M94,12.75v5.74H92.68V9.36h1.51l1.66,5.24V9.36h1.28v9.13H95.77Z' }),
+	                React.createElement('path', { className: 'sdg8-2', d: 'M102.73,11.81V16c0,1.4-.58,2.45-2.22,2.45H98.13V9.36h2.37C102.15,9.36,102.73,10.39,102.73,11.81Zm-2.41,5.43c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'sdg8-2', d: 'M24.21,26.29V23.85c0-2.15-.76-3.7-2.51-4.5a4,4,0,0,0,2.18-3.9v-.93c0-3.51-1.82-5.39-5.29-5.39S13.36,11,13.36,14.52v.93a4,4,0,0,0,2.12,3.9c-1.75.79-2.48,2.35-2.48,4.5v2.45c0,3.41,1.62,5.79,5.59,5.79s5.62-2.38,5.62-5.79m-7.31-12c0-1.36.46-2.15,1.69-2.15s1.72.79,1.72,2.15v1.52c0,1.36-.46,2.15-1.72,2.15s-1.69-.8-1.69-2.15Zm3.54,12.4c0,1.36-.5,2.32-1.85,2.32s-1.82-1-1.82-2.32V23.05c0-1.36.5-2.31,1.82-2.31s1.85,1,1.85,2.31Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 290 */
+/*!*******************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg9.svg ***!
+  \*******************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg9",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'Industry, Innovation and Infrastructure'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg9-1', x: '-2.75', y: '-1.83', width: '118.29', height: '118.33' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M84.43,73.46,71.15,65.79V50.45a.91.91,0,0,0-.45-.79L57,41.74a.91.91,0,0,0-.91,0L42.31,49.67a.91.91,0,0,0-.45.79V65.79L28.58,73.46a.91.91,0,0,0-.45.78V90.11a.91.91,0,0,0,.45.79l13.74,7.93a.91.91,0,0,0,.91,0L56.5,91.16l13.28,7.67a.91.91,0,0,0,.91,0L84.43,90.9a.91.91,0,0,0,.45-.79V74.25A.91.91,0,0,0,84.43,73.46ZM55.6,88.54l-11-6.36,11-6.36ZM68.43,66.32l-11,6.36V60ZM55.6,72.68l-11-6.36L55.6,60Zm2.72,1.57,11.92-6.88,11.93,6.88L70.24,81.13Zm11-9.5-11-6.36,11-6.36ZM54.69,58.39l-11,6.36V52ZM41.86,96.47,29.94,89.59V75.82L41.86,82.7Zm1.81,0V83.75l11,6.36Zm39.4-6.88L71.15,96.47V82.7l11.93-6.89Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M26.39,9.55h1.46v8.71H26.39Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M29.75,12.78v5.47H28.51V9.55H30l1.58,5v-5h1.22v8.71H31.47Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M37.78,11.88v4c0,1.34-.55,2.34-2.12,2.34H33.4V9.55h2.26C37.22,9.55,37.78,10.54,37.78,11.88Zm-2.3,5.18c.6,0,.83-.36.83-.89V11.62a.76.76,0,0,0-.83-.87h-.62v6.32Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M42.67,9.55v6.59c0,1.35-.58,2.22-2.07,2.22a2,2,0,0,1-2.18-2.22V9.55h1.46v6.73c0,.51.21.86.72.86s.72-.35.72-.86V9.55Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M43.24,16.38V15.21H44.6v1.19c0,.49.22.77.72.77s.67-.31.67-.77v-.33a1.57,1.57,0,0,0-.65-1.23L44.47,14a2.94,2.94,0,0,1-1.22-2.32v-.3a1.82,1.82,0,0,1,2.06-1.91c1.46,0,2,.72,2,2v.71H46v-.76c0-.5-.23-.75-.69-.75a.64.64,0,0,0-.69.72v.18c0,.49.27.77.69,1.18l.94.92a2.92,2.92,0,0,1,1.18,2.26v.42a1.89,1.89,0,0,1-2.13,2A1.81,1.81,0,0,1,43.24,16.38Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M47.53,9.55h3.89v1.19H50.21v7.51H48.74V10.74H47.53Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M53.37,14.26v4H51.91V9.55H54c1.48,0,2,.73,2,2v1.12c0,.94-.33,1.49-1.17,1.68l1.4,4H54.75Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V11.45c0-.48-.22-.71-.72-.71Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M59.19,14.94v3.31H57.73V14.94L56.1,9.55h1.53l.89,3.3h0l.89-3.3h1.4Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M62.07,17l-.74,2h-.82l.18-2.08h1.39Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M63.87,9.55h1.46v8.71H63.87Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M67.23,12.78v5.47H66V9.55h1.44l1.58,5v-5h1.22v8.71H68.95Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M72.11,12.78v5.47H70.88V9.55h1.44l1.58,5v-5h1.22v8.71H73.83Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M75.76,16V11.8a2.22,2.22,0,1,1,4.43,0V16a2.22,2.22,0,1,1-4.43,0Zm3,.23V11.56c0-.53-.23-.9-.76-.9s-.75.37-.75.9v4.68c0,.53.23.9.75.9S78.73,16.77,78.73,16.24Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M85.52,9.55l-1.66,8.71H82.27L80.62,9.55h1.49l1,6.08h0l1-6.08Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M85.06,18.26l1.64-8.71h1.67L90,18.26h-1.5l-.27-1.59H86.71l-.26,1.59Zm1.84-2.76h1.17L87.49,12h0Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M89.63,9.55h3.89v1.19H92.32v7.51H90.84V10.74H89.63Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M94,9.55h1.46v8.71H94Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M96.14,16V11.8a2.22,2.22,0,1,1,4.43,0V16a2.22,2.22,0,1,1-4.43,0Zm3,.23V11.56c0-.53-.23-.9-.76-.9s-.75.37-.75.9v4.68c0,.53.23.9.75.9S99.1,16.77,99.1,16.24Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M102.44,12.78v5.47h-1.23V9.55h1.44l1.58,5v-5h1.22v8.71h-1.28Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M26.16,31.68,27.8,23h1.67l1.66,8.71h-1.5l-.27-1.59H27.8l-.26,1.59ZM28,28.92h1.17l-.58-3.49h0Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M32.9,26.21v5.47H31.67V23h1.44l1.58,5V23h1.22v8.71H34.62Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M41.06,25.31v4c0,1.34-.55,2.34-2.12,2.34H36.68V23h2.26C40.51,23,41.06,24,41.06,25.31Zm-2.3,5.18c.6,0,.83-.36.83-.89V25a.76.76,0,0,0-.83-.87h-.62v6.32Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M43.12,23h1.46v8.71H43.12Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M46.6,26.21v5.47H45.36V23H46.8l1.58,5V23H49.6v8.71H48.32Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M50.38,23h3.43v1.19h-2v2.49H53.3v1.18H51.84v3.84H50.38Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M55.85,27.69v4H54.38V23h2.13c1.48,0,2,.73,2,2V26c0,.94-.33,1.49-1.17,1.68l1.4,4H57.22Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V24.87c0-.48-.22-.71-.72-.71Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M59,31.68,60.68,23h1.67L64,31.68H62.5l-.27-1.59H60.68l-.26,1.59Zm1.84-2.76H62l-.58-3.49h0Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M64.34,29.81V28.64H65.7v1.19c0,.49.22.77.72.77s.67-.31.67-.77V29.5a1.58,1.58,0,0,0-.65-1.23l-.86-.86a2.94,2.94,0,0,1-1.22-2.32v-.3a1.82,1.82,0,0,1,2.06-1.91c1.46,0,2,.72,2,2v.71H67.12V24.8c0-.5-.23-.75-.69-.75a.64.64,0,0,0-.69.72V25c0,.49.27.77.69,1.18l.94.92a2.92,2.92,0,0,1,1.18,2.26v.42a1.89,1.89,0,0,1-2.13,2A1.81,1.81,0,0,1,64.34,29.81Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M68.89,23h3.89v1.19H71.57v7.51H70.1V24.17H68.89Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M74.86,27.69v4H73.4V23h2.13c1.48,0,2,.73,2,2V26c0,.94-.33,1.49-1.17,1.68l1.4,4H76.24Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V24.87c0-.48-.22-.71-.72-.71Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M82.53,23v6.59c0,1.35-.58,2.22-2.07,2.22a2,2,0,0,1-2.18-2.22V23h1.46V29.7c0,.51.21.86.72.86s.72-.35.72-.86V23Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M83.31,29.43V25.22a2.05,2.05,0,0,1,2.18-2.35c1.62,0,2.07.9,2.07,2.18v1H86.22V24.94c0-.54-.18-.85-.71-.85s-.75.37-.75.9v4.68c0,.53.22.9.75.9s.71-.33.71-.85V28.11h1.34v1.5c0,1.25-.51,2.17-2.07,2.17A2.06,2.06,0,0,1,83.31,29.43Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M87.8,23h3.89v1.19H90.49v7.51H89V24.17H87.8Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M96.56,23v6.59c0,1.35-.58,2.22-2.07,2.22a2,2,0,0,1-2.18-2.22V23h1.46V29.7c0,.51.21.86.72.86s.72-.35.72-.86V23Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M98.8,27.69v4H97.34V23h2.13c1.48,0,2,.73,2,2V26c0,.94-.33,1.49-1.17,1.68l1.4,4h-1.54Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V24.87c0-.48-.22-.71-.72-.71Z' }),
+	                React.createElement('path', { className: 'sdg9-2', d: 'M102.22,23h3.49v1.19h-2v2.49h1.45v1.18h-1.45v2.65h2v1.19h-3.49Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('path', { className: 'sdg9-2', d: 'M22.35,15.11c0-3.47-1.52-6-5.49-6s-5.55,2.18-5.55,5.65v3.31c0,3.67,1.45,5.52,4.17,5.52a3.22,3.22,0,0,0,3.11-1.82h0v4.82c0,1.36-.53,2.31-1.88,2.31s-1.85-.79-1.85-2.18V25.26H11.44v1.19c0,3.3,1.19,5.62,5.36,5.62,4,0,5.55-2.55,5.55-6Zm-3.74,3.44c-.07,1.26-.59,2-1.78,2S15,19.81,15,18.35v-3.9c0-1.42.53-2.25,1.82-2.25s1.75.86,1.75,2.25Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 291 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg10.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg10",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG10 Reduced Inequalities'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg10-1', x: '-2.55', y: '-1.83', width: '118.82', height: '118.33' }),
+	                React.createElement('rect', { className: 'sdg10-2', x: '35.67', y: '22.62', width: '1.56', height: '9.28' }),
+	                React.createElement('rect', { className: 'sdg10-2', x: '68.62', y: '22.62', width: '1.56', height: '9.28' }),
+	                React.createElement('rect', { className: 'sdg10-2', x: '75.75', y: '22.62', width: '1.56', height: '9.28' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M67.42,73.83H45.08a.24.24,0,0,0-.24.24v5.06a.24.24,0,0,0,.24.24H67.42a.24.24,0,0,0,.25-.24V74.07a.24.24,0,0,0-.25-.24' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M67.67,64.56a.24.24,0,0,0-.25-.24H45.08a.24.24,0,0,0-.24.24v5.06a.24.24,0,0,0,.24.24H67.42a.24.24,0,0,0,.25-.24Z' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M80.59,66.54a25.82,25.82,0,0,0-4.79-9.77l-.05,0a24.15,24.15,0,0,1,1.91,3.39A23.72,23.72,0,0,1,37.59,85.41a22.39,22.39,0,0,1,32.5-30.52l.14.13a.84.84,0,0,0,.51.19A.86.86,0,0,0,71.3,55l.09-.09,2.84-2.81.19-.18a.82.82,0,0,0,0-1.08l-.09-.08A27.51,27.51,0,1,0,38.94,92.86,26,26,0,0,0,80.59,66.54' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M37.23,14.36l1.46,4.26h1.64L38.85,14.4c.89-.2,1.25-.79,1.25-1.79V11.42c0-1.3-.58-2.08-2.15-2.08H35.67v9.28h1.56Zm0-3.75h.52c.54,0,.77.25.77.75v1.37a.68.68,0,0,1-.77.77h-.52Z' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M48.19,9.34H45.78v9.28h2.41c1.67,0,2.26-1.07,2.26-2.49v-4.3c0-1.44-.59-2.49-2.26-2.49m.7,7.06c0,.56-.25.94-.89.94h-.66V10.61H48a.81.81,0,0,1,.89.93Z' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M53,9.34H51.47v7a2.09,2.09,0,0,0,2.33,2.37c1.59,0,2.2-.93,2.2-2.37v-7H54.56v7.17c0,.55-.22.92-.77.92s-.76-.37-.76-.92Z' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M57,11.74v4.49a2.2,2.2,0,0,0,2.33,2.51c1.66,0,2.2-1,2.2-2.31v-1.6H60.14v1.71c0,.55-.19.9-.75.9s-.79-.4-.79-1v-5c0-.56.23-1,.79-1s.75.33.75.9v1.22h1.42V11.56c0-1.37-.48-2.33-2.2-2.33A2.19,2.19,0,0,0,57,11.74' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M67.24,9.34v9.28h2.41c1.67,0,2.26-1.07,2.26-2.49v-4.3c0-1.44-.59-2.49-2.26-2.49Zm3.11,2.2V16.4c0,.56-.25.94-.89.94H68.8V10.61h.66a.81.81,0,0,1,.89.93' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M50.29,22.51A2.21,2.21,0,0,0,47.94,25V29.5a2.14,2.14,0,0,0,1.78,2.4v.63l2.94.55V31.91l-1.15-.22a2.23,2.23,0,0,0,1.15-2.19V25a2.21,2.21,0,0,0-2.37-2.5m.81,7.32c0,.55-.25,1-.81,1s-.79-.41-.79-1V24.77c0-.56.25-1,.79-1s.81.4.81,1Z' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M53.54,22.62v7A2.09,2.09,0,0,0,55.86,32c1.59,0,2.2-.93,2.2-2.37v-7H56.63v7.17c0,.55-.22.92-.77.92s-.77-.37-.77-.92V22.62Z' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M60.32,22.62,58.57,31.9h1.48l.27-1.7H62l.29,1.7h1.6L62.1,22.62ZM60.53,29l.62-3.72h0L61.77,29Z' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M82.54,28.66V29.9A1.93,1.93,0,0,0,84.74,32,2,2,0,0,0,87,29.83v-.45A3.12,3.12,0,0,0,85.76,27l-1-1c-.45-.44-.74-.74-.74-1.26v-.19a.68.68,0,0,1,.74-.77c.49,0,.74.26.74.79v.81h1.42v-.75c0-1.34-.62-2.11-2.18-2.11a1.94,1.94,0,0,0-2.19,2v.32a3.12,3.12,0,0,0,1.3,2.48l.92.92a1.67,1.67,0,0,1,.7,1.31v.36c0,.49-.22.82-.71.82s-.77-.3-.77-.82V28.66Z' }),
+	                React.createElement('polygon', { className: 'sdg10-2', points: '44.8 17.35 42.64 17.35 42.64 14.53 44.19 14.53 44.19 13.27 42.64 13.27 42.64 10.61 44.8 10.61 44.8 9.34 41.08 9.34 41.08 18.62 44.8 18.62 44.8 17.35' }),
+	                React.createElement('polygon', { className: 'sdg10-2', points: '62.55 18.62 66.27 18.62 66.27 17.35 64.11 17.35 64.11 14.53 65.65 14.53 65.65 13.27 64.11 13.27 64.11 10.61 66.27 10.61 66.27 9.34 62.55 9.34 62.55 18.62' }),
+	                React.createElement('polygon', { className: 'sdg10-2', points: '42.77 22.62 41.47 22.62 41.47 27.94 39.78 22.62 38.25 22.62 38.25 31.9 39.56 31.9 39.56 26.07 41.4 31.9 42.77 31.9 42.77 22.62' }),
+	                React.createElement('polygon', { className: 'sdg10-2', points: '47.37 23.89 47.37 22.62 43.64 22.62 43.64 31.9 47.37 31.9 47.37 30.63 45.2 30.63 45.2 27.81 46.75 27.81 46.75 26.55 45.2 26.55 45.2 23.89 47.37 23.89' }),
+	                React.createElement('polygon', { className: 'sdg10-2', points: '64.5 22.62 64.5 31.9 67.92 31.9 67.92 30.63 66.06 30.63 66.06 22.62 64.5 22.62' }),
+	                React.createElement('polygon', { className: 'sdg10-2', points: '73.75 31.9 73.75 23.89 75.04 23.89 75.04 22.62 70.89 22.62 70.89 23.89 72.18 23.89 72.18 31.9 73.75 31.9' }),
+	                React.createElement('polygon', { className: 'sdg10-2', points: '81.92 30.63 79.76 30.63 79.76 27.81 81.31 27.81 81.31 26.55 79.76 26.55 79.76 23.89 81.92 23.89 81.92 22.62 78.2 22.62 78.2 31.9 81.92 31.9 81.92 30.63' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'sdg10-2', points: '12.1 14.66 12.1 31.84 15.87 31.84 15.87 9.39 12.86 9.39 9.38 13.47 9.38 17.41 9.42 17.41 12.06 14.66 12.1 14.66' }),
+	                React.createElement('path', { className: 'sdg10-2', d: 'M29.64,26V15.19c0-3.51-1.75-6.06-5.59-6.06s-5.56,2.55-5.56,6.06V26c0,3.47,1.76,6.06,5.56,6.06s5.59-2.58,5.59-6.06m-7.38.6V14.59c0-1.36.5-2.32,1.79-2.32s1.82,1,1.82,2.32V26.64C25.87,28,25.37,29,24,29s-1.79-1-1.79-2.32' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 292 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg11.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg11",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG11 Sustainable Cities and Communities'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg11-1', x: '-1.23', y: '-1.83', width: '117.51', height: '118.33' }),
+	                React.createElement('rect', { className: 'sdg11-2', x: '77.14', y: '77.78', width: '17.45', height: '4.03', rx: '0.34', ry: '0.34' }),
+	                React.createElement('rect', { className: 'sdg11-2', x: '55.25', y: '9.35', width: '1.54', height: '9.14' }),
+	                React.createElement('rect', { className: 'sdg11-2', x: '88.8', y: '9.35', width: '1.53', height: '9.14' }),
+	                React.createElement('rect', { className: 'sdg11-2', x: '95.61', y: '9.35', width: '1.53', height: '9.14' }),
+	                React.createElement('rect', { className: 'sdg11-2', x: '84.45', y: '22.76', width: '1.54', height: '9.14' }),
+	                React.createElement('rect', { className: 'sdg11-2', x: '91.75', y: '22.76', width: '1.54', height: '9.14' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M19.23,85.09H36a.41.41,0,0,0,.3-.69l0,0L28,73.55l-.08-.09a.41.41,0,0,0-.3-.13.42.42,0,0,0-.27.11l-.05.06-.08.09L19,84.29l-.13.15a.41.41,0,0,0-.07.23A.41.41,0,0,0,19.23,85.09Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M36,86.61H19.14a.41.41,0,0,0-.41.41v13.18a.41.41,0,0,0,.41.41h5.42V92.33a.41.41,0,0,1,.41-.41h5a.41.41,0,0,1,.41.41v8.29H36a.41.41,0,0,0,.41-.41V87A.41.41,0,0,0,36,86.61Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M94.21,83.16H77.53a.4.4,0,0,0-.41.4V100.4a.4.4,0,0,0,.41.4H94.21a.4.4,0,0,0,.41-.4V83.56a.4.4,0,0,0-.41-.4m-9.12,11a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Zm0-5.59a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Zm7.61,5.59a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Zm0-5.59a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M55.45,44.09H39.13a.4.4,0,0,0-.4.4v55.76a.4.4,0,0,0,.4.4H55.45a.4.4,0,0,0,.4-.4V44.49a.4.4,0,0,0-.4-.4M45.74,94.29a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V90.13a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V80.57a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V71a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V61.45a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V51.89a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm7.33,38.24a.22.22,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V90.13a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Zm0-9.56a.21.21,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V80.57a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Zm0-9.56a.22.22,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V71a.21.21,0,0,1,.21-.21h3.73a.22.22,0,0,1,.22.21Zm0-9.56a.22.22,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V61.45a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Zm0-9.56a.21.21,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V51.89a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M75.16,54.62a.43.43,0,0,0-.41-.31.42.42,0,0,0-.23.08l0,0-.14.17-16,20.34-.07.1a.46.46,0,0,0-.14.32v25a.4.4,0,0,0,.4.4H74.8a.4.4,0,0,0,.4-.4V54.78A.4.4,0,0,0,75.16,54.62Zm-6.75,11,.11-.14c1.1-1.41,2.95-3.68,3.85-4.79l.12-.14a.47.47,0,0,1,.36-.17.46.46,0,0,1,.44.37v5.15a.46.46,0,0,1-.44.46H68.76a.46.46,0,0,1-.35-.73ZM65.87,94.15a.4.4,0,0,1-.4.4H60.61a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4h4.86a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H60.61a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4h4.86a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H60.61a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4h4.86a.4.4,0,0,1,.4.4Zm0-12.33v6.71a.4.4,0,0,1-.4.4H60.62a.4.4,0,0,1-.4-.4v-.84a.45.45,0,0,1,0-.15l0,0,0-.05,0-.06c.62-.89,3.43-4.34,4.6-5.79l.12-.14a.47.47,0,0,1,.36-.17.46.46,0,0,1,.44.37ZM73.3,94.15a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.63a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.63a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M32.7,18.6a2,2,0,0,0,2.24-2.14V16a3.07,3.07,0,0,0-1.24-2.37l-1-1c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.76c.48,0,.73.26.73.78v.79h1.4v-.74c0-1.32-.6-2.08-2.14-2.08a1.91,1.91,0,0,0-2.16,2v.31A3.08,3.08,0,0,0,31.82,14l.9.9a1.65,1.65,0,0,1,.69,1.29v.35c0,.49-.22.81-.7.81s-.75-.3-.75-.81V15.3H30.53v1.23A1.9,1.9,0,0,0,32.7,18.6' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M40.06,16.27V9.35H38.65v7.06c0,.54-.22.9-.76.9s-.75-.36-.75-.9V9.35H35.6v6.92a2.06,2.06,0,0,0,2.29,2.33c1.56,0,2.17-.92,2.17-2.33' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M45.25,16.45V16A3.08,3.08,0,0,0,44,13.64l-1-1c-.44-.43-.73-.73-.73-1.24v-.19a.68.68,0,0,1,.73-.76c.49,0,.73.25.73.78v.79h1.4v-.74c0-1.32-.6-2.08-2.14-2.08a1.91,1.91,0,0,0-2.16,2v.31A3.08,3.08,0,0,0,42.14,14l.9.9a1.65,1.65,0,0,1,.69,1.29v.35c0,.48-.21.81-.7.81s-.75-.3-.75-.81V15.3H40.85v1.23A1.9,1.9,0,0,0,43,18.6a2,2,0,0,0,2.24-2.14' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M52.89,9.35H51.14l-1.72,9.14h1.46l.27-1.67h1.63l.28,1.67h1.58Zm-1.55,6.24.6-3.67h0l.61,3.67Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M64.33,16.82H66l.28,1.67h1.58L66.08,9.35H64.33L62.6,18.49h1.46Zm.81-4.89h0l.61,3.67H64.53Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M72.58,12.29v-.93c0-1.29-.51-2-2-2H68.31v9.14H70.7c1.54,0,2.11-.71,2.11-2V15.27a1.39,1.39,0,0,0-1.14-1.52,1.33,1.33,0,0,0,.92-1.46m-2.73-1.68h.53a.65.65,0,0,1,.74.74v1.12a.65.65,0,0,1-.73.74h-.54Zm1.43,5.89a.66.66,0,0,1-.75.74h-.67V14.38h.66c.54,0,.77.26.77.74Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M85.91,18.6c1.63,0,2.17-1,2.17-2.28V14.74h-1.4v1.69c0,.54-.19.89-.74.89s-.78-.39-.78-.94V11.47c0-.55.23-.94.78-.94s.74.32.74.89v1.2h1.4V11.54c0-1.35-.47-2.29-2.17-2.29a2.16,2.16,0,0,0-2.29,2.47v4.42a2.16,2.16,0,0,0,2.29,2.47' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M104.2,12.67c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.76c.49,0,.73.26.73.78v.79h1.4v-.74c0-1.32-.61-2.08-2.14-2.08a1.9,1.9,0,0,0-2.15,2v.31A3.08,3.08,0,0,0,103.31,14l.9.9a1.64,1.64,0,0,1,.69,1.29v.35c0,.49-.21.81-.7.81s-.75-.3-.75-.81V15.3H102v1.23a1.9,1.9,0,0,0,2.17,2.08,2,2,0,0,0,2.24-2.14V16a3.08,3.08,0,0,0-1.24-2.37Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M32.28,22.77,30.55,31.9H32l.27-1.67h1.63l.28,1.67h1.58L34,22.77Zm.2,6.24.6-3.67h0L33.7,29Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M44.36,22.76H42V31.9h2.37c1.64,0,2.22-1.05,2.22-2.45V25.22c0-1.41-.58-2.45-2.22-2.45m.69,7c0,.55-.24.93-.87.93h-.65V24h.65a.8.8,0,0,1,.87.92Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M51.44,22.66a2.16,2.16,0,0,0-2.29,2.47v4.42A2.16,2.16,0,0,0,51.44,32c1.63,0,2.17-1,2.17-2.28V28.16H52.2v1.68c0,.54-.19.89-.74.89s-.78-.39-.78-.94V24.88c0-.55.23-.94.78-.94s.74.32.74.89V26h1.4V24.95c0-1.35-.47-2.29-2.17-2.29' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M56.9,22.66a2.17,2.17,0,0,0-2.32,2.47v4.42a2.33,2.33,0,1,0,4.65,0V25.12a2.18,2.18,0,0,0-2.33-2.47m.79,7.13c0,.55-.24.94-.79.94s-.78-.39-.78-.94V24.88c0-.55.24-.94.78-.94s.79.39.79.94Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M76.57,29.83c0,.54-.21.9-.75.9s-.75-.36-.75-.9V22.77H73.52v6.91A2.06,2.06,0,0,0,75.81,32c1.56,0,2.17-.92,2.17-2.33V22.77H76.57Z' }),
+	                React.createElement('path', { className: 'sdg11-2', d: 'M101,26.08c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.75c.49,0,.73.26.73.78v.8h1.4v-.74c0-1.32-.61-2.08-2.14-2.08a1.91,1.91,0,0,0-2.16,2V25a3.08,3.08,0,0,0,1.28,2.44l.9.9a1.65,1.65,0,0,1,.69,1.29V30c0,.48-.22.81-.7.81s-.75-.3-.75-.81V28.71H98.78v1.23A1.9,1.9,0,0,0,100.95,32a2,2,0,0,0,2.24-2.14v-.45a3.07,3.07,0,0,0-1.24-2.37Z' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '49.7 9.35 45.62 9.35 45.62 10.61 46.89 10.61 46.89 18.49 48.44 18.49 48.44 10.61 49.7 10.61 49.7 9.35' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '62.11 18.49 62.11 9.35 60.83 9.35 60.83 14.59 59.17 9.35 57.66 9.35 57.66 18.49 58.95 18.49 58.95 12.75 60.76 18.49 62.11 18.49' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '74.98 9.35 73.44 9.35 73.44 18.49 76.81 18.49 76.81 17.24 74.98 17.24 74.98 9.35' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '81.04 10.61 81.04 9.35 77.37 9.35 77.37 18.49 81.04 18.49 81.04 17.24 78.91 17.24 78.91 14.46 80.43 14.46 80.43 13.22 78.91 13.22 78.91 10.61 81.04 10.61' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '93.74 18.49 93.74 10.61 95 10.61 95 9.35 90.92 9.35 90.92 10.61 92.19 10.61 92.19 18.49 93.74 18.49' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '97.93 18.49 101.59 18.49 101.59 17.24 99.47 17.24 99.47 14.46 100.99 14.46 100.99 13.22 99.47 13.22 99.47 10.61 101.59 10.61 101.59 9.35 97.93 9.35 97.93 18.49' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '39.7 28.01 38.04 22.77 36.53 22.77 36.53 31.9 37.83 31.9 37.83 26.16 39.63 31.9 40.98 31.9 40.98 22.77 39.7 22.77 39.7 28.01' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '63.04 27.91 63.02 27.91 62.03 22.76 60.24 22.76 60.24 31.9 61.5 31.9 61.5 25.97 61.53 25.97 62.67 31.9 63.39 31.9 64.42 25.97 64.47 25.97 64.47 31.9 65.87 31.9 65.87 22.76 63.93 22.76 63.04 27.91' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '69.68 27.91 69.67 27.91 68.67 22.76 66.88 22.76 66.88 31.9 68.15 31.9 68.15 25.97 68.17 25.97 69.32 31.9 70.03 31.9 71.07 25.97 71.11 25.97 71.11 31.9 72.51 31.9 72.51 22.76 70.57 22.76 69.68 27.91' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '82.16 28.01 80.5 22.77 78.99 22.77 78.99 31.9 80.29 31.9 80.29 26.16 82.09 31.9 83.44 31.9 83.44 22.77 82.16 22.77 82.16 28.01' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '86.82 24.02 88.09 24.02 88.09 31.9 89.64 31.9 89.64 24.02 90.91 24.02 90.91 22.76 86.82 22.76 86.82 24.02' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '94.32 31.9 97.98 31.9 97.98 30.65 95.85 30.65 95.85 27.87 97.38 27.87 97.38 26.63 95.85 26.63 95.85 24.02 97.98 24.02 97.98 22.76 94.32 22.76 94.32 31.9' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'sdg11-2', points: '8.72 13.2 8.72 17.13 8.75 17.13 11.4 14.39 11.43 14.39 11.43 31.55 15.2 31.55 15.2 9.13 12.19 9.13 8.72 13.2' }),
+	                React.createElement('polygon', { className: 'sdg11-2', points: '17.32 13.2 17.32 17.13 17.35 17.13 20 14.39 20.03 14.39 20.03 31.55 23.8 31.55 23.8 9.13 20.79 9.13 17.32 13.2' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 293 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg12.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg12",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG12 Responsible Consumption and Production'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg12-1', x: '-1.55', y: '-1.83', width: '117.41', height: '118.33' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M84.26,57.95A18.33,18.33,0,0,0,70.4,54.54l-.28.06c-2.76.65-7.15,1.73-12.29,8.11l-.09.11-.07.08a.42.42,0,0,0,0,.46l.12.2c.65,1.08,1.46,2.47,2.15,3.75l0,0a.44.44,0,0,0,.39.24.43.43,0,0,0,.3-.12l.09-.13c4.56-6.31,8.15-7.18,10.57-7.75l.29-.07A13.28,13.28,0,0,1,81.09,62c2.7,2.13,4.07,5.52,4.07,10.07,0,7.64-3.71,10.62-6.83,11.79a12.74,12.74,0,0,1-9.49-.63l-.21-.1C66,81.94,62,79.54,58.29,72.05c-7.52-15.1-13.81-16.52-18-17.47l-.22,0a18,18,0,0,0-13.65,3.4c-2.7,2.16-5.92,6.35-5.92,14.07,0,4.71,1,7.81,3.45,11.08.54.74,6.11,7.9,16.88,5.84a16.17,16.17,0,0,0,6.62-3.08L49.85,88a.39.39,0,0,0,.54,0,.36.36,0,0,0,.09-.26v0L52.2,77.15V77a.38.38,0,0,0-.13-.28.35.35,0,0,0-.25-.09h-.18L41.56,79.49l-.18,0a.35.35,0,0,0-.19.11.38.38,0,0,0,0,.55l.12.11,2.26,2a10.51,10.51,0,0,1-3.7,1.56c-7.79,1.49-11.63-3.62-11.78-3.82L28.06,80c-1.81-2.38-2.42-4.4-2.42-8,0-4.57,1.34-8,4-10.07A12.89,12.89,0,0,1,39,59.52l.23.05c3.41.77,8.08,1.83,14.52,14.76C57,81,61.24,85.43,66.51,87.74a18.61,18.61,0,0,0,8,1.86,16,16,0,0,0,5.59-1c3.05-1.14,10.16-5,10.16-16.58,0-7.72-3.27-11.92-6-14.08' }),
+	                React.createElement('path', { className: 'sdg12-3', d: 'M84.26,57.95A18.33,18.33,0,0,0,70.4,54.54l-.28.06c-2.76.65-7.15,1.73-12.29,8.11l-.09.11-.07.08a.42.42,0,0,0,0,.46l.12.2c.65,1.08,1.46,2.47,2.15,3.75l0,0a.44.44,0,0,0,.39.24.43.43,0,0,0,.3-.12l.09-.13c4.56-6.31,8.15-7.18,10.57-7.75l.29-.07A13.28,13.28,0,0,1,81.09,62c2.7,2.13,4.07,5.52,4.07,10.07,0,7.64-3.71,10.62-6.83,11.79a12.74,12.74,0,0,1-9.49-.63l-.21-.1C66,81.94,62,79.54,58.29,72.05c-7.52-15.1-13.81-16.52-18-17.47l-.22,0a18,18,0,0,0-13.65,3.4c-2.7,2.16-5.92,6.35-5.92,14.07,0,4.71,1,7.81,3.45,11.08.54.74,6.11,7.9,16.88,5.84a16.17,16.17,0,0,0,6.62-3.08L49.85,88a.39.39,0,0,0,.54,0,.36.36,0,0,0,.09-.26v0L52.2,77.15V77a.38.38,0,0,0-.13-.28.35.35,0,0,0-.25-.09h-.18L41.56,79.49l-.18,0a.35.35,0,0,0-.19.11.38.38,0,0,0,0,.55l.12.11,2.26,2a10.51,10.51,0,0,1-3.7,1.56c-7.79,1.49-11.63-3.62-11.78-3.82L28.06,80c-1.81-2.38-2.42-4.4-2.42-8,0-4.57,1.34-8,4-10.07A12.89,12.89,0,0,1,39,59.52l.23.05c3.41.77,8.08,1.83,14.52,14.76C57,81,61.24,85.43,66.51,87.74a18.61,18.61,0,0,0,8,1.86,16,16,0,0,0,5.59-1c3.05-1.14,10.16-5,10.16-16.58,0-7.72-3.27-11.92-6-14.08' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M37.54,14.48v4.32H36V9.38h2.3c1.6,0,2.18.79,2.18,2.11V12.7c0,1-.36,1.61-1.26,1.82l1.51,4.28H39Zm0-3.8V13.6h.53a.69.69,0,0,0,.78-.78V11.44c0-.51-.24-.76-.78-.76Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M41.11,9.38h3.78v1.29H42.69v2.69h1.57v1.28H42.69V17.5h2.19v1.29H41.11Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M45.38,16.77V15.5h1.47V16.8c0,.53.24.83.78.83s.72-.33.72-.83v-.36a1.7,1.7,0,0,0-.71-1.33l-.93-.93a3.17,3.17,0,0,1-1.32-2.51v-.32a2,2,0,0,1,2.22-2.07c1.58,0,2.21.78,2.21,2.14v.76H48.38v-.82c0-.54-.25-.81-.75-.81a.69.69,0,0,0-.75.78v.19c0,.53.29.83.75,1.28l1,1a3.16,3.16,0,0,1,1.28,2.44v.46a2,2,0,0,1-2.3,2.21A2,2,0,0,1,45.38,16.77Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M50.56,9.38H52.9c1.6,0,2.18.79,2.18,2.11v2c0,1.32-.58,2.12-2.18,2.12h-.76v3.19H50.56Zm1.58,1.29v3.71h.58a.68.68,0,0,0,.78-.78V11.44c0-.51-.24-.76-.78-.76Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M55.71,16.36V11.81a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V11.56c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S58.92,17.18,58.92,16.61Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M62.54,12.88v5.91H61.2V9.38h1.55l1.71,5.4V9.38h1.32v9.41H64.4Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M66.41,16.77V15.5h1.47V16.8c0,.53.24.83.78.83s.72-.33.72-.83v-.36a1.7,1.7,0,0,0-.71-1.33l-.93-.93a3.17,3.17,0,0,1-1.32-2.51v-.32a2,2,0,0,1,2.22-2.07c1.58,0,2.21.78,2.21,2.14v.76H69.41v-.82c0-.54-.25-.81-.75-.81a.69.69,0,0,0-.75.78v.19c0,.53.29.83.75,1.28l1,1a3.16,3.16,0,0,1,1.28,2.44v.46a2,2,0,0,1-2.31,2.21A2,2,0,0,1,66.41,16.77Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M71.59,9.38h1.58v9.41H71.59Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M73.89,9.38h2.29c1.58,0,2.11.74,2.11,2.07v1a1.37,1.37,0,0,1-.94,1.5,1.43,1.43,0,0,1,1.18,1.57v1.25c0,1.33-.6,2.07-2.18,2.07H73.89Zm1.58,4H76a.67.67,0,0,0,.75-.76V11.44a.67.67,0,0,0-.76-.76h-.54Zm0,1.21V17.5h.69a.68.68,0,0,0,.78-.76V15.32c0-.5-.24-.76-.79-.76Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M79.12,9.38h1.58V17.5h1.89v1.29H79.12Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M83.12,9.38H86.9v1.29H84.7v2.69h1.57v1.28H84.7V17.5H86.9v1.29H83.12Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M36,29.55V25c0-1.47.69-2.54,2.36-2.54s2.24,1,2.24,2.36v1.11H39.11V24.69c0-.58-.19-.92-.76-.92s-.81.4-.81,1V29.8c0,.57.24,1,.81,1s.76-.36.76-.92V28.12h1.44v1.62c0,1.35-.56,2.35-2.24,2.35A2.23,2.23,0,0,1,36,29.55Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M41.22,29.55V25A2.4,2.4,0,1,1,46,25v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V24.75c0-.57-.25-1-.82-1s-.81.4-.81,1V29.8c0,.57.25,1,.81,1S44.42,30.37,44.42,29.8Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M48,26.07V32H46.71V22.57h1.55L50,28v-5.4h1.32V32H49.91Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M51.92,30V28.69h1.47V30c0,.53.24.83.78.83s.72-.33.72-.83v-.36a1.7,1.7,0,0,0-.71-1.33l-.93-.93a3.17,3.17,0,0,1-1.32-2.51v-.32a2,2,0,0,1,2.22-2.07c1.58,0,2.21.78,2.21,2.14v.76H54.92v-.82c0-.54-.25-.81-.75-.81a.69.69,0,0,0-.75.78v.19c0,.53.29.83.75,1.28l1,1a3.16,3.16,0,0,1,1.28,2.44v.46a2,2,0,0,1-2.3,2.21A2,2,0,0,1,51.92,30Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M61.69,22.57v7.12c0,1.46-.62,2.4-2.24,2.4a2.12,2.12,0,0,1-2.36-2.4V22.57h1.58v7.27c0,.56.22.93.78.93s.78-.37.78-.93V22.57Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M66.76,25.87h0L65.65,32h-.74l-1.18-6.11h0V32H62.4V22.57h1.85l1,5.3h0l.92-5.3h2V32H66.76Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M68.91,22.57h2.35c1.6,0,2.18.79,2.18,2.11v2c0,1.32-.58,2.12-2.18,2.12h-.76V32H68.91Zm1.58,1.29v3.71h.58a.68.68,0,0,0,.78-.78V24.62c0-.51-.24-.76-.78-.76Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M73.81,22.57H78v1.29H76.71V32h-1.6V23.86h-1.3Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M78.55,22.57h1.58V32H78.55Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M80.86,29.55V25a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V24.75c0-.57-.25-1-.82-1s-.81.4-.81,1V29.8c0,.57.25,1,.81,1S84.06,30.37,84.06,29.8Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M87.69,26.07V32H86.35V22.57h1.55L89.62,28v-5.4h1.32V32H89.55Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M35.71,45.17l1.78-9.41h1.8l1.79,9.41H39.45l-.29-1.72H37.48l-.28,1.72Zm2-3H39l-.62-3.78h0Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M42.87,39.25v5.91H41.54V35.75h1.55l1.71,5.4v-5.4h1.32v9.41H44.73Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M51.56,38.28v4.36c0,1.44-.6,2.53-2.29,2.53H46.82V35.75h2.44C51,35.75,51.56,36.82,51.56,38.28Zm-2.48,5.6c.65,0,.9-.39.9-1V38a.82.82,0,0,0-.9-.94h-.67v6.83Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M53.53,35.75h2.35c1.6,0,2.18.79,2.18,2.11v2c0,1.32-.58,2.12-2.18,2.12h-.76v3.19H53.53ZM55.11,37v3.71h.58a.68.68,0,0,0,.78-.78V37.81c0-.51-.24-.76-.78-.76Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M60.26,40.85v4.32H58.68V35.75H61c1.6,0,2.18.79,2.18,2.11v1.21c0,1-.36,1.61-1.26,1.82l1.51,4.28H61.74Zm0-3.8V40h.53a.69.69,0,0,0,.78-.78V37.81c0-.51-.24-.76-.78-.76Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M63.83,42.74V38.18a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0ZM67,43V37.93c0-.57-.25-1-.82-1s-.81.4-.81,1V43c0,.57.25,1,.81,1S67,43.56,67,43Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M74.06,38.28v4.36c0,1.44-.6,2.53-2.29,2.53H69.32V35.75h2.44C73.46,35.75,74.06,36.82,74.06,38.28Zm-2.48,5.6c.65,0,.9-.39.9-1V38a.82.82,0,0,0-.9-.94h-.67v6.83Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M79.36,35.75v7.12c0,1.46-.62,2.4-2.24,2.4a2.12,2.12,0,0,1-2.36-2.4V35.75h1.58V43c0,.56.22.93.78.93s.78-.37.78-.93V35.75Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M80.07,42.74V38.18c0-1.47.69-2.54,2.36-2.54s2.24,1,2.24,2.36v1.11H83.22V37.88c0-.58-.19-.92-.76-.92s-.81.4-.81,1V43c0,.57.24,1,.81,1s.76-.36.76-.92V41.31h1.44v1.62c0,1.35-.56,2.35-2.24,2.35A2.23,2.23,0,0,1,80.07,42.74Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M85,35.75h4.21V37H87.91v8.12h-1.6V37H85Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M89.75,35.75h1.58v9.41H89.75Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M92.06,42.74V38.18a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V37.93c0-.57-.25-1-.82-1s-.81.4-.81,1V43c0,.57.25,1,.81,1S95.27,43.56,95.27,43Z' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M98.89,39.25v5.91H97.55V35.75h1.55l1.71,5.4v-5.4h1.32v9.41h-1.39Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'sdg12-2', points: '11.23 14.68 11.26 14.68 11.26 31.91 15.05 31.91 15.05 9.39 12.03 9.39 8.54 13.48 8.54 17.43 8.57 17.43 11.23 14.68' }),
+	                React.createElement('path', { className: 'sdg12-2', d: 'M17.31,14v2.72h3.45V13.94c0-1.36.67-1.76,1.46-1.76s1.36.3,1.36,1.69v1.86c0,1.86-.17,2.59-1.4,3.89l-2.12,2.26c-2.06,2.19-2.82,3.65-2.82,5.88v4.15h9.83V28.82H20.86V27.76a4.3,4.3,0,0,1,1.59-3.45l2.42-2.56c2-2.09,2.39-3.42,2.39-5.68V13.88c0-3.22-1.56-4.75-4.95-4.75s-5,1.76-5,4.92' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 294 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg13.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg13",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG3 Climate Action'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg13-1', x: '-1.92', y: '-3.3', width: '116.31', height: '119.24' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M97.74,70a51.12,51.12,0,0,0-82,0l-.32.46.32.46a51.12,51.12,0,0,0,82,0c.13-.18.23-.33.32-.46L97.74,70M42.9,59.78c.22-.33,1-1.26,1.05-1.38a1.32,1.32,0,0,1,.83-.34c.26-.05.61.1.66.29a2.3,2.3,0,0,1-.23,1.1,2.86,2.86,0,0,1-1.83.83c-.4-.06-.56-.37-.48-.49M42,61.54l.09-.1a2.31,2.31,0,0,1,1.36-.5c.43-.07,1,.14,1.07.43s-1.08.8-1.29,1c-.6.55-1.53,1.67-2.07,1.79a.65.65,0,0,1-.45,0A17.08,17.08,0,0,1,42,61.54m9.27,19a4.91,4.91,0,0,1-1.06,2.21,3.57,3.57,0,0,1-2.35.9c-.78-.06-.89-2.15-.89-3.23,0-.37-.53.73-.8-1.51-.18-1.43-1.1.15-1.16-.81s-.53-.76-1-1.36-1.08.06-1.75.36-.39.45-1.34.15l-.06,0a17.19,17.19,0,0,1-1.36-6.71c0-.58,0-1.16.09-1.72a1,1,0,0,1,.11-.16c.91-1.08.89-1.33.89-1.33l1-.35a16.87,16.87,0,0,1,2.83.71c1,.38,2.57,1.22,3.49.85.66-.27,1.18-.63,1.12-1.19s-.62-.86-1.28-.39c-.24.17-.76-1-1.17-1s.5,1.43.16,1.48-1-1.42-1.16-1.66-.65-.83-1.13-.38c-1,1-2.67.91-3,1.16-1,.76-1.28-.25-1.25-.86l.13-.42a2.06,2.06,0,0,1,1.92-.21c.45.3.77-.08.94-.26a.62.62,0,0,0,0-.7c-.11-.24.22-.42.45-.48a12.14,12.14,0,0,0,1.31-.78,4.3,4.3,0,0,1,2.62,0,1.39,1.39,0,0,0,1.72-.35,4.62,4.62,0,0,1,1.25-1c.25-.12-.62-.92-1.33,0s-1.08,1-1.41,1-2.33-.5-2.57-1.13.62-1.1,1.36-1.46a18,18,0,0,1,3.26-.46c1-.23,2.38-.75,3.05-.3s-2.81,1.24-1.67,1.86c.41.22,2.25-1.06,2.88-1.39,1.48-.77-1.44-1-1.06-2.57.43-1.76-3.58-1.08-5.58-.93a17.24,17.24,0,0,1,26.06,10.5,2.83,2.83,0,0,1-.08.8,1.13,1.13,0,0,1-2,.16c-.17-.25-.91-1-.89.24s1.16,1.32.06,2a4.25,4.25,0,0,1-1.81.73,2.34,2.34,0,0,0-.88,2.07c.12.66,1.7,2.46.53,2.38a6.74,6.74,0,0,1-2.67-2.33c-.36-1-.75-1.89-1-2.6a1,1,0,0,0-1.63-.48c-.61.42.17.84-.27,1.74s-.76,1.7-1.4,1c-1.68-1.93-4.13-1-4.51-3.12-.21-1.16-1.21-1.05-2-1.71s-1.31-1-1.45-.54S56,69.42,56.24,70c.29.83-.83,1.57-1.65,1.77s-1.18-.46-2-1.3S51.45,69,51.4,69.67A3.77,3.77,0,0,0,53,72.53c.7.44,1.48.64,1.25,1.36s0,.31-.79,1.09a2.11,2.11,0,0,0-.88,2.1c.06,1.08-.22,1.14-.39,2s-.56.12-.89,1.43m18.5-6.88c.58,0,1.45.76,1.11,1.07a1.54,1.54,0,0,1-1.64-.15c-.43-.34.27-.9.53-.92m-.73-.53c-.19-.07-.35-.25-.49-.67a.39.39,0,0,1,.56-.49,1.67,1.67,0,0,1,.81,1c0,.28-.7.25-.89.17m-7.61,0A1.56,1.56,0,0,1,59.79,73c-.43-.34.28-.9.53-.92.58-.05,1.45.76,1.11,1.07m-7,3.42c-.24.39-.89,3.29-1.32,3s.18-3.36.3-3.59c.68-1.25,2.15-1.19,1,.64m2.35,11.24a17.26,17.26,0,0,1-4.85-.69.71.71,0,0,1-.21-.84c.53-1.39,2.12-1.94,3.38-2.06,2.8-.27,6.47,1.82,7.06,1.48s1.77-1.87,3.5-1.81a2.72,2.72,0,0,1,1.57.39,17.18,17.18,0,0,1-10.46,3.53m12.16-5a3,3,0,0,1-.54-.2c-.94-.48-.83.29-1.29.12s.52-1.25-.87-.34-1-.14-1.61-1.67A3.13,3.13,0,0,1,66.38,77a21.88,21.88,0,0,1,3.13-.83c2.07-.52,2.51-1.75,2.89-1l.2.4a2.73,2.73,0,0,1,.27,1.12,17.27,17.27,0,0,1-4,6.08M73.63,74c-.46-.13-2.4-2.8-.87-4.57.25-.29-.51-1.14-.3-1.16a1.4,1.4,0,0,1,1.5,1.2c0,.33,0,.66,0,1A17.4,17.4,0,0,1,73.63,74' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M35.66,16.27V11.76c0-1.46.69-2.52,2.34-2.52s2.21,1,2.21,2.34v1.1H38.79V11.46c0-.58-.19-.91-.76-.91s-.8.4-.8,1v5c0,.56.23,1,.8,1s.76-.36.76-.91V14.86h1.43v1.61c0,1.33-.55,2.33-2.21,2.33A2.21,2.21,0,0,1,35.66,16.27Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M41.21,9.35h1.57v8h1.87v1.28H41.21Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M45.49,9.35h1.57v9.33H45.49Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M52.55,12.63h0l-1.06,6.05h-.73l-1.17-6.05h0v6.05H48.23V9.35h1.83l1,5.25h0L52,9.35h2v9.33H52.55Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M54.76,18.68l1.76-9.33h1.79l1.77,9.33H58.48L58.19,17H56.53l-.28,1.71Zm2-3H58L57.36,12h0Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M59.88,9.35H64v1.28H62.75v8H61.17v-8H59.88Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M64.91,9.35h3.74v1.28H66.48V13.3H68v1.27H66.48V17.4h2.17v1.28H64.91Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M35.39,31.9l1.76-9.33h1.79l1.77,9.33H39.1l-.29-1.71H37.15l-.28,1.71Zm2-3h1.25L38,25.2h0Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M41.16,29.49V25c0-1.46.69-2.52,2.34-2.52s2.21,1,2.21,2.34v1.1H44.29V24.68c0-.58-.19-.91-.76-.91s-.8.4-.8,1v5c0,.56.23,1,.8,1s.76-.36.76-.91V28.08h1.43v1.61C45.72,31,45.17,32,43.5,32A2.21,2.21,0,0,1,41.16,29.49Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M46.26,22.58h4.17v1.28H49.14v8H47.56v-8H46.26Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M51.3,22.58h1.57V31.9H51.3Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M53.91,29.49V25a2.38,2.38,0,1,1,4.75,0v4.51a2.38,2.38,0,1,1-4.75,0Zm3.18.25v-5c0-.56-.25-1-.81-1s-.8.4-.8,1v5c0,.56.25,1,.8,1S57.09,30.31,57.09,29.74Z' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M61,26V31.9H59.69V22.58h1.54l1.69,5.35V22.58h1.31V31.9H62.85Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'sdg13-2', points: '17.26 8.49 17.26 30.9 13.49 30.9 13.49 13.75 13.45 13.75 10.81 16.49 10.78 16.49 10.78 12.55 14.25 8.49 17.26 8.49' }),
+	                React.createElement('path', { className: 'sdg13-2', d: 'M29.69,13.35V15.3a3.59,3.59,0,0,1-2.58,3.64c1.88.43,2.78,1.75,2.78,3.8V26c0,3.11-1.65,5.12-5.45,5.12S19.24,29,19.24,25.58V22.64h3.44v3.21c0,1.32.46,2.18,1.75,2.18s1.68-.83,1.68-2v-3.7c0-1.19-.53-1.82-1.85-1.82H22.68V17.61H24.1c1.22,0,2-.63,2-1.82V13.38c0-1.22-.43-2-1.62-2s-1.62.79-1.62,2.18v2.28H19.44v-2c0-3.31,1.36-5.62,5.26-5.62,3.47,0,5,2,5,5.13' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 295 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg14.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg14",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG14 Live Below Water'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg14-1', x: '-2.05', y: '-3.3', width: '116.17', height: '119.24' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M85.75,81.49C84.34,79.59,75.26,68,62.54,68,51.48,68,39.66,78,39.66,78s-4.44-9.09-13.53-10H25.9a.37.37,0,0,0-.35.36,1,1,0,0,0,.14.33c1.17,1.94,4.16,7.48,4.16,13s-3,11.09-4.17,13l-.08.12a.36.36,0,0,0,.28.55h.19c9.11-.85,13.57-10,13.57-10s11.82,10,22.88,10C75.26,95.5,84.34,83.92,85.75,82l.1-.13a.38.38,0,0,0,0-.14.37.37,0,0,0,0-.14l-.1-.13M69.61,83.22a3.71,3.71,0,1,1,3.72-3.72,3.72,3.72,0,0,1-3.72,3.72' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M25.84,46.26l-.07,0a.37.37,0,0,0-.37.37v2.53a.36.36,0,0,0,.11.26c6.14,5.34,12,.34,13.31-1a.34.34,0,0,1,.1-.1.37.37,0,0,1,.2-.07.36.36,0,0,1,.25.1l0,0c6.94,6.62,14.22,1.26,15.73,0l.15-.14a.32.32,0,0,1,.14,0,.34.34,0,0,1,.14,0l.15.14c1.51,1.26,8.79,6.62,15.73,0v0a.35.35,0,0,1,.25-.1.36.36,0,0,1,.2.07.38.38,0,0,1,.1.1c1.35,1.32,7.16,6.32,13.31,1a.37.37,0,0,0,.11-.26V46.61a.36.36,0,0,0-.36-.37l-.08,0-.18.1a11.18,11.18,0,0,1-13.07-1.84l-.15-.15a.39.39,0,0,0-.16,0l-.11,0a.41.41,0,0,0-.19.14c-1.59,1.21-8.86,6.14-15.34.09l-.09-.09a.4.4,0,0,0-.26-.11.39.39,0,0,0-.25.11l-.1.09c-6.48,6-13.76,1.12-15.35-.09a.39.39,0,0,0-.18-.14l-.12,0a.41.41,0,0,0-.15,0l-.16.15A11.18,11.18,0,0,1,26,46.35l-.19-.1' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M38.82,57.64a.39.39,0,0,1,.1-.1.38.38,0,0,1,.2-.07.36.36,0,0,1,.25.1l0,0c6.94,6.61,14.22,1.25,15.73,0l.15-.14.14,0a.4.4,0,0,1,.15,0l.15.14c1.51,1.25,8.79,6.61,15.73,0v0a.35.35,0,0,1,.25-.1.37.37,0,0,1,.2.07.4.4,0,0,1,.1.1c1.34,1.32,7.16,6.33,13.31,1a.36.36,0,0,0,.11-.26V55.83a.36.36,0,0,0-.36-.36l-.08,0-.18.09a11.19,11.19,0,0,1-13.07-1.83l-.15-.15a.3.3,0,0,0-.16,0,.23.23,0,0,0-.11,0,.31.31,0,0,0-.19.14c-1.58,1.21-8.86,6.14-15.35.09l-.09-.09a.37.37,0,0,0-.26-.1.36.36,0,0,0-.25.1l-.1.09c-6.48,6-13.76,1.12-15.35-.09a.3.3,0,0,0-.18-.14l-.12,0a.3.3,0,0,0-.15,0l-.16.15A11.19,11.19,0,0,1,26,55.57l-.19-.09-.07,0a.36.36,0,0,0-.37.36v2.54a.35.35,0,0,0,.11.26c6.15,5.34,12,.34,13.31-1' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M36.47,9.27h1.58v8.12h1.89v1.29H36.47Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M40.67,9.27h1.58v9.41H40.67Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M43.16,9.27h3.71v1.29H44.75v2.69h1.58v1.28H44.75v4.15H43.16Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M47.57,9.27h3.78v1.29H49.15v2.69h1.57v1.28H49.15v2.86h2.19v1.29H47.57Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M36.47,22.46h2.29c1.58,0,2.11.74,2.11,2.07v1a1.37,1.37,0,0,1-.94,1.5,1.43,1.43,0,0,1,1.18,1.57V29.8c0,1.33-.6,2.07-2.18,2.07H36.47Zm1.58,4h.56a.67.67,0,0,0,.75-.76V24.51a.67.67,0,0,0-.76-.76h-.54Zm0,1.21v2.94h.69a.68.68,0,0,0,.78-.76V28.4c0-.5-.24-.76-.79-.76Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M41.9,22.46h3.78v1.29H43.48v2.69h1.57v1.28H43.48v2.86h2.19v1.29H41.9Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M46.52,22.46h1.58v8.12H50v1.29H46.52Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M50.65,29.44V24.89a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V24.64c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S53.85,30.26,53.85,29.69Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M59.61,26.05l-.89,5.82H57.24L56,22.46H57.5l.74,6h0l.79-6h1.29l.87,6h0l.72-6h1.33l-1.22,9.41h-1.5l-.93-5.82Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M68.83,26.05l-.89,5.82H66.45l-1.26-9.41h1.53l.74,6h0l.79-6h1.29l.87,6h0l.72-6h1.33l-1.22,9.41h-1.5l-.93-5.82Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M72.37,31.87l1.78-9.41h1.8l1.79,9.41H76.12l-.29-1.72H74.14l-.28,1.72Zm2-3h1.26L75,25.11h0Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M77.52,22.46h4.21v1.29H80.42v8.12h-1.6V23.75h-1.3Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M82.46,22.46h3.78v1.29H84v2.69h1.57v1.28H84v2.86h2.19v1.29H82.46Z' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M88.66,27.55v4.32H87.08V22.46h2.3c1.6,0,2.18.79,2.18,2.11v1.21c0,1-.36,1.61-1.26,1.82l1.51,4.28H90.15Zm0-3.8v2.93h.53A.69.69,0,0,0,90,25.9V24.51c0-.51-.24-.76-.78-.76Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'sdg14-2', points: '14.55 9.4 14.55 31.91 10.77 31.91 10.77 14.68 10.73 14.68 8.08 17.43 8.04 17.43 8.04 13.48 11.53 9.4 14.55 9.4' }),
+	                React.createElement('path', { className: 'sdg14-2', d: 'M26.08,30.91V27.26H27.6v-3H26.08V8.39H22.36L15.81,24.93v2.33h6.68v3.65ZM19.13,24.3,22.52,15h0V24.3Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 296 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg15.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg15",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG15 Life on Land'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg15-1', x: '-2.55', y: '-3.3', width: '117.67', height: '119.24' }),
+	                React.createElement('rect', { className: 'sdg15-2', x: '42.74', y: '75.57', width: '3.79', height: '8.63', rx: '0.25', ry: '0.25' }),
+	                React.createElement('rect', { className: 'sdg15-2', x: '39.92', y: '9.36', width: '1.54', height: '9.14' }),
+	                React.createElement('path', { className: 'sdg15-2', d: 'M82.45,87.7H28.18a.25.25,0,0,0-.25.26v3.32a.25.25,0,0,0,.25.24H82.45a.25.25,0,0,0,.25-.24V88a.26.26,0,0,0-.25-.26' }),
+	                React.createElement('path', { className: 'sdg15-2', d: 'M82.45,94.29H28.18a.25.25,0,0,0-.25.24v3.33a.25.25,0,0,0,.25.24H82.45a.25.25,0,0,0,.25-.24V94.53a.25.25,0,0,0-.25-.24' }),
+	                React.createElement('path', { className: 'sdg15-2', d: 'M72.12,66.56a8,8,0,0,0-4.69-1.77,6.27,6.27,0,0,0-4.36,1.85.47.47,0,0,0-.15.34v.3a.47.47,0,0,0,.15.37.44.44,0,0,0,.38.09l.1,0a.73.73,0,0,0,.27-.17A4.38,4.38,0,0,1,66,67.09a8.21,8.21,0,0,1,5.59,2.34l.05,0a.65.65,0,0,0,.47.2.64.64,0,0,0,.46-.19l0,0a8.24,8.24,0,0,1,5.6-2.35,4.39,4.39,0,0,1,2.18.45.8.8,0,0,0,.3.18.67.67,0,0,0,.32,0,.47.47,0,0,0,.34-.45V67a.47.47,0,0,0-.15-.34,6.29,6.29,0,0,0-4.41-1.9,8,8,0,0,0-4.69,1.77' }),
+	                React.createElement('path', { className: 'sdg15-2', d: 'M68.75,44.93a.45.45,0,0,0-.24.29l-.05.18a.46.46,0,0,0,.07.41.45.45,0,0,0,.34.18h.07a.59.59,0,0,0,.26-.07,1.37,1.37,0,0,1,.33,0,4.71,4.71,0,0,1,3.88,2.53l0,0a.56.56,0,0,0,.35.28l.17,0a.58.58,0,0,0,.27-.07l0,0a5.41,5.41,0,0,1,2.42-.6,3.69,3.69,0,0,1,2.47.79.63.63,0,0,0,.18.2l.18.08h.13a.47.47,0,0,0,.22-.05.46.46,0,0,0,.23-.28l0-.16a.42.42,0,0,0,0-.13.44.44,0,0,0-.06-.23A4.08,4.08,0,0,0,76.4,46.1a5.79,5.79,0,0,0-2,.37,4.74,4.74,0,0,0-3.66-2.05,4.51,4.51,0,0,0-2,.52' }),
+	                React.createElement('path', { className: 'sdg15-2', d: 'M57.29,53.28l0,.24a.46.46,0,0,0,.58.42l.08,0a.59.59,0,0,0,.23-.17,4,4,0,0,1,2.07-.47,6.71,6.71,0,0,1,4.29,1.62l0,0a.64.64,0,0,0,.42.16h0a.63.63,0,0,0,.43-.2l0,0a6.52,6.52,0,0,1,4.76-2.2,3.23,3.23,0,0,1,1.41.26.71.71,0,0,0,.28.15.63.63,0,0,0,.2,0l.11,0a.46.46,0,0,0,.31-.47v-.21a.46.46,0,0,0-.16-.32,5.32,5.32,0,0,0-3.47-1.37,6.47,6.47,0,0,0-4.06,1.68,6.78,6.78,0,0,0-3.62-1.2,5.18,5.18,0,0,0-3.85,1.78.48.48,0,0,0-.13.35' }),
+	                React.createElement('path', { className: 'sdg15-2', d: 'M29.82,57.64a5.88,5.88,0,0,1,5.88-5.88l.38,0a8,8,0,1,1,15.09,4.07,8.89,8.89,0,0,1-1.93,17.58l-11.87-.07h0a6.29,6.29,0,0,1-4.58-10.61A5.88,5.88,0,0,1,29.82,57.64Z' }),
+	                React.createElement('path', { className: 'sdg15-2', d: 'M35.71,29.54v-4.4a2.32,2.32,0,1,1,4.63,0v4.4a2.32,2.32,0,1,1-4.63,0m3.1.24V24.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.89c0,.55.24.94.78.94s.79-.39.79-.94' }),
+	                React.createElement('path', { className: 'sdg15-2', d: 'M52.77,31.89l1.72-9.1h1.75L58,31.89H56.39l-.28-1.66H54.48l-.27,1.66ZM54.69,29h1.22l-.6-3.65h0Z' }),
+	                React.createElement('path', { className: 'sdg15-2', d: 'M68.59,25.23v4.22c0,1.4-.58,2.44-2.22,2.44H64v-9.1h2.36c1.64,0,2.22,1,2.22,2.44m-2.4,5.41c.63,0,.87-.38.87-.93V25a.8.8,0,0,0-.87-.91h-.65v6.61Z' }),
+	                React.createElement('polygon', { className: 'sdg15-2', points: '35.72 9.36 35.72 18.5 39.09 18.5 39.09 17.24 37.25 17.24 37.25 9.36 35.72 9.36' }),
+	                React.createElement('polygon', { className: 'sdg15-2', points: '42.47 18.5 44 18.5 44 14.46 45.54 14.46 45.54 13.22 44 13.22 44 10.61 46.06 10.61 46.06 9.36 42.47 9.36 42.47 18.5' }),
+	                React.createElement('polygon', { className: 'sdg15-2', points: '46.87 18.5 50.54 18.5 50.54 17.24 48.41 17.24 48.41 14.46 49.93 14.46 49.93 13.22 48.41 13.22 48.41 10.61 50.54 10.61 50.54 9.36 46.87 9.36 46.87 18.5' }),
+	                React.createElement('polygon', { className: 'sdg15-2', points: '42.5 26.17 42.5 31.89 41.21 31.89 41.21 22.79 42.71 22.79 44.36 28.01 44.36 22.79 45.64 22.79 45.64 31.89 44.3 31.89 42.5 26.17' }),
+	                React.createElement('polygon', { className: 'sdg15-2', points: '48.96 22.79 50.49 22.79 50.49 30.64 52.31 30.64 52.31 31.89 48.96 31.89 48.96 22.79' }),
+	                React.createElement('polygon', { className: 'sdg15-2', points: '59.88 26.17 59.88 31.89 58.59 31.89 58.59 22.79 60.09 22.79 61.74 28.01 61.74 22.79 63.02 22.79 63.02 31.89 61.68 31.89 59.88 26.17' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'sdg15-2', points: '10.13 12.54 10.13 16.47 10.16 16.47 12.8 13.73 12.84 13.73 12.84 30.89 16.61 30.89 16.61 8.47 13.6 8.47 10.13 12.54' }),
+	                React.createElement('path', { className: 'sdg15-2', d: 'M25.57,15.58a3.4,3.4,0,0,0-3.17,1.55h0V11.55h6.48V8.47H18.92V21.1h3.44v-.5c0-1.32.6-2,1.65-2s1.62.79,1.62,2V26c0,1.19-.43,2-1.59,2s-1.75-.86-1.75-2.18V23H18.86v2.55c0,3.41,1.36,5.59,5.19,5.59s5.36-2,5.36-5.13V20.54c0-3.54-1.82-5-3.84-5' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 297 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg16.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg16",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG16 Peace, Justice and Strong Institutions'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg16-1', x: '-0.95', y: '-3.3', width: '118.19', height: '119.24' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M80.18,50a4.22,4.22,0,0,0-.81,3,4.22,4.22,0,0,0,2,2.35,4.21,4.21,0,0,0,.81-3,4.21,4.21,0,0,0-2-2.35' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M78.32,58.64a4.22,4.22,0,0,0,.81-3,4.21,4.21,0,0,0-2-2.35,4.21,4.21,0,0,0-.81,3,4.22,4.22,0,0,0,2,2.35' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M83,57a3.75,3.75,0,0,0,2.57,1.09A3.91,3.91,0,0,0,88,56.58a3.75,3.75,0,0,0-2.57-1.09A3.92,3.92,0,0,0,83,57' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M85,50.53a4.53,4.53,0,0,0-1,3.13,4.33,4.33,0,0,0,3.08-1,4.53,4.53,0,0,0,1-3.13,4.33,4.33,0,0,0-3.08,1' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M82.52,61.52a3.91,3.91,0,0,0,2.65-1,3.75,3.75,0,0,0-2.3-1.6,3.92,3.92,0,0,0-2.65,1,3.75,3.75,0,0,0,2.3,1.59' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M83.74,83.48H73.53a1.44,1.44,0,1,0,0,2.89H83.74a1.44,1.44,0,0,0,0-2.89' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M83.74,99.41H73.53a1.44,1.44,0,1,0,0,2.89H83.74a1.44,1.44,0,0,0,0-2.89' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M37.81,80a6.36,6.36,0,0,0-.71-.18s.26.08.71.18' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M83.36,87.38H73.9a.82.82,0,0,0-.82.82v2.87l-6.18.68-9-.21V86a24.83,24.83,0,0,0,3.59-.73C70.15,82.85,72,77.44,71.86,72.47s1.43-7,3.76-7.9a10.5,10.5,0,0,1,1.93-.51,15.48,15.48,0,0,0,.83,4.41l.62-.05A14.64,14.64,0,0,1,78.14,64a10.83,10.83,0,0,1,2.06-.06,13.09,13.09,0,0,1-2-1.4c.39-2.4,1.82-3.87,3.29-5.37a17.67,17.67,0,0,0,2.3-2.7l-.51-.33a17.05,17.05,0,0,1-2.23,2.61c-1.43,1.47-2.88,3-3.37,5.35a19.42,19.42,0,0,1-1.49-1.5c-2.14-2.4-4.9-.64-8.83,3s-8.88,3.78-13.71-1.16c-6.37-6.53-11.93-6.49-15.75-6.12,2.61,1.11,3.52,3.55,4.84,9.74,1.38,6.5,4.87,9.44,9.65,9.85-2.21.36-2.79.67-6.34,3.12-2.78,1.92-6.69,1.31-8.27,1,2.91.91,6.35,4,9.44,5a22.83,22.83,0,0,0,5.63,1.15v5.28l-17.12-.37v3.68L66.9,94l6.18.68v2.86a.82.82,0,0,0,.82.82h9.46a.83.83,0,0,0,.82-.82V88.2A.82.82,0,0,0,83.36,87.38Zm-29-1.15c.67,0,1.35,0,2-.05v5.33l-2,0Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M34.88,94.13a1.32,1.32,0,0,1-1.21,1.41h-.73a1.32,1.32,0,0,1-1.21-1.41V91.58a1.32,1.32,0,0,1,1.21-1.41h.73a1.32,1.32,0,0,1,1.21,1.41Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M35.39,9.14h2.37c1.61,0,2.2.8,2.2,2.13v2c0,1.33-.59,2.14-2.2,2.14H37v3.22h-1.6Zm1.6,1.3v3.74h.59a.69.69,0,0,0,.78-.79V11.21c0-.52-.24-.77-.78-.77Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M40.52,9.14h3.81v1.3H42.11v2.72H43.7v1.29H42.11v2.89h2.21v1.3H40.52Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M44.66,18.64l1.79-9.5h1.82l1.81,9.5H48.44l-.29-1.74h-1.7l-.28,1.74Zm2-3h1.27l-.63-3.81h0Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M50.26,16.19V11.59c0-1.48.7-2.56,2.38-2.56s2.25,1,2.25,2.38v1.12H53.44V11.28c0-.59-.2-.92-.77-.92s-.81.41-.81,1v5.1c0,.57.24,1,.81,1s.77-.36.77-.92V14.74H54.9v1.64c0,1.36-.56,2.37-2.25,2.37A2.25,2.25,0,0,1,50.26,16.19Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M55.5,9.14h3.81v1.3H57.1v2.72h1.58v1.29H57.1v2.89h2.21v1.3H55.5Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M61.53,17.24l-.81,2.14h-.9l.2-2.27h1.51Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M67.62,9.14v7.34a2,2,0,0,1-2.2,2.27c-1.65,0-2.1-.91-2.1-2.12V14.74h1.51v1.92c0,.48.17.76.59.76s.6-.28.6-.77V9.14Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M72.89,9.14v7.19c0,1.47-.63,2.42-2.25,2.42a2.14,2.14,0,0,1-2.38-2.42V9.14h1.6v7.34c0,.56.22.94.78.94s.78-.38.78-.94V9.14Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M73.45,16.59V15.32h1.48v1.3c0,.53.24.84.78.84s.73-.34.73-.84v-.36a1.71,1.71,0,0,0-.71-1.34L74.79,14a3.2,3.2,0,0,1-1.33-2.54v-.32A2,2,0,0,1,75.7,9c1.6,0,2.23.78,2.23,2.16V12H76.47v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78v.2c0,.53.29.84.76,1.29l1,1A3.19,3.19,0,0,1,78,16.06v.46a2.06,2.06,0,0,1-2.33,2.23A2,2,0,0,1,73.45,16.59Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M78.21,9.14h4.24v1.3H81.13v8.19H79.52V10.44H78.21Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M82.92,9.14h1.6v9.5h-1.6Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M85.18,16.19V11.59c0-1.48.7-2.56,2.38-2.56s2.25,1,2.25,2.38v1.12H88.36V11.28c0-.59-.2-.92-.77-.92s-.81.41-.81,1v5.1c0,.57.24,1,.81,1s.77-.36.77-.92V14.74h1.46v1.64c0,1.36-.56,2.37-2.25,2.37A2.25,2.25,0,0,1,85.18,16.19Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M90.41,9.14h3.81v1.3H92v2.72h1.58v1.29H92v2.89h2.21v1.3H90.41Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M35.14,31.34l1.79-9.5h1.82l1.81,9.5H38.92l-.29-1.74h-1.7l-.28,1.74Zm2-3h1.27l-.63-3.81h0Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M42.3,25.37v6H41v-9.5h1.57l1.72,5.45V21.84h1.33v9.5h-1.4Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M51,24.39v4.4c0,1.46-.6,2.55-2.31,2.55H46.22v-9.5h2.46C50.39,21.84,51,22.92,51,24.39ZM48.48,30c.66,0,.91-.39.91-1v-5a.83.83,0,0,0-.91-1h-.67V30Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M52.75,29.29V28h1.48v1.3c0,.53.24.84.78.84s.73-.34.73-.84V29A1.71,1.71,0,0,0,55,27.61l-.94-.94a3.2,3.2,0,0,1-1.33-2.54v-.32A2,2,0,0,1,55,21.73c1.6,0,2.23.78,2.23,2.16v.77H55.78v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78V24c0,.53.29.84.76,1.29l1,1a3.19,3.19,0,0,1,1.29,2.47v.46A2.06,2.06,0,0,1,55,31.45,2,2,0,0,1,52.75,29.29Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M57.51,21.84h4.24v1.3H60.44v8.19H58.83V23.14H57.51Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M63.83,27v4.36h-1.6v-9.5h2.33c1.61,0,2.2.8,2.2,2.13v1.22c0,1-.36,1.63-1.28,1.84L67,31.34H65.33Zm0-3.84v3h.53a.69.69,0,0,0,.78-.78v-1.4c0-.52-.24-.77-.78-.77Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M67.36,28.89V24.29a2.42,2.42,0,1,1,4.83,0v4.59a2.42,2.42,0,1,1-4.83,0Zm3.24.25V24c0-.57-.25-1-.83-1s-.81.41-.81,1v5.1c0,.57.25,1,.81,1S70.59,29.71,70.59,29.14Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M74.17,25.37v6H72.83v-9.5H74.4l1.72,5.45V21.84h1.33v9.5h-1.4Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M80.5,26.27h2.27v5.07H81.62v-1a1.44,1.44,0,0,1-1.53,1.15c-1.37,0-2-1.09-2-2.56V24.29a2.25,2.25,0,0,1,2.39-2.56c1.77,0,2.28,1,2.28,2.38V25H81.32V24c0-.59-.22-.92-.8-.92s-.83.41-.83,1v5.1c0,.57.24,1,.78,1s.78-.29.78-.91V27.53H80.5Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M35.39,34.54H37V44h-1.6Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M39,38.07v6H37.65v-9.5h1.57L40.94,40V34.54h1.33V44h-1.4Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M42.83,42V40.72h1.48V42c0,.53.24.84.78.84s.73-.34.73-.84v-.36a1.71,1.71,0,0,0-.71-1.34l-.94-.94a3.2,3.2,0,0,1-1.33-2.54v-.32a2,2,0,0,1,2.24-2.09c1.6,0,2.23.78,2.23,2.16v.77H45.85v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78v.2c0,.53.29.84.76,1.29l1,1a3.19,3.19,0,0,1,1.29,2.47v.46a2.06,2.06,0,0,1-2.33,2.23A2,2,0,0,1,42.83,42Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M47.59,34.54h4.24v1.3H50.52V44H48.9V35.84H47.59Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M52.31,34.54h1.6V44h-1.6Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M54.38,34.54h4.24v1.3H57.3V44H55.69V35.84H54.38Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M63.73,34.54v7.19c0,1.47-.63,2.42-2.25,2.42a2.14,2.14,0,0,1-2.38-2.42V34.54h1.6v7.34c0,.56.22.94.78.94s.78-.38.78-.94V34.54Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M64.19,34.54h4.24v1.3H67.12V44H65.51V35.84H64.19Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M68.91,34.54h1.6V44h-1.6Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M71.16,41.59V37A2.42,2.42,0,1,1,76,37v4.59a2.42,2.42,0,1,1-4.83,0Zm3.24.25v-5.1c0-.57-.25-1-.83-1s-.81.41-.81,1v5.1c0,.57.25,1,.81,1S74.4,42.41,74.4,41.84Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M78,38.07v6H76.64v-9.5h1.57L79.93,40V34.54h1.33V44h-1.4Z' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M81.82,42V40.72H83.3V42c0,.53.24.84.78.84s.73-.34.73-.84v-.36a1.71,1.71,0,0,0-.71-1.34l-.94-.94a3.2,3.2,0,0,1-1.33-2.54v-.32a2,2,0,0,1,2.24-2.09c1.6,0,2.23.78,2.23,2.16v.77H84.84v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78v.2c0,.53.29.84.76,1.29l1,1a3.19,3.19,0,0,1,1.29,2.47v.46a2.06,2.06,0,0,1-2.33,2.23A2,2,0,0,1,81.82,42Z' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'sdg16-2', points: '8.59 12.45 8.59 16.41 8.63 16.41 11.28 13.65 11.32 13.65 11.32 30.89 15.1 30.89 15.1 8.37 12.08 8.37 8.59 12.45' }),
+	                React.createElement('path', { className: 'sdg16-2', d: 'M28.36,25.47V22.15c0-3.69-1.46-5.55-4.18-5.55A3.24,3.24,0,0,0,21,18.43h0V13.58c0-1.36.43-2.33,1.79-2.33s1.76.8,1.76,2.19v1.5H28v-1.2c0-3.32-1.1-5.65-5.28-5.65-4,0-5.48,2.56-5.48,6.08v11c0,3.49,1.53,6,5.51,6s5.58-2.19,5.58-5.68m-3.75.33c0,1.43-.53,2.26-1.83,2.26S21,27.2,21,25.81V21.69c.07-1.26.6-2.06,1.79-2.06s1.79.8,1.79,2.26Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 298 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg17.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg17",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'title',
+	                null,
+	                'SDG17 Partnerships for the Goals'
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'English' },
+	                React.createElement('rect', { className: 'sdg17-1', x: '-2.55', y: '-3.3', width: '118.82', height: '119.24' }),
+	                React.createElement('rect', { className: 'sdg17-2', x: '82.56', y: '9.35', width: '1.54', height: '9.14' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M84.29,67.79a14.57,14.57,0,0,0-14-14.55,14.56,14.56,0,0,0-27.45,0,14.55,14.55,0,0,0-8.4,26,14.55,14.55,0,0,0,22.2,16A14.55,14.55,0,0,0,78.69,79.24a14.54,14.54,0,0,0,5.59-11.46m-16.12-9.7a11.63,11.63,0,0,1-9.91,11.48A11.52,11.52,0,0,1,68,56.3a11.56,11.56,0,0,1,.15,1.79M56.59,91.53A11.59,11.59,0,0,1,56.49,75a11.59,11.59,0,0,1,.11,16.56M45.07,56.3a11.51,11.51,0,0,1,9.76,13.27A11.52,11.52,0,0,1,45.07,56.3M53.73,73A11.58,11.58,0,0,1,38,78.1,11.58,11.58,0,0,1,53.73,73m5.57-.08a11.59,11.59,0,0,1,15.8,5.17,11.59,11.59,0,0,1-15.8-5.17M56.54,46.46a11.64,11.64,0,0,1,10.66,7,14.6,14.6,0,0,0-10.66,8.18,14.59,14.59,0,0,0-10.66-8.18,11.64,11.64,0,0,1,10.66-7M31.73,67.79A11.64,11.64,0,0,1,42.11,56.23,14.78,14.78,0,0,0,42,58.09a14.53,14.53,0,0,0,4.76,10.75A14.59,14.59,0,0,0,35.58,76.4a11.59,11.59,0,0,1-3.85-8.62m5,15.52A11.51,11.51,0,0,1,37,80.89a14.53,14.53,0,0,0,13.36-.37,14.49,14.49,0,0,0,3.86,12.8,11.6,11.6,0,0,1-17.48-10m39.54-.1A11.61,11.61,0,0,1,59,93.3a14.5,14.5,0,0,0,3.73-12.79,14.52,14.52,0,0,0,13.4.37,11.52,11.52,0,0,1,.24,2.32M66.43,68.75A14.52,14.52,0,0,0,71.1,58.09,14.78,14.78,0,0,0,71,56.23a11.61,11.61,0,0,1,6.56,20.15,14.58,14.58,0,0,0-11.1-7.62' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M35.66,9.35h2.28c1.55,0,2.11.77,2.11,2v1.93c0,1.28-.57,2.06-2.11,2.06H37.2v3.1H35.66Zm1.54,1.25v3.6h.56a.66.66,0,0,0,.75-.75v-2.1c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M40.25,18.49,42,9.35h1.75l1.74,9.14H43.88l-.28-1.67H42l-.27,1.67Zm1.93-2.9H43.4l-.61-3.67h0Z' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M47.76,14.3v4.19H46.23V9.35h2.24c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.77l1.47,4.15H49.2Zm0-3.69v2.84h.51A.67.67,0,0,0,49,12.7V11.35c0-.5-.23-.74-.76-.74Z' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M68,14.3v4.19H66.51V9.35h2.24c1.55,0,2.12.77,2.12,2v1.17c0,1-.35,1.56-1.23,1.77l1.47,4.15H69.49Zm0-3.69v2.84h.51a.67.67,0,0,0,.75-.75V11.35c0-.5-.23-.74-.75-.74Z' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M71.63,16.52V15.3h1.43v1.25c0,.51.23.81.75.81s.7-.32.7-.81V16.2a1.65,1.65,0,0,0-.69-1.3l-.9-.9a3.08,3.08,0,0,1-1.28-2.44v-.31a1.91,1.91,0,0,1,2.16-2c1.54,0,2.14.75,2.14,2.08v.74h-1.4v-.8c0-.53-.24-.78-.73-.78a.67.67,0,0,0-.73.76v.19c0,.51.28.81.73,1.24l1,1A3.07,3.07,0,0,1,76,16v.44A2,2,0,0,1,73.8,18.6a1.9,1.9,0,0,1-2.17-2.08' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M85.12,9.35h2.28c1.55,0,2.11.77,2.11,2v1.93c0,1.28-.57,2.06-2.11,2.06h-.74v3.1H85.12Zm1.54,1.25v3.6h.56a.66.66,0,0,0,.76-.75v-2.1c0-.5-.23-.74-.76-.74Z' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M90.11,16.52V15.3h1.43v1.25c0,.51.23.81.76.81s.7-.32.7-.81V16.2a1.65,1.65,0,0,0-.69-1.3l-.9-.9a3.08,3.08,0,0,1-1.28-2.44v-.31a1.91,1.91,0,0,1,2.15-2c1.54,0,2.14.75,2.14,2.08v.74H93v-.8c0-.53-.24-.78-.73-.78a.67.67,0,0,0-.73.76v.19c0,.51.28.81.73,1.24l1,1A3.07,3.07,0,0,1,94.51,16v.44a2,2,0,0,1-2.24,2.14,1.9,1.9,0,0,1-2.17-2.08' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M39.87,29.51V25a2.36,2.36,0,1,1,4.72,0v4.49a2.36,2.36,0,1,1-4.72,0m3.16.25v-5c0-.56-.25-1-.81-1s-.79.4-.79,1v5c0,.56.25,1,.79,1s.81-.4.81-1' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M47.16,27.65v4.25H45.6V22.63h2.27c1.57,0,2.15.78,2.15,2.08V25.9c0,1-.36,1.59-1.25,1.79l1.49,4.21H48.62Zm0-3.75v2.89h.52a.68.68,0,0,0,.77-.77V24.65c0-.51-.23-.75-.77-.75Z' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M71.72,27h2.22v5H72.81v-1A1.4,1.4,0,0,1,71.32,32c-1.34,0-2-1.07-2-2.5V25a2.2,2.2,0,0,1,2.34-2.5c1.72,0,2.23,1,2.23,2.33v.82H72.51v-.94c0-.58-.22-.9-.78-.9s-.81.4-.81,1v5c0,.56.23,1,.77,1s.77-.29.77-.89V28.18h-.74Z' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M74.82,29.51V25a2.36,2.36,0,1,1,4.72,0v4.49a2.36,2.36,0,1,1-4.72,0m3.16.25v-5c0-.56-.25-1-.81-1s-.79.4-.79,1v5c0,.56.25,1,.79,1s.81-.4.81-1' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M80,31.91l1.75-9.28h1.78l1.76,9.28h-1.6l-.29-1.7H81.73l-.27,1.7Zm2-2.94h1.25l-.62-3.72h0Z' }),
+	                React.createElement('path', { className: 'sdg17-2', d: 'M90.15,29.91V28.66H91.6v1.27c0,.52.23.82.76.82s.71-.33.71-.82v-.36a1.68,1.68,0,0,0-.7-1.31l-.92-.92a3.13,3.13,0,0,1-1.3-2.48v-.31a1.93,1.93,0,0,1,2.19-2c1.56,0,2.18.77,2.18,2.11v.75H93.1v-.81c0-.53-.25-.79-.74-.79a.68.68,0,0,0-.74.77v.19c0,.52.29.82.74,1.26l1,1a3.11,3.11,0,0,1,1.26,2.41v.45A2,2,0,0,1,92.35,32a1.93,1.93,0,0,1-2.2-2.11' }),
+	                React.createElement('polygon', { className: 'sdg17-2', points: '51.13 9.35 55.21 9.35 55.21 10.61 53.94 10.61 53.94 18.49 52.39 18.49 52.39 10.61 51.13 10.61 51.13 9.35' }),
+	                React.createElement('polygon', { className: 'sdg17-2', points: '57.48 12.75 57.48 18.49 56.18 18.49 56.18 9.35 57.69 9.35 59.35 14.6 59.35 9.35 60.63 9.35 60.63 18.49 59.28 18.49 57.48 12.75' }),
+	                React.createElement('polygon', { className: 'sdg17-2', points: '61.89 9.35 65.55 9.35 65.55 10.61 63.43 10.61 63.43 13.22 64.95 13.22 64.95 14.46 63.43 14.46 63.43 17.24 65.55 17.24 65.55 18.49 61.89 18.49 61.89 9.35' }),
+	                React.createElement('polygon', { className: 'sdg17-2', points: '80 14.46 78.52 14.46 78.52 18.49 76.98 18.49 76.98 9.35 78.52 9.35 78.52 13.22 80 13.22 80 9.35 81.54 9.35 81.54 18.49 80 18.49 80 14.46' }),
+	                React.createElement('polygon', { className: 'sdg17-2', points: '35.67 22.63 39.32 22.63 39.32 23.9 37.23 23.9 37.23 26.56 38.79 26.56 38.79 27.81 37.23 27.81 37.23 31.91 35.67 31.91 35.67 22.63' }),
+	                React.createElement('polygon', { className: 'sdg17-2', points: '52.49 22.63 56.63 22.63 56.63 23.9 55.35 23.9 55.35 31.91 53.77 31.91 53.77 23.9 52.49 23.9 52.49 22.63' }),
+	                React.createElement('polygon', { className: 'sdg17-2', points: '60.42 27.81 58.92 27.81 58.92 31.91 57.36 31.91 57.36 22.63 58.92 22.63 58.92 26.56 60.42 26.56 60.42 22.63 62 22.63 62 31.91 60.42 31.91 60.42 27.81' }),
+	                React.createElement('polygon', { className: 'sdg17-2', points: '63.01 22.63 66.73 22.63 66.73 23.9 64.57 23.9 64.57 26.56 66.12 26.56 66.12 27.81 64.57 27.81 64.57 30.63 66.73 30.63 66.73 31.91 63.01 31.91 63.01 22.63' }),
+	                React.createElement('polygon', { className: 'sdg17-2', points: '86.17 22.63 87.73 22.63 87.73 30.63 89.59 30.63 89.59 31.91 86.17 31.91 86.17 22.63' })
+	            ),
+	            React.createElement(
+	                'g',
+	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
+	                React.createElement('polygon', { className: 'sdg17-2', points: '17.39 8.48 17.39 30.9 13.62 30.9 13.62 13.74 13.59 13.74 10.94 16.48 10.91 16.48 10.91 12.55 14.38 8.48 17.39 8.48' }),
+	                React.createElement('polygon', { className: 'sdg17-2', points: '19.11 8.48 28.57 8.48 28.57 11.95 23.64 30.9 19.91 30.9 24.93 11.56 19.11 11.56 19.11 8.48' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 299 */
+/*!********************************************************************!*\
+  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg18.svg ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 175)(__webpack_require__(/*! react-dom */ 158));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Sdg18",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "id": "English", "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.83 111.66" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'defs',
+	                null,
+	                React.createElement(
+	                    'style',
+	                    null,
+	                    '.cls-1{fill:#f2f2f2;}.cls-2{fill:#29abe2;}.cls-3{fill:#3e8ede;}.cls-4{fill:#5fba47;}.cls-5{fill:#e4b632;}.cls-6{fill:#c4202f;}.cls-7{fill:#4b9f46;}.cls-8{fill:#418045;}.cls-9{fill:#f8c219;}.cls-10{fill:#ee422a;}.cls-11{fill:#f99e29;}.cls-12{fill:#1d95d3;}.cls-13{fill:#a21c44;}.cls-14{fill:#29bce1;}.cls-15{fill:#f16b2d;}.cls-16{fill:#e6253d;}.cls-17{fill:#dc1769;}.cls-18{fill:#16496b;}.cls-19{fill:#c5962e;}.cls-20{fill:#086a9d;}'
+	                )
+	            ),
+	            React.createElement(
+	                'title',
+	                null,
+	                'Artboard 26'
+	            ),
+	            React.createElement('rect', { className: 'cls-1', x: '-1.16', y: '-3.33', width: '117.02', height: '119.16' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M6.62,59.53H10.2c3.22,0,5.3,2.22,5.3,5.48v.14c0,3.25-2.08,5.49-5.3,5.49H6.62Zm2.3,2.08v7h1.27c1.75,0,2.94-1.22,2.94-3.43V65c0-2.21-1.19-3.44-2.94-3.44Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M16.72,59.53h7.16V61.6H19V64H23.3v2.08H19v2.48h4.94v2.08H16.72Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M24.33,59.53h2.49l2.35,7.65,2.35-7.65h2.43L30.2,70.7H28.07Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M34.74,59.53h7.16V61.6H37V64h4.29v2.08H37v2.48H42v2.08H34.74Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M43.18,59.53h2.3v9H50v2.11H43.18Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M50,65.19V65c0-3.33,2.1-5.67,5-5.67s5,2.32,5,5.63v.19c0,3.32-2.09,5.67-5,5.67S50,68.51,50,65.19Zm7.67,0V65c0-2.19-1.11-3.57-2.65-3.57S52.32,62.83,52.32,65v.11c0,2.19,1.13,3.57,2.67,3.57S57.62,67.33,57.62,65.14Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M61.24,59.53h3.7C67.43,59.53,69,61,69,63.33v0c0,2.56-1.83,3.84-4.16,3.89h-1.3v3.38h-2.3Zm3.59,5.67a1.7,1.7,0,0,0,1.86-1.78v0a1.66,1.66,0,0,0-1.89-1.79H63.54v3.59Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M69.92,59.53h2.41L74.81,64l2.44-4.51h2.43V70.63H77.43V63.54l-2.62,4.59h0l-2.6-4.55v7.06H69.92Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M81.31,59.53h7.16V61.6H83.6V64h4.29v2.08H83.6v2.48h4.94v2.08H81.31Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M89.75,59.53h2.11L96.12,66V59.53h2.25V70.63h-2L92,63.92v6.71H89.75Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M102.13,61.65H99.34V59.53h7.87v2.13h-2.79v9h-2.29Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M5.81,54.29l1.5-1.86a4.68,4.68,0,0,0,3,1.38c1,0,1.57-.49,1.57-1.2v0c0-.61-.35-1-2.09-1.65-2.16-.84-3.5-1.65-3.5-3.74v0c0-2.12,1.64-3.57,4-3.57a5.8,5.8,0,0,1,3.93,1.5L12.82,47a4.26,4.26,0,0,0-2.59-1.13c-.87,0-1.41.44-1.41,1.06v0c0,.7.42,1,2.31,1.81,2.12.84,3.27,1.74,3.27,3.64v0c0,2.26-1.72,3.66-4.09,3.66A6.54,6.54,0,0,1,5.81,54.29Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M15.47,51.19V43.74H18v7.47c0,1.72.82,2.58,2.12,2.58s2.12-.84,2.12-2.52V43.74h2.51v7.4c0,3.36-1.85,5-4.66,5S15.47,54.48,15.47,51.19Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M25.49,54.29,27,52.42a4.68,4.68,0,0,0,3,1.38c1,0,1.57-.49,1.57-1.2v0c0-.61-.35-1-2.09-1.65-2.16-.84-3.5-1.65-3.5-3.74v0c0-2.12,1.64-3.57,4-3.57a5.79,5.79,0,0,1,3.93,1.5L32.5,47a4.26,4.26,0,0,0-2.59-1.13c-.87,0-1.41.44-1.41,1.06v0c0,.7.42,1,2.31,1.81,2.12.84,3.27,1.74,3.27,3.64v0c0,2.26-1.72,3.66-4.09,3.66A6.54,6.54,0,0,1,25.49,54.29Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M37.38,46.07H34.31V43.74h8.63v2.33H39.88v9.85H37.38Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M46.2,43.67h2.4L53,55.92H50.36l-.9-2.65H45.26l-.89,2.65H41.83ZM48.69,51l-1.32-4L46,51Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M53.93,43.74h2.52V55.92H53.93Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M58.33,43.74h2.31l4.66,7.1v-7.1h2.47V55.92H65.62L60.8,48.56v7.36H58.33Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M73,43.67h2.4l4.37,12.25H77.18l-.9-2.65H72.08l-.89,2.65H68.65ZM75.51,51l-1.32-4-1.34,4Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M80.66,43.74h4.53a4.45,4.45,0,0,1,3.18,1.06,2.82,2.82,0,0,1,.82,2.07v.05a2.85,2.85,0,0,1-1.65,2.66,2.9,2.9,0,0,1,2.18,2.91v.09c0,2.19-1.76,3.34-4.4,3.34H80.66Zm6,3.59c0-.89-.63-1.36-1.71-1.36H83.11v2.75h1.76c1.11,0,1.83-.45,1.83-1.38Zm-1.37,3.52H83.11v2.85h2.26c1.13,0,1.85-.49,1.85-1.43v0C87.22,51.38,86.58,50.84,85.32,50.84Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M90.89,43.74h2.52v9.87h4.93v2.31H90.89Z' }),
+	            React.createElement('path', { className: 'cls-2', d: 'M99.39,43.74h7.85V46h-5.34v2.63h4.7v2.28h-4.7v2.72h5.41v2.28H99.39Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M16.81,84.81H27.94c-.19,8.94-5.13,13.43-11.77,13.43-7.15,0-11.73-6-11.73-12.5S9,73.24,16.17,73.24c7.92,0,10.1,4.94,11,7.5l-5,.32c-.87-2.12-2.6-3.53-6-3.53-3.78,0-6.73,3.08-6.73,8.21,0,4.33,2.72,8.21,7.05,8.21a6,6,0,0,0,6.09-5H16.81Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M67.68,92.76H58.87l-1.57,5H52.1l8.78-24.11H66L74.61,97.8H69.32ZM62.83,79.49h-.06l-3,9.36H65.9Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M75.47,73.76h4.8V93.32h9.24V97.8h-14Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M103,80.09c0-1.66-1.6-2.69-3.52-2.69-2.4,0-3.84,1.05-3.84,2.65s1.6,2.46,2.78,2.85l4.41,1.41c3.2,1,5.47,2.88,5.47,6.59,0,2.94-2.11,7.35-8.76,7.35-8.35,0-9.11-5.4-9.11-7.55l4.8-.1c0,2.56,2,3.55,4.35,3.55,1.63,0,3.93-.8,3.93-2.65,0-1.28-.54-2-2.91-2.81L95.33,86.8a6.52,6.52,0,0,1-4.51-6c0-3.07,2.11-7.48,8.35-7.48,7.42,0,8.6,4.92,8.6,6.68Z' }),
+	            React.createElement('path', { className: 'cls-4', d: 'M35.61,82.79a6.74,6.74,0,0,1,1.06-1.37L33.18,77.6A11.94,11.94,0,0,0,31,80.48Z' }),
+	            React.createElement('path', { className: 'cls-5', d: 'M44.15,80.09a6.65,6.65,0,0,1,1.46.92l3.5-3.82A11.91,11.91,0,0,0,46,75.25Z' }),
+	            React.createElement('path', { className: 'cls-6', d: 'M52.16,81.24l-4.64,2.31A6.63,6.63,0,0,1,48,85.18l5.16-.49a11.76,11.76,0,0,0-1-3.46' }),
+	            React.createElement('path', { className: 'cls-7', d: 'M47.2,82.88l4.63-2.31a11.92,11.92,0,0,0-2.17-2.88l-3.5,3.82a6.71,6.71,0,0,1,1,1.37' }),
+	            React.createElement('path', { className: 'cls-8', d: 'M34.68,86.17c0-.1,0-.21,0-.31l-5.16-.46c0,.26,0,.51,0,.77A11.89,11.89,0,0,0,29.86,89l5-1.43a6.7,6.7,0,0,1-.16-1.44' }),
+	            React.createElement('path', { className: 'cls-9', d: 'M46.55,90.41a6.77,6.77,0,0,1-1.26,1.18L48,96a12,12,0,0,0,2.67-2.48Z' }),
+	            React.createElement('path', { className: 'cls-10', d: 'M48.06,86.17a6.61,6.61,0,0,1-.15,1.42l5,1.43a11.83,11.83,0,0,0,.35-2.85q0-.37,0-.73l-5.16.49c0,.08,0,.16,0,.24' }),
+	            React.createElement('path', { className: 'cls-11', d: 'M36.29,90.51l-4.12,3.13a12,12,0,0,0,2.69,2.44l2.72-4.4a6.76,6.76,0,0,1-1.29-1.17' }),
+	            React.createElement('path', { className: 'cls-12', d: 'M34.77,85.11a6.61,6.61,0,0,1,.49-1.66l-4.63-2.31a11.79,11.79,0,0,0-1,3.51Z' }),
+	            React.createElement('path', { className: 'cls-13', d: 'M47.38,96.4,44.66,92a6.66,6.66,0,0,1-1.59.64l1,5.09a11.78,11.78,0,0,0,3.35-1.34' }),
+	            React.createElement('path', { className: 'cls-14', d: 'M47.71,88.32A6.69,6.69,0,0,1,47,89.81l4.14,3.12a11.82,11.82,0,0,0,1.57-3.18Z' }),
+	            React.createElement('path', { className: 'cls-15', d: 'M42.34,92.79a6.63,6.63,0,0,1-1.74,0l-1,5.09a11.92,11.92,0,0,0,3.66,0Z' }),
+	            React.createElement('path', { className: 'cls-16', d: 'M41.8,79.49a6.63,6.63,0,0,1,1.66.32L45.32,75a11.79,11.79,0,0,0-3.52-.67Z' }),
+	            React.createElement('path', { className: 'cls-17', d: 'M39.86,92.69a6.64,6.64,0,0,1-1.64-.62l-2.72,4.41a11.82,11.82,0,0,0,3.41,1.3Z' }),
+	            React.createElement('path', { className: 'cls-18', d: 'M39.36,79.79a6.63,6.63,0,0,1,1.69-.3V74.31a11.81,11.81,0,0,0-3.56.65Z' }),
+	            React.createElement('path', { className: 'cls-19', d: 'M35.83,89.91A6.65,6.65,0,0,1,35,88.33l-5,1.43A11.82,11.82,0,0,0,31.71,93Z' }),
+	            React.createElement('path', { className: 'cls-20', d: 'M37.23,80.92a6.7,6.7,0,0,1,1.43-.87l-1.87-4.83a11.87,11.87,0,0,0-3.05,1.87Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M64.82,22.42a9.39,9.39,0,0,1,.62,6.66,9.56,9.56,0,0,1-14.51,5.38A9.55,9.55,0,0,1,52,18a10,10,0,0,1,4.31-1A9.52,9.52,0,0,1,64.82,22.42Zm-8.34-4.94a6.64,6.64,0,0,1,0,1.31.2.2,0,0,1,0-.11c.07,0,.12,0,.15.07s0,.18,0,.22.09,0,.14,0a7.07,7.07,0,0,1,3,.91v0c.18-.09.42-.21.61,0,.23-.09.27.19.45.23a1,1,0,0,1,.5.64c0,.09.18.15.19.24a3.64,3.64,0,0,1,.72-.83l.16-.07a8.83,8.83,0,0,0-5-2.38A7.34,7.34,0,0,1,56.48,17.48Zm-.53,0a9.21,9.21,0,0,0-5.09,1.8c-.29.2-.54.5-.84.67h0a8.09,8.09,0,0,1,1,1l0-.07a7.51,7.51,0,0,1,4.84-2l0-.11V17.66Zm1.62.72-.68.29c-.06,0-.17-.05-.2,0s0,.06,0,.08c.25.32.69.14,1,.08a.6.6,0,0,0,.62-.16v0A1,1,0,0,0,57.57,18.24Zm-1.1,1.17,0,.09c0,.44,0,.91,0,1.32a1.5,1.5,0,0,1,.54,0,5.55,5.55,0,0,1,2.55,1,.68.68,0,0,1-.22-.34.05.05,0,0,1,.06,0c0-.15-.15-.22-.17-.36a.1.1,0,0,1,.1,0,3.06,3.06,0,0,1,.42.49c.1,0,.19,0,.27.08s.05.26.16.35c0,.28.36.44.34.71,0,.07.09,0,.11,0l.28.35a.14.14,0,0,0,0,.19c.13.06.2-.1.33-.08s0,.23,0,.34.16-.06.22,0-.09.17-.13.24.09.08.16.1a.13.13,0,0,1,.11.17c.24.25-.07.51,0,.77a.45.45,0,0,1-.12.46c0,.21-.18.34-.26.51l-.24,0c-.13.13.11.28,0,.36h.53l-.06-.06a.78.78,0,0,1,.07-.67,1.52,1.52,0,0,1,.25-.52S62,25,62,25a1,1,0,0,1-.08.49,1.45,1.45,0,0,1,.15.77c.47,0,.93,0,1.39,0l0-.09a6.8,6.8,0,0,0-.62-2.45c-.1,0-.17.09-.28.06a.09.09,0,0,1-.06-.09,6.7,6.7,0,0,0-.52-.58c-.24,0-.35-.26-.57-.28s-.06-.39-.34-.31a.46.46,0,0,1-.3-.32.78.78,0,0,0-.27-.67c-.17-.06-.24.17-.41.13s-.05-.17-.08-.25-.11-.12-.1-.22c.22-.29-.27-.29-.16-.58s-.24-.29-.35-.45a7.68,7.68,0,0,0-2.3-.66A1.59,1.59,0,0,1,56.47,19.41Zm4.28,0c-.1.09-.18-.09-.27,0a.19.19,0,0,0,0,.14c.2.07.22.36.48.29.08-.09,0-.18,0-.28A.28.28,0,0,0,60.75,19.42Zm-8.5,1.27c-.29.2-.56.47-.87.65a7.6,7.6,0,0,1,1,.89l0,.09a5.68,5.68,0,0,1,2.84-1.44,2.51,2.51,0,0,1,.75-.06,9.35,9.35,0,0,1,0-1.36A7.28,7.28,0,0,0,52.26,20.69Zm10.52-.43a10.92,10.92,0,0,1-.94,1l-.16,0c.1,0,.13.14.19.21.35.18.44.55.74.76s.56.63.58,1a7.51,7.51,0,0,1,.72,2.94l0,.06a.2.2,0,0,0,.11,0l1.36,0c-.09-.13-.05-.33-.08-.49A9.36,9.36,0,0,0,62.78,20.26Zm-13,0a9.31,9.31,0,0,0-2.42,5.17c-.05.28,0,.58-.08.87a9.45,9.45,0,0,1,1.46,0l0-.18a7.7,7.7,0,0,1,1.42-4.06,3.9,3.9,0,0,1,.63-.72c-.31-.29-.63-.62-1-.94Zm6.23,1-.08,0a5.53,5.53,0,0,0-3.16,1.34,12.69,12.69,0,0,1,1,.94l.07-.1a4.34,4.34,0,0,1,1.44-.75,2.15,2.15,0,0,1,.71-.08A6.26,6.26,0,0,1,56,21.28Zm.5,0,0,.1v1.28l.12,0a4.16,4.16,0,0,1,2.13.87l0,.1c.21-.3.53-.55.79-.84l.24-.14-.11,0a5.52,5.52,0,0,0-1.7-1A8.38,8.38,0,0,0,56.48,21.29ZM51,21.65v.09l-.51.65a7.55,7.55,0,0,0-1.35,3.93l1.3,0,.12,0c-.05,0,0-.09-.06-.14A5.71,5.71,0,0,1,52,22.65,9.5,9.5,0,0,1,51,21.65ZM60.11,23l0,.06c-.44.45-.91.92-1.33,1.39a.33.33,0,0,0,.13.14c0-.11.08-.21.09-.33s.28-.06.43,0a3.23,3.23,0,0,1,.67,0c.17.09.18.3.34.39a.13.13,0,0,1,0,.18c0,.35.22-.09.4,0s.17,0,.23.1.21.12.22.26-.09.09-.14.13-.15.23-.08.38c.27.05.28-.27.41-.41a2.55,2.55,0,0,0-.27-.71c-.16,0-.25-.22-.41-.25s0-.31,0-.49A5.69,5.69,0,0,0,60.11,23Zm-7.7,0a5.58,5.58,0,0,0-1.27,2.62,4.31,4.31,0,0,1-.11.71,1.19,1.19,0,0,1,.59,0c-.11-.06,0-.19-.08-.27s0-.27.08-.34.19-.29.21-.47.28-.07.39-.17,0-.1,0-.16.24-.12.35-.19a1,1,0,0,1,.32-.33c.28,0,.29-.39.56-.4A11.3,11.3,0,0,1,52.4,23Zm4.09.16a8.93,8.93,0,0,1,.07,1l.34.11c.1-.17.32-.2.41-.35s.13,0,.18.06a1,1,0,0,1-.06.38c-.13.26-.43.29-.6.47.11.06.17-.05.26-.08a.57.57,0,0,1,.32.21c.09,0,.17,0,.24,0,.05-.39.54-.34.69-.71l-.09,0c0-.05-.13,0-.13-.11a1,1,0,0,1,.28-.23,4.83,4.83,0,0,0-1.35-.62A4.5,4.5,0,0,1,56.49,23.17Zm-2.55,1H54c.11.11.3.09.38.24s-.08.08-.08.15.06,0,.08.06.07-.05.1-.09.14.11.25.11a.18.18,0,0,1,.25,0c.08-.07.24,0,.26-.13s.07-.4.28-.5,0,.11,0,.18.31-.12.43,0a3,3,0,0,1-.07-1A3.23,3.23,0,0,0,53.95,24.16Zm2.3.79c-.08-.09-.24,0-.34,0,.09.09.06.27.11.38a.9.9,0,0,1-.6.36c-.06.08,0,.24-.19.23s-.21.17-.15.32a2.92,2.92,0,0,0-.08.54c-.28.18-.2-.23-.34-.32l0,.08c-.06,0-.09,0-.13-.06s-.11,0-.15,0-.16.19-.13.33S54,26.87,54,27a2.7,2.7,0,0,0,.48-.07c.11,0,.2-.05.31-.06a.1.1,0,0,1,.07.11h0a.19.19,0,0,0,.08-.23c0-.1.12-.1.18-.13s0,.09,0,.14c.21.08-.05.24-.08.35s0,.29-.18.27a.07.07,0,0,1,0-.08h0a.24.24,0,0,0,.13.21c.13-.11.14-.29.33-.32s0-.27.1-.35.51-.11.71.09c0,.09,0,.12,0,.19a.94.94,0,0,1-.17.32.16.16,0,0,1,0,.18c-.07.29-.4.15-.59.25a1.5,1.5,0,0,0,1,.28c.2,0,.11-.26.22-.37.07-.33.37-.1.55-.19a1.33,1.33,0,0,0,.16-.44.31.31,0,0,1-.13-.36c-.08-.11-.07-.31-.25-.33a.09.09,0,0,1,0-.11c0-.1.1-.14.13-.22S57,25.89,57,25.8c-.18.05-.2-.19-.34-.24s-.15-.13-.25-.15-.27-.17-.44-.24c0-.05-.06-.13,0-.17s.2,0,.3,0Zm-4.11,1.17c-.38.12.06.41,0,.65s-.19,0-.29.07l0,.25c-.06.15-.24,0-.33.14s0,.19.06.27c-.13.3.3.4.29.67s0,.42.17.57c0,.31,0,.72.23,1l0,.29c.06.2-.24.15-.2.33.06,0,.07,0,.08.07h0a12.51,12.51,0,0,1,1.22-1.24L53.14,29a4.73,4.73,0,0,1-.73-1.62l-.14-.07c0,.15-.08.27-.07.42l0,.06c-.1,0-.16-.09-.25-.14s-.07-.14,0-.18a.16.16,0,0,1,.11,0c0-.05,0-.13,0-.19s-.09-.22,0-.32.16.1.19.16.16,0,.24-.08.11-.19,0-.24a1.12,1.12,0,0,0,0-.56C52.43,26.07,52.26,26.1,52.13,26.11Zm8.86.16s-.09,0-.14,0A.34.34,0,0,1,61,26.27Zm-.29.46.15.15c.15.1,0,.31.2.4s.25.31.33.47a.5.5,0,0,0,0-.14c.07-.26.06-.55.14-.81A2,2,0,0,1,60.7,26.74Zm3.24.07-.08-.06,0,.13a7.63,7.63,0,0,1-1.5,4.2,3.14,3.14,0,0,1-.56.61,10,10,0,0,1,1.06,1l0-.07a9.11,9.11,0,0,0,2.36-5.78l.06-.11-.07,0Zm-1.9,0a5.12,5.12,0,0,1-.07.85l.16.17a.17.17,0,0,1,0,.22.19.19,0,0,1-.22,0A6.19,6.19,0,0,1,61,29.81c-.16.2-.31.47-.51.58l.43.38s0-.06,0-.09,0-.12.1-.11.21.22.33.33.13.32.08.49a7,7,0,0,0,1.9-4.51l.07-.08c-.43,0-.88,0-1.32,0Zm-11,0,.07.11a3.83,3.83,0,0,1,.07.93c.05-.09.07-.21.18-.27s-.11-.11-.1-.19,0-.46.24-.54A.54.54,0,0,1,51,26.78Zm-2.28,0-.13,0H47.27A9.65,9.65,0,0,0,48.43,31a15.49,15.49,0,0,0,1.26,1.77l.94-1,.11,0a2.87,2.87,0,0,1-.44-.45.65.65,0,0,1-.4-.3c0-.05,0-.15-.06-.18l-.06.07c-.17.08-.23-.09-.34-.16s-.08-.36-.27-.31-.1-.09-.15-.14-.23-.18-.33-.28,0,.1-.06.13-.26-.19-.38-.28-.06.05-.1,0a.55.55,0,0,1-.19-.4c-.16-.18-.09-.45-.06-.67,0-.06.11-.09.09-.16s.15-.11.25-.11a.25.25,0,0,1,.09.09c.06,0,.2,0,.15-.13a.62.62,0,0,1,.31-.11,2,2,0,0,0,.21.29l-.07-.1a7.48,7.48,0,0,1-.23-1.44s-.06,0,0-.07h0A1.49,1.49,0,0,1,48.71,26.8Zm1.85,0-.1,0a11,11,0,0,1-1.32,0l.06.08.1.87a6.69,6.69,0,0,1,.18,1c.05-.07,0-.21.15-.23-.05-.1.1-.19,0-.28a1,1,0,0,1,.27-.62c.24,0,.26-.33.5-.34s.2.16.25.22A.9.9,0,0,1,50.56,26.8Zm2.43.58c.13.25.2.53.34.77s.27.39.36.6a3.28,3.28,0,0,1,.4-.46.25.25,0,0,0,0-.18c0-.1,0-.24-.08-.33s0,.17,0,.24a.08.08,0,0,1-.11-.06.31.31,0,0,1-.23-.21c.09-.06,0-.08,0-.13s-.05,0-.09,0a.12.12,0,0,1-.07,0C53.41,27.37,53.11,27.53,53,27.39Zm1.49.37a.68.68,0,0,1-.19.31h0c.11-.08.19-.23.34-.24Zm3.74.39a.35.35,0,0,0,.08.23c.18,0,.1.23.27.2s0-.11,0-.17-.17-.16-.26-.24,0-.05,0-.08S58.26,28.1,58.22,28.15Zm2.68,0c-.14,0-.3.07-.42,0s-.07,0-.07.06-.09.16-.2.13-.09-.13-.11-.19a.51.51,0,0,1,0,.15,1.62,1.62,0,0,0-.2.32c-.1.11-.26.07-.36.16s-.27.18-.41.25,0,0,0,.06a.18.18,0,0,0,.2,0c.2.05.16-.2.27-.28s.19-.1.3,0a.67.67,0,0,1,.11.48c-.11.11-.06.3-.14.43s-.17.23-.15.38a.33.33,0,0,1-.26.08,4.44,4.44,0,0,0-1.18-.27.08.08,0,0,0-.06.09c.17.09.38.09.56.17s.27.24.47.18.45.06.57-.12.13-.3.21-.45h.06c.09.1.09.25.13.35.13-.14.24-.3.36-.44a4.23,4.23,0,0,0,.69-1.46A1.41,1.41,0,0,0,60.9,28.16Zm-6,0a7.38,7.38,0,0,1-.88.94,3.61,3.61,0,0,0,1.7.79c0-.13,0-.29,0-.4s.18-.1.27-.08a.08.08,0,0,0,.06-.12c-.14,0-.08-.18-.12-.26s.09,0,.07-.1,0-.16,0-.24.06-.08.1-.08c-.3.16-.62,0-.89-.15S55,28.31,54.94,28.16Zm2.75.83s-.07.1,0,.13.36-.11.36-.28C57.88,28.81,57.8,28.9,57.69,29Zm.53.36c-.15,0-.22.11-.33.2s-.2-.14-.31-.09,0,0,0,0a.11.11,0,0,1,0,.14c-.16.15-.24-.07-.39-.06v.06s0,.09-.06.07-.29-.1-.38-.24-.12,0-.16,0-.18,0-.15.11c-.12,0-.13.17-.22.25s-.21.14-.35.14c0,0,0,.08,0,.08a.48.48,0,0,0,.27,0c.14-.23.38,0,.58-.12s0,.16.13.2.34.17.5,0c0-.22.24-.2.38-.26s.45-.3.43-.58Zm-4.57.13a7,7,0,0,1-.94,1c.15,0,.23.17.35.24a5.91,5.91,0,0,0,2.42,1.08l-.23-.1c-.17-.19-.41-.42-.42-.69.17-.06.15-.25.21-.37a1,1,0,0,1,.5-.27c-.48.2-.89-.16-1.29-.34A1.84,1.84,0,0,1,53.65,29.47Zm6.58,1.32,0-.09A.78.78,0,0,1,60,31c0,.08,0,.19.07.24s.44.18.48.41-.47.4-.23.63c.08.11-.11.16-.08.25l.07-.09a6.58,6.58,0,0,0,.84-.71h0c-.06,0-.13,0-.19,0a.3.3,0,0,1-.16-.32ZM52.62,31l0,0,0,.06Zm.15.2a.21.21,0,0,1-.11-.15Zm0,0c0,.11.18.18.14.33a.4.4,0,0,1-.38.13c-.27,0-.47.16-.72.19s-.31-.21-.53-.19a7.45,7.45,0,0,0,4.58,2l.13.09L56,33.56V32.31l-.11,0A5.48,5.48,0,0,1,52.8,31.22Zm8.75.89,0-.11a2.55,2.55,0,0,1-.65.62c-.31.31-.81.37-1,.82-.17.15-.22.39-.45.47s-.33.21-.46.38c-.4.36-.65-.23-1-.3l-.72.13a2.28,2.28,0,0,1-.74,0,11.14,11.14,0,0,1,0,1.49l.09-.06a9.22,9.22,0,0,0,5.94-2.5ZM51,32.09v.06l-1,1a9.59,9.59,0,0,0,5,2.36,7.85,7.85,0,0,1,.94.11L56,35.49V34.2l0-.07-.15,0A7.47,7.47,0,0,1,51,32.09Zm5.41.33.07.1a9.66,9.66,0,0,1,0,1.17,7.28,7.28,0,0,1,1.14-.16.4.4,0,0,1-.21-.12c-.22,0-.33-.25-.4-.42s.05-.23.1-.34-.39-.05-.56-.12S56.51,32.43,56.45,32.42Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M65.15,18.81a4.19,4.19,0,0,1,1.21,2.26l.11.27a10,10,0,0,1-2.57-2.73l-.79-.8A6.68,6.68,0,0,1,65.15,18.81Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M47.55,20A15.14,15.14,0,0,1,46,21.49a10,10,0,0,1,.7-1.83,4.52,4.52,0,0,1,2.58-1.72A11.71,11.71,0,0,0,47.55,20Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M67.61,21.09c.22,1-.1,2,.1,3h0C67.17,23,66,22.5,65.23,21.65a3.4,3.4,0,0,1-.77-1.78c.45,1.09,1.68,1.34,2.38,2.25a3,3,0,0,1,.46.75l0,0a20.49,20.49,0,0,1-.82-2.75,2.15,2.15,0,0,0-.8-1A2.76,2.76,0,0,1,67.61,21.09Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M46.69,19.23c-.94.64-.88,1.8-1.17,2.76-.09.36-.26.68-.34,1l0,0A3.25,3.25,0,0,1,46,21.92c.67-.62,1.65-1,2-1.91,0,1.26-1.07,2.26-2.08,3a4.21,4.21,0,0,0-1,1.25c0-.32,0-.64,0-1-.11-1.1-.19-2.36.59-3.18A2.35,2.35,0,0,1,46.69,19.23Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M68.21,21.31a4.44,4.44,0,0,1,.41,4.25,7.47,7.47,0,0,0-.48,1.75c0-.1-.05-.25-.09-.36-.33-1.27-1.54-2.18-2-3.39a6.31,6.31,0,0,1-.36-1.23c.53,1,1.84,1.49,2.19,2.57a4.91,4.91,0,0,1,.23.91,0,0,0,0,0,0,0,12.39,12.39,0,0,1,0-3.38,2.79,2.79,0,0,0-.4-1.63C68,20.89,68.06,21.12,68.21,21.31Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M44.69,21c-.72,1.09-.12,2.47-.16,3.72l-.09,1.27s0,0,0,0,.05-.29.08-.44a4.77,4.77,0,0,1,1.84-2.47,2,2,0,0,0,.4-.59,5.25,5.25,0,0,1-.44,1.5c-.61,1.18-1.73,2.15-1.93,3.51-.1-1.3-1-2.27-.89-3.65A4.38,4.38,0,0,1,44.63,21S44.66,20.95,44.69,21Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M69,28.68c-.5.71-1.1,1.36-1.56,2.08a4,4,0,0,0-.1-1.81,15.68,15.68,0,0,1-.83-3.61v-.49c.29,1.3,1.57,2.2,1.49,3.65a3.2,3.2,0,0,1-.15,1l0,0,.06-.07a14.5,14.5,0,0,1,.58-2.14,5.2,5.2,0,0,0,.73-3.09A5.25,5.25,0,0,1,69,28.68Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M44.32,28.22a12,12,0,0,0,.36,1.44s0,0,0,0c-.49-1.36.21-2.63.92-3.69A3.59,3.59,0,0,0,46,25a8,8,0,0,1-.17,2c-.17.81-.43,1.59-.65,2.38a3.72,3.72,0,0,0,0,1.57l-.07-.06c-.52-1-1.54-1.69-1.84-2.74A5.8,5.8,0,0,1,43,25.43a5.06,5.06,0,0,1,.29-1C43,25.88,44,26.94,44.32,28.22Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M67,30.92a3.4,3.4,0,0,1-.58,1.72h.06a21.69,21.69,0,0,1,1.34-1.8,4.7,4.7,0,0,0,1.77-2.71,4.66,4.66,0,0,1-2.28,4.5c-.63.41-1.27.8-1.87,1.26v-.06c.93-1.54.47-3.66,1-5.35l.21-.57C66.61,29,67.07,29.86,67,30.92Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M46.71,33c.1.35.3.66.44,1-1.41-1-3.33-1.87-4-3.64a4.38,4.38,0,0,1-.24-2.05c.11,1.57,1.8,2.4,2.58,3.69a4.28,4.28,0,0,0,.59.78c0-.17-.19-.31-.25-.48a3.37,3.37,0,0,1-.31-1.85,9.32,9.32,0,0,0,.28-2.39C46.53,29.56,46.32,31.41,46.71,33Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M64.93,34.18a4.69,4.69,0,0,1-1,1.16c.12,0,.23-.11.34-.18,1-1,2.34-1.3,3.44-2.12a3.32,3.32,0,0,0,1-1.31,5.15,5.15,0,0,1-3.46,3.76c-.81.22-1.69.29-2.48.56,1.34-1.15,1.26-2.93,2.16-4.28a13.83,13.83,0,0,1,.85-1.15C65.32,31.7,65.56,33.12,64.93,34.18Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M48,32.76c.47,1.16.65,2.48,1.75,3.36-1.18-.39-2.57-.28-3.61-1a5,5,0,0,1-2.37-3.2c.79,1.78,2.76,1.93,4.08,3a3.29,3.29,0,0,0,.77.53h0a4.55,4.55,0,0,1-.87-.94c-.77-1.07-.5-2.58-1.08-3.74A8.69,8.69,0,0,1,48,32.76Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M62.07,36.22a7.28,7.28,0,0,1-1,.36,10,10,0,0,0,1.24-.18c1.56-.25,3.35,0,4.45-1.33a4.2,4.2,0,0,1-2.35,2c-1.6.6-3.2-.14-4.73-.38l-.29,0h0a4.29,4.29,0,0,0,2-.91A20.69,20.69,0,0,1,64,33.45C63.31,34.35,63.23,35.64,62.07,36.22Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M51.12,35.79a4.41,4.41,0,0,0,2.1.93c-.18.07-.43,0-.62.1-1.38.34-2.91.89-4.37.4a4.24,4.24,0,0,1-2.41-2c1.26,1.43,3.32,1,5,1.33a2.35,2.35,0,0,0,.71.09c-.2-.13-.48-.11-.7-.23-1.32-.46-1.51-1.89-2.23-2.85A20.27,20.27,0,0,1,51.12,35.79Z' }),
+	            React.createElement('path', { className: 'cls-3', d: 'M61.4,37.74a3.65,3.65,0,0,0,3.22-.35,3.83,3.83,0,0,1-1.7,1.19,4.25,4.25,0,0,1-4-.87c-.45-.28-.85-.7-1.43-.66a2,2,0,0,0-.59.06,11,11,0,0,1,3,2.08,4.49,4.49,0,0,1-.54.49,10.64,10.64,0,0,0-3-2.4,1.92,1.92,0,0,0-.61.26,9.13,9.13,0,0,0-2.43,2.17l-.57-.47a10.4,10.4,0,0,1,3-2.14c-1.08-.34-1.78.56-2.6,1A3.81,3.81,0,0,1,48,37.5a3.7,3.7,0,0,0,3.3.28c1.39-.6,2.83-1.36,4.5-1,.26,0,.52.27.76,0a5.34,5.34,0,0,1,3.72.47Z' }),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 300 */
+/*!*************************************!*\
+  !*** ./src/Components/Row/row.scss ***!
+  \*************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 301 */,
+/* 302 */
+/*!******************************************************!*\
+  !*** ./src/Components/ViewerWindow/ViewerWindow.jsx ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(/*! json!../../data.json */ 303);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	var _TitleBar = __webpack_require__(/*! ../TitleBar/TitleBar.jsx */ 304);
+	
+	var _TitleBar2 = _interopRequireDefault(_TitleBar);
+	
+	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 307);
+	
+	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
+	
+	__webpack_require__(/*! ./viewerWindow.scss */ 317);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var ViewerWindow = _react2.default.createClass({
+		displayName: "ViewerWindow",
+		render: function render() {
+			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, {
+				sdgNumber: _data2.default[this.props.sdg].sdgNumber,
+				sdgName: _data2.default[this.props.sdg].sdgName,
+				sdgColor: _data2.default[this.props.sdg].sdgColor
+			}), _react2.default.createElement(_ViewerWindowContent2.default, {
+				sdgNumber: this.props.sdg,
+				focusTarget: this.props.focusTarget,
+				selectFocusTarget: this.props.selectFocusTarget,
+				currentStory: this.props.currentStory,
+				selectStory: this.props.selectStory
+			}));
+		}
+	});
+	
+	exports.default = ViewerWindow;
+
+/***/ },
+/* 303 */
 /*!***************************************!*\
   !*** ./~/json-loader!./src/data.json ***!
   \***************************************/
@@ -21150,5503 +26658,6 @@
 	];
 
 /***/ },
-/* 172 */
-/*!**************************************!*\
-  !*** ./src/Components/Icon/Icon.jsx ***!
-  \**************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	__webpack_require__(/*! ./icon.scss */ 173);
-	
-	var _sdg = __webpack_require__(/*! babel!svg-react!../../images/sdg1.svg */ 175);
-	
-	var _sdg2 = _interopRequireDefault(_sdg);
-	
-	var _sdg3 = __webpack_require__(/*! babel!svg-react!../../images/sdg2.svg */ 284);
-	
-	var _sdg4 = _interopRequireDefault(_sdg3);
-	
-	var _sdg5 = __webpack_require__(/*! babel!svg-react!../../images/sdg3.svg */ 285);
-	
-	var _sdg6 = _interopRequireDefault(_sdg5);
-	
-	var _sdg7 = __webpack_require__(/*! babel!svg-react!../../images/sdg4.svg */ 286);
-	
-	var _sdg8 = _interopRequireDefault(_sdg7);
-	
-	var _sdg9 = __webpack_require__(/*! babel!svg-react!../../images/sdg5.svg */ 287);
-	
-	var _sdg10 = _interopRequireDefault(_sdg9);
-	
-	var _sdg11 = __webpack_require__(/*! babel!svg-react!../../images/sdg6.svg */ 288);
-	
-	var _sdg12 = _interopRequireDefault(_sdg11);
-	
-	var _sdg13 = __webpack_require__(/*! babel!svg-react!../../images/sdg7.svg */ 289);
-	
-	var _sdg14 = _interopRequireDefault(_sdg13);
-	
-	var _sdg15 = __webpack_require__(/*! babel!svg-react!../../images/sdg8.svg */ 290);
-	
-	var _sdg16 = _interopRequireDefault(_sdg15);
-	
-	var _sdg17 = __webpack_require__(/*! babel!svg-react!../../images/sdg9.svg */ 291);
-	
-	var _sdg18 = _interopRequireDefault(_sdg17);
-	
-	var _sdg19 = __webpack_require__(/*! babel!svg-react!../../images/sdg10.svg */ 292);
-	
-	var _sdg20 = _interopRequireDefault(_sdg19);
-	
-	var _sdg21 = __webpack_require__(/*! babel!svg-react!../../images/sdg11.svg */ 293);
-	
-	var _sdg22 = _interopRequireDefault(_sdg21);
-	
-	var _sdg23 = __webpack_require__(/*! babel!svg-react!../../images/sdg12.svg */ 294);
-	
-	var _sdg24 = _interopRequireDefault(_sdg23);
-	
-	var _sdg25 = __webpack_require__(/*! babel!svg-react!../../images/sdg13.svg */ 295);
-	
-	var _sdg26 = _interopRequireDefault(_sdg25);
-	
-	var _sdg27 = __webpack_require__(/*! babel!svg-react!../../images/sdg14.svg */ 296);
-	
-	var _sdg28 = _interopRequireDefault(_sdg27);
-	
-	var _sdg29 = __webpack_require__(/*! babel!svg-react!../../images/sdg15.svg */ 297);
-	
-	var _sdg30 = _interopRequireDefault(_sdg29);
-	
-	var _sdg31 = __webpack_require__(/*! babel!svg-react!../../images/sdg16.svg */ 298);
-	
-	var _sdg32 = _interopRequireDefault(_sdg31);
-	
-	var _sdg33 = __webpack_require__(/*! babel!svg-react!../../images/sdg17.svg */ 299);
-	
-	var _sdg34 = _interopRequireDefault(_sdg33);
-	
-	var _sdg35 = __webpack_require__(/*! babel!svg-react!../../images/sdg18.svg */ 300);
-	
-	var _sdg36 = _interopRequireDefault(_sdg35);
-	
-	function _interopRequireDefault(obj) {
-		return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	var Icon = _react2.default.createClass({
-		displayName: "Icon",
-		clickHandler: function clickHandler() {
-			this.props.handler(this.props.sdg);
-		},
-		render: function render() {
-	
-			var sdgs = [_react2.default.createElement(_sdg36.default, { className: "sdg0", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg2.default, { className: "sdg1", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg4.default, { className: "sdg2", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg6.default, { className: "sdg3", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg8.default, { className: "sdg4", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg10.default, { className: "sdg5", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg12.default, { className: "sdg6", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg14.default, { className: "sdg7", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg16.default, { className: "sdg8", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg18.default, { className: "sdg9", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg20.default, { className: "sdg10", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg22.default, { className: "sdg11", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg24.default, { className: "sdg12", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg26.default, { className: "sdg13", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg28.default, { className: "sdg14", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg30.default, { className: "sdg15", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg32.default, { className: "sdg16", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 }), _react2.default.createElement(_sdg34.default, { className: "sdg17", opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3 })];
-	
-			return _react2.default.createElement("div", { className: "icon", onClick: this.clickHandler }, sdgs[this.props.sdg]);
-		}
-	});
-	
-	exports.default = Icon;
-
-/***/ },
-/* 173 */
-/*!***************************************!*\
-  !*** ./src/Components/Icon/icon.scss ***!
-  \***************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 174 */,
-/* 175 */
-/*!*******************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg1.svg ***!
-  \*******************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg1",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.76" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG1 No Poverty'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg1-1', x: '-2.49', y: '-2.17', width: '117.33', height: '117.33' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M86.07,53.32a3.09,3.09,0,1,1,3.1,3.09,3.1,3.1,0,0,1-3.1-3.09' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M92.78,57.61a4.12,4.12,0,0,1,3.74,4.11V70.3a1.2,1.2,0,0,1-2.4,0V62.93c0-.28-.08-.65-.59-.65-.35,0-.42.37-.43.61V85a1.72,1.72,0,0,1-3.45,0V72.24a.47.47,0,0,0-.49-.51h0a.47.47,0,0,0-.5.51V85a1.72,1.72,0,1,1-3.45,0V62.89c0-.24-.09-.61-.43-.61-.51,0-.58.37-.58.65V70.3a1.2,1.2,0,0,1-2.4,0V61.72a4.12,4.12,0,0,1,3.75-4.11l.23,0h6.76l.24,0' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M67.67,54.95a2.93,2.93,0,1,0-2.93,2.93,2.93,2.93,0,0,0,2.93-2.93' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M58.84,61.59l-2.44,7.93s-.43,1.45.8,1.82,1.6-1.06,1.6-1.06l2-6.62s.11-.51.49-.4.24.65.24.65l-3.42,12.4h3.18V85.2a1.53,1.53,0,0,0,3.05,0V76.31h.87V85.2a1.53,1.53,0,0,0,3.05,0V76.31h3.18L68,63.91s-.14-.54.24-.65.49.4.49.4l2,6.62s.37,1.42,1.6,1.06.8-1.82.8-1.82l-2.44-7.93s-.87-2.29-2.8-2.29H61.64c-1.93,0-2.8,2.29-2.8,2.29' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M50.13,54.95a2.93,2.93,0,1,0-2.93,2.93,2.93,2.93,0,0,0,2.93-2.93' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M41.29,61.59l-2.43,7.93s-.44,1.45.8,1.82,1.6-1.06,1.6-1.06l2-6.62s.11-.51.49-.4.24.65.24.65l-3.42,12.4h3.18V85.2a1.53,1.53,0,0,0,3.05,0V76.31h.87V85.2a1.53,1.53,0,0,0,3.05,0V76.31h3.18l-3.41-12.4s-.15-.54.24-.65.49.4.49.4l2,6.62s.37,1.42,1.6,1.06.8-1.82.8-1.82L53.1,61.59s-.87-2.29-2.8-2.29H44.09c-1.93,0-2.8,2.29-2.8,2.29' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M77.51,71.35a2.44,2.44,0,1,0-2.44-2.44,2.44,2.44,0,0,0,2.44,2.44' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M71.67,78.92A.85.85,0,0,0,72,80.08a.81.81,0,0,0,1-.34l1.33-4.23s.23-.28.23,0v10h0a1.25,1.25,0,1,0,2.5,0V81.54s-.07-.56.38-.56.38.56.38.56v3.93a1.25,1.25,0,0,0,2.51,0v-10c0-.29.15-.08.15-.08l1,2.9a6.92,6.92,0,0,0,.59,1.35.92.92,0,0,0,1.21-.5.91.91,0,0,0-.1-.89h0c0-.09-1.55-3.83-1.73-4.35C81,72.32,80,72.34,79,72.31s-1.54,0-1.54,0-.62,0-1.89,0-1.67.69-3.07,4.3c-.2.52-.88,2.2-.89,2.3Z' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M24,53.32a3.09,3.09,0,1,0-3.1,3.09A3.1,3.1,0,0,0,24,53.32' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M17.25,57.61a4.13,4.13,0,0,0-3.75,4.11V70.3a1.2,1.2,0,0,0,2.4,0V62.93c0-.28.08-.65.59-.65.35,0,.42.37.44.61V85a1.72,1.72,0,1,0,3.44,0V72.24a.47.47,0,0,1,.49-.51h0a.47.47,0,0,1,.5.51V85a1.72,1.72,0,1,0,3.45,0V62.89c0-.24.09-.61.43-.61.51,0,.58.37.58.65V70.3a1.2,1.2,0,0,0,2.4,0V61.72a4.12,4.12,0,0,0-3.75-4.11l-.23,0H17.49l-.24,0' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M29.69,70.07a.89.89,0,0,0-1.64.47,1.62,1.62,0,0,0,.09.39l2.46,4.45a1.57,1.57,0,0,1,.15.59v9.55h0a1.2,1.2,0,1,0,2.4,0V81.75s-.07-.53.36-.53.36.53.36.53v3.77a1.2,1.2,0,0,0,2.41,0V76a1.59,1.59,0,0,1,.15-.59l2.27-4.11a4,4,0,0,0,.28-.73.89.89,0,0,0-1.64-.47h0c-.07.06-1.21,2.09-1.59,2.46a1,1,0,0,1-.75.36H32a1,1,0,0,1-.75-.36c-.38-.38-1.51-2.4-1.59-2.46Z' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M33.52,71.35a2.44,2.44,0,1,0-2.44-2.44,2.44,2.44,0,0,0,2.44,2.44' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M39.91,18.5A2.18,2.18,0,0,0,42.24,16V11.61a2.33,2.33,0,1,0-4.65,0V16a2.18,2.18,0,0,0,2.32,2.47m-.78-7.13c0-.55.24-.94.78-.94s.8.39.8.94v4.91c0,.55-.24.94-.8.94s-.78-.39-.78-.94Z' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M33.67,28.8h.74c1.55,0,2.12-.78,2.12-2.06V24.81c0-1.28-.57-2-2.12-2H32.14V31.9h1.54Zm0-4.78h.57c.53,0,.75.24.75.74v2.1a.66.66,0,0,1-.75.76h-.57Z' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M39.77,32a2.18,2.18,0,0,0,2.33-2.47V25.12a2.33,2.33,0,1,0-4.65,0v4.42A2.18,2.18,0,0,0,39.77,32M39,24.87c0-.55.24-.94.78-.94s.8.39.8.94v4.9c0,.55-.24.94-.8.94s-.78-.39-.78-.94Z' }),
-	                React.createElement('path', { className: 'sdg1-2', d: 'M54.67,27.7l1.44,4.19h1.62l-1.47-4.15c.88-.2,1.23-.78,1.23-1.77V24.81c0-1.28-.57-2-2.12-2H53.13V31.9h1.54Zm0-3.69h.51c.53,0,.76.24.76.74V26.1a.67.67,0,0,1-.76.75h-.51Z' }),
-	                React.createElement('line', { className: 'sdg1-3', x1: '14.55', y1: '71.54', x2: '11.8', y2: '86.11' }),
-	                React.createElement('polygon', { className: 'sdg1-2', points: '33.52 74.77 36.28 76.78 37.59 81.6 33.52 81.6 29.45 81.6 30.76 76.78 33.52 74.77' }),
-	                React.createElement('polygon', { className: 'sdg1-2', points: '33.43 12.65 33.43 18.39 32.14 18.39 32.14 9.25 33.65 9.25 35.3 14.5 35.3 9.25 36.59 9.25 36.59 18.39 35.24 18.39 33.43 12.65' }),
-	                React.createElement('polygon', { className: 'sdg1-2', points: '46.02 31.9 47.76 22.76 46.31 22.76 45.24 29.13 45.22 29.13 44.17 22.76 42.61 22.76 44.35 31.9 46.02 31.9' }),
-	                React.createElement('polygon', { className: 'sdg1-2', points: '52.19 30.64 50.06 30.64 50.06 27.86 51.59 27.86 51.59 26.63 50.06 26.63 50.06 24.01 52.19 24.01 52.19 22.76 48.52 22.76 48.52 31.9 52.19 31.9 52.19 30.64' }),
-	                React.createElement('polygon', { className: 'sdg1-2', points: '59.4 31.9 60.95 31.9 60.95 24.01 62.22 24.01 62.22 22.76 58.13 22.76 58.13 24.01 59.4 24.01 59.4 31.9' }),
-	                React.createElement('polygon', { className: 'sdg1-2', points: '64.52 31.9 66.06 31.9 66.06 28.42 67.75 22.76 66.29 22.76 65.36 26.22 65.34 26.22 64.41 22.76 62.81 22.76 64.52 28.42 64.52 31.9' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('polygon', { className: 'sdg1-2', points: '15.61 13.46 15.64 13.46 15.64 30.71 19.43 30.71 19.43 8.18 16.4 8.18 12.91 12.27 12.91 16.22 12.95 16.22 15.61 13.46' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 176 */
-/*!***************************************!*\
-  !*** ./~/svg-react-loader/helpers.js ***!
-  \***************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var forEach  = __webpack_require__(/*! lodash/forEach */ 177);
-	var ATTR_KEY = 'data-svgreactloader';
-	
-	var MODULE = {
-	    /**
-	     * @param {HTMLElement}
-	     */
-	    applyAttributes: function (el) {
-	        var data = MODULE.hasXmlAttributes(el);
-	        if (data) {
-	            forEach(JSON.parse(data), function (args) {
-	                var method = 'setAttribute' + (args.length === 3 ? 'NS' : '');
-	                el[method].apply(el, args);
-	            });
-	        }
-	    },
-	    /**
-	     * @param {HTMLElement}
-	     */
-	    hasXmlAttributes: function (el) {
-	        return el && el.getAttribute(ATTR_KEY);
-	    },
-	    /**
-	     * @param {React.Component}
-	     */
-	    applyXmlAttributes: function (component) {
-	        var domEl = MODULE.reactDOM.findDOMNode(component);
-	        var fn = MODULE.applyAttributes;
-	
-	        if (domEl) {
-	            fn(domEl);
-	            forEach(domEl.querySelectorAll('[' + ATTR_KEY + ']'), fn);
-	        }
-	    }
-	};
-	
-	module.exports = function helpers (reactDOM) {
-	    if (!MODULE.reactDOM) {
-	        MODULE.reactDOM = reactDOM;
-	    }
-	    return MODULE;
-	};
-
-
-/***/ },
-/* 177 */
-/*!*****************************!*\
-  !*** ./~/lodash/forEach.js ***!
-  \*****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var arrayEach = __webpack_require__(/*! ./_arrayEach */ 178),
-	    baseEach = __webpack_require__(/*! ./_baseEach */ 179),
-	    baseIteratee = __webpack_require__(/*! ./_baseIteratee */ 203),
-	    isArray = __webpack_require__(/*! ./isArray */ 198);
-	
-	/**
-	 * Iterates over elements of `collection` and invokes `iteratee` for each element.
-	 * The iteratee is invoked with three arguments: (value, index|key, collection).
-	 * Iteratee functions may exit iteration early by explicitly returning `false`.
-	 *
-	 * **Note:** As with other "Collections" methods, objects with a "length"
-	 * property are iterated like arrays. To avoid this behavior use `_.forIn`
-	 * or `_.forOwn` for object iteration.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 0.1.0
-	 * @alias each
-	 * @category Collection
-	 * @param {Array|Object} collection The collection to iterate over.
-	 * @param {Function} [iteratee=_.identity] The function invoked per iteration.
-	 * @returns {Array|Object} Returns `collection`.
-	 * @see _.forEachRight
-	 * @example
-	 *
-	 * _([1, 2]).forEach(function(value) {
-	 *   console.log(value);
-	 * });
-	 * // => Logs `1` then `2`.
-	 *
-	 * _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
-	 *   console.log(key);
-	 * });
-	 * // => Logs 'a' then 'b' (iteration order is not guaranteed).
-	 */
-	function forEach(collection, iteratee) {
-	  var func = isArray(collection) ? arrayEach : baseEach;
-	  return func(collection, baseIteratee(iteratee, 3));
-	}
-	
-	module.exports = forEach;
-
-
-/***/ },
-/* 178 */
-/*!********************************!*\
-  !*** ./~/lodash/_arrayEach.js ***!
-  \********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * A specialized version of `_.forEach` for arrays without support for
-	 * iteratee shorthands.
-	 *
-	 * @private
-	 * @param {Array} [array] The array to iterate over.
-	 * @param {Function} iteratee The function invoked per iteration.
-	 * @returns {Array} Returns `array`.
-	 */
-	function arrayEach(array, iteratee) {
-	  var index = -1,
-	      length = array ? array.length : 0;
-	
-	  while (++index < length) {
-	    if (iteratee(array[index], index, array) === false) {
-	      break;
-	    }
-	  }
-	  return array;
-	}
-	
-	module.exports = arrayEach;
-
-
-/***/ },
-/* 179 */
-/*!*******************************!*\
-  !*** ./~/lodash/_baseEach.js ***!
-  \*******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseForOwn = __webpack_require__(/*! ./_baseForOwn */ 180),
-	    createBaseEach = __webpack_require__(/*! ./_createBaseEach */ 202);
-	
-	/**
-	 * The base implementation of `_.forEach` without support for iteratee shorthands.
-	 *
-	 * @private
-	 * @param {Array|Object} collection The collection to iterate over.
-	 * @param {Function} iteratee The function invoked per iteration.
-	 * @returns {Array|Object} Returns `collection`.
-	 */
-	var baseEach = createBaseEach(baseForOwn);
-	
-	module.exports = baseEach;
-
-
-/***/ },
-/* 180 */
-/*!*********************************!*\
-  !*** ./~/lodash/_baseForOwn.js ***!
-  \*********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseFor = __webpack_require__(/*! ./_baseFor */ 181),
-	    keys = __webpack_require__(/*! ./keys */ 183);
-	
-	/**
-	 * The base implementation of `_.forOwn` without support for iteratee shorthands.
-	 *
-	 * @private
-	 * @param {Object} object The object to iterate over.
-	 * @param {Function} iteratee The function invoked per iteration.
-	 * @returns {Object} Returns `object`.
-	 */
-	function baseForOwn(object, iteratee) {
-	  return object && baseFor(object, iteratee, keys);
-	}
-	
-	module.exports = baseForOwn;
-
-
-/***/ },
-/* 181 */
-/*!******************************!*\
-  !*** ./~/lodash/_baseFor.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var createBaseFor = __webpack_require__(/*! ./_createBaseFor */ 182);
-	
-	/**
-	 * The base implementation of `baseForOwn` which iterates over `object`
-	 * properties returned by `keysFunc` and invokes `iteratee` for each property.
-	 * Iteratee functions may exit iteration early by explicitly returning `false`.
-	 *
-	 * @private
-	 * @param {Object} object The object to iterate over.
-	 * @param {Function} iteratee The function invoked per iteration.
-	 * @param {Function} keysFunc The function to get the keys of `object`.
-	 * @returns {Object} Returns `object`.
-	 */
-	var baseFor = createBaseFor();
-	
-	module.exports = baseFor;
-
-
-/***/ },
-/* 182 */
-/*!************************************!*\
-  !*** ./~/lodash/_createBaseFor.js ***!
-  \************************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Creates a base function for methods like `_.forIn` and `_.forOwn`.
-	 *
-	 * @private
-	 * @param {boolean} [fromRight] Specify iterating from right to left.
-	 * @returns {Function} Returns the new base function.
-	 */
-	function createBaseFor(fromRight) {
-	  return function(object, iteratee, keysFunc) {
-	    var index = -1,
-	        iterable = Object(object),
-	        props = keysFunc(object),
-	        length = props.length;
-	
-	    while (length--) {
-	      var key = props[fromRight ? length : ++index];
-	      if (iteratee(iterable[key], key, iterable) === false) {
-	        break;
-	      }
-	    }
-	    return object;
-	  };
-	}
-	
-	module.exports = createBaseFor;
-
-
-/***/ },
-/* 183 */
-/*!**************************!*\
-  !*** ./~/lodash/keys.js ***!
-  \**************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseHas = __webpack_require__(/*! ./_baseHas */ 184),
-	    baseKeys = __webpack_require__(/*! ./_baseKeys */ 186),
-	    indexKeys = __webpack_require__(/*! ./_indexKeys */ 187),
-	    isArrayLike = __webpack_require__(/*! ./isArrayLike */ 191),
-	    isIndex = __webpack_require__(/*! ./_isIndex */ 200),
-	    isPrototype = __webpack_require__(/*! ./_isPrototype */ 201);
-	
-	/**
-	 * Creates an array of the own enumerable property names of `object`.
-	 *
-	 * **Note:** Non-object values are coerced to objects. See the
-	 * [ES spec](http://ecma-international.org/ecma-262/6.0/#sec-object.keys)
-	 * for more details.
-	 *
-	 * @static
-	 * @since 0.1.0
-	 * @memberOf _
-	 * @category Object
-	 * @param {Object} object The object to query.
-	 * @returns {Array} Returns the array of property names.
-	 * @example
-	 *
-	 * function Foo() {
-	 *   this.a = 1;
-	 *   this.b = 2;
-	 * }
-	 *
-	 * Foo.prototype.c = 3;
-	 *
-	 * _.keys(new Foo);
-	 * // => ['a', 'b'] (iteration order is not guaranteed)
-	 *
-	 * _.keys('hi');
-	 * // => ['0', '1']
-	 */
-	function keys(object) {
-	  var isProto = isPrototype(object);
-	  if (!(isProto || isArrayLike(object))) {
-	    return baseKeys(object);
-	  }
-	  var indexes = indexKeys(object),
-	      skipIndexes = !!indexes,
-	      result = indexes || [],
-	      length = result.length;
-	
-	  for (var key in object) {
-	    if (baseHas(object, key) &&
-	        !(skipIndexes && (key == 'length' || isIndex(key, length))) &&
-	        !(isProto && key == 'constructor')) {
-	      result.push(key);
-	    }
-	  }
-	  return result;
-	}
-	
-	module.exports = keys;
-
-
-/***/ },
-/* 184 */
-/*!******************************!*\
-  !*** ./~/lodash/_baseHas.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getPrototype = __webpack_require__(/*! ./_getPrototype */ 185);
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-	
-	/**
-	 * The base implementation of `_.has` without support for deep paths.
-	 *
-	 * @private
-	 * @param {Object} [object] The object to query.
-	 * @param {Array|string} key The key to check.
-	 * @returns {boolean} Returns `true` if `key` exists, else `false`.
-	 */
-	function baseHas(object, key) {
-	  // Avoid a bug in IE 10-11 where objects with a [[Prototype]] of `null`,
-	  // that are composed entirely of index properties, return `false` for
-	  // `hasOwnProperty` checks of them.
-	  return object != null &&
-	    (hasOwnProperty.call(object, key) ||
-	      (typeof object == 'object' && key in object && getPrototype(object) === null));
-	}
-	
-	module.exports = baseHas;
-
-
-/***/ },
-/* 185 */
-/*!***********************************!*\
-  !*** ./~/lodash/_getPrototype.js ***!
-  \***********************************/
-/***/ function(module, exports) {
-
-	/* Built-in method references for those with the same name as other `lodash` methods. */
-	var nativeGetPrototype = Object.getPrototypeOf;
-	
-	/**
-	 * Gets the `[[Prototype]]` of `value`.
-	 *
-	 * @private
-	 * @param {*} value The value to query.
-	 * @returns {null|Object} Returns the `[[Prototype]]`.
-	 */
-	function getPrototype(value) {
-	  return nativeGetPrototype(Object(value));
-	}
-	
-	module.exports = getPrototype;
-
-
-/***/ },
-/* 186 */
-/*!*******************************!*\
-  !*** ./~/lodash/_baseKeys.js ***!
-  \*******************************/
-/***/ function(module, exports) {
-
-	/* Built-in method references for those with the same name as other `lodash` methods. */
-	var nativeKeys = Object.keys;
-	
-	/**
-	 * The base implementation of `_.keys` which doesn't skip the constructor
-	 * property of prototypes or treat sparse arrays as dense.
-	 *
-	 * @private
-	 * @param {Object} object The object to query.
-	 * @returns {Array} Returns the array of property names.
-	 */
-	function baseKeys(object) {
-	  return nativeKeys(Object(object));
-	}
-	
-	module.exports = baseKeys;
-
-
-/***/ },
-/* 187 */
-/*!********************************!*\
-  !*** ./~/lodash/_indexKeys.js ***!
-  \********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseTimes = __webpack_require__(/*! ./_baseTimes */ 188),
-	    isArguments = __webpack_require__(/*! ./isArguments */ 189),
-	    isArray = __webpack_require__(/*! ./isArray */ 198),
-	    isLength = __webpack_require__(/*! ./isLength */ 196),
-	    isString = __webpack_require__(/*! ./isString */ 199);
-	
-	/**
-	 * Creates an array of index keys for `object` values of arrays,
-	 * `arguments` objects, and strings, otherwise `null` is returned.
-	 *
-	 * @private
-	 * @param {Object} object The object to query.
-	 * @returns {Array|null} Returns index keys, else `null`.
-	 */
-	function indexKeys(object) {
-	  var length = object ? object.length : undefined;
-	  if (isLength(length) &&
-	      (isArray(object) || isString(object) || isArguments(object))) {
-	    return baseTimes(length, String);
-	  }
-	  return null;
-	}
-	
-	module.exports = indexKeys;
-
-
-/***/ },
-/* 188 */
-/*!********************************!*\
-  !*** ./~/lodash/_baseTimes.js ***!
-  \********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * The base implementation of `_.times` without support for iteratee shorthands
-	 * or max array length checks.
-	 *
-	 * @private
-	 * @param {number} n The number of times to invoke `iteratee`.
-	 * @param {Function} iteratee The function invoked per iteration.
-	 * @returns {Array} Returns the array of results.
-	 */
-	function baseTimes(n, iteratee) {
-	  var index = -1,
-	      result = Array(n);
-	
-	  while (++index < n) {
-	    result[index] = iteratee(index);
-	  }
-	  return result;
-	}
-	
-	module.exports = baseTimes;
-
-
-/***/ },
-/* 189 */
-/*!*********************************!*\
-  !*** ./~/lodash/isArguments.js ***!
-  \*********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isArrayLikeObject = __webpack_require__(/*! ./isArrayLikeObject */ 190);
-	
-	/** `Object#toString` result references. */
-	var argsTag = '[object Arguments]';
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-	
-	/**
-	 * Used to resolve the
-	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-	var objectToString = objectProto.toString;
-	
-	/** Built-in value references. */
-	var propertyIsEnumerable = objectProto.propertyIsEnumerable;
-	
-	/**
-	 * Checks if `value` is likely an `arguments` object.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 0.1.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified,
-	 *  else `false`.
-	 * @example
-	 *
-	 * _.isArguments(function() { return arguments; }());
-	 * // => true
-	 *
-	 * _.isArguments([1, 2, 3]);
-	 * // => false
-	 */
-	function isArguments(value) {
-	  // Safari 8.1 incorrectly makes `arguments.callee` enumerable in strict mode.
-	  return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') &&
-	    (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
-	}
-	
-	module.exports = isArguments;
-
-
-/***/ },
-/* 190 */
-/*!***************************************!*\
-  !*** ./~/lodash/isArrayLikeObject.js ***!
-  \***************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isArrayLike = __webpack_require__(/*! ./isArrayLike */ 191),
-	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 197);
-	
-	/**
-	 * This method is like `_.isArrayLike` except that it also checks if `value`
-	 * is an object.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 4.0.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is an array-like object,
-	 *  else `false`.
-	 * @example
-	 *
-	 * _.isArrayLikeObject([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isArrayLikeObject(document.body.children);
-	 * // => true
-	 *
-	 * _.isArrayLikeObject('abc');
-	 * // => false
-	 *
-	 * _.isArrayLikeObject(_.noop);
-	 * // => false
-	 */
-	function isArrayLikeObject(value) {
-	  return isObjectLike(value) && isArrayLike(value);
-	}
-	
-	module.exports = isArrayLikeObject;
-
-
-/***/ },
-/* 191 */
-/*!*********************************!*\
-  !*** ./~/lodash/isArrayLike.js ***!
-  \*********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getLength = __webpack_require__(/*! ./_getLength */ 192),
-	    isFunction = __webpack_require__(/*! ./isFunction */ 194),
-	    isLength = __webpack_require__(/*! ./isLength */ 196);
-	
-	/**
-	 * Checks if `value` is array-like. A value is considered array-like if it's
-	 * not a function and has a `value.length` that's an integer greater than or
-	 * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 4.0.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
-	 * @example
-	 *
-	 * _.isArrayLike([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isArrayLike(document.body.children);
-	 * // => true
-	 *
-	 * _.isArrayLike('abc');
-	 * // => true
-	 *
-	 * _.isArrayLike(_.noop);
-	 * // => false
-	 */
-	function isArrayLike(value) {
-	  return value != null && isLength(getLength(value)) && !isFunction(value);
-	}
-	
-	module.exports = isArrayLike;
-
-
-/***/ },
-/* 192 */
-/*!********************************!*\
-  !*** ./~/lodash/_getLength.js ***!
-  \********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseProperty = __webpack_require__(/*! ./_baseProperty */ 193);
-	
-	/**
-	 * Gets the "length" property value of `object`.
-	 *
-	 * **Note:** This function is used to avoid a
-	 * [JIT bug](https://bugs.webkit.org/show_bug.cgi?id=142792) that affects
-	 * Safari on at least iOS 8.1-8.3 ARM64.
-	 *
-	 * @private
-	 * @param {Object} object The object to query.
-	 * @returns {*} Returns the "length" value.
-	 */
-	var getLength = baseProperty('length');
-	
-	module.exports = getLength;
-
-
-/***/ },
-/* 193 */
-/*!***********************************!*\
-  !*** ./~/lodash/_baseProperty.js ***!
-  \***********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * The base implementation of `_.property` without support for deep paths.
-	 *
-	 * @private
-	 * @param {string} key The key of the property to get.
-	 * @returns {Function} Returns the new accessor function.
-	 */
-	function baseProperty(key) {
-	  return function(object) {
-	    return object == null ? undefined : object[key];
-	  };
-	}
-	
-	module.exports = baseProperty;
-
-
-/***/ },
-/* 194 */
-/*!********************************!*\
-  !*** ./~/lodash/isFunction.js ***!
-  \********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject = __webpack_require__(/*! ./isObject */ 195);
-	
-	/** `Object#toString` result references. */
-	var funcTag = '[object Function]',
-	    genTag = '[object GeneratorFunction]';
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/**
-	 * Used to resolve the
-	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-	var objectToString = objectProto.toString;
-	
-	/**
-	 * Checks if `value` is classified as a `Function` object.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 0.1.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified,
-	 *  else `false`.
-	 * @example
-	 *
-	 * _.isFunction(_);
-	 * // => true
-	 *
-	 * _.isFunction(/abc/);
-	 * // => false
-	 */
-	function isFunction(value) {
-	  // The use of `Object#toString` avoids issues with the `typeof` operator
-	  // in Safari 8 which returns 'object' for typed array and weak map constructors,
-	  // and PhantomJS 1.9 which returns 'function' for `NodeList` instances.
-	  var tag = isObject(value) ? objectToString.call(value) : '';
-	  return tag == funcTag || tag == genTag;
-	}
-	
-	module.exports = isFunction;
-
-
-/***/ },
-/* 195 */
-/*!******************************!*\
-  !*** ./~/lodash/isObject.js ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Checks if `value` is the
-	 * [language type](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-types)
-	 * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 0.1.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
-	 * @example
-	 *
-	 * _.isObject({});
-	 * // => true
-	 *
-	 * _.isObject([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isObject(_.noop);
-	 * // => true
-	 *
-	 * _.isObject(null);
-	 * // => false
-	 */
-	function isObject(value) {
-	  var type = typeof value;
-	  return !!value && (type == 'object' || type == 'function');
-	}
-	
-	module.exports = isObject;
-
-
-/***/ },
-/* 196 */
-/*!******************************!*\
-  !*** ./~/lodash/isLength.js ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	/** Used as references for various `Number` constants. */
-	var MAX_SAFE_INTEGER = 9007199254740991;
-	
-	/**
-	 * Checks if `value` is a valid array-like length.
-	 *
-	 * **Note:** This function is loosely based on
-	 * [`ToLength`](http://ecma-international.org/ecma-262/6.0/#sec-tolength).
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 4.0.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is a valid length,
-	 *  else `false`.
-	 * @example
-	 *
-	 * _.isLength(3);
-	 * // => true
-	 *
-	 * _.isLength(Number.MIN_VALUE);
-	 * // => false
-	 *
-	 * _.isLength(Infinity);
-	 * // => false
-	 *
-	 * _.isLength('3');
-	 * // => false
-	 */
-	function isLength(value) {
-	  return typeof value == 'number' &&
-	    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
-	}
-	
-	module.exports = isLength;
-
-
-/***/ },
-/* 197 */
-/*!**********************************!*\
-  !*** ./~/lodash/isObjectLike.js ***!
-  \**********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Checks if `value` is object-like. A value is object-like if it's not `null`
-	 * and has a `typeof` result of "object".
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 4.0.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
-	 * @example
-	 *
-	 * _.isObjectLike({});
-	 * // => true
-	 *
-	 * _.isObjectLike([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isObjectLike(_.noop);
-	 * // => false
-	 *
-	 * _.isObjectLike(null);
-	 * // => false
-	 */
-	function isObjectLike(value) {
-	  return !!value && typeof value == 'object';
-	}
-	
-	module.exports = isObjectLike;
-
-
-/***/ },
-/* 198 */
-/*!*****************************!*\
-  !*** ./~/lodash/isArray.js ***!
-  \*****************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Checks if `value` is classified as an `Array` object.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 0.1.0
-	 * @type {Function}
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified,
-	 *  else `false`.
-	 * @example
-	 *
-	 * _.isArray([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isArray(document.body.children);
-	 * // => false
-	 *
-	 * _.isArray('abc');
-	 * // => false
-	 *
-	 * _.isArray(_.noop);
-	 * // => false
-	 */
-	var isArray = Array.isArray;
-	
-	module.exports = isArray;
-
-
-/***/ },
-/* 199 */
-/*!******************************!*\
-  !*** ./~/lodash/isString.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isArray = __webpack_require__(/*! ./isArray */ 198),
-	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 197);
-	
-	/** `Object#toString` result references. */
-	var stringTag = '[object String]';
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/**
-	 * Used to resolve the
-	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-	var objectToString = objectProto.toString;
-	
-	/**
-	 * Checks if `value` is classified as a `String` primitive or object.
-	 *
-	 * @static
-	 * @since 0.1.0
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified,
-	 *  else `false`.
-	 * @example
-	 *
-	 * _.isString('abc');
-	 * // => true
-	 *
-	 * _.isString(1);
-	 * // => false
-	 */
-	function isString(value) {
-	  return typeof value == 'string' ||
-	    (!isArray(value) && isObjectLike(value) && objectToString.call(value) == stringTag);
-	}
-	
-	module.exports = isString;
-
-
-/***/ },
-/* 200 */
-/*!******************************!*\
-  !*** ./~/lodash/_isIndex.js ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	/** Used as references for various `Number` constants. */
-	var MAX_SAFE_INTEGER = 9007199254740991;
-	
-	/** Used to detect unsigned integer values. */
-	var reIsUint = /^(?:0|[1-9]\d*)$/;
-	
-	/**
-	 * Checks if `value` is a valid array-like index.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
-	 * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
-	 */
-	function isIndex(value, length) {
-	  length = length == null ? MAX_SAFE_INTEGER : length;
-	  return !!length &&
-	    (typeof value == 'number' || reIsUint.test(value)) &&
-	    (value > -1 && value % 1 == 0 && value < length);
-	}
-	
-	module.exports = isIndex;
-
-
-/***/ },
-/* 201 */
-/*!**********************************!*\
-  !*** ./~/lodash/_isPrototype.js ***!
-  \**********************************/
-/***/ function(module, exports) {
-
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/**
-	 * Checks if `value` is likely a prototype object.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
-	 */
-	function isPrototype(value) {
-	  var Ctor = value && value.constructor,
-	      proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
-	
-	  return value === proto;
-	}
-	
-	module.exports = isPrototype;
-
-
-/***/ },
-/* 202 */
-/*!*************************************!*\
-  !*** ./~/lodash/_createBaseEach.js ***!
-  \*************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isArrayLike = __webpack_require__(/*! ./isArrayLike */ 191);
-	
-	/**
-	 * Creates a `baseEach` or `baseEachRight` function.
-	 *
-	 * @private
-	 * @param {Function} eachFunc The function to iterate over a collection.
-	 * @param {boolean} [fromRight] Specify iterating from right to left.
-	 * @returns {Function} Returns the new base function.
-	 */
-	function createBaseEach(eachFunc, fromRight) {
-	  return function(collection, iteratee) {
-	    if (collection == null) {
-	      return collection;
-	    }
-	    if (!isArrayLike(collection)) {
-	      return eachFunc(collection, iteratee);
-	    }
-	    var length = collection.length,
-	        index = fromRight ? length : -1,
-	        iterable = Object(collection);
-	
-	    while ((fromRight ? index-- : ++index < length)) {
-	      if (iteratee(iterable[index], index, iterable) === false) {
-	        break;
-	      }
-	    }
-	    return collection;
-	  };
-	}
-	
-	module.exports = createBaseEach;
-
-
-/***/ },
-/* 203 */
-/*!***********************************!*\
-  !*** ./~/lodash/_baseIteratee.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseMatches = __webpack_require__(/*! ./_baseMatches */ 204),
-	    baseMatchesProperty = __webpack_require__(/*! ./_baseMatchesProperty */ 267),
-	    identity = __webpack_require__(/*! ./identity */ 281),
-	    isArray = __webpack_require__(/*! ./isArray */ 198),
-	    property = __webpack_require__(/*! ./property */ 282);
-	
-	/**
-	 * The base implementation of `_.iteratee`.
-	 *
-	 * @private
-	 * @param {*} [value=_.identity] The value to convert to an iteratee.
-	 * @returns {Function} Returns the iteratee.
-	 */
-	function baseIteratee(value) {
-	  // Don't store the `typeof` result in a variable to avoid a JIT bug in Safari 9.
-	  // See https://bugs.webkit.org/show_bug.cgi?id=156034 for more details.
-	  if (typeof value == 'function') {
-	    return value;
-	  }
-	  if (value == null) {
-	    return identity;
-	  }
-	  if (typeof value == 'object') {
-	    return isArray(value)
-	      ? baseMatchesProperty(value[0], value[1])
-	      : baseMatches(value);
-	  }
-	  return property(value);
-	}
-	
-	module.exports = baseIteratee;
-
-
-/***/ },
-/* 204 */
-/*!**********************************!*\
-  !*** ./~/lodash/_baseMatches.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseIsMatch = __webpack_require__(/*! ./_baseIsMatch */ 205),
-	    getMatchData = __webpack_require__(/*! ./_getMatchData */ 264),
-	    matchesStrictComparable = __webpack_require__(/*! ./_matchesStrictComparable */ 266);
-	
-	/**
-	 * The base implementation of `_.matches` which doesn't clone `source`.
-	 *
-	 * @private
-	 * @param {Object} source The object of property values to match.
-	 * @returns {Function} Returns the new spec function.
-	 */
-	function baseMatches(source) {
-	  var matchData = getMatchData(source);
-	  if (matchData.length == 1 && matchData[0][2]) {
-	    return matchesStrictComparable(matchData[0][0], matchData[0][1]);
-	  }
-	  return function(object) {
-	    return object === source || baseIsMatch(object, source, matchData);
-	  };
-	}
-	
-	module.exports = baseMatches;
-
-
-/***/ },
-/* 205 */
-/*!**********************************!*\
-  !*** ./~/lodash/_baseIsMatch.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var Stack = __webpack_require__(/*! ./_Stack */ 206),
-	    baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ 245);
-	
-	/** Used to compose bitmasks for comparison styles. */
-	var UNORDERED_COMPARE_FLAG = 1,
-	    PARTIAL_COMPARE_FLAG = 2;
-	
-	/**
-	 * The base implementation of `_.isMatch` without support for iteratee shorthands.
-	 *
-	 * @private
-	 * @param {Object} object The object to inspect.
-	 * @param {Object} source The object of property values to match.
-	 * @param {Array} matchData The property names, values, and compare flags to match.
-	 * @param {Function} [customizer] The function to customize comparisons.
-	 * @returns {boolean} Returns `true` if `object` is a match, else `false`.
-	 */
-	function baseIsMatch(object, source, matchData, customizer) {
-	  var index = matchData.length,
-	      length = index,
-	      noCustomizer = !customizer;
-	
-	  if (object == null) {
-	    return !length;
-	  }
-	  object = Object(object);
-	  while (index--) {
-	    var data = matchData[index];
-	    if ((noCustomizer && data[2])
-	          ? data[1] !== object[data[0]]
-	          : !(data[0] in object)
-	        ) {
-	      return false;
-	    }
-	  }
-	  while (++index < length) {
-	    data = matchData[index];
-	    var key = data[0],
-	        objValue = object[key],
-	        srcValue = data[1];
-	
-	    if (noCustomizer && data[2]) {
-	      if (objValue === undefined && !(key in object)) {
-	        return false;
-	      }
-	    } else {
-	      var stack = new Stack;
-	      if (customizer) {
-	        var result = customizer(objValue, srcValue, key, object, source, stack);
-	      }
-	      if (!(result === undefined
-	            ? baseIsEqual(srcValue, objValue, customizer, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG, stack)
-	            : result
-	          )) {
-	        return false;
-	      }
-	    }
-	  }
-	  return true;
-	}
-	
-	module.exports = baseIsMatch;
-
-
-/***/ },
-/* 206 */
-/*!****************************!*\
-  !*** ./~/lodash/_Stack.js ***!
-  \****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var ListCache = __webpack_require__(/*! ./_ListCache */ 207),
-	    stackClear = __webpack_require__(/*! ./_stackClear */ 215),
-	    stackDelete = __webpack_require__(/*! ./_stackDelete */ 216),
-	    stackGet = __webpack_require__(/*! ./_stackGet */ 217),
-	    stackHas = __webpack_require__(/*! ./_stackHas */ 218),
-	    stackSet = __webpack_require__(/*! ./_stackSet */ 219);
-	
-	/**
-	 * Creates a stack cache object to store key-value pairs.
-	 *
-	 * @private
-	 * @constructor
-	 * @param {Array} [entries] The key-value pairs to cache.
-	 */
-	function Stack(entries) {
-	  this.__data__ = new ListCache(entries);
-	}
-	
-	// Add methods to `Stack`.
-	Stack.prototype.clear = stackClear;
-	Stack.prototype['delete'] = stackDelete;
-	Stack.prototype.get = stackGet;
-	Stack.prototype.has = stackHas;
-	Stack.prototype.set = stackSet;
-	
-	module.exports = Stack;
-
-
-/***/ },
-/* 207 */
-/*!********************************!*\
-  !*** ./~/lodash/_ListCache.js ***!
-  \********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var listCacheClear = __webpack_require__(/*! ./_listCacheClear */ 208),
-	    listCacheDelete = __webpack_require__(/*! ./_listCacheDelete */ 209),
-	    listCacheGet = __webpack_require__(/*! ./_listCacheGet */ 212),
-	    listCacheHas = __webpack_require__(/*! ./_listCacheHas */ 213),
-	    listCacheSet = __webpack_require__(/*! ./_listCacheSet */ 214);
-	
-	/**
-	 * Creates an list cache object.
-	 *
-	 * @private
-	 * @constructor
-	 * @param {Array} [entries] The key-value pairs to cache.
-	 */
-	function ListCache(entries) {
-	  var index = -1,
-	      length = entries ? entries.length : 0;
-	
-	  this.clear();
-	  while (++index < length) {
-	    var entry = entries[index];
-	    this.set(entry[0], entry[1]);
-	  }
-	}
-	
-	// Add methods to `ListCache`.
-	ListCache.prototype.clear = listCacheClear;
-	ListCache.prototype['delete'] = listCacheDelete;
-	ListCache.prototype.get = listCacheGet;
-	ListCache.prototype.has = listCacheHas;
-	ListCache.prototype.set = listCacheSet;
-	
-	module.exports = ListCache;
-
-
-/***/ },
-/* 208 */
-/*!*************************************!*\
-  !*** ./~/lodash/_listCacheClear.js ***!
-  \*************************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Removes all key-value entries from the list cache.
-	 *
-	 * @private
-	 * @name clear
-	 * @memberOf ListCache
-	 */
-	function listCacheClear() {
-	  this.__data__ = [];
-	}
-	
-	module.exports = listCacheClear;
-
-
-/***/ },
-/* 209 */
-/*!**************************************!*\
-  !*** ./~/lodash/_listCacheDelete.js ***!
-  \**************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 210);
-	
-	/** Used for built-in method references. */
-	var arrayProto = Array.prototype;
-	
-	/** Built-in value references. */
-	var splice = arrayProto.splice;
-	
-	/**
-	 * Removes `key` and its value from the list cache.
-	 *
-	 * @private
-	 * @name delete
-	 * @memberOf ListCache
-	 * @param {string} key The key of the value to remove.
-	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
-	 */
-	function listCacheDelete(key) {
-	  var data = this.__data__,
-	      index = assocIndexOf(data, key);
-	
-	  if (index < 0) {
-	    return false;
-	  }
-	  var lastIndex = data.length - 1;
-	  if (index == lastIndex) {
-	    data.pop();
-	  } else {
-	    splice.call(data, index, 1);
-	  }
-	  return true;
-	}
-	
-	module.exports = listCacheDelete;
-
-
-/***/ },
-/* 210 */
-/*!***********************************!*\
-  !*** ./~/lodash/_assocIndexOf.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var eq = __webpack_require__(/*! ./eq */ 211);
-	
-	/**
-	 * Gets the index at which the `key` is found in `array` of key-value pairs.
-	 *
-	 * @private
-	 * @param {Array} array The array to search.
-	 * @param {*} key The key to search for.
-	 * @returns {number} Returns the index of the matched value, else `-1`.
-	 */
-	function assocIndexOf(array, key) {
-	  var length = array.length;
-	  while (length--) {
-	    if (eq(array[length][0], key)) {
-	      return length;
-	    }
-	  }
-	  return -1;
-	}
-	
-	module.exports = assocIndexOf;
-
-
-/***/ },
-/* 211 */
-/*!************************!*\
-  !*** ./~/lodash/eq.js ***!
-  \************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Performs a
-	 * [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
-	 * comparison between two values to determine if they are equivalent.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 4.0.0
-	 * @category Lang
-	 * @param {*} value The value to compare.
-	 * @param {*} other The other value to compare.
-	 * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
-	 * @example
-	 *
-	 * var object = { 'user': 'fred' };
-	 * var other = { 'user': 'fred' };
-	 *
-	 * _.eq(object, object);
-	 * // => true
-	 *
-	 * _.eq(object, other);
-	 * // => false
-	 *
-	 * _.eq('a', 'a');
-	 * // => true
-	 *
-	 * _.eq('a', Object('a'));
-	 * // => false
-	 *
-	 * _.eq(NaN, NaN);
-	 * // => true
-	 */
-	function eq(value, other) {
-	  return value === other || (value !== value && other !== other);
-	}
-	
-	module.exports = eq;
-
-
-/***/ },
-/* 212 */
-/*!***********************************!*\
-  !*** ./~/lodash/_listCacheGet.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 210);
-	
-	/**
-	 * Gets the list cache value for `key`.
-	 *
-	 * @private
-	 * @name get
-	 * @memberOf ListCache
-	 * @param {string} key The key of the value to get.
-	 * @returns {*} Returns the entry value.
-	 */
-	function listCacheGet(key) {
-	  var data = this.__data__,
-	      index = assocIndexOf(data, key);
-	
-	  return index < 0 ? undefined : data[index][1];
-	}
-	
-	module.exports = listCacheGet;
-
-
-/***/ },
-/* 213 */
-/*!***********************************!*\
-  !*** ./~/lodash/_listCacheHas.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 210);
-	
-	/**
-	 * Checks if a list cache value for `key` exists.
-	 *
-	 * @private
-	 * @name has
-	 * @memberOf ListCache
-	 * @param {string} key The key of the entry to check.
-	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
-	 */
-	function listCacheHas(key) {
-	  return assocIndexOf(this.__data__, key) > -1;
-	}
-	
-	module.exports = listCacheHas;
-
-
-/***/ },
-/* 214 */
-/*!***********************************!*\
-  !*** ./~/lodash/_listCacheSet.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 210);
-	
-	/**
-	 * Sets the list cache `key` to `value`.
-	 *
-	 * @private
-	 * @name set
-	 * @memberOf ListCache
-	 * @param {string} key The key of the value to set.
-	 * @param {*} value The value to set.
-	 * @returns {Object} Returns the list cache instance.
-	 */
-	function listCacheSet(key, value) {
-	  var data = this.__data__,
-	      index = assocIndexOf(data, key);
-	
-	  if (index < 0) {
-	    data.push([key, value]);
-	  } else {
-	    data[index][1] = value;
-	  }
-	  return this;
-	}
-	
-	module.exports = listCacheSet;
-
-
-/***/ },
-/* 215 */
-/*!*********************************!*\
-  !*** ./~/lodash/_stackClear.js ***!
-  \*********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var ListCache = __webpack_require__(/*! ./_ListCache */ 207);
-	
-	/**
-	 * Removes all key-value entries from the stack.
-	 *
-	 * @private
-	 * @name clear
-	 * @memberOf Stack
-	 */
-	function stackClear() {
-	  this.__data__ = new ListCache;
-	}
-	
-	module.exports = stackClear;
-
-
-/***/ },
-/* 216 */
-/*!**********************************!*\
-  !*** ./~/lodash/_stackDelete.js ***!
-  \**********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Removes `key` and its value from the stack.
-	 *
-	 * @private
-	 * @name delete
-	 * @memberOf Stack
-	 * @param {string} key The key of the value to remove.
-	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
-	 */
-	function stackDelete(key) {
-	  return this.__data__['delete'](key);
-	}
-	
-	module.exports = stackDelete;
-
-
-/***/ },
-/* 217 */
-/*!*******************************!*\
-  !*** ./~/lodash/_stackGet.js ***!
-  \*******************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Gets the stack value for `key`.
-	 *
-	 * @private
-	 * @name get
-	 * @memberOf Stack
-	 * @param {string} key The key of the value to get.
-	 * @returns {*} Returns the entry value.
-	 */
-	function stackGet(key) {
-	  return this.__data__.get(key);
-	}
-	
-	module.exports = stackGet;
-
-
-/***/ },
-/* 218 */
-/*!*******************************!*\
-  !*** ./~/lodash/_stackHas.js ***!
-  \*******************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Checks if a stack value for `key` exists.
-	 *
-	 * @private
-	 * @name has
-	 * @memberOf Stack
-	 * @param {string} key The key of the entry to check.
-	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
-	 */
-	function stackHas(key) {
-	  return this.__data__.has(key);
-	}
-	
-	module.exports = stackHas;
-
-
-/***/ },
-/* 219 */
-/*!*******************************!*\
-  !*** ./~/lodash/_stackSet.js ***!
-  \*******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var ListCache = __webpack_require__(/*! ./_ListCache */ 207),
-	    MapCache = __webpack_require__(/*! ./_MapCache */ 220);
-	
-	/** Used as the size to enable large array optimizations. */
-	var LARGE_ARRAY_SIZE = 200;
-	
-	/**
-	 * Sets the stack `key` to `value`.
-	 *
-	 * @private
-	 * @name set
-	 * @memberOf Stack
-	 * @param {string} key The key of the value to set.
-	 * @param {*} value The value to set.
-	 * @returns {Object} Returns the stack cache instance.
-	 */
-	function stackSet(key, value) {
-	  var cache = this.__data__;
-	  if (cache instanceof ListCache && cache.__data__.length == LARGE_ARRAY_SIZE) {
-	    cache = this.__data__ = new MapCache(cache.__data__);
-	  }
-	  cache.set(key, value);
-	  return this;
-	}
-	
-	module.exports = stackSet;
-
-
-/***/ },
-/* 220 */
-/*!*******************************!*\
-  !*** ./~/lodash/_MapCache.js ***!
-  \*******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var mapCacheClear = __webpack_require__(/*! ./_mapCacheClear */ 221),
-	    mapCacheDelete = __webpack_require__(/*! ./_mapCacheDelete */ 239),
-	    mapCacheGet = __webpack_require__(/*! ./_mapCacheGet */ 242),
-	    mapCacheHas = __webpack_require__(/*! ./_mapCacheHas */ 243),
-	    mapCacheSet = __webpack_require__(/*! ./_mapCacheSet */ 244);
-	
-	/**
-	 * Creates a map cache object to store key-value pairs.
-	 *
-	 * @private
-	 * @constructor
-	 * @param {Array} [entries] The key-value pairs to cache.
-	 */
-	function MapCache(entries) {
-	  var index = -1,
-	      length = entries ? entries.length : 0;
-	
-	  this.clear();
-	  while (++index < length) {
-	    var entry = entries[index];
-	    this.set(entry[0], entry[1]);
-	  }
-	}
-	
-	// Add methods to `MapCache`.
-	MapCache.prototype.clear = mapCacheClear;
-	MapCache.prototype['delete'] = mapCacheDelete;
-	MapCache.prototype.get = mapCacheGet;
-	MapCache.prototype.has = mapCacheHas;
-	MapCache.prototype.set = mapCacheSet;
-	
-	module.exports = MapCache;
-
-
-/***/ },
-/* 221 */
-/*!************************************!*\
-  !*** ./~/lodash/_mapCacheClear.js ***!
-  \************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var Hash = __webpack_require__(/*! ./_Hash */ 222),
-	    ListCache = __webpack_require__(/*! ./_ListCache */ 207),
-	    Map = __webpack_require__(/*! ./_Map */ 238);
-	
-	/**
-	 * Removes all key-value entries from the map.
-	 *
-	 * @private
-	 * @name clear
-	 * @memberOf MapCache
-	 */
-	function mapCacheClear() {
-	  this.__data__ = {
-	    'hash': new Hash,
-	    'map': new (Map || ListCache),
-	    'string': new Hash
-	  };
-	}
-	
-	module.exports = mapCacheClear;
-
-
-/***/ },
-/* 222 */
-/*!***************************!*\
-  !*** ./~/lodash/_Hash.js ***!
-  \***************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var hashClear = __webpack_require__(/*! ./_hashClear */ 223),
-	    hashDelete = __webpack_require__(/*! ./_hashDelete */ 234),
-	    hashGet = __webpack_require__(/*! ./_hashGet */ 235),
-	    hashHas = __webpack_require__(/*! ./_hashHas */ 236),
-	    hashSet = __webpack_require__(/*! ./_hashSet */ 237);
-	
-	/**
-	 * Creates a hash object.
-	 *
-	 * @private
-	 * @constructor
-	 * @param {Array} [entries] The key-value pairs to cache.
-	 */
-	function Hash(entries) {
-	  var index = -1,
-	      length = entries ? entries.length : 0;
-	
-	  this.clear();
-	  while (++index < length) {
-	    var entry = entries[index];
-	    this.set(entry[0], entry[1]);
-	  }
-	}
-	
-	// Add methods to `Hash`.
-	Hash.prototype.clear = hashClear;
-	Hash.prototype['delete'] = hashDelete;
-	Hash.prototype.get = hashGet;
-	Hash.prototype.has = hashHas;
-	Hash.prototype.set = hashSet;
-	
-	module.exports = Hash;
-
-
-/***/ },
-/* 223 */
-/*!********************************!*\
-  !*** ./~/lodash/_hashClear.js ***!
-  \********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 224);
-	
-	/**
-	 * Removes all key-value entries from the hash.
-	 *
-	 * @private
-	 * @name clear
-	 * @memberOf Hash
-	 */
-	function hashClear() {
-	  this.__data__ = nativeCreate ? nativeCreate(null) : {};
-	}
-	
-	module.exports = hashClear;
-
-
-/***/ },
-/* 224 */
-/*!***********************************!*\
-  !*** ./~/lodash/_nativeCreate.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getNative = __webpack_require__(/*! ./_getNative */ 225);
-	
-	/* Built-in method references that are verified to be native. */
-	var nativeCreate = getNative(Object, 'create');
-	
-	module.exports = nativeCreate;
-
-
-/***/ },
-/* 225 */
-/*!********************************!*\
-  !*** ./~/lodash/_getNative.js ***!
-  \********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseIsNative = __webpack_require__(/*! ./_baseIsNative */ 226),
-	    getValue = __webpack_require__(/*! ./_getValue */ 233);
-	
-	/**
-	 * Gets the native function at `key` of `object`.
-	 *
-	 * @private
-	 * @param {Object} object The object to query.
-	 * @param {string} key The key of the method to get.
-	 * @returns {*} Returns the function if it's native, else `undefined`.
-	 */
-	function getNative(object, key) {
-	  var value = getValue(object, key);
-	  return baseIsNative(value) ? value : undefined;
-	}
-	
-	module.exports = getNative;
-
-
-/***/ },
-/* 226 */
-/*!***********************************!*\
-  !*** ./~/lodash/_baseIsNative.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isFunction = __webpack_require__(/*! ./isFunction */ 194),
-	    isHostObject = __webpack_require__(/*! ./_isHostObject */ 227),
-	    isMasked = __webpack_require__(/*! ./_isMasked */ 228),
-	    isObject = __webpack_require__(/*! ./isObject */ 195),
-	    toSource = __webpack_require__(/*! ./_toSource */ 232);
-	
-	/**
-	 * Used to match `RegExp`
-	 * [syntax characters](http://ecma-international.org/ecma-262/6.0/#sec-patterns).
-	 */
-	var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
-	
-	/** Used to detect host constructors (Safari). */
-	var reIsHostCtor = /^\[object .+?Constructor\]$/;
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/** Used to resolve the decompiled source of functions. */
-	var funcToString = Function.prototype.toString;
-	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-	
-	/** Used to detect if a method is native. */
-	var reIsNative = RegExp('^' +
-	  funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\$&')
-	  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
-	);
-	
-	/**
-	 * The base implementation of `_.isNative` without bad shim checks.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is a native function,
-	 *  else `false`.
-	 */
-	function baseIsNative(value) {
-	  if (!isObject(value) || isMasked(value)) {
-	    return false;
-	  }
-	  var pattern = (isFunction(value) || isHostObject(value)) ? reIsNative : reIsHostCtor;
-	  return pattern.test(toSource(value));
-	}
-	
-	module.exports = baseIsNative;
-
-
-/***/ },
-/* 227 */
-/*!***********************************!*\
-  !*** ./~/lodash/_isHostObject.js ***!
-  \***********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Checks if `value` is a host object in IE < 9.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is a host object, else `false`.
-	 */
-	function isHostObject(value) {
-	  // Many host objects are `Object` objects that can coerce to strings
-	  // despite having improperly defined `toString` methods.
-	  var result = false;
-	  if (value != null && typeof value.toString != 'function') {
-	    try {
-	      result = !!(value + '');
-	    } catch (e) {}
-	  }
-	  return result;
-	}
-	
-	module.exports = isHostObject;
-
-
-/***/ },
-/* 228 */
-/*!*******************************!*\
-  !*** ./~/lodash/_isMasked.js ***!
-  \*******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var coreJsData = __webpack_require__(/*! ./_coreJsData */ 229);
-	
-	/** Used to detect methods masquerading as native. */
-	var maskSrcKey = (function() {
-	  var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
-	  return uid ? ('Symbol(src)_1.' + uid) : '';
-	}());
-	
-	/**
-	 * Checks if `func` has its source masked.
-	 *
-	 * @private
-	 * @param {Function} func The function to check.
-	 * @returns {boolean} Returns `true` if `func` is masked, else `false`.
-	 */
-	function isMasked(func) {
-	  return !!maskSrcKey && (maskSrcKey in func);
-	}
-	
-	module.exports = isMasked;
-
-
-/***/ },
-/* 229 */
-/*!*********************************!*\
-  !*** ./~/lodash/_coreJsData.js ***!
-  \*********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var root = __webpack_require__(/*! ./_root */ 230);
-	
-	/** Used to detect overreaching core-js shims. */
-	var coreJsData = root['__core-js_shared__'];
-	
-	module.exports = coreJsData;
-
-
-/***/ },
-/* 230 */
-/*!***************************!*\
-  !*** ./~/lodash/_root.js ***!
-  \***************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {var checkGlobal = __webpack_require__(/*! ./_checkGlobal */ 231);
-	
-	/** Detect free variable `global` from Node.js. */
-	var freeGlobal = checkGlobal(typeof global == 'object' && global);
-	
-	/** Detect free variable `self`. */
-	var freeSelf = checkGlobal(typeof self == 'object' && self);
-	
-	/** Detect `this` as the global object. */
-	var thisGlobal = checkGlobal(typeof this == 'object' && this);
-	
-	/** Used as a reference to the global object. */
-	var root = freeGlobal || freeSelf || thisGlobal || Function('return this')();
-	
-	module.exports = root;
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 231 */
-/*!**********************************!*\
-  !*** ./~/lodash/_checkGlobal.js ***!
-  \**********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Checks if `value` is a global object.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @returns {null|Object} Returns `value` if it's a global object, else `null`.
-	 */
-	function checkGlobal(value) {
-	  return (value && value.Object === Object) ? value : null;
-	}
-	
-	module.exports = checkGlobal;
-
-
-/***/ },
-/* 232 */
-/*!*******************************!*\
-  !*** ./~/lodash/_toSource.js ***!
-  \*******************************/
-/***/ function(module, exports) {
-
-	/** Used to resolve the decompiled source of functions. */
-	var funcToString = Function.prototype.toString;
-	
-	/**
-	 * Converts `func` to its source code.
-	 *
-	 * @private
-	 * @param {Function} func The function to process.
-	 * @returns {string} Returns the source code.
-	 */
-	function toSource(func) {
-	  if (func != null) {
-	    try {
-	      return funcToString.call(func);
-	    } catch (e) {}
-	    try {
-	      return (func + '');
-	    } catch (e) {}
-	  }
-	  return '';
-	}
-	
-	module.exports = toSource;
-
-
-/***/ },
-/* 233 */
-/*!*******************************!*\
-  !*** ./~/lodash/_getValue.js ***!
-  \*******************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Gets the value at `key` of `object`.
-	 *
-	 * @private
-	 * @param {Object} [object] The object to query.
-	 * @param {string} key The key of the property to get.
-	 * @returns {*} Returns the property value.
-	 */
-	function getValue(object, key) {
-	  return object == null ? undefined : object[key];
-	}
-	
-	module.exports = getValue;
-
-
-/***/ },
-/* 234 */
-/*!*********************************!*\
-  !*** ./~/lodash/_hashDelete.js ***!
-  \*********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Removes `key` and its value from the hash.
-	 *
-	 * @private
-	 * @name delete
-	 * @memberOf Hash
-	 * @param {Object} hash The hash to modify.
-	 * @param {string} key The key of the value to remove.
-	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
-	 */
-	function hashDelete(key) {
-	  return this.has(key) && delete this.__data__[key];
-	}
-	
-	module.exports = hashDelete;
-
-
-/***/ },
-/* 235 */
-/*!******************************!*\
-  !*** ./~/lodash/_hashGet.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 224);
-	
-	/** Used to stand-in for `undefined` hash values. */
-	var HASH_UNDEFINED = '__lodash_hash_undefined__';
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-	
-	/**
-	 * Gets the hash value for `key`.
-	 *
-	 * @private
-	 * @name get
-	 * @memberOf Hash
-	 * @param {string} key The key of the value to get.
-	 * @returns {*} Returns the entry value.
-	 */
-	function hashGet(key) {
-	  var data = this.__data__;
-	  if (nativeCreate) {
-	    var result = data[key];
-	    return result === HASH_UNDEFINED ? undefined : result;
-	  }
-	  return hasOwnProperty.call(data, key) ? data[key] : undefined;
-	}
-	
-	module.exports = hashGet;
-
-
-/***/ },
-/* 236 */
-/*!******************************!*\
-  !*** ./~/lodash/_hashHas.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 224);
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-	
-	/**
-	 * Checks if a hash value for `key` exists.
-	 *
-	 * @private
-	 * @name has
-	 * @memberOf Hash
-	 * @param {string} key The key of the entry to check.
-	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
-	 */
-	function hashHas(key) {
-	  var data = this.__data__;
-	  return nativeCreate ? data[key] !== undefined : hasOwnProperty.call(data, key);
-	}
-	
-	module.exports = hashHas;
-
-
-/***/ },
-/* 237 */
-/*!******************************!*\
-  !*** ./~/lodash/_hashSet.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 224);
-	
-	/** Used to stand-in for `undefined` hash values. */
-	var HASH_UNDEFINED = '__lodash_hash_undefined__';
-	
-	/**
-	 * Sets the hash `key` to `value`.
-	 *
-	 * @private
-	 * @name set
-	 * @memberOf Hash
-	 * @param {string} key The key of the value to set.
-	 * @param {*} value The value to set.
-	 * @returns {Object} Returns the hash instance.
-	 */
-	function hashSet(key, value) {
-	  var data = this.__data__;
-	  data[key] = (nativeCreate && value === undefined) ? HASH_UNDEFINED : value;
-	  return this;
-	}
-	
-	module.exports = hashSet;
-
-
-/***/ },
-/* 238 */
-/*!**************************!*\
-  !*** ./~/lodash/_Map.js ***!
-  \**************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getNative = __webpack_require__(/*! ./_getNative */ 225),
-	    root = __webpack_require__(/*! ./_root */ 230);
-	
-	/* Built-in method references that are verified to be native. */
-	var Map = getNative(root, 'Map');
-	
-	module.exports = Map;
-
-
-/***/ },
-/* 239 */
-/*!*************************************!*\
-  !*** ./~/lodash/_mapCacheDelete.js ***!
-  \*************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getMapData = __webpack_require__(/*! ./_getMapData */ 240);
-	
-	/**
-	 * Removes `key` and its value from the map.
-	 *
-	 * @private
-	 * @name delete
-	 * @memberOf MapCache
-	 * @param {string} key The key of the value to remove.
-	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
-	 */
-	function mapCacheDelete(key) {
-	  return getMapData(this, key)['delete'](key);
-	}
-	
-	module.exports = mapCacheDelete;
-
-
-/***/ },
-/* 240 */
-/*!*********************************!*\
-  !*** ./~/lodash/_getMapData.js ***!
-  \*********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isKeyable = __webpack_require__(/*! ./_isKeyable */ 241);
-	
-	/**
-	 * Gets the data for `map`.
-	 *
-	 * @private
-	 * @param {Object} map The map to query.
-	 * @param {string} key The reference key.
-	 * @returns {*} Returns the map data.
-	 */
-	function getMapData(map, key) {
-	  var data = map.__data__;
-	  return isKeyable(key)
-	    ? data[typeof key == 'string' ? 'string' : 'hash']
-	    : data.map;
-	}
-	
-	module.exports = getMapData;
-
-
-/***/ },
-/* 241 */
-/*!********************************!*\
-  !*** ./~/lodash/_isKeyable.js ***!
-  \********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Checks if `value` is suitable for use as unique object key.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
-	 */
-	function isKeyable(value) {
-	  var type = typeof value;
-	  return (type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean')
-	    ? (value !== '__proto__')
-	    : (value === null);
-	}
-	
-	module.exports = isKeyable;
-
-
-/***/ },
-/* 242 */
-/*!**********************************!*\
-  !*** ./~/lodash/_mapCacheGet.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getMapData = __webpack_require__(/*! ./_getMapData */ 240);
-	
-	/**
-	 * Gets the map value for `key`.
-	 *
-	 * @private
-	 * @name get
-	 * @memberOf MapCache
-	 * @param {string} key The key of the value to get.
-	 * @returns {*} Returns the entry value.
-	 */
-	function mapCacheGet(key) {
-	  return getMapData(this, key).get(key);
-	}
-	
-	module.exports = mapCacheGet;
-
-
-/***/ },
-/* 243 */
-/*!**********************************!*\
-  !*** ./~/lodash/_mapCacheHas.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getMapData = __webpack_require__(/*! ./_getMapData */ 240);
-	
-	/**
-	 * Checks if a map value for `key` exists.
-	 *
-	 * @private
-	 * @name has
-	 * @memberOf MapCache
-	 * @param {string} key The key of the entry to check.
-	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
-	 */
-	function mapCacheHas(key) {
-	  return getMapData(this, key).has(key);
-	}
-	
-	module.exports = mapCacheHas;
-
-
-/***/ },
-/* 244 */
-/*!**********************************!*\
-  !*** ./~/lodash/_mapCacheSet.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getMapData = __webpack_require__(/*! ./_getMapData */ 240);
-	
-	/**
-	 * Sets the map `key` to `value`.
-	 *
-	 * @private
-	 * @name set
-	 * @memberOf MapCache
-	 * @param {string} key The key of the value to set.
-	 * @param {*} value The value to set.
-	 * @returns {Object} Returns the map cache instance.
-	 */
-	function mapCacheSet(key, value) {
-	  getMapData(this, key).set(key, value);
-	  return this;
-	}
-	
-	module.exports = mapCacheSet;
-
-
-/***/ },
-/* 245 */
-/*!**********************************!*\
-  !*** ./~/lodash/_baseIsEqual.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseIsEqualDeep = __webpack_require__(/*! ./_baseIsEqualDeep */ 246),
-	    isObject = __webpack_require__(/*! ./isObject */ 195),
-	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 197);
-	
-	/**
-	 * The base implementation of `_.isEqual` which supports partial comparisons
-	 * and tracks traversed objects.
-	 *
-	 * @private
-	 * @param {*} value The value to compare.
-	 * @param {*} other The other value to compare.
-	 * @param {Function} [customizer] The function to customize comparisons.
-	 * @param {boolean} [bitmask] The bitmask of comparison flags.
-	 *  The bitmask may be composed of the following flags:
-	 *     1 - Unordered comparison
-	 *     2 - Partial comparison
-	 * @param {Object} [stack] Tracks traversed `value` and `other` objects.
-	 * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
-	 */
-	function baseIsEqual(value, other, customizer, bitmask, stack) {
-	  if (value === other) {
-	    return true;
-	  }
-	  if (value == null || other == null || (!isObject(value) && !isObjectLike(other))) {
-	    return value !== value && other !== other;
-	  }
-	  return baseIsEqualDeep(value, other, baseIsEqual, customizer, bitmask, stack);
-	}
-	
-	module.exports = baseIsEqual;
-
-
-/***/ },
-/* 246 */
-/*!**************************************!*\
-  !*** ./~/lodash/_baseIsEqualDeep.js ***!
-  \**************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var Stack = __webpack_require__(/*! ./_Stack */ 206),
-	    equalArrays = __webpack_require__(/*! ./_equalArrays */ 247),
-	    equalByTag = __webpack_require__(/*! ./_equalByTag */ 252),
-	    equalObjects = __webpack_require__(/*! ./_equalObjects */ 257),
-	    getTag = __webpack_require__(/*! ./_getTag */ 258),
-	    isArray = __webpack_require__(/*! ./isArray */ 198),
-	    isHostObject = __webpack_require__(/*! ./_isHostObject */ 227),
-	    isTypedArray = __webpack_require__(/*! ./isTypedArray */ 263);
-	
-	/** Used to compose bitmasks for comparison styles. */
-	var PARTIAL_COMPARE_FLAG = 2;
-	
-	/** `Object#toString` result references. */
-	var argsTag = '[object Arguments]',
-	    arrayTag = '[object Array]',
-	    objectTag = '[object Object]';
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-	
-	/**
-	 * A specialized version of `baseIsEqual` for arrays and objects which performs
-	 * deep comparisons and tracks traversed objects enabling objects with circular
-	 * references to be compared.
-	 *
-	 * @private
-	 * @param {Object} object The object to compare.
-	 * @param {Object} other The other object to compare.
-	 * @param {Function} equalFunc The function to determine equivalents of values.
-	 * @param {Function} [customizer] The function to customize comparisons.
-	 * @param {number} [bitmask] The bitmask of comparison flags. See `baseIsEqual`
-	 *  for more details.
-	 * @param {Object} [stack] Tracks traversed `object` and `other` objects.
-	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
-	 */
-	function baseIsEqualDeep(object, other, equalFunc, customizer, bitmask, stack) {
-	  var objIsArr = isArray(object),
-	      othIsArr = isArray(other),
-	      objTag = arrayTag,
-	      othTag = arrayTag;
-	
-	  if (!objIsArr) {
-	    objTag = getTag(object);
-	    objTag = objTag == argsTag ? objectTag : objTag;
-	  }
-	  if (!othIsArr) {
-	    othTag = getTag(other);
-	    othTag = othTag == argsTag ? objectTag : othTag;
-	  }
-	  var objIsObj = objTag == objectTag && !isHostObject(object),
-	      othIsObj = othTag == objectTag && !isHostObject(other),
-	      isSameTag = objTag == othTag;
-	
-	  if (isSameTag && !objIsObj) {
-	    stack || (stack = new Stack);
-	    return (objIsArr || isTypedArray(object))
-	      ? equalArrays(object, other, equalFunc, customizer, bitmask, stack)
-	      : equalByTag(object, other, objTag, equalFunc, customizer, bitmask, stack);
-	  }
-	  if (!(bitmask & PARTIAL_COMPARE_FLAG)) {
-	    var objIsWrapped = objIsObj && hasOwnProperty.call(object, '__wrapped__'),
-	        othIsWrapped = othIsObj && hasOwnProperty.call(other, '__wrapped__');
-	
-	    if (objIsWrapped || othIsWrapped) {
-	      var objUnwrapped = objIsWrapped ? object.value() : object,
-	          othUnwrapped = othIsWrapped ? other.value() : other;
-	
-	      stack || (stack = new Stack);
-	      return equalFunc(objUnwrapped, othUnwrapped, customizer, bitmask, stack);
-	    }
-	  }
-	  if (!isSameTag) {
-	    return false;
-	  }
-	  stack || (stack = new Stack);
-	  return equalObjects(object, other, equalFunc, customizer, bitmask, stack);
-	}
-	
-	module.exports = baseIsEqualDeep;
-
-
-/***/ },
-/* 247 */
-/*!**********************************!*\
-  !*** ./~/lodash/_equalArrays.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var SetCache = __webpack_require__(/*! ./_SetCache */ 248),
-	    arraySome = __webpack_require__(/*! ./_arraySome */ 251);
-	
-	/** Used to compose bitmasks for comparison styles. */
-	var UNORDERED_COMPARE_FLAG = 1,
-	    PARTIAL_COMPARE_FLAG = 2;
-	
-	/**
-	 * A specialized version of `baseIsEqualDeep` for arrays with support for
-	 * partial deep comparisons.
-	 *
-	 * @private
-	 * @param {Array} array The array to compare.
-	 * @param {Array} other The other array to compare.
-	 * @param {Function} equalFunc The function to determine equivalents of values.
-	 * @param {Function} customizer The function to customize comparisons.
-	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
-	 *  for more details.
-	 * @param {Object} stack Tracks traversed `array` and `other` objects.
-	 * @returns {boolean} Returns `true` if the arrays are equivalent, else `false`.
-	 */
-	function equalArrays(array, other, equalFunc, customizer, bitmask, stack) {
-	  var isPartial = bitmask & PARTIAL_COMPARE_FLAG,
-	      arrLength = array.length,
-	      othLength = other.length;
-	
-	  if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
-	    return false;
-	  }
-	  // Assume cyclic values are equal.
-	  var stacked = stack.get(array);
-	  if (stacked) {
-	    return stacked == other;
-	  }
-	  var index = -1,
-	      result = true,
-	      seen = (bitmask & UNORDERED_COMPARE_FLAG) ? new SetCache : undefined;
-	
-	  stack.set(array, other);
-	
-	  // Ignore non-index properties.
-	  while (++index < arrLength) {
-	    var arrValue = array[index],
-	        othValue = other[index];
-	
-	    if (customizer) {
-	      var compared = isPartial
-	        ? customizer(othValue, arrValue, index, other, array, stack)
-	        : customizer(arrValue, othValue, index, array, other, stack);
-	    }
-	    if (compared !== undefined) {
-	      if (compared) {
-	        continue;
-	      }
-	      result = false;
-	      break;
-	    }
-	    // Recursively compare arrays (susceptible to call stack limits).
-	    if (seen) {
-	      if (!arraySome(other, function(othValue, othIndex) {
-	            if (!seen.has(othIndex) &&
-	                (arrValue === othValue || equalFunc(arrValue, othValue, customizer, bitmask, stack))) {
-	              return seen.add(othIndex);
-	            }
-	          })) {
-	        result = false;
-	        break;
-	      }
-	    } else if (!(
-	          arrValue === othValue ||
-	            equalFunc(arrValue, othValue, customizer, bitmask, stack)
-	        )) {
-	      result = false;
-	      break;
-	    }
-	  }
-	  stack['delete'](array);
-	  return result;
-	}
-	
-	module.exports = equalArrays;
-
-
-/***/ },
-/* 248 */
-/*!*******************************!*\
-  !*** ./~/lodash/_SetCache.js ***!
-  \*******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var MapCache = __webpack_require__(/*! ./_MapCache */ 220),
-	    setCacheAdd = __webpack_require__(/*! ./_setCacheAdd */ 249),
-	    setCacheHas = __webpack_require__(/*! ./_setCacheHas */ 250);
-	
-	/**
-	 *
-	 * Creates an array cache object to store unique values.
-	 *
-	 * @private
-	 * @constructor
-	 * @param {Array} [values] The values to cache.
-	 */
-	function SetCache(values) {
-	  var index = -1,
-	      length = values ? values.length : 0;
-	
-	  this.__data__ = new MapCache;
-	  while (++index < length) {
-	    this.add(values[index]);
-	  }
-	}
-	
-	// Add methods to `SetCache`.
-	SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
-	SetCache.prototype.has = setCacheHas;
-	
-	module.exports = SetCache;
-
-
-/***/ },
-/* 249 */
-/*!**********************************!*\
-  !*** ./~/lodash/_setCacheAdd.js ***!
-  \**********************************/
-/***/ function(module, exports) {
-
-	/** Used to stand-in for `undefined` hash values. */
-	var HASH_UNDEFINED = '__lodash_hash_undefined__';
-	
-	/**
-	 * Adds `value` to the array cache.
-	 *
-	 * @private
-	 * @name add
-	 * @memberOf SetCache
-	 * @alias push
-	 * @param {*} value The value to cache.
-	 * @returns {Object} Returns the cache instance.
-	 */
-	function setCacheAdd(value) {
-	  this.__data__.set(value, HASH_UNDEFINED);
-	  return this;
-	}
-	
-	module.exports = setCacheAdd;
-
-
-/***/ },
-/* 250 */
-/*!**********************************!*\
-  !*** ./~/lodash/_setCacheHas.js ***!
-  \**********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Checks if `value` is in the array cache.
-	 *
-	 * @private
-	 * @name has
-	 * @memberOf SetCache
-	 * @param {*} value The value to search for.
-	 * @returns {number} Returns `true` if `value` is found, else `false`.
-	 */
-	function setCacheHas(value) {
-	  return this.__data__.has(value);
-	}
-	
-	module.exports = setCacheHas;
-
-
-/***/ },
-/* 251 */
-/*!********************************!*\
-  !*** ./~/lodash/_arraySome.js ***!
-  \********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * A specialized version of `_.some` for arrays without support for iteratee
-	 * shorthands.
-	 *
-	 * @private
-	 * @param {Array} [array] The array to iterate over.
-	 * @param {Function} predicate The function invoked per iteration.
-	 * @returns {boolean} Returns `true` if any element passes the predicate check,
-	 *  else `false`.
-	 */
-	function arraySome(array, predicate) {
-	  var index = -1,
-	      length = array ? array.length : 0;
-	
-	  while (++index < length) {
-	    if (predicate(array[index], index, array)) {
-	      return true;
-	    }
-	  }
-	  return false;
-	}
-	
-	module.exports = arraySome;
-
-
-/***/ },
-/* 252 */
-/*!*********************************!*\
-  !*** ./~/lodash/_equalByTag.js ***!
-  \*********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var Symbol = __webpack_require__(/*! ./_Symbol */ 253),
-	    Uint8Array = __webpack_require__(/*! ./_Uint8Array */ 254),
-	    equalArrays = __webpack_require__(/*! ./_equalArrays */ 247),
-	    mapToArray = __webpack_require__(/*! ./_mapToArray */ 255),
-	    setToArray = __webpack_require__(/*! ./_setToArray */ 256);
-	
-	/** Used to compose bitmasks for comparison styles. */
-	var UNORDERED_COMPARE_FLAG = 1,
-	    PARTIAL_COMPARE_FLAG = 2;
-	
-	/** `Object#toString` result references. */
-	var boolTag = '[object Boolean]',
-	    dateTag = '[object Date]',
-	    errorTag = '[object Error]',
-	    mapTag = '[object Map]',
-	    numberTag = '[object Number]',
-	    regexpTag = '[object RegExp]',
-	    setTag = '[object Set]',
-	    stringTag = '[object String]',
-	    symbolTag = '[object Symbol]';
-	
-	var arrayBufferTag = '[object ArrayBuffer]',
-	    dataViewTag = '[object DataView]';
-	
-	/** Used to convert symbols to primitives and strings. */
-	var symbolProto = Symbol ? Symbol.prototype : undefined,
-	    symbolValueOf = symbolProto ? symbolProto.valueOf : undefined;
-	
-	/**
-	 * A specialized version of `baseIsEqualDeep` for comparing objects of
-	 * the same `toStringTag`.
-	 *
-	 * **Note:** This function only supports comparing values with tags of
-	 * `Boolean`, `Date`, `Error`, `Number`, `RegExp`, or `String`.
-	 *
-	 * @private
-	 * @param {Object} object The object to compare.
-	 * @param {Object} other The other object to compare.
-	 * @param {string} tag The `toStringTag` of the objects to compare.
-	 * @param {Function} equalFunc The function to determine equivalents of values.
-	 * @param {Function} customizer The function to customize comparisons.
-	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
-	 *  for more details.
-	 * @param {Object} stack Tracks traversed `object` and `other` objects.
-	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
-	 */
-	function equalByTag(object, other, tag, equalFunc, customizer, bitmask, stack) {
-	  switch (tag) {
-	    case dataViewTag:
-	      if ((object.byteLength != other.byteLength) ||
-	          (object.byteOffset != other.byteOffset)) {
-	        return false;
-	      }
-	      object = object.buffer;
-	      other = other.buffer;
-	
-	    case arrayBufferTag:
-	      if ((object.byteLength != other.byteLength) ||
-	          !equalFunc(new Uint8Array(object), new Uint8Array(other))) {
-	        return false;
-	      }
-	      return true;
-	
-	    case boolTag:
-	    case dateTag:
-	      // Coerce dates and booleans to numbers, dates to milliseconds and
-	      // booleans to `1` or `0` treating invalid dates coerced to `NaN` as
-	      // not equal.
-	      return +object == +other;
-	
-	    case errorTag:
-	      return object.name == other.name && object.message == other.message;
-	
-	    case numberTag:
-	      // Treat `NaN` vs. `NaN` as equal.
-	      return (object != +object) ? other != +other : object == +other;
-	
-	    case regexpTag:
-	    case stringTag:
-	      // Coerce regexes to strings and treat strings, primitives and objects,
-	      // as equal. See http://www.ecma-international.org/ecma-262/6.0/#sec-regexp.prototype.tostring
-	      // for more details.
-	      return object == (other + '');
-	
-	    case mapTag:
-	      var convert = mapToArray;
-	
-	    case setTag:
-	      var isPartial = bitmask & PARTIAL_COMPARE_FLAG;
-	      convert || (convert = setToArray);
-	
-	      if (object.size != other.size && !isPartial) {
-	        return false;
-	      }
-	      // Assume cyclic values are equal.
-	      var stacked = stack.get(object);
-	      if (stacked) {
-	        return stacked == other;
-	      }
-	      bitmask |= UNORDERED_COMPARE_FLAG;
-	      stack.set(object, other);
-	
-	      // Recursively compare objects (susceptible to call stack limits).
-	      return equalArrays(convert(object), convert(other), equalFunc, customizer, bitmask, stack);
-	
-	    case symbolTag:
-	      if (symbolValueOf) {
-	        return symbolValueOf.call(object) == symbolValueOf.call(other);
-	      }
-	  }
-	  return false;
-	}
-	
-	module.exports = equalByTag;
-
-
-/***/ },
-/* 253 */
-/*!*****************************!*\
-  !*** ./~/lodash/_Symbol.js ***!
-  \*****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var root = __webpack_require__(/*! ./_root */ 230);
-	
-	/** Built-in value references. */
-	var Symbol = root.Symbol;
-	
-	module.exports = Symbol;
-
-
-/***/ },
-/* 254 */
-/*!*********************************!*\
-  !*** ./~/lodash/_Uint8Array.js ***!
-  \*********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var root = __webpack_require__(/*! ./_root */ 230);
-	
-	/** Built-in value references. */
-	var Uint8Array = root.Uint8Array;
-	
-	module.exports = Uint8Array;
-
-
-/***/ },
-/* 255 */
-/*!*********************************!*\
-  !*** ./~/lodash/_mapToArray.js ***!
-  \*********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Converts `map` to its key-value pairs.
-	 *
-	 * @private
-	 * @param {Object} map The map to convert.
-	 * @returns {Array} Returns the key-value pairs.
-	 */
-	function mapToArray(map) {
-	  var index = -1,
-	      result = Array(map.size);
-	
-	  map.forEach(function(value, key) {
-	    result[++index] = [key, value];
-	  });
-	  return result;
-	}
-	
-	module.exports = mapToArray;
-
-
-/***/ },
-/* 256 */
-/*!*********************************!*\
-  !*** ./~/lodash/_setToArray.js ***!
-  \*********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Converts `set` to an array of its values.
-	 *
-	 * @private
-	 * @param {Object} set The set to convert.
-	 * @returns {Array} Returns the values.
-	 */
-	function setToArray(set) {
-	  var index = -1,
-	      result = Array(set.size);
-	
-	  set.forEach(function(value) {
-	    result[++index] = value;
-	  });
-	  return result;
-	}
-	
-	module.exports = setToArray;
-
-
-/***/ },
-/* 257 */
-/*!***********************************!*\
-  !*** ./~/lodash/_equalObjects.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseHas = __webpack_require__(/*! ./_baseHas */ 184),
-	    keys = __webpack_require__(/*! ./keys */ 183);
-	
-	/** Used to compose bitmasks for comparison styles. */
-	var PARTIAL_COMPARE_FLAG = 2;
-	
-	/**
-	 * A specialized version of `baseIsEqualDeep` for objects with support for
-	 * partial deep comparisons.
-	 *
-	 * @private
-	 * @param {Object} object The object to compare.
-	 * @param {Object} other The other object to compare.
-	 * @param {Function} equalFunc The function to determine equivalents of values.
-	 * @param {Function} customizer The function to customize comparisons.
-	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
-	 *  for more details.
-	 * @param {Object} stack Tracks traversed `object` and `other` objects.
-	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
-	 */
-	function equalObjects(object, other, equalFunc, customizer, bitmask, stack) {
-	  var isPartial = bitmask & PARTIAL_COMPARE_FLAG,
-	      objProps = keys(object),
-	      objLength = objProps.length,
-	      othProps = keys(other),
-	      othLength = othProps.length;
-	
-	  if (objLength != othLength && !isPartial) {
-	    return false;
-	  }
-	  var index = objLength;
-	  while (index--) {
-	    var key = objProps[index];
-	    if (!(isPartial ? key in other : baseHas(other, key))) {
-	      return false;
-	    }
-	  }
-	  // Assume cyclic values are equal.
-	  var stacked = stack.get(object);
-	  if (stacked) {
-	    return stacked == other;
-	  }
-	  var result = true;
-	  stack.set(object, other);
-	
-	  var skipCtor = isPartial;
-	  while (++index < objLength) {
-	    key = objProps[index];
-	    var objValue = object[key],
-	        othValue = other[key];
-	
-	    if (customizer) {
-	      var compared = isPartial
-	        ? customizer(othValue, objValue, key, other, object, stack)
-	        : customizer(objValue, othValue, key, object, other, stack);
-	    }
-	    // Recursively compare objects (susceptible to call stack limits).
-	    if (!(compared === undefined
-	          ? (objValue === othValue || equalFunc(objValue, othValue, customizer, bitmask, stack))
-	          : compared
-	        )) {
-	      result = false;
-	      break;
-	    }
-	    skipCtor || (skipCtor = key == 'constructor');
-	  }
-	  if (result && !skipCtor) {
-	    var objCtor = object.constructor,
-	        othCtor = other.constructor;
-	
-	    // Non `Object` object instances with different constructors are not equal.
-	    if (objCtor != othCtor &&
-	        ('constructor' in object && 'constructor' in other) &&
-	        !(typeof objCtor == 'function' && objCtor instanceof objCtor &&
-	          typeof othCtor == 'function' && othCtor instanceof othCtor)) {
-	      result = false;
-	    }
-	  }
-	  stack['delete'](object);
-	  return result;
-	}
-	
-	module.exports = equalObjects;
-
-
-/***/ },
-/* 258 */
-/*!*****************************!*\
-  !*** ./~/lodash/_getTag.js ***!
-  \*****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var DataView = __webpack_require__(/*! ./_DataView */ 259),
-	    Map = __webpack_require__(/*! ./_Map */ 238),
-	    Promise = __webpack_require__(/*! ./_Promise */ 260),
-	    Set = __webpack_require__(/*! ./_Set */ 261),
-	    WeakMap = __webpack_require__(/*! ./_WeakMap */ 262),
-	    toSource = __webpack_require__(/*! ./_toSource */ 232);
-	
-	/** `Object#toString` result references. */
-	var mapTag = '[object Map]',
-	    objectTag = '[object Object]',
-	    promiseTag = '[object Promise]',
-	    setTag = '[object Set]',
-	    weakMapTag = '[object WeakMap]';
-	
-	var dataViewTag = '[object DataView]';
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/**
-	 * Used to resolve the
-	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-	var objectToString = objectProto.toString;
-	
-	/** Used to detect maps, sets, and weakmaps. */
-	var dataViewCtorString = toSource(DataView),
-	    mapCtorString = toSource(Map),
-	    promiseCtorString = toSource(Promise),
-	    setCtorString = toSource(Set),
-	    weakMapCtorString = toSource(WeakMap);
-	
-	/**
-	 * Gets the `toStringTag` of `value`.
-	 *
-	 * @private
-	 * @param {*} value The value to query.
-	 * @returns {string} Returns the `toStringTag`.
-	 */
-	function getTag(value) {
-	  return objectToString.call(value);
-	}
-	
-	// Fallback for data views, maps, sets, and weak maps in IE 11,
-	// for data views in Edge, and promises in Node.js.
-	if ((DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag) ||
-	    (Map && getTag(new Map) != mapTag) ||
-	    (Promise && getTag(Promise.resolve()) != promiseTag) ||
-	    (Set && getTag(new Set) != setTag) ||
-	    (WeakMap && getTag(new WeakMap) != weakMapTag)) {
-	  getTag = function(value) {
-	    var result = objectToString.call(value),
-	        Ctor = result == objectTag ? value.constructor : undefined,
-	        ctorString = Ctor ? toSource(Ctor) : undefined;
-	
-	    if (ctorString) {
-	      switch (ctorString) {
-	        case dataViewCtorString: return dataViewTag;
-	        case mapCtorString: return mapTag;
-	        case promiseCtorString: return promiseTag;
-	        case setCtorString: return setTag;
-	        case weakMapCtorString: return weakMapTag;
-	      }
-	    }
-	    return result;
-	  };
-	}
-	
-	module.exports = getTag;
-
-
-/***/ },
-/* 259 */
-/*!*******************************!*\
-  !*** ./~/lodash/_DataView.js ***!
-  \*******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getNative = __webpack_require__(/*! ./_getNative */ 225),
-	    root = __webpack_require__(/*! ./_root */ 230);
-	
-	/* Built-in method references that are verified to be native. */
-	var DataView = getNative(root, 'DataView');
-	
-	module.exports = DataView;
-
-
-/***/ },
-/* 260 */
-/*!******************************!*\
-  !*** ./~/lodash/_Promise.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getNative = __webpack_require__(/*! ./_getNative */ 225),
-	    root = __webpack_require__(/*! ./_root */ 230);
-	
-	/* Built-in method references that are verified to be native. */
-	var Promise = getNative(root, 'Promise');
-	
-	module.exports = Promise;
-
-
-/***/ },
-/* 261 */
-/*!**************************!*\
-  !*** ./~/lodash/_Set.js ***!
-  \**************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getNative = __webpack_require__(/*! ./_getNative */ 225),
-	    root = __webpack_require__(/*! ./_root */ 230);
-	
-	/* Built-in method references that are verified to be native. */
-	var Set = getNative(root, 'Set');
-	
-	module.exports = Set;
-
-
-/***/ },
-/* 262 */
-/*!******************************!*\
-  !*** ./~/lodash/_WeakMap.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var getNative = __webpack_require__(/*! ./_getNative */ 225),
-	    root = __webpack_require__(/*! ./_root */ 230);
-	
-	/* Built-in method references that are verified to be native. */
-	var WeakMap = getNative(root, 'WeakMap');
-	
-	module.exports = WeakMap;
-
-
-/***/ },
-/* 263 */
-/*!**********************************!*\
-  !*** ./~/lodash/isTypedArray.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isLength = __webpack_require__(/*! ./isLength */ 196),
-	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 197);
-	
-	/** `Object#toString` result references. */
-	var argsTag = '[object Arguments]',
-	    arrayTag = '[object Array]',
-	    boolTag = '[object Boolean]',
-	    dateTag = '[object Date]',
-	    errorTag = '[object Error]',
-	    funcTag = '[object Function]',
-	    mapTag = '[object Map]',
-	    numberTag = '[object Number]',
-	    objectTag = '[object Object]',
-	    regexpTag = '[object RegExp]',
-	    setTag = '[object Set]',
-	    stringTag = '[object String]',
-	    weakMapTag = '[object WeakMap]';
-	
-	var arrayBufferTag = '[object ArrayBuffer]',
-	    dataViewTag = '[object DataView]',
-	    float32Tag = '[object Float32Array]',
-	    float64Tag = '[object Float64Array]',
-	    int8Tag = '[object Int8Array]',
-	    int16Tag = '[object Int16Array]',
-	    int32Tag = '[object Int32Array]',
-	    uint8Tag = '[object Uint8Array]',
-	    uint8ClampedTag = '[object Uint8ClampedArray]',
-	    uint16Tag = '[object Uint16Array]',
-	    uint32Tag = '[object Uint32Array]';
-	
-	/** Used to identify `toStringTag` values of typed arrays. */
-	var typedArrayTags = {};
-	typedArrayTags[float32Tag] = typedArrayTags[float64Tag] =
-	typedArrayTags[int8Tag] = typedArrayTags[int16Tag] =
-	typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] =
-	typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] =
-	typedArrayTags[uint32Tag] = true;
-	typedArrayTags[argsTag] = typedArrayTags[arrayTag] =
-	typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] =
-	typedArrayTags[dataViewTag] = typedArrayTags[dateTag] =
-	typedArrayTags[errorTag] = typedArrayTags[funcTag] =
-	typedArrayTags[mapTag] = typedArrayTags[numberTag] =
-	typedArrayTags[objectTag] = typedArrayTags[regexpTag] =
-	typedArrayTags[setTag] = typedArrayTags[stringTag] =
-	typedArrayTags[weakMapTag] = false;
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/**
-	 * Used to resolve the
-	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-	var objectToString = objectProto.toString;
-	
-	/**
-	 * Checks if `value` is classified as a typed array.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 3.0.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified,
-	 *  else `false`.
-	 * @example
-	 *
-	 * _.isTypedArray(new Uint8Array);
-	 * // => true
-	 *
-	 * _.isTypedArray([]);
-	 * // => false
-	 */
-	function isTypedArray(value) {
-	  return isObjectLike(value) &&
-	    isLength(value.length) && !!typedArrayTags[objectToString.call(value)];
-	}
-	
-	module.exports = isTypedArray;
-
-
-/***/ },
-/* 264 */
-/*!***********************************!*\
-  !*** ./~/lodash/_getMatchData.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ 265),
-	    keys = __webpack_require__(/*! ./keys */ 183);
-	
-	/**
-	 * Gets the property names, values, and compare flags of `object`.
-	 *
-	 * @private
-	 * @param {Object} object The object to query.
-	 * @returns {Array} Returns the match data of `object`.
-	 */
-	function getMatchData(object) {
-	  var result = keys(object),
-	      length = result.length;
-	
-	  while (length--) {
-	    var key = result[length],
-	        value = object[key];
-	
-	    result[length] = [key, value, isStrictComparable(value)];
-	  }
-	  return result;
-	}
-	
-	module.exports = getMatchData;
-
-
-/***/ },
-/* 265 */
-/*!*****************************************!*\
-  !*** ./~/lodash/_isStrictComparable.js ***!
-  \*****************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject = __webpack_require__(/*! ./isObject */ 195);
-	
-	/**
-	 * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` if suitable for strict
-	 *  equality comparisons, else `false`.
-	 */
-	function isStrictComparable(value) {
-	  return value === value && !isObject(value);
-	}
-	
-	module.exports = isStrictComparable;
-
-
-/***/ },
-/* 266 */
-/*!**********************************************!*\
-  !*** ./~/lodash/_matchesStrictComparable.js ***!
-  \**********************************************/
-/***/ function(module, exports) {
-
-	/**
-	 * A specialized version of `matchesProperty` for source values suitable
-	 * for strict equality comparisons, i.e. `===`.
-	 *
-	 * @private
-	 * @param {string} key The key of the property to get.
-	 * @param {*} srcValue The value to match.
-	 * @returns {Function} Returns the new spec function.
-	 */
-	function matchesStrictComparable(key, srcValue) {
-	  return function(object) {
-	    if (object == null) {
-	      return false;
-	    }
-	    return object[key] === srcValue &&
-	      (srcValue !== undefined || (key in Object(object)));
-	  };
-	}
-	
-	module.exports = matchesStrictComparable;
-
-
-/***/ },
-/* 267 */
-/*!******************************************!*\
-  !*** ./~/lodash/_baseMatchesProperty.js ***!
-  \******************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ 245),
-	    get = __webpack_require__(/*! ./get */ 268),
-	    hasIn = __webpack_require__(/*! ./hasIn */ 278),
-	    isKey = __webpack_require__(/*! ./_isKey */ 276),
-	    isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ 265),
-	    matchesStrictComparable = __webpack_require__(/*! ./_matchesStrictComparable */ 266),
-	    toKey = __webpack_require__(/*! ./_toKey */ 277);
-	
-	/** Used to compose bitmasks for comparison styles. */
-	var UNORDERED_COMPARE_FLAG = 1,
-	    PARTIAL_COMPARE_FLAG = 2;
-	
-	/**
-	 * The base implementation of `_.matchesProperty` which doesn't clone `srcValue`.
-	 *
-	 * @private
-	 * @param {string} path The path of the property to get.
-	 * @param {*} srcValue The value to match.
-	 * @returns {Function} Returns the new spec function.
-	 */
-	function baseMatchesProperty(path, srcValue) {
-	  if (isKey(path) && isStrictComparable(srcValue)) {
-	    return matchesStrictComparable(toKey(path), srcValue);
-	  }
-	  return function(object) {
-	    var objValue = get(object, path);
-	    return (objValue === undefined && objValue === srcValue)
-	      ? hasIn(object, path)
-	      : baseIsEqual(srcValue, objValue, undefined, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG);
-	  };
-	}
-	
-	module.exports = baseMatchesProperty;
-
-
-/***/ },
-/* 268 */
-/*!*************************!*\
-  !*** ./~/lodash/get.js ***!
-  \*************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseGet = __webpack_require__(/*! ./_baseGet */ 269);
-	
-	/**
-	 * Gets the value at `path` of `object`. If the resolved value is
-	 * `undefined`, the `defaultValue` is used in its place.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 3.7.0
-	 * @category Object
-	 * @param {Object} object The object to query.
-	 * @param {Array|string} path The path of the property to get.
-	 * @param {*} [defaultValue] The value returned for `undefined` resolved values.
-	 * @returns {*} Returns the resolved value.
-	 * @example
-	 *
-	 * var object = { 'a': [{ 'b': { 'c': 3 } }] };
-	 *
-	 * _.get(object, 'a[0].b.c');
-	 * // => 3
-	 *
-	 * _.get(object, ['a', '0', 'b', 'c']);
-	 * // => 3
-	 *
-	 * _.get(object, 'a.b.c', 'default');
-	 * // => 'default'
-	 */
-	function get(object, path, defaultValue) {
-	  var result = object == null ? undefined : baseGet(object, path);
-	  return result === undefined ? defaultValue : result;
-	}
-	
-	module.exports = get;
-
-
-/***/ },
-/* 269 */
-/*!******************************!*\
-  !*** ./~/lodash/_baseGet.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var castPath = __webpack_require__(/*! ./_castPath */ 270),
-	    isKey = __webpack_require__(/*! ./_isKey */ 276),
-	    toKey = __webpack_require__(/*! ./_toKey */ 277);
-	
-	/**
-	 * The base implementation of `_.get` without support for default values.
-	 *
-	 * @private
-	 * @param {Object} object The object to query.
-	 * @param {Array|string} path The path of the property to get.
-	 * @returns {*} Returns the resolved value.
-	 */
-	function baseGet(object, path) {
-	  path = isKey(path, object) ? [path] : castPath(path);
-	
-	  var index = 0,
-	      length = path.length;
-	
-	  while (object != null && index < length) {
-	    object = object[toKey(path[index++])];
-	  }
-	  return (index && index == length) ? object : undefined;
-	}
-	
-	module.exports = baseGet;
-
-
-/***/ },
-/* 270 */
-/*!*******************************!*\
-  !*** ./~/lodash/_castPath.js ***!
-  \*******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isArray = __webpack_require__(/*! ./isArray */ 198),
-	    stringToPath = __webpack_require__(/*! ./_stringToPath */ 271);
-	
-	/**
-	 * Casts `value` to a path array if it's not one.
-	 *
-	 * @private
-	 * @param {*} value The value to inspect.
-	 * @returns {Array} Returns the cast property path array.
-	 */
-	function castPath(value) {
-	  return isArray(value) ? value : stringToPath(value);
-	}
-	
-	module.exports = castPath;
-
-
-/***/ },
-/* 271 */
-/*!***********************************!*\
-  !*** ./~/lodash/_stringToPath.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var memoize = __webpack_require__(/*! ./memoize */ 272),
-	    toString = __webpack_require__(/*! ./toString */ 273);
-	
-	/** Used to match property names within property paths. */
-	var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(\.|\[\])(?:\4|$))/g;
-	
-	/** Used to match backslashes in property paths. */
-	var reEscapeChar = /\\(\\)?/g;
-	
-	/**
-	 * Converts `string` to a property path array.
-	 *
-	 * @private
-	 * @param {string} string The string to convert.
-	 * @returns {Array} Returns the property path array.
-	 */
-	var stringToPath = memoize(function(string) {
-	  var result = [];
-	  toString(string).replace(rePropName, function(match, number, quote, string) {
-	    result.push(quote ? string.replace(reEscapeChar, '$1') : (number || match));
-	  });
-	  return result;
-	});
-	
-	module.exports = stringToPath;
-
-
-/***/ },
-/* 272 */
-/*!*****************************!*\
-  !*** ./~/lodash/memoize.js ***!
-  \*****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var MapCache = __webpack_require__(/*! ./_MapCache */ 220);
-	
-	/** Used as the `TypeError` message for "Functions" methods. */
-	var FUNC_ERROR_TEXT = 'Expected a function';
-	
-	/**
-	 * Creates a function that memoizes the result of `func`. If `resolver` is
-	 * provided, it determines the cache key for storing the result based on the
-	 * arguments provided to the memoized function. By default, the first argument
-	 * provided to the memoized function is used as the map cache key. The `func`
-	 * is invoked with the `this` binding of the memoized function.
-	 *
-	 * **Note:** The cache is exposed as the `cache` property on the memoized
-	 * function. Its creation may be customized by replacing the `_.memoize.Cache`
-	 * constructor with one whose instances implement the
-	 * [`Map`](http://ecma-international.org/ecma-262/6.0/#sec-properties-of-the-map-prototype-object)
-	 * method interface of `delete`, `get`, `has`, and `set`.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 0.1.0
-	 * @category Function
-	 * @param {Function} func The function to have its output memoized.
-	 * @param {Function} [resolver] The function to resolve the cache key.
-	 * @returns {Function} Returns the new memoized function.
-	 * @example
-	 *
-	 * var object = { 'a': 1, 'b': 2 };
-	 * var other = { 'c': 3, 'd': 4 };
-	 *
-	 * var values = _.memoize(_.values);
-	 * values(object);
-	 * // => [1, 2]
-	 *
-	 * values(other);
-	 * // => [3, 4]
-	 *
-	 * object.a = 2;
-	 * values(object);
-	 * // => [1, 2]
-	 *
-	 * // Modify the result cache.
-	 * values.cache.set(object, ['a', 'b']);
-	 * values(object);
-	 * // => ['a', 'b']
-	 *
-	 * // Replace `_.memoize.Cache`.
-	 * _.memoize.Cache = WeakMap;
-	 */
-	function memoize(func, resolver) {
-	  if (typeof func != 'function' || (resolver && typeof resolver != 'function')) {
-	    throw new TypeError(FUNC_ERROR_TEXT);
-	  }
-	  var memoized = function() {
-	    var args = arguments,
-	        key = resolver ? resolver.apply(this, args) : args[0],
-	        cache = memoized.cache;
-	
-	    if (cache.has(key)) {
-	      return cache.get(key);
-	    }
-	    var result = func.apply(this, args);
-	    memoized.cache = cache.set(key, result);
-	    return result;
-	  };
-	  memoized.cache = new (memoize.Cache || MapCache);
-	  return memoized;
-	}
-	
-	// Assign cache to `_.memoize`.
-	memoize.Cache = MapCache;
-	
-	module.exports = memoize;
-
-
-/***/ },
-/* 273 */
-/*!******************************!*\
-  !*** ./~/lodash/toString.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseToString = __webpack_require__(/*! ./_baseToString */ 274);
-	
-	/**
-	 * Converts `value` to a string. An empty string is returned for `null`
-	 * and `undefined` values. The sign of `-0` is preserved.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 4.0.0
-	 * @category Lang
-	 * @param {*} value The value to process.
-	 * @returns {string} Returns the string.
-	 * @example
-	 *
-	 * _.toString(null);
-	 * // => ''
-	 *
-	 * _.toString(-0);
-	 * // => '-0'
-	 *
-	 * _.toString([1, 2, 3]);
-	 * // => '1,2,3'
-	 */
-	function toString(value) {
-	  return value == null ? '' : baseToString(value);
-	}
-	
-	module.exports = toString;
-
-
-/***/ },
-/* 274 */
-/*!***********************************!*\
-  !*** ./~/lodash/_baseToString.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var Symbol = __webpack_require__(/*! ./_Symbol */ 253),
-	    isSymbol = __webpack_require__(/*! ./isSymbol */ 275);
-	
-	/** Used as references for various `Number` constants. */
-	var INFINITY = 1 / 0;
-	
-	/** Used to convert symbols to primitives and strings. */
-	var symbolProto = Symbol ? Symbol.prototype : undefined,
-	    symbolToString = symbolProto ? symbolProto.toString : undefined;
-	
-	/**
-	 * The base implementation of `_.toString` which doesn't convert nullish
-	 * values to empty strings.
-	 *
-	 * @private
-	 * @param {*} value The value to process.
-	 * @returns {string} Returns the string.
-	 */
-	function baseToString(value) {
-	  // Exit early for strings to avoid a performance hit in some environments.
-	  if (typeof value == 'string') {
-	    return value;
-	  }
-	  if (isSymbol(value)) {
-	    return symbolToString ? symbolToString.call(value) : '';
-	  }
-	  var result = (value + '');
-	  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
-	}
-	
-	module.exports = baseToString;
-
-
-/***/ },
-/* 275 */
-/*!******************************!*\
-  !*** ./~/lodash/isSymbol.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObjectLike = __webpack_require__(/*! ./isObjectLike */ 197);
-	
-	/** `Object#toString` result references. */
-	var symbolTag = '[object Symbol]';
-	
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
-	
-	/**
-	 * Used to resolve the
-	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-	var objectToString = objectProto.toString;
-	
-	/**
-	 * Checks if `value` is classified as a `Symbol` primitive or object.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 4.0.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified,
-	 *  else `false`.
-	 * @example
-	 *
-	 * _.isSymbol(Symbol.iterator);
-	 * // => true
-	 *
-	 * _.isSymbol('abc');
-	 * // => false
-	 */
-	function isSymbol(value) {
-	  return typeof value == 'symbol' ||
-	    (isObjectLike(value) && objectToString.call(value) == symbolTag);
-	}
-	
-	module.exports = isSymbol;
-
-
-/***/ },
-/* 276 */
-/*!****************************!*\
-  !*** ./~/lodash/_isKey.js ***!
-  \****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isArray = __webpack_require__(/*! ./isArray */ 198),
-	    isSymbol = __webpack_require__(/*! ./isSymbol */ 275);
-	
-	/** Used to match property names within property paths. */
-	var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
-	    reIsPlainProp = /^\w*$/;
-	
-	/**
-	 * Checks if `value` is a property name and not a property path.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @param {Object} [object] The object to query keys on.
-	 * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
-	 */
-	function isKey(value, object) {
-	  if (isArray(value)) {
-	    return false;
-	  }
-	  var type = typeof value;
-	  if (type == 'number' || type == 'symbol' || type == 'boolean' ||
-	      value == null || isSymbol(value)) {
-	    return true;
-	  }
-	  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) ||
-	    (object != null && value in Object(object));
-	}
-	
-	module.exports = isKey;
-
-
-/***/ },
-/* 277 */
-/*!****************************!*\
-  !*** ./~/lodash/_toKey.js ***!
-  \****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var isSymbol = __webpack_require__(/*! ./isSymbol */ 275);
-	
-	/** Used as references for various `Number` constants. */
-	var INFINITY = 1 / 0;
-	
-	/**
-	 * Converts `value` to a string key if it's not a string or symbol.
-	 *
-	 * @private
-	 * @param {*} value The value to inspect.
-	 * @returns {string|symbol} Returns the key.
-	 */
-	function toKey(value) {
-	  if (typeof value == 'string' || isSymbol(value)) {
-	    return value;
-	  }
-	  var result = (value + '');
-	  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
-	}
-	
-	module.exports = toKey;
-
-
-/***/ },
-/* 278 */
-/*!***************************!*\
-  !*** ./~/lodash/hasIn.js ***!
-  \***************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseHasIn = __webpack_require__(/*! ./_baseHasIn */ 279),
-	    hasPath = __webpack_require__(/*! ./_hasPath */ 280);
-	
-	/**
-	 * Checks if `path` is a direct or inherited property of `object`.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 4.0.0
-	 * @category Object
-	 * @param {Object} object The object to query.
-	 * @param {Array|string} path The path to check.
-	 * @returns {boolean} Returns `true` if `path` exists, else `false`.
-	 * @example
-	 *
-	 * var object = _.create({ 'a': _.create({ 'b': 2 }) });
-	 *
-	 * _.hasIn(object, 'a');
-	 * // => true
-	 *
-	 * _.hasIn(object, 'a.b');
-	 * // => true
-	 *
-	 * _.hasIn(object, ['a', 'b']);
-	 * // => true
-	 *
-	 * _.hasIn(object, 'b');
-	 * // => false
-	 */
-	function hasIn(object, path) {
-	  return object != null && hasPath(object, path, baseHasIn);
-	}
-	
-	module.exports = hasIn;
-
-
-/***/ },
-/* 279 */
-/*!********************************!*\
-  !*** ./~/lodash/_baseHasIn.js ***!
-  \********************************/
-/***/ function(module, exports) {
-
-	/**
-	 * The base implementation of `_.hasIn` without support for deep paths.
-	 *
-	 * @private
-	 * @param {Object} [object] The object to query.
-	 * @param {Array|string} key The key to check.
-	 * @returns {boolean} Returns `true` if `key` exists, else `false`.
-	 */
-	function baseHasIn(object, key) {
-	  return object != null && key in Object(object);
-	}
-	
-	module.exports = baseHasIn;
-
-
-/***/ },
-/* 280 */
-/*!******************************!*\
-  !*** ./~/lodash/_hasPath.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var castPath = __webpack_require__(/*! ./_castPath */ 270),
-	    isArguments = __webpack_require__(/*! ./isArguments */ 189),
-	    isArray = __webpack_require__(/*! ./isArray */ 198),
-	    isIndex = __webpack_require__(/*! ./_isIndex */ 200),
-	    isKey = __webpack_require__(/*! ./_isKey */ 276),
-	    isLength = __webpack_require__(/*! ./isLength */ 196),
-	    isString = __webpack_require__(/*! ./isString */ 199),
-	    toKey = __webpack_require__(/*! ./_toKey */ 277);
-	
-	/**
-	 * Checks if `path` exists on `object`.
-	 *
-	 * @private
-	 * @param {Object} object The object to query.
-	 * @param {Array|string} path The path to check.
-	 * @param {Function} hasFunc The function to check properties.
-	 * @returns {boolean} Returns `true` if `path` exists, else `false`.
-	 */
-	function hasPath(object, path, hasFunc) {
-	  path = isKey(path, object) ? [path] : castPath(path);
-	
-	  var result,
-	      index = -1,
-	      length = path.length;
-	
-	  while (++index < length) {
-	    var key = toKey(path[index]);
-	    if (!(result = object != null && hasFunc(object, key))) {
-	      break;
-	    }
-	    object = object[key];
-	  }
-	  if (result) {
-	    return result;
-	  }
-	  var length = object ? object.length : 0;
-	  return !!length && isLength(length) && isIndex(key, length) &&
-	    (isArray(object) || isString(object) || isArguments(object));
-	}
-	
-	module.exports = hasPath;
-
-
-/***/ },
-/* 281 */
-/*!******************************!*\
-  !*** ./~/lodash/identity.js ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	/**
-	 * This method returns the first argument given to it.
-	 *
-	 * @static
-	 * @since 0.1.0
-	 * @memberOf _
-	 * @category Util
-	 * @param {*} value Any value.
-	 * @returns {*} Returns `value`.
-	 * @example
-	 *
-	 * var object = { 'user': 'fred' };
-	 *
-	 * console.log(_.identity(object) === object);
-	 * // => true
-	 */
-	function identity(value) {
-	  return value;
-	}
-	
-	module.exports = identity;
-
-
-/***/ },
-/* 282 */
-/*!******************************!*\
-  !*** ./~/lodash/property.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseProperty = __webpack_require__(/*! ./_baseProperty */ 193),
-	    basePropertyDeep = __webpack_require__(/*! ./_basePropertyDeep */ 283),
-	    isKey = __webpack_require__(/*! ./_isKey */ 276),
-	    toKey = __webpack_require__(/*! ./_toKey */ 277);
-	
-	/**
-	 * Creates a function that returns the value at `path` of a given object.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 2.4.0
-	 * @category Util
-	 * @param {Array|string} path The path of the property to get.
-	 * @returns {Function} Returns the new accessor function.
-	 * @example
-	 *
-	 * var objects = [
-	 *   { 'a': { 'b': 2 } },
-	 *   { 'a': { 'b': 1 } }
-	 * ];
-	 *
-	 * _.map(objects, _.property('a.b'));
-	 * // => [2, 1]
-	 *
-	 * _.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');
-	 * // => [1, 2]
-	 */
-	function property(path) {
-	  return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
-	}
-	
-	module.exports = property;
-
-
-/***/ },
-/* 283 */
-/*!***************************************!*\
-  !*** ./~/lodash/_basePropertyDeep.js ***!
-  \***************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseGet = __webpack_require__(/*! ./_baseGet */ 269);
-	
-	/**
-	 * A specialized version of `baseProperty` which supports deep paths.
-	 *
-	 * @private
-	 * @param {Array|string} path The path of the property to get.
-	 * @returns {Function} Returns the new accessor function.
-	 */
-	function basePropertyDeep(path) {
-	  return function(object) {
-	    return baseGet(object, path);
-	  };
-	}
-	
-	module.exports = basePropertyDeep;
-
-
-/***/ },
-/* 284 */
-/*!*******************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg2.svg ***!
-  \*******************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg2",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG2 Zero Hunger'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg2-1', x: '-2.33', y: '-3.25', width: '119.95', height: '118.41' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M44.58,95v1.57a.12.12,0,0,0,0,.07.74.74,0,0,0,.73.71h18.5a.74.74,0,0,0,.73-.74h0V94.79C74.91,91.39,82.69,83,84.4,72.73v-.06a.59.59,0,0,0,0-.1.74.74,0,0,0-.75-.75H24.91a.74.74,0,0,0-.75.75l0,.33C26,83.25,34,91.71,44.58,95' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M64.52,46.74c-.24.34-5.92,8.52.13,15.13,2.77,3,2.53,5.71,1.74,7.52h3.88c.79-2.67.46-6-2.69-9.46-4.45-4.87.06-11.45.12-11.55a1.45,1.45,0,0,0-.63-2.17,2.06,2.06,0,0,0-2.55.54' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M54.69,69.38h3.88c.78-2.67.46-6-2.69-9.46-4.46-4.87.05-11.45.12-11.56a1.45,1.45,0,0,0-.63-2.17,2.06,2.06,0,0,0-2.55.54c-.24.34-5.93,8.52.13,15.13,2.77,3,2.53,5.71,1.74,7.52' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M41.13,46.74c-.25.34-5.92,8.52.12,15.13,2.77,3,2.53,5.71,1.74,7.52h3.88c.78-2.67.46-6-2.69-9.46-4.46-4.87.06-11.45.13-11.56a1.45,1.45,0,0,0-.63-2.17,2.05,2.05,0,0,0-2.55.54' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M33.42,17.25h2.33V18.5H31.82V17.25l2.41-6.63H32.06V9.37h3.79v1.25Z' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M36.79,9.37h3.66v1.25H38.33v2.61h1.52v1.24H38.33v2.77h2.13V18.5H36.79Z' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M42.95,14.31V18.5H41.41V9.37h2.24c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.76L46,18.5H44.39Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V11.36c0-.5-.23-.74-.75-.74Z' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M46.74,16.14V11.73a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S49.85,16.94,49.85,16.39Z' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M34.92,27.86H33.44v4H31.91V22.75h1.54v3.87h1.48V22.75h1.55v9.13H34.92Z' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M41.94,22.75v6.91c0,1.41-.61,2.33-2.17,2.33a2.06,2.06,0,0,1-2.29-2.33V22.75H39v7.06c0,.54.22.9.75.9s.75-.36.75-.9V22.75Z' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M44.25,26.15v5.74H43V22.75h1.51L46.12,28V22.75H47.4v9.13H46.05Z' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M50.73,27h2.18v4.88h-1.1v-1A1.38,1.38,0,0,1,50.34,32c-1.32,0-1.93-1.05-1.93-2.47V25.11a2.16,2.16,0,0,1,2.3-2.46c1.7,0,2.2.94,2.2,2.29v.81h-1.4v-.93c0-.57-.22-.89-.77-.89s-.79.39-.79.94v4.9c0,.55.23.94.75.94s.75-.28.75-.88V28.22h-.73Z' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M53.92,22.75h3.66V24H55.46v2.61H57v1.24H55.46v2.77h2.13v1.25H53.92Z' }),
-	                React.createElement('path', { className: 'sdg2-2', d: 'M60.08,27.7v4.19H58.54V22.75h2.24c1.55,0,2.11.77,2.11,2V26c0,1-.35,1.56-1.23,1.76l1.47,4.15H61.52Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V24.75c0-.5-.23-.74-.75-.74Z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('path', { className: 'sdg2-2', d: 'M23.4,27.79H17.22V26.73a4.28,4.28,0,0,1,1.59-3.44l2.41-2.55c2-2.08,2.38-3.41,2.38-5.66V12.91c0-3.21-1.55-4.73-4.93-4.73s-5,1.75-5,4.9v2.71h3.44V13c0-1.35.66-1.75,1.46-1.75s1.36.3,1.36,1.69v1.85c0,1.85-.17,2.58-1.39,3.87l-2.12,2.25c-2,2.18-2.81,3.64-2.81,5.85v4.13H23.4Z' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 285 */
-/*!*******************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg3.svg ***!
-  \*******************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg3",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.76" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG3 Good Health and Well-Being'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg3-1', x: '-2.83', y: '-1.93', width: '118.46', height: '117.08' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M60.06,94.51H60a1.28,1.28,0,0,1-1.19-1.07l-4-23.16-6,11.17a1.29,1.29,0,0,1-2.4-.43L43.83,63.15,39.15,73.66a1.29,1.29,0,0,1-1.17.76H19.79a1.29,1.29,0,1,1,0-2.57H37.14L43.3,58a1.29,1.29,0,0,1,2.45.34L48.38,76.8l5.94-11a1.29,1.29,0,0,1,2.4.39L60.4,87.63,73.82,43a1.29,1.29,0,0,1,2.39-.19L83.27,57.5A1.29,1.29,0,0,1,81,58.61L75.33,46.95l-14,46.65A1.28,1.28,0,0,1,60.06,94.51Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M33.55,13.52H35.8v5H34.66v-1a1.43,1.43,0,0,1-1.51,1.14c-1.36,0-2-1.08-2-2.54V11.57A2.23,2.23,0,0,1,33.54,9c1.75,0,2.26,1,2.26,2.36v.83H34.36v-1c0-.58-.22-.92-.79-.92s-.82.4-.82,1v5.05c0,.57.24,1,.78,1s.78-.29.78-.9V14.77h-.75Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M36.7,16.12V11.57a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V11.32c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S39.91,16.94,39.91,16.37Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M42.39,16.12V11.57a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V11.32c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S45.6,16.94,45.6,16.37Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M52.82,11.66V16c0,1.44-.6,2.53-2.29,2.53H48.08V9.14h2.44C52.22,9.14,52.82,10.21,52.82,11.66Zm-2.48,5.6c.65,0,.9-.39.9-1V11.37a.82.82,0,0,0-.9-.94h-.67v6.83Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M58.28,14.4H56.76v4.15H55.17V9.14h1.58v4h1.53v-4h1.6v9.41h-1.6Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M60.78,9.14h3.78v1.29H62.36v2.69h1.57V14.4H62.36v2.86h2.19v1.29H60.78Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M65.15,18.55l1.78-9.41h1.8l1.79,9.41H68.9l-.29-1.72H66.93l-.28,1.72Zm2-3H68.4l-.62-3.78h0Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M71.18,9.14h1.58v8.12h1.89v1.29H71.18Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M74.29,9.14h4.21v1.29H77.19v8.12h-1.6V10.43h-1.3Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M82.34,14.4H80.81v4.15H79.23V9.14h1.58v4h1.53v-4h1.6v9.41h-1.6Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M30.91,31.74l1.78-9.41h1.8l1.79,9.41H34.66L34.37,30H32.69l-.28,1.72Zm2-3h1.26L33.54,25h0Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M38.27,25.82v5.91H36.94V22.32h1.55l1.71,5.4v-5.4h1.32v9.41H40.13Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M47.15,24.85v4.36c0,1.44-.6,2.53-2.29,2.53H42.42V22.32h2.44C46.55,22.32,47.15,23.39,47.15,24.85Zm-2.48,5.6c.65,0,.9-.39.9-1V24.56a.82.82,0,0,0-.9-.94H44v6.83Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M52.93,25.92,52,31.74H50.55l-1.26-9.41h1.53l.74,6h0l.79-6h1.29l.87,6h0l.72-6h1.33l-1.22,9.41h-1.5l-.93-5.82Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M57.27,22.32H61v1.29H58.85v2.69h1.57v1.28H58.85v2.86H61v1.29H57.27Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M61.89,22.32h1.58v8.12h1.89v1.29H61.89Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M66.08,22.32h1.58v8.12h1.89v1.29H66.08Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M72.6,22.32h2.29c1.58,0,2.11.74,2.11,2.07v1a1.37,1.37,0,0,1-.94,1.5,1.43,1.43,0,0,1,1.18,1.57v1.25c0,1.33-.6,2.07-2.18,2.07H72.6Zm1.58,4h.56a.67.67,0,0,0,.75-.76V24.38a.67.67,0,0,0-.76-.76h-.54Zm0,1.21v2.94h.69a.68.68,0,0,0,.78-.76V28.26c0-.5-.24-.76-.79-.76Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M78,22.32H81.8v1.29H79.61v2.69h1.57v1.28H79.61v2.86H81.8v1.29H78Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M82.65,22.32h1.58v9.41H82.65Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M86.48,25.82v5.91H85.15V22.32H86.7l1.71,5.4v-5.4h1.32v9.41H88.34Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M93,26.71h2.25v5H94.13v-1a1.43,1.43,0,0,1-1.51,1.14c-1.36,0-2-1.08-2-2.54V24.75A2.23,2.23,0,0,1,93,22.21c1.75,0,2.26,1,2.26,2.36v.83H93.82v-1c0-.58-.22-.92-.79-.92s-.82.4-.82,1v5.05c0,.57.24,1,.78,1s.78-.29.78-.9V28H93Z' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M68.94,26.12h2.24v1.29H68.94Z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('path', { className: 'sdg3-2', d: 'M16,31.22c3.82,0,5.48-2,5.48-5.15V22.76c0-2.06-.9-3.39-2.79-3.82a3.6,3.6,0,0,0,2.59-3.65v-2c0-3.19-1.53-5.15-5-5.15C12.32,8.18,11,10.5,11,13.82v2h3.45V13.52c0-1.39.43-2.19,1.63-2.19s1.63.8,1.63,2v2.42c0,1.2-.8,1.83-2,1.83H14.22V20.5h1.6c1.33,0,1.86.63,1.86,1.83V26c0,1.19-.53,2-1.69,2s-1.76-.86-1.76-2.19V22.66H10.77v3c0,3.42,1.36,5.61,5.21,5.61' }),
-	                React.createElement('path', { className: 'sdg3-2', d: 'M93.39,69.84c0-3.14-2-5.69-5.07-5.69-1.53,0-3.37,1.67-4.37,2.7-1-1-2.72-2.7-4.25-2.7-3.05,0-5.19,2.55-5.19,5.69a5.75,5.75,0,0,0,1.62,4h0L84,81.71l7.82-7.83h0A5.76,5.76,0,0,0,93.39,69.84Z' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 286 */
-/*!*******************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg4.svg ***!
-  \*******************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg4",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG4 Quality Education'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg4-1', x: '0.11', y: '-1.93', width: '115.21', height: '117.09' }),
-	                React.createElement('rect', { className: 'sdg4-2', x: '52.65', y: '9.35', width: '1.54', height: '9.14' }),
-	                React.createElement('rect', { className: 'sdg4-2', x: '62.48', y: '22.75', width: '1.54', height: '9.14' }),
-	                React.createElement('polygon', { className: 'sdg4-2', points: '49.56 59.93 29.52 48.35 29.52 85.8 49.56 91.84 49.56 59.93' }),
-	                React.createElement('polygon', { className: 'sdg4-2', points: '51.76 60.01 51.76 91.86 71.94 85.79 71.94 48.36 51.76 60.01' }),
-	                React.createElement('polygon', { className: 'sdg4-2', points: '83.52 85.13 82.93 85.13 85.31 93.42 87.67 85.13 87.08 85.13 87.67 85.13 87.67 51.82 87.08 51.82 86.5 51.82 85.87 51.82 84.69 51.82 84.11 51.82 83.52 51.82 82.93 51.82 82.93 85.13 83.52 85.13' }),
-	                React.createElement('polygon', { className: 'sdg4-2', points: '76.24 49.96 74.1 48.27 74.1 86.81 51.82 94.01 50.79 94.01 50.59 94.01 49.56 94.01 27.39 87.81 27.39 48.27 25.24 49.96 25.24 89.32 49.46 96.03 50.59 96.03 50.79 96.03 51.92 96.03 74.27 88.93 76.24 88.35 76.24 49.96' }),
-	                React.createElement('polygon', { className: 'sdg4-2', points: '51.94 17.24 50.11 17.24 50.11 9.35 48.57 9.35 48.57 18.49 51.94 18.49 51.94 17.24' }),
-	                React.createElement('polygon', { className: 'sdg4-2', points: '56.18 18.49 57.72 18.49 57.72 10.61 58.99 10.61 58.99 9.35 54.91 9.35 54.91 10.61 56.18 10.61 56.18 18.49' }),
-	                React.createElement('polygon', { className: 'sdg4-2', points: '61.17 18.49 62.71 18.49 62.71 15.01 64.41 9.35 62.94 9.35 62.01 12.82 61.99 12.82 61.06 9.35 59.46 9.35 61.17 15.01 61.17 18.49' }),
-	                React.createElement('polygon', { className: 'sdg4-2', points: '35.58 30.64 33.45 30.64 33.45 27.86 34.97 27.86 34.97 26.62 33.45 26.62 33.45 24.01 35.58 24.01 35.58 22.75 31.91 22.75 31.91 31.89 35.58 31.89 35.58 30.64' }),
-	                React.createElement('polygon', { className: 'sdg4-2', points: '57.55 24.01 58.81 24.01 58.81 31.89 60.36 31.89 60.36 24.01 61.63 24.01 61.63 22.75 57.55 22.75 57.55 24.01' }),
-	                React.createElement('polygon', { className: 'sdg4-2', points: '71.99 26.15 73.8 31.89 75.15 31.89 75.15 22.75 73.86 22.75 73.86 28 72.21 22.75 70.7 22.75 70.7 31.89 71.99 31.89 71.99 26.15' }),
-	                React.createElement('path', { className: 'sdg4-2', d: 'M87.67,47.41a2.37,2.37,0,1,0-4.74,0V50h4.74Z' }),
-	                React.createElement('path', { className: 'sdg4-2', d: 'M33.67,18.49v.62l2.9.54V18.51l-1.13-.22a2.19,2.19,0,0,0,1.13-2.16V11.71a2.33,2.33,0,1,0-4.65,0v4.42a2.1,2.1,0,0,0,1.75,2.36m-.21-7c0-.55.24-.94.78-.94s.79.39.79.94v5c0,.54-.24.94-.79.94s-.78-.41-.78-.94Z' }),
-	                React.createElement('path', { className: 'sdg4-2', d: 'M39.87,18.6c1.56,0,2.17-.92,2.17-2.33V9.35H40.62v7.06c0,.54-.22.9-.75.9s-.75-.36-.75-.9V9.35H37.57v6.92a2.06,2.06,0,0,0,2.29,2.33' }),
-	                React.createElement('path', { className: 'sdg4-2', d: 'M44.31,16.82h1.63l.28,1.67H47.8L46.06,9.35H44.31l-1.73,9.14H44Zm.81-4.89h0l.61,3.67H44.51Z' }),
-	                React.createElement('path', { className: 'sdg4-2', d: 'M41.11,29.44V25.21c0-1.42-.58-2.45-2.22-2.45H36.52v9.14h2.37c1.64,0,2.22-1.05,2.22-2.45m-3.06,1.2V24h.65a.8.8,0,0,1,.87.92v4.79c0,.55-.24.93-.87.93Z' }),
-	                React.createElement('path', { className: 'sdg4-2', d: 'M42.13,22.75v6.92A2.06,2.06,0,0,0,44.42,32c1.56,0,2.17-.92,2.17-2.33V22.75H45.17v7.06c0,.54-.22.9-.76.9s-.75-.36-.75-.9V22.75Z' }),
-	                React.createElement('path', { className: 'sdg4-2', d: 'M47.6,29.53A2.16,2.16,0,0,0,49.89,32c1.63,0,2.17-1,2.17-2.28V28.14h-1.4v1.68c0,.54-.19.89-.74.89s-.78-.39-.78-.94V24.87c0-.55.23-.94.78-.94s.74.32.74.89V26h1.4V24.94c0-1.35-.47-2.29-2.17-2.29a2.16,2.16,0,0,0-2.29,2.47Z' }),
-	                React.createElement('path', { className: 'sdg4-2', d: 'M54.25,30.22h1.63l.28,1.67h1.58L56,22.75H54.25l-1.73,9.14H54Zm.81-4.89h0L55.68,29H54.45Z' }),
-	                React.createElement('path', { className: 'sdg4-2', d: 'M67.36,32a2.18,2.18,0,0,0,2.33-2.47V25.11a2.33,2.33,0,1,0-4.65,0v4.42A2.18,2.18,0,0,0,67.36,32m-.78-7.13c0-.55.24-.94.78-.94s.79.39.79.94v4.91c0,.55-.24.94-.79.94s-.78-.39-.78-.94Z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('path', { className: 'sdg4-2', d: 'M18.79,30.6h3.57V27h1.52V24H22.36V8.18h-3.7L12.14,24.65V27h6.65ZM15.45,24l3.37-9.23h0V24Z' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 287 */
-/*!*******************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg5.svg ***!
-  \*******************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg5",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG5 Gender Equality'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg5-1', x: '-1.93', y: '-1.93', width: '117.68', height: '117.09' }),
-	                React.createElement('rect', { className: 'sdg5-2', x: '57.54', y: '22.75', width: '1.54', height: '9.14' }),
-	                React.createElement('path', { className: 'sdg5-2', d: 'M81.41,42.29H67.52a.18.18,0,0,0-.18.18v4.62a.18.18,0,0,0,.18.18H73L66.91,53.4A18.19,18.19,0,1,0,53.34,85.75v5.32H47.86a.18.18,0,0,0-.18.18v4.95a.18.18,0,0,0,.18.18h5.48v5.23a.18.18,0,0,0,.18.18h4.95a.18.18,0,0,0,.18-.18V96.37h5.48a.18.18,0,0,0,.18-.18V91.24a.18.18,0,0,0-.18-.18H58.64V85.66A18.18,18.18,0,0,0,70.56,57.25l6.05-6.05v5.17a.18.18,0,0,0,.18.18h4.61a.18.18,0,0,0,.18-.18V42.47a.18.18,0,0,0-.18-.18M55.69,81.1A13.39,13.39,0,1,1,69.08,67.71,13.41,13.41,0,0,1,55.69,81.1' }),
-	                React.createElement('path', { className: 'sdg5-2', d: 'M63.87,62.22H47.63a.17.17,0,0,0-.18.16v3.93a.17.17,0,0,0,.18.16H63.87a.17.17,0,0,0,.18-.16V62.37a.17.17,0,0,0-.18-.16' }),
-	                React.createElement('path', { className: 'sdg5-2', d: 'M63.87,69.24H47.63a.17.17,0,0,0-.18.16v3.93a.17.17,0,0,0,.18.16H63.87a.17.17,0,0,0,.18-.16V69.4a.17.17,0,0,0-.18-.16' }),
-	                React.createElement('path', { className: 'sdg5-2', d: 'M33.84,18.6a1.38,1.38,0,0,0,1.47-1.1v1h1.1V13.61H34.23v1.21H35v1.62c0,.59-.26.88-.76.88s-.75-.39-.75-.94V11.47c0-.55.24-.94.8-.94s.77.32.77.89v.93h1.4v-.81c0-1.35-.5-2.29-2.19-2.29a2.16,2.16,0,0,0-2.3,2.47v4.42c0,1.41.61,2.47,1.92,2.47' }),
-	                React.createElement('path', { className: 'sdg5-2', d: 'M52.1,16V11.81c0-1.41-.58-2.45-2.22-2.45H47.51v9.14h2.37c1.64,0,2.22-1.05,2.22-2.45M49,17.24V10.61h.65a.8.8,0,0,1,.87.92v4.79c0,.55-.24.93-.87.93Z' }),
-	                React.createElement('path', { className: 'sdg5-2', d: 'M59.26,14.3l1.44,4.19h1.62l-1.47-4.15c.87-.2,1.23-.78,1.23-1.77V11.4c0-1.28-.57-2-2.11-2H57.72v9.14h1.54Zm0-3.69h.51c.53,0,.75.24.75.74v1.35a.66.66,0,0,1-.75.76h-.51Z' }),
-	                React.createElement('path', { className: 'sdg5-2', d: 'M38.28,31.89v.62l2.89.54V31.9L40,31.69a2.19,2.19,0,0,0,1.13-2.16V25.11a2.33,2.33,0,1,0-4.65,0v4.42a2.1,2.1,0,0,0,1.75,2.36m-.22-7c0-.55.24-.94.78-.94s.79.39.79.94v5c0,.54-.24.94-.79.94s-.78-.4-.78-.94Z' }),
-	                React.createElement('path', { className: 'sdg5-2', d: 'M42.17,22.75v6.91A2.06,2.06,0,0,0,44.46,32c1.56,0,2.17-.92,2.17-2.33V22.75H45.21v7.06c0,.54-.22.9-.76.9s-.75-.36-.75-.9V22.75Z' }),
-	                React.createElement('path', { className: 'sdg5-2', d: 'M49.11,30.22h1.63L51,31.89H52.6l-1.74-9.14H49.11l-1.72,9.14h1.46Zm.81-4.89h0l.6,3.67H49.31Z' }),
-	                React.createElement('polygon', { className: 'sdg5-2', points: '41.09 17.24 38.96 17.24 38.96 14.46 40.48 14.46 40.48 13.22 38.96 13.22 38.96 10.61 41.09 10.61 41.09 9.35 37.43 9.35 37.43 18.49 41.09 18.49 41.09 17.24' }),
-	                React.createElement('polygon', { className: 'sdg5-2', points: '43.34 12.75 45.15 18.49 46.49 18.49 46.49 9.35 45.22 9.35 45.22 14.6 43.56 9.35 42.05 9.35 42.05 18.49 43.34 18.49 43.34 12.75' }),
-	                React.createElement('polygon', { className: 'sdg5-2', points: '56.77 17.24 54.65 17.24 54.65 14.46 56.17 14.46 56.17 13.22 54.65 13.22 54.65 10.61 56.77 10.61 56.77 9.35 53.11 9.35 53.11 18.49 56.77 18.49 56.77 17.24' }),
-	                React.createElement('polygon', { className: 'sdg5-2', points: '35.58 30.64 33.45 30.64 33.45 27.86 34.97 27.86 34.97 26.62 33.45 26.62 33.45 24 35.58 24 35.58 22.75 31.92 22.75 31.92 31.89 35.58 31.89 35.58 30.64' }),
-	                React.createElement('polygon', { className: 'sdg5-2', points: '53.35 22.75 53.35 31.89 56.72 31.89 56.72 30.64 54.89 30.64 54.89 22.75 53.35 22.75' }),
-	                React.createElement('polygon', { className: 'sdg5-2', points: '62.73 31.89 62.73 24 64 24 64 22.75 59.92 22.75 59.92 24 61.18 24 61.18 31.89 62.73 31.89' }),
-	                React.createElement('polygon', { className: 'sdg5-2', points: '66.29 31.89 67.83 31.89 67.83 28.41 69.52 22.75 68.05 22.75 67.12 26.22 67.11 26.22 66.18 22.75 64.58 22.75 66.29 28.41 66.29 31.89' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('path', { className: 'sdg5-2', d: 'M18.48,15.29a3.4,3.4,0,0,0-3.17,1.55h0V11.25h6.48V8.18H11.84V20.81h3.44v-.5c0-1.32.6-2.05,1.65-2.05s1.62.79,1.62,2V25.7c0,1.19-.43,2-1.59,2s-1.75-.86-1.75-2.18V22.73H11.77v2.55c0,3.41,1.36,5.59,5.19,5.59s5.36-2,5.36-5.13V20.25c0-3.54-1.82-5-3.84-5' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 288 */
-/*!*******************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg6.svg ***!
-  \*******************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg6",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG6 Clean Water and Sanitation'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg6-1', x: '-1.97', y: '-1.93', width: '117.83', height: '117.09' }),
-	                React.createElement('rect', { className: 'sdg6-2', x: '67.71', y: '22.75', width: '1.54', height: '9.14' }),
-	                React.createElement('rect', { className: 'sdg6-2', x: '83.32', y: '22.75', width: '1.54', height: '9.14' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M76.46,45.19A.49.49,0,0,0,76.1,45H35.55a.46.46,0,0,0-.47.54l6.81,41.2a.48.48,0,0,0,.47.4h8.36l.57,6.71H47.78L56,102.08l8.21-8.2H60.65l.57-6.7h8.51a.47.47,0,0,0,.47-.4l6.37-41.19A.48.48,0,0,0,76.46,45.19Zm-15.67,33A6.51,6.51,0,0,1,56,79.87a6.51,6.51,0,0,1-4.84-1.69c-3-3-2-6.81-.9-8.76.65-1.22,5.32-8.23,5.72-8.83v0l0,0,0,0v0c.39.6,5.07,7.61,5.72,8.83C62.75,71.37,63.83,75.14,60.79,78.18ZM73.66,53.86a5,5,0,0,0-3.83.23c-5,2-8.45,2.77-13.75,1.12-3.33-1-6.45-3.23-10.14-1.9A20.88,20.88,0,0,1,38.45,55l-1.6-8.19H74.8Z' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M34.25,18.52c1.63,0,2.17-1,2.17-2.28V14.67H35v1.69c0,.54-.19.89-.74.89s-.78-.39-.78-.94V11.39c0-.55.23-.94.78-.94s.74.32.74.89v1.2h1.4V11.46c0-1.35-.47-2.29-2.17-2.29A2.16,2.16,0,0,0,32,11.64v4.42a2.16,2.16,0,0,0,2.29,2.47' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M47.7,16.75h1.63l.28,1.67h1.58L49.45,9.28H47.7L46,18.42h1.46Zm.81-4.89h0l.61,3.66H47.9Z' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M68.28,16.75h1.63l.28,1.67h1.58L70,9.28H68.28l-1.72,9.14H68Zm.81-4.89h0l.61,3.66H68.48Z' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M82.41,14.22l1.44,4.19h1.62L84,14.26c.88-.2,1.23-.78,1.23-1.76V11.33c0-1.28-.57-2.05-2.12-2.05H80.88v9.14h1.54Zm0-3.69h.51c.52,0,.75.24.75.74v1.35a.67.67,0,0,1-.75.76h-.51Z' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M33.51,30.22h1.63l.28,1.67H37l-1.74-9.14H33.51l-1.72,9.14h1.46Zm.81-4.89h0l.6,3.67H33.71Z' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M43.2,31.89h2.37c1.64,0,2.22-1.05,2.22-2.45V25.21c0-1.41-.58-2.45-2.22-2.45H43.2ZM44.73,24h.65a.8.8,0,0,1,.87.92v4.79c0,.55-.24.93-.87.93h-.65Z' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M51.2,28.7v1.23A1.9,1.9,0,0,0,53.37,32a2,2,0,0,0,2.24-2.14v-.44A3.07,3.07,0,0,0,54.37,27l-1-1c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.75c.49,0,.73.26.73.78v.8h1.4v-.74c0-1.32-.61-2.08-2.14-2.08a1.91,1.91,0,0,0-2.15,2V25A3.08,3.08,0,0,0,52.5,27.4l.9.9a1.64,1.64,0,0,1,.69,1.29V30c0,.48-.21.81-.7.81s-.75-.3-.75-.81V28.7Z' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M57.5,31.89l.27-1.67H59.4l.28,1.67h1.58l-1.74-9.14H57.77L56,31.89Zm1.08-6.56h0L59.2,29H58Z' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M77.15,22.75H75.4l-1.73,9.14h1.45l.27-1.67H77l.28,1.67h1.58ZM75.6,29l.61-3.67h0L76.83,29Z' }),
-	                React.createElement('path', { className: 'sdg6-2', d: 'M88.17,32a2.18,2.18,0,0,0,2.33-2.47V25.11a2.33,2.33,0,1,0-4.65,0v4.42A2.18,2.18,0,0,0,88.17,32m-.78-7.13c0-.55.24-.94.78-.94s.79.39.79.94v4.91c0,.55-.24.94-.79.94s-.78-.39-.78-.94Z' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '40.76 17.16 38.93 17.16 38.93 9.28 37.39 9.28 37.39 18.42 40.76 18.42 40.76 17.16' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '45.26 17.16 43.13 17.16 43.13 14.39 44.66 14.39 44.66 13.14 43.13 13.14 43.13 10.53 45.26 10.53 45.26 9.28 41.6 9.28 41.6 18.42 45.26 18.42 45.26 17.16' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '53.25 12.67 55.06 18.42 56.4 18.42 56.4 9.28 55.13 9.28 55.13 14.52 53.47 9.28 51.96 9.28 51.96 18.42 53.25 18.42 53.25 12.67' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '62.11 18.42 62.98 12.77 62.99 12.77 63.89 18.42 65.35 18.42 66.53 9.28 65.24 9.28 64.54 15.07 64.52 15.07 63.68 9.28 62.42 9.28 61.66 15.07 61.64 15.07 60.93 9.28 59.44 9.28 60.67 18.42 62.11 18.42' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '72.84 18.42 74.39 18.42 74.39 10.53 75.66 10.53 75.66 9.28 71.57 9.28 71.57 10.53 72.84 10.53 72.84 18.42' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '80.05 17.16 77.92 17.16 77.92 14.39 79.44 14.39 79.44 13.14 77.92 13.14 77.92 10.53 80.05 10.53 80.05 9.28 76.38 9.28 76.38 18.42 80.05 18.42 80.05 17.16' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '37.63 22.75 37.63 31.89 38.92 31.89 38.92 26.15 40.73 31.89 42.07 31.89 42.07 22.75 40.8 22.75 40.8 28 39.14 22.75 37.63 22.75' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '65.18 28 63.53 22.75 62.02 22.75 62.02 31.89 63.31 31.89 63.31 26.15 65.12 31.89 66.46 31.89 66.46 22.75 65.18 22.75 65.18 28' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '72.76 31.89 72.76 24.01 74.03 24.01 74.03 22.75 69.94 22.75 69.94 24.01 71.21 24.01 71.21 31.89 72.76 31.89' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '82.48 22.75 78.4 22.75 78.4 24.01 79.67 24.01 79.67 31.89 81.22 31.89 81.22 24.01 82.48 24.01 82.48 22.75' }),
-	                React.createElement('polygon', { className: 'sdg6-2', points: '95.94 31.89 95.94 22.75 94.66 22.75 94.66 28 93.01 22.75 91.5 22.75 91.5 31.89 92.79 31.89 92.79 26.15 94.6 31.89 95.94 31.89' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('path', { className: 'sdg6-2', d: 'M17,31.13c4,0,5.56-2.18,5.56-5.66V22.16c0-3.67-1.46-5.52-4.17-5.52a3.23,3.23,0,0,0-3.11,1.82h0V13.63c0-1.36.43-2.32,1.79-2.32s1.75.8,1.75,2.18V15h3.44V13.8c0-3.31-1.09-5.62-5.26-5.62-4,0-5.46,2.55-5.46,6.05V25.14c0,3.47,1.52,6,5.49,6M15.21,21.7c.07-1.26.6-2,1.79-2s1.79.79,1.79,2.25v3.9c0,1.42-.53,2.25-1.82,2.25s-1.75-.86-1.75-2.25Z' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 289 */
-/*!*******************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg7.svg ***!
-  \*******************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg7",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG7 Affordable and Clean Energy'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg7-1', x: '-1.31', y: '-1.83', width: '116.82', height: '118.33' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M55.92,54.15A16.38,16.38,0,1,0,72.3,70.53,16.38,16.38,0,0,0,55.92,54.15m-1.21,6.47a1.22,1.22,0,0,1,2.43,0v5.62a1.22,1.22,0,0,1-2.43,0Zm1.22,18.3a8.52,8.52,0,0,1-2.53-16.66v3.17a5.58,5.58,0,1,0,5,0V62.26a8.52,8.52,0,0,1-2.52,16.66' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M37.12,70.39A1.37,1.37,0,0,0,35.86,69H28.69a1.35,1.35,0,0,0,0,2.69h7.17a1.37,1.37,0,0,0,1.26-1.35' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M84.43,70.39A1.37,1.37,0,0,0,83.18,69H76a1.35,1.35,0,0,0,0,2.69h7.17a1.37,1.37,0,0,0,1.26-1.35' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M55.93,51.58a1.37,1.37,0,0,0,1.34-1.26V43.15a1.35,1.35,0,0,0-2.69,0v7.17a1.37,1.37,0,0,0,1.35,1.26' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M55.93,98.9a1.37,1.37,0,0,0,1.34-1.26V90.47a1.35,1.35,0,0,0-2.69,0v7.17a1.37,1.37,0,0,0,1.35,1.26' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M39.6,61a1.37,1.37,0,0,0-.42-1.79L33,55.69A1.35,1.35,0,0,0,31.62,58l6.23,3.56A1.37,1.37,0,0,0,39.6,61' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M80.67,84.55a1.37,1.37,0,0,0-.42-1.79L74,79.19a1.35,1.35,0,0,0-1.34,2.34l6.23,3.56a1.37,1.37,0,0,0,1.76-.55' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M65.27,54.07a1.37,1.37,0,0,0,1.79-.42l3.56-6.23a1.35,1.35,0,0,0-2.34-1.34l-3.56,6.22a1.37,1.37,0,0,0,.55,1.76' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M41.77,95.13a1.37,1.37,0,0,0,1.79-.43l3.56-6.22a1.35,1.35,0,0,0-2.34-1.34l-3.56,6.23a1.37,1.37,0,0,0,.55,1.76' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M46.55,54.09a1.37,1.37,0,0,0,.54-1.76l-3.58-6.22a1.35,1.35,0,0,0-2.33,1.34l3.58,6.22a1.37,1.37,0,0,0,1.8.42' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M70.14,95.1a1.37,1.37,0,0,0,.54-1.76L67.1,87.12a1.35,1.35,0,0,0-2.33,1.34l3.58,6.22a1.37,1.37,0,0,0,1.8.42' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M72.23,61a1.37,1.37,0,0,0,1.76.54L80.21,58a1.35,1.35,0,0,0-1.34-2.34l-6.22,3.58a1.37,1.37,0,0,0-.42,1.8' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M31.22,84.6a1.37,1.37,0,0,0,1.76.54l6.22-3.58a1.35,1.35,0,0,0-1.34-2.34l-6.22,3.58a1.37,1.37,0,0,0-.42,1.8' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M31.69,18.49l1.72-9.13h1.75l1.74,9.13H35.33L35,16.82H33.42l-.27,1.67Zm1.93-2.9h1.23l-.61-3.66h0Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M37.47,9.36h3.6v1.25H39v2.61h1.54v1.24H39v4H37.47Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M41.67,9.36h3.6v1.25H43.21v2.61h1.54v1.24H43.21v4H41.67Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M45.74,16.13V11.71a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S48.86,16.93,48.86,16.37Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M52.74,14.3v4.19H51.2V9.36h2.24c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.76l1.47,4.15H54.18Zm0-3.69v2.84h.51A.66.66,0,0,0,54,12.7V11.35c0-.5-.23-.74-.75-.74Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M60.91,11.81V16c0,1.4-.58,2.45-2.22,2.45H56.32V9.36h2.37C60.34,9.36,60.91,10.39,60.91,11.81ZM58.5,17.24c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M61.28,18.49,63,9.36h1.75l1.74,9.13H64.92l-.28-1.67H63l-.27,1.67Zm1.93-2.9h1.23l-.61-3.66h0Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M67.06,9.36h2.22c1.54,0,2,.71,2,2v.93a1.33,1.33,0,0,1-.92,1.45,1.39,1.39,0,0,1,1.15,1.52v1.21c0,1.29-.58,2-2.11,2H67.06Zm1.54,3.85h.54a.65.65,0,0,0,.73-.74V11.35a.65.65,0,0,0-.74-.74h-.53Zm0,1.17v2.86h.67a.66.66,0,0,0,.75-.74V15.12c0-.48-.23-.74-.77-.74Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M72.26,9.36H73.8v7.88h1.83v1.25H72.26Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M76.26,9.36h3.66v1.25H77.8v2.61h1.52v1.24H77.8v2.77h2.13v1.25H76.26Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M81.79,18.49l1.72-9.13h1.75L87,18.49H85.42l-.28-1.67H83.51l-.27,1.67Zm1.93-2.9h1.23l-.61-3.66h0Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M88.86,12.75v5.74H87.57V9.36h1.51l1.66,5.24V9.36H92v9.13H90.66Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M97.41,11.81V16c0,1.4-.58,2.45-2.22,2.45H92.82V9.36h2.37C96.83,9.36,97.41,10.39,97.41,11.81ZM95,17.24c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M31.92,29.54v-4.4a2.14,2.14,0,0,1,2.28-2.45c1.69,0,2.16.94,2.16,2.28V26H35V24.85c0-.56-.19-.88-.74-.88s-.78.39-.78.94v4.88c0,.55.23.94.78.94s.74-.35.74-.88V28.16h1.39v1.57c0,1.3-.54,2.27-2.16,2.27A2.15,2.15,0,0,1,31.92,29.54Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M37.32,22.8h1.53v7.84h1.82v1.25H37.32Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M41.51,22.8h3.65V24H43v2.6h1.52v1.23H43v2.76h2.12v1.25H41.51Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M45.86,31.89l1.72-9.09h1.74l1.73,9.09H49.48l-.28-1.66H47.58l-.27,1.66ZM47.78,29H49l-.6-3.65h0Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M53.1,26.18v5.71H51.81V22.8h1.5L55,28V22.8h1.27v9.09H54.9Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M60.32,22.8H64V24H61.85v2.6h1.52v1.23H61.85v2.76H64v1.25H60.32Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M66.17,26.18v5.71H64.88V22.8h1.5L68,28V22.8h1.27v9.09H68Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M70.3,22.8h3.65V24H71.83v2.6h1.52v1.23H71.83v2.76h2.12v1.25H70.3Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M76.4,27.72v4.17H74.87V22.8h2.23c1.54,0,2.1.76,2.1,2V26c0,1-.35,1.55-1.22,1.76l1.46,4.13H77.83Zm0-3.67v2.83h.51a.66.66,0,0,0,.75-.75V24.78c0-.5-.23-.74-.75-.74Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M82.47,27h2.17v4.85h-1.1v-1A1.38,1.38,0,0,1,82.08,32c-1.31,0-1.92-1-1.92-2.45v-4.4a2.15,2.15,0,0,1,2.29-2.45c1.69,0,2.19.94,2.19,2.28v.8H83.25v-.93c0-.56-.21-.88-.76-.88s-.79.39-.79.94v4.88c0,.55.23.94.75.94s.75-.28.75-.87V28.24h-.72Z' }),
-	                React.createElement('path', { className: 'sdg7-2', d: 'M88.59,28.43v3.46H87.07V28.43l-1.7-5.63H87l.93,3.45h0l.93-3.45h1.46Z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('polygon', { className: 'sdg7-2', points: '14.63 12.21 20.45 12.21 15.42 31.55 19.16 31.55 24.09 12.6 24.09 9.13 14.63 9.13 14.63 12.21' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 290 */
-/*!*******************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg8.svg ***!
-  \*******************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg8",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG8 Decent Work and Economic Growth'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg8-1', x: '-2.05', y: '-1.83', width: '119.92', height: '118.33' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M77.09,55,65.73,65.79a1.88,1.88,0,0,0-.65,1.62V97.7a.65.65,0,0,0,.65.65H77.46a.65.65,0,0,0,.65-.65V55.26c0-.36-.28-1-1-.27' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M44.36,69.07,33,79.87a1.88,1.88,0,0,0-.65,1.62V97.7a.65.65,0,0,0,.65.65H44.74a.65.65,0,0,0,.65-.65V69.34c0-.36-.28-1-1-.27' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M82.25,41.88a.32.32,0,0,0-.1-.25.34.34,0,0,0-.21-.09h-.16l-8.7,2-.16,0a.35.35,0,0,0-.17.09.33.33,0,0,0,0,.47l.1.1,2,2L55.14,65.88,46,56.78a.26.26,0,0,0-.37,0l-2.47,2.47h0L28.6,73.84a.26.26,0,0,0,0,.37l2.47,2.47a.26.26,0,0,0,.37,0L45.85,62.28l6.61,6.61,0,0L55,71.38a.26.26,0,0,0,.37,0L77.69,49l2.09,2.08a.33.33,0,0,0,.46,0,.32.32,0,0,0,.09-.21v0L82.25,42Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M60.79,71l-5.5,5.54a.26.26,0,0,1-.35,0l-5-5.08c-.91-.91-1.11-.17-1.11.19V97.7a.64.64,0,0,0,.64.65H61.23a.65.65,0,0,0,.65-.65V71.17c0-.36-.28-1-1.09-.2' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M30,22.77H33.7V24H31.57v2.61H33.1v1.24H31.57v2.77H33.7V31.9H30Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M34.38,29.55V25.13a2.15,2.15,0,0,1,2.29-2.46c1.7,0,2.17.94,2.17,2.29V26h-1.4v-1.2c0-.57-.19-.89-.74-.89s-.78.39-.78.94v4.9c0,.55.23.94.78.94s.74-.35.74-.89V28.16h1.4v1.58C38.84,31,38.3,32,36.67,32A2.16,2.16,0,0,1,34.38,29.55Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M39.67,29.55V25.13a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S42.78,30.34,42.78,29.79Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M46.49,26.17V31.9H45.2V22.77H46.7L48.36,28V22.77h1.28V31.9H48.29Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M50.52,29.55V25.13a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S53.63,30.34,53.63,29.79Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M60.27,26h0l-1,5.93h-.71L57.34,26h0V31.9H56V22.77h1.79l1,5.15h0l.89-5.15h1.94V31.9h-1.4Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M62.55,22.77h1.54V31.9H62.55Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M64.95,29.55V25.13a2.15,2.15,0,0,1,2.29-2.46c1.7,0,2.17.94,2.17,2.29V26H68v-1.2c0-.57-.19-.89-.74-.89s-.78.39-.78.94v4.9c0,.55.23.94.78.94s.74-.35.74-.89V28.16h1.4v1.58c0,1.31-.54,2.28-2.17,2.28A2.16,2.16,0,0,1,64.95,29.55Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M74.34,27h2.18V31.9h-1.1v-1A1.38,1.38,0,0,1,73.95,32C72.63,32,72,31,72,29.55V25.13a2.16,2.16,0,0,1,2.3-2.46c1.7,0,2.2.94,2.2,2.29v.81h-1.4v-.93c0-.57-.22-.89-.77-.89s-.79.39-.79.94v4.9c0,.55.23.94.75.94s.75-.28.75-.88V28.24h-.73Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M78.93,27.72V31.9H77.4V22.77h2.24c1.55,0,2.11.77,2.11,2V26c0,1-.35,1.56-1.23,1.76L82,31.9H80.37Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V24.77c0-.5-.23-.74-.75-.74Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M82.45,29.55V25.13a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S85.56,30.34,85.56,29.79Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M91,26.26l-.86,5.64H88.73L87.5,22.77H89l.71,5.79h0l.77-5.79h1.25l.85,5.79h0l.7-5.79h1.29L93.4,31.9H91.95L91,26.26Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M95.06,22.77h4.08V24H97.88V31.9H96.33V24H95.06Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M102.63,27.88h-1.48v4H99.61V22.77h1.54v3.87h1.48V22.77h1.55V31.9h-1.55Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M34.63,11.81V16c0,1.4-.58,2.45-2.22,2.45H30V9.36h2.37C34.05,9.36,34.63,10.39,34.63,11.81Zm-2.41,5.43c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M35.6,9.36h3.66v1.25H37.14v2.61h1.52v1.24H37.14v2.77h2.13v1.25H35.6Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M40,16.13V11.71a2.15,2.15,0,0,1,2.29-2.46c1.7,0,2.17.94,2.17,2.29v1.08h-1.4v-1.2c0-.57-.19-.89-.74-.89s-.78.39-.78.94v4.9c0,.55.23.94.78.94s.74-.35.74-.89V14.74h1.4v1.58c0,1.31-.54,2.28-2.17,2.28A2.16,2.16,0,0,1,40,16.13Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M45.44,9.36H49.1v1.25H47v2.61H48.5v1.24H47v2.77H49.1v1.25H45.44Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M51.31,12.75v5.74H50V9.36h1.51l1.66,5.24V9.36h1.28v9.13H53.12Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M55.26,9.36h4.08v1.25H58.08v7.88H56.53V10.61H55.26Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M65,12.84l-.86,5.64H62.67L61.45,9.36h1.48l.71,5.79h0l.77-5.79h1.25l.85,5.79h0l.7-5.79h1.29l-1.19,9.13H65.89L65,12.84Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M69.15,16.13V11.71a2.33,2.33,0,1,1,4.65,0v4.42a2.33,2.33,0,1,1-4.65,0Zm3.11.24v-4.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.9c0,.55.24.94.78.94S72.26,16.93,72.26,16.37Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M76.31,14.3v4.19H74.77V9.36H77c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.76l1.47,4.15H77.75Zm0-3.69v2.84h.51a.66.66,0,0,0,.75-.75V11.35c0-.5-.23-.74-.75-.74Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M81.59,14v4.44H80.05V9.36h1.54v4l1.67-4h1.51L83,13.46l1.82,5H83.19Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M87,18.49l1.72-9.13h1.75l1.74,9.13H90.59l-.28-1.67H88.67l-.27,1.67Zm1.93-2.9H90.1l-.61-3.66h0Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M94,12.75v5.74H92.68V9.36h1.51l1.66,5.24V9.36h1.28v9.13H95.77Z' }),
-	                React.createElement('path', { className: 'sdg8-2', d: 'M102.73,11.81V16c0,1.4-.58,2.45-2.22,2.45H98.13V9.36h2.37C102.15,9.36,102.73,10.39,102.73,11.81Zm-2.41,5.43c.63,0,.88-.38.88-.93V11.52a.8.8,0,0,0-.88-.92h-.65v6.63Z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('path', { className: 'sdg8-2', d: 'M24.21,26.29V23.85c0-2.15-.76-3.7-2.51-4.5a4,4,0,0,0,2.18-3.9v-.93c0-3.51-1.82-5.39-5.29-5.39S13.36,11,13.36,14.52v.93a4,4,0,0,0,2.12,3.9c-1.75.79-2.48,2.35-2.48,4.5v2.45c0,3.41,1.62,5.79,5.59,5.79s5.62-2.38,5.62-5.79m-7.31-12c0-1.36.46-2.15,1.69-2.15s1.72.79,1.72,2.15v1.52c0,1.36-.46,2.15-1.72,2.15s-1.69-.8-1.69-2.15Zm3.54,12.4c0,1.36-.5,2.32-1.85,2.32s-1.82-1-1.82-2.32V23.05c0-1.36.5-2.31,1.82-2.31s1.85,1,1.85,2.31Z' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 291 */
-/*!*******************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg9.svg ***!
-  \*******************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg9",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'Industry, Innovation and Infrastructure'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg9-1', x: '-2.75', y: '-1.83', width: '118.29', height: '118.33' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M84.43,73.46,71.15,65.79V50.45a.91.91,0,0,0-.45-.79L57,41.74a.91.91,0,0,0-.91,0L42.31,49.67a.91.91,0,0,0-.45.79V65.79L28.58,73.46a.91.91,0,0,0-.45.78V90.11a.91.91,0,0,0,.45.79l13.74,7.93a.91.91,0,0,0,.91,0L56.5,91.16l13.28,7.67a.91.91,0,0,0,.91,0L84.43,90.9a.91.91,0,0,0,.45-.79V74.25A.91.91,0,0,0,84.43,73.46ZM55.6,88.54l-11-6.36,11-6.36ZM68.43,66.32l-11,6.36V60ZM55.6,72.68l-11-6.36L55.6,60Zm2.72,1.57,11.92-6.88,11.93,6.88L70.24,81.13Zm11-9.5-11-6.36,11-6.36ZM54.69,58.39l-11,6.36V52ZM41.86,96.47,29.94,89.59V75.82L41.86,82.7Zm1.81,0V83.75l11,6.36Zm39.4-6.88L71.15,96.47V82.7l11.93-6.89Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M26.39,9.55h1.46v8.71H26.39Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M29.75,12.78v5.47H28.51V9.55H30l1.58,5v-5h1.22v8.71H31.47Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M37.78,11.88v4c0,1.34-.55,2.34-2.12,2.34H33.4V9.55h2.26C37.22,9.55,37.78,10.54,37.78,11.88Zm-2.3,5.18c.6,0,.83-.36.83-.89V11.62a.76.76,0,0,0-.83-.87h-.62v6.32Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M42.67,9.55v6.59c0,1.35-.58,2.22-2.07,2.22a2,2,0,0,1-2.18-2.22V9.55h1.46v6.73c0,.51.21.86.72.86s.72-.35.72-.86V9.55Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M43.24,16.38V15.21H44.6v1.19c0,.49.22.77.72.77s.67-.31.67-.77v-.33a1.57,1.57,0,0,0-.65-1.23L44.47,14a2.94,2.94,0,0,1-1.22-2.32v-.3a1.82,1.82,0,0,1,2.06-1.91c1.46,0,2,.72,2,2v.71H46v-.76c0-.5-.23-.75-.69-.75a.64.64,0,0,0-.69.72v.18c0,.49.27.77.69,1.18l.94.92a2.92,2.92,0,0,1,1.18,2.26v.42a1.89,1.89,0,0,1-2.13,2A1.81,1.81,0,0,1,43.24,16.38Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M47.53,9.55h3.89v1.19H50.21v7.51H48.74V10.74H47.53Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M53.37,14.26v4H51.91V9.55H54c1.48,0,2,.73,2,2v1.12c0,.94-.33,1.49-1.17,1.68l1.4,4H54.75Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V11.45c0-.48-.22-.71-.72-.71Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M59.19,14.94v3.31H57.73V14.94L56.1,9.55h1.53l.89,3.3h0l.89-3.3h1.4Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M62.07,17l-.74,2h-.82l.18-2.08h1.39Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M63.87,9.55h1.46v8.71H63.87Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M67.23,12.78v5.47H66V9.55h1.44l1.58,5v-5h1.22v8.71H68.95Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M72.11,12.78v5.47H70.88V9.55h1.44l1.58,5v-5h1.22v8.71H73.83Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M75.76,16V11.8a2.22,2.22,0,1,1,4.43,0V16a2.22,2.22,0,1,1-4.43,0Zm3,.23V11.56c0-.53-.23-.9-.76-.9s-.75.37-.75.9v4.68c0,.53.23.9.75.9S78.73,16.77,78.73,16.24Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M85.52,9.55l-1.66,8.71H82.27L80.62,9.55h1.49l1,6.08h0l1-6.08Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M85.06,18.26l1.64-8.71h1.67L90,18.26h-1.5l-.27-1.59H86.71l-.26,1.59Zm1.84-2.76h1.17L87.49,12h0Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M89.63,9.55h3.89v1.19H92.32v7.51H90.84V10.74H89.63Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M94,9.55h1.46v8.71H94Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M96.14,16V11.8a2.22,2.22,0,1,1,4.43,0V16a2.22,2.22,0,1,1-4.43,0Zm3,.23V11.56c0-.53-.23-.9-.76-.9s-.75.37-.75.9v4.68c0,.53.23.9.75.9S99.1,16.77,99.1,16.24Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M102.44,12.78v5.47h-1.23V9.55h1.44l1.58,5v-5h1.22v8.71h-1.28Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M26.16,31.68,27.8,23h1.67l1.66,8.71h-1.5l-.27-1.59H27.8l-.26,1.59ZM28,28.92h1.17l-.58-3.49h0Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M32.9,26.21v5.47H31.67V23h1.44l1.58,5V23h1.22v8.71H34.62Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M41.06,25.31v4c0,1.34-.55,2.34-2.12,2.34H36.68V23h2.26C40.51,23,41.06,24,41.06,25.31Zm-2.3,5.18c.6,0,.83-.36.83-.89V25a.76.76,0,0,0-.83-.87h-.62v6.32Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M43.12,23h1.46v8.71H43.12Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M46.6,26.21v5.47H45.36V23H46.8l1.58,5V23H49.6v8.71H48.32Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M50.38,23h3.43v1.19h-2v2.49H53.3v1.18H51.84v3.84H50.38Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M55.85,27.69v4H54.38V23h2.13c1.48,0,2,.73,2,2V26c0,.94-.33,1.49-1.17,1.68l1.4,4H57.22Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V24.87c0-.48-.22-.71-.72-.71Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M59,31.68,60.68,23h1.67L64,31.68H62.5l-.27-1.59H60.68l-.26,1.59Zm1.84-2.76H62l-.58-3.49h0Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M64.34,29.81V28.64H65.7v1.19c0,.49.22.77.72.77s.67-.31.67-.77V29.5a1.58,1.58,0,0,0-.65-1.23l-.86-.86a2.94,2.94,0,0,1-1.22-2.32v-.3a1.82,1.82,0,0,1,2.06-1.91c1.46,0,2,.72,2,2v.71H67.12V24.8c0-.5-.23-.75-.69-.75a.64.64,0,0,0-.69.72V25c0,.49.27.77.69,1.18l.94.92a2.92,2.92,0,0,1,1.18,2.26v.42a1.89,1.89,0,0,1-2.13,2A1.81,1.81,0,0,1,64.34,29.81Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M68.89,23h3.89v1.19H71.57v7.51H70.1V24.17H68.89Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M74.86,27.69v4H73.4V23h2.13c1.48,0,2,.73,2,2V26c0,.94-.33,1.49-1.17,1.68l1.4,4H76.24Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V24.87c0-.48-.22-.71-.72-.71Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M82.53,23v6.59c0,1.35-.58,2.22-2.07,2.22a2,2,0,0,1-2.18-2.22V23h1.46V29.7c0,.51.21.86.72.86s.72-.35.72-.86V23Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M83.31,29.43V25.22a2.05,2.05,0,0,1,2.18-2.35c1.62,0,2.07.9,2.07,2.18v1H86.22V24.94c0-.54-.18-.85-.71-.85s-.75.37-.75.9v4.68c0,.53.22.9.75.9s.71-.33.71-.85V28.11h1.34v1.5c0,1.25-.51,2.17-2.07,2.17A2.06,2.06,0,0,1,83.31,29.43Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M87.8,23h3.89v1.19H90.49v7.51H89V24.17H87.8Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M96.56,23v6.59c0,1.35-.58,2.22-2.07,2.22a2,2,0,0,1-2.18-2.22V23h1.46V29.7c0,.51.21.86.72.86s.72-.35.72-.86V23Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M98.8,27.69v4H97.34V23h2.13c1.48,0,2,.73,2,2V26c0,.94-.33,1.49-1.17,1.68l1.4,4h-1.54Zm0-3.52v2.71h.49a.63.63,0,0,0,.72-.72V24.87c0-.48-.22-.71-.72-.71Z' }),
-	                React.createElement('path', { className: 'sdg9-2', d: 'M102.22,23h3.49v1.19h-2v2.49h1.45v1.18h-1.45v2.65h2v1.19h-3.49Z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('path', { className: 'sdg9-2', d: 'M22.35,15.11c0-3.47-1.52-6-5.49-6s-5.55,2.18-5.55,5.65v3.31c0,3.67,1.45,5.52,4.17,5.52a3.22,3.22,0,0,0,3.11-1.82h0v4.82c0,1.36-.53,2.31-1.88,2.31s-1.85-.79-1.85-2.18V25.26H11.44v1.19c0,3.3,1.19,5.62,5.36,5.62,4,0,5.55-2.55,5.55-6Zm-3.74,3.44c-.07,1.26-.59,2-1.78,2S15,19.81,15,18.35v-3.9c0-1.42.53-2.25,1.82-2.25s1.75.86,1.75,2.25Z' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 292 */
-/*!********************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg10.svg ***!
-  \********************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg10",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG10 Reduced Inequalities'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg10-1', x: '-2.55', y: '-1.83', width: '118.82', height: '118.33' }),
-	                React.createElement('rect', { className: 'sdg10-2', x: '35.67', y: '22.62', width: '1.56', height: '9.28' }),
-	                React.createElement('rect', { className: 'sdg10-2', x: '68.62', y: '22.62', width: '1.56', height: '9.28' }),
-	                React.createElement('rect', { className: 'sdg10-2', x: '75.75', y: '22.62', width: '1.56', height: '9.28' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M67.42,73.83H45.08a.24.24,0,0,0-.24.24v5.06a.24.24,0,0,0,.24.24H67.42a.24.24,0,0,0,.25-.24V74.07a.24.24,0,0,0-.25-.24' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M67.67,64.56a.24.24,0,0,0-.25-.24H45.08a.24.24,0,0,0-.24.24v5.06a.24.24,0,0,0,.24.24H67.42a.24.24,0,0,0,.25-.24Z' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M80.59,66.54a25.82,25.82,0,0,0-4.79-9.77l-.05,0a24.15,24.15,0,0,1,1.91,3.39A23.72,23.72,0,0,1,37.59,85.41a22.39,22.39,0,0,1,32.5-30.52l.14.13a.84.84,0,0,0,.51.19A.86.86,0,0,0,71.3,55l.09-.09,2.84-2.81.19-.18a.82.82,0,0,0,0-1.08l-.09-.08A27.51,27.51,0,1,0,38.94,92.86,26,26,0,0,0,80.59,66.54' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M37.23,14.36l1.46,4.26h1.64L38.85,14.4c.89-.2,1.25-.79,1.25-1.79V11.42c0-1.3-.58-2.08-2.15-2.08H35.67v9.28h1.56Zm0-3.75h.52c.54,0,.77.25.77.75v1.37a.68.68,0,0,1-.77.77h-.52Z' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M48.19,9.34H45.78v9.28h2.41c1.67,0,2.26-1.07,2.26-2.49v-4.3c0-1.44-.59-2.49-2.26-2.49m.7,7.06c0,.56-.25.94-.89.94h-.66V10.61H48a.81.81,0,0,1,.89.93Z' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M53,9.34H51.47v7a2.09,2.09,0,0,0,2.33,2.37c1.59,0,2.2-.93,2.2-2.37v-7H54.56v7.17c0,.55-.22.92-.77.92s-.76-.37-.76-.92Z' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M57,11.74v4.49a2.2,2.2,0,0,0,2.33,2.51c1.66,0,2.2-1,2.2-2.31v-1.6H60.14v1.71c0,.55-.19.9-.75.9s-.79-.4-.79-1v-5c0-.56.23-1,.79-1s.75.33.75.9v1.22h1.42V11.56c0-1.37-.48-2.33-2.2-2.33A2.19,2.19,0,0,0,57,11.74' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M67.24,9.34v9.28h2.41c1.67,0,2.26-1.07,2.26-2.49v-4.3c0-1.44-.59-2.49-2.26-2.49Zm3.11,2.2V16.4c0,.56-.25.94-.89.94H68.8V10.61h.66a.81.81,0,0,1,.89.93' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M50.29,22.51A2.21,2.21,0,0,0,47.94,25V29.5a2.14,2.14,0,0,0,1.78,2.4v.63l2.94.55V31.91l-1.15-.22a2.23,2.23,0,0,0,1.15-2.19V25a2.21,2.21,0,0,0-2.37-2.5m.81,7.32c0,.55-.25,1-.81,1s-.79-.41-.79-1V24.77c0-.56.25-1,.79-1s.81.4.81,1Z' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M53.54,22.62v7A2.09,2.09,0,0,0,55.86,32c1.59,0,2.2-.93,2.2-2.37v-7H56.63v7.17c0,.55-.22.92-.77.92s-.77-.37-.77-.92V22.62Z' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M60.32,22.62,58.57,31.9h1.48l.27-1.7H62l.29,1.7h1.6L62.1,22.62ZM60.53,29l.62-3.72h0L61.77,29Z' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M82.54,28.66V29.9A1.93,1.93,0,0,0,84.74,32,2,2,0,0,0,87,29.83v-.45A3.12,3.12,0,0,0,85.76,27l-1-1c-.45-.44-.74-.74-.74-1.26v-.19a.68.68,0,0,1,.74-.77c.49,0,.74.26.74.79v.81h1.42v-.75c0-1.34-.62-2.11-2.18-2.11a1.94,1.94,0,0,0-2.19,2v.32a3.12,3.12,0,0,0,1.3,2.48l.92.92a1.67,1.67,0,0,1,.7,1.31v.36c0,.49-.22.82-.71.82s-.77-.3-.77-.82V28.66Z' }),
-	                React.createElement('polygon', { className: 'sdg10-2', points: '44.8 17.35 42.64 17.35 42.64 14.53 44.19 14.53 44.19 13.27 42.64 13.27 42.64 10.61 44.8 10.61 44.8 9.34 41.08 9.34 41.08 18.62 44.8 18.62 44.8 17.35' }),
-	                React.createElement('polygon', { className: 'sdg10-2', points: '62.55 18.62 66.27 18.62 66.27 17.35 64.11 17.35 64.11 14.53 65.65 14.53 65.65 13.27 64.11 13.27 64.11 10.61 66.27 10.61 66.27 9.34 62.55 9.34 62.55 18.62' }),
-	                React.createElement('polygon', { className: 'sdg10-2', points: '42.77 22.62 41.47 22.62 41.47 27.94 39.78 22.62 38.25 22.62 38.25 31.9 39.56 31.9 39.56 26.07 41.4 31.9 42.77 31.9 42.77 22.62' }),
-	                React.createElement('polygon', { className: 'sdg10-2', points: '47.37 23.89 47.37 22.62 43.64 22.62 43.64 31.9 47.37 31.9 47.37 30.63 45.2 30.63 45.2 27.81 46.75 27.81 46.75 26.55 45.2 26.55 45.2 23.89 47.37 23.89' }),
-	                React.createElement('polygon', { className: 'sdg10-2', points: '64.5 22.62 64.5 31.9 67.92 31.9 67.92 30.63 66.06 30.63 66.06 22.62 64.5 22.62' }),
-	                React.createElement('polygon', { className: 'sdg10-2', points: '73.75 31.9 73.75 23.89 75.04 23.89 75.04 22.62 70.89 22.62 70.89 23.89 72.18 23.89 72.18 31.9 73.75 31.9' }),
-	                React.createElement('polygon', { className: 'sdg10-2', points: '81.92 30.63 79.76 30.63 79.76 27.81 81.31 27.81 81.31 26.55 79.76 26.55 79.76 23.89 81.92 23.89 81.92 22.62 78.2 22.62 78.2 31.9 81.92 31.9 81.92 30.63' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('polygon', { className: 'sdg10-2', points: '12.1 14.66 12.1 31.84 15.87 31.84 15.87 9.39 12.86 9.39 9.38 13.47 9.38 17.41 9.42 17.41 12.06 14.66 12.1 14.66' }),
-	                React.createElement('path', { className: 'sdg10-2', d: 'M29.64,26V15.19c0-3.51-1.75-6.06-5.59-6.06s-5.56,2.55-5.56,6.06V26c0,3.47,1.76,6.06,5.56,6.06s5.59-2.58,5.59-6.06m-7.38.6V14.59c0-1.36.5-2.32,1.79-2.32s1.82,1,1.82,2.32V26.64C25.87,28,25.37,29,24,29s-1.79-1-1.79-2.32' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 293 */
-/*!********************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg11.svg ***!
-  \********************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg11",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG11 Sustainable Cities and Communities'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg11-1', x: '-1.23', y: '-1.83', width: '117.51', height: '118.33' }),
-	                React.createElement('rect', { className: 'sdg11-2', x: '77.14', y: '77.78', width: '17.45', height: '4.03', rx: '0.34', ry: '0.34' }),
-	                React.createElement('rect', { className: 'sdg11-2', x: '55.25', y: '9.35', width: '1.54', height: '9.14' }),
-	                React.createElement('rect', { className: 'sdg11-2', x: '88.8', y: '9.35', width: '1.53', height: '9.14' }),
-	                React.createElement('rect', { className: 'sdg11-2', x: '95.61', y: '9.35', width: '1.53', height: '9.14' }),
-	                React.createElement('rect', { className: 'sdg11-2', x: '84.45', y: '22.76', width: '1.54', height: '9.14' }),
-	                React.createElement('rect', { className: 'sdg11-2', x: '91.75', y: '22.76', width: '1.54', height: '9.14' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M19.23,85.09H36a.41.41,0,0,0,.3-.69l0,0L28,73.55l-.08-.09a.41.41,0,0,0-.3-.13.42.42,0,0,0-.27.11l-.05.06-.08.09L19,84.29l-.13.15a.41.41,0,0,0-.07.23A.41.41,0,0,0,19.23,85.09Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M36,86.61H19.14a.41.41,0,0,0-.41.41v13.18a.41.41,0,0,0,.41.41h5.42V92.33a.41.41,0,0,1,.41-.41h5a.41.41,0,0,1,.41.41v8.29H36a.41.41,0,0,0,.41-.41V87A.41.41,0,0,0,36,86.61Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M94.21,83.16H77.53a.4.4,0,0,0-.41.4V100.4a.4.4,0,0,0,.41.4H94.21a.4.4,0,0,0,.41-.4V83.56a.4.4,0,0,0-.41-.4m-9.12,11a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Zm0-5.59a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Zm7.61,5.59a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Zm0-5.59a.4.4,0,0,1-.41.4h-5a.4.4,0,0,1-.41-.4v-3a.4.4,0,0,1,.41-.4h5a.4.4,0,0,1,.41.4Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M55.45,44.09H39.13a.4.4,0,0,0-.4.4v55.76a.4.4,0,0,0,.4.4H55.45a.4.4,0,0,0,.4-.4V44.49a.4.4,0,0,0-.4-.4M45.74,94.29a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V90.13a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V80.57a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V71a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V61.45a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm0-9.56a.21.21,0,0,1-.21.21H41.79a.21.21,0,0,1-.21-.21V51.89a.21.21,0,0,1,.21-.21h3.74a.21.21,0,0,1,.21.21Zm7.33,38.24a.22.22,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V90.13a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Zm0-9.56a.21.21,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V80.57a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Zm0-9.56a.22.22,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V71a.21.21,0,0,1,.21-.21h3.73a.22.22,0,0,1,.22.21Zm0-9.56a.22.22,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V61.45a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Zm0-9.56a.21.21,0,0,1-.22.21H49.12a.21.21,0,0,1-.21-.21V51.89a.21.21,0,0,1,.21-.21h3.73a.21.21,0,0,1,.22.21Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M75.16,54.62a.43.43,0,0,0-.41-.31.42.42,0,0,0-.23.08l0,0-.14.17-16,20.34-.07.1a.46.46,0,0,0-.14.32v25a.4.4,0,0,0,.4.4H74.8a.4.4,0,0,0,.4-.4V54.78A.4.4,0,0,0,75.16,54.62Zm-6.75,11,.11-.14c1.1-1.41,2.95-3.68,3.85-4.79l.12-.14a.47.47,0,0,1,.36-.17.46.46,0,0,1,.44.37v5.15a.46.46,0,0,1-.44.46H68.76a.46.46,0,0,1-.35-.73ZM65.87,94.15a.4.4,0,0,1-.4.4H60.61a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4h4.86a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H60.61a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4h4.86a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H60.61a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4h4.86a.4.4,0,0,1,.4.4Zm0-12.33v6.71a.4.4,0,0,1-.4.4H60.62a.4.4,0,0,1-.4-.4v-.84a.45.45,0,0,1,0-.15l0,0,0-.05,0-.06c.62-.89,3.43-4.34,4.6-5.79l.12-.14a.47.47,0,0,1,.36-.17.46.46,0,0,1,.44.37ZM73.3,94.15a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.62a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.63a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Zm0-5.63a.4.4,0,0,1-.4.4H68a.4.4,0,0,1-.4-.4v-3a.4.4,0,0,1,.4-.4H72.9a.4.4,0,0,1,.4.4Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M32.7,18.6a2,2,0,0,0,2.24-2.14V16a3.07,3.07,0,0,0-1.24-2.37l-1-1c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.76c.48,0,.73.26.73.78v.79h1.4v-.74c0-1.32-.6-2.08-2.14-2.08a1.91,1.91,0,0,0-2.16,2v.31A3.08,3.08,0,0,0,31.82,14l.9.9a1.65,1.65,0,0,1,.69,1.29v.35c0,.49-.22.81-.7.81s-.75-.3-.75-.81V15.3H30.53v1.23A1.9,1.9,0,0,0,32.7,18.6' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M40.06,16.27V9.35H38.65v7.06c0,.54-.22.9-.76.9s-.75-.36-.75-.9V9.35H35.6v6.92a2.06,2.06,0,0,0,2.29,2.33c1.56,0,2.17-.92,2.17-2.33' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M45.25,16.45V16A3.08,3.08,0,0,0,44,13.64l-1-1c-.44-.43-.73-.73-.73-1.24v-.19a.68.68,0,0,1,.73-.76c.49,0,.73.25.73.78v.79h1.4v-.74c0-1.32-.6-2.08-2.14-2.08a1.91,1.91,0,0,0-2.16,2v.31A3.08,3.08,0,0,0,42.14,14l.9.9a1.65,1.65,0,0,1,.69,1.29v.35c0,.48-.21.81-.7.81s-.75-.3-.75-.81V15.3H40.85v1.23A1.9,1.9,0,0,0,43,18.6a2,2,0,0,0,2.24-2.14' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M52.89,9.35H51.14l-1.72,9.14h1.46l.27-1.67h1.63l.28,1.67h1.58Zm-1.55,6.24.6-3.67h0l.61,3.67Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M64.33,16.82H66l.28,1.67h1.58L66.08,9.35H64.33L62.6,18.49h1.46Zm.81-4.89h0l.61,3.67H64.53Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M72.58,12.29v-.93c0-1.29-.51-2-2-2H68.31v9.14H70.7c1.54,0,2.11-.71,2.11-2V15.27a1.39,1.39,0,0,0-1.14-1.52,1.33,1.33,0,0,0,.92-1.46m-2.73-1.68h.53a.65.65,0,0,1,.74.74v1.12a.65.65,0,0,1-.73.74h-.54Zm1.43,5.89a.66.66,0,0,1-.75.74h-.67V14.38h.66c.54,0,.77.26.77.74Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M85.91,18.6c1.63,0,2.17-1,2.17-2.28V14.74h-1.4v1.69c0,.54-.19.89-.74.89s-.78-.39-.78-.94V11.47c0-.55.23-.94.78-.94s.74.32.74.89v1.2h1.4V11.54c0-1.35-.47-2.29-2.17-2.29a2.16,2.16,0,0,0-2.29,2.47v4.42a2.16,2.16,0,0,0,2.29,2.47' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M104.2,12.67c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.76c.49,0,.73.26.73.78v.79h1.4v-.74c0-1.32-.61-2.08-2.14-2.08a1.9,1.9,0,0,0-2.15,2v.31A3.08,3.08,0,0,0,103.31,14l.9.9a1.64,1.64,0,0,1,.69,1.29v.35c0,.49-.21.81-.7.81s-.75-.3-.75-.81V15.3H102v1.23a1.9,1.9,0,0,0,2.17,2.08,2,2,0,0,0,2.24-2.14V16a3.08,3.08,0,0,0-1.24-2.37Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M32.28,22.77,30.55,31.9H32l.27-1.67h1.63l.28,1.67h1.58L34,22.77Zm.2,6.24.6-3.67h0L33.7,29Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M44.36,22.76H42V31.9h2.37c1.64,0,2.22-1.05,2.22-2.45V25.22c0-1.41-.58-2.45-2.22-2.45m.69,7c0,.55-.24.93-.87.93h-.65V24h.65a.8.8,0,0,1,.87.92Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M51.44,22.66a2.16,2.16,0,0,0-2.29,2.47v4.42A2.16,2.16,0,0,0,51.44,32c1.63,0,2.17-1,2.17-2.28V28.16H52.2v1.68c0,.54-.19.89-.74.89s-.78-.39-.78-.94V24.88c0-.55.23-.94.78-.94s.74.32.74.89V26h1.4V24.95c0-1.35-.47-2.29-2.17-2.29' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M56.9,22.66a2.17,2.17,0,0,0-2.32,2.47v4.42a2.33,2.33,0,1,0,4.65,0V25.12a2.18,2.18,0,0,0-2.33-2.47m.79,7.13c0,.55-.24.94-.79.94s-.78-.39-.78-.94V24.88c0-.55.24-.94.78-.94s.79.39.79.94Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M76.57,29.83c0,.54-.21.9-.75.9s-.75-.36-.75-.9V22.77H73.52v6.91A2.06,2.06,0,0,0,75.81,32c1.56,0,2.17-.92,2.17-2.33V22.77H76.57Z' }),
-	                React.createElement('path', { className: 'sdg11-2', d: 'M101,26.08c-.44-.43-.73-.73-.73-1.24v-.19a.67.67,0,0,1,.73-.75c.49,0,.73.26.73.78v.8h1.4v-.74c0-1.32-.61-2.08-2.14-2.08a1.91,1.91,0,0,0-2.16,2V25a3.08,3.08,0,0,0,1.28,2.44l.9.9a1.65,1.65,0,0,1,.69,1.29V30c0,.48-.22.81-.7.81s-.75-.3-.75-.81V28.71H98.78v1.23A1.9,1.9,0,0,0,100.95,32a2,2,0,0,0,2.24-2.14v-.45a3.07,3.07,0,0,0-1.24-2.37Z' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '49.7 9.35 45.62 9.35 45.62 10.61 46.89 10.61 46.89 18.49 48.44 18.49 48.44 10.61 49.7 10.61 49.7 9.35' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '62.11 18.49 62.11 9.35 60.83 9.35 60.83 14.59 59.17 9.35 57.66 9.35 57.66 18.49 58.95 18.49 58.95 12.75 60.76 18.49 62.11 18.49' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '74.98 9.35 73.44 9.35 73.44 18.49 76.81 18.49 76.81 17.24 74.98 17.24 74.98 9.35' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '81.04 10.61 81.04 9.35 77.37 9.35 77.37 18.49 81.04 18.49 81.04 17.24 78.91 17.24 78.91 14.46 80.43 14.46 80.43 13.22 78.91 13.22 78.91 10.61 81.04 10.61' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '93.74 18.49 93.74 10.61 95 10.61 95 9.35 90.92 9.35 90.92 10.61 92.19 10.61 92.19 18.49 93.74 18.49' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '97.93 18.49 101.59 18.49 101.59 17.24 99.47 17.24 99.47 14.46 100.99 14.46 100.99 13.22 99.47 13.22 99.47 10.61 101.59 10.61 101.59 9.35 97.93 9.35 97.93 18.49' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '39.7 28.01 38.04 22.77 36.53 22.77 36.53 31.9 37.83 31.9 37.83 26.16 39.63 31.9 40.98 31.9 40.98 22.77 39.7 22.77 39.7 28.01' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '63.04 27.91 63.02 27.91 62.03 22.76 60.24 22.76 60.24 31.9 61.5 31.9 61.5 25.97 61.53 25.97 62.67 31.9 63.39 31.9 64.42 25.97 64.47 25.97 64.47 31.9 65.87 31.9 65.87 22.76 63.93 22.76 63.04 27.91' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '69.68 27.91 69.67 27.91 68.67 22.76 66.88 22.76 66.88 31.9 68.15 31.9 68.15 25.97 68.17 25.97 69.32 31.9 70.03 31.9 71.07 25.97 71.11 25.97 71.11 31.9 72.51 31.9 72.51 22.76 70.57 22.76 69.68 27.91' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '82.16 28.01 80.5 22.77 78.99 22.77 78.99 31.9 80.29 31.9 80.29 26.16 82.09 31.9 83.44 31.9 83.44 22.77 82.16 22.77 82.16 28.01' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '86.82 24.02 88.09 24.02 88.09 31.9 89.64 31.9 89.64 24.02 90.91 24.02 90.91 22.76 86.82 22.76 86.82 24.02' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '94.32 31.9 97.98 31.9 97.98 30.65 95.85 30.65 95.85 27.87 97.38 27.87 97.38 26.63 95.85 26.63 95.85 24.02 97.98 24.02 97.98 22.76 94.32 22.76 94.32 31.9' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('polygon', { className: 'sdg11-2', points: '8.72 13.2 8.72 17.13 8.75 17.13 11.4 14.39 11.43 14.39 11.43 31.55 15.2 31.55 15.2 9.13 12.19 9.13 8.72 13.2' }),
-	                React.createElement('polygon', { className: 'sdg11-2', points: '17.32 13.2 17.32 17.13 17.35 17.13 20 14.39 20.03 14.39 20.03 31.55 23.8 31.55 23.8 9.13 20.79 9.13 17.32 13.2' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 294 */
-/*!********************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg12.svg ***!
-  \********************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg12",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG12 Responsible Consumption and Production'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg12-1', x: '-1.55', y: '-1.83', width: '117.41', height: '118.33' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M84.26,57.95A18.33,18.33,0,0,0,70.4,54.54l-.28.06c-2.76.65-7.15,1.73-12.29,8.11l-.09.11-.07.08a.42.42,0,0,0,0,.46l.12.2c.65,1.08,1.46,2.47,2.15,3.75l0,0a.44.44,0,0,0,.39.24.43.43,0,0,0,.3-.12l.09-.13c4.56-6.31,8.15-7.18,10.57-7.75l.29-.07A13.28,13.28,0,0,1,81.09,62c2.7,2.13,4.07,5.52,4.07,10.07,0,7.64-3.71,10.62-6.83,11.79a12.74,12.74,0,0,1-9.49-.63l-.21-.1C66,81.94,62,79.54,58.29,72.05c-7.52-15.1-13.81-16.52-18-17.47l-.22,0a18,18,0,0,0-13.65,3.4c-2.7,2.16-5.92,6.35-5.92,14.07,0,4.71,1,7.81,3.45,11.08.54.74,6.11,7.9,16.88,5.84a16.17,16.17,0,0,0,6.62-3.08L49.85,88a.39.39,0,0,0,.54,0,.36.36,0,0,0,.09-.26v0L52.2,77.15V77a.38.38,0,0,0-.13-.28.35.35,0,0,0-.25-.09h-.18L41.56,79.49l-.18,0a.35.35,0,0,0-.19.11.38.38,0,0,0,0,.55l.12.11,2.26,2a10.51,10.51,0,0,1-3.7,1.56c-7.79,1.49-11.63-3.62-11.78-3.82L28.06,80c-1.81-2.38-2.42-4.4-2.42-8,0-4.57,1.34-8,4-10.07A12.89,12.89,0,0,1,39,59.52l.23.05c3.41.77,8.08,1.83,14.52,14.76C57,81,61.24,85.43,66.51,87.74a18.61,18.61,0,0,0,8,1.86,16,16,0,0,0,5.59-1c3.05-1.14,10.16-5,10.16-16.58,0-7.72-3.27-11.92-6-14.08' }),
-	                React.createElement('path', { className: 'sdg12-3', d: 'M84.26,57.95A18.33,18.33,0,0,0,70.4,54.54l-.28.06c-2.76.65-7.15,1.73-12.29,8.11l-.09.11-.07.08a.42.42,0,0,0,0,.46l.12.2c.65,1.08,1.46,2.47,2.15,3.75l0,0a.44.44,0,0,0,.39.24.43.43,0,0,0,.3-.12l.09-.13c4.56-6.31,8.15-7.18,10.57-7.75l.29-.07A13.28,13.28,0,0,1,81.09,62c2.7,2.13,4.07,5.52,4.07,10.07,0,7.64-3.71,10.62-6.83,11.79a12.74,12.74,0,0,1-9.49-.63l-.21-.1C66,81.94,62,79.54,58.29,72.05c-7.52-15.1-13.81-16.52-18-17.47l-.22,0a18,18,0,0,0-13.65,3.4c-2.7,2.16-5.92,6.35-5.92,14.07,0,4.71,1,7.81,3.45,11.08.54.74,6.11,7.9,16.88,5.84a16.17,16.17,0,0,0,6.62-3.08L49.85,88a.39.39,0,0,0,.54,0,.36.36,0,0,0,.09-.26v0L52.2,77.15V77a.38.38,0,0,0-.13-.28.35.35,0,0,0-.25-.09h-.18L41.56,79.49l-.18,0a.35.35,0,0,0-.19.11.38.38,0,0,0,0,.55l.12.11,2.26,2a10.51,10.51,0,0,1-3.7,1.56c-7.79,1.49-11.63-3.62-11.78-3.82L28.06,80c-1.81-2.38-2.42-4.4-2.42-8,0-4.57,1.34-8,4-10.07A12.89,12.89,0,0,1,39,59.52l.23.05c3.41.77,8.08,1.83,14.52,14.76C57,81,61.24,85.43,66.51,87.74a18.61,18.61,0,0,0,8,1.86,16,16,0,0,0,5.59-1c3.05-1.14,10.16-5,10.16-16.58,0-7.72-3.27-11.92-6-14.08' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M37.54,14.48v4.32H36V9.38h2.3c1.6,0,2.18.79,2.18,2.11V12.7c0,1-.36,1.61-1.26,1.82l1.51,4.28H39Zm0-3.8V13.6h.53a.69.69,0,0,0,.78-.78V11.44c0-.51-.24-.76-.78-.76Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M41.11,9.38h3.78v1.29H42.69v2.69h1.57v1.28H42.69V17.5h2.19v1.29H41.11Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M45.38,16.77V15.5h1.47V16.8c0,.53.24.83.78.83s.72-.33.72-.83v-.36a1.7,1.7,0,0,0-.71-1.33l-.93-.93a3.17,3.17,0,0,1-1.32-2.51v-.32a2,2,0,0,1,2.22-2.07c1.58,0,2.21.78,2.21,2.14v.76H48.38v-.82c0-.54-.25-.81-.75-.81a.69.69,0,0,0-.75.78v.19c0,.53.29.83.75,1.28l1,1a3.16,3.16,0,0,1,1.28,2.44v.46a2,2,0,0,1-2.3,2.21A2,2,0,0,1,45.38,16.77Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M50.56,9.38H52.9c1.6,0,2.18.79,2.18,2.11v2c0,1.32-.58,2.12-2.18,2.12h-.76v3.19H50.56Zm1.58,1.29v3.71h.58a.68.68,0,0,0,.78-.78V11.44c0-.51-.24-.76-.78-.76Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M55.71,16.36V11.81a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V11.56c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S58.92,17.18,58.92,16.61Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M62.54,12.88v5.91H61.2V9.38h1.55l1.71,5.4V9.38h1.32v9.41H64.4Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M66.41,16.77V15.5h1.47V16.8c0,.53.24.83.78.83s.72-.33.72-.83v-.36a1.7,1.7,0,0,0-.71-1.33l-.93-.93a3.17,3.17,0,0,1-1.32-2.51v-.32a2,2,0,0,1,2.22-2.07c1.58,0,2.21.78,2.21,2.14v.76H69.41v-.82c0-.54-.25-.81-.75-.81a.69.69,0,0,0-.75.78v.19c0,.53.29.83.75,1.28l1,1a3.16,3.16,0,0,1,1.28,2.44v.46a2,2,0,0,1-2.31,2.21A2,2,0,0,1,66.41,16.77Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M71.59,9.38h1.58v9.41H71.59Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M73.89,9.38h2.29c1.58,0,2.11.74,2.11,2.07v1a1.37,1.37,0,0,1-.94,1.5,1.43,1.43,0,0,1,1.18,1.57v1.25c0,1.33-.6,2.07-2.18,2.07H73.89Zm1.58,4H76a.67.67,0,0,0,.75-.76V11.44a.67.67,0,0,0-.76-.76h-.54Zm0,1.21V17.5h.69a.68.68,0,0,0,.78-.76V15.32c0-.5-.24-.76-.79-.76Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M79.12,9.38h1.58V17.5h1.89v1.29H79.12Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M83.12,9.38H86.9v1.29H84.7v2.69h1.57v1.28H84.7V17.5H86.9v1.29H83.12Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M36,29.55V25c0-1.47.69-2.54,2.36-2.54s2.24,1,2.24,2.36v1.11H39.11V24.69c0-.58-.19-.92-.76-.92s-.81.4-.81,1V29.8c0,.57.24,1,.81,1s.76-.36.76-.92V28.12h1.44v1.62c0,1.35-.56,2.35-2.24,2.35A2.23,2.23,0,0,1,36,29.55Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M41.22,29.55V25A2.4,2.4,0,1,1,46,25v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V24.75c0-.57-.25-1-.82-1s-.81.4-.81,1V29.8c0,.57.25,1,.81,1S44.42,30.37,44.42,29.8Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M48,26.07V32H46.71V22.57h1.55L50,28v-5.4h1.32V32H49.91Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M51.92,30V28.69h1.47V30c0,.53.24.83.78.83s.72-.33.72-.83v-.36a1.7,1.7,0,0,0-.71-1.33l-.93-.93a3.17,3.17,0,0,1-1.32-2.51v-.32a2,2,0,0,1,2.22-2.07c1.58,0,2.21.78,2.21,2.14v.76H54.92v-.82c0-.54-.25-.81-.75-.81a.69.69,0,0,0-.75.78v.19c0,.53.29.83.75,1.28l1,1a3.16,3.16,0,0,1,1.28,2.44v.46a2,2,0,0,1-2.3,2.21A2,2,0,0,1,51.92,30Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M61.69,22.57v7.12c0,1.46-.62,2.4-2.24,2.4a2.12,2.12,0,0,1-2.36-2.4V22.57h1.58v7.27c0,.56.22.93.78.93s.78-.37.78-.93V22.57Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M66.76,25.87h0L65.65,32h-.74l-1.18-6.11h0V32H62.4V22.57h1.85l1,5.3h0l.92-5.3h2V32H66.76Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M68.91,22.57h2.35c1.6,0,2.18.79,2.18,2.11v2c0,1.32-.58,2.12-2.18,2.12h-.76V32H68.91Zm1.58,1.29v3.71h.58a.68.68,0,0,0,.78-.78V24.62c0-.51-.24-.76-.78-.76Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M73.81,22.57H78v1.29H76.71V32h-1.6V23.86h-1.3Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M78.55,22.57h1.58V32H78.55Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M80.86,29.55V25a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V24.75c0-.57-.25-1-.82-1s-.81.4-.81,1V29.8c0,.57.25,1,.81,1S84.06,30.37,84.06,29.8Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M87.69,26.07V32H86.35V22.57h1.55L89.62,28v-5.4h1.32V32H89.55Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M35.71,45.17l1.78-9.41h1.8l1.79,9.41H39.45l-.29-1.72H37.48l-.28,1.72Zm2-3H39l-.62-3.78h0Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M42.87,39.25v5.91H41.54V35.75h1.55l1.71,5.4v-5.4h1.32v9.41H44.73Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M51.56,38.28v4.36c0,1.44-.6,2.53-2.29,2.53H46.82V35.75h2.44C51,35.75,51.56,36.82,51.56,38.28Zm-2.48,5.6c.65,0,.9-.39.9-1V38a.82.82,0,0,0-.9-.94h-.67v6.83Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M53.53,35.75h2.35c1.6,0,2.18.79,2.18,2.11v2c0,1.32-.58,2.12-2.18,2.12h-.76v3.19H53.53ZM55.11,37v3.71h.58a.68.68,0,0,0,.78-.78V37.81c0-.51-.24-.76-.78-.76Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M60.26,40.85v4.32H58.68V35.75H61c1.6,0,2.18.79,2.18,2.11v1.21c0,1-.36,1.61-1.26,1.82l1.51,4.28H61.74Zm0-3.8V40h.53a.69.69,0,0,0,.78-.78V37.81c0-.51-.24-.76-.78-.76Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M63.83,42.74V38.18a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0ZM67,43V37.93c0-.57-.25-1-.82-1s-.81.4-.81,1V43c0,.57.25,1,.81,1S67,43.56,67,43Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M74.06,38.28v4.36c0,1.44-.6,2.53-2.29,2.53H69.32V35.75h2.44C73.46,35.75,74.06,36.82,74.06,38.28Zm-2.48,5.6c.65,0,.9-.39.9-1V38a.82.82,0,0,0-.9-.94h-.67v6.83Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M79.36,35.75v7.12c0,1.46-.62,2.4-2.24,2.4a2.12,2.12,0,0,1-2.36-2.4V35.75h1.58V43c0,.56.22.93.78.93s.78-.37.78-.93V35.75Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M80.07,42.74V38.18c0-1.47.69-2.54,2.36-2.54s2.24,1,2.24,2.36v1.11H83.22V37.88c0-.58-.19-.92-.76-.92s-.81.4-.81,1V43c0,.57.24,1,.81,1s.76-.36.76-.92V41.31h1.44v1.62c0,1.35-.56,2.35-2.24,2.35A2.23,2.23,0,0,1,80.07,42.74Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M85,35.75h4.21V37H87.91v8.12h-1.6V37H85Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M89.75,35.75h1.58v9.41H89.75Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M92.06,42.74V38.18a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V37.93c0-.57-.25-1-.82-1s-.81.4-.81,1V43c0,.57.25,1,.81,1S95.27,43.56,95.27,43Z' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M98.89,39.25v5.91H97.55V35.75h1.55l1.71,5.4v-5.4h1.32v9.41h-1.39Z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('polygon', { className: 'sdg12-2', points: '11.23 14.68 11.26 14.68 11.26 31.91 15.05 31.91 15.05 9.39 12.03 9.39 8.54 13.48 8.54 17.43 8.57 17.43 11.23 14.68' }),
-	                React.createElement('path', { className: 'sdg12-2', d: 'M17.31,14v2.72h3.45V13.94c0-1.36.67-1.76,1.46-1.76s1.36.3,1.36,1.69v1.86c0,1.86-.17,2.59-1.4,3.89l-2.12,2.26c-2.06,2.19-2.82,3.65-2.82,5.88v4.15h9.83V28.82H20.86V27.76a4.3,4.3,0,0,1,1.59-3.45l2.42-2.56c2-2.09,2.39-3.42,2.39-5.68V13.88c0-3.22-1.56-4.75-4.95-4.75s-5,1.76-5,4.92' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 295 */
-/*!********************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg13.svg ***!
-  \********************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg13",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG3 Climate Action'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg13-1', x: '-1.92', y: '-3.3', width: '116.31', height: '119.24' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M97.74,70a51.12,51.12,0,0,0-82,0l-.32.46.32.46a51.12,51.12,0,0,0,82,0c.13-.18.23-.33.32-.46L97.74,70M42.9,59.78c.22-.33,1-1.26,1.05-1.38a1.32,1.32,0,0,1,.83-.34c.26-.05.61.1.66.29a2.3,2.3,0,0,1-.23,1.1,2.86,2.86,0,0,1-1.83.83c-.4-.06-.56-.37-.48-.49M42,61.54l.09-.1a2.31,2.31,0,0,1,1.36-.5c.43-.07,1,.14,1.07.43s-1.08.8-1.29,1c-.6.55-1.53,1.67-2.07,1.79a.65.65,0,0,1-.45,0A17.08,17.08,0,0,1,42,61.54m9.27,19a4.91,4.91,0,0,1-1.06,2.21,3.57,3.57,0,0,1-2.35.9c-.78-.06-.89-2.15-.89-3.23,0-.37-.53.73-.8-1.51-.18-1.43-1.1.15-1.16-.81s-.53-.76-1-1.36-1.08.06-1.75.36-.39.45-1.34.15l-.06,0a17.19,17.19,0,0,1-1.36-6.71c0-.58,0-1.16.09-1.72a1,1,0,0,1,.11-.16c.91-1.08.89-1.33.89-1.33l1-.35a16.87,16.87,0,0,1,2.83.71c1,.38,2.57,1.22,3.49.85.66-.27,1.18-.63,1.12-1.19s-.62-.86-1.28-.39c-.24.17-.76-1-1.17-1s.5,1.43.16,1.48-1-1.42-1.16-1.66-.65-.83-1.13-.38c-1,1-2.67.91-3,1.16-1,.76-1.28-.25-1.25-.86l.13-.42a2.06,2.06,0,0,1,1.92-.21c.45.3.77-.08.94-.26a.62.62,0,0,0,0-.7c-.11-.24.22-.42.45-.48a12.14,12.14,0,0,0,1.31-.78,4.3,4.3,0,0,1,2.62,0,1.39,1.39,0,0,0,1.72-.35,4.62,4.62,0,0,1,1.25-1c.25-.12-.62-.92-1.33,0s-1.08,1-1.41,1-2.33-.5-2.57-1.13.62-1.1,1.36-1.46a18,18,0,0,1,3.26-.46c1-.23,2.38-.75,3.05-.3s-2.81,1.24-1.67,1.86c.41.22,2.25-1.06,2.88-1.39,1.48-.77-1.44-1-1.06-2.57.43-1.76-3.58-1.08-5.58-.93a17.24,17.24,0,0,1,26.06,10.5,2.83,2.83,0,0,1-.08.8,1.13,1.13,0,0,1-2,.16c-.17-.25-.91-1-.89.24s1.16,1.32.06,2a4.25,4.25,0,0,1-1.81.73,2.34,2.34,0,0,0-.88,2.07c.12.66,1.7,2.46.53,2.38a6.74,6.74,0,0,1-2.67-2.33c-.36-1-.75-1.89-1-2.6a1,1,0,0,0-1.63-.48c-.61.42.17.84-.27,1.74s-.76,1.7-1.4,1c-1.68-1.93-4.13-1-4.51-3.12-.21-1.16-1.21-1.05-2-1.71s-1.31-1-1.45-.54S56,69.42,56.24,70c.29.83-.83,1.57-1.65,1.77s-1.18-.46-2-1.3S51.45,69,51.4,69.67A3.77,3.77,0,0,0,53,72.53c.7.44,1.48.64,1.25,1.36s0,.31-.79,1.09a2.11,2.11,0,0,0-.88,2.1c.06,1.08-.22,1.14-.39,2s-.56.12-.89,1.43m18.5-6.88c.58,0,1.45.76,1.11,1.07a1.54,1.54,0,0,1-1.64-.15c-.43-.34.27-.9.53-.92m-.73-.53c-.19-.07-.35-.25-.49-.67a.39.39,0,0,1,.56-.49,1.67,1.67,0,0,1,.81,1c0,.28-.7.25-.89.17m-7.61,0A1.56,1.56,0,0,1,59.79,73c-.43-.34.28-.9.53-.92.58-.05,1.45.76,1.11,1.07m-7,3.42c-.24.39-.89,3.29-1.32,3s.18-3.36.3-3.59c.68-1.25,2.15-1.19,1,.64m2.35,11.24a17.26,17.26,0,0,1-4.85-.69.71.71,0,0,1-.21-.84c.53-1.39,2.12-1.94,3.38-2.06,2.8-.27,6.47,1.82,7.06,1.48s1.77-1.87,3.5-1.81a2.72,2.72,0,0,1,1.57.39,17.18,17.18,0,0,1-10.46,3.53m12.16-5a3,3,0,0,1-.54-.2c-.94-.48-.83.29-1.29.12s.52-1.25-.87-.34-1-.14-1.61-1.67A3.13,3.13,0,0,1,66.38,77a21.88,21.88,0,0,1,3.13-.83c2.07-.52,2.51-1.75,2.89-1l.2.4a2.73,2.73,0,0,1,.27,1.12,17.27,17.27,0,0,1-4,6.08M73.63,74c-.46-.13-2.4-2.8-.87-4.57.25-.29-.51-1.14-.3-1.16a1.4,1.4,0,0,1,1.5,1.2c0,.33,0,.66,0,1A17.4,17.4,0,0,1,73.63,74' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M35.66,16.27V11.76c0-1.46.69-2.52,2.34-2.52s2.21,1,2.21,2.34v1.1H38.79V11.46c0-.58-.19-.91-.76-.91s-.8.4-.8,1v5c0,.56.23,1,.8,1s.76-.36.76-.91V14.86h1.43v1.61c0,1.33-.55,2.33-2.21,2.33A2.21,2.21,0,0,1,35.66,16.27Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M41.21,9.35h1.57v8h1.87v1.28H41.21Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M45.49,9.35h1.57v9.33H45.49Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M52.55,12.63h0l-1.06,6.05h-.73l-1.17-6.05h0v6.05H48.23V9.35h1.83l1,5.25h0L52,9.35h2v9.33H52.55Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M54.76,18.68l1.76-9.33h1.79l1.77,9.33H58.48L58.19,17H56.53l-.28,1.71Zm2-3H58L57.36,12h0Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M59.88,9.35H64v1.28H62.75v8H61.17v-8H59.88Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M64.91,9.35h3.74v1.28H66.48V13.3H68v1.27H66.48V17.4h2.17v1.28H64.91Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M35.39,31.9l1.76-9.33h1.79l1.77,9.33H39.1l-.29-1.71H37.15l-.28,1.71Zm2-3h1.25L38,25.2h0Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M41.16,29.49V25c0-1.46.69-2.52,2.34-2.52s2.21,1,2.21,2.34v1.1H44.29V24.68c0-.58-.19-.91-.76-.91s-.8.4-.8,1v5c0,.56.23,1,.8,1s.76-.36.76-.91V28.08h1.43v1.61C45.72,31,45.17,32,43.5,32A2.21,2.21,0,0,1,41.16,29.49Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M46.26,22.58h4.17v1.28H49.14v8H47.56v-8H46.26Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M51.3,22.58h1.57V31.9H51.3Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M53.91,29.49V25a2.38,2.38,0,1,1,4.75,0v4.51a2.38,2.38,0,1,1-4.75,0Zm3.18.25v-5c0-.56-.25-1-.81-1s-.8.4-.8,1v5c0,.56.25,1,.8,1S57.09,30.31,57.09,29.74Z' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M61,26V31.9H59.69V22.58h1.54l1.69,5.35V22.58h1.31V31.9H62.85Z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('polygon', { className: 'sdg13-2', points: '17.26 8.49 17.26 30.9 13.49 30.9 13.49 13.75 13.45 13.75 10.81 16.49 10.78 16.49 10.78 12.55 14.25 8.49 17.26 8.49' }),
-	                React.createElement('path', { className: 'sdg13-2', d: 'M29.69,13.35V15.3a3.59,3.59,0,0,1-2.58,3.64c1.88.43,2.78,1.75,2.78,3.8V26c0,3.11-1.65,5.12-5.45,5.12S19.24,29,19.24,25.58V22.64h3.44v3.21c0,1.32.46,2.18,1.75,2.18s1.68-.83,1.68-2v-3.7c0-1.19-.53-1.82-1.85-1.82H22.68V17.61H24.1c1.22,0,2-.63,2-1.82V13.38c0-1.22-.43-2-1.62-2s-1.62.79-1.62,2.18v2.28H19.44v-2c0-3.31,1.36-5.62,5.26-5.62,3.47,0,5,2,5,5.13' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 296 */
-/*!********************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg14.svg ***!
-  \********************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg14",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG14 Live Below Water'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg14-1', x: '-2.05', y: '-3.3', width: '116.17', height: '119.24' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M85.75,81.49C84.34,79.59,75.26,68,62.54,68,51.48,68,39.66,78,39.66,78s-4.44-9.09-13.53-10H25.9a.37.37,0,0,0-.35.36,1,1,0,0,0,.14.33c1.17,1.94,4.16,7.48,4.16,13s-3,11.09-4.17,13l-.08.12a.36.36,0,0,0,.28.55h.19c9.11-.85,13.57-10,13.57-10s11.82,10,22.88,10C75.26,95.5,84.34,83.92,85.75,82l.1-.13a.38.38,0,0,0,0-.14.37.37,0,0,0,0-.14l-.1-.13M69.61,83.22a3.71,3.71,0,1,1,3.72-3.72,3.72,3.72,0,0,1-3.72,3.72' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M25.84,46.26l-.07,0a.37.37,0,0,0-.37.37v2.53a.36.36,0,0,0,.11.26c6.14,5.34,12,.34,13.31-1a.34.34,0,0,1,.1-.1.37.37,0,0,1,.2-.07.36.36,0,0,1,.25.1l0,0c6.94,6.62,14.22,1.26,15.73,0l.15-.14a.32.32,0,0,1,.14,0,.34.34,0,0,1,.14,0l.15.14c1.51,1.26,8.79,6.62,15.73,0v0a.35.35,0,0,1,.25-.1.36.36,0,0,1,.2.07.38.38,0,0,1,.1.1c1.35,1.32,7.16,6.32,13.31,1a.37.37,0,0,0,.11-.26V46.61a.36.36,0,0,0-.36-.37l-.08,0-.18.1a11.18,11.18,0,0,1-13.07-1.84l-.15-.15a.39.39,0,0,0-.16,0l-.11,0a.41.41,0,0,0-.19.14c-1.59,1.21-8.86,6.14-15.34.09l-.09-.09a.4.4,0,0,0-.26-.11.39.39,0,0,0-.25.11l-.1.09c-6.48,6-13.76,1.12-15.35-.09a.39.39,0,0,0-.18-.14l-.12,0a.41.41,0,0,0-.15,0l-.16.15A11.18,11.18,0,0,1,26,46.35l-.19-.1' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M38.82,57.64a.39.39,0,0,1,.1-.1.38.38,0,0,1,.2-.07.36.36,0,0,1,.25.1l0,0c6.94,6.61,14.22,1.25,15.73,0l.15-.14.14,0a.4.4,0,0,1,.15,0l.15.14c1.51,1.25,8.79,6.61,15.73,0v0a.35.35,0,0,1,.25-.1.37.37,0,0,1,.2.07.4.4,0,0,1,.1.1c1.34,1.32,7.16,6.33,13.31,1a.36.36,0,0,0,.11-.26V55.83a.36.36,0,0,0-.36-.36l-.08,0-.18.09a11.19,11.19,0,0,1-13.07-1.83l-.15-.15a.3.3,0,0,0-.16,0,.23.23,0,0,0-.11,0,.31.31,0,0,0-.19.14c-1.58,1.21-8.86,6.14-15.35.09l-.09-.09a.37.37,0,0,0-.26-.1.36.36,0,0,0-.25.1l-.1.09c-6.48,6-13.76,1.12-15.35-.09a.3.3,0,0,0-.18-.14l-.12,0a.3.3,0,0,0-.15,0l-.16.15A11.19,11.19,0,0,1,26,55.57l-.19-.09-.07,0a.36.36,0,0,0-.37.36v2.54a.35.35,0,0,0,.11.26c6.15,5.34,12,.34,13.31-1' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M36.47,9.27h1.58v8.12h1.89v1.29H36.47Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M40.67,9.27h1.58v9.41H40.67Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M43.16,9.27h3.71v1.29H44.75v2.69h1.58v1.28H44.75v4.15H43.16Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M47.57,9.27h3.78v1.29H49.15v2.69h1.57v1.28H49.15v2.86h2.19v1.29H47.57Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M36.47,22.46h2.29c1.58,0,2.11.74,2.11,2.07v1a1.37,1.37,0,0,1-.94,1.5,1.43,1.43,0,0,1,1.18,1.57V29.8c0,1.33-.6,2.07-2.18,2.07H36.47Zm1.58,4h.56a.67.67,0,0,0,.75-.76V24.51a.67.67,0,0,0-.76-.76h-.54Zm0,1.21v2.94h.69a.68.68,0,0,0,.78-.76V28.4c0-.5-.24-.76-.79-.76Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M41.9,22.46h3.78v1.29H43.48v2.69h1.57v1.28H43.48v2.86h2.19v1.29H41.9Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M46.52,22.46h1.58v8.12H50v1.29H46.52Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M50.65,29.44V24.89a2.4,2.4,0,1,1,4.79,0v4.55a2.4,2.4,0,1,1-4.79,0Zm3.21.25V24.64c0-.57-.25-1-.82-1s-.81.4-.81,1v5.05c0,.57.25,1,.81,1S53.85,30.26,53.85,29.69Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M59.61,26.05l-.89,5.82H57.24L56,22.46H57.5l.74,6h0l.79-6h1.29l.87,6h0l.72-6h1.33l-1.22,9.41h-1.5l-.93-5.82Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M68.83,26.05l-.89,5.82H66.45l-1.26-9.41h1.53l.74,6h0l.79-6h1.29l.87,6h0l.72-6h1.33l-1.22,9.41h-1.5l-.93-5.82Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M72.37,31.87l1.78-9.41h1.8l1.79,9.41H76.12l-.29-1.72H74.14l-.28,1.72Zm2-3h1.26L75,25.11h0Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M77.52,22.46h4.21v1.29H80.42v8.12h-1.6V23.75h-1.3Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M82.46,22.46h3.78v1.29H84v2.69h1.57v1.28H84v2.86h2.19v1.29H82.46Z' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M88.66,27.55v4.32H87.08V22.46h2.3c1.6,0,2.18.79,2.18,2.11v1.21c0,1-.36,1.61-1.26,1.82l1.51,4.28H90.15Zm0-3.8v2.93h.53A.69.69,0,0,0,90,25.9V24.51c0-.51-.24-.76-.78-.76Z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('polygon', { className: 'sdg14-2', points: '14.55 9.4 14.55 31.91 10.77 31.91 10.77 14.68 10.73 14.68 8.08 17.43 8.04 17.43 8.04 13.48 11.53 9.4 14.55 9.4' }),
-	                React.createElement('path', { className: 'sdg14-2', d: 'M26.08,30.91V27.26H27.6v-3H26.08V8.39H22.36L15.81,24.93v2.33h6.68v3.65ZM19.13,24.3,22.52,15h0V24.3Z' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 297 */
-/*!********************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg15.svg ***!
-  \********************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg15",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG15 Life on Land'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg15-1', x: '-2.55', y: '-3.3', width: '117.67', height: '119.24' }),
-	                React.createElement('rect', { className: 'sdg15-2', x: '42.74', y: '75.57', width: '3.79', height: '8.63', rx: '0.25', ry: '0.25' }),
-	                React.createElement('rect', { className: 'sdg15-2', x: '39.92', y: '9.36', width: '1.54', height: '9.14' }),
-	                React.createElement('path', { className: 'sdg15-2', d: 'M82.45,87.7H28.18a.25.25,0,0,0-.25.26v3.32a.25.25,0,0,0,.25.24H82.45a.25.25,0,0,0,.25-.24V88a.26.26,0,0,0-.25-.26' }),
-	                React.createElement('path', { className: 'sdg15-2', d: 'M82.45,94.29H28.18a.25.25,0,0,0-.25.24v3.33a.25.25,0,0,0,.25.24H82.45a.25.25,0,0,0,.25-.24V94.53a.25.25,0,0,0-.25-.24' }),
-	                React.createElement('path', { className: 'sdg15-2', d: 'M72.12,66.56a8,8,0,0,0-4.69-1.77,6.27,6.27,0,0,0-4.36,1.85.47.47,0,0,0-.15.34v.3a.47.47,0,0,0,.15.37.44.44,0,0,0,.38.09l.1,0a.73.73,0,0,0,.27-.17A4.38,4.38,0,0,1,66,67.09a8.21,8.21,0,0,1,5.59,2.34l.05,0a.65.65,0,0,0,.47.2.64.64,0,0,0,.46-.19l0,0a8.24,8.24,0,0,1,5.6-2.35,4.39,4.39,0,0,1,2.18.45.8.8,0,0,0,.3.18.67.67,0,0,0,.32,0,.47.47,0,0,0,.34-.45V67a.47.47,0,0,0-.15-.34,6.29,6.29,0,0,0-4.41-1.9,8,8,0,0,0-4.69,1.77' }),
-	                React.createElement('path', { className: 'sdg15-2', d: 'M68.75,44.93a.45.45,0,0,0-.24.29l-.05.18a.46.46,0,0,0,.07.41.45.45,0,0,0,.34.18h.07a.59.59,0,0,0,.26-.07,1.37,1.37,0,0,1,.33,0,4.71,4.71,0,0,1,3.88,2.53l0,0a.56.56,0,0,0,.35.28l.17,0a.58.58,0,0,0,.27-.07l0,0a5.41,5.41,0,0,1,2.42-.6,3.69,3.69,0,0,1,2.47.79.63.63,0,0,0,.18.2l.18.08h.13a.47.47,0,0,0,.22-.05.46.46,0,0,0,.23-.28l0-.16a.42.42,0,0,0,0-.13.44.44,0,0,0-.06-.23A4.08,4.08,0,0,0,76.4,46.1a5.79,5.79,0,0,0-2,.37,4.74,4.74,0,0,0-3.66-2.05,4.51,4.51,0,0,0-2,.52' }),
-	                React.createElement('path', { className: 'sdg15-2', d: 'M57.29,53.28l0,.24a.46.46,0,0,0,.58.42l.08,0a.59.59,0,0,0,.23-.17,4,4,0,0,1,2.07-.47,6.71,6.71,0,0,1,4.29,1.62l0,0a.64.64,0,0,0,.42.16h0a.63.63,0,0,0,.43-.2l0,0a6.52,6.52,0,0,1,4.76-2.2,3.23,3.23,0,0,1,1.41.26.71.71,0,0,0,.28.15.63.63,0,0,0,.2,0l.11,0a.46.46,0,0,0,.31-.47v-.21a.46.46,0,0,0-.16-.32,5.32,5.32,0,0,0-3.47-1.37,6.47,6.47,0,0,0-4.06,1.68,6.78,6.78,0,0,0-3.62-1.2,5.18,5.18,0,0,0-3.85,1.78.48.48,0,0,0-.13.35' }),
-	                React.createElement('path', { className: 'sdg15-2', d: 'M29.82,57.64a5.88,5.88,0,0,1,5.88-5.88l.38,0a8,8,0,1,1,15.09,4.07,8.89,8.89,0,0,1-1.93,17.58l-11.87-.07h0a6.29,6.29,0,0,1-4.58-10.61A5.88,5.88,0,0,1,29.82,57.64Z' }),
-	                React.createElement('path', { className: 'sdg15-2', d: 'M35.71,29.54v-4.4a2.32,2.32,0,1,1,4.63,0v4.4a2.32,2.32,0,1,1-4.63,0m3.1.24V24.9c0-.55-.24-.94-.79-.94s-.78.39-.78.94v4.89c0,.55.24.94.78.94s.79-.39.79-.94' }),
-	                React.createElement('path', { className: 'sdg15-2', d: 'M52.77,31.89l1.72-9.1h1.75L58,31.89H56.39l-.28-1.66H54.48l-.27,1.66ZM54.69,29h1.22l-.6-3.65h0Z' }),
-	                React.createElement('path', { className: 'sdg15-2', d: 'M68.59,25.23v4.22c0,1.4-.58,2.44-2.22,2.44H64v-9.1h2.36c1.64,0,2.22,1,2.22,2.44m-2.4,5.41c.63,0,.87-.38.87-.93V25a.8.8,0,0,0-.87-.91h-.65v6.61Z' }),
-	                React.createElement('polygon', { className: 'sdg15-2', points: '35.72 9.36 35.72 18.5 39.09 18.5 39.09 17.24 37.25 17.24 37.25 9.36 35.72 9.36' }),
-	                React.createElement('polygon', { className: 'sdg15-2', points: '42.47 18.5 44 18.5 44 14.46 45.54 14.46 45.54 13.22 44 13.22 44 10.61 46.06 10.61 46.06 9.36 42.47 9.36 42.47 18.5' }),
-	                React.createElement('polygon', { className: 'sdg15-2', points: '46.87 18.5 50.54 18.5 50.54 17.24 48.41 17.24 48.41 14.46 49.93 14.46 49.93 13.22 48.41 13.22 48.41 10.61 50.54 10.61 50.54 9.36 46.87 9.36 46.87 18.5' }),
-	                React.createElement('polygon', { className: 'sdg15-2', points: '42.5 26.17 42.5 31.89 41.21 31.89 41.21 22.79 42.71 22.79 44.36 28.01 44.36 22.79 45.64 22.79 45.64 31.89 44.3 31.89 42.5 26.17' }),
-	                React.createElement('polygon', { className: 'sdg15-2', points: '48.96 22.79 50.49 22.79 50.49 30.64 52.31 30.64 52.31 31.89 48.96 31.89 48.96 22.79' }),
-	                React.createElement('polygon', { className: 'sdg15-2', points: '59.88 26.17 59.88 31.89 58.59 31.89 58.59 22.79 60.09 22.79 61.74 28.01 61.74 22.79 63.02 22.79 63.02 31.89 61.68 31.89 59.88 26.17' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('polygon', { className: 'sdg15-2', points: '10.13 12.54 10.13 16.47 10.16 16.47 12.8 13.73 12.84 13.73 12.84 30.89 16.61 30.89 16.61 8.47 13.6 8.47 10.13 12.54' }),
-	                React.createElement('path', { className: 'sdg15-2', d: 'M25.57,15.58a3.4,3.4,0,0,0-3.17,1.55h0V11.55h6.48V8.47H18.92V21.1h3.44v-.5c0-1.32.6-2,1.65-2s1.62.79,1.62,2V26c0,1.19-.43,2-1.59,2s-1.75-.86-1.75-2.18V23H18.86v2.55c0,3.41,1.36,5.59,5.19,5.59s5.36-2,5.36-5.13V20.54c0-3.54-1.82-5-3.84-5' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 298 */
-/*!********************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg16.svg ***!
-  \********************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg16",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG16 Peace, Justice and Strong Institutions'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg16-1', x: '-0.95', y: '-3.3', width: '118.19', height: '119.24' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M80.18,50a4.22,4.22,0,0,0-.81,3,4.22,4.22,0,0,0,2,2.35,4.21,4.21,0,0,0,.81-3,4.21,4.21,0,0,0-2-2.35' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M78.32,58.64a4.22,4.22,0,0,0,.81-3,4.21,4.21,0,0,0-2-2.35,4.21,4.21,0,0,0-.81,3,4.22,4.22,0,0,0,2,2.35' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M83,57a3.75,3.75,0,0,0,2.57,1.09A3.91,3.91,0,0,0,88,56.58a3.75,3.75,0,0,0-2.57-1.09A3.92,3.92,0,0,0,83,57' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M85,50.53a4.53,4.53,0,0,0-1,3.13,4.33,4.33,0,0,0,3.08-1,4.53,4.53,0,0,0,1-3.13,4.33,4.33,0,0,0-3.08,1' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M82.52,61.52a3.91,3.91,0,0,0,2.65-1,3.75,3.75,0,0,0-2.3-1.6,3.92,3.92,0,0,0-2.65,1,3.75,3.75,0,0,0,2.3,1.59' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M83.74,83.48H73.53a1.44,1.44,0,1,0,0,2.89H83.74a1.44,1.44,0,0,0,0-2.89' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M83.74,99.41H73.53a1.44,1.44,0,1,0,0,2.89H83.74a1.44,1.44,0,0,0,0-2.89' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M37.81,80a6.36,6.36,0,0,0-.71-.18s.26.08.71.18' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M83.36,87.38H73.9a.82.82,0,0,0-.82.82v2.87l-6.18.68-9-.21V86a24.83,24.83,0,0,0,3.59-.73C70.15,82.85,72,77.44,71.86,72.47s1.43-7,3.76-7.9a10.5,10.5,0,0,1,1.93-.51,15.48,15.48,0,0,0,.83,4.41l.62-.05A14.64,14.64,0,0,1,78.14,64a10.83,10.83,0,0,1,2.06-.06,13.09,13.09,0,0,1-2-1.4c.39-2.4,1.82-3.87,3.29-5.37a17.67,17.67,0,0,0,2.3-2.7l-.51-.33a17.05,17.05,0,0,1-2.23,2.61c-1.43,1.47-2.88,3-3.37,5.35a19.42,19.42,0,0,1-1.49-1.5c-2.14-2.4-4.9-.64-8.83,3s-8.88,3.78-13.71-1.16c-6.37-6.53-11.93-6.49-15.75-6.12,2.61,1.11,3.52,3.55,4.84,9.74,1.38,6.5,4.87,9.44,9.65,9.85-2.21.36-2.79.67-6.34,3.12-2.78,1.92-6.69,1.31-8.27,1,2.91.91,6.35,4,9.44,5a22.83,22.83,0,0,0,5.63,1.15v5.28l-17.12-.37v3.68L66.9,94l6.18.68v2.86a.82.82,0,0,0,.82.82h9.46a.83.83,0,0,0,.82-.82V88.2A.82.82,0,0,0,83.36,87.38Zm-29-1.15c.67,0,1.35,0,2-.05v5.33l-2,0Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M34.88,94.13a1.32,1.32,0,0,1-1.21,1.41h-.73a1.32,1.32,0,0,1-1.21-1.41V91.58a1.32,1.32,0,0,1,1.21-1.41h.73a1.32,1.32,0,0,1,1.21,1.41Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M35.39,9.14h2.37c1.61,0,2.2.8,2.2,2.13v2c0,1.33-.59,2.14-2.2,2.14H37v3.22h-1.6Zm1.6,1.3v3.74h.59a.69.69,0,0,0,.78-.79V11.21c0-.52-.24-.77-.78-.77Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M40.52,9.14h3.81v1.3H42.11v2.72H43.7v1.29H42.11v2.89h2.21v1.3H40.52Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M44.66,18.64l1.79-9.5h1.82l1.81,9.5H48.44l-.29-1.74h-1.7l-.28,1.74Zm2-3h1.27l-.63-3.81h0Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M50.26,16.19V11.59c0-1.48.7-2.56,2.38-2.56s2.25,1,2.25,2.38v1.12H53.44V11.28c0-.59-.2-.92-.77-.92s-.81.41-.81,1v5.1c0,.57.24,1,.81,1s.77-.36.77-.92V14.74H54.9v1.64c0,1.36-.56,2.37-2.25,2.37A2.25,2.25,0,0,1,50.26,16.19Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M55.5,9.14h3.81v1.3H57.1v2.72h1.58v1.29H57.1v2.89h2.21v1.3H55.5Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M61.53,17.24l-.81,2.14h-.9l.2-2.27h1.51Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M67.62,9.14v7.34a2,2,0,0,1-2.2,2.27c-1.65,0-2.1-.91-2.1-2.12V14.74h1.51v1.92c0,.48.17.76.59.76s.6-.28.6-.77V9.14Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M72.89,9.14v7.19c0,1.47-.63,2.42-2.25,2.42a2.14,2.14,0,0,1-2.38-2.42V9.14h1.6v7.34c0,.56.22.94.78.94s.78-.38.78-.94V9.14Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M73.45,16.59V15.32h1.48v1.3c0,.53.24.84.78.84s.73-.34.73-.84v-.36a1.71,1.71,0,0,0-.71-1.34L74.79,14a3.2,3.2,0,0,1-1.33-2.54v-.32A2,2,0,0,1,75.7,9c1.6,0,2.23.78,2.23,2.16V12H76.47v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78v.2c0,.53.29.84.76,1.29l1,1A3.19,3.19,0,0,1,78,16.06v.46a2.06,2.06,0,0,1-2.33,2.23A2,2,0,0,1,73.45,16.59Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M78.21,9.14h4.24v1.3H81.13v8.19H79.52V10.44H78.21Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M82.92,9.14h1.6v9.5h-1.6Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M85.18,16.19V11.59c0-1.48.7-2.56,2.38-2.56s2.25,1,2.25,2.38v1.12H88.36V11.28c0-.59-.2-.92-.77-.92s-.81.41-.81,1v5.1c0,.57.24,1,.81,1s.77-.36.77-.92V14.74h1.46v1.64c0,1.36-.56,2.37-2.25,2.37A2.25,2.25,0,0,1,85.18,16.19Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M90.41,9.14h3.81v1.3H92v2.72h1.58v1.29H92v2.89h2.21v1.3H90.41Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M35.14,31.34l1.79-9.5h1.82l1.81,9.5H38.92l-.29-1.74h-1.7l-.28,1.74Zm2-3h1.27l-.63-3.81h0Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M42.3,25.37v6H41v-9.5h1.57l1.72,5.45V21.84h1.33v9.5h-1.4Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M51,24.39v4.4c0,1.46-.6,2.55-2.31,2.55H46.22v-9.5h2.46C50.39,21.84,51,22.92,51,24.39ZM48.48,30c.66,0,.91-.39.91-1v-5a.83.83,0,0,0-.91-1h-.67V30Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M52.75,29.29V28h1.48v1.3c0,.53.24.84.78.84s.73-.34.73-.84V29A1.71,1.71,0,0,0,55,27.61l-.94-.94a3.2,3.2,0,0,1-1.33-2.54v-.32A2,2,0,0,1,55,21.73c1.6,0,2.23.78,2.23,2.16v.77H55.78v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78V24c0,.53.29.84.76,1.29l1,1a3.19,3.19,0,0,1,1.29,2.47v.46A2.06,2.06,0,0,1,55,31.45,2,2,0,0,1,52.75,29.29Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M57.51,21.84h4.24v1.3H60.44v8.19H58.83V23.14H57.51Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M63.83,27v4.36h-1.6v-9.5h2.33c1.61,0,2.2.8,2.2,2.13v1.22c0,1-.36,1.63-1.28,1.84L67,31.34H65.33Zm0-3.84v3h.53a.69.69,0,0,0,.78-.78v-1.4c0-.52-.24-.77-.78-.77Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M67.36,28.89V24.29a2.42,2.42,0,1,1,4.83,0v4.59a2.42,2.42,0,1,1-4.83,0Zm3.24.25V24c0-.57-.25-1-.83-1s-.81.41-.81,1v5.1c0,.57.25,1,.81,1S70.59,29.71,70.59,29.14Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M74.17,25.37v6H72.83v-9.5H74.4l1.72,5.45V21.84h1.33v9.5h-1.4Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M80.5,26.27h2.27v5.07H81.62v-1a1.44,1.44,0,0,1-1.53,1.15c-1.37,0-2-1.09-2-2.56V24.29a2.25,2.25,0,0,1,2.39-2.56c1.77,0,2.28,1,2.28,2.38V25H81.32V24c0-.59-.22-.92-.8-.92s-.83.41-.83,1v5.1c0,.57.24,1,.78,1s.78-.29.78-.91V27.53H80.5Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M35.39,34.54H37V44h-1.6Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M39,38.07v6H37.65v-9.5h1.57L40.94,40V34.54h1.33V44h-1.4Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M42.83,42V40.72h1.48V42c0,.53.24.84.78.84s.73-.34.73-.84v-.36a1.71,1.71,0,0,0-.71-1.34l-.94-.94a3.2,3.2,0,0,1-1.33-2.54v-.32a2,2,0,0,1,2.24-2.09c1.6,0,2.23.78,2.23,2.16v.77H45.85v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78v.2c0,.53.29.84.76,1.29l1,1a3.19,3.19,0,0,1,1.29,2.47v.46a2.06,2.06,0,0,1-2.33,2.23A2,2,0,0,1,42.83,42Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M47.59,34.54h4.24v1.3H50.52V44H48.9V35.84H47.59Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M52.31,34.54h1.6V44h-1.6Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M54.38,34.54h4.24v1.3H57.3V44H55.69V35.84H54.38Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M63.73,34.54v7.19c0,1.47-.63,2.42-2.25,2.42a2.14,2.14,0,0,1-2.38-2.42V34.54h1.6v7.34c0,.56.22.94.78.94s.78-.38.78-.94V34.54Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M64.19,34.54h4.24v1.3H67.12V44H65.51V35.84H64.19Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M68.91,34.54h1.6V44h-1.6Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M71.16,41.59V37A2.42,2.42,0,1,1,76,37v4.59a2.42,2.42,0,1,1-4.83,0Zm3.24.25v-5.1c0-.57-.25-1-.83-1s-.81.41-.81,1v5.1c0,.57.25,1,.81,1S74.4,42.41,74.4,41.84Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M78,38.07v6H76.64v-9.5h1.57L79.93,40V34.54h1.33V44h-1.4Z' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M81.82,42V40.72H83.3V42c0,.53.24.84.78.84s.73-.34.73-.84v-.36a1.71,1.71,0,0,0-.71-1.34l-.94-.94a3.2,3.2,0,0,1-1.33-2.54v-.32a2,2,0,0,1,2.24-2.09c1.6,0,2.23.78,2.23,2.16v.77H84.84v-.83c0-.55-.25-.81-.76-.81a.7.7,0,0,0-.76.78v.2c0,.53.29.84.76,1.29l1,1a3.19,3.19,0,0,1,1.29,2.47v.46a2.06,2.06,0,0,1-2.33,2.23A2,2,0,0,1,81.82,42Z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('polygon', { className: 'sdg16-2', points: '8.59 12.45 8.59 16.41 8.63 16.41 11.28 13.65 11.32 13.65 11.32 30.89 15.1 30.89 15.1 8.37 12.08 8.37 8.59 12.45' }),
-	                React.createElement('path', { className: 'sdg16-2', d: 'M28.36,25.47V22.15c0-3.69-1.46-5.55-4.18-5.55A3.24,3.24,0,0,0,21,18.43h0V13.58c0-1.36.43-2.33,1.79-2.33s1.76.8,1.76,2.19v1.5H28v-1.2c0-3.32-1.1-5.65-5.28-5.65-4,0-5.48,2.56-5.48,6.08v11c0,3.49,1.53,6,5.51,6s5.58-2.19,5.58-5.68m-3.75.33c0,1.43-.53,2.26-1.83,2.26S21,27.2,21,25.81V21.69c.07-1.26.6-2.06,1.79-2.06s1.79.8,1.79,2.26Z' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 299 */
-/*!********************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg17.svg ***!
-  \********************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg17",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.76 111.77" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'title',
-	                null,
-	                'SDG17 Partnerships for the Goals'
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'English' },
-	                React.createElement('rect', { className: 'sdg17-1', x: '-2.55', y: '-3.3', width: '118.82', height: '119.24' }),
-	                React.createElement('rect', { className: 'sdg17-2', x: '82.56', y: '9.35', width: '1.54', height: '9.14' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M84.29,67.79a14.57,14.57,0,0,0-14-14.55,14.56,14.56,0,0,0-27.45,0,14.55,14.55,0,0,0-8.4,26,14.55,14.55,0,0,0,22.2,16A14.55,14.55,0,0,0,78.69,79.24a14.54,14.54,0,0,0,5.59-11.46m-16.12-9.7a11.63,11.63,0,0,1-9.91,11.48A11.52,11.52,0,0,1,68,56.3a11.56,11.56,0,0,1,.15,1.79M56.59,91.53A11.59,11.59,0,0,1,56.49,75a11.59,11.59,0,0,1,.11,16.56M45.07,56.3a11.51,11.51,0,0,1,9.76,13.27A11.52,11.52,0,0,1,45.07,56.3M53.73,73A11.58,11.58,0,0,1,38,78.1,11.58,11.58,0,0,1,53.73,73m5.57-.08a11.59,11.59,0,0,1,15.8,5.17,11.59,11.59,0,0,1-15.8-5.17M56.54,46.46a11.64,11.64,0,0,1,10.66,7,14.6,14.6,0,0,0-10.66,8.18,14.59,14.59,0,0,0-10.66-8.18,11.64,11.64,0,0,1,10.66-7M31.73,67.79A11.64,11.64,0,0,1,42.11,56.23,14.78,14.78,0,0,0,42,58.09a14.53,14.53,0,0,0,4.76,10.75A14.59,14.59,0,0,0,35.58,76.4a11.59,11.59,0,0,1-3.85-8.62m5,15.52A11.51,11.51,0,0,1,37,80.89a14.53,14.53,0,0,0,13.36-.37,14.49,14.49,0,0,0,3.86,12.8,11.6,11.6,0,0,1-17.48-10m39.54-.1A11.61,11.61,0,0,1,59,93.3a14.5,14.5,0,0,0,3.73-12.79,14.52,14.52,0,0,0,13.4.37,11.52,11.52,0,0,1,.24,2.32M66.43,68.75A14.52,14.52,0,0,0,71.1,58.09,14.78,14.78,0,0,0,71,56.23a11.61,11.61,0,0,1,6.56,20.15,14.58,14.58,0,0,0-11.1-7.62' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M35.66,9.35h2.28c1.55,0,2.11.77,2.11,2v1.93c0,1.28-.57,2.06-2.11,2.06H37.2v3.1H35.66Zm1.54,1.25v3.6h.56a.66.66,0,0,0,.75-.75v-2.1c0-.5-.23-.74-.75-.74Z' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M40.25,18.49,42,9.35h1.75l1.74,9.14H43.88l-.28-1.67H42l-.27,1.67Zm1.93-2.9H43.4l-.61-3.67h0Z' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M47.76,14.3v4.19H46.23V9.35h2.24c1.55,0,2.11.77,2.11,2v1.17c0,1-.35,1.56-1.23,1.77l1.47,4.15H49.2Zm0-3.69v2.84h.51A.67.67,0,0,0,49,12.7V11.35c0-.5-.23-.74-.76-.74Z' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M68,14.3v4.19H66.51V9.35h2.24c1.55,0,2.12.77,2.12,2v1.17c0,1-.35,1.56-1.23,1.77l1.47,4.15H69.49Zm0-3.69v2.84h.51a.67.67,0,0,0,.75-.75V11.35c0-.5-.23-.74-.75-.74Z' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M71.63,16.52V15.3h1.43v1.25c0,.51.23.81.75.81s.7-.32.7-.81V16.2a1.65,1.65,0,0,0-.69-1.3l-.9-.9a3.08,3.08,0,0,1-1.28-2.44v-.31a1.91,1.91,0,0,1,2.16-2c1.54,0,2.14.75,2.14,2.08v.74h-1.4v-.8c0-.53-.24-.78-.73-.78a.67.67,0,0,0-.73.76v.19c0,.51.28.81.73,1.24l1,1A3.07,3.07,0,0,1,76,16v.44A2,2,0,0,1,73.8,18.6a1.9,1.9,0,0,1-2.17-2.08' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M85.12,9.35h2.28c1.55,0,2.11.77,2.11,2v1.93c0,1.28-.57,2.06-2.11,2.06h-.74v3.1H85.12Zm1.54,1.25v3.6h.56a.66.66,0,0,0,.76-.75v-2.1c0-.5-.23-.74-.76-.74Z' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M90.11,16.52V15.3h1.43v1.25c0,.51.23.81.76.81s.7-.32.7-.81V16.2a1.65,1.65,0,0,0-.69-1.3l-.9-.9a3.08,3.08,0,0,1-1.28-2.44v-.31a1.91,1.91,0,0,1,2.15-2c1.54,0,2.14.75,2.14,2.08v.74H93v-.8c0-.53-.24-.78-.73-.78a.67.67,0,0,0-.73.76v.19c0,.51.28.81.73,1.24l1,1A3.07,3.07,0,0,1,94.51,16v.44a2,2,0,0,1-2.24,2.14,1.9,1.9,0,0,1-2.17-2.08' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M39.87,29.51V25a2.36,2.36,0,1,1,4.72,0v4.49a2.36,2.36,0,1,1-4.72,0m3.16.25v-5c0-.56-.25-1-.81-1s-.79.4-.79,1v5c0,.56.25,1,.79,1s.81-.4.81-1' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M47.16,27.65v4.25H45.6V22.63h2.27c1.57,0,2.15.78,2.15,2.08V25.9c0,1-.36,1.59-1.25,1.79l1.49,4.21H48.62Zm0-3.75v2.89h.52a.68.68,0,0,0,.77-.77V24.65c0-.51-.23-.75-.77-.75Z' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M71.72,27h2.22v5H72.81v-1A1.4,1.4,0,0,1,71.32,32c-1.34,0-2-1.07-2-2.5V25a2.2,2.2,0,0,1,2.34-2.5c1.72,0,2.23,1,2.23,2.33v.82H72.51v-.94c0-.58-.22-.9-.78-.9s-.81.4-.81,1v5c0,.56.23,1,.77,1s.77-.29.77-.89V28.18h-.74Z' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M74.82,29.51V25a2.36,2.36,0,1,1,4.72,0v4.49a2.36,2.36,0,1,1-4.72,0m3.16.25v-5c0-.56-.25-1-.81-1s-.79.4-.79,1v5c0,.56.25,1,.79,1s.81-.4.81-1' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M80,31.91l1.75-9.28h1.78l1.76,9.28h-1.6l-.29-1.7H81.73l-.27,1.7Zm2-2.94h1.25l-.62-3.72h0Z' }),
-	                React.createElement('path', { className: 'sdg17-2', d: 'M90.15,29.91V28.66H91.6v1.27c0,.52.23.82.76.82s.71-.33.71-.82v-.36a1.68,1.68,0,0,0-.7-1.31l-.92-.92a3.13,3.13,0,0,1-1.3-2.48v-.31a1.93,1.93,0,0,1,2.19-2c1.56,0,2.18.77,2.18,2.11v.75H93.1v-.81c0-.53-.25-.79-.74-.79a.68.68,0,0,0-.74.77v.19c0,.52.29.82.74,1.26l1,1a3.11,3.11,0,0,1,1.26,2.41v.45A2,2,0,0,1,92.35,32a1.93,1.93,0,0,1-2.2-2.11' }),
-	                React.createElement('polygon', { className: 'sdg17-2', points: '51.13 9.35 55.21 9.35 55.21 10.61 53.94 10.61 53.94 18.49 52.39 18.49 52.39 10.61 51.13 10.61 51.13 9.35' }),
-	                React.createElement('polygon', { className: 'sdg17-2', points: '57.48 12.75 57.48 18.49 56.18 18.49 56.18 9.35 57.69 9.35 59.35 14.6 59.35 9.35 60.63 9.35 60.63 18.49 59.28 18.49 57.48 12.75' }),
-	                React.createElement('polygon', { className: 'sdg17-2', points: '61.89 9.35 65.55 9.35 65.55 10.61 63.43 10.61 63.43 13.22 64.95 13.22 64.95 14.46 63.43 14.46 63.43 17.24 65.55 17.24 65.55 18.49 61.89 18.49 61.89 9.35' }),
-	                React.createElement('polygon', { className: 'sdg17-2', points: '80 14.46 78.52 14.46 78.52 18.49 76.98 18.49 76.98 9.35 78.52 9.35 78.52 13.22 80 13.22 80 9.35 81.54 9.35 81.54 18.49 80 18.49 80 14.46' }),
-	                React.createElement('polygon', { className: 'sdg17-2', points: '35.67 22.63 39.32 22.63 39.32 23.9 37.23 23.9 37.23 26.56 38.79 26.56 38.79 27.81 37.23 27.81 37.23 31.91 35.67 31.91 35.67 22.63' }),
-	                React.createElement('polygon', { className: 'sdg17-2', points: '52.49 22.63 56.63 22.63 56.63 23.9 55.35 23.9 55.35 31.91 53.77 31.91 53.77 23.9 52.49 23.9 52.49 22.63' }),
-	                React.createElement('polygon', { className: 'sdg17-2', points: '60.42 27.81 58.92 27.81 58.92 31.91 57.36 31.91 57.36 22.63 58.92 22.63 58.92 26.56 60.42 26.56 60.42 22.63 62 22.63 62 31.91 60.42 31.91 60.42 27.81' }),
-	                React.createElement('polygon', { className: 'sdg17-2', points: '63.01 22.63 66.73 22.63 66.73 23.9 64.57 23.9 64.57 26.56 66.12 26.56 66.12 27.81 64.57 27.81 64.57 30.63 66.73 30.63 66.73 31.91 63.01 31.91 63.01 22.63' }),
-	                React.createElement('polygon', { className: 'sdg17-2', points: '86.17 22.63 87.73 22.63 87.73 30.63 89.59 30.63 89.59 31.91 86.17 31.91 86.17 22.63' })
-	            ),
-	            React.createElement(
-	                'g',
-	                { id: 'NUMBERS_ONLY', dataName: 'NUMBERS ONLY' },
-	                React.createElement('polygon', { className: 'sdg17-2', points: '17.39 8.48 17.39 30.9 13.62 30.9 13.62 13.74 13.59 13.74 10.94 16.48 10.91 16.48 10.91 12.55 14.38 8.48 17.39 8.48' }),
-	                React.createElement('polygon', { className: 'sdg17-2', points: '19.11 8.48 28.57 8.48 28.57 11.95 23.64 30.9 19.91 30.9 24.93 11.56 19.11 11.56 19.11 8.48' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 300 */
-/*!********************************************************************!*\
-  !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg18.svg ***!
-  \********************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 176)(__webpack_require__(/*! react-dom */ 158));
-	
-	module.exports = React.createClass({
-	
-	    displayName: "Sdg18",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "id": "English", "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 111.83 111.66" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'defs',
-	                null,
-	                React.createElement(
-	                    'style',
-	                    null,
-	                    '.cls-1{fill:#f2f2f2;}.cls-2{fill:#29abe2;}.cls-3{fill:#3e8ede;}.cls-4{fill:#5fba47;}.cls-5{fill:#e4b632;}.cls-6{fill:#c4202f;}.cls-7{fill:#4b9f46;}.cls-8{fill:#418045;}.cls-9{fill:#f8c219;}.cls-10{fill:#ee422a;}.cls-11{fill:#f99e29;}.cls-12{fill:#1d95d3;}.cls-13{fill:#a21c44;}.cls-14{fill:#29bce1;}.cls-15{fill:#f16b2d;}.cls-16{fill:#e6253d;}.cls-17{fill:#dc1769;}.cls-18{fill:#16496b;}.cls-19{fill:#c5962e;}.cls-20{fill:#086a9d;}'
-	                )
-	            ),
-	            React.createElement(
-	                'title',
-	                null,
-	                'Artboard 26'
-	            ),
-	            React.createElement('rect', { className: 'cls-1', x: '-1.16', y: '-3.33', width: '117.02', height: '119.16' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M6.62,59.53H10.2c3.22,0,5.3,2.22,5.3,5.48v.14c0,3.25-2.08,5.49-5.3,5.49H6.62Zm2.3,2.08v7h1.27c1.75,0,2.94-1.22,2.94-3.43V65c0-2.21-1.19-3.44-2.94-3.44Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M16.72,59.53h7.16V61.6H19V64H23.3v2.08H19v2.48h4.94v2.08H16.72Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M24.33,59.53h2.49l2.35,7.65,2.35-7.65h2.43L30.2,70.7H28.07Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M34.74,59.53h7.16V61.6H37V64h4.29v2.08H37v2.48H42v2.08H34.74Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M43.18,59.53h2.3v9H50v2.11H43.18Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M50,65.19V65c0-3.33,2.1-5.67,5-5.67s5,2.32,5,5.63v.19c0,3.32-2.09,5.67-5,5.67S50,68.51,50,65.19Zm7.67,0V65c0-2.19-1.11-3.57-2.65-3.57S52.32,62.83,52.32,65v.11c0,2.19,1.13,3.57,2.67,3.57S57.62,67.33,57.62,65.14Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M61.24,59.53h3.7C67.43,59.53,69,61,69,63.33v0c0,2.56-1.83,3.84-4.16,3.89h-1.3v3.38h-2.3Zm3.59,5.67a1.7,1.7,0,0,0,1.86-1.78v0a1.66,1.66,0,0,0-1.89-1.79H63.54v3.59Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M69.92,59.53h2.41L74.81,64l2.44-4.51h2.43V70.63H77.43V63.54l-2.62,4.59h0l-2.6-4.55v7.06H69.92Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M81.31,59.53h7.16V61.6H83.6V64h4.29v2.08H83.6v2.48h4.94v2.08H81.31Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M89.75,59.53h2.11L96.12,66V59.53h2.25V70.63h-2L92,63.92v6.71H89.75Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M102.13,61.65H99.34V59.53h7.87v2.13h-2.79v9h-2.29Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M5.81,54.29l1.5-1.86a4.68,4.68,0,0,0,3,1.38c1,0,1.57-.49,1.57-1.2v0c0-.61-.35-1-2.09-1.65-2.16-.84-3.5-1.65-3.5-3.74v0c0-2.12,1.64-3.57,4-3.57a5.8,5.8,0,0,1,3.93,1.5L12.82,47a4.26,4.26,0,0,0-2.59-1.13c-.87,0-1.41.44-1.41,1.06v0c0,.7.42,1,2.31,1.81,2.12.84,3.27,1.74,3.27,3.64v0c0,2.26-1.72,3.66-4.09,3.66A6.54,6.54,0,0,1,5.81,54.29Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M15.47,51.19V43.74H18v7.47c0,1.72.82,2.58,2.12,2.58s2.12-.84,2.12-2.52V43.74h2.51v7.4c0,3.36-1.85,5-4.66,5S15.47,54.48,15.47,51.19Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M25.49,54.29,27,52.42a4.68,4.68,0,0,0,3,1.38c1,0,1.57-.49,1.57-1.2v0c0-.61-.35-1-2.09-1.65-2.16-.84-3.5-1.65-3.5-3.74v0c0-2.12,1.64-3.57,4-3.57a5.79,5.79,0,0,1,3.93,1.5L32.5,47a4.26,4.26,0,0,0-2.59-1.13c-.87,0-1.41.44-1.41,1.06v0c0,.7.42,1,2.31,1.81,2.12.84,3.27,1.74,3.27,3.64v0c0,2.26-1.72,3.66-4.09,3.66A6.54,6.54,0,0,1,25.49,54.29Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M37.38,46.07H34.31V43.74h8.63v2.33H39.88v9.85H37.38Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M46.2,43.67h2.4L53,55.92H50.36l-.9-2.65H45.26l-.89,2.65H41.83ZM48.69,51l-1.32-4L46,51Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M53.93,43.74h2.52V55.92H53.93Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M58.33,43.74h2.31l4.66,7.1v-7.1h2.47V55.92H65.62L60.8,48.56v7.36H58.33Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M73,43.67h2.4l4.37,12.25H77.18l-.9-2.65H72.08l-.89,2.65H68.65ZM75.51,51l-1.32-4-1.34,4Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M80.66,43.74h4.53a4.45,4.45,0,0,1,3.18,1.06,2.82,2.82,0,0,1,.82,2.07v.05a2.85,2.85,0,0,1-1.65,2.66,2.9,2.9,0,0,1,2.18,2.91v.09c0,2.19-1.76,3.34-4.4,3.34H80.66Zm6,3.59c0-.89-.63-1.36-1.71-1.36H83.11v2.75h1.76c1.11,0,1.83-.45,1.83-1.38Zm-1.37,3.52H83.11v2.85h2.26c1.13,0,1.85-.49,1.85-1.43v0C87.22,51.38,86.58,50.84,85.32,50.84Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M90.89,43.74h2.52v9.87h4.93v2.31H90.89Z' }),
-	            React.createElement('path', { className: 'cls-2', d: 'M99.39,43.74h7.85V46h-5.34v2.63h4.7v2.28h-4.7v2.72h5.41v2.28H99.39Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M16.81,84.81H27.94c-.19,8.94-5.13,13.43-11.77,13.43-7.15,0-11.73-6-11.73-12.5S9,73.24,16.17,73.24c7.92,0,10.1,4.94,11,7.5l-5,.32c-.87-2.12-2.6-3.53-6-3.53-3.78,0-6.73,3.08-6.73,8.21,0,4.33,2.72,8.21,7.05,8.21a6,6,0,0,0,6.09-5H16.81Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M67.68,92.76H58.87l-1.57,5H52.1l8.78-24.11H66L74.61,97.8H69.32ZM62.83,79.49h-.06l-3,9.36H65.9Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M75.47,73.76h4.8V93.32h9.24V97.8h-14Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M103,80.09c0-1.66-1.6-2.69-3.52-2.69-2.4,0-3.84,1.05-3.84,2.65s1.6,2.46,2.78,2.85l4.41,1.41c3.2,1,5.47,2.88,5.47,6.59,0,2.94-2.11,7.35-8.76,7.35-8.35,0-9.11-5.4-9.11-7.55l4.8-.1c0,2.56,2,3.55,4.35,3.55,1.63,0,3.93-.8,3.93-2.65,0-1.28-.54-2-2.91-2.81L95.33,86.8a6.52,6.52,0,0,1-4.51-6c0-3.07,2.11-7.48,8.35-7.48,7.42,0,8.6,4.92,8.6,6.68Z' }),
-	            React.createElement('path', { className: 'cls-4', d: 'M35.61,82.79a6.74,6.74,0,0,1,1.06-1.37L33.18,77.6A11.94,11.94,0,0,0,31,80.48Z' }),
-	            React.createElement('path', { className: 'cls-5', d: 'M44.15,80.09a6.65,6.65,0,0,1,1.46.92l3.5-3.82A11.91,11.91,0,0,0,46,75.25Z' }),
-	            React.createElement('path', { className: 'cls-6', d: 'M52.16,81.24l-4.64,2.31A6.63,6.63,0,0,1,48,85.18l5.16-.49a11.76,11.76,0,0,0-1-3.46' }),
-	            React.createElement('path', { className: 'cls-7', d: 'M47.2,82.88l4.63-2.31a11.92,11.92,0,0,0-2.17-2.88l-3.5,3.82a6.71,6.71,0,0,1,1,1.37' }),
-	            React.createElement('path', { className: 'cls-8', d: 'M34.68,86.17c0-.1,0-.21,0-.31l-5.16-.46c0,.26,0,.51,0,.77A11.89,11.89,0,0,0,29.86,89l5-1.43a6.7,6.7,0,0,1-.16-1.44' }),
-	            React.createElement('path', { className: 'cls-9', d: 'M46.55,90.41a6.77,6.77,0,0,1-1.26,1.18L48,96a12,12,0,0,0,2.67-2.48Z' }),
-	            React.createElement('path', { className: 'cls-10', d: 'M48.06,86.17a6.61,6.61,0,0,1-.15,1.42l5,1.43a11.83,11.83,0,0,0,.35-2.85q0-.37,0-.73l-5.16.49c0,.08,0,.16,0,.24' }),
-	            React.createElement('path', { className: 'cls-11', d: 'M36.29,90.51l-4.12,3.13a12,12,0,0,0,2.69,2.44l2.72-4.4a6.76,6.76,0,0,1-1.29-1.17' }),
-	            React.createElement('path', { className: 'cls-12', d: 'M34.77,85.11a6.61,6.61,0,0,1,.49-1.66l-4.63-2.31a11.79,11.79,0,0,0-1,3.51Z' }),
-	            React.createElement('path', { className: 'cls-13', d: 'M47.38,96.4,44.66,92a6.66,6.66,0,0,1-1.59.64l1,5.09a11.78,11.78,0,0,0,3.35-1.34' }),
-	            React.createElement('path', { className: 'cls-14', d: 'M47.71,88.32A6.69,6.69,0,0,1,47,89.81l4.14,3.12a11.82,11.82,0,0,0,1.57-3.18Z' }),
-	            React.createElement('path', { className: 'cls-15', d: 'M42.34,92.79a6.63,6.63,0,0,1-1.74,0l-1,5.09a11.92,11.92,0,0,0,3.66,0Z' }),
-	            React.createElement('path', { className: 'cls-16', d: 'M41.8,79.49a6.63,6.63,0,0,1,1.66.32L45.32,75a11.79,11.79,0,0,0-3.52-.67Z' }),
-	            React.createElement('path', { className: 'cls-17', d: 'M39.86,92.69a6.64,6.64,0,0,1-1.64-.62l-2.72,4.41a11.82,11.82,0,0,0,3.41,1.3Z' }),
-	            React.createElement('path', { className: 'cls-18', d: 'M39.36,79.79a6.63,6.63,0,0,1,1.69-.3V74.31a11.81,11.81,0,0,0-3.56.65Z' }),
-	            React.createElement('path', { className: 'cls-19', d: 'M35.83,89.91A6.65,6.65,0,0,1,35,88.33l-5,1.43A11.82,11.82,0,0,0,31.71,93Z' }),
-	            React.createElement('path', { className: 'cls-20', d: 'M37.23,80.92a6.7,6.7,0,0,1,1.43-.87l-1.87-4.83a11.87,11.87,0,0,0-3.05,1.87Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M64.82,22.42a9.39,9.39,0,0,1,.62,6.66,9.56,9.56,0,0,1-14.51,5.38A9.55,9.55,0,0,1,52,18a10,10,0,0,1,4.31-1A9.52,9.52,0,0,1,64.82,22.42Zm-8.34-4.94a6.64,6.64,0,0,1,0,1.31.2.2,0,0,1,0-.11c.07,0,.12,0,.15.07s0,.18,0,.22.09,0,.14,0a7.07,7.07,0,0,1,3,.91v0c.18-.09.42-.21.61,0,.23-.09.27.19.45.23a1,1,0,0,1,.5.64c0,.09.18.15.19.24a3.64,3.64,0,0,1,.72-.83l.16-.07a8.83,8.83,0,0,0-5-2.38A7.34,7.34,0,0,1,56.48,17.48Zm-.53,0a9.21,9.21,0,0,0-5.09,1.8c-.29.2-.54.5-.84.67h0a8.09,8.09,0,0,1,1,1l0-.07a7.51,7.51,0,0,1,4.84-2l0-.11V17.66Zm1.62.72-.68.29c-.06,0-.17-.05-.2,0s0,.06,0,.08c.25.32.69.14,1,.08a.6.6,0,0,0,.62-.16v0A1,1,0,0,0,57.57,18.24Zm-1.1,1.17,0,.09c0,.44,0,.91,0,1.32a1.5,1.5,0,0,1,.54,0,5.55,5.55,0,0,1,2.55,1,.68.68,0,0,1-.22-.34.05.05,0,0,1,.06,0c0-.15-.15-.22-.17-.36a.1.1,0,0,1,.1,0,3.06,3.06,0,0,1,.42.49c.1,0,.19,0,.27.08s.05.26.16.35c0,.28.36.44.34.71,0,.07.09,0,.11,0l.28.35a.14.14,0,0,0,0,.19c.13.06.2-.1.33-.08s0,.23,0,.34.16-.06.22,0-.09.17-.13.24.09.08.16.1a.13.13,0,0,1,.11.17c.24.25-.07.51,0,.77a.45.45,0,0,1-.12.46c0,.21-.18.34-.26.51l-.24,0c-.13.13.11.28,0,.36h.53l-.06-.06a.78.78,0,0,1,.07-.67,1.52,1.52,0,0,1,.25-.52S62,25,62,25a1,1,0,0,1-.08.49,1.45,1.45,0,0,1,.15.77c.47,0,.93,0,1.39,0l0-.09a6.8,6.8,0,0,0-.62-2.45c-.1,0-.17.09-.28.06a.09.09,0,0,1-.06-.09,6.7,6.7,0,0,0-.52-.58c-.24,0-.35-.26-.57-.28s-.06-.39-.34-.31a.46.46,0,0,1-.3-.32.78.78,0,0,0-.27-.67c-.17-.06-.24.17-.41.13s-.05-.17-.08-.25-.11-.12-.1-.22c.22-.29-.27-.29-.16-.58s-.24-.29-.35-.45a7.68,7.68,0,0,0-2.3-.66A1.59,1.59,0,0,1,56.47,19.41Zm4.28,0c-.1.09-.18-.09-.27,0a.19.19,0,0,0,0,.14c.2.07.22.36.48.29.08-.09,0-.18,0-.28A.28.28,0,0,0,60.75,19.42Zm-8.5,1.27c-.29.2-.56.47-.87.65a7.6,7.6,0,0,1,1,.89l0,.09a5.68,5.68,0,0,1,2.84-1.44,2.51,2.51,0,0,1,.75-.06,9.35,9.35,0,0,1,0-1.36A7.28,7.28,0,0,0,52.26,20.69Zm10.52-.43a10.92,10.92,0,0,1-.94,1l-.16,0c.1,0,.13.14.19.21.35.18.44.55.74.76s.56.63.58,1a7.51,7.51,0,0,1,.72,2.94l0,.06a.2.2,0,0,0,.11,0l1.36,0c-.09-.13-.05-.33-.08-.49A9.36,9.36,0,0,0,62.78,20.26Zm-13,0a9.31,9.31,0,0,0-2.42,5.17c-.05.28,0,.58-.08.87a9.45,9.45,0,0,1,1.46,0l0-.18a7.7,7.7,0,0,1,1.42-4.06,3.9,3.9,0,0,1,.63-.72c-.31-.29-.63-.62-1-.94Zm6.23,1-.08,0a5.53,5.53,0,0,0-3.16,1.34,12.69,12.69,0,0,1,1,.94l.07-.1a4.34,4.34,0,0,1,1.44-.75,2.15,2.15,0,0,1,.71-.08A6.26,6.26,0,0,1,56,21.28Zm.5,0,0,.1v1.28l.12,0a4.16,4.16,0,0,1,2.13.87l0,.1c.21-.3.53-.55.79-.84l.24-.14-.11,0a5.52,5.52,0,0,0-1.7-1A8.38,8.38,0,0,0,56.48,21.29ZM51,21.65v.09l-.51.65a7.55,7.55,0,0,0-1.35,3.93l1.3,0,.12,0c-.05,0,0-.09-.06-.14A5.71,5.71,0,0,1,52,22.65,9.5,9.5,0,0,1,51,21.65ZM60.11,23l0,.06c-.44.45-.91.92-1.33,1.39a.33.33,0,0,0,.13.14c0-.11.08-.21.09-.33s.28-.06.43,0a3.23,3.23,0,0,1,.67,0c.17.09.18.3.34.39a.13.13,0,0,1,0,.18c0,.35.22-.09.4,0s.17,0,.23.1.21.12.22.26-.09.09-.14.13-.15.23-.08.38c.27.05.28-.27.41-.41a2.55,2.55,0,0,0-.27-.71c-.16,0-.25-.22-.41-.25s0-.31,0-.49A5.69,5.69,0,0,0,60.11,23Zm-7.7,0a5.58,5.58,0,0,0-1.27,2.62,4.31,4.31,0,0,1-.11.71,1.19,1.19,0,0,1,.59,0c-.11-.06,0-.19-.08-.27s0-.27.08-.34.19-.29.21-.47.28-.07.39-.17,0-.1,0-.16.24-.12.35-.19a1,1,0,0,1,.32-.33c.28,0,.29-.39.56-.4A11.3,11.3,0,0,1,52.4,23Zm4.09.16a8.93,8.93,0,0,1,.07,1l.34.11c.1-.17.32-.2.41-.35s.13,0,.18.06a1,1,0,0,1-.06.38c-.13.26-.43.29-.6.47.11.06.17-.05.26-.08a.57.57,0,0,1,.32.21c.09,0,.17,0,.24,0,.05-.39.54-.34.69-.71l-.09,0c0-.05-.13,0-.13-.11a1,1,0,0,1,.28-.23,4.83,4.83,0,0,0-1.35-.62A4.5,4.5,0,0,1,56.49,23.17Zm-2.55,1H54c.11.11.3.09.38.24s-.08.08-.08.15.06,0,.08.06.07-.05.1-.09.14.11.25.11a.18.18,0,0,1,.25,0c.08-.07.24,0,.26-.13s.07-.4.28-.5,0,.11,0,.18.31-.12.43,0a3,3,0,0,1-.07-1A3.23,3.23,0,0,0,53.95,24.16Zm2.3.79c-.08-.09-.24,0-.34,0,.09.09.06.27.11.38a.9.9,0,0,1-.6.36c-.06.08,0,.24-.19.23s-.21.17-.15.32a2.92,2.92,0,0,0-.08.54c-.28.18-.2-.23-.34-.32l0,.08c-.06,0-.09,0-.13-.06s-.11,0-.15,0-.16.19-.13.33S54,26.87,54,27a2.7,2.7,0,0,0,.48-.07c.11,0,.2-.05.31-.06a.1.1,0,0,1,.07.11h0a.19.19,0,0,0,.08-.23c0-.1.12-.1.18-.13s0,.09,0,.14c.21.08-.05.24-.08.35s0,.29-.18.27a.07.07,0,0,1,0-.08h0a.24.24,0,0,0,.13.21c.13-.11.14-.29.33-.32s0-.27.1-.35.51-.11.71.09c0,.09,0,.12,0,.19a.94.94,0,0,1-.17.32.16.16,0,0,1,0,.18c-.07.29-.4.15-.59.25a1.5,1.5,0,0,0,1,.28c.2,0,.11-.26.22-.37.07-.33.37-.1.55-.19a1.33,1.33,0,0,0,.16-.44.31.31,0,0,1-.13-.36c-.08-.11-.07-.31-.25-.33a.09.09,0,0,1,0-.11c0-.1.1-.14.13-.22S57,25.89,57,25.8c-.18.05-.2-.19-.34-.24s-.15-.13-.25-.15-.27-.17-.44-.24c0-.05-.06-.13,0-.17s.2,0,.3,0Zm-4.11,1.17c-.38.12.06.41,0,.65s-.19,0-.29.07l0,.25c-.06.15-.24,0-.33.14s0,.19.06.27c-.13.3.3.4.29.67s0,.42.17.57c0,.31,0,.72.23,1l0,.29c.06.2-.24.15-.2.33.06,0,.07,0,.08.07h0a12.51,12.51,0,0,1,1.22-1.24L53.14,29a4.73,4.73,0,0,1-.73-1.62l-.14-.07c0,.15-.08.27-.07.42l0,.06c-.1,0-.16-.09-.25-.14s-.07-.14,0-.18a.16.16,0,0,1,.11,0c0-.05,0-.13,0-.19s-.09-.22,0-.32.16.1.19.16.16,0,.24-.08.11-.19,0-.24a1.12,1.12,0,0,0,0-.56C52.43,26.07,52.26,26.1,52.13,26.11Zm8.86.16s-.09,0-.14,0A.34.34,0,0,1,61,26.27Zm-.29.46.15.15c.15.1,0,.31.2.4s.25.31.33.47a.5.5,0,0,0,0-.14c.07-.26.06-.55.14-.81A2,2,0,0,1,60.7,26.74Zm3.24.07-.08-.06,0,.13a7.63,7.63,0,0,1-1.5,4.2,3.14,3.14,0,0,1-.56.61,10,10,0,0,1,1.06,1l0-.07a9.11,9.11,0,0,0,2.36-5.78l.06-.11-.07,0Zm-1.9,0a5.12,5.12,0,0,1-.07.85l.16.17a.17.17,0,0,1,0,.22.19.19,0,0,1-.22,0A6.19,6.19,0,0,1,61,29.81c-.16.2-.31.47-.51.58l.43.38s0-.06,0-.09,0-.12.1-.11.21.22.33.33.13.32.08.49a7,7,0,0,0,1.9-4.51l.07-.08c-.43,0-.88,0-1.32,0Zm-11,0,.07.11a3.83,3.83,0,0,1,.07.93c.05-.09.07-.21.18-.27s-.11-.11-.1-.19,0-.46.24-.54A.54.54,0,0,1,51,26.78Zm-2.28,0-.13,0H47.27A9.65,9.65,0,0,0,48.43,31a15.49,15.49,0,0,0,1.26,1.77l.94-1,.11,0a2.87,2.87,0,0,1-.44-.45.65.65,0,0,1-.4-.3c0-.05,0-.15-.06-.18l-.06.07c-.17.08-.23-.09-.34-.16s-.08-.36-.27-.31-.1-.09-.15-.14-.23-.18-.33-.28,0,.1-.06.13-.26-.19-.38-.28-.06.05-.1,0a.55.55,0,0,1-.19-.4c-.16-.18-.09-.45-.06-.67,0-.06.11-.09.09-.16s.15-.11.25-.11a.25.25,0,0,1,.09.09c.06,0,.2,0,.15-.13a.62.62,0,0,1,.31-.11,2,2,0,0,0,.21.29l-.07-.1a7.48,7.48,0,0,1-.23-1.44s-.06,0,0-.07h0A1.49,1.49,0,0,1,48.71,26.8Zm1.85,0-.1,0a11,11,0,0,1-1.32,0l.06.08.1.87a6.69,6.69,0,0,1,.18,1c.05-.07,0-.21.15-.23-.05-.1.1-.19,0-.28a1,1,0,0,1,.27-.62c.24,0,.26-.33.5-.34s.2.16.25.22A.9.9,0,0,1,50.56,26.8Zm2.43.58c.13.25.2.53.34.77s.27.39.36.6a3.28,3.28,0,0,1,.4-.46.25.25,0,0,0,0-.18c0-.1,0-.24-.08-.33s0,.17,0,.24a.08.08,0,0,1-.11-.06.31.31,0,0,1-.23-.21c.09-.06,0-.08,0-.13s-.05,0-.09,0a.12.12,0,0,1-.07,0C53.41,27.37,53.11,27.53,53,27.39Zm1.49.37a.68.68,0,0,1-.19.31h0c.11-.08.19-.23.34-.24Zm3.74.39a.35.35,0,0,0,.08.23c.18,0,.1.23.27.2s0-.11,0-.17-.17-.16-.26-.24,0-.05,0-.08S58.26,28.1,58.22,28.15Zm2.68,0c-.14,0-.3.07-.42,0s-.07,0-.07.06-.09.16-.2.13-.09-.13-.11-.19a.51.51,0,0,1,0,.15,1.62,1.62,0,0,0-.2.32c-.1.11-.26.07-.36.16s-.27.18-.41.25,0,0,0,.06a.18.18,0,0,0,.2,0c.2.05.16-.2.27-.28s.19-.1.3,0a.67.67,0,0,1,.11.48c-.11.11-.06.3-.14.43s-.17.23-.15.38a.33.33,0,0,1-.26.08,4.44,4.44,0,0,0-1.18-.27.08.08,0,0,0-.06.09c.17.09.38.09.56.17s.27.24.47.18.45.06.57-.12.13-.3.21-.45h.06c.09.1.09.25.13.35.13-.14.24-.3.36-.44a4.23,4.23,0,0,0,.69-1.46A1.41,1.41,0,0,0,60.9,28.16Zm-6,0a7.38,7.38,0,0,1-.88.94,3.61,3.61,0,0,0,1.7.79c0-.13,0-.29,0-.4s.18-.1.27-.08a.08.08,0,0,0,.06-.12c-.14,0-.08-.18-.12-.26s.09,0,.07-.1,0-.16,0-.24.06-.08.1-.08c-.3.16-.62,0-.89-.15S55,28.31,54.94,28.16Zm2.75.83s-.07.1,0,.13.36-.11.36-.28C57.88,28.81,57.8,28.9,57.69,29Zm.53.36c-.15,0-.22.11-.33.2s-.2-.14-.31-.09,0,0,0,0a.11.11,0,0,1,0,.14c-.16.15-.24-.07-.39-.06v.06s0,.09-.06.07-.29-.1-.38-.24-.12,0-.16,0-.18,0-.15.11c-.12,0-.13.17-.22.25s-.21.14-.35.14c0,0,0,.08,0,.08a.48.48,0,0,0,.27,0c.14-.23.38,0,.58-.12s0,.16.13.2.34.17.5,0c0-.22.24-.2.38-.26s.45-.3.43-.58Zm-4.57.13a7,7,0,0,1-.94,1c.15,0,.23.17.35.24a5.91,5.91,0,0,0,2.42,1.08l-.23-.1c-.17-.19-.41-.42-.42-.69.17-.06.15-.25.21-.37a1,1,0,0,1,.5-.27c-.48.2-.89-.16-1.29-.34A1.84,1.84,0,0,1,53.65,29.47Zm6.58,1.32,0-.09A.78.78,0,0,1,60,31c0,.08,0,.19.07.24s.44.18.48.41-.47.4-.23.63c.08.11-.11.16-.08.25l.07-.09a6.58,6.58,0,0,0,.84-.71h0c-.06,0-.13,0-.19,0a.3.3,0,0,1-.16-.32ZM52.62,31l0,0,0,.06Zm.15.2a.21.21,0,0,1-.11-.15Zm0,0c0,.11.18.18.14.33a.4.4,0,0,1-.38.13c-.27,0-.47.16-.72.19s-.31-.21-.53-.19a7.45,7.45,0,0,0,4.58,2l.13.09L56,33.56V32.31l-.11,0A5.48,5.48,0,0,1,52.8,31.22Zm8.75.89,0-.11a2.55,2.55,0,0,1-.65.62c-.31.31-.81.37-1,.82-.17.15-.22.39-.45.47s-.33.21-.46.38c-.4.36-.65-.23-1-.3l-.72.13a2.28,2.28,0,0,1-.74,0,11.14,11.14,0,0,1,0,1.49l.09-.06a9.22,9.22,0,0,0,5.94-2.5ZM51,32.09v.06l-1,1a9.59,9.59,0,0,0,5,2.36,7.85,7.85,0,0,1,.94.11L56,35.49V34.2l0-.07-.15,0A7.47,7.47,0,0,1,51,32.09Zm5.41.33.07.1a9.66,9.66,0,0,1,0,1.17,7.28,7.28,0,0,1,1.14-.16.4.4,0,0,1-.21-.12c-.22,0-.33-.25-.4-.42s.05-.23.1-.34-.39-.05-.56-.12S56.51,32.43,56.45,32.42Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M65.15,18.81a4.19,4.19,0,0,1,1.21,2.26l.11.27a10,10,0,0,1-2.57-2.73l-.79-.8A6.68,6.68,0,0,1,65.15,18.81Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M47.55,20A15.14,15.14,0,0,1,46,21.49a10,10,0,0,1,.7-1.83,4.52,4.52,0,0,1,2.58-1.72A11.71,11.71,0,0,0,47.55,20Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M67.61,21.09c.22,1-.1,2,.1,3h0C67.17,23,66,22.5,65.23,21.65a3.4,3.4,0,0,1-.77-1.78c.45,1.09,1.68,1.34,2.38,2.25a3,3,0,0,1,.46.75l0,0a20.49,20.49,0,0,1-.82-2.75,2.15,2.15,0,0,0-.8-1A2.76,2.76,0,0,1,67.61,21.09Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M46.69,19.23c-.94.64-.88,1.8-1.17,2.76-.09.36-.26.68-.34,1l0,0A3.25,3.25,0,0,1,46,21.92c.67-.62,1.65-1,2-1.91,0,1.26-1.07,2.26-2.08,3a4.21,4.21,0,0,0-1,1.25c0-.32,0-.64,0-1-.11-1.1-.19-2.36.59-3.18A2.35,2.35,0,0,1,46.69,19.23Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M68.21,21.31a4.44,4.44,0,0,1,.41,4.25,7.47,7.47,0,0,0-.48,1.75c0-.1-.05-.25-.09-.36-.33-1.27-1.54-2.18-2-3.39a6.31,6.31,0,0,1-.36-1.23c.53,1,1.84,1.49,2.19,2.57a4.91,4.91,0,0,1,.23.91,0,0,0,0,0,0,0,12.39,12.39,0,0,1,0-3.38,2.79,2.79,0,0,0-.4-1.63C68,20.89,68.06,21.12,68.21,21.31Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M44.69,21c-.72,1.09-.12,2.47-.16,3.72l-.09,1.27s0,0,0,0,.05-.29.08-.44a4.77,4.77,0,0,1,1.84-2.47,2,2,0,0,0,.4-.59,5.25,5.25,0,0,1-.44,1.5c-.61,1.18-1.73,2.15-1.93,3.51-.1-1.3-1-2.27-.89-3.65A4.38,4.38,0,0,1,44.63,21S44.66,20.95,44.69,21Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M69,28.68c-.5.71-1.1,1.36-1.56,2.08a4,4,0,0,0-.1-1.81,15.68,15.68,0,0,1-.83-3.61v-.49c.29,1.3,1.57,2.2,1.49,3.65a3.2,3.2,0,0,1-.15,1l0,0,.06-.07a14.5,14.5,0,0,1,.58-2.14,5.2,5.2,0,0,0,.73-3.09A5.25,5.25,0,0,1,69,28.68Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M44.32,28.22a12,12,0,0,0,.36,1.44s0,0,0,0c-.49-1.36.21-2.63.92-3.69A3.59,3.59,0,0,0,46,25a8,8,0,0,1-.17,2c-.17.81-.43,1.59-.65,2.38a3.72,3.72,0,0,0,0,1.57l-.07-.06c-.52-1-1.54-1.69-1.84-2.74A5.8,5.8,0,0,1,43,25.43a5.06,5.06,0,0,1,.29-1C43,25.88,44,26.94,44.32,28.22Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M67,30.92a3.4,3.4,0,0,1-.58,1.72h.06a21.69,21.69,0,0,1,1.34-1.8,4.7,4.7,0,0,0,1.77-2.71,4.66,4.66,0,0,1-2.28,4.5c-.63.41-1.27.8-1.87,1.26v-.06c.93-1.54.47-3.66,1-5.35l.21-.57C66.61,29,67.07,29.86,67,30.92Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M46.71,33c.1.35.3.66.44,1-1.41-1-3.33-1.87-4-3.64a4.38,4.38,0,0,1-.24-2.05c.11,1.57,1.8,2.4,2.58,3.69a4.28,4.28,0,0,0,.59.78c0-.17-.19-.31-.25-.48a3.37,3.37,0,0,1-.31-1.85,9.32,9.32,0,0,0,.28-2.39C46.53,29.56,46.32,31.41,46.71,33Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M64.93,34.18a4.69,4.69,0,0,1-1,1.16c.12,0,.23-.11.34-.18,1-1,2.34-1.3,3.44-2.12a3.32,3.32,0,0,0,1-1.31,5.15,5.15,0,0,1-3.46,3.76c-.81.22-1.69.29-2.48.56,1.34-1.15,1.26-2.93,2.16-4.28a13.83,13.83,0,0,1,.85-1.15C65.32,31.7,65.56,33.12,64.93,34.18Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M48,32.76c.47,1.16.65,2.48,1.75,3.36-1.18-.39-2.57-.28-3.61-1a5,5,0,0,1-2.37-3.2c.79,1.78,2.76,1.93,4.08,3a3.29,3.29,0,0,0,.77.53h0a4.55,4.55,0,0,1-.87-.94c-.77-1.07-.5-2.58-1.08-3.74A8.69,8.69,0,0,1,48,32.76Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M62.07,36.22a7.28,7.28,0,0,1-1,.36,10,10,0,0,0,1.24-.18c1.56-.25,3.35,0,4.45-1.33a4.2,4.2,0,0,1-2.35,2c-1.6.6-3.2-.14-4.73-.38l-.29,0h0a4.29,4.29,0,0,0,2-.91A20.69,20.69,0,0,1,64,33.45C63.31,34.35,63.23,35.64,62.07,36.22Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M51.12,35.79a4.41,4.41,0,0,0,2.1.93c-.18.07-.43,0-.62.1-1.38.34-2.91.89-4.37.4a4.24,4.24,0,0,1-2.41-2c1.26,1.43,3.32,1,5,1.33a2.35,2.35,0,0,0,.71.09c-.2-.13-.48-.11-.7-.23-1.32-.46-1.51-1.89-2.23-2.85A20.27,20.27,0,0,1,51.12,35.79Z' }),
-	            React.createElement('path', { className: 'cls-3', d: 'M61.4,37.74a3.65,3.65,0,0,0,3.22-.35,3.83,3.83,0,0,1-1.7,1.19,4.25,4.25,0,0,1-4-.87c-.45-.28-.85-.7-1.43-.66a2,2,0,0,0-.59.06,11,11,0,0,1,3,2.08,4.49,4.49,0,0,1-.54.49,10.64,10.64,0,0,0-3-2.4,1.92,1.92,0,0,0-.61.26,9.13,9.13,0,0,0-2.43,2.17l-.57-.47a10.4,10.4,0,0,1,3-2.14c-1.08-.34-1.78.56-2.6,1A3.81,3.81,0,0,1,48,37.5a3.7,3.7,0,0,0,3.3.28c1.39-.6,2.83-1.36,4.5-1,.26,0,.52.27.76,0a5.34,5.34,0,0,1,3.72.47Z' }),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	});
-
-/***/ },
-/* 301 */
-/*!*************************************!*\
-  !*** ./src/Components/Row/row.scss ***!
-  \*************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 302 */,
-/* 303 */
-/*!******************************************************!*\
-  !*** ./src/Components/ViewerWindow/ViewerWindow.jsx ***!
-  \******************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _data = __webpack_require__(/*! json!../../data.json */ 171);
-	
-	var _data2 = _interopRequireDefault(_data);
-	
-	var _TitleBar = __webpack_require__(/*! ../TitleBar/TitleBar.jsx */ 304);
-	
-	var _TitleBar2 = _interopRequireDefault(_TitleBar);
-	
-	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 307);
-	
-	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
-	
-	__webpack_require__(/*! ./viewerWindow.scss */ 317);
-	
-	function _interopRequireDefault(obj) {
-		return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	var ViewerWindow = _react2.default.createClass({
-		displayName: "ViewerWindow",
-		render: function render() {
-			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, {
-				sdgNumber: _data2.default[this.props.sdg].sdgNumber,
-				sdgName: _data2.default[this.props.sdg].sdgName,
-				sdgColor: _data2.default[this.props.sdg].sdgColor
-			}), _react2.default.createElement(_ViewerWindowContent2.default, {
-				sdgNumber: this.props.sdg,
-				focusTarget: this.props.focusTarget,
-				selectFocusTarget: this.props.selectFocusTarget,
-				currentStory: this.props.currentStory,
-				selectStory: this.props.selectStory
-			}));
-		}
-	});
-	
-	exports.default = ViewerWindow;
-
-/***/ },
 /* 304 */
 /*!**********************************************!*\
   !*** ./src/Components/TitleBar/TitleBar.jsx ***!
@@ -26663,7 +26674,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 171);
+	var _data = __webpack_require__(/*! json!../../data.json */ 303);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -26728,7 +26739,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 171);
+	var _data = __webpack_require__(/*! json!../../data.json */ 303);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -26798,7 +26809,7 @@
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 171);
+	var _data = __webpack_require__(/*! json!../../data.json */ 303);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -26848,7 +26859,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 171);
+	var _data = __webpack_require__(/*! json!../../data.json */ 303);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -26935,7 +26946,7 @@
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 171);
+	var _data = __webpack_require__(/*! json!../../data.json */ 303);
 	
 	var _data2 = _interopRequireDefault(_data);
 	

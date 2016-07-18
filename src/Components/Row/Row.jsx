@@ -6,6 +6,7 @@ const Row = React.createClass({
 
 	icons: [],
 
+	// Gets icons according to startFrom and numberIcons props passed from SDGExplorer
 	getIcons() {
 		this.icons = [];
 		for ( let i = (this.props.startFrom); i < (this.props.numberIcons + this.props.startFrom); i++ ) {
