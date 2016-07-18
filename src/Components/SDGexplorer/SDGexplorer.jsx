@@ -1,6 +1,7 @@
 import React from "react";
 import Row from "../Row/Row.jsx";
 import ViewerWindow from "../ViewerWindow/ViewerWindow.jsx";
+import data from "!json!../../data.json";
 import "../../styles/base.scss";
 import "./sdgexplorer.scss";
 
@@ -44,6 +45,7 @@ const SDGexplorer = React.createClass({
 						key={1}
 						handler={this.selectSDG}
 						currentSdg={this.state.currentSdg}
+						data={data}
 					/>
 					<ViewerWindow
 						sdg={this.state.currentSdg}
@@ -51,6 +53,7 @@ const SDGexplorer = React.createClass({
 						selectFocusTarget={this.selectFocusTarget}
 						currentStory={this.state.currentStory}
 						selectStory={this.selectStory}
+						data={data}
 					/>
 					<Row
 						startFrom={12}
@@ -58,6 +61,7 @@ const SDGexplorer = React.createClass({
 						key={2}
 						handler={this.selectSDG}
 						currentSdg={this.state.currentSdg}
+						data={data}
 					/>
 				</div>
 			</div>

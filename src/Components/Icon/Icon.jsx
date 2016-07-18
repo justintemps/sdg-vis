@@ -1,5 +1,4 @@
 import React from "react";
-import data from "!json!../../data.json";
 import "./icon.scss";
 
 import Sdg1 from "!babel!svg-react!../../images/sdg1.svg";

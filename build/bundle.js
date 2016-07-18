@@ -20217,6 +20217,10 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
+	var _data = __webpack_require__(/*! json!../../data.json */ 171);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
 	__webpack_require__(/*! ../../styles/base.scss */ 319);
 	
 	__webpack_require__(/*! ./sdgexplorer.scss */ 321);
@@ -20257,19 +20261,22 @@
 				numberIcons: 12,
 				key: 1,
 				handler: this.selectSDG,
-				currentSdg: this.state.currentSdg
+				currentSdg: this.state.currentSdg,
+				data: _data2.default
 			}), _react2.default.createElement(_ViewerWindow2.default, {
 				sdg: this.state.currentSdg,
 				focusTarget: this.state.focusTarget,
 				selectFocusTarget: this.selectFocusTarget,
 				currentStory: this.state.currentStory,
-				selectStory: this.selectStory
+				selectStory: this.selectStory,
+				data: _data2.default
 			}), _react2.default.createElement(_Row2.default, {
 				startFrom: 12,
 				numberIcons: 6,
 				key: 2,
 				handler: this.selectSDG,
-				currentSdg: this.state.currentSdg
+				currentSdg: this.state.currentSdg,
+				data: _data2.default
 			})));
 		}
 	});
@@ -20293,10 +20300,6 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 171);
-	
-	var _data2 = _interopRequireDefault(_data);
-	
 	var _Icon = __webpack_require__(/*! ../Icon/Icon.jsx */ 172);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
@@ -20309,19 +20312,26 @@
 	
 	var Row = _react2.default.createClass({
 		displayName: "Row",
-		render: function render() {
-			var icons = [];
+	
+		icons: [],
+	
+		getIcons: function getIcons() {
+			this.icons = [];
 			for (var i = this.props.startFrom; i < this.props.numberIcons + this.props.startFrom; i++) {
-				icons.push(_react2.default.createElement(_Icon2.default, {
-					sdg: _data2.default[i].sdgNumber,
+				this.icons.push(_react2.default.createElement(_Icon2.default, {
+					sdg: this.props.data[i].sdgNumber,
 					key: i,
-					src: _data2.default[i].sdgIcon,
-					color: _data2.default[i].sdgColor,
+					src: this.props.data[i].sdgIcon,
+					color: this.props.data[i].sdgColor,
 					handler: this.props.handler,
-					currentSdg: this.props.currentSdg
+					currentSdg: this.props.currentSdg,
+					data: this.props.data
 				}));
 			}
-			return _react2.default.createElement("div", { className: "row" }, icons);
+		},
+		render: function render() {
+			this.getIcons();
+			return _react2.default.createElement("div", { className: "row" }, this.icons);
 		}
 	});
 	
@@ -21155,10 +21165,6 @@
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
-	
-	var _data = __webpack_require__(/*! json!../../data.json */ 171);
-	
-	var _data2 = _interopRequireDefault(_data);
 	
 	__webpack_require__(/*! ./icon.scss */ 173);
 	
