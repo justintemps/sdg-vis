@@ -24,6 +24,11 @@
 	right: 8px;
 }
 
+.dropCap {
+	@extend .sdgNumber;
+	color: #fff;
+}
+
 .viewerWindow > div:first-child {
 	margin: 0;
 	padding: 0;
@@ -55,7 +60,13 @@
 
 .decentWork {
 	@extend .sdgName;
+	color: #fff;
 	font-size: 4.8em;
 	margin: 0 0 0 3px;
 	text-decoration: underline;
+}
+
+.sdgBlurb {
+	@extend .sdgName;
+	color: #fff;
 }

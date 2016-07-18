@@ -256,7 +256,7 @@
   text-align: left;
   width: 100%; }
 
-.sdgNumber {
+.sdgNumber, .dropCap {
   align-self: center;
   font-family: "GiorgioSans-Bold", "Source Sans Pro", sans-serif;
   font-size: 8.5em;
@@ -267,6 +267,9 @@
   margin: 0 0px 0 2px;
   position: relative;
   right: 8px; }
+
+.dropCap {
+  color: #fff; }
 
 .viewerWindow > div:first-child {
   margin: 0;
@@ -283,7 +286,7 @@
   height: 0;
   width: 0; }
 
-.sdgName, .decentWork {
+.sdgName, .decentWork, .sdgBlurb {
   bottom: 5px;
   display: inline;
   font-size: 2.2em;
@@ -295,9 +298,13 @@
   width: 90%; }
 
 .decentWork {
+  color: #fff;
   font-size: 4.8em;
   margin: 0 0 0 3px;
   text-decoration: underline; }
+
+.sdgBlurb {
+  color: #fff; }
 /* -- Bullets -- */
 .bullets {
   margin: 0;

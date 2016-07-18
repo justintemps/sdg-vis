@@ -45,13 +45,13 @@ const TitleBar = React.createClass({
 			return(
 				<div>
 					<div className="titleBar" style={color}>
-						<div className="sdgNumber">
+						<div className="dropCap">
 							D
 						</div>
 						<div className="decentWork">
 							ECENT WORK
 						</div>
-						<div className="sdgName">
+						<div className="sdgBlurb">
 							{this.props.sdgName}
 						</div>
 					</div>
