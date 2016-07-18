@@ -1,7 +1,7 @@
 [{
 	"sdgNumber": 0,
 	"sdgName": "and the 2030 Agenda for Sustainable Development",
-	"sdgIcon": "./src/images/sdg18.svg",
+	"sdgIcon": "./src/images/sdg0.svg",
 	"sdgColor": "#37468E",
 	"focusTargets": [{
 			"number": "1.1",
