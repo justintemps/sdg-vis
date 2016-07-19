@@ -1,6 +1,5 @@
 import React from "react";
 import Bullet from "../Bullet/Bullet.jsx";
-import data from "!json!../../data.json";
 import "./impactStories.scss";
 
 const ImpactStories = React.createClass({
@@ -15,11 +14,12 @@ const ImpactStories = React.createClass({
 					currentStory={this.props.currentStory}
 					selectStory={this.props.selectStory}
 					currentSDG = {this.props.currentSDG}
+					data={this.props.data}
 				/>
 			);
 		});
 
-		const style = {color: data[this.props.currentSDG].sdgColor};
+		const style = {color: this.props.data[this.props.currentSDG].sdgColor};
 
 		return(
 			<div className="impactStories">

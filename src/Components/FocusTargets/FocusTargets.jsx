@@ -1,25 +1,28 @@
+/**
+ * FocusTarets
+ * Parent to Bullet
+ */
+
 import React from "react";
 import Bullet from "../Bullet/Bullet.jsx";
-import data from "!json!../../data.json";
 import "./focusTargets.scss";
 
 const FocusTargets = React.createClass({
 
 	render() {
 
-		const bullets = this.props.focusTargets.map( (target, i) => {
-			return (
+		const bullets = this.props.focusTargets.map( (target, i) =>
 				<Bullet type="focusTarget"
 					key={i}
 					id={i}
 					focusTarget={this.props.focusTarget}
 					selectFocusTarget={this.props.selectFocusTarget}
 					currentSDG = {this.props.currentSDG}
+					data = {this.props.data}
 				/>
-			);
-		});
+		);
 
-		const style = {color: data[this.props.currentSDG].sdgColor};
+		const style = {color: this.props.data[this.props.currentSDG].sdgColor};
 
 		return (
 			<div className="focusTargets">

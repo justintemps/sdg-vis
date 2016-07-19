@@ -1,18 +1,20 @@
+/**
+ * ViewerWindowContent
+ * Parent to FocusTargets, ImpactStories
+ */
+
 import React from "react";
-import data from "!json!../../data.json";
 import FocusTargets from "../FocusTargets/FocusTargets.jsx";
 import ImpactStories from "../ImpactStories/ImpactStories.jsx";
 
 const ViewerWindowContent = React.createClass({
 	render() {
 
-		const focusTargets = data[this.props.sdgNumber].focusTargets.map( (target) => {
-			return (
+		const focusTargets = this.props.data[this.props.sdgNumber].focusTargets.map( target =>
 				target.description
-			);
-		});
+		);
 
-		const impactStories = data[this.props.sdgNumber].stories.map( (story) => {
+		const impactStories = this.props.data[this.props.sdgNumber].stories.map( story => {
 			return (
 			{
 				title : story.title,
@@ -29,12 +31,14 @@ const ViewerWindowContent = React.createClass({
 					focusTarget={this.props.focusTarget}
 					selectFocusTarget={this.props.selectFocusTarget}
 					currentSDG = {this.props.sdgNumber}
+					data = {this.props.data}
 				/>
 				<ImpactStories
 					impactStories={impactStories}
 					currentStory={this.props.currentStory}
 					selectStory={this.props.selectStory}
 					currentSDG = {this.props.sdgNumber}
+					data = {this.props.data}
 				/>
 			</div>
 		);

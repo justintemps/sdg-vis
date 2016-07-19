@@ -1,5 +1,9 @@
+/**
+ * Bullet
+ * Child to FocusTargets / ImpactStories
+ */
+
 import React from "react";
-import data from "!json!../../data.json";
 import "./bullet.scss";
 
 const Bullet = React.createClass({
@@ -15,8 +19,8 @@ const Bullet = React.createClass({
 	render() {
 		let isSelected = false;
 
-		const selected = {color: data[this.props.currentSDG].sdgColor, opacity: 1};
-		const unselected = {color: data[this.props.currentSDG].sdgColor};
+		const selected = {color: this.props.data[this.props.currentSDG].sdgColor, opacity: 1};
+		const unselected = {color: this.props.data[this.props.currentSDG].sdgColor};
 
 		if (this.props.type === "focusTarget") {
 			if (this.props.id === this.props.focusTarget) {
