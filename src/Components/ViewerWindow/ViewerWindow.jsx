@@ -9,12 +9,12 @@ const ViewerWindow = React.createClass({
 		return(
 			<div className="viewerWindow">
 				<TitleBar
-					sdgNumber={this.props.data[this.props.sdg].sdgNumber}
-					sdgName={this.props.data[this.props.sdg].sdgName}
-					sdgColor= {this.props.data[this.props.sdg].sdgColor}
+					sdgNumber={this.props.data[this.props.currentSdg].sdgNumber}
+					sdgName={this.props.data[this.props.currentSdg].sdgName}
+					sdgColor= {this.props.data[this.props.currentSdg].sdgColor}
 				/>
 				<ViewerWindowContent
-					sdgNumber={this.props.sdg}
+					sdgNumber={this.props.currentSdg}
 					focusTarget={this.props.focusTarget}
 					selectFocusTarget={this.props.selectFocusTarget}
 					currentStory={this.props.currentStory}

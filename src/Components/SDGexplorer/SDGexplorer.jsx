@@ -1,3 +1,9 @@
+/**
+ * SDGExplorer
+ * Parent to Row, ViewerWindow
+ * Owns state for the whole app
+ */
+
 import React from "react";
 import Row from "../Row/Row.jsx";
 import ViewerWindow from "../ViewerWindow/ViewerWindow.jsx";
@@ -15,6 +21,7 @@ const SDGexplorer = React.createClass({
 		});
 	},
 
+	// Selecting a new SDG will reset the current focus target and story
 	selectSDG(sdg) {
 		this.setState({
 			currentSdg: sdg,
@@ -48,7 +55,7 @@ const SDGexplorer = React.createClass({
 						data={data}
 					/>
 					<ViewerWindow
-						sdg={this.state.currentSdg}
+						currentSdg={this.state.currentSdg}
 						focusTarget={this.state.focusTarget}
 						selectFocusTarget={this.selectFocusTarget}
 						currentStory={this.state.currentStory}

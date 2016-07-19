@@ -20229,6 +20229,12 @@
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
+	/**
+	 * SDGExplorer
+	 * Parent to Row, ViewerWindow
+	 * Owns state for the whole app
+	 */
+	
 	var SDGexplorer = _react2.default.createClass({
 		displayName: "SDGexplorer",
 		getInitialState: function getInitialState() {
@@ -20238,6 +20244,8 @@
 				currentStory: 0
 			};
 		},
+	
+		// Selecting a new SDG will reset the current focus target and story
 		selectSDG: function selectSDG(sdg) {
 			this.setState({
 				currentSdg: sdg,
@@ -20264,7 +20272,7 @@
 				currentSdg: this.state.currentSdg,
 				data: _data2.default
 			}), _react2.default.createElement(_ViewerWindow2.default, {
-				sdg: this.state.currentSdg,
+				currentSdg: this.state.currentSdg,
 				focusTarget: this.state.focusTarget,
 				selectFocusTarget: this.selectFocusTarget,
 				currentStory: this.state.currentStory,
@@ -25774,11 +25782,11 @@
 		displayName: "ViewerWindow",
 		render: function render() {
 			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, {
-				sdgNumber: this.props.data[this.props.sdg].sdgNumber,
-				sdgName: this.props.data[this.props.sdg].sdgName,
-				sdgColor: this.props.data[this.props.sdg].sdgColor
+				sdgNumber: this.props.data[this.props.currentSdg].sdgNumber,
+				sdgName: this.props.data[this.props.currentSdg].sdgName,
+				sdgColor: this.props.data[this.props.currentSdg].sdgColor
 			}), _react2.default.createElement(_ViewerWindowContent2.default, {
-				sdgNumber: this.props.sdg,
+				sdgNumber: this.props.currentSdg,
 				focusTarget: this.props.focusTarget,
 				selectFocusTarget: this.props.selectFocusTarget,
 				currentStory: this.props.currentStory,
