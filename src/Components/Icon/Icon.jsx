@@ -1,7 +1,12 @@
+/**
+ * Icons
+ * Child to Row
+ */
+
 import React from "react";
 import "./icon.scss";
 
-// Load SVGs with Webpack
+// Load SVGs with Webpack svg-react-loader
 import Sdg1 from "!babel!svg-react!../../images/sdg1.svg";
 import Sdg2 from "!babel!svg-react!../../images/sdg2.svg";
 import Sdg3 from "!babel!svg-react!../../images/sdg3.svg";
@@ -32,10 +37,13 @@ const Icon = React.createClass({
 	},
 
 	render() {
+
+		// Creates new React Elements from imported SVGs
 		const sdgs = icons.map( (svg, i) => React.createElement(svg, {
 			className: "sdg"+ i,
 			opacity: (this.props.sdg === this.props.currentSdg ? 1 : 0.3)
 		}));
+
 		return(
 			<div className="icon" onClick={this.clickHandler}>
 				{sdgs[this.props.sdg]}

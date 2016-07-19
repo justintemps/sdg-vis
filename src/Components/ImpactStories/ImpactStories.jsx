@@ -1,3 +1,9 @@
+/**
+ * ImpactStories
+ * Child to ViewerWindowContent
+ * Parent to Bullet
+ */
+
 import React from "react";
 import Bullet from "../Bullet/Bullet.jsx";
 import "./impactStories.scss";

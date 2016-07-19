@@ -1,5 +1,5 @@
 /**
- * FocusTarets
+ * FocusTargets
  * Parent to Bullet
  */
 

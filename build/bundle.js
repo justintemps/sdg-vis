@@ -20217,7 +20217,7 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 304);
+	var _data = __webpack_require__(/*! json!../../data.json */ 318);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -20441,7 +20441,11 @@
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	// Load SVGs with Webpack
+	// Load SVGs with Webpack svg-react-loader
+	/**
+	 * Icons
+	 * Child to Row
+	 */
 	
 	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default];
 	
@@ -20453,12 +20457,14 @@
 		render: function render() {
 			var _this = this;
 	
+			// Creates new React Elements from imported SVGs
 			var sdgs = icons.map(function (svg, i) {
 				return _react2.default.createElement(svg, {
 					className: "sdg" + i,
 					opacity: _this.props.sdg === _this.props.currentSdg ? 1 : 0.3
 				});
 			});
+	
 			return _react2.default.createElement("div", { className: "icon", onClick: this.clickHandler }, sdgs[this.props.sdg]);
 		}
 	});
@@ -25768,11 +25774,11 @@
 	
 	var _TitleBar2 = _interopRequireDefault(_TitleBar);
 	
-	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 307);
+	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 306);
 	
 	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
 	
-	__webpack_require__(/*! ./viewerWindow.scss */ 317);
+	__webpack_require__(/*! ./viewerWindow.scss */ 316);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -25820,11 +25826,16 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(/*! ./titleBar.scss */ 305);
+	__webpack_require__(/*! ./titleBar.scss */ 304);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
+	
+	/**
+	 * TitleBar
+	 * Child of ViewerWindow
+	 */
 	
 	var TitleBar = _react2.default.createClass({
 		displayName: "TitleBar",
@@ -25865,6 +25876,301 @@
 
 /***/ },
 /* 304 */
+/*!***********************************************!*\
+  !*** ./src/Components/TitleBar/titleBar.scss ***!
+  \***********************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 305 */,
+/* 306 */
+/*!********************************************************************!*\
+  !*** ./src/Components/ViewerWindowContent/ViewerWindowContent.jsx ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 307);
+	
+	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
+	
+	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 313);
+	
+	var _ImpactStories2 = _interopRequireDefault(_ImpactStories);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var ViewerWindowContent = _react2.default.createClass({
+		displayName: "ViewerWindowContent",
+		render: function render() {
+	
+			var focusTargets = this.props.data[this.props.sdgNumber].focusTargets.map(function (target) {
+				return target.description;
+			});
+	
+			var impactStories = this.props.data[this.props.sdgNumber].stories.map(function (story) {
+				return {
+					title: story.title,
+					blurb: story.blurb,
+					url: story.url,
+					imageUrl: story.imageUrl
+				};
+			});
+	
+			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, {
+				focusTargets: focusTargets,
+				focusTarget: this.props.focusTarget,
+				selectFocusTarget: this.props.selectFocusTarget,
+				currentSDG: this.props.sdgNumber,
+				data: this.props.data
+			}), _react2.default.createElement(_ImpactStories2.default, {
+				impactStories: impactStories,
+				currentStory: this.props.currentStory,
+				selectStory: this.props.selectStory,
+				currentSDG: this.props.sdgNumber,
+				data: this.props.data
+			}));
+		}
+	}); /**
+	     * ViewerWindowContent
+	     * Parent to FocusTargets, ImpactStories
+	     */
+	
+	exports.default = ViewerWindowContent;
+
+/***/ },
+/* 307 */
+/*!******************************************************!*\
+  !*** ./src/Components/FocusTargets/FocusTargets.jsx ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 308);
+	
+	var _Bullet2 = _interopRequireDefault(_Bullet);
+	
+	__webpack_require__(/*! ./focusTargets.scss */ 311);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var FocusTargets = _react2.default.createClass({
+		displayName: "FocusTargets",
+		render: function render() {
+			var _this = this;
+	
+			var bullets = this.props.focusTargets.map(function (target, i) {
+				return _react2.default.createElement(_Bullet2.default, { type: "focusTarget",
+					key: i,
+					id: i,
+					focusTarget: _this.props.focusTarget,
+					selectFocusTarget: _this.props.selectFocusTarget,
+					currentSDG: _this.props.currentSDG,
+					data: _this.props.data
+				});
+			});
+	
+			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
+	
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "Focus Targets"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget]));
+		}
+	}); /**
+	     * FocusTargets
+	     * Parent to Bullet
+	     */
+	
+	exports.default = FocusTargets;
+
+/***/ },
+/* 308 */
+/*!******************************************!*\
+  !*** ./src/Components/Bullet/Bullet.jsx ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(/*! ./bullet.scss */ 309);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	/**
+	 * Bullet
+	 * Child to FocusTargets / ImpactStories
+	 */
+	
+	var Bullet = _react2.default.createClass({
+		displayName: "Bullet",
+	
+		// Handler from SDGExplorer
+		selectFocusTarget: function selectFocusTarget() {
+			this.props.selectFocusTarget(this.props.id);
+		},
+	
+		// Handler from SDGExplorer
+		selectStory: function selectStory() {
+			this.props.selectStory(this.props.id);
+		},
+		render: function render() {
+			var isSelected = false;
+	
+			// Styles to apply if the bullet has been selected or not
+			var selected = { color: this.props.data[this.props.currentSDG].sdgColor, opacity: 1 };
+			var unselected = { color: this.props.data[this.props.currentSDG].sdgColor };
+	
+			// Determines if FocusTarget bullets are selected
+			if (this.props.type === "focusTarget") {
+				if (this.props.id === this.props.focusTarget) {
+					isSelected = true;
+				}
+	
+				// Determines if ImpactStories bullets are selected
+			} else {
+				if (this.props.id === this.props.currentStory) {
+					isSelected = true;
+				}
+			}
+	
+			return _react2.default.createElement("li", { className: "bullet",
+				style: isSelected ? selected : unselected,
+				onClick: this.props.type === "focusTarget" ? this.selectFocusTarget : this.selectStory });
+		}
+	});
+	
+	exports.default = Bullet;
+
+/***/ },
+/* 309 */
+/*!*******************************************!*\
+  !*** ./src/Components/Bullet/bullet.scss ***!
+  \*******************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 310 */,
+/* 311 */
+/*!*******************************************************!*\
+  !*** ./src/Components/FocusTargets/focusTargets.scss ***!
+  \*******************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 312 */,
+/* 313 */
+/*!********************************************************!*\
+  !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
+  \********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 308);
+	
+	var _Bullet2 = _interopRequireDefault(_Bullet);
+	
+	__webpack_require__(/*! ./impactStories.scss */ 314);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var ImpactStories = _react2.default.createClass({
+		displayName: "ImpactStories",
+		render: function render() {
+			var _this = this;
+	
+			var bullets = this.props.impactStories.map(function (target, i) {
+				return _react2.default.createElement(_Bullet2.default, {
+					type: "impactStory",
+					key: i,
+					id: i,
+					currentStory: _this.props.currentStory,
+					selectStory: _this.props.selectStory,
+					currentSDG: _this.props.currentSDG,
+					data: _this.props.data
+				});
+			});
+	
+			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
+	
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "Impact Stories"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
+		}
+	}); /**
+	     * ImpactStories
+	     * Child to ViewerWindowContent
+	     * Parent to Bullet
+	     */
+	
+	exports.default = ImpactStories;
+
+/***/ },
+/* 314 */
+/*!*********************************************************!*\
+  !*** ./src/Components/ImpactStories/impactStories.scss ***!
+  \*********************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 315 */,
+/* 316 */
+/*!*******************************************************!*\
+  !*** ./src/Components/ViewerWindow/viewerWindow.scss ***!
+  \*******************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 317 */,
+/* 318 */
 /*!***************************************!*\
   !*** ./~/json-loader!./src/data.json ***!
   \***************************************/
@@ -26676,289 +26982,6 @@
 	];
 
 /***/ },
-/* 305 */
-/*!***********************************************!*\
-  !*** ./src/Components/TitleBar/titleBar.scss ***!
-  \***********************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 306 */,
-/* 307 */
-/*!********************************************************************!*\
-  !*** ./src/Components/ViewerWindowContent/ViewerWindowContent.jsx ***!
-  \********************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 308);
-	
-	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
-	
-	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 314);
-	
-	var _ImpactStories2 = _interopRequireDefault(_ImpactStories);
-	
-	function _interopRequireDefault(obj) {
-		return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	var ViewerWindowContent = _react2.default.createClass({
-		displayName: "ViewerWindowContent",
-		render: function render() {
-	
-			var focusTargets = this.props.data[this.props.sdgNumber].focusTargets.map(function (target) {
-				return target.description;
-			});
-	
-			var impactStories = this.props.data[this.props.sdgNumber].stories.map(function (story) {
-				return {
-					title: story.title,
-					blurb: story.blurb,
-					url: story.url,
-					imageUrl: story.imageUrl
-				};
-			});
-	
-			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, {
-				focusTargets: focusTargets,
-				focusTarget: this.props.focusTarget,
-				selectFocusTarget: this.props.selectFocusTarget,
-				currentSDG: this.props.sdgNumber,
-				data: this.props.data
-			}), _react2.default.createElement(_ImpactStories2.default, {
-				impactStories: impactStories,
-				currentStory: this.props.currentStory,
-				selectStory: this.props.selectStory,
-				currentSDG: this.props.sdgNumber,
-				data: this.props.data
-			}));
-		}
-	}); /**
-	     * ViewerWindowContent
-	     * Parent to FocusTargets, ImpactStories
-	     */
-	
-	exports.default = ViewerWindowContent;
-
-/***/ },
-/* 308 */
-/*!******************************************************!*\
-  !*** ./src/Components/FocusTargets/FocusTargets.jsx ***!
-  \******************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 309);
-	
-	var _Bullet2 = _interopRequireDefault(_Bullet);
-	
-	__webpack_require__(/*! ./focusTargets.scss */ 312);
-	
-	function _interopRequireDefault(obj) {
-		return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	var FocusTargets = _react2.default.createClass({
-		displayName: "FocusTargets",
-		render: function render() {
-			var _this = this;
-	
-			var bullets = this.props.focusTargets.map(function (target, i) {
-				return _react2.default.createElement(_Bullet2.default, { type: "focusTarget",
-					key: i,
-					id: i,
-					focusTarget: _this.props.focusTarget,
-					selectFocusTarget: _this.props.selectFocusTarget,
-					currentSDG: _this.props.currentSDG,
-					data: _this.props.data
-				});
-			});
-	
-			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
-	
-			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "Focus Targets"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget]));
-		}
-	}); /**
-	     * FocusTarets
-	     * Parent to Bullet
-	     */
-	
-	exports.default = FocusTargets;
-
-/***/ },
-/* 309 */
-/*!******************************************!*\
-  !*** ./src/Components/Bullet/Bullet.jsx ***!
-  \******************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	__webpack_require__(/*! ./bullet.scss */ 310);
-	
-	function _interopRequireDefault(obj) {
-		return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	/**
-	 * Bullet
-	 * Child to FocusTargets / ImpactStories
-	 */
-	
-	var Bullet = _react2.default.createClass({
-		displayName: "Bullet",
-		selectFocusTarget: function selectFocusTarget() {
-			this.props.selectFocusTarget(this.props.id);
-		},
-		selectStory: function selectStory() {
-			this.props.selectStory(this.props.id);
-		},
-		render: function render() {
-			var isSelected = false;
-	
-			var selected = { color: this.props.data[this.props.currentSDG].sdgColor, opacity: 1 };
-			var unselected = { color: this.props.data[this.props.currentSDG].sdgColor };
-	
-			if (this.props.type === "focusTarget") {
-				if (this.props.id === this.props.focusTarget) {
-					isSelected = true;
-				}
-			} else {
-				if (this.props.id === this.props.currentStory) {
-					isSelected = true;
-				}
-			}
-	
-			return _react2.default.createElement("li", { className: "bullet",
-				style: isSelected ? selected : unselected,
-				onClick: this.props.type === "focusTarget" ? this.selectFocusTarget : this.selectStory });
-		}
-	});
-	
-	exports.default = Bullet;
-
-/***/ },
-/* 310 */
-/*!*******************************************!*\
-  !*** ./src/Components/Bullet/bullet.scss ***!
-  \*******************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 311 */,
-/* 312 */
-/*!*******************************************************!*\
-  !*** ./src/Components/FocusTargets/focusTargets.scss ***!
-  \*******************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 313 */,
-/* 314 */
-/*!********************************************************!*\
-  !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
-  \********************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 309);
-	
-	var _Bullet2 = _interopRequireDefault(_Bullet);
-	
-	__webpack_require__(/*! ./impactStories.scss */ 315);
-	
-	function _interopRequireDefault(obj) {
-		return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	var ImpactStories = _react2.default.createClass({
-		displayName: "ImpactStories",
-		render: function render() {
-			var _this = this;
-	
-			var bullets = this.props.impactStories.map(function (target, i) {
-				return _react2.default.createElement(_Bullet2.default, {
-					type: "impactStory",
-					key: i,
-					id: i,
-					currentStory: _this.props.currentStory,
-					selectStory: _this.props.selectStory,
-					currentSDG: _this.props.currentSDG,
-					data: _this.props.data
-				});
-			});
-	
-			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
-	
-			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "Impact Stories"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
-		}
-	});
-	
-	exports.default = ImpactStories;
-
-/***/ },
-/* 315 */
-/*!*********************************************************!*\
-  !*** ./src/Components/ImpactStories/impactStories.scss ***!
-  \*********************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 316 */,
-/* 317 */
-/*!*******************************************************!*\
-  !*** ./src/Components/ViewerWindow/viewerWindow.scss ***!
-  \*******************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 318 */,
 /* 319 */
 /*!******************************!*\
   !*** ./src/styles/base.scss ***!

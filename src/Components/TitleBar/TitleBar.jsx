@@ -1,3 +1,8 @@
+/**
+ * TitleBar
+ * Child of ViewerWindow
+ */
+
 import React from "react";
 import "./titleBar.scss";
 
