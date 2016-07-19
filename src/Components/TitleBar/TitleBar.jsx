@@ -7,6 +7,7 @@ const TitleBar = React.createClass({
 	render() {
 
 		const color = {
+			// Get titlebar color from data model, unless it's the intro screen
 			backgroundColor : (this.props.sdgNumber > 0) ? this.props.sdgColor : "#f1f1f1",
 			transition: "background-color 0.2s ease"
 		};
@@ -14,6 +15,7 @@ const TitleBar = React.createClass({
 		const triangle = {
 			borderLeft: "20px solid transparent",
 			borderRight: "20px solid transparent",
+			// Get triangle color from data model, unless it's the intro screen
 			borderTop: (this.props.sdgNumber > 0) ? `20px solid ${this.props.sdgColor}` : "20px solid #f1f1f1",
 			content: "",
 			display: "block",
