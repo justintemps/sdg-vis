@@ -20217,13 +20217,13 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 318);
+	var _data = __webpack_require__(/*! json!../../data.json */ 321);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	__webpack_require__(/*! ../../styles/base.scss */ 319);
+	__webpack_require__(/*! ../../styles/base.scss */ 322);
 	
-	__webpack_require__(/*! ./sdgexplorer.scss */ 321);
+	__webpack_require__(/*! ./sdgexplorer.scss */ 324);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -25778,34 +25778,46 @@
 	
 	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
 	
-	__webpack_require__(/*! ./viewerWindow.scss */ 316);
+	var _IntroWindow = __webpack_require__(/*! ../IntroWindow/IntroWindow.jsx */ 316);
+	
+	var _IntroWindow2 = _interopRequireDefault(_IntroWindow);
+	
+	__webpack_require__(/*! ./viewerWindow.scss */ 319);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	/**
-	 * ViewerWindow
-	 * Parent to TitleBar, ViewerWindowContent
-	 */
-	
 	var ViewerWindow = _react2.default.createClass({
 		displayName: "ViewerWindow",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "viewerWindow" }, _react2.default.createElement(_TitleBar2.default, {
+	
+			var titleBar = _react2.default.createElement(_TitleBar2.default, {
 				sdgNumber: this.props.data[this.props.currentSdg].sdgNumber,
 				sdgName: this.props.data[this.props.currentSdg].sdgName,
 				sdgColor: this.props.data[this.props.currentSdg].sdgColor
-			}), _react2.default.createElement(_ViewerWindowContent2.default, {
-				sdgNumber: this.props.currentSdg,
-				focusTarget: this.props.focusTarget,
-				selectFocusTarget: this.props.selectFocusTarget,
-				currentStory: this.props.currentStory,
-				selectStory: this.props.selectStory,
-				data: this.props.data
-			}));
+			});
+	
+			// If the currentSDG is not the Intro, render the viewerwindow like this
+			if (this.props.currentSdg !== 0) {
+				return _react2.default.createElement("div", { className: "viewerWindow" }, titleBar, _react2.default.createElement(_ViewerWindowContent2.default, {
+					sdgNumber: this.props.currentSdg,
+					focusTarget: this.props.focusTarget,
+					selectFocusTarget: this.props.selectFocusTarget,
+					currentStory: this.props.currentStory,
+					selectStory: this.props.selectStory,
+					data: this.props.data
+				}));
+	
+				// Default: if the currentSDG is the Intro, render the viewerwindow like this.
+			} else {
+				return _react2.default.createElement("div", { className: "viewerWindow" }, titleBar, _react2.default.createElement(_IntroWindow2.default, null));
+			}
 		}
-	});
+	}); /**
+	     * ViewerWindow
+	     * Parent to TitleBar, ViewerWindowContent
+	     */
 	
 	exports.default = ViewerWindow;
 
@@ -26161,6 +26173,53 @@
 /***/ },
 /* 315 */,
 /* 316 */
+/*!****************************************************!*\
+  !*** ./src/Components/IntroWindow/IntroWindow.jsx ***!
+  \****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(/*! ./introWindow.scss */ 317);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	/**
+	 * IntrowWindow
+	 * Child of ViewerWindow
+	 */
+	
+	var IntroWindow = _react2.default.createClass({
+		displayName: "IntroWindow",
+		render: function render() {
+			return _react2.default.createElement("div", { className: "introWindow" }, _react2.default.createElement("p", null, "The 2030 Agenda for Sustainable Development places decent work for all at the heart of policies for sustainable and inclusive growth and development."), _react2.default.createElement("h3", null, "How it works"), _react2.default.createElement("p", null, " Select a goal and learn how Decent Work is helping to achieve each of the Sustainable Development Goals"), _react2.default.createElement("ul", null, _react2.default.createElement("li", null, "Find out which targets of the 2030 fall under ILO's mandate"), _react2.default.createElement("li", null, "Browsethrough dozens of stories that show how ILO is working to reach the SDGs")));
+		}
+	});
+	
+	exports.default = IntroWindow;
+
+/***/ },
+/* 317 */
+/*!*****************************************************!*\
+  !*** ./src/Components/IntroWindow/introWindow.scss ***!
+  \*****************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 318 */,
+/* 319 */
 /*!*******************************************************!*\
   !*** ./src/Components/ViewerWindow/viewerWindow.scss ***!
   \*******************************************************/
@@ -26169,8 +26228,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 317 */,
-/* 318 */
+/* 320 */,
+/* 321 */
 /*!***************************************!*\
   !*** ./~/json-loader!./src/data.json ***!
   \***************************************/
@@ -26181,53 +26240,7 @@
 			"sdgNumber": 0,
 			"sdgName": "and the 2030 Agenda for Sustainable Development",
 			"sdgIcon": "./src/images/sdg0.svg",
-			"sdgColor": "#29abe2",
-			"focusTargets": [
-				{
-					"number": "1.1",
-					"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
-				},
-				{
-					"number": "1.2",
-					"description": "By 2030, reduce at least by half the proportion of men, women and children living in poverty in all its dimensions according to national definitions"
-				},
-				{
-					"number": "1.3",
-					"description": "Implement nationally appropriate social protection systems"
-				},
-				{
-					"number": "1.5",
-					"description": "Ensure that all men and women, have equal rights to economic resources, including microfinance"
-				},
-				{
-					"number": "1.5",
-					"description": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
-				},
-				{
-					"number": "1.b",
-					"description": "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
-				}
-			],
-			"stories": [
-				{
-					"title": "Breaking the cycle of poverty in Tunisia",
-					"blurb": "Cooperation between government and social partners, and effective collective bargaining, can promote a more equitable distribution of a country's wealth and income.",
-					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/features/tunisia/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_481717.jpg"
-				},
-				{
-					"title": "Working out of poverty in Timor-Leste",
-					"blurb": "ILO’s Business Opportunities and Support Services (BOSS) project helped local communities to improve farming practices, develop market access, create jobs and develop small and medium-sized enterprises.",
-					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_493379.jpg"
-				},
-				{
-					"title": "How Zambia is greening its way out of poverty",
-					"blurb": "The Zambia Green Jobs Programme promotes the development of sustainable enterprises by boosting competitiveness and business growth thanks to green technologies.",
-					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/features/zambia/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---ed_emp/---gjp/documents/image/wcms_492376.jpg"
-				}
-			]
+			"sdgColor": "#29abe2"
 		},
 		{
 			"sdgNumber": 1,
@@ -26982,7 +26995,7 @@
 	];
 
 /***/ },
-/* 319 */
+/* 322 */
 /*!******************************!*\
   !*** ./src/styles/base.scss ***!
   \******************************/
@@ -26991,8 +27004,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 320 */,
-/* 321 */
+/* 323 */,
+/* 324 */
 /*!*****************************************************!*\
   !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
   \*****************************************************/
