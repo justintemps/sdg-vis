@@ -25863,14 +25863,14 @@
 		render: function render() {
 	
 			var color = {
-				backgroundColor: this.props.sdgColor,
+				backgroundColor: this.props.sdgNumber > 0 ? this.props.sdgColor : "#f1f1f1",
 				transition: "background-color 0.2s ease"
 			};
 	
 			var triangle = {
 				borderLeft: "20px solid transparent",
 				borderRight: "20px solid transparent",
-				borderTop: "20px solid " + this.props.sdgColor,
+				borderTop: this.props.sdgNumber > 0 ? "20px solid " + this.props.sdgColor : "20px solid #f1f1f1",
 				content: "",
 				display: "block",
 				margin: "2px 0",
@@ -25886,7 +25886,7 @@
 	
 				// Titlebar to display for the Intro Screen
 			} else {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "dropCap" }, "D"), _react2.default.createElement("div", { className: "decentWork" }, "ECENT WORK"), _react2.default.createElement("div", { className: "sdgBlurb" }, this.props.sdgName)), _react2.default.createElement("div", { style: triangle }));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "dropCap" }, "d"), _react2.default.createElement("div", { className: "decentWork" }, "ecent work"), _react2.default.createElement("div", { className: "sdgBlurb" }, this.props.sdgName)), _react2.default.createElement("div", { style: triangle }));
 			}
 		}
 	});
@@ -25905,7 +25905,7 @@
 			"sdgNumber": 0,
 			"sdgName": "and the 2030 Agenda for Sustainable Development",
 			"sdgIcon": "./src/images/sdg0.svg",
-			"sdgColor": "#6b99cb",
+			"sdgColor": "#29abe2",
 			"focusTargets": [
 				{
 					"number": "1.1",

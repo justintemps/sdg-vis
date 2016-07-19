@@ -24,11 +24,6 @@
 	right: 8px;
 }
 
-.dropCap {
-	@extend .sdgNumber;
-	color: #fff;
-}
-
 .viewerWindow > div:first-child {
 	margin: 0;
 	padding: 0;
@@ -58,15 +53,26 @@
 	width: 90%;
 }
 
+/* TITLE BAR FOR INTRO */
+
+/* First Letter of title bar */
+.dropCap {
+	@extend .sdgNumber;
+	color: $unblue;
+	text-transform: uppercase;
+}
+
+/* Rest of the word */
 .decentWork {
 	@extend .sdgName;
-	color: #fff;
+	color: $unblue;
 	font-size: 4.8em;
 	margin: 0 0 0 3px;
-	text-decoration: underline;
+	text-transform: uppercase;
 }
 
 .sdgBlurb {
 	@extend .sdgName;
-	color: #fff;
+	color: $unblue;
+	right: 40px;
 }
