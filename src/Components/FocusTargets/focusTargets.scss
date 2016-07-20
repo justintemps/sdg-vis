@@ -8,6 +8,23 @@
 	margin: 10px 0 0;
 	padding: 0 20px 0 20px;
 	text-align: left;
+
+	span, p {
+		display: inline;
+	}
+
+	.targetNumber, .instruction {
+		margin: 0 5px 0 0;
+	}
+
+	.targetNumber::before {
+		content: "Target";
+	}
+
+	.instruction::before{
+		content: "Step"
+	}
+
 }
 
 .targetSelector {

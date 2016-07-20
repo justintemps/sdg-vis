@@ -10,10 +10,12 @@ import ImpactStories from "../ImpactStories/ImpactStories.jsx";
 const ViewerWindowContent = React.createClass({
 	render() {
 
+		// Get the focus targets number and description for the current SDG
 		const focusTargets = this.props.data[this.props.sdgNumber].focusTargets.map( target =>
-				target.description
+			({ description : target.description, number : target.number })
 		);
 
+		// Get the impact stories data for the current SDG
 		const impactStories = this.props.data[this.props.sdgNumber].stories.map( story => {
 			return (
 			{

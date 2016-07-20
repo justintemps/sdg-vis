@@ -2,7 +2,56 @@
 	"sdgNumber": 0,
 	"sdgName": "and the 2030 Agenda for Sustainable Development",
 	"sdgIcon": "./src/images/sdg0.svg",
-	"sdgColor": "#29abe2"
+	"sdgColor": "#29abe2",
+	"focusTargets": [{
+			"number": "1",
+			"description": "Select the blue dots above to begin learning how Decent Work is at the heart of the 2030 Agenda for Sustainable Development.."
+		}, {
+			"number": "2",
+			"description": "First, choose one of the numbered icons above or below to learn how ILO is working to accomplish that Sustainble Development Goal"
+		}, {
+			"number": "3",
+			"description": "Next, browse through the Decent Work Targets to see which of that Goals targets are related to Decent Work."
+		}, {
+			"number": "4",
+			"description": "Finally, browse through our selection of stories to see concrete examples of how ILO works to acheive each of the SDGs."
+		}, {
+			"number": "5",
+			"description": "Share the stories with your friends and followers on social media to help spread the word about Decent Work and the Sustainble Development Goals."
+		}
+	],
+	"stories": [{
+	"title": "Decent Work in the Era of Sustainable Development",
+	"blurb": "'If this agenda can become a reality in the next 15 years, we will be turning the tide back in the direction of social justice and assuring a sustainable and fairer society for us and our children' ILO Director-General Guy Ryder",
+	"url": "http://www.ilo.org/global/about-the-ilo/how-the-ilo-works/ilo-director-general/statements-and-speeches/WCMS_493769/lang--en/index.htm",
+	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_204847.jpg"
+}, {
+	"title": "What is Decent Work?",
+	"blurb": "The importance of decent work in achieving the newly adopted Sustainable Development Goals is highlighted by Goal 8 which aims to “promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all”.",
+	"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_408971/lang--en/index.htm",
+	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_408966.jpg"
+}, {
+	"title": "Decent Work in the Sustainable Development Goals",
+	"blurb": "The Sustainable Development Goals set targets for the next fifteen years. As the process of achieving the 17 Goals gains momentum, putting decent work and strengthening social protection are crucial to achieving global prosperity.",
+	"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_408995/lang--en/index.htm",
+	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_408982.jpg"
+}, {
+	"title": "The World of Work Today",
+	"blurb": "What is the state of decent work in the world today? ILO Director-General Guy Ryder takes the measure of Decent Work in a world buffeted by profound change and growing inequality.",
+	"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_411968/lang--en/index.htm",
+	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_411976.jpg"
+
+}, {
+	"title": "World parliament of labour sets the course for global action to shape the future of work.",
+	"blurb": "ILO sets course to promote decent work in global supply chains, in transition from conflict and crisis and in making poverty history by 2030",
+	"url": "http://www.ilo.org/ilc/ILCSessions/105/media-centre/news/WCMS_489199/lang--en/index.htm",
+	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_489203.jpg"
+}, {
+	"title": "ILO welcomes call for stronger efforts to promote decent work and inclusive growth",
+	"blurb": "A meeting between the German Chancellor and the heads of the OECD, WTO, IMF, World Bank and the ILO has agreed on the central role of decent work in meeting policy challenges in the coming year.",
+	"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_466871/lang--en/index.htm",
+	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_466903.jpg"
+}]
 },{
 	"sdgNumber": 1,
 	"sdgName": "End poverty in all its forms everywhere",

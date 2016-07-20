@@ -59,6 +59,11 @@ p {
 	padding: 0;
 }
 
+span {
+	@extend p;
+	font-weight: 600;
+}
+
 a {
 	text-decoration: none;
 }

@@ -25778,15 +25778,16 @@
 	
 	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
 	
-	var _IntroWindow = __webpack_require__(/*! ../IntroWindow/IntroWindow.jsx */ 316);
-	
-	var _IntroWindow2 = _interopRequireDefault(_IntroWindow);
-	
 	__webpack_require__(/*! ./viewerWindow.scss */ 319);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
+	
+	/**
+	 * ViewerWindow
+	 * Parent to TitleBar, ViewerWindowContent
+	 */
 	
 	var ViewerWindow = _react2.default.createClass({
 		displayName: "ViewerWindow",
@@ -25798,26 +25799,18 @@
 				sdgColor: this.props.data[this.props.currentSdg].sdgColor
 			});
 	
-			// If the currentSDG is not the Intro, render the viewerwindow like this
-			if (this.props.currentSdg !== 0) {
-				return _react2.default.createElement("div", { className: "viewerWindow" }, titleBar, _react2.default.createElement(_ViewerWindowContent2.default, {
-					sdgNumber: this.props.currentSdg,
-					focusTarget: this.props.focusTarget,
-					selectFocusTarget: this.props.selectFocusTarget,
-					currentStory: this.props.currentStory,
-					selectStory: this.props.selectStory,
-					data: this.props.data
-				}));
+			return _react2.default.createElement("div", { className: "viewerWindow" }, titleBar, _react2.default.createElement(_ViewerWindowContent2.default, {
+				sdgNumber: this.props.currentSdg,
+				focusTarget: this.props.focusTarget,
+				selectFocusTarget: this.props.selectFocusTarget,
+				currentStory: this.props.currentStory,
+				selectStory: this.props.selectStory,
+				data: this.props.data
+			}));
 	
-				// Default: if the currentSDG is the Intro, render the viewerwindow like this.
-			} else {
-				return _react2.default.createElement("div", { className: "viewerWindow" }, titleBar, _react2.default.createElement(_IntroWindow2.default, null));
-			}
+			// Default: if the currentSDG is the Intro, render the viewerwindow like this.
 		}
-	}); /**
-	     * ViewerWindow
-	     * Parent to TitleBar, ViewerWindowContent
-	     */
+	});
 	
 	exports.default = ViewerWindow;
 
@@ -25929,10 +25922,12 @@
 		displayName: "ViewerWindowContent",
 		render: function render() {
 	
+			// Get the focus targets number and description for the current SDG
 			var focusTargets = this.props.data[this.props.sdgNumber].focusTargets.map(function (target) {
-				return target.description;
+				return { description: target.description, number: target.number };
 			});
 	
+			// Get the impact stories data for the current SDG
 			var impactStories = this.props.data[this.props.sdgNumber].stories.map(function (story) {
 				return {
 					title: story.title,
@@ -25995,6 +25990,8 @@
 		render: function render() {
 			var _this = this;
 	
+			var heading = this.props.currentSDG > 0 ? "Decent Work Targets" : "Instructions";
+	
 			var bullets = this.props.focusTargets.map(function (target, i) {
 				return _react2.default.createElement(_Bullet2.default, { type: "focusTarget",
 					key: i,
@@ -26008,7 +26005,7 @@
 	
 			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
 	
-			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "Focus Targets"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget]));
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, heading), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", null, _react2.default.createElement("span", { className: this.props.currentSDG > 0 ? "targetNumber" : "instruction" }, " ", this.props.focusTargets[this.props.focusTarget].number), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget].description)));
 		}
 	}); /**
 	     * FocusTargets
@@ -26151,7 +26148,7 @@
 	
 			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
 	
-			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "Impact Stories"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, this.props.currentSDG > 0 ? "Impact Stories" : "About Decent Work"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
 		}
 	}); /**
 	     * ImpactStories
@@ -26172,52 +26169,8 @@
 
 /***/ },
 /* 315 */,
-/* 316 */
-/*!****************************************************!*\
-  !*** ./src/Components/IntroWindow/IntroWindow.jsx ***!
-  \****************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	__webpack_require__(/*! ./introWindow.scss */ 317);
-	
-	function _interopRequireDefault(obj) {
-		return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	/**
-	 * IntrowWindow
-	 * Child of ViewerWindow
-	 */
-	
-	var IntroWindow = _react2.default.createClass({
-		displayName: "IntroWindow",
-		render: function render() {
-			return _react2.default.createElement("div", { className: "introWindow" }, _react2.default.createElement("p", null, "The 2030 Agenda for Sustainable Development places decent work for all at the heart of policies for sustainable and inclusive growth and development."), _react2.default.createElement("h3", null, "How it works"), _react2.default.createElement("p", null, " Select a goal and learn how Decent Work is helping to achieve each of the Sustainable Development Goals"), _react2.default.createElement("ul", null, _react2.default.createElement("li", null, "Find out which targets of the 2030 fall under ILO's mandate"), _react2.default.createElement("li", null, "Browsethrough dozens of stories that show how ILO is working to reach the SDGs")));
-		}
-	});
-	
-	exports.default = IntroWindow;
-
-/***/ },
-/* 317 */
-/*!*****************************************************!*\
-  !*** ./src/Components/IntroWindow/introWindow.scss ***!
-  \*****************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 316 */,
+/* 317 */,
 /* 318 */,
 /* 319 */
 /*!*******************************************************!*\
@@ -26240,7 +26193,67 @@
 			"sdgNumber": 0,
 			"sdgName": "and the 2030 Agenda for Sustainable Development",
 			"sdgIcon": "./src/images/sdg0.svg",
-			"sdgColor": "#29abe2"
+			"sdgColor": "#29abe2",
+			"focusTargets": [
+				{
+					"number": "1",
+					"description": "Select the blue dots above to begin learning how Decent Work is at the heart of the 2030 Agenda for Sustainable Development.."
+				},
+				{
+					"number": "2",
+					"description": "First, choose one of the numbered icons above or below to learn how ILO is working to accomplish that Sustainble Development Goal"
+				},
+				{
+					"number": "3",
+					"description": "Next, browse through the Decent Work Targets to see which of that Goals targets are related to Decent Work."
+				},
+				{
+					"number": "4",
+					"description": "Finally, browse through our selection of stories to see concrete examples of how ILO works to acheive each of the SDGs."
+				},
+				{
+					"number": "5",
+					"description": "Share the stories with your friends and followers on social media to help spread the word about Decent Work and the Sustainble Development Goals."
+				}
+			],
+			"stories": [
+				{
+					"title": "Decent Work in the Era of Sustainable Development",
+					"blurb": "'If this agenda can become a reality in the next 15 years, we will be turning the tide back in the direction of social justice and assuring a sustainable and fairer society for us and our children' ILO Director-General Guy Ryder",
+					"url": "http://www.ilo.org/global/about-the-ilo/how-the-ilo-works/ilo-director-general/statements-and-speeches/WCMS_493769/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_204847.jpg"
+				},
+				{
+					"title": "What is Decent Work?",
+					"blurb": "The importance of decent work in achieving the newly adopted Sustainable Development Goals is highlighted by Goal 8 which aims to “promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all”.",
+					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_408971/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_408966.jpg"
+				},
+				{
+					"title": "Decent Work in the Sustainable Development Goals",
+					"blurb": "The Sustainable Development Goals set targets for the next fifteen years. As the process of achieving the 17 Goals gains momentum, putting decent work and strengthening social protection are crucial to achieving global prosperity.",
+					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_408995/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_408982.jpg"
+				},
+				{
+					"title": "The World of Work Today",
+					"blurb": "What is the state of decent work in the world today? ILO Director-General Guy Ryder takes the measure of Decent Work in a world buffeted by profound change and growing inequality.",
+					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_411968/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_411976.jpg"
+				},
+				{
+					"title": "World parliament of labour sets the course for global action to shape the future of work.",
+					"blurb": "ILO sets course to promote decent work in global supply chains, in transition from conflict and crisis and in making poverty history by 2030",
+					"url": "http://www.ilo.org/ilc/ILCSessions/105/media-centre/news/WCMS_489199/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_489203.jpg"
+				},
+				{
+					"title": "ILO welcomes call for stronger efforts to promote decent work and inclusive growth",
+					"blurb": "A meeting between the German Chancellor and the heads of the OECD, WTO, IMF, World Bank and the ILO has agreed on the central role of decent work in meeting policy challenges in the coming year.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_466871/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_466903.jpg"
+				}
+			]
 		},
 		{
 			"sdgNumber": 1,

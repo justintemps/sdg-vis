@@ -11,6 +11,8 @@ const FocusTargets = React.createClass({
 
 	render() {
 
+		const heading = (this.props.currentSDG > 0) ? "Decent Work Targets" : "Instructions";
+
 		const bullets = this.props.focusTargets.map( (target, i) =>
 				<Bullet type="focusTarget"
 					key={i}
@@ -27,12 +29,15 @@ const FocusTargets = React.createClass({
 		return (
 			<div className="focusTargets">
 					<div className="targetSelector">
-						<h3 style={style}>Focus Targets</h3>
+						<h3 style={style}>{heading}</h3>
 						<ul className="bullets">
 							{bullets}
 						</ul>
 					</div>
-				<p>{this.props.focusTargets[this.props.focusTarget]}</p>
+					<div>
+						<span className={ this.props.currentSDG > 0 ? "targetNumber" : "instruction" }> {this.props.focusTargets[this.props.focusTarget].number}</span>
+						<p>{this.props.focusTargets[this.props.focusTarget].description}</p>
+					</div>
 			</div>
 		);
 	}

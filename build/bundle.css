@@ -377,7 +377,7 @@ h4 {
   padding: 0;
   position: relative; }
 
-p {
+p, span {
   font-family: "Apex New Book", sans-serif;
   font-size: 1em;
   color: #2a2a2a;
@@ -385,6 +385,9 @@ p {
   margin: 0;
   min-height: 80px;
   padding: 0; }
+
+span {
+  font-weight: 600; }
 
 a {
   text-decoration: none; }
@@ -394,6 +397,14 @@ a {
   margin: 10px 0 0;
   padding: 0 20px 0 20px;
   text-align: left; }
+  .focusTargets span, .focusTargets p, .focusTargets span {
+    display: inline; }
+  .focusTargets .targetNumber, .focusTargets .instruction {
+    margin: 0 5px 0 0; }
+  .focusTargets .targetNumber::before {
+    content: "Target"; }
+  .focusTargets .instruction::before {
+    content: "Step"; }
 
 .targetSelector {
   align-items: center;
@@ -454,7 +465,7 @@ h4 {
   padding: 0;
   position: relative; }
 
-p {
+p, span {
   font-family: "Apex New Book", sans-serif;
   font-size: 1em;
   color: #2a2a2a;
@@ -462,6 +473,9 @@ p {
   margin: 0;
   min-height: 80px;
   padding: 0; }
+
+span {
+  font-weight: 600; }
 
 a {
   text-decoration: none; }
@@ -518,7 +532,7 @@ h4 {
   padding: 0;
   position: relative; }
 
-p {
+p, span {
   font-family: "Apex New Book", sans-serif;
   font-size: 1em;
   color: #2a2a2a;
@@ -526,6 +540,9 @@ p {
   margin: 0;
   min-height: 80px;
   padding: 0; }
+
+span {
+  font-weight: 600; }
 
 a {
   text-decoration: none; }
@@ -535,6 +552,14 @@ a {
   margin: 10px 0 0;
   padding: 0 20px 0 20px;
   text-align: left; }
+  .focusTargets span, .focusTargets p, .focusTargets span {
+    display: inline; }
+  .focusTargets .targetNumber, .focusTargets .instruction {
+    margin: 0 5px 0 0; }
+  .focusTargets .targetNumber::before {
+    content: "Target"; }
+  .focusTargets .instruction::before {
+    content: "Step"; }
 
 .targetSelector {
   align-items: center;
@@ -568,16 +593,6 @@ a {
   padding: 0;
   position: relative;
   top: 5px; }
-.introWindow {
-  text-align: left;
-  position: relative;
-  left: 15px;
-  margin: 10px 0; }
-
-.introWindow p {
-  margin: 5px 0 5px 0;
-  min-height: 0;
-  padding: 0; }
 /* ViewerWindow */
 .viewerWindow {
   box-sizing: border-box;
@@ -635,7 +650,7 @@ h4 {
   padding: 0;
   position: relative; }
 
-p {
+p, span {
   font-family: "Apex New Book", sans-serif;
   font-size: 1em;
   color: #2a2a2a;
@@ -643,6 +658,9 @@ p {
   margin: 0;
   min-height: 80px;
   padding: 0; }
+
+span {
+  font-weight: 600; }
 
 a {
   text-decoration: none; }
@@ -695,7 +713,7 @@ h4 {
   padding: 0;
   position: relative; }
 
-p {
+p, span {
   font-family: "Apex New Book", sans-serif;
   font-size: 1em;
   color: #2a2a2a;
@@ -703,6 +721,9 @@ p {
   margin: 0;
   min-height: 80px;
   padding: 0; }
+
+span {
+  font-weight: 600; }
 
 a {
   text-decoration: none; }
