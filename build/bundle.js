@@ -26123,11 +26123,21 @@
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	__webpack_require__(/*! ./impactStories.scss */ 314);
+	var _ShareWidget = __webpack_require__(/*! ../ShareWidget/ShareWidget.jsx */ 314);
+	
+	var _ShareWidget2 = _interopRequireDefault(_ShareWidget);
+	
+	__webpack_require__(/*! ./impactStories.scss */ 317);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
+	
+	/**
+	 * ImpactStories
+	 * Child to ViewerWindowContent
+	 * Parent to Bullet
+	 */
 	
 	var ImpactStories = _react2.default.createClass({
 		displayName: "ImpactStories",
@@ -26150,16 +26160,66 @@
 	
 			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, this.props.currentSDG > 0 ? "Impact Stories" : "About Decent Work"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
 		}
-	}); /**
-	     * ImpactStories
-	     * Child to ViewerWindowContent
-	     * Parent to Bullet
-	     */
+	});
 	
 	exports.default = ImpactStories;
 
 /***/ },
 /* 314 */
+/*!****************************************************!*\
+  !*** ./src/Components/ShareWidget/ShareWidget.jsx ***!
+  \****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(/*! ./shareWidget.scss */ 315);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	/**
+	 * ShareWidget
+	 * Child to ImpactStories
+	 */
+	
+	var ShareWidget = _react2.default.createClass({
+		displayName: "ShareWidget",
+		render: function render() {
+			return _react2.default.createElement(Sharebutton, { src: "" });
+		}
+	});
+	
+	var Sharebutton = _react2.default.createClass({
+		displayName: "Sharebutton",
+		render: function render() {
+			return _react2.default.createElement("img", { src: this.props.src });
+		}
+	});
+	
+	exports.default = ShareWidget;
+
+/***/ },
+/* 315 */
+/*!*****************************************************!*\
+  !*** ./src/Components/ShareWidget/shareWidget.scss ***!
+  \*****************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 316 */,
+/* 317 */
 /*!*********************************************************!*\
   !*** ./src/Components/ImpactStories/impactStories.scss ***!
   \*********************************************************/
@@ -26168,9 +26228,6 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 315 */,
-/* 316 */,
-/* 317 */,
 /* 318 */,
 /* 319 */
 /*!*******************************************************!*\
@@ -26201,15 +26258,15 @@
 				},
 				{
 					"number": "2",
-					"description": "First, choose one of the numbered icons above or below to learn how ILO is working to accomplish that Sustainble Development Goal"
+					"description": "Choose one of the numbered icons above or below to learn how ILO is working to accomplish that Sustainble Development Goal"
 				},
 				{
 					"number": "3",
-					"description": "Next, browse through the Decent Work Targets to see which of that Goals targets are related to Decent Work."
+					"description": "Browse through the Decent Work Targets to see which of that Goals targets are related to Decent Work."
 				},
 				{
 					"number": "4",
-					"description": "Finally, browse through our selection of stories to see concrete examples of how ILO works to acheive each of the SDGs."
+					"description": "Browse through our selection of stories to see concrete examples of how ILO works to acheive each of the SDGs."
 				},
 				{
 					"number": "5",
