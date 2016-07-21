@@ -2,6 +2,10 @@
  * PopupCenter
  * Centers popups in the center of the screen
  * From http://www.xtf.dk/2011/08/center-new-popup-window-even-on.html
+ * @param {String} url
+ * @param {String} title
+ * @param {String} w
+ * @param {String} h
  */
 
 export default function PopupCenter(url, title, w, h) {

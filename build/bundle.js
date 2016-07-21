@@ -20217,13 +20217,13 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 321);
+	var _data = __webpack_require__(/*! json!../../data.json */ 322);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	__webpack_require__(/*! ../../styles/base.scss */ 322);
+	__webpack_require__(/*! ../../styles/base.scss */ 323);
 	
-	__webpack_require__(/*! ./sdgexplorer.scss */ 324);
+	__webpack_require__(/*! ./sdgexplorer.scss */ 325);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -25778,7 +25778,7 @@
 	
 	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
 	
-	__webpack_require__(/*! ./viewerWindow.scss */ 319);
+	__webpack_require__(/*! ./viewerWindow.scss */ 320);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -26127,7 +26127,7 @@
 	
 	var _ShareWidget2 = _interopRequireDefault(_ShareWidget);
 	
-	__webpack_require__(/*! ./impactStories.scss */ 317);
+	__webpack_require__(/*! ./impactStories.scss */ 318);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
@@ -26184,16 +26184,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(/*! ./shareWidget.scss */ 315);
+	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 327);
+	
+	var _popupCenter2 = _interopRequireDefault(_popupCenter);
+	
+	__webpack_require__(/*! ./shareWidget.scss */ 316);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
-	
-	/**
-	 * ShareWidget
-	 * Child to ImpactStories
-	 */
 	
 	var ShareWidget = _react2.default.createClass({
 		displayName: "ShareWidget",
@@ -26218,16 +26217,21 @@
 			var sharedUrl = encodeURI(this.props.currentStoryUrl);
 			var tweet = baseUrl + tweetTxt + " " + sharedUrl;
 	
-			window.open(tweet, "This is a dialogue", "location=no, height=200, width=200, centerscreen");
+			// Center new window on screen
+			(0, _popupCenter2.default)(tweet, "Post a Tweet on Twitter", "400", "400");
 		},
 		render: function render() {
 			return _react2.default.createElement("div", { className: "shareWidget" }, _react2.default.createElement("span", null, "Share this story:"), _react2.default.createElement(Sharebutton, { network: "facebook", handler: this.fbShare }), _react2.default.createElement(Sharebutton, { network: "twitter", handler: this.tweet }), _react2.default.createElement(Sharebutton, { network: "linkedin" }));
 		}
-	});
+	}); /**
+	     * ShareWidget
+	     * Child to ImpactStories
+	     */
 	
 	var Sharebutton = _react2.default.createClass({
 		displayName: "Sharebutton",
 	
+		// Sets font-awesome class
 		network: {
 			twitter: "fa fa-twitter",
 			facebook: "fa fa-facebook",
@@ -26243,7 +26247,8 @@
 	exports.default = ShareWidget;
 
 /***/ },
-/* 315 */
+/* 315 */,
+/* 316 */
 /*!*****************************************************!*\
   !*** ./src/Components/ShareWidget/shareWidget.scss ***!
   \*****************************************************/
@@ -26252,8 +26257,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 316 */,
-/* 317 */
+/* 317 */,
+/* 318 */
 /*!*********************************************************!*\
   !*** ./src/Components/ImpactStories/impactStories.scss ***!
   \*********************************************************/
@@ -26262,8 +26267,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 318 */,
-/* 319 */
+/* 319 */,
+/* 320 */
 /*!*******************************************************!*\
   !*** ./src/Components/ViewerWindow/viewerWindow.scss ***!
   \*******************************************************/
@@ -26272,8 +26277,8 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 320 */,
-/* 321 */
+/* 321 */,
+/* 322 */
 /*!***************************************!*\
   !*** ./~/json-loader!./src/data.json ***!
   \***************************************/
@@ -27099,7 +27104,7 @@
 	];
 
 /***/ },
-/* 322 */
+/* 323 */
 /*!******************************!*\
   !*** ./src/styles/base.scss ***!
   \******************************/
@@ -27108,14 +27113,56 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 323 */,
-/* 324 */
+/* 324 */,
+/* 325 */
 /*!*****************************************************!*\
   !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
   \*****************************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 326 */,
+/* 327 */
+/*!***************************************************!*\
+  !*** ./src/Components/ShareWidget/popupCenter.js ***!
+  \***************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = PopupCenter;
+	/**
+	 * PopupCenter
+	 * Centers popups in the center of the screen
+	 * From http://www.xtf.dk/2011/08/center-new-popup-window-even-on.html
+	 * @param {String} url
+	 * @param {String} title
+	 * @param {String} w
+	 * @param {String} h
+	 */
+	
+	function PopupCenter(url, title, w, h) {
+		// Fixes dual-screen position
+		var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+		var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+	
+		var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+		var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+	
+		var left = width / 2 - w / 2 + dualScreenLeft;
+		var top = height / 2 - h / 2 + dualScreenTop;
+		var newWindow = window.open(url, title, "scrollbars=yes, width=" + w + ", height=" + h + ", top=" + top + ", left=" + left);
+	
+		// Puts focus on the newWindow
+		if (window.focus) {
+			newWindow.focus();
+		}
+	}
 
 /***/ }
 /******/ ]);

@@ -4,7 +4,7 @@
  */
 
 import React from "react";
-import PopupCenter from "./PopupCenter.js"
+import popupCenter from "./popupCenter.js";
 import "./shareWidget.scss";
 
 const ShareWidget = React.createClass({
@@ -32,7 +32,8 @@ const ShareWidget = React.createClass({
 		const sharedUrl = encodeURI(this.props.currentStoryUrl);
 		const tweet = baseUrl + tweetTxt + " " + sharedUrl;
 
-		window.open(tweet, "Post a Tweet on Twitter", "location=no, height=200, width=200, centerscreen");
+		// Center new window on screen
+		popupCenter(tweet, "Post a Tweet on Twitter", "400", "400");
 	},
 
 	render() {
