@@ -46,6 +46,7 @@ const ImpactStories = React.createClass({
 							<ShareWidget
 								currentStoryUrl={this.props.impactStories[this.props.currentStory].url}
 								currentStoryTitle={this.props.impactStories[this.props.currentStory].title}
+								currentStoryBlurb={this.props.impactStories[this.props.currentStory].blurb}
 							/>
 						</div>
 					</div>

@@ -490,8 +490,18 @@ a {
   position: relative;
   top: 1px; }
 
-.fa:hover {
-  color: #0080b0;
+.fa-facebook:hover {
+  color: #3B5998;
+  cursor: pointer;
+  transition: color 200ms ease; }
+
+.fa-twitter:hover {
+  color: #75B2F3;
+  cursor: pointer;
+  transition: color 200ms ease; }
+
+.fa-linkedin:hover {
+  color: #0077b5;
   cursor: pointer;
   transition: color 200ms ease; }
 /* Impact Stories */

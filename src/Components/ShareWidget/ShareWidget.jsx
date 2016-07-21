@@ -9,6 +9,7 @@ import "./shareWidget.scss";
 
 const ShareWidget = React.createClass({
 
+	// Share on Facebook
 	fbShare() {
 		window.fbAsyncInit = () => {
 			FB.init({
@@ -26,23 +27,36 @@ const ShareWidget = React.createClass({
 		window.fbAsyncInit();
 	},
 
+	// Share on Twitter
 	tweet() {
 		const baseUrl = "https://twitter.com/intent/tweet?text=";
-		const tweetTxt = encodeURI(this.props.currentStoryTitle);
+		const postText = encodeURI(this.props.currentStoryTitle);
 		const sharedUrl = encodeURI(this.props.currentStoryUrl);
-		const tweet = baseUrl + tweetTxt + " " + sharedUrl;
+		const post = baseUrl + postText + " " + sharedUrl;
 
 		// Center new window on screen
-		popupCenter(tweet, "Post a Tweet on Twitter", "400", "400");
+		popupCenter(post, "Post a Tweet on Twitter", "400", "400");
+	},
+
+	// Share on LinkedIn
+	liShare() {
+		const baseUrl = "http://www.linkedin.com/shareArticle?mini=true";
+		const sharedUrl = `&url=${encodeURI(this.props.currentStoryUrl)}`;
+		const postText = `&title=${encodeURI(this.props.currentStoryTitle)}`;
+		const postSummary = `&summary=${encodeURI(this.props.currentStoryBlurb)}`;
+		const post = baseUrl + sharedUrl + postText + postSummary;
+
+		// Center new window on screen
+		popupCenter(post, "Post a Tweet on Twitter", "400", "400");
 	},
 
 	render() {
 		return(
 			<div className="shareWidget">
 				<span>Share this story:</span>
-				<Sharebutton network="facebook" handler={this.fbShare}/>
-				<Sharebutton network="twitter" handler={this.tweet}/>
-				<Sharebutton network="linkedin" />
+				<Sharebutton network="facebook" handler={this.fbShare} />
+				<Sharebutton network="twitter" handler={this.tweet} />
+				<Sharebutton network="linkedin" handler={this.liShare} />
 			</div>
 		);
 	}

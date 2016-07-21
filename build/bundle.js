@@ -26160,7 +26160,8 @@
 	
 			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, this.props.currentSDG > 0 ? "Impact Stories" : "About Decent Work"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement(_ShareWidget2.default, {
 				currentStoryUrl: this.props.impactStories[this.props.currentStory].url,
-				currentStoryTitle: this.props.impactStories[this.props.currentStory].title
+				currentStoryTitle: this.props.impactStories[this.props.currentStory].title,
+				currentStoryBlurb: this.props.impactStories[this.props.currentStory].blurb
 			}))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
 		}
 	});
@@ -26184,7 +26185,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 327);
+	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 315);
 	
 	var _popupCenter2 = _interopRequireDefault(_popupCenter);
 	
@@ -26196,6 +26197,8 @@
 	
 	var ShareWidget = _react2.default.createClass({
 		displayName: "ShareWidget",
+	
+		// Share on Facebook
 		fbShare: function fbShare() {
 			window.fbAsyncInit = function () {
 				FB.init({
@@ -26211,17 +26214,31 @@
 			};
 			window.fbAsyncInit();
 		},
+	
+		// Share on Twitter
 		tweet: function tweet() {
 			var baseUrl = "https://twitter.com/intent/tweet?text=";
-			var tweetTxt = encodeURI(this.props.currentStoryTitle);
+			var postText = encodeURI(this.props.currentStoryTitle);
 			var sharedUrl = encodeURI(this.props.currentStoryUrl);
-			var tweet = baseUrl + tweetTxt + " " + sharedUrl;
+			var post = baseUrl + postText + " " + sharedUrl;
 	
 			// Center new window on screen
-			(0, _popupCenter2.default)(tweet, "Post a Tweet on Twitter", "400", "400");
+			(0, _popupCenter2.default)(post, "Post a Tweet on Twitter", "400", "400");
+		},
+	
+		// Share on LinkedIn
+		liShare: function liShare() {
+			var baseUrl = "http://www.linkedin.com/shareArticle?mini=true";
+			var sharedUrl = "&url=" + encodeURI(this.props.currentStoryUrl);
+			var postText = "&title=" + encodeURI(this.props.currentStoryTitle);
+			var postSummary = "&summary=" + encodeURI(this.props.currentStoryBlurb);
+			var post = baseUrl + sharedUrl + postText + postSummary;
+	
+			// Center new window on screen
+			(0, _popupCenter2.default)(post, "Post a Tweet on Twitter", "400", "400");
 		},
 		render: function render() {
-			return _react2.default.createElement("div", { className: "shareWidget" }, _react2.default.createElement("span", null, "Share this story:"), _react2.default.createElement(Sharebutton, { network: "facebook", handler: this.fbShare }), _react2.default.createElement(Sharebutton, { network: "twitter", handler: this.tweet }), _react2.default.createElement(Sharebutton, { network: "linkedin" }));
+			return _react2.default.createElement("div", { className: "shareWidget" }, _react2.default.createElement("span", null, "Share this story:"), _react2.default.createElement(Sharebutton, { network: "facebook", handler: this.fbShare }), _react2.default.createElement(Sharebutton, { network: "twitter", handler: this.tweet }), _react2.default.createElement(Sharebutton, { network: "linkedin", handler: this.liShare }));
 		}
 	}); /**
 	     * ShareWidget
@@ -26247,7 +26264,47 @@
 	exports.default = ShareWidget;
 
 /***/ },
-/* 315 */,
+/* 315 */
+/*!***************************************************!*\
+  !*** ./src/Components/ShareWidget/popupCenter.js ***!
+  \***************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = PopupCenter;
+	/**
+	 * PopupCenter
+	 * Centers popups in the center of the screen
+	 * From http://www.xtf.dk/2011/08/center-new-popup-window-even-on.html
+	 * @param {String} url
+	 * @param {String} title
+	 * @param {String} w
+	 * @param {String} h
+	 */
+	
+	function PopupCenter(url, title, w, h) {
+		// Fixes dual-screen position
+		var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+		var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+	
+		var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+		var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+	
+		var left = width / 2 - w / 2 + dualScreenLeft;
+		var top = height / 2 - h / 2 + dualScreenTop;
+		var newWindow = window.open(url, title, "scrollbars=yes, width=" + w + ", height=" + h + ", top=" + top + ", left=" + left);
+	
+		// Puts focus on the newWindow
+		if (window.focus) {
+			newWindow.focus();
+		}
+	}
+
+/***/ },
 /* 316 */
 /*!*****************************************************!*\
   !*** ./src/Components/ShareWidget/shareWidget.scss ***!
@@ -27121,48 +27178,6 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 326 */,
-/* 327 */
-/*!***************************************************!*\
-  !*** ./src/Components/ShareWidget/popupCenter.js ***!
-  \***************************************************/
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	exports.default = PopupCenter;
-	/**
-	 * PopupCenter
-	 * Centers popups in the center of the screen
-	 * From http://www.xtf.dk/2011/08/center-new-popup-window-even-on.html
-	 * @param {String} url
-	 * @param {String} title
-	 * @param {String} w
-	 * @param {String} h
-	 */
-	
-	function PopupCenter(url, title, w, h) {
-		// Fixes dual-screen position
-		var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
-		var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
-	
-		var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-		var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
-	
-		var left = width / 2 - w / 2 + dualScreenLeft;
-		var top = height / 2 - h / 2 + dualScreenTop;
-		var newWindow = window.open(url, title, "scrollbars=yes, width=" + w + ", height=" + h + ", top=" + top + ", left=" + left);
-	
-		// Puts focus on the newWindow
-		if (window.focus) {
-			newWindow.focus();
-		}
-	}
 
 /***/ }
 /******/ ]);

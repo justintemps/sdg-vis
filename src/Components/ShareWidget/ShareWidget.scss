@@ -1,6 +1,12 @@
 @import "src/styles/_utils";
 @import "src/styles/base";
 
+@mixin hover($color) {
+	color: $color;
+	cursor: pointer;
+	transition: color 200ms ease;
+}
+
 .shareWidget {
 	color: $light-grey;
 	font-size: .86em;
@@ -18,8 +24,14 @@
 	top: 1px;
 }
 
-.fa:hover {
-	color: $titleColor;
-	cursor: pointer;
-	transition: color 200ms ease;
+.fa-facebook:hover {
+	@include hover(#3B5998);
+}
+
+.fa-twitter:hover {
+	@include hover(#75B2F3);
+}
+
+.fa-linkedin:hover {
+	@include hover(#0077b5);
 }
