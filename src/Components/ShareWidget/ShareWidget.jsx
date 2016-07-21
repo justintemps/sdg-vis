@@ -20,7 +20,7 @@ const ShareWidget = React.createClass({
 
 			FB.ui({
 				method: "share",
-				href: "http://www.ilo.org"
+				href: this.props.currentStoryUrl
 			}, function(response){});
 
 		};
