@@ -26158,7 +26158,10 @@
 	
 			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
 	
-			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, this.props.currentSDG > 0 ? "Impact Stories" : "About Decent Work"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement(_ShareWidget2.default, { currentStoryUrl: this.props.impactStories[this.props.currentStory].url }))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, this.props.currentSDG > 0 ? "Impact Stories" : "About Decent Work"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement(_ShareWidget2.default, {
+				currentStoryUrl: this.props.impactStories[this.props.currentStory].url,
+				currentStoryTitle: this.props.impactStories[this.props.currentStory].title
+			}))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
 		}
 	});
 	
@@ -26195,10 +26198,7 @@
 	var ShareWidget = _react2.default.createClass({
 		displayName: "ShareWidget",
 		fbShare: function fbShare() {
-			var _this = this;
-	
 			window.fbAsyncInit = function () {
-	
 				FB.init({
 					appId: "1479961782307072",
 					xfbml: true,
@@ -26207,14 +26207,21 @@
 	
 				FB.ui({
 					method: "share",
-					href: _this.props.currentStoryUrl
+					href: "http://www.ilo.org"
 				}, function (response) {});
 			};
-	
 			window.fbAsyncInit();
 		},
+		tweet: function tweet() {
+			var baseUrl = "https://twitter.com/intent/tweet?text=";
+			var tweetTxt = encodeURI(this.props.currentStoryTitle);
+			var sharedUrl = encodeURI(this.props.currentStoryUrl);
+			var tweet = baseUrl + tweetTxt + " " + sharedUrl;
+	
+			window.open(tweet, "This is a dialogue", "location=no, height=200, width=200, centerscreen");
+		},
 		render: function render() {
-			return _react2.default.createElement("div", { className: "shareWidget" }, _react2.default.createElement("span", null, "Share this story:"), _react2.default.createElement(Sharebutton, { network: "facebook", handler: this.fbShare }), _react2.default.createElement(Sharebutton, { network: "twitter" }), _react2.default.createElement(Sharebutton, { network: "linkedin" }));
+			return _react2.default.createElement("div", { className: "shareWidget" }, _react2.default.createElement("span", null, "Share this story:"), _react2.default.createElement(Sharebutton, { network: "facebook", handler: this.fbShare }), _react2.default.createElement(Sharebutton, { network: "twitter", handler: this.tweet }), _react2.default.createElement(Sharebutton, { network: "linkedin" }));
 		}
 	});
 	
