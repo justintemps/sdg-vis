@@ -1,8 +1,7 @@
 /* SDGexplorer */
 
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
-@import 'src/styles/base';
-@import 'src/styles/_utils';
+@import "src/styles/base";
+@import "src/styles/_utils";
 
 .sdgExplorer {
 	@extend .wrapper;

@@ -1,7 +1,7 @@
 /**
  * ImpactStories
  * Child to ViewerWindowContent
- * Parent to Bullet
+ * Parent to Bullet, ShareWidget
  */
 
 import React from "react";
@@ -43,6 +43,7 @@ const ImpactStories = React.createClass({
 								<h2>{this.props.impactStories[this.props.currentStory].title}</h2>
 							</a>
 							<p>{this.props.impactStories[this.props.currentStory].blurb}</p>
+							<ShareWidget currentStoryUrl={this.props.impactStories[this.props.currentStory].url} />
 						</div>
 					</div>
 					<div className="thumbnail-wrapper">

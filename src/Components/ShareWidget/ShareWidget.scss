@@ -1,0 +1,25 @@
+@import "src/styles/_utils";
+@import "src/styles/base";
+
+.shareWidget {
+	color: $light-grey;
+	font-size: .86em;
+	margin: 5px 0 0;
+
+	span {
+		color: inherit;
+	}
+}
+
+.fa {
+	font-size: 16px;
+	margin: 0 7px;
+	position: relative;
+	top: 1px;
+}
+
+.fa:hover {
+	color: $titleColor;
+	cursor: pointer;
+	transition: color 200ms ease;
+}

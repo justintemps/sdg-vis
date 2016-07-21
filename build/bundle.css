@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);/* Typography */
+/* Typography */
 @font-face {
   font-family: "GiorgioSans-Bold";
   src: url(GiorgioSans-Bold.woff) format("woff"), url(GiorgioSans-Bold.ttf) format("truetype");
@@ -383,7 +383,6 @@ p, span {
   color: #2a2a2a;
   line-height: 1.3em;
   margin: 0;
-  min-height: 80px;
   padding: 0; }
 
 span {
@@ -413,6 +412,88 @@ a {
   display: flex;
   flex-wrap: nowrap;
   margin: 0; }
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
+html,
+body,
+#app,
+.wrapper {
+  width: 100%;
+  height: 100%;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
+
+.wrapper {
+  max-width: 750px;
+  text-align: center; }
+
+h2 {
+  font-family: "Apex New Book", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #0080b0;
+  line-height: 1.2em;
+  margin: 0 0 5px;
+  padding: 0;
+  transition: color 0.1s ease; }
+
+h2:hover {
+  color: #3bc3e4; }
+
+h3 {
+  font-family: "Apex New Book", sans-serif;
+  font-size: .88em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; }
+
+h4 {
+  color: #3bc3e4;
+  font-family: "Apex New Book", sans-serif;
+  font-size: .9em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+p, span {
+  font-family: "Apex New Book", sans-serif;
+  font-size: 1em;
+  color: #2a2a2a;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0; }
+
+span {
+  font-weight: 600; }
+
+a {
+  text-decoration: none; }
+
+.shareWidget {
+  color: #7e7e7e;
+  font-size: .86em;
+  margin: 5px 0 0; }
+  .shareWidget span {
+    color: inherit; }
+
+.fa {
+  font-size: 16px;
+  margin: 0 7px;
+  position: relative;
+  top: 1px; }
+
+.fa:hover {
+  color: #0080b0;
+  cursor: pointer;
+  transition: color 200ms ease; }
 /* Impact Stories */
 /* -- Typography -- */
 /* -- Mixins -- */
@@ -471,7 +552,6 @@ p, span {
   color: #2a2a2a;
   line-height: 1.3em;
   margin: 0;
-  min-height: 80px;
   padding: 0; }
 
 span {
@@ -538,7 +618,6 @@ p, span {
   color: #2a2a2a;
   line-height: 1.3em;
   margin: 0;
-  min-height: 80px;
   padding: 0; }
 
 span {
@@ -571,6 +650,7 @@ a {
 
 .impactStories {
   margin: 10px 0;
+  min-height: 135px;
   padding: 0 10px 0 20px;
   text-align: left; }
 
@@ -579,10 +659,8 @@ a {
   display: flex;
   flex-direction: top;
   flex-wrap: nowrap;
-  justify-content: space-between; }
-
-.title-blurb-wrapper {
-  min-height: 135px; }
+  justify-content: space-between;
+  padding: 0; }
 
 .thumbnail-wrapper {
   margin: 0 0 0 5px; }
@@ -656,7 +734,6 @@ p, span {
   color: #2a2a2a;
   line-height: 1.3em;
   margin: 0;
-  min-height: 80px;
   padding: 0; }
 
 span {
@@ -719,7 +796,6 @@ p, span {
   color: #2a2a2a;
   line-height: 1.3em;
   margin: 0;
-  min-height: 80px;
   padding: 0; }
 
 span {

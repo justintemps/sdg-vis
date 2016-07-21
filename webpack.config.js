@@ -96,15 +96,18 @@ module.exports = {
 			},
 			{
 				test: /\.svg$/,
-				loader: "babel!svg-react"
+				loader: "babel!svg-react",
+				exclude: /node_modules/
 			},
 			{
 				test: /\.ttf$/,
-				loader: "file-loader?mimetype=application/octet-stream&name=[name].[ext]"
+				loader: "file-loader?mimetype=application/octet-stream&name=[name].[ext]",
+				exclude: /node_modules/
 			},
 			{
 				test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-				loader: "url?limit=10000&mimetype=application/font-woff&name=[name].[ext]"
+				loader: "url?limit=10000&mimetype=application/font-woff&name=[name].[ext]",
+				exclude: /node_modules/
 			}
 		]
 	}

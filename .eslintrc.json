@@ -35,5 +35,8 @@
 		"no-unused-vars" : [
 			"off"
 		]
-    }
+    },
+	"globals" : {
+		"FB" : false
+	}
 }

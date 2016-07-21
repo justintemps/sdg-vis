@@ -26136,7 +26136,7 @@
 	/**
 	 * ImpactStories
 	 * Child to ViewerWindowContent
-	 * Parent to Bullet
+	 * Parent to Bullet, ShareWidget
 	 */
 	
 	var ImpactStories = _react2.default.createClass({
@@ -26158,7 +26158,7 @@
 	
 			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
 	
-			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, this.props.currentSDG > 0 ? "Impact Stories" : "About Decent Work"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, this.props.currentSDG > 0 ? "Impact Stories" : "About Decent Work"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement(_ShareWidget2.default, { currentStoryUrl: this.props.impactStories[this.props.currentStory].url }))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
 		}
 	});
 	
@@ -26194,15 +26194,42 @@
 	
 	var ShareWidget = _react2.default.createClass({
 		displayName: "ShareWidget",
+		fbShare: function fbShare() {
+			var _this = this;
+	
+			window.fbAsyncInit = function () {
+	
+				FB.init({
+					appId: "1479961782307072",
+					xfbml: true,
+					version: "v2.7"
+				});
+	
+				FB.ui({
+					method: "share",
+					href: _this.props.currentStoryUrl
+				}, function (response) {});
+			};
+	
+			window.fbAsyncInit();
+		},
 		render: function render() {
-			return _react2.default.createElement(Sharebutton, { src: "" });
+			return _react2.default.createElement("div", { className: "shareWidget" }, _react2.default.createElement("span", null, "Share this story:"), _react2.default.createElement(Sharebutton, { network: "facebook", handler: this.fbShare }), _react2.default.createElement(Sharebutton, { network: "twitter" }), _react2.default.createElement(Sharebutton, { network: "linkedin" }));
 		}
 	});
 	
 	var Sharebutton = _react2.default.createClass({
 		displayName: "Sharebutton",
+	
+		network: {
+			twitter: "fa fa-twitter",
+			facebook: "fa fa-facebook",
+			linkedin: "fa fa-linkedin"
+		},
+	
 		render: function render() {
-			return _react2.default.createElement("img", { src: this.props.src });
+	
+			return _react2.default.createElement("i", { className: this.network[this.props.network], "aria-hidden": "true", onClick: this.props.handler });
 		}
 	});
 	
