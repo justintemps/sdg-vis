@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+import PopupCenter from "./PopupCenter.js"
 import "./shareWidget.scss";
 
 const ShareWidget = React.createClass({
@@ -31,7 +32,7 @@ const ShareWidget = React.createClass({
 		const sharedUrl = encodeURI(this.props.currentStoryUrl);
 		const tweet = baseUrl + tweetTxt + " " + sharedUrl;
 
-		window.open(tweet, "This is a dialogue", "location=no, height=200, width=200, centerscreen");
+		window.open(tweet, "Post a Tweet on Twitter", "location=no, height=200, width=200, centerscreen");
 	},
 
 	render() {
@@ -48,6 +49,7 @@ const ShareWidget = React.createClass({
 
 const Sharebutton = React.createClass({
 
+	// Sets font-awesome class
 	network : {
 		twitter : "fa fa-twitter",
 		facebook : "fa fa-facebook",
