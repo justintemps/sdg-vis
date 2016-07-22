@@ -55,7 +55,7 @@ const Icon = React.createClass({
 			<div className={iconClass} onClick={this.clickHandler}>
 				{sdgs[this.props.sdg]}
 				<div className="mobileSdgNumber">{this.props.sdg}</div>
-				<div className="mobileSdgName">This sdg name</div>
+				<div className="mobileSdgName">{this.props.sdgNameShort}</div>
 			</div>
 		);
 	}

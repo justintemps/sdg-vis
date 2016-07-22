@@ -20340,7 +20340,8 @@
 					color: this.props.data[i].sdgColor,
 					handler: this.props.handler,
 					currentSdg: this.props.currentSdg,
-					data: this.props.data
+					data: this.props.data,
+					sdgNameShort: this.props.data[i].sdgNameShort
 				}));
 			}
 		},
@@ -20476,7 +20477,7 @@
 				opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3
 			};
 	
-			return _react2.default.createElement("div", { className: iconClass, onClick: this.clickHandler }, sdgs[this.props.sdg], _react2.default.createElement("div", { className: "mobileSdgNumber" }, this.props.sdg), _react2.default.createElement("div", { className: "mobileSdgName" }, "This sdg name"));
+			return _react2.default.createElement("div", { className: iconClass, onClick: this.clickHandler }, sdgs[this.props.sdg], _react2.default.createElement("div", { className: "mobileSdgNumber" }, this.props.sdg), _react2.default.createElement("div", { className: "mobileSdgName" }, this.props.sdgNameShort));
 		}
 	});
 	
@@ -26262,6 +26263,7 @@
 		{
 			"sdgNumber": 0,
 			"sdgName": "and the 2030 Agenda for Sustainable Development",
+			"sdgNameShort": "Decent Work and the 2030 Agenda",
 			"sdgIcon": "./src/images/sdg0.svg",
 			"sdgColor": "#29abe2",
 			"focusTargets": [
@@ -26328,6 +26330,7 @@
 		{
 			"sdgNumber": 1,
 			"sdgName": "End poverty in all its forms everywhere",
+			"sdgNameShort": "No poverty",
 			"sdgIcon": "./src/images/sdg1.svg",
 			"sdgColor": "#e5243b",
 			"focusTargets": [
@@ -26380,6 +26383,7 @@
 		{
 			"sdgNumber": 2,
 			"sdgName": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+			"sdgNameShort": "No hunger",
 			"sdgIcon": "./src/images/sdg2.svg",
 			"sdgColor": "#dda63a",
 			"focusTargets": [
@@ -26416,6 +26420,7 @@
 		{
 			"sdgNumber": 3,
 			"sdgName": "Ensure healthy lives and promote well-being for all at all ages",
+			"sdgNameShort": "Good health",
 			"sdgIcon": "./src/images/sdg3.svg",
 			"sdgColor": "#4c9f38",
 			"focusTargets": [
@@ -26456,6 +26461,7 @@
 		{
 			"sdgNumber": 4,
 			"sdgName": "Ensure inclusive and quality education for all and promote lifelong learning",
+			"sdgNameShort": "Quality education",
 			"sdgIcon": "./src/images/sdg4.svg",
 			"sdgColor": "#c5192d",
 			"focusTargets": [
@@ -26500,6 +26506,7 @@
 		{
 			"sdgNumber": 5,
 			"sdgName": "Achieve gender equality and empower all women and girls",
+			"sdgNameShort": "Gender Equality",
 			"sdgIcon": "./src/images/sdg5.svg",
 			"sdgColor": "#ff3a21",
 			"focusTargets": [
@@ -26552,6 +26559,7 @@
 		{
 			"sdgNumber": 6,
 			"sdgName": "Ensure access to water and sanitation for all",
+			"sdgNameShort": "Clean water and sanitation",
 			"sdgIcon": "./src/images/sdg6.svg",
 			"sdgColor": "#26bde2",
 			"focusTargets": [
@@ -26578,6 +26586,7 @@
 		{
 			"sdgNumber": 7,
 			"sdgName": "Ensure access to affordable, reliable, sustainable and modern energy for all ",
+			"sdgNameShort": "Renewable energy",
 			"sdgIcon": "./src/images/sdg7.svg",
 			"sdgColor": "#fcc30b",
 			"focusTargets": [
@@ -26618,6 +26627,7 @@
 		{
 			"sdgNumber": 8,
 			"sdgName": "Promote inclusive and sustainable economic growth, employment and decent work for all ",
+			"sdgNameShort": "Good Jobs and Economic Growth",
 			"sdgIcon": "./src/images/sdg8.svg",
 			"sdgColor": "#a21942",
 			"focusTargets": [
@@ -26694,6 +26704,7 @@
 		{
 			"sdgNumber": 9,
 			"sdgName": "Build resilient infrastructure, promote sustainable industrialization and foster innovation",
+			"sdgNameShort": "Innovation and infrastructure",
 			"sdgIcon": "./src/images/sdg9.svg",
 			"sdgColor": "#fd6925",
 			"focusTargets": [
@@ -26734,6 +26745,7 @@
 		{
 			"sdgNumber": 10,
 			"sdgName": "Reduce inequality within and among countries",
+			"sdgNameShort": "Reduced Inequalities",
 			"sdgIcon": "./src/images/sdg10.svg",
 			"sdgColor": "#dd1367",
 			"focusTargets": [
@@ -26788,6 +26800,7 @@
 		{
 			"sdgNumber": 11,
 			"sdgName": "Make cities inclusive, safe, resilient and sustainable",
+			"sdgNameShort": "Sustainable Cities and Communities",
 			"sdgIcon": "./src/images/sdg11.svg",
 			"sdgColor": "#fd9d24",
 			"focusTargets": [
@@ -26828,6 +26841,7 @@
 		{
 			"sdgNumber": 12,
 			"sdgName": "Ensure sustainable consumption and production patterns",
+			"sdgNameShort": "Responsible Consumption",
 			"sdgIcon": "./src/images/sdg12.svg",
 			"sdgColor": "#bf8b2e",
 			"focusTargets": [
@@ -26876,6 +26890,7 @@
 		{
 			"sdgNumber": 13,
 			"sdgName": "Take urgent action to combat climate change and its impacts",
+			"sdgNameShort": "Climate Action",
 			"sdgIcon": "./src/images/sdg13.svg",
 			"sdgColor": "#3f7e44",
 			"focusTargets": [
@@ -26908,6 +26923,7 @@
 		{
 			"sdgNumber": 14,
 			"sdgName": "Conserve and sustainably use the oceans, seas and marine resources",
+			"sdgNameShort": "Life Below Water",
 			"sdgIcon": "./src/images/sdg14.svg",
 			"sdgColor": "#0a97d9",
 			"focusTargets": [
@@ -26948,6 +26964,7 @@
 		{
 			"sdgNumber": 15,
 			"sdgName": "Sustainably manage forests, combat desertification, halt and reverse land degradation, halt biodiversity loss",
+			"sdgNameShort": "Life on land",
 			"sdgIcon": "./src/images/sdg15.svg",
 			"sdgColor": "#56c02b",
 			"focusTargets": [
@@ -26980,6 +26997,7 @@
 		{
 			"sdgNumber": 16,
 			"sdgName": "Promote just, peaceful and inclusive societies",
+			"sdgNameShort": "Peace and Justice",
 			"sdgIcon": "./src/images/sdg16.svg",
 			"sdgColor": "#00689d",
 			"focusTargets": [
@@ -27040,6 +27058,7 @@
 		{
 			"sdgNumber": 17,
 			"sdgName": "Revitalize the global partnership for sustainable development",
+			"sdgNameShort": "Partnerships for the Goals",
 			"sdgIcon": "./src/images/sdg17.svg",
 			"sdgColor": "#19486a",
 			"focusTargets": [

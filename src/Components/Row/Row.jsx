@@ -9,7 +9,8 @@ const Row = React.createClass({
 	getIcons() {
 		this.icons = [];
 		for ( let i = (this.props.startFrom); i < (this.props.numberIcons + this.props.startFrom); i++ ) {
-			this.icons.push( <Icon
+			this.icons.push(
+			<Icon
 				sdg={this.props.data[i].sdgNumber}
 				key={i}
 				src={this.props.data[i].sdgIcon}
@@ -17,6 +18,7 @@ const Row = React.createClass({
 				handler={this.props.handler}
 				currentSdg={this.props.currentSdg}
 				data={this.props.data}
+				sdgNameShort={this.props.data[i].sdgNameShort}
 			/> );
 		}
 	},

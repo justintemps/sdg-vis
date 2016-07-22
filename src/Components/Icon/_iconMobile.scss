@@ -1,12 +1,13 @@
 $class-slug: sdg !default;
 
+// Hide all the SVGs
 @for $i from 0 through 17 {
-	// Hide all the SVGs
 	svg.#{$class-slug}#{$i} {
 		display: none;
 	}
 }
 
+// Colorize all the icons
 @each $current-color in $colors-list {
 	$i: index($colors-list, $current-color) - 1;
 	.#{$class-slug}#{$i} {
@@ -26,6 +27,10 @@ $class-slug: sdg !default;
 	margin: 5px 0 0;
 	width: calc(33.333% - 5px);
 	height: 2.4em;
+	opacity: 0.4;
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .icon:hover {
@@ -37,12 +42,15 @@ $class-slug: sdg !default;
 	display: inline-block;
 	font-size: 2.4em;
 	position: relative;
+	margin: 0 10px 0 5px;
 	vertical-align: middle;
-	min-width: .8em;
 }
 
 .mobileSdgName {
 	display: inline-block;
 	font-size: 1em;
 	position: relative;
+	letter-spacing: .7px;
+	text-align: left;
+	text-transform: uppercase;
 }

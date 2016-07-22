@@ -108,9 +108,10 @@ a {
   cursor: pointer;
   flex-basis: auto;
   padding: 5px;
+  transition: opacity 0.3s ease;
   width: 16.6666%; }
 
-.mobileIcon, .mobileSdgNumber, .mobileSdgName {
+.mobileSdgNumber, .mobileSdgName {
   display: none; }
 
 .sdg0, .sdg1, .sdg2, .sdg3, .sdg4,
@@ -590,7 +591,10 @@ a {
     position: relative;
     margin: 5px 0 0;
     width: calc(33.333% - 5px);
-    height: 2.4em; }
+    height: 2.4em;
+    opacity: 0.4; }
+    .icon:hover {
+      opacity: 1; }
   .icon:hover {
     opacity: 1; }
   .mobileSdgNumber {
@@ -598,11 +602,14 @@ a {
     display: inline-block;
     font-size: 2.4em;
     position: relative;
-    vertical-align: middle;
-    min-width: .8em; }
+    margin: 0 10px 0 5px;
+    vertical-align: middle; }
   .mobileSdgName {
     display: inline-block;
     font-size: 1em;
-    position: relative; } }
+    position: relative;
+    letter-spacing: .7px;
+    text-align: left;
+    text-transform: uppercase; } }
 
 /*# sourceMappingURL=bundle.css.map*/

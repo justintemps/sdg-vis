@@ -4,10 +4,12 @@
 	cursor: pointer;
 	flex-basis: auto;
 	padding: 5px;
+	transition: opacity 0.3s ease;
 	width: 16.6666%;
 }
 
-.mobileIcon, .mobileSdgNumber, .mobileSdgName {
+// Hide the mobile stuff
+.mobileSdgNumber, .mobileSdgName {
 	display: none;
 }
 
@@ -21,6 +23,7 @@
 		opacity: 1;
 	}
 }
+
 
 /* SDG0 */
 .sdg0-1{fill:#f1f1f1;}
