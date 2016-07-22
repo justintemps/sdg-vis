@@ -15,12 +15,6 @@ $class-slug: sdg !default;
 	}
 }
 
-.sdg0  {
-	.mobileSdgName, .mobileSdgNumber {
-		color: $unblue;
-	}
-}
-
 .icon {
 	@include flex();
 	align-items: center;
@@ -60,4 +54,11 @@ $class-slug: sdg !default;
 	line-height: .9em;
 	text-align: left;
 	text-transform: uppercase;
+}
+
+
+.sdg0  {
+	.mobileSdgName, .mobileSdgNumber {
+		color: $unblue;
+	}
 }

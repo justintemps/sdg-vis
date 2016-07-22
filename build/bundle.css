@@ -109,6 +109,7 @@ a {
   flex-basis: auto;
   opacity: 0.3;
   padding: 5px;
+  transition: opacity 200ms ease;
   width: 16.6666%; }
 
 .icon:hover {
@@ -579,8 +580,6 @@ a {
     background-color: #00689d; }
   .sdg17 {
     background-color: #19486a; }
-  .sdg0 .mobileSdgName, .sdg0 .mobileSdgNumber {
-    color: #29abe2; }
   .icon {
     align-items: center;
     flex-direction: row;
@@ -615,6 +614,8 @@ a {
     letter-spacing: .8px;
     line-height: .9em;
     text-align: left;
-    text-transform: uppercase; } }
+    text-transform: uppercase; }
+  .sdg0 .mobileSdgName, .sdg0 .mobileSdgNumber {
+    color: #29abe2; } }
 
 /*# sourceMappingURL=bundle.css.map*/
