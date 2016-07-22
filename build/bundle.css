@@ -21,11 +21,13 @@
 /* -- Mixins -- */
 /* -- Color Palette -- */
 /* Global Goals */
+/* Colors List */
 /* Typography etc. */
 /* -- Typography -- */
 /* -- Mixins -- */
 /* -- Color Palette -- */
 /* Global Goals */
+/* Colors List */
 html,
 body,
 #app,
@@ -107,6 +109,9 @@ a {
   flex-basis: auto;
   padding: 5px;
   width: 16.6666%; }
+
+.mobileIcon, .mobileSdgNumber, .mobileSdgName {
+  display: none; }
 
 .sdg0, .sdg1, .sdg2, .sdg3, .sdg4,
 .sdg5, .sdg6, .sdg7, .sdg8,
@@ -394,6 +399,7 @@ a {
 /* -- Mixins -- */
 /* -- Color Palette -- */
 /* Global Goals */
+/* Colors List */
 .focusTargets {
   min-height: 100px;
   margin: 10px 0 0;
@@ -493,5 +499,110 @@ a {
   color: #0077b5;
   cursor: pointer;
   transition: color 200ms ease; }
+
+/* -- MOBILE STYLES START HERE -- */
+@media screen and (max-width: 640px) {
+  .row {
+    padding: 5px; }
+  svg.sdg0 {
+    display: none; }
+  svg.sdg1 {
+    display: none; }
+  svg.sdg2 {
+    display: none; }
+  svg.sdg3 {
+    display: none; }
+  svg.sdg4 {
+    display: none; }
+  svg.sdg5 {
+    display: none; }
+  svg.sdg6 {
+    display: none; }
+  svg.sdg7 {
+    display: none; }
+  svg.sdg8 {
+    display: none; }
+  svg.sdg9 {
+    display: none; }
+  svg.sdg10 {
+    display: none; }
+  svg.sdg11 {
+    display: none; }
+  svg.sdg12 {
+    display: none; }
+  svg.sdg13 {
+    display: none; }
+  svg.sdg14 {
+    display: none; }
+  svg.sdg15 {
+    display: none; }
+  svg.sdg16 {
+    display: none; }
+  svg.sdg17 {
+    display: none; }
+  .sdg0 {
+    background-color: #f1f1f1; }
+  .sdg1 {
+    background-color: #e5243b; }
+  .sdg2 {
+    background-color: #dda63a; }
+  .sdg3 {
+    background-color: #4c9f38; }
+  .sdg4 {
+    background-color: #c5192d; }
+  .sdg5 {
+    background-color: #ff3a21; }
+  .sdg6 {
+    background-color: #26bde2; }
+  .sdg7 {
+    background-color: #fcc30b; }
+  .sdg8 {
+    background-color: #a21942; }
+  .sdg9 {
+    background-color: #fd6925; }
+  .sdg10 {
+    background-color: #dd1367; }
+  .sdg11 {
+    background-color: #fd9d24; }
+  .sdg12 {
+    background-color: #bf8b2e; }
+  .sdg13 {
+    background-color: #3f7e44; }
+  .sdg14 {
+    background-color: #0a97d9; }
+  .sdg15 {
+    background-color: #56c02b; }
+  .sdg16 {
+    background-color: #00689d; }
+  .sdg17 {
+    background-color: #19486a; }
+  .icon {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    color: #fff;
+    flex-wrap: nowrap;
+    font-family: "GiorgioSans-Bold", "Source Sans Pro", sans-serif;
+    justify-content: flex-start;
+    position: relative;
+    margin: 5px 0 0;
+    width: calc(33.333% - 5px);
+    height: 2.4em; }
+  .icon:hover {
+    opacity: 1; }
+  .mobileSdgNumber {
+    bottom: 3px;
+    display: inline-block;
+    font-size: 2.4em;
+    position: relative;
+    vertical-align: middle;
+    min-width: .8em; }
+  .mobileSdgName {
+    display: inline-block;
+    font-size: 1em;
+    position: relative; } }
 
 /*# sourceMappingURL=bundle.css.map*/

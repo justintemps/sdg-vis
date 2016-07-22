@@ -1,0 +1,48 @@
+$class-slug: sdg !default;
+
+@for $i from 0 through 17 {
+	// Hide all the SVGs
+	svg.#{$class-slug}#{$i} {
+		display: none;
+	}
+}
+
+@each $current-color in $colors-list {
+	$i: index($colors-list, $current-color) - 1;
+	.#{$class-slug}#{$i} {
+		background-color: $current-color;
+	}
+}
+
+.icon {
+	@include flex();
+	align-items: center;
+	box-sizing: border-box;
+	color: #fff;
+	flex-wrap: nowrap;
+	font-family: $sdg-number;
+	justify-content: flex-start;
+	position: relative;
+	margin: 5px 0 0;
+	width: calc(33.333% - 5px);
+	height: 2.4em;
+}
+
+.icon:hover {
+	opacity: 1;
+}
+
+.mobileSdgNumber {
+	bottom: 3px;
+	display: inline-block;
+	font-size: 2.4em;
+	position: relative;
+	vertical-align: middle;
+	min-width: .8em;
+}
+
+.mobileSdgName {
+	display: inline-block;
+	font-size: 1em;
+	position: relative;
+}

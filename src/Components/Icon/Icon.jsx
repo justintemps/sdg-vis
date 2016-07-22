@@ -1,6 +1,7 @@
 /**
  * Icons
  * Child to Row
+ * TODO: May be we should be importing icons in row instead?
  */
 
 import React from "react";
@@ -43,9 +44,18 @@ const Icon = React.createClass({
 			opacity: (this.props.sdg === this.props.currentSdg ? 1 : 0.3)
 		}));
 
+		const iconClass = `icon sdg${this.props.sdg}`;
+
+		const mobileIconStyles = {
+			backgroundColor : this.props.color,
+			opacity : (this.props.sdg === this.props.currentSdg ? 1 : 0.3)
+		};
+
 		return(
-			<div className="icon" onClick={this.clickHandler}>
+			<div className={iconClass} onClick={this.clickHandler}>
 				{sdgs[this.props.sdg]}
+				<div className="mobileSdgNumber">{this.props.sdg}</div>
+				<div className="mobileSdgName">This sdg name</div>
 			</div>
 		);
 	}

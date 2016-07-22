@@ -57,9 +57,9 @@
 	
 	__webpack_require__(/*! ./fonts/fonts.scss */ 159);
 	
-	__webpack_require__(/*! ./styles/main.scss */ 323);
+	__webpack_require__(/*! ./styles/main.scss */ 169);
 	
-	var _SDGexplorer = __webpack_require__(/*! ./Components/SDGexplorer/SDGexplorer.jsx */ 169);
+	var _SDGexplorer = __webpack_require__(/*! ./Components/SDGexplorer/SDGexplorer.jsx */ 171);
 	
 	var _SDGexplorer2 = _interopRequireDefault(_SDGexplorer);
 	
@@ -20196,6 +20196,16 @@
 /* 167 */,
 /* 168 */,
 /* 169 */
+/*!******************************!*\
+  !*** ./src/styles/main.scss ***!
+  \******************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 170 */,
+/* 171 */
 /*!****************************************************!*\
   !*** ./src/Components/SDGexplorer/SDGexplorer.jsx ***!
   \****************************************************/
@@ -20211,15 +20221,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Row = __webpack_require__(/*! ../Row/Row.jsx */ 170);
+	var _Row = __webpack_require__(/*! ../Row/Row.jsx */ 172);
 	
 	var _Row2 = _interopRequireDefault(_Row);
 	
-	var _ViewerWindow = __webpack_require__(/*! ../ViewerWindow/ViewerWindow.jsx */ 302);
+	var _ViewerWindow = __webpack_require__(/*! ../ViewerWindow/ViewerWindow.jsx */ 300);
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 322);
+	var _data = __webpack_require__(/*! json!../../data.json */ 308);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -20290,7 +20300,7 @@
 	exports.default = SDGexplorer;
 
 /***/ },
-/* 170 */
+/* 172 */
 /*!************************************!*\
   !*** ./src/Components/Row/Row.jsx ***!
   \************************************/
@@ -20306,7 +20316,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Icon = __webpack_require__(/*! ../Icon/Icon.jsx */ 171);
+	var _Icon = __webpack_require__(/*! ../Icon/Icon.jsx */ 173);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -20343,7 +20353,7 @@
 	exports.default = Row;
 
 /***/ },
-/* 171 */
+/* 173 */
 /*!**************************************!*\
   !*** ./src/Components/Icon/Icon.jsx ***!
   \**************************************/
@@ -20440,6 +20450,7 @@
 	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default]; /**
 	                                                                                                                                                                                                                                                                                                           * Icons
 	                                                                                                                                                                                                                                                                                                           * Child to Row
+	                                                                                                                                                                                                                                                                                                           * TODO: May be we should be importing icons in row instead?
 	                                                                                                                                                                                                                                                                                                           */
 	
 	var Icon = _react2.default.createClass({
@@ -20458,15 +20469,20 @@
 				});
 			});
 	
-			return _react2.default.createElement("div", { className: "icon", onClick: this.clickHandler }, sdgs[this.props.sdg]);
+			var iconClass = "icon sdg" + this.props.sdg;
+	
+			var mobileIconStyles = {
+				backgroundColor: this.props.color,
+				opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3
+			};
+	
+			return _react2.default.createElement("div", { className: iconClass, onClick: this.clickHandler }, sdgs[this.props.sdg], _react2.default.createElement("div", { className: "mobileSdgNumber" }, this.props.sdg), _react2.default.createElement("div", { className: "mobileSdgName" }, "This sdg name"));
 		}
 	});
 	
 	exports.default = Icon;
 
 /***/ },
-/* 172 */,
-/* 173 */,
 /* 174 */
 /*!*******************************************************************!*\
   !*** ./~/babel-loader!./~/svg-react-loader!./src/images/sdg1.svg ***!
@@ -25729,9 +25745,7 @@
 	});
 
 /***/ },
-/* 300 */,
-/* 301 */,
-/* 302 */
+/* 300 */
 /*!******************************************************!*\
   !*** ./src/Components/ViewerWindow/ViewerWindow.jsx ***!
   \******************************************************/
@@ -25747,11 +25761,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _TitleBar = __webpack_require__(/*! ../TitleBar/TitleBar.jsx */ 303);
+	var _TitleBar = __webpack_require__(/*! ../TitleBar/TitleBar.jsx */ 301);
 	
 	var _TitleBar2 = _interopRequireDefault(_TitleBar);
 	
-	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 306);
+	var _ViewerWindowContent = __webpack_require__(/*! ../ViewerWindowContent/ViewerWindowContent.jsx */ 302);
 	
 	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
 	
@@ -25788,7 +25802,7 @@
 	exports.default = ViewerWindow;
 
 /***/ },
-/* 303 */
+/* 301 */
 /*!**********************************************!*\
   !*** ./src/Components/TitleBar/TitleBar.jsx ***!
   \**********************************************/
@@ -25849,9 +25863,7 @@
 	exports.default = TitleBar;
 
 /***/ },
-/* 304 */,
-/* 305 */,
-/* 306 */
+/* 302 */
 /*!********************************************************************!*\
   !*** ./src/Components/ViewerWindowContent/ViewerWindowContent.jsx ***!
   \********************************************************************/
@@ -25867,11 +25879,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 307);
+	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 303);
 	
 	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
 	
-	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 313);
+	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 305);
 	
 	var _ImpactStories2 = _interopRequireDefault(_ImpactStories);
 	
@@ -25920,7 +25932,7 @@
 	exports.default = ViewerWindowContent;
 
 /***/ },
-/* 307 */
+/* 303 */
 /*!******************************************************!*\
   !*** ./src/Components/FocusTargets/FocusTargets.jsx ***!
   \******************************************************/
@@ -25936,7 +25948,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 308);
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 304);
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
@@ -25976,7 +25988,7 @@
 	exports.default = FocusTargets;
 
 /***/ },
-/* 308 */
+/* 304 */
 /*!******************************************!*\
   !*** ./src/Components/Bullet/Bullet.jsx ***!
   \******************************************/
@@ -26040,11 +26052,7 @@
 	exports.default = Bullet;
 
 /***/ },
-/* 309 */,
-/* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */
+/* 305 */
 /*!********************************************************!*\
   !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
   \********************************************************/
@@ -26060,11 +26068,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 308);
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 304);
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	var _ShareWidget = __webpack_require__(/*! ../ShareWidget/ShareWidget.jsx */ 314);
+	var _ShareWidget = __webpack_require__(/*! ../ShareWidget/ShareWidget.jsx */ 306);
 	
 	var _ShareWidget2 = _interopRequireDefault(_ShareWidget);
 	
@@ -26106,7 +26114,7 @@
 	exports.default = ImpactStories;
 
 /***/ },
-/* 314 */
+/* 306 */
 /*!****************************************************!*\
   !*** ./src/Components/ShareWidget/ShareWidget.jsx ***!
   \****************************************************/
@@ -26122,7 +26130,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 315);
+	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 307);
 	
 	var _popupCenter2 = _interopRequireDefault(_popupCenter);
 	
@@ -26203,7 +26211,7 @@
 	exports.default = ShareWidget;
 
 /***/ },
-/* 315 */
+/* 307 */
 /*!***************************************************!*\
   !*** ./src/Components/ShareWidget/popupCenter.js ***!
   \***************************************************/
@@ -26244,13 +26252,7 @@
 	}
 
 /***/ },
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */
+/* 308 */
 /*!***************************************!*\
   !*** ./~/json-loader!./src/data.json ***!
   \***************************************/
@@ -27074,15 +27076,6 @@
 			]
 		}
 	];
-
-/***/ },
-/* 323 */
-/*!******************************!*\
-  !*** ./src/styles/main.scss ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

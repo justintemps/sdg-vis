@@ -30,3 +30,12 @@
 
 /* ShareWidget */
 @import "../Components/ShareWidget/_shareWidget";
+
+/* -- MOBILE STYLES START HERE -- */
+@media screen and (max-width: 640px) {
+
+	@import "../Components/Row/_rowMobile"; 
+
+	@import "../Components/Icon/_iconMobile";
+
+}
