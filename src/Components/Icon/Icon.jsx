@@ -40,21 +40,35 @@ const Icon = React.createClass({
 
 		// Creates new React Elements from imported SVGs
 		const sdgs = icons.map( (svg, i) => React.createElement(svg, {
-			className: "sdg"+ i,
-			opacity: (this.props.sdg === this.props.currentSdg ? 1 : 0.3)
+			className: "sdg"+ i
 		}));
 
+		// Configure the class for the icon
 		const iconClass = `icon sdg${this.props.sdg}`;
 
-		const mobileIconStyles = {
-			backgroundColor : this.props.color,
-			opacity : (this.props.sdg === this.props.currentSdg ? 1 : 0.3)
+		// Sets the opacity on the currently selected element
+		const opacity = () => {
+			if (this.props.sdg === this.props.currentSdg) {
+				return({opacity: 1});
+			}
 		};
+/*
+		// Special styles for the first icon
+		const sdg0Style = () => {
+			if (this.props.currentSdg === 0 && this.props.sdg === this.props.currentSdg) {
+				return ({
+					color: "#29abe2"
+				});
+			}
+		};
+*/
+		// Determines which number or character should appear in the mobile icon
+		const mobileSDGNumber = ( this.props.sdg > 0 ) ? this.props.sdg : "D";
 
 		return(
-			<div className={iconClass} onClick={this.clickHandler}>
+			<div style={opacity()} className={iconClass} onClick={this.clickHandler}>
 				{sdgs[this.props.sdg]}
-				<div className="mobileSdgNumber">{this.props.sdg}</div>
+				<div className="mobileSdgNumber">{mobileSDGNumber}</div>
 				<div className="mobileSdgName">{this.props.sdgNameShort}</div>
 			</div>
 		);

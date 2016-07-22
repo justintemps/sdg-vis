@@ -20465,19 +20465,33 @@
 			// Creates new React Elements from imported SVGs
 			var sdgs = icons.map(function (svg, i) {
 				return _react2.default.createElement(svg, {
-					className: "sdg" + i,
-					opacity: _this.props.sdg === _this.props.currentSdg ? 1 : 0.3
+					className: "sdg" + i
 				});
 			});
 	
+			// Configure the class for the icon
 			var iconClass = "icon sdg" + this.props.sdg;
 	
-			var mobileIconStyles = {
-				backgroundColor: this.props.color,
-				opacity: this.props.sdg === this.props.currentSdg ? 1 : 0.3
+			// Sets the opacity on the currently selected element
+			var opacity = function opacity() {
+				if (_this.props.sdg === _this.props.currentSdg) {
+					return { opacity: 1 };
+				}
 			};
+			/*
+	  		// Special styles for the first icon
+	  		const sdg0Style = () => {
+	  			if (this.props.currentSdg === 0 && this.props.sdg === this.props.currentSdg) {
+	  				return ({
+	  					color: "#29abe2"
+	  				});
+	  			}
+	  		};
+	  */
+			// Determines which number or character should appear in the mobile icon
+			var mobileSDGNumber = this.props.sdg > 0 ? this.props.sdg : "D";
 	
-			return _react2.default.createElement("div", { className: iconClass, onClick: this.clickHandler }, sdgs[this.props.sdg], _react2.default.createElement("div", { className: "mobileSdgNumber" }, this.props.sdg), _react2.default.createElement("div", { className: "mobileSdgName" }, this.props.sdgNameShort));
+			return _react2.default.createElement("div", { style: opacity(), className: iconClass, onClick: this.clickHandler }, sdgs[this.props.sdg], _react2.default.createElement("div", { className: "mobileSdgNumber" }, mobileSDGNumber), _react2.default.createElement("div", { className: "mobileSdgName" }, this.props.sdgNameShort));
 		}
 	});
 	
