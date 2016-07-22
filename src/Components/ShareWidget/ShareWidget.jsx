@@ -5,7 +5,6 @@
 
 import React from "react";
 import popupCenter from "./popupCenter.js";
-import "./shareWidget.scss";
 
 const ShareWidget = React.createClass({
 

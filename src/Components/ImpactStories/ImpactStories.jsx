@@ -7,7 +7,6 @@
 import React from "react";
 import Bullet from "../Bullet/Bullet.jsx";
 import ShareWidget from "../ShareWidget/ShareWidget.jsx";
-import "./impactStories.scss";
 
 const ImpactStories = React.createClass({
 	render() {

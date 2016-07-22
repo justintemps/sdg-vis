@@ -16,6 +16,90 @@
   src: url(ApexNew-Book.woff) format("woff"), url(ApexNew-Book.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
+/* Variables */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
+/* Typography etc. */
+/* -- Typography -- */
+/* -- Mixins -- */
+/* -- Color Palette -- */
+/* Global Goals */
+html,
+body,
+#app,
+.wrapper,
+.sdgExplorer {
+  width: 100%;
+  height: 100%;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
+
+.wrapper, .sdgExplorer {
+  max-width: 750px;
+  text-align: center; }
+
+h2 {
+  font-family: "Apex New Book", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #0080b0;
+  line-height: 1.2em;
+  margin: 0 0 5px;
+  padding: 0;
+  transition: color 0.1s ease; }
+
+h2:hover {
+  color: #3bc3e4; }
+
+h3 {
+  font-family: "Apex New Book", sans-serif;
+  font-size: .88em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; }
+
+h4 {
+  color: #3bc3e4;
+  font-family: "Apex New Book", sans-serif;
+  font-size: .9em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+p, span {
+  font-family: "Apex New Book", sans-serif;
+  font-size: 1em;
+  color: #2a2a2a;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0; }
+
+span {
+  font-weight: 600; }
+
+a {
+  text-decoration: none; }
+
+/* SDGexplorer*/
+/* SDGexplorer */
+/* Row*/
+/* Row */
+.row {
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0;
+  position: relative;
+  text-align: center; }
+
+/* Icon */
 /* Icon */
 .icon {
   box-sizing: border-box;
@@ -222,22 +306,21 @@
 
 .sdg17-2 {
   fill: #fff; }
-/* Row */
-.row {
-  align-items: center;
+
+/* ViewerWindow */
+/* ViewerWindow */
+.viewerWindow {
   box-sizing: border-box;
-  flex-direction: row;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0 0;
+  height: 50%;
+  min-height: 450px;
+  max-height: 475px;
+  padding: 5px;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+
+/* Title Bar */
 /* TitleBar */
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
 .titleBar {
   align-items: center;
   flex-direction: row;
@@ -304,93 +387,13 @@
 .sdgBlurb {
   color: #29abe2;
   right: 40px; }
-/* -- Bullets -- */
-.bullets {
-  margin: 0;
-  padding: 0; }
 
-.bullet {
-  cursor: pointer;
-  display: inline;
-  font-size: 3em;
-  line-height: 50%;
-  margin: 0 10px 0 10px;
-  opacity: 0.3;
-  position: relative;
-  top: 3.2px;
-  transition: opacity 0.17s ease; }
-
-.bullet:hover {
-  opacity: 1; }
-
-.bullet::before {
-  content: "\2022"; }
+/* Focus Targets */
 /* Focus Targets */
 /* -- Typography -- */
 /* -- Mixins -- */
 /* -- Color Palette -- */
 /* Global Goals */
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
-html,
-body,
-#app,
-.wrapper {
-  width: 100%;
-  height: 100%;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important; }
-
-.wrapper {
-  max-width: 750px;
-  text-align: center; }
-
-h2 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  color: #0080b0;
-  line-height: 1.2em;
-  margin: 0 0 5px;
-  padding: 0;
-  transition: color 0.1s ease; }
-
-h2:hover {
-  color: #3bc3e4; }
-
-h3 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: .88em;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase; }
-
-h4 {
-  color: #3bc3e4;
-  font-family: "Apex New Book", sans-serif;
-  font-size: .9em;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  position: relative; }
-
-p, span {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1em;
-  color: #2a2a2a;
-  line-height: 1.3em;
-  margin: 0;
-  padding: 0; }
-
-span {
-  font-weight: 600; }
-
-a {
-  text-decoration: none; }
-
 .focusTargets {
   min-height: 100px;
   margin: 10px 0 0;
@@ -412,71 +415,57 @@ a {
   display: flex;
   flex-wrap: nowrap;
   margin: 0; }
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
-html,
-body,
-#app,
-.wrapper {
-  width: 100%;
-  height: 100%;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important; }
 
-.wrapper {
-  max-width: 750px;
-  text-align: center; }
-
-h2 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  color: #0080b0;
-  line-height: 1.2em;
-  margin: 0 0 5px;
-  padding: 0;
-  transition: color 0.1s ease; }
-
-h2:hover {
-  color: #3bc3e4; }
-
-h3 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: .88em;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase; }
-
-h4 {
-  color: #3bc3e4;
-  font-family: "Apex New Book", sans-serif;
-  font-size: .9em;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  position: relative; }
-
-p, span {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1em;
-  color: #2a2a2a;
-  line-height: 1.3em;
+/* Bullet */
+/* -- Bullets -- */
+.bullets {
   margin: 0;
   padding: 0; }
 
-span {
-  font-weight: 600; }
+.bullet {
+  cursor: pointer;
+  display: inline;
+  font-size: 3em;
+  line-height: 50%;
+  margin: 0 10px 0 10px;
+  opacity: 0.3;
+  position: relative;
+  top: 3.2px;
+  transition: opacity 0.17s ease; }
 
-a {
-  text-decoration: none; }
+.bullet:hover {
+  opacity: 1; }
 
+.bullet::before {
+  content: "\2022"; }
+
+/* ImpactStories */
+/* Impact Stories */
+.impactStories {
+  margin: 10px 0;
+  min-height: 135px;
+  padding: 0 10px 0 20px;
+  text-align: left; }
+
+.stories-wrapper {
+  align-items: top;
+  display: flex;
+  flex-direction: top;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0; }
+
+.thumbnail-wrapper {
+  margin: 0 0 0 5px; }
+
+.thumbnail {
+  margin: 0 0 0 10px;
+  max-width: 180px;
+  padding: 0;
+  position: relative;
+  top: 5px; }
+
+/* ShareWidget */
 .shareWidget {
   color: #7e7e7e;
   font-size: .86em;
@@ -504,319 +493,5 @@ a {
   color: #0077b5;
   cursor: pointer;
   transition: color 200ms ease; }
-/* Impact Stories */
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
-html,
-body,
-#app,
-.wrapper {
-  width: 100%;
-  height: 100%;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important; }
-
-.wrapper {
-  max-width: 750px;
-  text-align: center; }
-
-h2 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  color: #0080b0;
-  line-height: 1.2em;
-  margin: 0 0 5px;
-  padding: 0;
-  transition: color 0.1s ease; }
-
-h2:hover {
-  color: #3bc3e4; }
-
-h3 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: .88em;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase; }
-
-h4 {
-  color: #3bc3e4;
-  font-family: "Apex New Book", sans-serif;
-  font-size: .9em;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  position: relative; }
-
-p, span {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1em;
-  color: #2a2a2a;
-  line-height: 1.3em;
-  margin: 0;
-  padding: 0; }
-
-span {
-  font-weight: 600; }
-
-a {
-  text-decoration: none; }
-
-/* Focus Targets */
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
-html,
-body,
-#app,
-.wrapper {
-  width: 100%;
-  height: 100%;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important; }
-
-.wrapper {
-  max-width: 750px;
-  text-align: center; }
-
-h2 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  color: #0080b0;
-  line-height: 1.2em;
-  margin: 0 0 5px;
-  padding: 0;
-  transition: color 0.1s ease; }
-
-h2:hover {
-  color: #3bc3e4; }
-
-h3 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: .88em;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase; }
-
-h4 {
-  color: #3bc3e4;
-  font-family: "Apex New Book", sans-serif;
-  font-size: .9em;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  position: relative; }
-
-p, span {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1em;
-  color: #2a2a2a;
-  line-height: 1.3em;
-  margin: 0;
-  padding: 0; }
-
-span {
-  font-weight: 600; }
-
-a {
-  text-decoration: none; }
-
-.focusTargets {
-  min-height: 100px;
-  margin: 10px 0 0;
-  padding: 0 20px 0 20px;
-  text-align: left; }
-  .focusTargets span, .focusTargets p, .focusTargets span {
-    display: inline; }
-  .focusTargets .targetNumber, .focusTargets .instruction {
-    margin: 0 5px 0 0; }
-  .focusTargets .targetNumber::before {
-    content: "Target"; }
-  .focusTargets .instruction::before {
-    content: "Step"; }
-
-.targetSelector {
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 0; }
-
-.impactStories {
-  margin: 10px 0;
-  min-height: 135px;
-  padding: 0 10px 0 20px;
-  text-align: left; }
-
-.stories-wrapper {
-  align-items: top;
-  display: flex;
-  flex-direction: top;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 0; }
-
-.thumbnail-wrapper {
-  margin: 0 0 0 5px; }
-
-.thumbnail {
-  margin: 0 0 0 10px;
-  max-width: 180px;
-  padding: 0;
-  position: relative;
-  top: 5px; }
-/* ViewerWindow */
-.viewerWindow {
-  box-sizing: border-box;
-  height: 50%;
-  min-height: 450px;
-  max-height: 475px;
-  padding: 5px;
-  position: relative;
-  text-align: center;
-  width: 100%; }
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
-html,
-body,
-#app,
-.wrapper {
-  width: 100%;
-  height: 100%;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important; }
-
-.wrapper {
-  max-width: 750px;
-  text-align: center; }
-
-h2 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  color: #0080b0;
-  line-height: 1.2em;
-  margin: 0 0 5px;
-  padding: 0;
-  transition: color 0.1s ease; }
-
-h2:hover {
-  color: #3bc3e4; }
-
-h3 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: .88em;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase; }
-
-h4 {
-  color: #3bc3e4;
-  font-family: "Apex New Book", sans-serif;
-  font-size: .9em;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  position: relative; }
-
-p, span {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1em;
-  color: #2a2a2a;
-  line-height: 1.3em;
-  margin: 0;
-  padding: 0; }
-
-span {
-  font-weight: 600; }
-
-a {
-  text-decoration: none; }
-/* SDGexplorer */
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
-html,
-body,
-#app,
-.wrapper,
-.sdgExplorer {
-  width: 100%;
-  height: 100%;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important; }
-
-.wrapper, .sdgExplorer {
-  max-width: 750px;
-  text-align: center; }
-
-h2 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  color: #0080b0;
-  line-height: 1.2em;
-  margin: 0 0 5px;
-  padding: 0;
-  transition: color 0.1s ease; }
-
-h2:hover {
-  color: #3bc3e4; }
-
-h3 {
-  font-family: "Apex New Book", sans-serif;
-  font-size: .88em;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase; }
-
-h4 {
-  color: #3bc3e4;
-  font-family: "Apex New Book", sans-serif;
-  font-size: .9em;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  position: relative; }
-
-p, span {
-  font-family: "Apex New Book", sans-serif;
-  font-size: 1em;
-  color: #2a2a2a;
-  line-height: 1.3em;
-  margin: 0;
-  padding: 0; }
-
-span {
-  font-weight: 600; }
-
-a {
-  text-decoration: none; }
-
-/* -- Typography -- */
-/* -- Mixins -- */
-/* -- Color Palette -- */
-/* Global Goals */
 
 /*# sourceMappingURL=bundle.css.map*/

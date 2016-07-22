@@ -1,6 +1,3 @@
-@import "src/styles/_utils";
-@import "src/styles/base";
-
 @mixin hover($color) {
 	color: $color;
 	cursor: pointer;

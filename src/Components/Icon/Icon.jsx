@@ -4,7 +4,6 @@
  */
 
 import React from "react";
-import "./icon.scss";
 
 // Load SVGs with Webpack svg-react-loader
 import Sdg1 from "!babel!svg-react!../../images/sdg1.svg";

@@ -6,7 +6,6 @@
 import React from "react";
 import TitleBar from "../TitleBar/TitleBar.jsx";
 import ViewerWindowContent from "../ViewerWindowContent/ViewerWindowContent.jsx";
-import "./viewerWindow.scss";
 
 const ViewerWindow = React.createClass({
 

@@ -1,6 +1,5 @@
 import React from "react";
 import Icon from "../Icon/Icon.jsx";
-import "./row.scss";
 
 const Row = React.createClass({
 

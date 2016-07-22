@@ -5,7 +5,6 @@
 
 import React from "react";
 import Bullet from "../Bullet/Bullet.jsx";
-import "./focusTargets.scss";
 
 const FocusTargets = React.createClass({
 

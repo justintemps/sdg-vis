@@ -8,8 +8,6 @@ import React from "react";
 import Row from "../Row/Row.jsx";
 import ViewerWindow from "../ViewerWindow/ViewerWindow.jsx";
 import data from "!json!../../data.json";
-import "../../styles/base.scss";
-import "./sdgexplorer.scss";
 
 const SDGexplorer = React.createClass({
 

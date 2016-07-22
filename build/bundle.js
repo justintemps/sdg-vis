@@ -57,6 +57,8 @@
 	
 	__webpack_require__(/*! ./fonts/fonts.scss */ 159);
 	
+	__webpack_require__(/*! ./styles/main.scss */ 323);
+	
 	var _SDGexplorer = __webpack_require__(/*! ./Components/SDGexplorer/SDGexplorer.jsx */ 169);
 	
 	var _SDGexplorer2 = _interopRequireDefault(_SDGexplorer);
@@ -20221,10 +20223,6 @@
 	
 	var _data2 = _interopRequireDefault(_data);
 	
-	__webpack_require__(/*! ../../styles/base.scss */ 323);
-	
-	__webpack_require__(/*! ./sdgexplorer.scss */ 325);
-	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
@@ -20312,8 +20310,6 @@
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
-	__webpack_require__(/*! ./row.scss */ 300);
-	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
@@ -20362,8 +20358,6 @@
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
-	
-	__webpack_require__(/*! ./icon.scss */ 172);
 	
 	var _sdg = __webpack_require__(/*! babel!svg-react!../../images/sdg1.svg */ 174);
 	
@@ -20442,12 +20436,11 @@
 	}
 	
 	// Load SVGs with Webpack svg-react-loader
-	/**
-	 * Icons
-	 * Child to Row
-	 */
 	
-	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default];
+	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default]; /**
+	                                                                                                                                                                                                                                                                                                           * Icons
+	                                                                                                                                                                                                                                                                                                           * Child to Row
+	                                                                                                                                                                                                                                                                                                           */
 	
 	var Icon = _react2.default.createClass({
 		displayName: "Icon",
@@ -20472,15 +20465,7 @@
 	exports.default = Icon;
 
 /***/ },
-/* 172 */
-/*!***************************************!*\
-  !*** ./src/Components/Icon/icon.scss ***!
-  \***************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 172 */,
 /* 173 */,
 /* 174 */
 /*!*******************************************************************!*\
@@ -25744,15 +25729,7 @@
 	});
 
 /***/ },
-/* 300 */
-/*!*************************************!*\
-  !*** ./src/Components/Row/row.scss ***!
-  \*************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 300 */,
 /* 301 */,
 /* 302 */
 /*!******************************************************!*\
@@ -25778,16 +25755,9 @@
 	
 	var _ViewerWindowContent2 = _interopRequireDefault(_ViewerWindowContent);
 	
-	__webpack_require__(/*! ./viewerWindow.scss */ 320);
-	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
-	
-	/**
-	 * ViewerWindow
-	 * Parent to TitleBar, ViewerWindowContent
-	 */
 	
 	var ViewerWindow = _react2.default.createClass({
 		displayName: "ViewerWindow",
@@ -25810,7 +25780,10 @@
 	
 			// Default: if the currentSDG is the Intro, render the viewerwindow like this.
 		}
-	});
+	}); /**
+	     * ViewerWindow
+	     * Parent to TitleBar, ViewerWindowContent
+	     */
 	
 	exports.default = ViewerWindow;
 
@@ -25831,16 +25804,9 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(/*! ./titleBar.scss */ 304);
-	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
-	
-	/**
-	 * TitleBar
-	 * Child of ViewerWindow
-	 */
 	
 	var TitleBar = _react2.default.createClass({
 		displayName: "TitleBar",
@@ -25875,20 +25841,15 @@
 				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "dropCap" }, "d"), _react2.default.createElement("div", { className: "decentWork" }, "ecent work"), _react2.default.createElement("div", { className: "sdgBlurb" }, this.props.sdgName)), _react2.default.createElement("div", { style: triangle }));
 			}
 		}
-	});
+	}); /**
+	     * TitleBar
+	     * Child of ViewerWindow
+	     */
 	
 	exports.default = TitleBar;
 
 /***/ },
-/* 304 */
-/*!***********************************************!*\
-  !*** ./src/Components/TitleBar/titleBar.scss ***!
-  \***********************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 304 */,
 /* 305 */,
 /* 306 */
 /*!********************************************************************!*\
@@ -25979,11 +25940,14 @@
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	__webpack_require__(/*! ./focusTargets.scss */ 311);
-	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
+	
+	/**
+	 * FocusTargets
+	 * Parent to Bullet
+	 */
 	
 	var FocusTargets = _react2.default.createClass({
 		displayName: "FocusTargets",
@@ -26007,10 +25971,7 @@
 	
 			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, heading), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", null, _react2.default.createElement("span", { className: this.props.currentSDG > 0 ? "targetNumber" : "instruction" }, " ", this.props.focusTargets[this.props.focusTarget].number), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget].description)));
 		}
-	}); /**
-	     * FocusTargets
-	     * Parent to Bullet
-	     */
+	});
 	
 	exports.default = FocusTargets;
 
@@ -26031,16 +25992,9 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(/*! ./bullet.scss */ 309);
-	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
-	
-	/**
-	 * Bullet
-	 * Child to FocusTargets / ImpactStories
-	 */
 	
 	var Bullet = _react2.default.createClass({
 		displayName: "Bullet",
@@ -26078,30 +26032,17 @@
 				style: isSelected ? selected : unselected,
 				onClick: this.props.type === "focusTarget" ? this.selectFocusTarget : this.selectStory });
 		}
-	});
+	}); /**
+	     * Bullet
+	     * Child to FocusTargets / ImpactStories
+	     */
 	
 	exports.default = Bullet;
 
 /***/ },
-/* 309 */
-/*!*******************************************!*\
-  !*** ./src/Components/Bullet/bullet.scss ***!
-  \*******************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 309 */,
 /* 310 */,
-/* 311 */
-/*!*******************************************************!*\
-  !*** ./src/Components/FocusTargets/focusTargets.scss ***!
-  \*******************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 311 */,
 /* 312 */,
 /* 313 */
 /*!********************************************************!*\
@@ -26127,17 +26068,9 @@
 	
 	var _ShareWidget2 = _interopRequireDefault(_ShareWidget);
 	
-	__webpack_require__(/*! ./impactStories.scss */ 318);
-	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
-	
-	/**
-	 * ImpactStories
-	 * Child to ViewerWindowContent
-	 * Parent to Bullet, ShareWidget
-	 */
 	
 	var ImpactStories = _react2.default.createClass({
 		displayName: "ImpactStories",
@@ -26164,7 +26097,11 @@
 				currentStoryBlurb: this.props.impactStories[this.props.currentStory].blurb
 			}))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
 		}
-	});
+	}); /**
+	     * ImpactStories
+	     * Child to ViewerWindowContent
+	     * Parent to Bullet, ShareWidget
+	     */
 	
 	exports.default = ImpactStories;
 
@@ -26189,17 +26126,22 @@
 	
 	var _popupCenter2 = _interopRequireDefault(_popupCenter);
 	
-	__webpack_require__(/*! ./shareWidget.scss */ 316);
-	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
+	
+	/**
+	 * ShareWidget
+	 * Child to ImpactStories
+	 */
 	
 	var ShareWidget = _react2.default.createClass({
 		displayName: "ShareWidget",
 	
 		// Share on Facebook
 		fbShare: function fbShare() {
+			var _this = this;
+	
 			window.fbAsyncInit = function () {
 				FB.init({
 					appId: "1479961782307072",
@@ -26209,7 +26151,7 @@
 	
 				FB.ui({
 					method: "share",
-					href: "http://www.ilo.org"
+					href: _this.props.currentStoryUrl
 				}, function (response) {});
 			};
 			window.fbAsyncInit();
@@ -26240,10 +26182,7 @@
 		render: function render() {
 			return _react2.default.createElement("div", { className: "shareWidget" }, _react2.default.createElement("span", null, "Share this story:"), _react2.default.createElement(Sharebutton, { network: "facebook", handler: this.fbShare }), _react2.default.createElement(Sharebutton, { network: "twitter", handler: this.tweet }), _react2.default.createElement(Sharebutton, { network: "linkedin", handler: this.liShare }));
 		}
-	}); /**
-	     * ShareWidget
-	     * Child to ImpactStories
-	     */
+	});
 	
 	var Sharebutton = _react2.default.createClass({
 		displayName: "Sharebutton",
@@ -26305,35 +26244,11 @@
 	}
 
 /***/ },
-/* 316 */
-/*!*****************************************************!*\
-  !*** ./src/Components/ShareWidget/shareWidget.scss ***!
-  \*****************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 316 */,
 /* 317 */,
-/* 318 */
-/*!*********************************************************!*\
-  !*** ./src/Components/ImpactStories/impactStories.scss ***!
-  \*********************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 318 */,
 /* 319 */,
-/* 320 */
-/*!*******************************************************!*\
-  !*** ./src/Components/ViewerWindow/viewerWindow.scss ***!
-  \*******************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 320 */,
 /* 321 */,
 /* 322 */
 /*!***************************************!*\
@@ -27163,18 +27078,8 @@
 /***/ },
 /* 323 */
 /*!******************************!*\
-  !*** ./src/styles/base.scss ***!
+  !*** ./src/styles/main.scss ***!
   \******************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 324 */,
-/* 325 */
-/*!*****************************************************!*\
-  !*** ./src/Components/SDGexplorer/sdgexplorer.scss ***!
-  \*****************************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
