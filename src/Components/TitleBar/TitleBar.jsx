@@ -1,6 +1,7 @@
 /**
  * TitleBar
  * Child of ViewerWindow
+ * TODO: Don't inject styles dynamically, just use sass to change up the colors
  */
 
 import React from "react";

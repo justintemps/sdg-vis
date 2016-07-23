@@ -45,7 +45,6 @@ body,
   text-align: center; }
 
 h1, .decentWork, .sdgBlurb {
-  bottom: 5px;
   display: inline;
   font-size: 2.2em;
   color: #fff;
@@ -415,10 +414,6 @@ a {
     display: inline; }
   .focusTargets .targetNumber, .focusTargets .instruction {
     margin: 0 5px 0 0; }
-  .focusTargets .targetNumber::before {
-    content: "Target"; }
-  .focusTargets .instruction::before {
-    content: "Step"; }
 
 .targetSelector {
   align-items: center;
@@ -631,6 +626,40 @@ a {
   .triangle {
     display: none !important; }
   .sdgNumber, .dropCap {
-    bottom: 2px; } }
+    bottom: 8px; }
+  /* FocusTargets */
+  /* focusTargetsMobile */
+  .focusTargets {
+    margin: 25px 0;
+    padding: 0 6px 0 5px; }
+  .targetSelector {
+    display: block; }
+    .targetSelector .bullets {
+      display: block;
+      margin: 5px 0; }
+  .bullet {
+    margin: 0 15px 0 0; }
+  .targetDescription {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    .targetDescription div:first-child {
+      width: 80%; }
+  .arrow {
+    color: #d8d8d8;
+    display: inline;
+    font-family: "Apex New Book", sans-serif;
+    font-size: 5.5em;
+    margin: 0;
+    padding: 0;
+    position: relative; }
+  .arrow::before {
+    bottom: 8px;
+    content: ">";
+    position: relative; } }
 
 /*# sourceMappingURL=bundle.css.map*/

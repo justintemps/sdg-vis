@@ -25855,6 +25855,7 @@
 	} /**
 	   * TitleBar
 	   * Child of ViewerWindow
+	   * TODO: Don't inject styles dynamically, just use sass to change up the colors
 	   */
 	
 	var TitleBar = _react2.default.createClass({
@@ -26046,7 +26047,8 @@
 	
 			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
 	
-			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, heading), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", null, _react2.default.createElement("span", { className: this.props.currentSDG > 0 ? "targetNumber" : "instruction" }, " ", this.props.focusTargets[this.props.focusTarget].number), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget].description)));
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, heading), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "targetDescription" }, _react2.default.createElement("div", null, _react2.default.createElement("span", {
+				className: this.props.currentSDG > 0 ? "targetNumber" : "instruction" }, this.props.focusTargets[this.props.focusTarget].number), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget].description)), _react2.default.createElement("div", { className: "arrow" }))));
 		}
 	});
 	

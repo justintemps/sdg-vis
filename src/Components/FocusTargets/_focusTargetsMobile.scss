@@ -1,0 +1,46 @@
+/* focusTargetsMobile */
+
+.focusTargets {
+	margin: 25px 0;
+	padding: 0 6px 0 5px;
+}
+
+.targetSelector {
+	display: block;
+
+	.bullets {
+		display: block;
+		margin: 5px 0;
+	}
+}
+
+.bullet {
+	margin: 0 15px 0 0;
+}
+
+.targetDescription {
+	@include flex();
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+
+	div:first-child {
+		width: 80%;
+	}
+}
+
+.arrow {
+	color: $lighter-grey;
+	display: inline;
+	font-family: $font-stack;
+	font-size: 5.5em;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.arrow::before {
+	bottom: 8px;
+	content: ">";
+	position: relative;
+}

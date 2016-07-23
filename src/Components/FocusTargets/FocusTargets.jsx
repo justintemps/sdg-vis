@@ -27,15 +27,23 @@ const FocusTargets = React.createClass({
 
 		return (
 			<div className="focusTargets">
-					<div className="targetSelector">
-						<h3 style={style}>{heading}</h3>
-						<ul className="bullets">
-							{bullets}
-						</ul>
-					</div>
 					<div>
-						<span className={ this.props.currentSDG > 0 ? "targetNumber" : "instruction" }> {this.props.focusTargets[this.props.focusTarget].number}</span>
-						<p>{this.props.focusTargets[this.props.focusTarget].description}</p>
+						<div className="targetSelector">
+							<h3 style={style}>{heading}</h3>
+							<ul className="bullets">
+								{bullets}
+							</ul>
+						</div>
+						<div className="targetDescription">
+							<div>
+								<span
+									className={ this.props.currentSDG > 0 ? "targetNumber" : "instruction" }>
+									{this.props.focusTargets[this.props.focusTarget].number}
+								</span>
+								<p>{this.props.focusTargets[this.props.focusTarget].description}</p>
+							</div>
+							<div className="arrow"></div>
+						</div>
 					</div>
 			</div>
 		);
