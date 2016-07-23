@@ -4,10 +4,10 @@
 /* Typography etc. */
 @import "_base";
 
-/* SDGexplorer*/
+/* SDGexplorer */
 @import "../Components/SDGexplorer/_sdgexplorer";
 
-/* Row*/
+/* Row */
 @import "../Components/Row/_row";
 
 /* Icon */
@@ -34,8 +34,16 @@
 /* -- MOBILE STYLES START HERE -- */
 @media screen and (max-width: 640px) {
 
-	@import "../Components/Row/_rowMobile"; 
+	/* Base */
+	@import "_mobileBase";
 
+	/* Row */
+	@import "../Components/Row/_rowMobile";
+
+	/* Icon */
 	@import "../Components/Icon/_iconMobile";
+
+	/* TitleBar */
+	@import "../Components/TitleBar/_titleBarMobile";
 
 }

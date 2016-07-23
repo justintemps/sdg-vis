@@ -20447,7 +20447,6 @@
 	}
 	
 	// Load SVGs with Webpack svg-react-loader
-	
 	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default]; /**
 	                                                                                                                                                                                                                                                                                                           * Icons
 	                                                                                                                                                                                                                                                                                                           * Child to Row
@@ -25863,11 +25862,11 @@
 	
 			// Titlebar to display for the SDGs
 			if (this.props.sdgNumber > 0) {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)), _react2.default.createElement("div", { style: triangle }));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)), _react2.default.createElement("div", { className: "triangle", style: triangle }));
 	
 				// Titlebar to display for the Intro Screen
 			} else {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "dropCap" }, "d"), _react2.default.createElement("div", { className: "decentWork" }, "ecent work"), _react2.default.createElement("div", { className: "sdgBlurb" }, this.props.sdgName)), _react2.default.createElement("div", { style: triangle }));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "dropCap" }, "d"), _react2.default.createElement("div", { className: "decentWork" }, "ecent work"), _react2.default.createElement("div", { className: "sdgBlurb" }, this.props.sdgName)), _react2.default.createElement("div", { className: "triangle", style: triangle }));
 			}
 		}
 	}); /**

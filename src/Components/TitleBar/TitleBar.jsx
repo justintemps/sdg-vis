@@ -41,7 +41,7 @@ const TitleBar = React.createClass({
 							{this.props.sdgName}
 						</div>
 					</div>
-					<div style={triangle}></div>
+					<div className="triangle" style={triangle}></div>
 				</div>
 			);
 
@@ -60,7 +60,7 @@ const TitleBar = React.createClass({
 							{this.props.sdgName}
 						</div>
 					</div>
-					<div style={triangle}></div>
+					<div className="triangle" style={triangle}></div>
 				</div>
 			);
 		}
