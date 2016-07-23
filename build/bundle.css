@@ -44,6 +44,17 @@ body,
   max-width: 876px;
   text-align: center; }
 
+h1, .decentWork, .sdgBlurb {
+  bottom: 5px;
+  display: inline;
+  font-size: 2.2em;
+  color: #fff;
+  font-family: "GiorgioSans-Bold", "Source Sans Pro", sans-serif;
+  position: relative;
+  letter-spacing: 0.024em;
+  margin: 0 0 0 15px;
+  width: 90%; }
+
 h2 {
   font-family: "Apex New Book", sans-serif;
   font-size: 1.4em;
@@ -371,17 +382,6 @@ a {
   height: 0;
   width: 0; }
 
-.sdgName, .decentWork, .sdgBlurb {
-  bottom: 5px;
-  display: inline;
-  font-size: 2.2em;
-  color: #fff;
-  font-family: "GiorgioSans-Bold", "Source Sans Pro", sans-serif;
-  position: relative;
-  letter-spacing: 0.024em;
-  margin: 0 0 0 15px;
-  width: 90%; }
-
 /* TITLE BAR FOR INTRO */
 /* First Letter of title bar */
 .dropCap {
@@ -511,6 +511,8 @@ a {
   /* Base */
   .wrapper, .sdgExplorer {
     width: 100%; }
+  h1, .decentWork, .sdgBlurb {
+    font-size: 1.6em; }
   /* Row */
   .row {
     padding: 5px; }
@@ -627,6 +629,8 @@ a {
   /* TitleBar */
   /* titleBarMobile */
   .triangle {
-    display: none !important; } }
+    display: none !important; }
+  .sdgNumber, .dropCap {
+    bottom: 2px; } }
 
 /*# sourceMappingURL=bundle.css.map*/

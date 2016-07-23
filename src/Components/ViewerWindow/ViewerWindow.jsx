@@ -15,6 +15,7 @@ const ViewerWindow = React.createClass({
 			sdgNumber={this.props.data[this.props.currentSdg].sdgNumber}
 			sdgName={this.props.data[this.props.currentSdg].sdgName}
 			sdgColor= {this.props.data[this.props.currentSdg].sdgColor}
+			getVPwidth={this.props.getVPwidth}
 		/>;
 
 		return (
@@ -30,8 +31,6 @@ const ViewerWindow = React.createClass({
 				/>
 			</div>
 		);
-
-		// Default: if the currentSDG is the Intro, render the viewerwindow like this.
 	}
 });
 

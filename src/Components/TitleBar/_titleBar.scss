@@ -40,18 +40,6 @@
 	width: 0;
 }
 
-.sdgName {
-	bottom: 5px;
-	display: inline;
-	font-size: 2.2em;
-	color: #fff;
-	font-family: $sdg-number;
-	position: relative;
-	letter-spacing: 0.024em;
-	margin: 0 0 0 15px;
-	width: 90%;
-}
-
 /* TITLE BAR FOR INTRO */
 
 /* First Letter of title bar */
@@ -63,7 +51,7 @@
 
 /* Rest of the word */
 .decentWork {
-	@extend .sdgName;
+	@extend h1;
 	color: $unblue;
 	font-size: 4.8em;
 	margin: 0 0 0 3px;
@@ -71,7 +59,7 @@
 }
 
 .sdgBlurb {
-	@extend .sdgName;
+	@extend h1;
 	color: $unblue;
 	right: 40px;
 }

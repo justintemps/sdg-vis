@@ -20261,15 +20261,25 @@
 				currentStory: 0
 			});
 		},
+	
+		// Selects the current focus target
 		selectFocusTarget: function selectFocusTarget(focusTarget) {
 			this.setState({
 				focusTarget: focusTarget
 			});
 		},
+	
+		// Selects the current story
 		selectStory: function selectStory(story) {
 			this.setState({
 				currentStory: story
 			});
+		},
+	
+		// Gets the VP width to set mobile styles for the title bar
+		// Should probably do that some other way
+		getVPwidth: function getVPwidth() {
+			return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 		},
 		render: function render() {
 			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, {
@@ -20285,7 +20295,8 @@
 				selectFocusTarget: this.selectFocusTarget,
 				currentStory: this.state.currentStory,
 				selectStory: this.selectStory,
-				data: _data2.default
+				data: _data2.default,
+				getVPwidth: this.getVPwidth
 			}), _react2.default.createElement(_Row2.default, {
 				startFrom: 12,
 				numberIcons: 6,
@@ -25794,7 +25805,8 @@
 			var titleBar = _react2.default.createElement(_TitleBar2.default, {
 				sdgNumber: this.props.data[this.props.currentSdg].sdgNumber,
 				sdgName: this.props.data[this.props.currentSdg].sdgName,
-				sdgColor: this.props.data[this.props.currentSdg].sdgColor
+				sdgColor: this.props.data[this.props.currentSdg].sdgColor,
+				getVPwidth: this.props.getVPwidth
 			});
 	
 			return _react2.default.createElement("div", { className: "viewerWindow" }, titleBar, _react2.default.createElement(_ViewerWindowContent2.default, {
@@ -25805,8 +25817,6 @@
 				selectStory: this.props.selectStory,
 				data: this.props.data
 			}));
-	
-			// Default: if the currentSDG is the Intro, render the viewerwindow like this.
 		}
 	}); /**
 	     * ViewerWindow
@@ -25836,14 +25846,58 @@
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
+	function _defineProperty(obj, key, value) {
+		if (key in obj) {
+			Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
+		} else {
+			obj[key] = value;
+		}return obj;
+	} /**
+	   * TitleBar
+	   * Child of ViewerWindow
+	   */
+	
 	var TitleBar = _react2.default.createClass({
 		displayName: "TitleBar",
+		isMobile: function isMobile() {
+			if (this.props.getVPwidth() > 640) {
+				return false;
+			} else {
+				return true;
+			}
+		},
+	
+		// Determine background color based on m
+		setBackgroundColor: function setBackgroundColor() {
+			if (this.isMobile()) {
+				return "#fff";
+			} else if (this.props.sdgNumber > 0) {
+				return this.props.sdgColor;
+			} else {
+				return "#f1f1f1";
+			}
+		},
+		setColor: function setColor() {
+			if (this.isMobile()) {
+				return this.props.sdgColor;
+			} else if (this.props.sdgNumber > 0) {
+				return "#fff";
+			} else {
+				return this.props.sdgColor;
+			}
+		},
 		render: function render() {
 	
-			var color = {
+			var bgcolor = {
 				// Get titlebar color from data model, unless it's the intro screen
-				backgroundColor: this.props.sdgNumber > 0 ? this.props.sdgColor : "#f1f1f1",
+				// backgroundColor : (this.props.sdgNumber > 0) ? this.props.sdgColor : "#f1f1f1",
+				backgroundColor: this.setBackgroundColor(),
 				transition: "background-color 0.2s ease"
+			};
+	
+			var color = {
+				color: this.setColor(),
+				transition: "color 0.2s ease"
 			};
 	
 			var triangle = {
@@ -25862,17 +25916,14 @@
 	
 			// Titlebar to display for the SDGs
 			if (this.props.sdgNumber > 0) {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "sdgNumber" }, this.props.sdgNumber), _react2.default.createElement("div", { className: "sdgName" }, this.props.sdgName)), _react2.default.createElement("div", { className: "triangle", style: triangle }));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: bgcolor }, _react2.default.createElement("div", { className: "sdgNumber", style: color }, this.props.sdgNumber), _react2.default.createElement("h1", { style: color }, this.props.sdgName)), _react2.default.createElement("div", _defineProperty({ style: color, className: "triangle" }, "style", triangle)));
 	
 				// Titlebar to display for the Intro Screen
 			} else {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: color }, _react2.default.createElement("div", { className: "dropCap" }, "d"), _react2.default.createElement("div", { className: "decentWork" }, "ecent work"), _react2.default.createElement("div", { className: "sdgBlurb" }, this.props.sdgName)), _react2.default.createElement("div", { className: "triangle", style: triangle }));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: bgcolor }, _react2.default.createElement("div", { className: "dropCap", style: color }, "d"), _react2.default.createElement("div", { className: "decentWork", style: color }, "ecent work"), _react2.default.createElement("div", { className: "sdgBlurb", style: color }, this.props.sdgName)), _react2.default.createElement("div", { className: "triangle", style: triangle }));
 			}
 		}
-	}); /**
-	     * TitleBar
-	     * Child of ViewerWindow
-	     */
+	});
 	
 	exports.default = TitleBar;
 

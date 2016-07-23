@@ -28,16 +28,24 @@ const SDGexplorer = React.createClass({
 		});
 	},
 
+	// Selects the current focus target
 	selectFocusTarget(focusTarget) {
 		this.setState({
 			focusTarget: focusTarget
 		});
 	},
 
+	// Selects the current story
 	selectStory(story) {
 		this.setState({
 			currentStory : story
 		});
+	},
+
+	// Gets the VP width to set mobile styles for the title bar
+	// Should probably do that some other way
+	getVPwidth() {
+		return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	},
 
 	render() {
@@ -59,6 +67,7 @@ const SDGexplorer = React.createClass({
 						currentStory={this.state.currentStory}
 						selectStory={this.selectStory}
 						data={data}
+						getVPwidth={this.getVPwidth}
 					/>
 					<Row
 						startFrom={12}
