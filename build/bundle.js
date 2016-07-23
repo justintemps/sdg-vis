@@ -26170,7 +26170,7 @@
 				currentStoryUrl: this.props.impactStories[this.props.currentStory].url,
 				currentStoryTitle: this.props.impactStories[this.props.currentStory].title,
 				currentStoryBlurb: this.props.impactStories[this.props.currentStory].blurb
-			}))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })))));
+			}))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })), _react2.default.createElement("div", { className: "arrow" }))));
 		}
 	}); /**
 	     * ImpactStories
@@ -26727,7 +26727,7 @@
 				},
 				{
 					"number": "8.8",
-					"description": "Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms"
+					"description": "Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment"
 				},
 				{
 					"number": "8.9",

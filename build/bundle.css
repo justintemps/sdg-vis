@@ -109,7 +109,6 @@ a {
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
-  margin: 10px 0 0;
   position: relative;
   text-align: center; }
 
@@ -332,9 +331,7 @@ a {
 /* ViewerWindow */
 .viewerWindow {
   box-sizing: border-box;
-  height: 50%;
   min-height: 450px;
-  max-height: 475px;
   padding: 5px;
   position: relative;
   text-align: center;
@@ -646,7 +643,8 @@ a {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    min-height: 160px; }
     .targetDescription div:first-child {
       width: 80%; }
   .arrow {
@@ -660,6 +658,18 @@ a {
   .arrow::before {
     bottom: 8px;
     content: ">";
-    position: relative; } }
+    position: relative; }
+  /* ImpactStories */
+  /* impactStoriesMobile */
+  .impactStories {
+    margin: 25px 0 0;
+    padding: 0 6px 0 5px; }
+    .impactStories .arrow {
+      top: 55px; }
+  .title-blurb-wrapper {
+    min-height: 210px;
+    padding: 0 10px 0 0; }
+  .thumbnail {
+    display: none; } }
 
 /*# sourceMappingURL=bundle.css.map*/

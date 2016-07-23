@@ -53,6 +53,7 @@ const ImpactStories = React.createClass({
 						<a href={this.props.impactStories[this.props.currentStory].url} target="_blank">
 							<img className="thumbnail" src={this.props.impactStories[this.props.currentStory].imageUrl} />
 						</a>
+						<div className="arrow"></div>
 					</div>
 				</div>
 			</div>
