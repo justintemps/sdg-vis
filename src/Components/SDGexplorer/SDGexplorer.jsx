@@ -38,7 +38,7 @@ const SDGexplorer = React.createClass({
 	// Selects the current story
 	selectStory(story) {
 		this.setState({
-			currentStory : story
+			currentStory: story
 		});
 	},
 
@@ -66,8 +66,9 @@ const SDGexplorer = React.createClass({
 						selectFocusTarget={this.selectFocusTarget}
 						currentStory={this.state.currentStory}
 						selectStory={this.selectStory}
-						data={data}
 						getVPwidth={this.getVPwidth}
+						data={data}
+						nextStory={this.nextStory}
 					/>
 					<Row
 						startFrom={12}

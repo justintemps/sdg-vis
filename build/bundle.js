@@ -20295,8 +20295,9 @@
 				selectFocusTarget: this.selectFocusTarget,
 				currentStory: this.state.currentStory,
 				selectStory: this.selectStory,
+				getVPwidth: this.getVPwidth,
 				data: _data2.default,
-				getVPwidth: this.getVPwidth
+				nextStory: this.nextStory
 			}), _react2.default.createElement(_Row2.default, {
 				startFrom: 12,
 				numberIcons: 6,

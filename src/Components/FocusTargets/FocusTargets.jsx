@@ -13,14 +13,14 @@ const FocusTargets = React.createClass({
 		const heading = (this.props.currentSDG > 0) ? "Decent Work Targets" : "Instructions";
 
 		const bullets = this.props.focusTargets.map( (target, i) =>
-				<Bullet type="focusTarget"
-					key={i}
-					id={i}
-					focusTarget={this.props.focusTarget}
-					selectFocusTarget={this.props.selectFocusTarget}
-					currentSDG = {this.props.currentSDG}
-					data = {this.props.data}
-				/>
+			<Bullet type="focusTarget"
+				key={i}
+				id={i}
+				focusTarget={this.props.focusTarget}
+				selectFocusTarget={this.props.selectFocusTarget}
+				currentSDG = {this.props.currentSDG}
+				data = {this.props.data}
+			/>
 		);
 
 		const style = {color: this.props.data[this.props.currentSDG].sdgColor};
