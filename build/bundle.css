@@ -410,7 +410,7 @@ a {
 /* Global Goals */
 /* Colors List */
 .focusTargets {
-  min-height: 120px;
+  min-height: 100px;
   margin: 10px 0 0;
   padding: 0 20px 0 20px;
   text-align: left; }
@@ -418,6 +418,8 @@ a {
     display: inline; }
   .focusTargets .targetNumber, .focusTargets .instruction {
     margin: 0 5px 0 0; }
+  .focusTargets p.mobile-target-description, .focusTargets span.mobile-target-description {
+    display: none; }
 
 .targetSelector {
   align-items: center;
@@ -426,9 +428,6 @@ a {
   display: flex;
   flex-wrap: nowrap;
   margin: 0; }
-
-.mobile-target-description {
-  display: none; }
 
 /* Arrow */
 /* arrowMobile */
@@ -645,6 +644,8 @@ a {
   .focusTargets {
     margin: 25px 0;
     padding: 0 6px 0 5px; }
+    .focusTargets p.mobile-target-description, .focusTargets span.mobile-target-description {
+      display: inline-block; }
   .targetSelector {
     display: block; }
     .targetSelector .bullets {
@@ -665,8 +666,6 @@ a {
       width: 80%; }
     .target-description-wrapper .target-description {
       display: none; }
-    .target-description-wrapper .mobile-target-description {
-      display: inline-block; }
     .target-description-wrapper span.more::before {
       color: #2a2a2a;
       content: "..."; }
@@ -700,5 +699,27 @@ a {
     padding: 0 10px 0 0; }
   .thumbnail {
     display: none; } }
+
+@media screen and (max-width: 375px) {
+  /* smallMobileBase */
+  .focusTargets {
+    min-height: 160px; }
+  .impactStories {
+    margin: 15px 0 0;
+    min-height: 275px; }
+  .mobileSdgNumber {
+    margin: 0 5px; }
+  .mobileSdgName {
+    font-size: .7em; }
+  .bullet {
+    margin: 0 8px 0 0; } }
+
+@media screen and (max-width: 360px) {
+  /* smallMobileBase */
+  h1, .decentWork, .sdgBlurb {
+    font-size: 1.4em; }
+  .impactStories {
+    margin: 10px 0 0;
+    min-height: 310px; } }
 
 /*# sourceMappingURL=bundle.css.map*/

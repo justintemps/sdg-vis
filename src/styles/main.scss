@@ -59,3 +59,15 @@
 	@import "../Components/ImpactStories/_impactStoriesMobile";
 
 }
+
+@media screen and (max-width: 375px) {
+
+	@import "_mediumMobile";
+
+}
+
+@media screen and (max-width: 360px) {
+
+	@import "_SmallMobile";
+
+}

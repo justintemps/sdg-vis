@@ -20229,7 +20229,7 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 309);
+	var _data = __webpack_require__(/*! json!../../data.json */ 310);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -25962,7 +25962,7 @@
 	
 	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
 	
-	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 306);
+	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 307);
 	
 	var _ImpactStories2 = _interopRequireDefault(_ImpactStories);
 	
@@ -26037,7 +26037,7 @@
 	
 	var _Arrow2 = _interopRequireDefault(_Arrow);
 	
-	var _Description = __webpack_require__(/*! ../Description/Description.jsx */ 310);
+	var _Description = __webpack_require__(/*! ../Description/Description.jsx */ 306);
 	
 	var _Description2 = _interopRequireDefault(_Description);
 	
@@ -26198,6 +26198,52 @@
 
 /***/ },
 /* 306 */
+/*!****************************************************!*\
+  !*** ./src/Components/Description/Description.jsx ***!
+  \****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Description = _react2.default.createClass({
+		displayName: "Description",
+		showLongDescription: function showLongDescription() {
+			this.props.setLongDescription(true);
+		},
+		mobiledescription: function mobiledescription(limit) {
+	
+			if (this.props.description.length < limit) {
+				return this.props.description;
+			} else if (this.props.longDescription) {
+				return this.props.description;
+			} else {
+				return _react2.default.createElement("p", null, this.props.description.slice(0, limit), _react2.default.createElement("span", { className: "more", onClick: this.showLongDescription }));
+			}
+		},
+		render: function render() {
+			return _react2.default.createElement("div", null, _react2.default.createElement("p", { className: "target-description" }, this.props.description), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(155)));
+		}
+	}); /**
+	     * Description
+	     * Child to FocusTargets, ImpactStories
+	     */
+	
+	exports.default = Description;
+
+/***/ },
+/* 307 */
 /*!********************************************************!*\
   !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
   \********************************************************/
@@ -26217,7 +26263,7 @@
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	var _ShareWidget = __webpack_require__(/*! ../ShareWidget/ShareWidget.jsx */ 307);
+	var _ShareWidget = __webpack_require__(/*! ../ShareWidget/ShareWidget.jsx */ 308);
 	
 	var _ShareWidget2 = _interopRequireDefault(_ShareWidget);
 	
@@ -26269,7 +26315,7 @@
 	exports.default = ImpactStories;
 
 /***/ },
-/* 307 */
+/* 308 */
 /*!****************************************************!*\
   !*** ./src/Components/ShareWidget/ShareWidget.jsx ***!
   \****************************************************/
@@ -26285,7 +26331,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 308);
+	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 309);
 	
 	var _popupCenter2 = _interopRequireDefault(_popupCenter);
 	
@@ -26366,7 +26412,7 @@
 	exports.default = ShareWidget;
 
 /***/ },
-/* 308 */
+/* 309 */
 /*!***************************************************!*\
   !*** ./src/Components/ShareWidget/popupCenter.js ***!
   \***************************************************/
@@ -26407,7 +26453,7 @@
 	}
 
 /***/ },
-/* 309 */
+/* 310 */
 /*!***************************************!*\
   !*** ./~/json-loader!./src/data.json ***!
   \***************************************/
@@ -27249,52 +27295,6 @@
 			]
 		}
 	];
-
-/***/ },
-/* 310 */
-/*!****************************************************!*\
-  !*** ./src/Components/Description/Description.jsx ***!
-  \****************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) {
-		return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	var Description = _react2.default.createClass({
-		displayName: "Description",
-		showLongDescription: function showLongDescription() {
-			this.props.setLongDescription(true);
-		},
-		mobiledescription: function mobiledescription(limit) {
-	
-			if (this.props.description.length < limit) {
-				return this.props.description;
-			} else if (this.props.longDescription) {
-				return this.props.description;
-			} else {
-				return _react2.default.createElement("p", null, this.props.description.slice(0, limit), _react2.default.createElement("span", { className: "more", onClick: this.showLongDescription }));
-			}
-		},
-		render: function render() {
-			return _react2.default.createElement("div", null, _react2.default.createElement("p", { className: "target-description" }, this.props.description), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(155)));
-		}
-	}); /**
-	     * Description
-	     * Child to FocusTargets, ImpactStories
-	     */
-	
-	exports.default = Description;
 
 /***/ }
 /******/ ]);
