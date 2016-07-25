@@ -22,6 +22,9 @@
 /* Focus Targets */
 @import "../Components/FocusTargets/_focusTargets";
 
+/* Arrow */
+@import "../Components/Arrow/_arrow";
+
 /* Bullet */
 @import "../Components/Bullet/_bullet";
 
@@ -47,9 +50,12 @@
 	@import "../Components/TitleBar/_titleBarMobile";
 
 	/* FocusTargets */
-	@import "../Components/FocusTargets/_focusTargetsMobile.scss";
+	@import "../Components/FocusTargets/_focusTargetsMobile";
+
+	/* Arrow */
+	@import "../Components/Arrow/_arrowMobile";
 
 	/* ImpactStories */
-	@import "../Components/ImpactStories/_impactStoriesMobile.scss";
+	@import "../Components/ImpactStories/_impactStoriesMobile";
 
 }

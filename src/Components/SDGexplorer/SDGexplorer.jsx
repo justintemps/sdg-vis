@@ -68,7 +68,6 @@ const SDGexplorer = React.createClass({
 						selectStory={this.selectStory}
 						getVPwidth={this.getVPwidth}
 						data={data}
-						nextStory={this.nextStory}
 					/>
 					<Row
 						startFrom={12}

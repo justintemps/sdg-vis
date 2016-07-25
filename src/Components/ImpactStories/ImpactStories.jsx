@@ -7,6 +7,7 @@
 import React from "react";
 import Bullet from "../Bullet/Bullet.jsx";
 import ShareWidget from "../ShareWidget/ShareWidget.jsx";
+import Arrow from "../Arrow/Arrow.jsx";
 
 const ImpactStories = React.createClass({
 	render() {
@@ -53,7 +54,11 @@ const ImpactStories = React.createClass({
 						<a href={this.props.impactStories[this.props.currentStory].url} target="_blank">
 							<img className="thumbnail" src={this.props.impactStories[this.props.currentStory].imageUrl} />
 						</a>
-						<div className="arrow"></div>
+						<Arrow
+							item={this.props.currentStory}
+							set={this.props.impactStories}
+							setItem={this.props.selectStory}
+						/>
 					</div>
 				</div>
 			</div>

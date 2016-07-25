@@ -1,6 +1,7 @@
 /**
  * Bullet
  * Child to FocusTargets / ImpactStories
+ * TODO: Make this more generic, like arrow
  */
 
 import React from "react";

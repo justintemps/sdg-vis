@@ -20296,8 +20296,7 @@
 				currentStory: this.state.currentStory,
 				selectStory: this.selectStory,
 				getVPwidth: this.getVPwidth,
-				data: _data2.default,
-				nextStory: this.nextStory
+				data: _data2.default
 			}), _react2.default.createElement(_Row2.default, {
 				startFrom: 12,
 				numberIcons: 6,
@@ -20459,6 +20458,7 @@
 	}
 	
 	// Load SVGs with Webpack svg-react-loader
+	
 	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default]; /**
 	                                                                                                                                                                                                                                                                                                           * Icons
 	                                                                                                                                                                                                                                                                                                           * Child to Row
@@ -26019,14 +26019,13 @@
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
+	var _Arrow = __webpack_require__(/*! ../Arrow/Arrow.jsx */ 309);
+	
+	var _Arrow2 = _interopRequireDefault(_Arrow);
+	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
-	
-	/**
-	 * FocusTargets
-	 * Parent to Bullet
-	 */
 	
 	var FocusTargets = _react2.default.createClass({
 		displayName: "FocusTargets",
@@ -26049,9 +26048,16 @@
 			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
 	
 			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, heading), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "targetDescription" }, _react2.default.createElement("div", null, _react2.default.createElement("span", {
-				className: this.props.currentSDG > 0 ? "targetNumber" : "instruction" }, this.props.focusTargets[this.props.focusTarget].number), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget].description)), _react2.default.createElement("div", { className: "arrow" }))));
+				className: this.props.currentSDG > 0 ? "targetNumber" : "instruction" }, this.props.focusTargets[this.props.focusTarget].number), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget].description)), _react2.default.createElement(_Arrow2.default, {
+				item: this.props.focusTarget,
+				set: this.props.focusTargets,
+				setItem: this.props.selectFocusTarget
+			}))));
 		}
-	});
+	}); /**
+	     * FocusTargets
+	     * Parent to Bullet
+	     */
 	
 	exports.default = FocusTargets;
 
@@ -26115,6 +26121,7 @@
 	}); /**
 	     * Bullet
 	     * Child to FocusTargets / ImpactStories
+	     * TODO: Make this more generic, like arrow
 	     */
 	
 	exports.default = Bullet;
@@ -26144,9 +26151,19 @@
 	
 	var _ShareWidget2 = _interopRequireDefault(_ShareWidget);
 	
+	var _Arrow = __webpack_require__(/*! ../Arrow/Arrow.jsx */ 309);
+	
+	var _Arrow2 = _interopRequireDefault(_Arrow);
+	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
+	
+	/**
+	 * ImpactStories
+	 * Child to ViewerWindowContent
+	 * Parent to Bullet, ShareWidget
+	 */
 	
 	var ImpactStories = _react2.default.createClass({
 		displayName: "ImpactStories",
@@ -26171,13 +26188,13 @@
 				currentStoryUrl: this.props.impactStories[this.props.currentStory].url,
 				currentStoryTitle: this.props.impactStories[this.props.currentStory].title,
 				currentStoryBlurb: this.props.impactStories[this.props.currentStory].blurb
-			}))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })), _react2.default.createElement("div", { className: "arrow" }))));
+			}))), _react2.default.createElement("div", { className: "thumbnail-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("img", { className: "thumbnail", src: this.props.impactStories[this.props.currentStory].imageUrl })), _react2.default.createElement(_Arrow2.default, {
+				item: this.props.currentStory,
+				set: this.props.impactStories,
+				setItem: this.props.selectStory
+			}))));
 		}
-	}); /**
-	     * ImpactStories
-	     * Child to ViewerWindowContent
-	     * Parent to Bullet, ShareWidget
-	     */
+	});
 	
 	exports.default = ImpactStories;
 
@@ -27162,6 +27179,53 @@
 			]
 		}
 	];
+
+/***/ },
+/* 309 */
+/*!****************************************!*\
+  !*** ./src/Components/Arrow/Arrow.jsx ***!
+  \****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Arrow = _react2.default.createClass({
+		displayName: "Arrow",
+	
+		/**
+	  * Returns the next item from a set of item or resets if the last item is already selected.
+	  * @prop item {number} - the current item
+	  * @prop set {array} - a set of items
+	  * @prop setItem {callback} - a function that takes a number as an argument
+	 */
+		nextItem: function nextItem() {
+			if (this.props.item < this.props.set.length - 1) {
+				this.props.setItem(this.props.item + 1);
+			} else {
+				this.props.setItem(0);
+			}
+		},
+		render: function render() {
+			return _react2.default.createElement("div", { className: "arrow", onClick: this.nextItem });
+		}
+	}); /**
+	     * Arrow
+	     * Child to FocusTargets / ImpactStories
+	     */
+	
+	exports.default = Arrow;
 
 /***/ }
 /******/ ]);

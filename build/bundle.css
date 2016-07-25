@@ -420,6 +420,11 @@ a {
   flex-wrap: nowrap;
   margin: 0; }
 
+/* Arrow */
+/* arrowMobile */
+.arrow {
+  display: none; }
+
 /* Bullet */
 /* -- Bullets -- */
 .bullets {
@@ -647,6 +652,8 @@ a {
     min-height: 160px; }
     .targetDescription div:first-child {
       width: 80%; }
+  /* Arrow */
+  /* arrowMobile */
   .arrow {
     color: #d8d8d8;
     display: inline;

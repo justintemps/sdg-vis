@@ -5,6 +5,7 @@
 
 import React from "react";
 import Bullet from "../Bullet/Bullet.jsx";
+import Arrow from "../Arrow/Arrow.jsx";
 
 const FocusTargets = React.createClass({
 
@@ -42,7 +43,11 @@ const FocusTargets = React.createClass({
 								</span>
 								<p>{this.props.focusTargets[this.props.focusTarget].description}</p>
 							</div>
-							<div className="arrow"></div>
+							<Arrow
+								item={this.props.focusTarget}
+								set={this.props.focusTargets}
+								setItem={this.props.selectFocusTarget}
+							/>
 						</div>
 					</div>
 			</div>

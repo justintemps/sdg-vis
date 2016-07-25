@@ -1,0 +1,17 @@
+/* arrowMobile */
+
+.arrow {
+	color: $lighter-grey;
+	display: inline;
+	font-family: $font-stack;
+	font-size: 5.5em;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.arrow::before {
+	bottom: 8px;
+	content: ">";
+	position: relative;
+}
