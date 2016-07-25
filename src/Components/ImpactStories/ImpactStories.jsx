@@ -9,6 +9,7 @@ import Bullet from "../Bullet/Bullet.jsx";
 import ShareWidget from "../ShareWidget/ShareWidget.jsx";
 import Arrow from "../Arrow/Arrow.jsx";
 
+
 const ImpactStories = React.createClass({
 	render() {
 

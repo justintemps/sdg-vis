@@ -71,9 +71,18 @@ p {
 	padding: 0;
 }
 
+p span {
+	font-weight: inherit;
+}
+
 span {
 	@extend p;
 	font-weight: 600;
+}
+
+span.more {
+	font-weight: 400;
+	color: $titleColor;
 }
 
 a {

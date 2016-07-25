@@ -34,6 +34,8 @@ const ViewerWindowContent = React.createClass({
 					selectFocusTarget={this.props.selectFocusTarget}
 					currentSDG = {this.props.sdgNumber}
 					data = {this.props.data}
+					longDescription={this.props.longDescription}
+					setLongDescription={this.props.setLongDescription}
 				/>
 				<ImpactStories
 					impactStories={impactStories}

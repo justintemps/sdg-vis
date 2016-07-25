@@ -18,14 +18,33 @@
 	margin: 0 15px 0 0;
 }
 
-.targetDescription {
+.target-description-wrapper {
 	@include flex();
 	align-items: flex-start;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	min-height: 160px;
+	min-height: 80px;
 
 	div:first-child {
 		width: 80%;
 	}
+
+	.target-description {
+		display: none;
+	}
+
+	.mobile-target-description {
+		display: inline-block;
+	}
+
+	span.more::before {
+		color: $dark-grey;
+		content: "...";
+	}
+
+	span.more::after {
+		content: "(+)";
+		font-weight: 600;
+	}
+
 }

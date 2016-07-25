@@ -5,13 +5,14 @@
 	display: inline;
 	font-family: $font-stack;
 	font-size: 5.5em;
+	line-height: 0;
 	margin: 0;
 	padding: 0;
 	position: relative;
 }
 
 .arrow::before {
-	bottom: 8px;
+	top: 30px;
 	content: ">";
 	position: relative;
 }

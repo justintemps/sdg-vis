@@ -6,6 +6,7 @@
 import React from "react";
 import Bullet from "../Bullet/Bullet.jsx";
 import Arrow from "../Arrow/Arrow.jsx";
+import Description from "../Description/Description.jsx";
 
 const FocusTargets = React.createClass({
 
@@ -35,21 +36,19 @@ const FocusTargets = React.createClass({
 								{bullets}
 							</ul>
 						</div>
-						<div className="targetDescription">
-							<div>
-								<span
-									className={ this.props.currentSDG > 0 ? "targetNumber" : "instruction" }>
-									{this.props.focusTargets[this.props.focusTarget].number}
-								</span>
-								<p>{this.props.focusTargets[this.props.focusTarget].description}</p>
-							</div>
+						<div className="target-description-wrapper">
+							<Description
+								description={this.props.focusTargets[this.props.focusTarget].description}
+								longDescription={this.props.longDescription}
+								setLongDescription={this.props.setLongDescription}
+							/>
 							<Arrow
 								item={this.props.focusTarget}
 								set={this.props.focusTargets}
 								setItem={this.props.selectFocusTarget}
 							/>
-						</div>
 					</div>
+				</div>
 			</div>
 		);
 	}

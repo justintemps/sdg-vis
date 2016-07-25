@@ -3,7 +3,7 @@
 @import "src/styles/_utils";
 
 .focusTargets {
-	min-height: 100px;
+	min-height: 120px;
 	margin: 10px 0 0;
 	padding: 0 20px 0 20px;
 	text-align: left;
@@ -22,4 +22,8 @@
 	@include flex();
 	flex-wrap: nowrap;
 	margin: 0;
+}
+
+.mobile-target-description {
+	display: none;
 }

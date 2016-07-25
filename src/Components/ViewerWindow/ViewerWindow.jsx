@@ -28,6 +28,8 @@ const ViewerWindow = React.createClass({
 					currentStory={this.props.currentStory}
 					selectStory={this.props.selectStory}
 					data={this.props.data}
+					longDescription={this.props.longDescription}
+					setLongDescription={this.props.setLongDescription}
 				/>
 			</div>
 		);

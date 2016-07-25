@@ -15,7 +15,8 @@ const SDGexplorer = React.createClass({
 		return({
 			currentSdg : 0,
 			focusTarget : 0,
-			currentStory : 0
+			currentStory : 0,
+			longDescription : false
 		});
 	},
 
@@ -24,14 +25,16 @@ const SDGexplorer = React.createClass({
 		this.setState({
 			currentSdg: sdg,
 			focusTarget : 0,
-			currentStory : 0
+			currentStory : 0,
+			longDescription : false
 		});
 	},
 
 	// Selects the current focus target
 	selectFocusTarget(focusTarget) {
 		this.setState({
-			focusTarget: focusTarget
+			focusTarget: focusTarget,
+			longDescription : false
 		});
 	},
 
@@ -39,6 +42,12 @@ const SDGexplorer = React.createClass({
 	selectStory(story) {
 		this.setState({
 			currentStory: story
+		});
+	},
+
+	setLongDescription(bool) {
+		this.setState({
+			longDescription: bool
 		});
 	},
 
@@ -68,6 +77,8 @@ const SDGexplorer = React.createClass({
 						selectStory={this.selectStory}
 						getVPwidth={this.getVPwidth}
 						data={data}
+						longDescription={this.state.longDescription}
+						setLongDescription={this.setLongDescription}
 					/>
 					<Row
 						startFrom={12}

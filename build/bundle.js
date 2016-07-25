@@ -20229,7 +20229,7 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 308);
+	var _data = __webpack_require__(/*! json!../../data.json */ 309);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -20249,7 +20249,8 @@
 			return {
 				currentSdg: 0,
 				focusTarget: 0,
-				currentStory: 0
+				currentStory: 0,
+				longDescription: false
 			};
 		},
 	
@@ -20258,14 +20259,16 @@
 			this.setState({
 				currentSdg: sdg,
 				focusTarget: 0,
-				currentStory: 0
+				currentStory: 0,
+				longDescription: false
 			});
 		},
 	
 		// Selects the current focus target
 		selectFocusTarget: function selectFocusTarget(focusTarget) {
 			this.setState({
-				focusTarget: focusTarget
+				focusTarget: focusTarget,
+				longDescription: false
 			});
 		},
 	
@@ -20273,6 +20276,11 @@
 		selectStory: function selectStory(story) {
 			this.setState({
 				currentStory: story
+			});
+		},
+		setLongDescription: function setLongDescription(bool) {
+			this.setState({
+				longDescription: bool
 			});
 		},
 	
@@ -20296,7 +20304,9 @@
 				currentStory: this.state.currentStory,
 				selectStory: this.selectStory,
 				getVPwidth: this.getVPwidth,
-				data: _data2.default
+				data: _data2.default,
+				longDescription: this.state.longDescription,
+				setLongDescription: this.setLongDescription
 			}), _react2.default.createElement(_Row2.default, {
 				startFrom: 12,
 				numberIcons: 6,
@@ -25816,7 +25826,9 @@
 				selectFocusTarget: this.props.selectFocusTarget,
 				currentStory: this.props.currentStory,
 				selectStory: this.props.selectStory,
-				data: this.props.data
+				data: this.props.data,
+				longDescription: this.props.longDescription,
+				setLongDescription: this.props.setLongDescription
 			}));
 		}
 	}); /**
@@ -25950,7 +25962,7 @@
 	
 	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
 	
-	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 305);
+	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 306);
 	
 	var _ImpactStories2 = _interopRequireDefault(_ImpactStories);
 	
@@ -25982,7 +25994,9 @@
 				focusTarget: this.props.focusTarget,
 				selectFocusTarget: this.props.selectFocusTarget,
 				currentSDG: this.props.sdgNumber,
-				data: this.props.data
+				data: this.props.data,
+				longDescription: this.props.longDescription,
+				setLongDescription: this.props.setLongDescription
 			}), _react2.default.createElement(_ImpactStories2.default, {
 				impactStories: impactStories,
 				currentStory: this.props.currentStory,
@@ -26019,13 +26033,22 @@
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	var _Arrow = __webpack_require__(/*! ../Arrow/Arrow.jsx */ 309);
+	var _Arrow = __webpack_require__(/*! ../Arrow/Arrow.jsx */ 305);
 	
 	var _Arrow2 = _interopRequireDefault(_Arrow);
+	
+	var _Description = __webpack_require__(/*! ../Description/Description.jsx */ 310);
+	
+	var _Description2 = _interopRequireDefault(_Description);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
+	
+	/**
+	 * FocusTargets
+	 * Parent to Bullet
+	 */
 	
 	var FocusTargets = _react2.default.createClass({
 		displayName: "FocusTargets",
@@ -26047,17 +26070,17 @@
 	
 			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
 	
-			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, heading), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "targetDescription" }, _react2.default.createElement("div", null, _react2.default.createElement("span", {
-				className: this.props.currentSDG > 0 ? "targetNumber" : "instruction" }, this.props.focusTargets[this.props.focusTarget].number), _react2.default.createElement("p", null, this.props.focusTargets[this.props.focusTarget].description)), _react2.default.createElement(_Arrow2.default, {
+			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, heading), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "target-description-wrapper" }, _react2.default.createElement(_Description2.default, {
+				description: this.props.focusTargets[this.props.focusTarget].description,
+				longDescription: this.props.longDescription,
+				setLongDescription: this.props.setLongDescription
+			}), _react2.default.createElement(_Arrow2.default, {
 				item: this.props.focusTarget,
 				set: this.props.focusTargets,
 				setItem: this.props.selectFocusTarget
 			}))));
 		}
-	}); /**
-	     * FocusTargets
-	     * Parent to Bullet
-	     */
+	});
 	
 	exports.default = FocusTargets;
 
@@ -26128,6 +26151,53 @@
 
 /***/ },
 /* 305 */
+/*!****************************************!*\
+  !*** ./src/Components/Arrow/Arrow.jsx ***!
+  \****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Arrow = _react2.default.createClass({
+		displayName: "Arrow",
+	
+		/**
+	  * Returns the next item from a set of item or resets if the last item is already selected.
+	  * @prop item {number} - the current item
+	  * @prop set {array} - a set of items
+	  * @prop setItem {callback} - a function that takes a number as an argument
+	 */
+		nextItem: function nextItem() {
+			if (this.props.item < this.props.set.length - 1) {
+				this.props.setItem(this.props.item + 1);
+			} else {
+				this.props.setItem(0);
+			}
+		},
+		render: function render() {
+			return _react2.default.createElement("div", { className: "arrow", onClick: this.nextItem });
+		}
+	}); /**
+	     * Arrow
+	     * Child to FocusTargets / ImpactStories
+	     */
+	
+	exports.default = Arrow;
+
+/***/ },
+/* 306 */
 /*!********************************************************!*\
   !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
   \********************************************************/
@@ -26147,11 +26217,11 @@
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	var _ShareWidget = __webpack_require__(/*! ../ShareWidget/ShareWidget.jsx */ 306);
+	var _ShareWidget = __webpack_require__(/*! ../ShareWidget/ShareWidget.jsx */ 307);
 	
 	var _ShareWidget2 = _interopRequireDefault(_ShareWidget);
 	
-	var _Arrow = __webpack_require__(/*! ../Arrow/Arrow.jsx */ 309);
+	var _Arrow = __webpack_require__(/*! ../Arrow/Arrow.jsx */ 305);
 	
 	var _Arrow2 = _interopRequireDefault(_Arrow);
 	
@@ -26199,7 +26269,7 @@
 	exports.default = ImpactStories;
 
 /***/ },
-/* 306 */
+/* 307 */
 /*!****************************************************!*\
   !*** ./src/Components/ShareWidget/ShareWidget.jsx ***!
   \****************************************************/
@@ -26215,7 +26285,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 307);
+	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 308);
 	
 	var _popupCenter2 = _interopRequireDefault(_popupCenter);
 	
@@ -26296,7 +26366,7 @@
 	exports.default = ShareWidget;
 
 /***/ },
-/* 307 */
+/* 308 */
 /*!***************************************************!*\
   !*** ./src/Components/ShareWidget/popupCenter.js ***!
   \***************************************************/
@@ -26337,7 +26407,7 @@
 	}
 
 /***/ },
-/* 308 */
+/* 309 */
 /*!***************************************!*\
   !*** ./~/json-loader!./src/data.json ***!
   \***************************************/
@@ -27181,10 +27251,10 @@
 	];
 
 /***/ },
-/* 309 */
-/*!****************************************!*\
-  !*** ./src/Components/Arrow/Arrow.jsx ***!
-  \****************************************/
+/* 310 */
+/*!****************************************************!*\
+  !*** ./src/Components/Description/Description.jsx ***!
+  \****************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27201,31 +27271,30 @@
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	var Arrow = _react2.default.createClass({
-		displayName: "Arrow",
+	var Description = _react2.default.createClass({
+		displayName: "Description",
+		showLongDescription: function showLongDescription() {
+			this.props.setLongDescription(true);
+		},
+		mobiledescription: function mobiledescription(limit) {
 	
-		/**
-	  * Returns the next item from a set of item or resets if the last item is already selected.
-	  * @prop item {number} - the current item
-	  * @prop set {array} - a set of items
-	  * @prop setItem {callback} - a function that takes a number as an argument
-	 */
-		nextItem: function nextItem() {
-			if (this.props.item < this.props.set.length - 1) {
-				this.props.setItem(this.props.item + 1);
+			if (this.props.description.length < limit) {
+				return this.props.description;
+			} else if (this.props.longDescription) {
+				return this.props.description;
 			} else {
-				this.props.setItem(0);
+				return _react2.default.createElement("p", null, this.props.description.slice(0, limit), _react2.default.createElement("span", { className: "more", onClick: this.showLongDescription }));
 			}
 		},
 		render: function render() {
-			return _react2.default.createElement("div", { className: "arrow", onClick: this.nextItem });
+			return _react2.default.createElement("div", null, _react2.default.createElement("p", { className: "target-description" }, this.props.description), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(155)));
 		}
 	}); /**
-	     * Arrow
-	     * Child to FocusTargets / ImpactStories
+	     * Description
+	     * Child to FocusTargets, ImpactStories
 	     */
 	
-	exports.default = Arrow;
+	exports.default = Description;
 
 /***/ }
 /******/ ]);
