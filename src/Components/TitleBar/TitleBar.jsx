@@ -16,17 +16,18 @@ const TitleBar = React.createClass({
 		}
 	},
 
-	// Determine background color based on m
+	// Determine background color based on screenwidth
 	setBackgroundColor() {
 		if ( this.isMobile() ) {
 			return "#fff";
 		} else if (this.props.sdgNumber > 0 ) {
 			return this.props.sdgColor;
 		} else {
-			return "#f1f1f1";
+			return "#37468E";
 		}
 	},
 
+	// Determine background color based on screenwidth
 	setColor() {
 		if ( this.isMobile() ) {
 			return this.props.sdgColor;
@@ -55,7 +56,7 @@ const TitleBar = React.createClass({
 			borderLeft: "20px solid transparent",
 			borderRight: "20px solid transparent",
 			// Get triangle color from data model, unless it's the intro screen
-			borderTop: (this.props.sdgNumber > 0) ? `20px solid ${this.props.sdgColor}` : "20px solid #f1f1f1",
+			borderTop: (this.props.sdgNumber > 0) ? `20px solid ${this.props.sdgColor}` : "20px solid #37468E",
 			content: "",
 			display: "block",
 			margin: "2px 0",
@@ -86,15 +87,9 @@ const TitleBar = React.createClass({
 			return(
 				<div>
 					<div className="titleBar" style={bgcolor}>
-						<div className="dropCap" style={color}>
-							d
-						</div>
-						<div className="decentWork" style={color} >
-							ecent work
-						</div>
-						<div className="sdgBlurb" style={color} >
-							{this.props.sdgName}
-						</div>
+						<h1 className="defaultTitle">
+							ILO and the Sustainable Develpment Goals
+						</h1>
 					</div>
 					<div className="triangle" style={triangle}></div>
 				</div>

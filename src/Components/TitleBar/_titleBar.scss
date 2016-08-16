@@ -42,24 +42,7 @@
 
 /* TITLE BAR FOR INTRO */
 
-/* First Letter of title bar */
-.dropCap {
-	@extend .sdgNumber;
-	color: $unblue;
-	text-transform: uppercase;
-}
-
-/* Rest of the word */
-.decentWork {
-	@extend h1;
-	color: $unblue;
-	font-size: 4.8em;
-	margin: 0 0 0 3px;
-	text-transform: uppercase;
-}
-
-.sdgBlurb {
-	@extend h1;
-	color: $unblue;
-	right: 40px;
+.defaultTitle {
+	font-size: 3.3em;
+	line-height: 80%;
 }

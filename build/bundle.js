@@ -20468,7 +20468,6 @@
 	}
 	
 	// Load SVGs with Webpack svg-react-loader
-	
 	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default]; /**
 	                                                                                                                                                                                                                                                                                                           * Icons
 	                                                                                                                                                                                                                                                                                                           * Child to Row
@@ -25881,16 +25880,18 @@
 			}
 		},
 	
-		// Determine background color based on m
+		// Determine background color based on screenwidth
 		setBackgroundColor: function setBackgroundColor() {
 			if (this.isMobile()) {
 				return "#fff";
 			} else if (this.props.sdgNumber > 0) {
 				return this.props.sdgColor;
 			} else {
-				return "#f1f1f1";
+				return "#37468E";
 			}
 		},
+	
+		// Determine background color based on screenwidth
 		setColor: function setColor() {
 			if (this.isMobile()) {
 				return this.props.sdgColor;
@@ -25918,7 +25919,7 @@
 				borderLeft: "20px solid transparent",
 				borderRight: "20px solid transparent",
 				// Get triangle color from data model, unless it's the intro screen
-				borderTop: this.props.sdgNumber > 0 ? "20px solid " + this.props.sdgColor : "20px solid #f1f1f1",
+				borderTop: this.props.sdgNumber > 0 ? "20px solid " + this.props.sdgColor : "20px solid #37468E",
 				content: "",
 				display: "block",
 				margin: "2px 0",
@@ -25934,7 +25935,7 @@
 	
 				// Titlebar to display for the Intro Screen
 			} else {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: bgcolor }, _react2.default.createElement("div", { className: "dropCap", style: color }, "d"), _react2.default.createElement("div", { className: "decentWork", style: color }, "ecent work"), _react2.default.createElement("div", { className: "sdgBlurb", style: color }, this.props.sdgName)), _react2.default.createElement("div", { className: "triangle", style: triangle }));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: bgcolor }, _react2.default.createElement("h1", { className: "defaultTitle" }, "ILO and the Sustainable Develpment Goals")), _react2.default.createElement("div", { className: "triangle", style: triangle }));
 			}
 		}
 	});
