@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+import DefaultViewerWindowContent from "./DefaultViewerWindowContent.jsx";
 import FocusTargets from "../FocusTargets/FocusTargets.jsx";
 import ImpactStories from "../ImpactStories/ImpactStories.jsx";
 
@@ -26,26 +27,31 @@ const ViewerWindowContent = React.createClass({
 			});
 		});
 
-		return (
-			<div className="viewerWindowContent">
-				<FocusTargets
-					focusTargets={focusTargets}
-					focusTarget={this.props.focusTarget}
-					selectFocusTarget={this.props.selectFocusTarget}
-					currentSDG = {this.props.sdgNumber}
-					data = {this.props.data}
-					longDescription={this.props.longDescription}
-					setLongDescription={this.props.setLongDescription}
-				/>
-				<ImpactStories
-					impactStories={impactStories}
-					currentStory={this.props.currentStory}
-					selectStory={this.props.selectStory}
-					currentSDG = {this.props.sdgNumber}
-					data = {this.props.data}
-				/>
-			</div>
-		);
+		// If current SDG is 0, show the default screen, otherwise show Focus Targets, Impact Stories
+		if (this.props.sdgNumber === 0 ) {
+			return <DefaultViewerWindowContent />;
+		} else {
+			return (
+				<div className="viewerWindowContent">
+					<FocusTargets
+						focusTargets={focusTargets}
+						focusTarget={this.props.focusTarget}
+						selectFocusTarget={this.props.selectFocusTarget}
+						currentSDG = {this.props.sdgNumber}
+						data = {this.props.data}
+						longDescription={this.props.longDescription}
+						setLongDescription={this.props.setLongDescription}
+					/>
+					<ImpactStories
+						impactStories={impactStories}
+						currentStory={this.props.currentStory}
+						selectStory={this.props.selectStory}
+						currentSDG = {this.props.sdgNumber}
+						data = {this.props.data}
+					/>
+				</div>
+			);
+		}
 	}
 });
 

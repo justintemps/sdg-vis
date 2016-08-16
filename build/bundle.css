@@ -344,6 +344,35 @@ a {
   text-align: center;
   width: 100%; }
 
+/* DefaultViewerWindowContent */
+/* defaultViewerWindowContent */
+.defaultViewerWindowContent {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 20px 0 20px 20px; }
+
+.defaultDescription {
+  box-sizing: border-box;
+  text-align: left;
+  width: calc(67% - 20px); }
+  .defaultDescription p, .defaultDescription span {
+    font-size: 1.2em;
+    margin: 0 0 20px 0; }
+
+.gglogo-container {
+  box-sizing: border-box;
+  width: 33%; }
+
+.gglogo {
+  width: 100%; }
+
+.emphasize {
+  color: #a21942;
+  font-style: normal;
+  font-weight: 600; }
+
 /* Title Bar */
 /* TitleBar */
 .titleBar {

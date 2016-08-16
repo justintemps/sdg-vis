@@ -1,7 +1,27 @@
 <svg id="English"
 	xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.76 30.76">
 	<title>SDG Logo</title>
-	<rect class="sdg0-1" width="30.76" height="30.76"/>
+<!--	<rect class="sdg0-1" width="30.76" height="30.76"/> -->
+	<style>
+		.sdg0-1{fill:#f1f1f1;}
+		.sdg0-2{fill:#5fba47;}
+		.sdg0-3{fill:#e4b632;}
+		.sdg0-4{fill:#c4202f;}
+		.sdg0-5{fill:#4b9f46;}
+		.sdg0-6{fill:#418045;}
+		.sdg0-7{fill:#f8c219;}
+		.sdg0-8{fill:#ee422a;}
+		.sdg0-9{fill:#f99e29;}
+		.sdg0-10{fill:#1d95d3;}
+		.sdg0-11{fill:#a21c44;}
+		.sdg0-12{fill:#29bce1;}
+		.sdg0-13{fill:#f16b2d;}
+		.sdg0-14{fill:#e6253d;}
+		.sdg0-15{fill:#dc1769;}
+		.sdg0-16{fill:#16496b;}
+		.sdg0-17{fill:#c5962e;}
+		.sdg0-18{fill:#086a9d;}
+	</style>
 	<path class="sdg0-2" d="M9.25,11.91a7.15,7.15,0,0,1,1.12-1.45l-3.7-4A12.66,12.66,0,0,0,4.36,9.46Z" transform="translate(0 -0.11)"/>
 	<path class="sdg0-3" d="M18.31,9a7.05,7.05,0,0,1,1.55,1l3.71-4a12.63,12.63,0,0,0-3.3-2.06Z" transform="translate(0 -0.11)"/>
 	<path class="sdg0-4" d="M26.8,10.27l-4.92,2.45a7,7,0,0,1,.51,1.73l5.47-.52a12.47,12.47,0,0,0-1.06-3.67" transform="translate(0 -0.11)"/>

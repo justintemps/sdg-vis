@@ -20229,7 +20229,7 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 310);
+	var _data = __webpack_require__(/*! json!../../data.json */ 311);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -25754,7 +25754,11 @@
 	                null,
 	                'SDG Logo'
 	            ),
-	            React.createElement('rect', { className: 'sdg0-1', width: '30.76', height: '30.76' }),
+	            React.createElement(
+	                'style',
+	                null,
+	                '\n\t\t.sdg0-1{fill:#f1f1f1;}\n\t\t.sdg0-2{fill:#5fba47;}\n\t\t.sdg0-3{fill:#e4b632;}\n\t\t.sdg0-4{fill:#c4202f;}\n\t\t.sdg0-5{fill:#4b9f46;}\n\t\t.sdg0-6{fill:#418045;}\n\t\t.sdg0-7{fill:#f8c219;}\n\t\t.sdg0-8{fill:#ee422a;}\n\t\t.sdg0-9{fill:#f99e29;}\n\t\t.sdg0-10{fill:#1d95d3;}\n\t\t.sdg0-11{fill:#a21c44;}\n\t\t.sdg0-12{fill:#29bce1;}\n\t\t.sdg0-13{fill:#f16b2d;}\n\t\t.sdg0-14{fill:#e6253d;}\n\t\t.sdg0-15{fill:#dc1769;}\n\t\t.sdg0-16{fill:#16496b;}\n\t\t.sdg0-17{fill:#c5962e;}\n\t\t.sdg0-18{fill:#086a9d;}\n\t'
+	            ),
 	            React.createElement('path', { className: 'sdg0-2', d: 'M9.25,11.91a7.15,7.15,0,0,1,1.12-1.45l-3.7-4A12.66,12.66,0,0,0,4.36,9.46Z', transform: 'translate(0 -0.11)' }),
 	            React.createElement('path', { className: 'sdg0-3', d: 'M18.31,9a7.05,7.05,0,0,1,1.55,1l3.71-4a12.63,12.63,0,0,0-3.3-2.06Z', transform: 'translate(0 -0.11)' }),
 	            React.createElement('path', { className: 'sdg0-4', d: 'M26.8,10.27l-4.92,2.45a7,7,0,0,1,.51,1.73l5.47-.52a12.47,12.47,0,0,0-1.06-3.67', transform: 'translate(0 -0.11)' }),
@@ -25959,17 +25963,26 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 303);
+	var _DefaultViewerWindowContent = __webpack_require__(/*! ./DefaultViewerWindowContent.jsx */ 303);
+	
+	var _DefaultViewerWindowContent2 = _interopRequireDefault(_DefaultViewerWindowContent);
+	
+	var _FocusTargets = __webpack_require__(/*! ../FocusTargets/FocusTargets.jsx */ 304);
 	
 	var _FocusTargets2 = _interopRequireDefault(_FocusTargets);
 	
-	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 307);
+	var _ImpactStories = __webpack_require__(/*! ../ImpactStories/ImpactStories.jsx */ 308);
 	
 	var _ImpactStories2 = _interopRequireDefault(_ImpactStories);
 	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
+	
+	/**
+	 * ViewerWindowContent
+	 * Parent to FocusTargets, ImpactStories
+	 */
 	
 	var ViewerWindowContent = _react2.default.createClass({
 		displayName: "ViewerWindowContent",
@@ -25990,31 +26003,68 @@
 				};
 			});
 	
-			return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, {
-				focusTargets: focusTargets,
-				focusTarget: this.props.focusTarget,
-				selectFocusTarget: this.props.selectFocusTarget,
-				currentSDG: this.props.sdgNumber,
-				data: this.props.data,
-				longDescription: this.props.longDescription,
-				setLongDescription: this.props.setLongDescription
-			}), _react2.default.createElement(_ImpactStories2.default, {
-				impactStories: impactStories,
-				currentStory: this.props.currentStory,
-				selectStory: this.props.selectStory,
-				currentSDG: this.props.sdgNumber,
-				data: this.props.data
-			}));
+			// If current SDG is 0, show the default screen, otherwise show Focus Targets, Impact Stories
+			if (this.props.sdgNumber === 0) {
+				return _react2.default.createElement(_DefaultViewerWindowContent2.default, null);
+			} else {
+				return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, {
+					focusTargets: focusTargets,
+					focusTarget: this.props.focusTarget,
+					selectFocusTarget: this.props.selectFocusTarget,
+					currentSDG: this.props.sdgNumber,
+					data: this.props.data,
+					longDescription: this.props.longDescription,
+					setLongDescription: this.props.setLongDescription
+				}), _react2.default.createElement(_ImpactStories2.default, {
+					impactStories: impactStories,
+					currentStory: this.props.currentStory,
+					selectStory: this.props.selectStory,
+					currentSDG: this.props.sdgNumber,
+					data: this.props.data
+				}));
+			}
 		}
-	}); /**
-	     * ViewerWindowContent
-	     * Parent to FocusTargets, ImpactStories
-	     */
+	});
 	
 	exports.default = ViewerWindowContent;
 
 /***/ },
 /* 303 */
+/*!***************************************************************************!*\
+  !*** ./src/Components/ViewerWindowContent/DefaultViewerWindowContent.jsx ***!
+  \***************************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var DefaultViewerWindowContent = _react2.default.createClass({
+		displayName: "DefaultViewerWindowContent",
+		render: function render() {
+	
+			var imgSrc = "src/images/sdg0.svg";
+	
+			return _react2.default.createElement("div", { className: "defaultViewerWindowContent" }, _react2.default.createElement("div", { className: "defaultDescription" }, _react2.default.createElement("p", null, "The 2030 Agenda places ", _react2.default.createElement("span", { className: "emphasize" }, "Decent Work for all"), " at the heart of policies for sustainable and inclusive growth and development."), _react2.default.createElement("p", null, _react2.default.createElement("span", { className: "emphasize" }, "Choose a goal"), " and learn how the ILO's mandate and purpose of social justice is helping to acheive each of the Sustainable Development Goals.")), _react2.default.createElement("div", { className: "gglogo-container" }, _react2.default.createElement("img", { className: "gglogo", src: imgSrc })));
+		}
+	}); /**
+	     * ViewerWindowContent
+	     */
+	
+	exports.default = DefaultViewerWindowContent;
+
+/***/ },
+/* 304 */
 /*!******************************************************!*\
   !*** ./src/Components/FocusTargets/FocusTargets.jsx ***!
   \******************************************************/
@@ -26030,15 +26080,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 304);
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 305);
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	var _Arrow = __webpack_require__(/*! ../Arrow/Arrow.jsx */ 305);
+	var _Arrow = __webpack_require__(/*! ../Arrow/Arrow.jsx */ 306);
 	
 	var _Arrow2 = _interopRequireDefault(_Arrow);
 	
-	var _Description = __webpack_require__(/*! ../Description/Description.jsx */ 306);
+	var _Description = __webpack_require__(/*! ../Description/Description.jsx */ 307);
 	
 	var _Description2 = _interopRequireDefault(_Description);
 	
@@ -26086,7 +26136,7 @@
 	exports.default = FocusTargets;
 
 /***/ },
-/* 304 */
+/* 305 */
 /*!******************************************!*\
   !*** ./src/Components/Bullet/Bullet.jsx ***!
   \******************************************/
@@ -26151,7 +26201,7 @@
 	exports.default = Bullet;
 
 /***/ },
-/* 305 */
+/* 306 */
 /*!****************************************!*\
   !*** ./src/Components/Arrow/Arrow.jsx ***!
   \****************************************/
@@ -26198,7 +26248,7 @@
 	exports.default = Arrow;
 
 /***/ },
-/* 306 */
+/* 307 */
 /*!****************************************************!*\
   !*** ./src/Components/Description/Description.jsx ***!
   \****************************************************/
@@ -26244,7 +26294,7 @@
 	exports.default = Description;
 
 /***/ },
-/* 307 */
+/* 308 */
 /*!********************************************************!*\
   !*** ./src/Components/ImpactStories/ImpactStories.jsx ***!
   \********************************************************/
@@ -26260,15 +26310,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 304);
+	var _Bullet = __webpack_require__(/*! ../Bullet/Bullet.jsx */ 305);
 	
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 	
-	var _ShareWidget = __webpack_require__(/*! ../ShareWidget/ShareWidget.jsx */ 308);
+	var _ShareWidget = __webpack_require__(/*! ../ShareWidget/ShareWidget.jsx */ 309);
 	
 	var _ShareWidget2 = _interopRequireDefault(_ShareWidget);
 	
-	var _Arrow = __webpack_require__(/*! ../Arrow/Arrow.jsx */ 305);
+	var _Arrow = __webpack_require__(/*! ../Arrow/Arrow.jsx */ 306);
 	
 	var _Arrow2 = _interopRequireDefault(_Arrow);
 	
@@ -26316,7 +26366,7 @@
 	exports.default = ImpactStories;
 
 /***/ },
-/* 308 */
+/* 309 */
 /*!****************************************************!*\
   !*** ./src/Components/ShareWidget/ShareWidget.jsx ***!
   \****************************************************/
@@ -26332,7 +26382,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 309);
+	var _popupCenter = __webpack_require__(/*! ./popupCenter.js */ 310);
 	
 	var _popupCenter2 = _interopRequireDefault(_popupCenter);
 	
@@ -26413,7 +26463,7 @@
 	exports.default = ShareWidget;
 
 /***/ },
-/* 309 */
+/* 310 */
 /*!***************************************************!*\
   !*** ./src/Components/ShareWidget/popupCenter.js ***!
   \***************************************************/
@@ -26454,7 +26504,7 @@
 	}
 
 /***/ },
-/* 310 */
+/* 311 */
 /*!***************************************!*\
   !*** ./~/json-loader!./src/data.json ***!
   \***************************************/

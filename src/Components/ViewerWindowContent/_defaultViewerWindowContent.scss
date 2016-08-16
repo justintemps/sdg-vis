@@ -1,0 +1,32 @@
+/* defaultViewerWindowContent */
+
+.defaultViewerWindowContent {
+	@include flex();
+	margin: 20px 0 20px 20px;
+}
+
+.defaultDescription {
+	box-sizing: border-box;
+	text-align: left;
+	width: calc(67% - 20px);
+
+	p {
+		font-size: 1.2em;
+		margin: 0 0 20px 0;
+	}
+}
+
+.gglogo-container {
+	box-sizing: border-box;
+	width: 33%;
+}
+
+.gglogo {
+	width: 100%;
+}
+
+.emphasize {
+	color: $goal8color;
+	font-style: normal;
+	font-weight: 600;
+}
