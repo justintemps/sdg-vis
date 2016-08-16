@@ -8,7 +8,7 @@
 
 	render() {
 
-		const imgSrc = "src/images/sdg0.svg";
+		const imgSrc = "src/images/gglogo.svg";
 
 		return(
 			<div className="defaultViewerWindowContent">
