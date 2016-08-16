@@ -20482,6 +20482,7 @@
 		render: function render() {
 			var _this = this;
 	
+			// @TODO: Is this really necessary?
 			// Creates new React Elements from imported SVGs
 			var sdgs = icons.map(function (svg, i) {
 				return _react2.default.createElement(svg, {
@@ -20498,18 +20499,11 @@
 					return { opacity: 1 };
 				}
 			};
-			/*
-	  		// Special styles for the first icon
-	  		const sdg0Style = () => {
-	  			if (this.props.currentSdg === 0 && this.props.sdg === this.props.currentSdg) {
-	  				return ({
-	  					color: "#29abe2"
-	  				});
-	  			}
-	  		};
-	  */
+	
+			var gglogo = _react2.default.createElement("img", { style: { width: "25px" }, src: "src/images/gglogo.svg" });
+	
 			// Determines which number or character should appear in the mobile icon
-			var mobileSDGNumber = this.props.sdg > 0 ? this.props.sdg : "D";
+			var mobileSDGNumber = this.props.sdg > 0 ? this.props.sdg : gglogo;
 	
 			return _react2.default.createElement("div", { style: opacity(), className: iconClass, onClick: this.clickHandler }, sdgs[this.props.sdg], _react2.default.createElement("div", { className: "mobileSdgNumber" }, mobileSDGNumber), _react2.default.createElement("div", { className: "mobileSdgName" }, this.props.sdgNameShort));
 		}

@@ -38,6 +38,7 @@ const Icon = React.createClass({
 
 	render() {
 
+		// @TODO: Is this really necessary?
 		// Creates new React Elements from imported SVGs
 		const sdgs = icons.map( (svg, i) => React.createElement(svg, {
 			className: "sdg"+ i
@@ -52,18 +53,11 @@ const Icon = React.createClass({
 				return({opacity: 1});
 			}
 		};
-/*
-		// Special styles for the first icon
-		const sdg0Style = () => {
-			if (this.props.currentSdg === 0 && this.props.sdg === this.props.currentSdg) {
-				return ({
-					color: "#29abe2"
-				});
-			}
-		};
-*/
+
+		const gglogo = <img style={{width: "25px"}} src="src/images/gglogo.svg" />;
+
 		// Determines which number or character should appear in the mobile icon
-		const mobileSDGNumber = ( this.props.sdg > 0 ) ? this.props.sdg : "D";
+		const mobileSDGNumber = ( this.props.sdg > 0 ) ? this.props.sdg : gglogo;
 
 		return(
 			<div style={opacity()} className={iconClass} onClick={this.clickHandler}>
