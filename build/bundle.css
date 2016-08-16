@@ -20,13 +20,13 @@
 /* -- Typography -- */
 /* -- Mixins -- */
 /* -- Color Palette -- */
-/* Global Goals */
+/* -- Global Goals -- */
 /* Colors List */
 /* Typography etc. */
 /* -- Typography -- */
 /* -- Mixins -- */
 /* -- Color Palette -- */
-/* Global Goals */
+/* -- Global Goals -- */
 /* Colors List */
 html,
 body,
@@ -424,7 +424,7 @@ a {
 /* -- Typography -- */
 /* -- Mixins -- */
 /* -- Color Palette -- */
-/* Global Goals */
+/* -- Global Goals -- */
 /* Colors List */
 .focusTargets {
   min-height: 100px;
@@ -578,7 +578,7 @@ a {
   svg.sdg17 {
     display: none; }
   .sdg0 {
-    background-color: #f1f1f1; }
+    background-color: #37468e; }
   .sdg1 {
     background-color: #e5243b; }
   .sdg2 {
@@ -648,8 +648,6 @@ a {
     line-height: .9em;
     text-align: left;
     text-transform: uppercase; }
-  .sdg0 .mobileSdgName, .sdg0 .mobileSdgNumber {
-    color: #29abe2; }
   /* TitleBar */
   /* titleBarMobile */
   .triangle {

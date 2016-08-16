@@ -26,7 +26,6 @@ const Arrow = React.createClass({
 			<div className="arrow" onClick={this.nextItem}></div>
 		);
 	}
-
 });
 
 export default Arrow;

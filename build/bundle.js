@@ -26545,9 +26545,9 @@
 		{
 			"sdgNumber": 0,
 			"sdgName": "and the 2030 Agenda for Sustainable Development",
-			"sdgNameShort": "Decent Work and the 2030 Agenda",
+			"sdgNameShort": "ILO and the 2030 Agenda",
 			"sdgIcon": "./src/images/sdg0.svg",
-			"sdgColor": "#29abe2",
+			"sdgColor": "#37468E",
 			"focusTargets": [
 				{
 					"number": "1",
