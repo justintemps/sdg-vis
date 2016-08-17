@@ -52,6 +52,12 @@
 	/* TitleBar */
 	@import "../Components/TitleBar/_titleBarMobile";
 
+	/* DefaultViewerWindowContent*/
+	@import "../Components/ViewerWindow/_mobileViewerWindow";
+
+	/* DefaultViewerWindowContent*/
+	@import "../Components/ViewerWindowContent/_mobileDefaultViewerWindowContent";
+
 	/* FocusTargets */
 	@import "../Components/FocusTargets/_focusTargetsMobile";
 

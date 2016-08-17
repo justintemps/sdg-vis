@@ -338,7 +338,7 @@ a {
 /* ViewerWindow */
 .viewerWindow {
   box-sizing: border-box;
-  min-height: 450px;
+  min-height: 460px;
   padding: 5px;
   position: relative;
   text-align: center;
@@ -358,7 +358,8 @@ a {
   text-align: left;
   width: calc(67% - 20px); }
   .defaultDescription p, .defaultDescription span {
-    font-size: 1.2em;
+    font-size: 1.1em; }
+  .defaultDescription p:first-child, .defaultDescription span:first-child {
     margin: 0 0 20px 0; }
 
 .gglogo-container {
@@ -596,7 +597,7 @@ a {
 .shareWidget {
   color: #7e7e7e;
   font-size: .86em;
-  margin: 5px 0 0; }
+  margin: 15px 0 0; }
   .shareWidget span {
     color: inherit; }
 
@@ -739,6 +740,12 @@ a {
     line-height: .9em;
     text-align: left;
     text-transform: uppercase; }
+  .mobileSdgNumber > img {
+    left: -5px;
+    position: relative;
+    width: 25px; }
+  .sdg0 .mobileSdgNumber {
+    margin: 0 0 0 5px; }
   /* TitleBar */
   /* titleBarMobile */
   /* Set colors for sdg number and title  */
@@ -874,6 +881,21 @@ a {
     display: none !important; }
   .sdgNumber {
     bottom: 8px; }
+  /* DefaultViewerWindowContent*/
+  .viewerWindow {
+    min-height: inherit; }
+  /* DefaultViewerWindowContent*/
+  /* defaultViewerWindowContent */
+  .defaultViewerWindowContent {
+    margin: 20px 15px; }
+  .defaultDescription {
+    width: 100%; }
+  .gglogo-container {
+    display: none; }
+  .defaultTitle {
+    font-size: 3em;
+    line-height: .9em;
+    margin-bottom: 15px; }
   /* FocusTargets */
   /* focusTargetsMobile */
   .focusTargets {
@@ -896,7 +918,7 @@ a {
     align-items: flex-start;
     flex-wrap: nowrap;
     justify-content: space-between;
-    min-height: 80px; }
+    min-height: 60px; }
     .target-description-wrapper div:first-child {
       width: 80%; }
     .target-description-wrapper .target-description {
@@ -938,7 +960,7 @@ a {
 @media screen and (max-width: 375px) {
   /* smallMobileBase */
   .focusTargets {
-    min-height: 160px; }
+    min-height: 100px; }
   .impactStories {
     margin: 15px 0 0;
     min-height: 275px; }

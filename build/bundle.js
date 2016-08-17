@@ -20494,7 +20494,8 @@
 				}
 			};
 	
-			var gglogo = _react2.default.createElement("img", { style: { width: "25px" }, src: "src/images/gglogo.svg" });
+			// Global Goals logo appears in first icon of mobile view
+			var gglogo = _react2.default.createElement("img", { src: "src/images/gglogo.svg" });
 	
 			// Determines which number or character should appear in the mobile icon
 			var mobileSDGNumber = this.props.sdg > 0 ? this.props.sdg : gglogo;
@@ -26093,7 +26094,7 @@
 		render: function render() {
 			var _this = this;
 	
-			var heading = this.props.currentSDG > 0 ? "Decent Work Targets" : "Instructions";
+			var heading = "Where decent work comes in";
 	
 			var bullets = this.props.focusTargets.map(function (target, i) {
 				return _react2.default.createElement(_Bullet2.default, { type: "focusTarget",
@@ -26271,7 +26272,7 @@
 			}
 		},
 		render: function render() {
-			return _react2.default.createElement("div", null, _react2.default.createElement("p", { className: "target-description" }, this.props.description), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(155)));
+			return _react2.default.createElement("div", null, _react2.default.createElement("p", { className: "target-description" }, this.props.description), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(110)));
 		}
 	}); /**
 	     * Description
@@ -26338,7 +26339,7 @@
 	
 			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
 	
-			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, this.props.currentSDG > 0 ? "Impact Stories" : "About Decent Work"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement(_ShareWidget2.default, {
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "How ILO is helping"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement(_ShareWidget2.default, {
 				currentStoryUrl: this.props.impactStories[this.props.currentStory].url,
 				currentStoryTitle: this.props.impactStories[this.props.currentStory].title,
 				currentStoryBlurb: this.props.impactStories[this.props.currentStory].blurb

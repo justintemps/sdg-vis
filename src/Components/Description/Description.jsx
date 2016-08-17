@@ -31,7 +31,7 @@ const Description = React.createClass({
 		return(
 			<div>
 				<p className="target-description">{this.props.description}</p>
-				<p className="mobile-target-description">{this.mobiledescription(155)}</p>
+				<p className="mobile-target-description">{this.mobiledescription(110)}</p>
 			</div>
 		);
 	}

@@ -54,7 +54,8 @@ const Icon = React.createClass({
 			}
 		};
 
-		const gglogo = <img style={{width: "25px"}} src="src/images/gglogo.svg" />;
+		// Global Goals logo appears in first icon of mobile view
+		const gglogo = <img src="src/images/gglogo.svg" />;
 
 		// Determines which number or character should appear in the mobile icon
 		const mobileSDGNumber = ( this.props.sdg > 0 ) ? this.props.sdg : gglogo;

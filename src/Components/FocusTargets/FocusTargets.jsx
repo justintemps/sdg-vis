@@ -12,7 +12,7 @@ const FocusTargets = React.createClass({
 
 	render() {
 
-		const heading = (this.props.currentSDG > 0) ? "Decent Work Targets" : "Instructions";
+		const heading = "Where decent work comes in";
 
 		const bullets = this.props.focusTargets.map( (target, i) =>
 			<Bullet type="focusTarget"
