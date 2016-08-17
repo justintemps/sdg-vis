@@ -19,10 +19,10 @@ const Description = React.createClass({
 			return this.props.description;
 		} else {
 			return (
-				<p>
-				{this.props.description.slice(0, limit)}
-				<span className="more" onClick={this.showLongDescription}></span>
-				</p>
+				<span>
+					{this.props.description.slice(0, limit)}
+					<span className="more" onClick={this.showLongDescription}></span>
+				</span>
 			);
 		}
 	},

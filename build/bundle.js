@@ -20468,6 +20468,7 @@
 	}
 	
 	// Load SVGs with Webpack svg-react-loader
+	
 	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default]; /**
 	                                                                                                                                                                                                                                                                                                           * Icons
 	                                                                                                                                                                                                                                                                                                           * Child to Row
@@ -26305,7 +26306,7 @@
 			} else if (this.props.longDescription) {
 				return this.props.description;
 			} else {
-				return _react2.default.createElement("p", null, this.props.description.slice(0, limit), _react2.default.createElement("span", { className: "more", onClick: this.showLongDescription }));
+				return _react2.default.createElement("span", null, this.props.description.slice(0, limit), _react2.default.createElement("span", { className: "more", onClick: this.showLongDescription }));
 			}
 		},
 		render: function render() {
