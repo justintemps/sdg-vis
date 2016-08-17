@@ -11,9 +11,11 @@ const Description = React.createClass({
 		this.props.setLongDescription(true);
 	},
 
-	mobiledescription(limit) {
+	mobiledescription(limit, range) {
 
-		if (this.props.description.length < limit) {
+		const diff = this.props.description.length - limit;
+
+		if (diff < range) {
 			return this.props.description;
 		} else if (this.props.longDescription) {
 			return this.props.description;
@@ -31,7 +33,7 @@ const Description = React.createClass({
 		return(
 			<div>
 				<p className="target-description">{this.props.description}</p>
-				<p className="mobile-target-description">{this.mobiledescription(110)}</p>
+				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
 			</div>
 		);
 	}

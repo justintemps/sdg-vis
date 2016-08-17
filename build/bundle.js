@@ -26261,9 +26261,11 @@
 		showLongDescription: function showLongDescription() {
 			this.props.setLongDescription(true);
 		},
-		mobiledescription: function mobiledescription(limit) {
+		mobiledescription: function mobiledescription(limit, range) {
 	
-			if (this.props.description.length < limit) {
+			var diff = this.props.description.length - limit;
+	
+			if (diff < range) {
 				return this.props.description;
 			} else if (this.props.longDescription) {
 				return this.props.description;
@@ -26272,7 +26274,7 @@
 			}
 		},
 		render: function render() {
-			return _react2.default.createElement("div", null, _react2.default.createElement("p", { className: "target-description" }, this.props.description), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(110)));
+			return _react2.default.createElement("div", null, _react2.default.createElement("p", { className: "target-description" }, this.props.description), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(100, 50)));
 		}
 	}); /**
 	     * Description
