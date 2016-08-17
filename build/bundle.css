@@ -375,6 +375,97 @@ a {
 
 /* Title Bar */
 /* TitleBar */
+/* Background color for Title Bar */
+.title-sdg-0 {
+  background: #37468e;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-1 {
+  background: #e5243b;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-2 {
+  background: #dda63a;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-3 {
+  background: #4c9f38;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-4 {
+  background: #c5192d;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-5 {
+  background: #ff3a21;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-6 {
+  background: #26bde2;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-7 {
+  background: #fcc30b;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-8 {
+  background: #a21942;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-9 {
+  background: #fd6925;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-10 {
+  background: #dd1367;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-11 {
+  background: #fd9d24;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-12 {
+  background: #bf8b2e;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-13 {
+  background: #3f7e44;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-14 {
+  background: #0a97d9;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-15 {
+  background: #56c02b;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-16 {
+  background: #00689d;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
+.title-sdg-17 {
+  background: #19486a;
+  color: #fff;
+  transition: background-color 0.1s ease; }
+
 .titleBar {
   align-items: center;
   flex-direction: row;
@@ -650,6 +741,135 @@ a {
     text-transform: uppercase; }
   /* TitleBar */
   /* titleBarMobile */
+  /* Set colors for sdg number and title  */
+  .title-sdg-0 {
+    background: #fff;
+    color: #37468e;
+    transition: color 0.1s ease; }
+  .sdgcol-0 {
+    color: #37468e;
+    transition: color 0.5s ease; }
+  .title-sdg-1 {
+    background: #fff;
+    color: #e5243b;
+    transition: color 0.1s ease; }
+  .sdgcol-1 {
+    color: #e5243b;
+    transition: color 0.5s ease; }
+  .title-sdg-2 {
+    background: #fff;
+    color: #dda63a;
+    transition: color 0.1s ease; }
+  .sdgcol-2 {
+    color: #dda63a;
+    transition: color 0.5s ease; }
+  .title-sdg-3 {
+    background: #fff;
+    color: #4c9f38;
+    transition: color 0.1s ease; }
+  .sdgcol-3 {
+    color: #4c9f38;
+    transition: color 0.5s ease; }
+  .title-sdg-4 {
+    background: #fff;
+    color: #c5192d;
+    transition: color 0.1s ease; }
+  .sdgcol-4 {
+    color: #c5192d;
+    transition: color 0.5s ease; }
+  .title-sdg-5 {
+    background: #fff;
+    color: #ff3a21;
+    transition: color 0.1s ease; }
+  .sdgcol-5 {
+    color: #ff3a21;
+    transition: color 0.5s ease; }
+  .title-sdg-6 {
+    background: #fff;
+    color: #26bde2;
+    transition: color 0.1s ease; }
+  .sdgcol-6 {
+    color: #26bde2;
+    transition: color 0.5s ease; }
+  .title-sdg-7 {
+    background: #fff;
+    color: #fcc30b;
+    transition: color 0.1s ease; }
+  .sdgcol-7 {
+    color: #fcc30b;
+    transition: color 0.5s ease; }
+  .title-sdg-8 {
+    background: #fff;
+    color: #a21942;
+    transition: color 0.1s ease; }
+  .sdgcol-8 {
+    color: #a21942;
+    transition: color 0.5s ease; }
+  .title-sdg-9 {
+    background: #fff;
+    color: #fd6925;
+    transition: color 0.1s ease; }
+  .sdgcol-9 {
+    color: #fd6925;
+    transition: color 0.5s ease; }
+  .title-sdg-10 {
+    background: #fff;
+    color: #dd1367;
+    transition: color 0.1s ease; }
+  .sdgcol-10 {
+    color: #dd1367;
+    transition: color 0.5s ease; }
+  .title-sdg-11 {
+    background: #fff;
+    color: #fd9d24;
+    transition: color 0.1s ease; }
+  .sdgcol-11 {
+    color: #fd9d24;
+    transition: color 0.5s ease; }
+  .title-sdg-12 {
+    background: #fff;
+    color: #bf8b2e;
+    transition: color 0.1s ease; }
+  .sdgcol-12 {
+    color: #bf8b2e;
+    transition: color 0.5s ease; }
+  .title-sdg-13 {
+    background: #fff;
+    color: #3f7e44;
+    transition: color 0.1s ease; }
+  .sdgcol-13 {
+    color: #3f7e44;
+    transition: color 0.5s ease; }
+  .title-sdg-14 {
+    background: #fff;
+    color: #0a97d9;
+    transition: color 0.1s ease; }
+  .sdgcol-14 {
+    color: #0a97d9;
+    transition: color 0.5s ease; }
+  .title-sdg-15 {
+    background: #fff;
+    color: #56c02b;
+    transition: color 0.1s ease; }
+  .sdgcol-15 {
+    color: #56c02b;
+    transition: color 0.5s ease; }
+  .title-sdg-16 {
+    background: #fff;
+    color: #00689d;
+    transition: color 0.1s ease; }
+  .sdgcol-16 {
+    color: #00689d;
+    transition: color 0.5s ease; }
+  .title-sdg-17 {
+    background: #fff;
+    color: #19486a;
+    transition: color 0.1s ease; }
+  .sdgcol-17 {
+    color: #19486a;
+    transition: color 0.5s ease; }
+  .defaultTitle {
+    color: #37468E; }
   .triangle {
     display: none !important; }
   .sdgNumber {

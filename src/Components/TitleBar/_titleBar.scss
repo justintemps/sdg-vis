@@ -1,5 +1,17 @@
 /* TitleBar */
 
+/* Background color for Title Bar */
+$class-slug-title: title-sdg- !default;
+
+@each $current-color in $colors-list {
+	$i: index($colors-list, $current-color) - 1;
+	.#{$class-slug-title}#{$i} {
+		background: $current-color;
+		color: #fff;
+		transition: background-color 0.1s ease;
+	}
+}
+
 .titleBar {
 	@include flex();
 	flex-wrap: nowrap;

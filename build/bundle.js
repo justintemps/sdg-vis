@@ -25925,10 +25925,8 @@
 		setColor: function setColor() {
 			if (this.isMobile()) {
 				return this.props.sdgColor;
-			} else if (this.props.sdgNumber > 0) {
-				return "#fff";
 			} else {
-				return this.props.sdgColor;
+				return "#fff";
 			}
 		},
 		render: function render() {
@@ -25959,13 +25957,17 @@
 				width: 0
 			};
 	
+			var titleClass = "title-sdg-" + this.props.sdgNumber;
+	
+			var sdgcol = "sdgcol-" + this.props.sdgNumber;
+	
 			// Titlebar to display for the SDGs
 			if (this.props.sdgNumber > 0) {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: bgcolor }, _react2.default.createElement("div", { className: "sdgNumber", style: color }, this.props.sdgNumber), _react2.default.createElement("h1", { style: color }, this.props.sdgName)), _react2.default.createElement("div", _defineProperty({ style: color, className: "triangle" }, "style", triangle)));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar " + titleClass }, _react2.default.createElement("div", { className: "sdgNumber " + sdgcol }, this.props.sdgNumber), _react2.default.createElement("h1", { className: sdgcol }, this.props.sdgName)), _react2.default.createElement("div", _defineProperty({ style: color, className: "triangle" }, "style", triangle)));
 	
 				// Titlebar to display for the Intro Screen
 			} else {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar", style: bgcolor }, _react2.default.createElement("h1", { className: "defaultTitle" }, "ILO and the Sustainable Develpment Goals")), _react2.default.createElement("div", { className: "triangle", style: triangle }));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar " + titleClass }, _react2.default.createElement("h1", { className: "defaultTitle" }, "ILO and the Sustainable Develpment Goals")), _react2.default.createElement("div", { className: "triangle", style: triangle }));
 			}
 		}
 	});

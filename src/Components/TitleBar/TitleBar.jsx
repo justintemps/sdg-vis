@@ -31,10 +31,8 @@ const TitleBar = React.createClass({
 	setColor() {
 		if ( this.isMobile() ) {
 			return this.props.sdgColor;
-		} else if (this.props.sdgNumber > 0 ) {
-			return "#fff";
 		} else {
-			return this.props.sdgColor;
+			return "#fff";
 		}
 	},
 
@@ -66,15 +64,19 @@ const TitleBar = React.createClass({
 			width: 0
 		};
 
+		const titleClass = `title-sdg-${this.props.sdgNumber}`;
+
+		const sdgcol = `sdgcol-${this.props.sdgNumber}`;
+
 		// Titlebar to display for the SDGs
 		if (this.props.sdgNumber > 0) {
 			return(
 				<div>
-					<div className="titleBar" style={bgcolor}>
-						<div className="sdgNumber" style={color}>
+					<div className={`titleBar ${titleClass}`}>
+						<div className={`sdgNumber ${sdgcol}`}>
 							{this.props.sdgNumber}
 						</div>
-						<h1 style={color}>
+						<h1 className={sdgcol} >
 							{this.props.sdgName}
 						</h1>
 					</div>
@@ -86,7 +88,7 @@ const TitleBar = React.createClass({
 		} else {
 			return(
 				<div>
-					<div className="titleBar" style={bgcolor}>
+					<div className={`titleBar ${titleClass}`}>
 						<h1 className="defaultTitle">
 							ILO and the Sustainable Develpment Goals
 						</h1>

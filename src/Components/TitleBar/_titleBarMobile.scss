@@ -1,5 +1,31 @@
 /* titleBarMobile */
 
+/* Set colors for sdg number and title  */
+$class-slug-mobile-title: title-sdg- !default;
+$sdg-slug: sdgcol- !default;
+
+@each $current-color in $colors-list {
+
+	$j: index($colors-list, $current-color) - 1;
+
+	//Colors for the titlebar
+	.#{$class-slug-mobile-title}#{$j} {
+		background: #fff;
+		color: $current-color;
+		transition: color 0.1s ease;
+	}
+
+	// Colors for the Text
+	.#{$sdg-slug}#{$j} {
+		color: $current-color;
+		transition: color 0.5s ease;
+	}
+}
+
+.defaultTitle {
+	color: $iloblue;
+}
+
 .triangle {
 	display: none !important;
 }
