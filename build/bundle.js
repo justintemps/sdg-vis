@@ -20283,12 +20283,6 @@
 				longDescription: bool
 			});
 		},
-	
-		// Gets the VP width to set mobile styles for the title bar
-		// Should probably do that some other way
-		getVPwidth: function getVPwidth() {
-			return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-		},
 		render: function render() {
 			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, {
 				startFrom: 0,
@@ -20303,7 +20297,6 @@
 				selectFocusTarget: this.selectFocusTarget,
 				currentStory: this.state.currentStory,
 				selectStory: this.selectStory,
-				getVPwidth: this.getVPwidth,
 				data: _data2.default,
 				longDescription: this.state.longDescription,
 				setLongDescription: this.setLongDescription
@@ -25902,44 +25895,10 @@
 	
 	var TitleBar = _react2.default.createClass({
 		displayName: "TitleBar",
-		isMobile: function isMobile() {
-			if (this.props.getVPwidth() > 640) {
-				return false;
-			} else {
-				return true;
-			}
-		},
-	
-		// Determine background color based on screenwidth
-		setBackgroundColor: function setBackgroundColor() {
-			if (this.isMobile()) {
-				return "#fff";
-			} else if (this.props.sdgNumber > 0) {
-				return this.props.sdgColor;
-			} else {
-				return "#37468E";
-			}
-		},
-	
-		// Determine background color based on screenwidth
-		setColor: function setColor() {
-			if (this.isMobile()) {
-				return this.props.sdgColor;
-			} else {
-				return "#fff";
-			}
-		},
 		render: function render() {
 	
-			var bgcolor = {
-				// Get titlebar color from data model, unless it's the intro screen
-				// backgroundColor : (this.props.sdgNumber > 0) ? this.props.sdgColor : "#f1f1f1",
-				backgroundColor: this.setBackgroundColor(),
-				transition: "background-color 0.2s ease"
-			};
-	
 			var color = {
-				color: this.setColor(),
+				color: this.props.sdgColor,
 				transition: "color 0.2s ease"
 			};
 	

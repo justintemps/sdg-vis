@@ -51,12 +51,6 @@ const SDGexplorer = React.createClass({
 		});
 	},
 
-	// Gets the VP width to set mobile styles for the title bar
-	// Should probably do that some other way
-	getVPwidth() {
-		return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	},
-
 	render() {
 		return (
 			<div className="wrapper">
@@ -75,7 +69,6 @@ const SDGexplorer = React.createClass({
 						selectFocusTarget={this.selectFocusTarget}
 						currentStory={this.state.currentStory}
 						selectStory={this.selectStory}
-						getVPwidth={this.getVPwidth}
 						data={data}
 						longDescription={this.state.longDescription}
 						setLongDescription={this.setLongDescription}
