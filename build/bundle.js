@@ -28150,7 +28150,7 @@
 			}
 		},
 		render: function render() {
-			return _react2.default.createElement(_reactAddonsCssTransitionGroup2.default, { transitionName: "carousel", transitionEnterTimeout: 150, transitionLeaveTimeout: 100 }, _react2.default.createElement("div", { className: "description-carousel", key: this.props.focusTarget }, _react2.default.createElement("p", { className: "target-description" }, this.props.description), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(100, 50))));
+			return _react2.default.createElement("div", null, _react2.default.createElement("p", { className: "target-description" }, this.props.description), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(100, 50)));
 		}
 	});
 	

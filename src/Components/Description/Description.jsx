@@ -31,12 +31,10 @@ const Description = React.createClass({
 
 	render() {
 		return(
-			<ReactCSSTransitionGroup transitionName="carousel" transitionEnterTimeout={150}  transitionLeaveTimeout={100}>
-				<div className="description-carousel" key={this.props.focusTarget}>
-					<p className="target-description">{this.props.description}</p>
-					<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
-				</div>
-			</ReactCSSTransitionGroup>
+			<div>
+				<p className="target-description">{this.props.description}</p>
+				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
+			</div>
 		);
 	}
 });

@@ -538,25 +538,6 @@ a {
   flex-wrap: nowrap;
   margin: 0; }
 
-/* Description */
-.description-carousel {
-  position: absolute;
-  display: inline-block; }
-
-.carousel-enter {
-  opacity: 0.1; }
-
-.carousel-enter.carousel-enter-active {
-  opacity: 1;
-  transition: opacity 200ms ease-in; }
-
-.carousel-leave {
-  opacity: 1; }
-
-.carousel-leave.carousel-leave-active {
-  opacity: 0.1;
-  transition: opacity 100ms ease-in; }
-
 /* Arrow */
 /* arrowMobile */
 .arrow {
