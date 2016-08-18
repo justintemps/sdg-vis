@@ -539,15 +539,23 @@ a {
   margin: 0; }
 
 /* Description */
+.description-carousel {
+  position: absolute;
+  display: inline-block; }
+
 .carousel-enter {
-  opacity: 0.01; }
+  opacity: 0.1; }
 
 .carousel-enter.carousel-enter-active {
   opacity: 1;
-  transition: opacity 500ms ease-in; }
+  transition: opacity 200ms ease-in; }
 
 .carousel-leave {
   opacity: 1; }
+
+.carousel-leave.carousel-leave-active {
+  opacity: 0.1;
+  transition: opacity 100ms ease-in; }
 
 /* Arrow */
 /* arrowMobile */
