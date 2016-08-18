@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 const Description = React.createClass({
 
@@ -32,8 +33,10 @@ const Description = React.createClass({
 	render() {
 		return(
 			<div>
-				<p className="target-description">{this.props.description}</p>
-				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
+				<ReactCSSTransitionGroup transitionName="carousel" transitionEnterTimeout={300} transitionLeaveTimeout={300}>
+					<p className="target-description" key={this.props.focusTarget}>{this.props.description}</p>
+					<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
+				</ReactCSSTransitionGroup>
 			</div>
 		);
 	}

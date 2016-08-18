@@ -1,0 +1,12 @@
+.carousel-enter {
+	opacity: 0.01;
+}
+
+.carousel-enter.carousel-enter-active {
+	opacity: 1;
+  	transition: opacity 500ms ease-in;
+}
+
+.carousel-leave {
+  opacity: 1;
+}

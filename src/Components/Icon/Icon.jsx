@@ -26,8 +26,8 @@ import Sdg16 from "!babel!svg-react!../../images/sdg16.svg";
 import Sdg17 from "!babel!svg-react!../../images/sdg17.svg";
 import Sdg0 from "!babel!svg-react!../../images/sdg0.svg";
 
-const icons = [ Sdg0, Sdg1, Sdg2, Sdg3, Sdg4, Sdg5, Sdg6, Sdg7, Sdg8,
-	Sdg9, Sdg10, Sdg11, Sdg12, Sdg13, Sdg14, Sdg15, Sdg16, Sdg17 ];
+const icons = [Sdg0, Sdg1, Sdg2, Sdg3, Sdg4, Sdg5, Sdg6, Sdg7, Sdg8,
+	Sdg9, Sdg10, Sdg11, Sdg12, Sdg13, Sdg14, Sdg15, Sdg16, Sdg17];
 
 
 const Icon = React.createClass({

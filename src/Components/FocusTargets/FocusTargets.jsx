@@ -38,6 +38,7 @@ const FocusTargets = React.createClass({
 						</div>
 						<div className="target-description-wrapper">
 							<Description
+								focusTarget={this.props.focusTarget}
 								description={this.props.focusTargets[this.props.focusTarget].description}
 								longDescription={this.props.longDescription}
 								setLongDescription={this.props.setLongDescription}
