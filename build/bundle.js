@@ -22085,8 +22085,7 @@
 				longDescription: false
 			});
 	
-			this.shiftRow(Math.floor((this.state.currentSdg + 1) / 6));
-			console.log(Math.floor((this.state.currentSdg + 1) / 6));
+			this.shiftRow(Math.floor(sdg / 6));
 		},
 	
 		// Selects the current focus target
@@ -22116,9 +22115,58 @@
 			});
 		},
 		render: function render() {
+	
+			var iconsAbove = function iconsAbove(row) {
+				var numberIcons = void 0;
+				switch (row) {
+					case 0:
+						numberIcons = 6;
+						break;
+					case 1:
+						numberIcons = 12;
+						break;
+					case 2:
+						numberIcons = 18;
+						break;
+				}
+				return numberIcons;
+			};
+	
+			var iconsBelow = function iconsBelow(row) {
+				var numberIcons = void 0;
+				switch (row) {
+					case 0:
+						numberIcons = 12;
+						break;
+					case 1:
+						numberIcons = 6;
+						break;
+					case 2:
+						numberIcons = 0;
+						break;
+				}
+				return numberIcons;
+			};
+	
+			var startFrom = function startFrom(row) {
+				var num = void 0;
+				switch (row) {
+					case 0:
+						num = 6;
+						break;
+					case 1:
+						num = 12;
+						break;
+					case 2:
+						num = 0;
+						break;
+				}
+				return num;
+			};
+	
 			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, {
 				startFrom: 0,
-				numberIcons: 6,
+				numberIcons: iconsAbove(this.state.currentRow),
 				key: 1,
 				handler: this.selectSDG,
 				currentSdg: this.state.currentSdg,
@@ -22133,8 +22181,8 @@
 				longDescription: this.state.longDescription,
 				setLongDescription: this.setLongDescription
 			}), _react2.default.createElement(_Row2.default, {
-				startFrom: 6,
-				numberIcons: 12,
+				startFrom: startFrom(this.state.currentRow),
+				numberIcons: iconsBelow(this.state.currentRow),
 				key: 2,
 				handler: this.selectSDG,
 				currentSdg: this.state.currentSdg,
