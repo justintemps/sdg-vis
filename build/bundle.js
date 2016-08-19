@@ -22042,6 +22042,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactAddonsCssTransitionGroup = __webpack_require__(/*! react-addons-css-transition-group */ 327);
+	
+	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
+	
 	var _Row = __webpack_require__(/*! ../Row/Row.jsx */ 188);
 	
 	var _Row2 = _interopRequireDefault(_Row);
@@ -22058,12 +22062,6 @@
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	/**
-	 * SDGExplorer
-	 * Parent to Row, ViewerWindow
-	 * Owns state for the whole app
-	 */
-	
 	var SDGexplorer = _react2.default.createClass({
 		displayName: "SDGexplorer",
 		getInitialState: function getInitialState() {
@@ -22078,6 +22076,8 @@
 	
 		// Selecting a new SDG will reset the current focus target and story
 		selectSDG: function selectSDG(sdg) {
+			var _this = this;
+	
 			this.setState({
 				currentSdg: sdg,
 				focusTarget: 0,
@@ -22085,7 +22085,11 @@
 				longDescription: false
 			});
 	
-			this.shiftRow(Math.floor(sdg / 6));
+			var shift = function shift() {
+				return _this.shiftRow(Math.floor(sdg / 6));
+			};
+	
+			setTimeout(shift, 600);
 		},
 	
 		// Selects the current focus target
@@ -22171,7 +22175,11 @@
 				handler: this.selectSDG,
 				currentSdg: this.state.currentSdg,
 				data: _data2.default
-			}), _react2.default.createElement(_ViewerWindow2.default, {
+			}), _react2.default.createElement(_reactAddonsCssTransitionGroup2.default, { transitionName: "sliding-viewer",
+				transitionLeaveTimeout: 500, transitionEnterTimeout: 500
+			}, _react2.default.createElement(_ViewerWindow2.default, {
+	
+				key: this.state.currentSdg,
 				currentSdg: this.state.currentSdg,
 				focusTarget: this.state.focusTarget,
 				selectFocusTarget: this.selectFocusTarget,
@@ -22180,7 +22188,7 @@
 				data: _data2.default,
 				longDescription: this.state.longDescription,
 				setLongDescription: this.setLongDescription
-			}), _react2.default.createElement(_Row2.default, {
+			})), _react2.default.createElement(_Row2.default, {
 				startFrom: startFrom(this.state.currentRow),
 				numberIcons: iconsBelow(this.state.currentRow),
 				key: 2,
@@ -22188,6 +22196,19 @@
 				currentSdg: this.state.currentSdg,
 				data: _data2.default
 			})));
+		}
+	}); /**
+	     * SDGExplorer
+	     * Parent to Row, ViewerWindow
+	     * Owns state for the whole app
+	     */
+	
+	var FirstChild = _react2.default.createClass({
+		displayName: "FirstChild",
+	
+		render: function render() {
+			var children = _react2.default.Children.toArray(this.props.children);
+			return children[0] || null;
 		}
 	});
 	

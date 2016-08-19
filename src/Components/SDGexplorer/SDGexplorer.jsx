@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Row from "../Row/Row.jsx";
 import ViewerWindow from "../ViewerWindow/ViewerWindow.jsx";
 import data from "!json!../../data.json";
@@ -30,7 +31,9 @@ const SDGexplorer = React.createClass({
 			longDescription : false
 		});
 
-		this.shiftRow( Math.floor( sdg / 6) );
+		const shift = () => this.shiftRow( Math.floor( sdg / 6));
+
+		setTimeout(shift, 600);
 	},
 
 	// Selects the current focus target
@@ -122,7 +125,12 @@ const SDGexplorer = React.createClass({
 						currentSdg={this.state.currentSdg}
 						data={data}
 					/>
+				<ReactCSSTransitionGroup transitionName="sliding-viewer"
+					transitionLeaveTimeout={500} transitionEnterTimeout={500}
+				>
 					<ViewerWindow
+
+						key={this.state.currentSdg}
 						currentSdg={this.state.currentSdg}
 						focusTarget={this.state.focusTarget}
 						selectFocusTarget={this.selectFocusTarget}
@@ -132,6 +140,9 @@ const SDGexplorer = React.createClass({
 						longDescription={this.state.longDescription}
 						setLongDescription={this.setLongDescription}
 					/>
+
+				</ReactCSSTransitionGroup>
+
 					<Row
 						startFrom={startFrom(this.state.currentRow)}
 						numberIcons={iconsBelow(this.state.currentRow)}
@@ -143,6 +154,13 @@ const SDGexplorer = React.createClass({
 				</div>
 			</div>
 		);
+	}
+});
+
+const FirstChild = React.createClass({
+	render: function() {
+		let children = React.Children.toArray(this.props.children);
+		return children[0] || null;
 	}
 });
 
