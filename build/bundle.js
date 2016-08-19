@@ -22071,6 +22071,7 @@
 				currentSdg: 0,
 				focusTarget: 0,
 				currentStory: 0,
+				currentRow: 0,
 				longDescription: false
 			};
 		},
@@ -22083,6 +22084,9 @@
 				currentStory: 0,
 				longDescription: false
 			});
+	
+			this.shiftRow(Math.floor((this.state.currentSdg + 1) / 6));
+			console.log(Math.floor((this.state.currentSdg + 1) / 6));
 		},
 	
 		// Selects the current focus target
@@ -22097,6 +22101,11 @@
 		selectStory: function selectStory(story) {
 			this.setState({
 				currentStory: story
+			});
+		},
+		shiftRow: function shiftRow(row) {
+			this.setState({
+				currentRow: row
 			});
 		},
 	

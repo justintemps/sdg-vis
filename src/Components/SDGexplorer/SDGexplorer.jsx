@@ -16,6 +16,7 @@ const SDGexplorer = React.createClass({
 			currentSdg : 0,
 			focusTarget : 0,
 			currentStory : 0,
+			currentRow : 0,
 			longDescription : false
 		});
 	},
@@ -28,6 +29,9 @@ const SDGexplorer = React.createClass({
 			currentStory : 0,
 			longDescription : false
 		});
+
+		this.shiftRow( Math.floor( (this.state.currentSdg + 1) / 6) );
+		console.log( Math.floor( (this.state.currentSdg + 1) / 6) );
 	},
 
 	// Selects the current focus target
@@ -42,6 +46,12 @@ const SDGexplorer = React.createClass({
 	selectStory(story) {
 		this.setState({
 			currentStory: story
+		});
+	},
+
+	shiftRow(row) {
+		this.setState({
+			currentRow: row
 		});
 	},
 
