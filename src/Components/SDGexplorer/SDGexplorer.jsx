@@ -126,7 +126,7 @@ const SDGexplorer = React.createClass({
 						data={data}
 					/>
 				<ReactCSSTransitionGroup transitionName="sliding-viewer"
-					transitionLeaveTimeout={500} transitionEnterTimeout={500}
+					transitionLeaveTimeout={750} transitionEnterTimeout={500}
 				>
 					<ViewerWindow
 

@@ -16,7 +16,7 @@
 .sliding-viewer-enter.sliding-viewer-enter-active {
 	height: 460px;
 	visibility: visible;
-	transition: all 500ms ease 500ms;
+	transition: all 500ms ease 250ms;
 }
 
 .sliding-viewer-leave {
