@@ -55,7 +55,7 @@ const TitleBar = React.createClass({
 				<div>
 					<div className={`titleBar ${titleClass}`}>
 						<h1 className="defaultTitle">
-							ILO and the Sustainable Develpment Goals
+							ILO and the Sustainable Development Goals
 						</h1>
 					</div>
 					<div className="triangle" style={triangle}></div>

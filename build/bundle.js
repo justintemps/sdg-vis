@@ -22099,6 +22099,8 @@
 				currentStory: story
 			});
 		},
+	
+		// Toggles long description for mobile
 		setLongDescription: function setLongDescription(bool) {
 			this.setState({
 				longDescription: bool
@@ -22107,7 +22109,7 @@
 		render: function render() {
 			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, {
 				startFrom: 0,
-				numberIcons: 12,
+				numberIcons: 6,
 				key: 1,
 				handler: this.selectSDG,
 				currentSdg: this.state.currentSdg,
@@ -22122,8 +22124,8 @@
 				longDescription: this.state.longDescription,
 				setLongDescription: this.setLongDescription
 			}), _react2.default.createElement(_Row2.default, {
-				startFrom: 12,
-				numberIcons: 6,
+				startFrom: 6,
+				numberIcons: 12,
 				key: 2,
 				handler: this.selectSDG,
 				currentSdg: this.state.currentSdg,
@@ -27793,7 +27795,7 @@
 	
 				// Titlebar to display for the Intro Screen
 			} else {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar " + titleClass }, _react2.default.createElement("h1", { className: "defaultTitle" }, "ILO and the Sustainable Develpment Goals")), _react2.default.createElement("div", { className: "triangle", style: triangle }));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar " + titleClass }, _react2.default.createElement("h1", { className: "defaultTitle" }, "ILO and the Sustainable Development Goals")), _react2.default.createElement("div", { className: "triangle", style: triangle }));
 			}
 		}
 	});

@@ -45,6 +45,7 @@ const SDGexplorer = React.createClass({
 		});
 	},
 
+	// Toggles long description for mobile
 	setLongDescription(bool) {
 		this.setState({
 			longDescription: bool
@@ -57,7 +58,7 @@ const SDGexplorer = React.createClass({
 				<div className="sdgExplorer">
 					<Row
 						startFrom={0}
-						numberIcons={12}
+						numberIcons={6}
 						key={1}
 						handler={this.selectSDG}
 						currentSdg={this.state.currentSdg}
@@ -74,8 +75,8 @@ const SDGexplorer = React.createClass({
 						setLongDescription={this.setLongDescription}
 					/>
 					<Row
-						startFrom={12}
-						numberIcons={6}
+						startFrom={6}
+						numberIcons={12}
 						key={2}
 						handler={this.selectSDG}
 						currentSdg={this.state.currentSdg}
