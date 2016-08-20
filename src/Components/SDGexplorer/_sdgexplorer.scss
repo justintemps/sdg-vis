@@ -30,35 +30,3 @@
 	max-height: 0;
 	transition: all 500ms ease;
 }
-
-/* ----- Transition using opacity. This works -------- */
-
-/*
-.sliding-viewer {
-	position: relative;
-	min-height: 460px;
-}
-
-.sliding-viewer-enter {
-	opacity: 0;
-	visibility: hidden;
-}
-
-.sliding-viewer-enter.sliding-viewer-enter-active {
-	opacity: 1;
-	visibility: visible;
-	transition: opacity 500ms ease;
-}
-
-.sliding-viewer-leave {
-	opacity: 1;
-	visibility: visible;
-}
-
-.sliding-viewer-leave.sliding-viewer-leave-active {
-	opacity: 0;
-	visibility: hidden;
-	transition: opacity 150ms ease;
-}
-
------------------------------------------------------------ */

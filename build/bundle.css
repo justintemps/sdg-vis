@@ -50,6 +50,7 @@ h1 {
   color: #fff;
   font-family: "GiorgioSans-Bold", "Source Sans Pro", sans-serif;
   position: relative;
+  line-height: 90%;
   letter-spacing: 0.024em;
   margin: 0 0 0 15px;
   width: 90%; }
@@ -87,6 +88,7 @@ h4 {
 p, span {
   font-family: "Apex New Book", sans-serif;
   font-size: 1em;
+  font-weight: 400;
   color: #2a2a2a;
   line-height: 1.3em;
   margin: 0;
@@ -129,36 +131,6 @@ a {
   max-height: 0;
   transition: all 500ms ease; }
 
-/* ----- Transition using opacity. This works -------- */
-/*
-.sliding-viewer {
-	position: relative;
-	min-height: 460px;
-}
-
-.sliding-viewer-enter {
-	opacity: 0;
-	visibility: hidden;
-}
-
-.sliding-viewer-enter.sliding-viewer-enter-active {
-	opacity: 1;
-	visibility: visible;
-	transition: opacity 500ms ease;
-}
-
-.sliding-viewer-leave {
-	opacity: 1;
-	visibility: visible;
-}
-
-.sliding-viewer-leave.sliding-viewer-leave-active {
-	opacity: 0;
-	visibility: hidden;
-	transition: opacity 150ms ease;
-}
-
------------------------------------------------------------ */
 /* Row */
 /* Row */
 .row {
