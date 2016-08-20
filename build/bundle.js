@@ -21965,6 +21965,7 @@
 				focusTarget: 0,
 				currentStory: 0,
 				currentRow: 0,
+				rowChanged: false,
 				longDescription: false
 			};
 		},
@@ -21973,12 +21974,22 @@
 		selectSDG: function selectSDG(sdg) {
 			var _this = this;
 	
+			var rowChanged = void 0;
+			if (Math.floor(sdg / 6) !== this.state.currentRow) {
+				rowChanged = true;
+			} else {
+				rowChanged = false;
+			}
+	
 			this.setState({
 				currentSdg: sdg,
 				focusTarget: 0,
 				currentStory: 0,
-				longDescription: false
+				longDescription: false,
+				rowChanged: rowChanged
 			});
+	
+			console.log(this.state.rowChanged);
 	
 			// Don't change rows until the leave animation has run
 			setTimeout(function () {
@@ -22000,10 +22011,25 @@
 				currentStory: story
 			});
 		},
+	
+		// Determines the row underneath which the viwer window should be displayed
 		shiftRow: function shiftRow(row) {
 			this.setState({
 				currentRow: row
 			});
+		},
+	
+		// Detects row changes before they happen
+		rowDidChange: function rowDidChange(sdg) {
+			if (Math.floor(sdg / 6) !== this.state.currentRow) {
+				this.setState({
+					rowDidChange: true
+				});
+			} else {
+				this.setState({
+					rowDidChange: false
+				});
+			}
 		},
 	
 		// Toggles long description for mobile
@@ -22069,10 +22095,12 @@
 				handler: this.selectSDG,
 				currentSdg: this.state.currentSdg,
 				data: _data2.default
-			}), _react2.default.createElement(_reactAddonsCssTransitionGroup2.default, { transitionName: "sliding-viewer",
-				transitionLeaveTimeout: 500, transitionEnterTimeout: 1200
-			}, _react2.default.createElement(_ViewerWindow2.default, {
-	
+			}), _react2.default.createElement(_reactAddonsCssTransitionGroup2.default, {
+				transitionName: "sliding-viewer",
+				transitionLeave: this.state.rowChanged,
+				transitionEnter: this.state.rowChanged,
+				transitionLeaveTimeout: 500,
+				transitionEnterTimeout: 1200 }, _react2.default.createElement(_ViewerWindow2.default, {
 				key: this.state.currentSdg,
 				currentSdg: this.state.currentSdg,
 				focusTarget: this.state.focusTarget,

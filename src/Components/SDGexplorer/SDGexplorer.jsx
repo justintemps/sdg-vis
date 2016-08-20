@@ -18,18 +18,29 @@ const SDGexplorer = React.createClass({
 			focusTarget : 0,
 			currentStory : 0,
 			currentRow : 0,
+			rowChanged: false,
 			longDescription : false
 		});
 	},
 
 	// Selecting a new SDG will reset the current focus target and story
 	selectSDG(sdg) {
+		let rowChanged;
+		if (Math.floor(sdg / 6) !== this.state.currentRow) {
+			rowChanged = true;
+		} else {
+			rowChanged = false;
+		}
+
 		this.setState({
 			currentSdg: sdg,
 			focusTarget : 0,
 			currentStory : 0,
-			longDescription : false
+			longDescription : false,
+			rowChanged: rowChanged
 		});
+
+		console.log(this.state.rowChanged);
 
 		// Don't change rows until the leave animation has run
 		setTimeout( ()=> this.shiftRow(Math.floor( sdg / 6)), 500 );
@@ -50,10 +61,24 @@ const SDGexplorer = React.createClass({
 		});
 	},
 
+	// Determines the row underneath which the viwer window should be displayed
 	shiftRow(row) {
 		this.setState({
 			currentRow: row
 		});
+	},
+
+	// Detects row changes before they happen
+	rowDidChange(sdg) {
+		if( ( Math.floor( sdg / 6) ) !== this.state.currentRow ) {
+			this.setState({
+				rowDidChange: true
+			});
+		} else {
+			this.setState({
+				rowDidChange: false
+			});
+		}
 	},
 
 	// Toggles long description for mobile
@@ -116,6 +141,7 @@ const SDGexplorer = React.createClass({
 		return (
 			<div className="wrapper">
 				<div className="sdgExplorer">
+
 					<Row
 						startFrom={0}
 						numberIcons={iconsAbove(this.state.currentRow)}
@@ -124,23 +150,27 @@ const SDGexplorer = React.createClass({
 						currentSdg={this.state.currentSdg}
 						data={data}
 					/>
-				<ReactCSSTransitionGroup transitionName="sliding-viewer"
-					transitionLeaveTimeout={500} transitionEnterTimeout={1200}
-				>
-					<ViewerWindow
 
-						key={this.state.currentSdg}
-						currentSdg={this.state.currentSdg}
-						focusTarget={this.state.focusTarget}
-						selectFocusTarget={this.selectFocusTarget}
-						currentStory={this.state.currentStory}
-						selectStory={this.selectStory}
-						data={data}
-						longDescription={this.state.longDescription}
-						setLongDescription={this.setLongDescription}
-					/>
+					<ReactCSSTransitionGroup
+						transitionName="sliding-viewer"
+						transitionLeave={this.state.rowChanged}
+						transitionEnter={this.state.rowChanged}
+						transitionLeaveTimeout={500}
+						transitionEnterTimeout={1200}>
 
-				</ReactCSSTransitionGroup>
+						<ViewerWindow
+							key={this.state.currentSdg}
+							currentSdg={this.state.currentSdg}
+							focusTarget={this.state.focusTarget}
+							selectFocusTarget={this.selectFocusTarget}
+							currentStory={this.state.currentStory}
+							selectStory={this.selectStory}
+							data={data}
+							longDescription={this.state.longDescription}
+							setLongDescription={this.setLongDescription}
+						/>
+
+					</ReactCSSTransitionGroup>
 
 					<Row
 						startFrom={startFrom(this.state.currentRow)}
