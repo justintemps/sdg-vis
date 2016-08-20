@@ -31,9 +31,8 @@ const SDGexplorer = React.createClass({
 			longDescription : false
 		});
 
-		const shift = () => this.shiftRow( Math.floor( sdg / 6));
-
-		setTimeout(shift, 600);
+		// Don't change rows until the leave animation has run
+		setTimeout( ()=> this.shiftRow(Math.floor( sdg / 6)), 500 );
 	},
 
 	// Selects the current focus target
@@ -126,7 +125,7 @@ const SDGexplorer = React.createClass({
 						data={data}
 					/>
 				<ReactCSSTransitionGroup transitionName="sliding-viewer"
-					transitionLeaveTimeout={750} transitionEnterTimeout={500}
+					transitionLeaveTimeout={500} transitionEnterTimeout={1200}
 				>
 					<ViewerWindow
 
