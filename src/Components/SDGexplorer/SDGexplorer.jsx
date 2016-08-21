@@ -25,26 +25,19 @@ const SDGexplorer = React.createClass({
 
 	// Selecting a new SDG will reset the current focus target and story
 	selectSDG(sdg) {
-		
-		let rowChanged;
-		if (Math.floor(sdg / 6) !== this.state.currentRow) {
-			rowChanged = true;
-		} else {
-			rowChanged = false;
-		}
 
 		this.setState({
 			currentSdg: sdg,
 			focusTarget : 0,
 			currentStory : 0,
 			longDescription : false,
-			rowChanged: rowChanged
+			rowChanged: Math.floor(sdg / 6) !== this.state.currentRow ? true : false
 		});
 
-		console.log(this.state.rowChanged);
-
-		// Don't change rows until the leave animation has run
-		setTimeout( ()=> this.shiftRow(Math.floor( sdg / 6)), 500 );
+		// If the row changed, shift the row
+		if (this.state.rowChanged) {
+			setTimeout( ()=> this.shiftRow(Math.floor( sdg / 6)), 500 );
+		}
 	},
 
 	// Selects the current focus target
@@ -69,19 +62,6 @@ const SDGexplorer = React.createClass({
 		});
 	},
 
-	// Detects row changes before they happen
-	rowDidChange(sdg) {
-		if( ( Math.floor( sdg / 6) ) !== this.state.currentRow ) {
-			this.setState({
-				rowDidChange: true
-			});
-		} else {
-			this.setState({
-				rowDidChange: false
-			});
-		}
-	},
-
 	// Toggles long description for mobile
 	setLongDescription(bool) {
 		this.setState({
@@ -89,40 +69,37 @@ const SDGexplorer = React.createClass({
 		});
 	},
 
+
+
 	render() {
 
-		const iconsAbove = (row) => {
+		/**
+		 * numberIcons() decides how many icons to display in each row
+		 * @param {Number} row - the current row
+		 * @param {Boolean} top - is this for the top row?
+		 * @return {Number} number of icons to display
+		*/
+		function numberIcons(row, top) {
 			let numberIcons;
 			switch(row) {
 			case 0:
-				numberIcons = 6;
+				numberIcons = top ? 6 : 12;
 				break;
 			case 1:
-				numberIcons = 12;
+				numberIcons = top ? 12 : 6;
 				break;
 			case 2:
-				numberIcons = 18;
+				numberIcons = top ? 18 : 0;
 				break;
 			}
 			return numberIcons;
-		};
+		}
 
-		const iconsBelow = (row) => {
-			let numberIcons;
-			switch(row) {
-			case 0:
-				numberIcons = 12;
-				break;
-			case 1:
-				numberIcons = 6;
-				break;
-			case 2:
-				numberIcons = 0;
-				break;
-			}
-			return numberIcons;
-		};
-
+		/**
+		 * startFrom() which number icon should the row start from?
+		 * @param {Number} row - the current row
+		 * @return {Number} num - the number of the icon to start with
+		*/
 		const startFrom = row => {
 			let num;
 			switch(row) {
@@ -145,7 +122,7 @@ const SDGexplorer = React.createClass({
 
 					<Row
 						startFrom={0}
-						numberIcons={iconsAbove(this.state.currentRow)}
+						numberIcons={numberIcons(this.state.currentRow, true)}
 						key={1}
 						handler={this.selectSDG}
 						currentSdg={this.state.currentSdg}
@@ -175,7 +152,7 @@ const SDGexplorer = React.createClass({
 
 					<Row
 						startFrom={startFrom(this.state.currentRow)}
-						numberIcons={iconsBelow(this.state.currentRow)}
+						numberIcons={numberIcons(this.state.currentRow, false)}
 						key={2}
 						handler={this.selectSDG}
 						currentSdg={this.state.currentSdg}
