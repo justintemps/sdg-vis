@@ -25,6 +25,7 @@ const SDGexplorer = React.createClass({
 
 	// Selecting a new SDG will reset the current focus target and story
 	selectSDG(sdg) {
+		
 		let rowChanged;
 		if (Math.floor(sdg / 6) !== this.state.currentRow) {
 			rowChanged = true;
