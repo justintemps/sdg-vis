@@ -8,7 +8,6 @@ $class-slug-title: title-sdg- !default;
 	.#{$class-slug-title}#{$i} {
 		background: $current-color;
 		color: #fff;
-		transition: background-color 0.1s ease;
 	}
 }
 
@@ -19,6 +18,7 @@ $class-slug-title: title-sdg- !default;
 	padding: 0;
 	position: relative;
 	text-align: left;
+	transition: background-color 500ms ease;
 	width: 100%;
 }
 

@@ -134,7 +134,7 @@ const SDGexplorer = React.createClass({
 						transitionEnterTimeout={1200}>
 
 						<ViewerWindow
-							key={this.state.currentSdg}
+							key={ this.state.rowChanged ? this.state.currentSdg : 1}
 							currentSdg={this.state.currentSdg}
 							focusTarget={this.state.focusTarget}
 							selectFocusTarget={this.selectFocusTarget}

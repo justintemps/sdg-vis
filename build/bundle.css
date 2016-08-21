@@ -146,6 +146,9 @@ span .sliding-viewer-enter {
   position: relative;
   text-align: center; }
 
+row:first-child {
+  margin-bottom: 5px; }
+
 /* Icon */
 /* Icon */
 .icon {
@@ -406,93 +409,75 @@ span .sliding-viewer-enter {
 /* Background color for Title Bar */
 .title-sdg-0 {
   background: #37468e;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-1 {
   background: #e5243b;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-2 {
   background: #dda63a;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-3 {
   background: #4c9f38;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-4 {
   background: #c5192d;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-5 {
   background: #ff3a21;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-6 {
   background: #26bde2;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-7 {
   background: #fcc30b;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-8 {
   background: #a21942;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-9 {
   background: #fd6925;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-10 {
   background: #dd1367;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-11 {
   background: #fd9d24;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-12 {
   background: #bf8b2e;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-13 {
   background: #3f7e44;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-14 {
   background: #0a97d9;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-15 {
   background: #56c02b;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-16 {
   background: #00689d;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .title-sdg-17 {
   background: #19486a;
-  color: #fff;
-  transition: background-color 0.1s ease; }
+  color: #fff; }
 
 .titleBar {
   align-items: center;
@@ -504,6 +489,7 @@ span .sliding-viewer-enter {
   padding: 0;
   position: relative;
   text-align: left;
+  transition: background-color 500ms ease;
   width: 100%; }
 
 .sdgNumber {
