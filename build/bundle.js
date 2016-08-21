@@ -22074,7 +22074,7 @@
 				transitionEnter: this.state.rowChanged,
 				transitionLeaveTimeout: 500,
 				transitionEnterTimeout: 1200 }, _react2.default.createElement(_ViewerWindow2.default, {
-				key: this.state.rowChanged ? this.state.currentSdg : 1,
+				key: this.state.rowChanged ? this.state.currentSdg : 900,
 				currentSdg: this.state.currentSdg,
 				focusTarget: this.state.focusTarget,
 				selectFocusTarget: this.selectFocusTarget,
@@ -28529,21 +28529,18 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _Triangle = __webpack_require__(/*! ../Triangle/Triangle.jsx */ 332);
+	
+	var _Triangle2 = _interopRequireDefault(_Triangle);
+	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	function _defineProperty(obj, key, value) {
-		if (key in obj) {
-			Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
-		} else {
-			obj[key] = value;
-		}return obj;
-	} /**
-	   * TitleBar
-	   * Child of ViewerWindow
-	   * TODO: Don't inject styles dynamically, just use sass to change up the colors
-	   */
+	/**
+	 * TitleBar
+	 * Child of ViewerWindow
+	 */
 	
 	var TitleBar = _react2.default.createClass({
 		displayName: "TitleBar",
@@ -28553,32 +28550,32 @@
 				color: this.props.sdgColor,
 				transition: "color 0.2s ease"
 			};
-	
-			var triangle = {
-				borderLeft: "20px solid transparent",
-				borderRight: "20px solid transparent",
-				// Get triangle color from data model, unless it's the intro screen
-				borderTop: this.props.sdgNumber > 0 ? "20px solid " + this.props.sdgColor : "20px solid #37468E",
-				content: "",
-				display: "block",
-				margin: "2px 0",
-				position: "relative",
-				height: 0,
-				transition: "background-color 0.2s ease",
-				width: 0
-			};
-	
+			/*
+	  		const triangle = {
+	  			borderLeft: "20px solid transparent",
+	  			borderRight: "20px solid transparent",
+	  			// Get triangle color from data model, unless it's the intro screen
+	  			borderTop: (this.props.sdgNumber > 0) ? `20px solid ${this.props.sdgColor}` : "20px solid #37468E",
+	  			content: "",
+	  			display: "block",
+	  			margin: "2px 0",
+	  			position: "relative",
+	  			height: 0,
+	  			transition: "border-top 500ms ease",
+	  			width: 0
+	  		};
+	  */
 			var titleClass = "title-sdg-" + this.props.sdgNumber;
 	
 			var sdgcol = "sdgcol-" + this.props.sdgNumber;
 	
 			// Titlebar to display for the SDGs
 			if (this.props.sdgNumber > 0) {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar " + titleClass }, _react2.default.createElement("div", { className: "sdgNumber " + sdgcol }, this.props.sdgNumber), _react2.default.createElement("h1", { className: sdgcol }, this.props.sdgName)), _react2.default.createElement("div", _defineProperty({ style: color, className: "triangle" }, "style", triangle)));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar " + titleClass }, _react2.default.createElement("div", { className: "sdgNumber " + sdgcol }, this.props.sdgNumber), _react2.default.createElement("h1", { className: sdgcol }, this.props.sdgName)), _react2.default.createElement(_Triangle2.default, { size: 20, sdgNumber: this.props.sdgNumber, sdgColor: this.props.sdgColor }));
 	
 				// Titlebar to display for the Intro Screen
 			} else {
-				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar " + titleClass }, _react2.default.createElement("h1", { className: "defaultTitle" }, "ILO and the Sustainable Development Goals")), _react2.default.createElement("div", { className: "triangle", style: triangle }));
+				return _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "titleBar " + titleClass }, _react2.default.createElement("h1", { className: "defaultTitle" }, "ILO and the Sustainable Development Goals")), _react2.default.createElement(_Triangle2.default, { size: 20, sdgNumber: this.props.sdgNumber, sdgColor: this.props.sdgColor }));
 			}
 		}
 	});
@@ -29994,6 +29991,53 @@
 			]
 		}
 	];
+
+/***/ },
+/* 332 */
+/*!**********************************************!*\
+  !*** ./src/Components/Triangle/Triangle.jsx ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Triangle = _react2.default.createClass({
+		displayName: "Triangle",
+		render: function render() {
+	
+			var triangle = {
+				borderLeft: this.props.size + "px solid transparent",
+				borderRight: this.props.size + "px solid transparent",
+				borderTop: this.props.sdgNumber > 0 ? this.props.size + "px solid " + this.props.sdgColor : this.props.size + "px solid #37468E",
+				content: "",
+				display: "block",
+				margin: "2px 0",
+				position: "relative",
+				height: 0,
+				transition: "border-top 500ms ease",
+				width: 0
+			};
+	
+			return _react2.default.createElement("div", { style: triangle });
+		}
+	}); /**
+	     * Triangle
+	     * Child of TitleBar, Icon
+	     */
+	
+	exports.default = Triangle;
 
 /***/ }
 /******/ ]);

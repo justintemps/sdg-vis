@@ -508,17 +508,6 @@ row:first-child {
   margin: 0;
   padding: 0; }
 
-.triangle {
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #a21942;
-  content: "";
-  display: block;
-  margin: 2px 0;
-  position: relative;
-  height: 0;
-  width: 0; }
-
 /* TITLE BAR FOR INTRO */
 .defaultTitle {
   font-size: 3.3em;

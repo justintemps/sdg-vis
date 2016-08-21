@@ -1,10 +1,10 @@
 /**
  * TitleBar
  * Child of ViewerWindow
- * TODO: Don't inject styles dynamically, just use sass to change up the colors
  */
 
 import React from "react";
+import Triangle from "../Triangle/Triangle.jsx";
 
 const TitleBar = React.createClass({
 
@@ -14,7 +14,7 @@ const TitleBar = React.createClass({
 			color: this.props.sdgColor,
 			transition: "color 0.2s ease"
 		};
-
+/*
 		const triangle = {
 			borderLeft: "20px solid transparent",
 			borderRight: "20px solid transparent",
@@ -25,10 +25,10 @@ const TitleBar = React.createClass({
 			margin: "2px 0",
 			position: "relative",
 			height: 0,
-			transition: "background-color 0.2s ease",
+			transition: "border-top 500ms ease",
 			width: 0
 		};
-
+*/
 		const titleClass = `title-sdg-${this.props.sdgNumber}`;
 
 		const sdgcol = `sdgcol-${this.props.sdgNumber}`;
@@ -45,7 +45,7 @@ const TitleBar = React.createClass({
 							{this.props.sdgName}
 						</h1>
 					</div>
-					<div style={color} className="triangle" style={triangle}></div>
+					<Triangle size={20} sdgNumber={this.props.sdgNumber} sdgColor={this.props.sdgColor} />
 				</div>
 			);
 
@@ -58,7 +58,7 @@ const TitleBar = React.createClass({
 							ILO and the Sustainable Development Goals
 						</h1>
 					</div>
-					<div className="triangle" style={triangle}></div>
+					<Triangle size={20} sdgNumber={this.props.sdgNumber} sdgColor={this.props.sdgColor} />
 				</div>
 			);
 		}
