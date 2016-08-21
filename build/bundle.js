@@ -22074,7 +22074,7 @@
 				transitionEnter: this.state.rowChanged,
 				transitionLeaveTimeout: 500,
 				transitionEnterTimeout: 1200 }, _react2.default.createElement(_ViewerWindow2.default, {
-				key: this.state.rowChanged ? this.state.currentSdg : 1,
+				key: this.state.rowChanged ? this.state.currentSdg : 900,
 				currentSdg: this.state.currentSdg,
 				focusTarget: this.state.focusTarget,
 				selectFocusTarget: this.selectFocusTarget,
@@ -28564,7 +28564,7 @@
 				margin: "2px 0",
 				position: "relative",
 				height: 0,
-				transition: "background-color 0.2s ease",
+				transition: "border-top 500ms ease",
 				width: 0
 			};
 	
