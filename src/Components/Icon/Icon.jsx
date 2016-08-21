@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import Triangle from "../Triangle/Triangle.jsx";
 
 // Load SVGs with Webpack svg-react-loader
 import Sdg1 from "!babel!svg-react!../../images/sdg1.svg";
@@ -54,6 +55,12 @@ const Icon = React.createClass({
 			}
 		};
 
+		const triangle = () => {
+			if (this.props.sdg === this.props.currentSdg) {
+				return <Triangle className="triangle" size={10} sdgNumber={this.props.number} sdgColor={this.props.color} />;
+			}
+		};
+
 		// Global Goals logo appears in first icon of mobile view
 		const gglogo = <img src="src/images/gglogo.svg" />;
 
@@ -61,10 +68,13 @@ const Icon = React.createClass({
 		const mobileSDGNumber = ( this.props.sdg > 0 ) ? this.props.sdg : gglogo;
 
 		return(
-			<div style={opacity()} className={iconClass} onClick={this.clickHandler}>
-				{sdgs[this.props.sdg]}
-				<div className="mobileSdgNumber">{mobileSDGNumber}</div>
-				<div className="mobileSdgName">{this.props.sdgNameShort}</div>
+			<div className="icon-wrapper">
+				<div style={opacity()} className={iconClass} onClick={this.clickHandler}>
+					{sdgs[this.props.sdg]}
+					<div className="mobileSdgNumber">{mobileSDGNumber}</div>
+					<div className="mobileSdgName">{this.props.sdgNameShort}</div>
+				</div>
+				{triangle()}
 			</div>
 		);
 	}

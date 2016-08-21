@@ -1,4 +1,11 @@
 /* Icon */
+.icon-wrapper {
+	box-sizing: border-box;
+	cursor: pointer;
+	flex-basis: auto;
+	width: 16.6666%;
+}
+
 .icon {
 	box-sizing: border-box;
 	cursor: pointer;
@@ -6,7 +13,7 @@
 	opacity: 0.3;
 	padding: 5px;
 	transition: opacity 200ms ease;
-	width: 16.6666%;
+	width: 100%;
 }
 
 .icon:hover {
@@ -17,19 +24,6 @@
 .mobileSdgNumber, .mobileSdgName {
 	display: none;
 }
-
-/*
-.sdg0, .sdg1, .sdg2, .sdg3, .sdg4,
-.sdg5, .sdg6, .sdg7, .sdg8,
-.sdg9, .sdg10, .sdg11, .sdg12,
-.sdg13, .sdg14, .sdg15, .sdg16,
-.sdg17 {
-	transition: opacity 0.3s ease;
-	&:hover {
-		opacity: 1;
-	}
-}
-*/
 
 /* SDG0 */
 .sdg0-1{fill:#f1f1f1;}

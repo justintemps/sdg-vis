@@ -23,7 +23,7 @@
 		};
 
 		return(
-			<div style={triangle}></div>
+			<div className="triangle" style={triangle}></div>
 		);
 	}
  });
