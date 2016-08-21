@@ -35,9 +35,8 @@ const SDGexplorer = React.createClass({
 		});
 
 		// If the row changed, shift the row
-		if (this.state.rowChanged) {
-			setTimeout( ()=> this.shiftRow(Math.floor( sdg / 6)), 500 );
-		}
+		setTimeout( ()=> this.shiftRow(Math.floor( sdg / 6)), 500 );
+
 	},
 
 	// Selects the current focus target
@@ -69,8 +68,6 @@ const SDGexplorer = React.createClass({
 		});
 	},
 
-
-
 	render() {
 
 		/**
@@ -100,7 +97,7 @@ const SDGexplorer = React.createClass({
 		 * @param {Number} row - the current row
 		 * @return {Number} num - the number of the icon to start with
 		*/
-		const startFrom = row => {
+		function startFrom(row) {
 			let num;
 			switch(row) {
 			case 0:
@@ -114,7 +111,7 @@ const SDGexplorer = React.createClass({
 				break;
 			}
 			return num;
-		};
+		}
 
 		return (
 			<div className="wrapper">

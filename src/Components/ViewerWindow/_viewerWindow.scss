@@ -2,8 +2,8 @@
 .viewerWindow {
 	box-sizing: border-box;
 	overflow: hidden;
-	padding: 5px;
-	position: relative;
+	padding: 0 5px;
+	position: static;
 	text-align: center;
 	width: 100%;
 }

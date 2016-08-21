@@ -21983,11 +21983,9 @@
 			});
 	
 			// If the row changed, shift the row
-			if (this.state.rowChanged) {
-				setTimeout(function () {
-					return _this.shiftRow(Math.floor(sdg / 6));
-				}, 500);
-			}
+			setTimeout(function () {
+				return _this.shiftRow(Math.floor(sdg / 6));
+			}, 500);
 		},
 	
 		// Selects the current focus target
@@ -22047,7 +22045,7 @@
 	   * @param {Number} row - the current row
 	   * @return {Number} num - the number of the icon to start with
 	  */
-			var startFrom = function startFrom(row) {
+			function startFrom(row) {
 				var num = void 0;
 				switch (row) {
 					case 0:
@@ -22061,7 +22059,7 @@
 						break;
 				}
 				return num;
-			};
+			}
 	
 			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, {
 				startFrom: 0,

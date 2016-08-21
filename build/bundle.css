@@ -110,21 +110,24 @@ a {
 /* SDGexplorer */
 /* SDGexplorer */
 .sliding-viewer {
-  position: relative;
+  box-sizing: border-box;
+  max-height: 450px;
   will-change: max-height, visibility; }
 
-.sliding-viewer-enter {
+span .sliding-viewer-enter {
+  height: 0;
   max-height: 0;
   visibility: hidden;
-  will-change: max-height, visibility; }
+  will-change: max-height, height, visibility; }
 
 .sliding-viewer-enter.sliding-viewer-enter-active {
-  max-height: 447px;
+  height: auto;
+  max-height: 450px;
   visibility: visible;
   transition: all 700ms ease 500ms; }
 
 .sliding-viewer-leave {
-  max-height: 447px;
+  max-height: 450px;
   will-change: max-height, visibility; }
 
 .sliding-viewer-leave.sliding-viewer-leave-active {
@@ -363,8 +366,8 @@ a {
 .viewerWindow {
   box-sizing: border-box;
   overflow: hidden;
-  padding: 5px;
-  position: relative;
+  padding: 0 5px;
+  position: static;
   text-align: center;
   width: 100%; }
 
