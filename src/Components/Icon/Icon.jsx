@@ -57,7 +57,7 @@ const Icon = React.createClass({
 
 		const triangle = () => {
 			if (this.props.sdg === this.props.currentSdg) {
-				return <Triangle className="triangle" size={10} sdgNumber={this.props.number} sdgColor={this.props.color} />;
+				return <Triangle className="triangle" small={true} sdgNumber={this.props.number} sdgColor={this.props.color} />;
 			}
 		};
 

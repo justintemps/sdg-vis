@@ -3,6 +3,8 @@
 	box-sizing: border-box;
 	cursor: pointer;
 	flex-basis: auto;
+	padding: 5px;
+	position: relative;
 	width: 16.6666%;
 }
 
@@ -11,7 +13,6 @@
 	cursor: pointer;
 	flex-basis: auto;
 	opacity: 0.3;
-	padding: 5px;
 	transition: opacity 200ms ease;
 	width: 100%;
 }

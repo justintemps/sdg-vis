@@ -143,6 +143,7 @@ span .sliding-viewer-enter {
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
+  margin: 0 0 15px 0;
   position: relative;
   text-align: center; }
 
@@ -155,6 +156,8 @@ row:first-child {
   box-sizing: border-box;
   cursor: pointer;
   flex-basis: auto;
+  padding: 5px;
+  position: relative;
   width: 16.6666%; }
 
 .icon {
@@ -162,7 +165,6 @@ row:first-child {
   cursor: pointer;
   flex-basis: auto;
   opacity: 0.3;
-  padding: 5px;
   transition: opacity 200ms ease;
   width: 100%; }
 
@@ -357,6 +359,22 @@ row:first-child {
 
 .sdg17-2 {
   fill: #fff; }
+
+/* Triangle */
+.triangle, .small-triangle {
+  content: "";
+  display: block;
+  height: 0;
+  margin: 2px 0;
+  position: relative;
+  transition: "border-top 500ms ease";
+  width: 0; }
+
+.small-triangle {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: -7px; }
 
 /* ViewerWindow */
 /* ViewerWindow */
@@ -873,7 +891,7 @@ row:first-child {
     transition: color 0.5s ease; }
   .defaultTitle {
     color: #37468E; }
-  .triangle {
+  .triangle, .small-triangle {
     display: none !important; }
   .sdgNumber {
     bottom: 8px; }

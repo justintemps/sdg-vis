@@ -1,0 +1,17 @@
+.triangle {
+	content: "";
+	display: block;
+	height: 0;
+	margin: 2px 0;
+	position: relative;
+	transition: "border-top 500ms ease";
+	width: 0;
+}
+
+.small-triangle {
+	@extend .triangle;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: -7px;
+}

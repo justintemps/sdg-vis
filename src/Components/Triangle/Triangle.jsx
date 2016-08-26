@@ -7,26 +7,24 @@
 
  const Triangle = React.createClass({
 
+	size() {
+		return this.props.small ? 15 : 20;
+	},
+
 	render() {
 
-		const triangle = {
-			borderLeft: `${this.props.size}px solid transparent`,
-			borderRight: `${this.props.size}px solid transparent`,
-			borderTop: this.props.sdgNumber > 0 ? `${this.props.size}px solid ${this.props.sdgColor}` : `${this.props.size}px solid #37468E`,
-			content: "",
-			display: "block",
-			margin: "2px 0",
-			position: "relative",
-			height: 0,
-			transition: "border-top 500ms ease",
-			width: 0
+		const properties = {
+			borderLeft: `${this.size()}px solid transparent`,
+			borderRight: `${this.size()}px solid transparent`,
+			borderTop: `${this.size()}px solid ${this.props.sdgColor}`
 		};
 
 		return(
-			<div className="triangle" style={triangle}></div>
+			<div className={this.props.small ? "small-triangle" : "triangle"}
+				style={properties}>
+			</div>
 		);
 	}
  });
-
 
  export default Triangle;
