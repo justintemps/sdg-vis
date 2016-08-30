@@ -6,6 +6,7 @@
 
 import React from "react";
 import Triangle from "../Triangle/Triangle.jsx";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 // Load SVGs with Webpack svg-react-loader
 import Sdg1 from "!babel!svg-react!../../images/sdg1.svg";
@@ -57,7 +58,7 @@ const Icon = React.createClass({
 
 		const triangle = () => {
 			if (this.props.sdg === this.props.currentSdg) {
-				return <Triangle className="triangle" small={true} sdgNumber={this.props.number} sdgColor={this.props.color} />;
+				return <Triangle className="triangle" key={this.props.number} small={true} sdgNumber={this.props.number} sdgColor={this.props.color} />;
 			}
 		};
 
@@ -74,7 +75,9 @@ const Icon = React.createClass({
 					<div className="mobileSdgNumber">{mobileSDGNumber}</div>
 					<div className="mobileSdgName">{this.props.sdgNameShort}</div>
 				</div>
-				{triangle()}
+				<ReactCSSTransitionGroup transitionName="little-triangle" transitionLeaveTimeout={1} transitionEnterTimeout={1450}>
+					{triangle()}
+				</ReactCSSTransitionGroup>
 			</div>
 		);
 	}

@@ -23145,6 +23145,10 @@
 	
 	var _Triangle2 = _interopRequireDefault(_Triangle);
 	
+	var _reactAddonsCssTransitionGroup = __webpack_require__(/*! react-addons-css-transition-group */ 188);
+	
+	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
+	
 	var _sdg = __webpack_require__(/*! babel!svg-react!../../images/sdg1.svg */ 198);
 	
 	var _sdg2 = _interopRequireDefault(_sdg);
@@ -23222,13 +23226,11 @@
 	}
 	
 	// Load SVGs with Webpack svg-react-loader
-	/**
-	 * Icons
-	 * Child to Row
-	 * TODO: May be we should be importing icons in row instead?
-	 */
-	
-	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default];
+	var icons = [_sdg36.default, _sdg2.default, _sdg4.default, _sdg6.default, _sdg8.default, _sdg10.default, _sdg12.default, _sdg14.default, _sdg16.default, _sdg18.default, _sdg20.default, _sdg22.default, _sdg24.default, _sdg26.default, _sdg28.default, _sdg30.default, _sdg32.default, _sdg34.default]; /**
+	                                                                                                                                                                                                                                                                                                           * Icons
+	                                                                                                                                                                                                                                                                                                           * Child to Row
+	                                                                                                                                                                                                                                                                                                           * TODO: May be we should be importing icons in row instead?
+	                                                                                                                                                                                                                                                                                                           */
 	
 	var Icon = _react2.default.createClass({
 		displayName: "Icon",
@@ -23258,7 +23260,7 @@
 	
 			var triangle = function triangle() {
 				if (_this.props.sdg === _this.props.currentSdg) {
-					return _react2.default.createElement(_Triangle2.default, { className: "triangle", small: true, sdgNumber: _this.props.number, sdgColor: _this.props.color });
+					return _react2.default.createElement(_Triangle2.default, { className: "triangle", key: _this.props.number, small: true, sdgNumber: _this.props.number, sdgColor: _this.props.color });
 				}
 			};
 	
@@ -23268,7 +23270,7 @@
 			// Determines which number or character should appear in the mobile icon
 			var mobileSDGNumber = this.props.sdg > 0 ? this.props.sdg : gglogo;
 	
-			return _react2.default.createElement("div", { className: "icon-wrapper" }, _react2.default.createElement("div", { style: opacity(), className: iconClass, onClick: this.clickHandler }, sdgs[this.props.sdg], _react2.default.createElement("div", { className: "mobileSdgNumber" }, mobileSDGNumber), _react2.default.createElement("div", { className: "mobileSdgName" }, this.props.sdgNameShort)), triangle());
+			return _react2.default.createElement("div", { className: "icon-wrapper" }, _react2.default.createElement("div", { style: opacity(), className: iconClass, onClick: this.clickHandler }, sdgs[this.props.sdg], _react2.default.createElement("div", { className: "mobileSdgNumber" }, mobileSDGNumber), _react2.default.createElement("div", { className: "mobileSdgName" }, this.props.sdgNameShort)), _react2.default.createElement(_reactAddonsCssTransitionGroup2.default, { transitionName: "little-triangle", transitionLeaveTimeout: 1, transitionEnterTimeout: 1450 }, triangle()));
 		}
 	});
 	

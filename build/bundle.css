@@ -360,6 +360,22 @@ row:first-child {
 .sdg17-2 {
   fill: #fff; }
 
+/* ANIMATED TRIANGLE */
+span .little-triangle-enter {
+  visibility: hidden;
+  will-change: visibility; }
+
+.little-triangle-enter.little-triangle-enter-active {
+  visibility: visible;
+  transition: visibility 250ms ease 1200ms; }
+
+.little-triangle-leave {
+  visibility: visible;
+  will-change: visibility; }
+
+.little-triangle-leave.little-triangle-leave-active {
+  visibility: hidden; }
+
 /* Triangle */
 .triangle, .small-triangle {
   content: "";
