@@ -6,7 +6,7 @@
 
 .sliding-viewer {
 	box-sizing: border-box;
-	max-height: 450px;
+	max-height: 460px;
 	will-change: max-height, visibility;
 }
 
@@ -19,17 +19,18 @@ span .sliding-viewer-enter {
 
 .sliding-viewer-enter.sliding-viewer-enter-active {
 	height: auto;
-	max-height: 450px;
+	max-height: 460px;
 	visibility: visible;
 	transition: all 700ms ease 500ms;
 }
 
 .sliding-viewer-leave {
-	max-height: 450px;
+	max-height: 460px;
 	will-change: max-height, visibility;
 }
 
 .sliding-viewer-leave.sliding-viewer-leave-active {
+	margin: -13px 0 0;
 	max-height: 0;
 	transition: all 500ms ease;
 }
