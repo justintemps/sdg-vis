@@ -18,6 +18,7 @@ const Row = React.createClass({
 					handler={this.props.handler}
 					currentSdg={this.props.currentSdg}
 					sdgNameShort={this.props.data[i].sdgNameShort}
+					rowChanged={this.props.rowChanged}
 				/>
 			);
 		}

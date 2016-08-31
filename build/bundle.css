@@ -360,14 +360,14 @@ row:first-child {
 .sdg17-2 {
   fill: #fff; }
 
-/* ANIMATED TRIANGLE */
+/* CSS Tranbsi */
 span .little-triangle-enter {
   visibility: hidden;
   will-change: visibility; }
 
 .little-triangle-enter.little-triangle-enter-active {
   visibility: visible;
-  transition: visibility 250ms ease 1200ms; }
+  transition: visibility 250ms ease 500ms; }
 
 .little-triangle-leave {
   visibility: visible;

@@ -75,7 +75,7 @@ const Icon = React.createClass({
 					<div className="mobileSdgNumber">{mobileSDGNumber}</div>
 					<div className="mobileSdgName">{this.props.sdgNameShort}</div>
 				</div>
-				<ReactCSSTransitionGroup transitionName="little-triangle" transitionLeaveTimeout={1} transitionEnterTimeout={1450}>
+				<ReactCSSTransitionGroup transitionName="little-triangle" transitionLeaveTimeout={1} transitionEnterTimeout={this.props.rowChanged ? 750 : 1}>
 					{triangle()}
 				</ReactCSSTransitionGroup>
 			</div>

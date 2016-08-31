@@ -22172,7 +22172,8 @@
 				key: 1,
 				handler: this.selectSDG,
 				currentSdg: this.state.currentSdg,
-				data: _data2.default
+				data: _data2.default,
+				rowChanged: this.state.rowChanged
 			}), _react2.default.createElement(_reactAddonsCssTransitionGroup2.default, {
 				transitionName: "sliding-viewer",
 				transitionLeave: this.state.rowChanged,
@@ -22194,7 +22195,8 @@
 				key: 2,
 				handler: this.selectSDG,
 				currentSdg: this.state.currentSdg,
-				data: _data2.default
+				data: _data2.default,
+				rowChanged: this.state.rowChanged
 			})));
 		}
 	}); /**
@@ -22202,15 +22204,6 @@
 	     * Parent to Row, ViewerWindow
 	     * Owns state for the whole app
 	     */
-	
-	var FirstChild = _react2.default.createClass({
-		displayName: "FirstChild",
-	
-		render: function render() {
-			var children = _react2.default.Children.toArray(this.props.children);
-			return children[0] || null;
-		}
-	});
 	
 	exports.default = SDGexplorer;
 
@@ -23112,7 +23105,8 @@
 					color: this.props.data[i].sdgColor,
 					handler: this.props.handler,
 					currentSdg: this.props.currentSdg,
-					sdgNameShort: this.props.data[i].sdgNameShort
+					sdgNameShort: this.props.data[i].sdgNameShort,
+					rowChanged: this.props.rowChanged
 				}));
 			}
 		},
@@ -23270,7 +23264,7 @@
 			// Determines which number or character should appear in the mobile icon
 			var mobileSDGNumber = this.props.sdg > 0 ? this.props.sdg : gglogo;
 	
-			return _react2.default.createElement("div", { className: "icon-wrapper" }, _react2.default.createElement("div", { style: opacity(), className: iconClass, onClick: this.clickHandler }, sdgs[this.props.sdg], _react2.default.createElement("div", { className: "mobileSdgNumber" }, mobileSDGNumber), _react2.default.createElement("div", { className: "mobileSdgName" }, this.props.sdgNameShort)), _react2.default.createElement(_reactAddonsCssTransitionGroup2.default, { transitionName: "little-triangle", transitionLeaveTimeout: 1, transitionEnterTimeout: 1450 }, triangle()));
+			return _react2.default.createElement("div", { className: "icon-wrapper" }, _react2.default.createElement("div", { style: opacity(), className: iconClass, onClick: this.clickHandler }, sdgs[this.props.sdg], _react2.default.createElement("div", { className: "mobileSdgNumber" }, mobileSDGNumber), _react2.default.createElement("div", { className: "mobileSdgName" }, this.props.sdgNameShort)), _react2.default.createElement(_reactAddonsCssTransitionGroup2.default, { transitionName: "little-triangle", transitionLeaveTimeout: 1, transitionEnterTimeout: this.props.rowChanged ? 750 : 1 }, triangle()));
 		}
 	});
 	

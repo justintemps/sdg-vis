@@ -24,7 +24,6 @@ span .sliding-viewer-enter {
 	transition: all 700ms ease 500ms;
 }
 
-
 .sliding-viewer-leave {
 	max-height: 450px;
 	will-change: max-height, visibility;

@@ -124,6 +124,7 @@ const SDGexplorer = React.createClass({
 						handler={this.selectSDG}
 						currentSdg={this.state.currentSdg}
 						data={data}
+						rowChanged={this.state.rowChanged}
 					/>
 
 					<ReactCSSTransitionGroup
@@ -154,17 +155,11 @@ const SDGexplorer = React.createClass({
 						handler={this.selectSDG}
 						currentSdg={this.state.currentSdg}
 						data={data}
+						rowChanged={this.state.rowChanged}
 					/>
 				</div>
 			</div>
 		);
-	}
-});
-
-const FirstChild = React.createClass({
-	render: function() {
-		let children = React.Children.toArray(this.props.children);
-		return children[0] || null;
 	}
 });
 
