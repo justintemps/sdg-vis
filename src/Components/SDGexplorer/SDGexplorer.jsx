@@ -9,6 +9,7 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Row from "../Row/Row.jsx";
 import ViewerWindow from "../ViewerWindow/ViewerWindow.jsx";
 import data from "!json!../../data.json";
+import {icons} from "../Icon/icons.js";
 
 const SDGexplorer = React.createClass({
 
@@ -125,6 +126,7 @@ const SDGexplorer = React.createClass({
 						currentSdg={this.state.currentSdg}
 						data={data}
 						rowChanged={this.state.rowChanged}
+						icons={icons}
 					/>
 
 					<ReactCSSTransitionGroup
@@ -156,6 +158,7 @@ const SDGexplorer = React.createClass({
 						currentSdg={this.state.currentSdg}
 						data={data}
 						rowChanged={this.state.rowChanged}
+						icons={icons}
 					/>
 				</div>
 			</div>

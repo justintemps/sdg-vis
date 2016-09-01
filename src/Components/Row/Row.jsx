@@ -19,6 +19,7 @@ const Row = React.createClass({
 					currentSdg={this.props.currentSdg}
 					sdgNameShort={this.props.data[i].sdgNameShort}
 					rowChanged={this.props.rowChanged}
+					icon={this.props.icons[i]}
 				/>
 			);
 		}
