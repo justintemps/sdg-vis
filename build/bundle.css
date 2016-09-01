@@ -111,8 +111,7 @@ a {
 /* SDGexplorer */
 .sliding-viewer {
   box-sizing: border-box;
-  max-height: 460px;
-  will-change: max-height, visibility; }
+  max-height: 500px; }
 
 span .sliding-viewer-enter {
   height: 0;
@@ -122,13 +121,13 @@ span .sliding-viewer-enter {
 
 .sliding-viewer-enter.sliding-viewer-enter-active {
   height: auto;
-  max-height: 460px;
+  max-height: 500px;
   visibility: visible;
   transition: all 700ms ease 500ms; }
 
 .sliding-viewer-leave {
-  max-height: 460px;
-  will-change: max-height, visibility; }
+  max-height: 500px;
+  will-change: max-height; }
 
 .sliding-viewer-leave.sliding-viewer-leave-active {
   margin: -13px 0 0;
@@ -660,9 +659,18 @@ span .little-triangle-enter {
     width: 100%; }
   h1 {
     font-size: 1.6em; }
+  /* SDGExplorer*/
+  /* SDGexplorerMobile */
+  .sliding-viewer-enter.sliding-viewer-enter-active {
+    max-height: 575px; }
+  .sliding-viewer-leave {
+    max-height: 575px; }
+  .sliding-viewer-leave.sliding-viewer-leave-active {
+    margin: 0;
+    max-height: 0; }
   /* Row */
   .row {
-    padding: 5px; }
+    padding: 0 5px; }
   /* Icon */
   svg.sdg0 {
     display: none; }
@@ -908,6 +916,8 @@ span .little-triangle-enter {
   .sdgcol-17 {
     color: #19486a;
     transition: color 0.5s ease; }
+  .titleBar {
+    margin: 0; }
   .defaultTitle {
     color: #37468E; }
   .triangle, .small-triangle {
