@@ -22079,11 +22079,13 @@
 				currentStory: 0,
 				currentRow: 0,
 				rowChanged: false,
-				longDescription: false
+				longDescription: false,
+				windowWidth: window.innerWidth
 			};
 		},
 	
-		// Selecting a new SDG will reset the current focus target and story
+		// Select a new SDG and change the row of necessary.
+		// Also resets the current story and focus target
 		selectSDG: function selectSDG(sdg) {
 			var _this = this;
 	
@@ -22095,13 +22097,13 @@
 				rowChanged: Math.floor(sdg / 6) !== this.state.currentRow ? true : false
 			});
 	
-			// If the row changed, shift the row
+			// Shift the row if it changed
 			setTimeout(function () {
 				return _this.shiftRow(Math.floor(sdg / 6));
 			}, 500);
 		},
 	
-		// Selects the current focus target
+		// Select the current focus target
 		selectFocusTarget: function selectFocusTarget(focusTarget) {
 			this.setState({
 				focusTarget: focusTarget,
@@ -22109,7 +22111,7 @@
 			});
 		},
 	
-		// Selects the current story
+		// Select the current story
 		selectStory: function selectStory(story) {
 			this.setState({
 				currentStory: story

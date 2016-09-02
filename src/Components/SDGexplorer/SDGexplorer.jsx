@@ -20,11 +20,13 @@ const SDGexplorer = React.createClass({
 			currentStory : 0,
 			currentRow : 0,
 			rowChanged: false,
-			longDescription : false
+			longDescription : false,
+			windowWidth: window.innerWidth
 		});
 	},
 
-	// Selecting a new SDG will reset the current focus target and story
+	// Select a new SDG and change the row of necessary.
+	// Also resets the current story and focus target
 	selectSDG(sdg) {
 
 		this.setState({
@@ -35,12 +37,11 @@ const SDGexplorer = React.createClass({
 			rowChanged: Math.floor(sdg / 6) !== this.state.currentRow ? true : false
 		});
 
-		// If the row changed, shift the row
+		// Shift the row if it changed
 		setTimeout( ()=> this.shiftRow(Math.floor( sdg / 6)), 500 );
-
 	},
 
-	// Selects the current focus target
+	// Select the current focus target
 	selectFocusTarget(focusTarget) {
 		this.setState({
 			focusTarget: focusTarget,
@@ -48,7 +49,7 @@ const SDGexplorer = React.createClass({
 		});
 	},
 
-	// Selects the current story
+	// Select the current story
 	selectStory(story) {
 		this.setState({
 			currentStory: story
