@@ -16,29 +16,47 @@ const SDGexplorer = React.createClass({
 	getInitialState() {
 		return({
 			currentSdg : 0,
-			focusTarget : 0,
 			currentStory : 0,
 			currentRow : 0,
-			rowChanged: false,
-			longDescription : false,
-			windowWidth: window.innerWidth
+			focusTarget : 0,
+			isMobile : false,
+			rowChanged : false,
+			longDescription : false
 		});
+	},
+
+	componentWillMount() {
+		this.setMobileRows(null);
+	},
+
+	componentDidMount() {
+		window.addEventListener("resize", this.setMobileRows);
+	},
+
+	setMobileRows(e) {
+		if (window.innerWidth < 640) {
+			this.setState({	isMobile : true });
+		} else {
+			this.setState({	isMobile : false });
+		}
 	},
 
 	// Select a new SDG and change the row of necessary.
 	// Also resets the current story and focus target
 	selectSDG(sdg) {
 
+		const rowDivisor = this.state.isMobile ? 3 : 6;
+
 		this.setState({
-			currentSdg: sdg,
+			currentSdg : sdg,
 			focusTarget : 0,
 			currentStory : 0,
 			longDescription : false,
-			rowChanged: Math.floor(sdg / 6) !== this.state.currentRow ? true : false
+			rowChanged : Math.floor(sdg / rowDivisor) !== this.state.currentRow ? true : false
 		});
 
 		// Shift the row if it changed
-		setTimeout( ()=> this.shiftRow(Math.floor( sdg / 6)), 500 );
+		setTimeout( () => this.shiftRow( Math.floor(sdg/rowDivisor) ), 500 );
 	},
 
 	// Select the current focus target
@@ -71,6 +89,7 @@ const SDGexplorer = React.createClass({
 	},
 
 	render() {
+		const isMobile = this.state.isMobile;
 
 		/**
 		 * numberIcons() decides how many icons to display in each row
@@ -80,14 +99,36 @@ const SDGexplorer = React.createClass({
 		*/
 		function numberIcons(row, top) {
 			let numberIcons;
+
 			switch(row) {
 			case 0:
-				numberIcons = top ? 6 : 12;
+				if (isMobile) {
+					numberIcons = top ? 3 : 15;
+				} else {
+					numberIcons = top ? 6 : 12;
+				}
 				break;
 			case 1:
-				numberIcons = top ? 12 : 6;
+				if (isMobile) {
+					numberIcons = top ? 6 : 12;
+				} else {
+					numberIcons = top ? 12 : 6;
+				}
 				break;
 			case 2:
+				if (isMobile) {
+					numberIcons = top ? 9 : 9;
+				} else {
+					numberIcons = top ? 18 : 0;
+				}
+				break;
+			case 3:
+				numberIcons = top ? 12 : 6;
+				break;
+			case 4:
+				numberIcons = top ? 15 : 3;
+				break;
+			case 5:
 				numberIcons = top ? 18 : 0;
 				break;
 			}
@@ -103,13 +144,22 @@ const SDGexplorer = React.createClass({
 			let num;
 			switch(row) {
 			case 0:
-				num = 6;
+				num = isMobile ? 3 : 6;
 				break;
 			case 1:
-				num = 12;
+				num = isMobile ? 6 : 12;
 				break;
 			case 2:
-				num = 0;
+				num = isMobile ? 9 : 0;
+				break;
+			case 3:
+				num = 12;
+				break;
+			case 4:
+				num = 15;
+				break;
+			case 5:
+				num = 18;
 				break;
 			}
 			return num;
