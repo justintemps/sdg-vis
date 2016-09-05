@@ -4,7 +4,23 @@
 	"sdgNameShort" : "ILO and the 2030 Agenda",
 	"sdgIcon": "./src/images/sdg0.svg",
 	"sdgColor": "#37468E",
-	"focusTargets": [],
+	"focusTargets": [{
+			"number": "1",
+			"description": "Select the blue dots above to begin learning how Decent Work is at the heart of the 2030 Agenda for Sustainable Development.."
+		}, {
+			"number": "2",
+			"description": "Choose one of the numbered icons above or below to learn how ILO is working to accomplish that Sustainble Development Goal"
+		}, {
+			"number": "3",
+			"description": "Browse through the Decent Work Targets to see which of that Goals targets are related to Decent Work."
+		}, {
+			"number": "4",
+			"description": "Browse through our selection of stories to see concrete examples of how ILO works to acheive each of the SDGs."
+		}, {
+			"number": "5",
+			"description": "Share the stories with your friends and followers on social media to help spread the word about Decent Work and the Sustainble Development Goals."
+		}
+	],
 	"stories": [{
 	"title": "Decent Work in the Era of Sustainable Development",
 	"blurb": "'If this agenda can become a reality in the next 15 years, we will be turning the tide back in the direction of social justice and assuring a sustainable and fairer society for us and our children' ILO Director-General Guy Ryder",
@@ -45,22 +61,22 @@
 	"sdgColor": "#e5243b",
 	"focusTargets": [{
 			"number": "1.1",
-			"description": "ILO research shows it would cost $US 10 trillion to eradicate extreme poverty by 2030. But that can't be accomplished sustainably without more and better jobs."
+			"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
 		}, {
 			"number": "1.2",
-			"description": "ILO recommendations on labour and social policies can help countries achieve the goal of reducing by at least by half the proportion of men, women and children living in poverty."
+			"description": "By 2030, reduce at least by half the proportion of men, women and children living in poverty in all its dimensions according to national definitions"
 		}, {
 			"number": "1.3",
-			"description": "Only 20 per cent of the world’s population has adequate social security coverage and more than half lack any coverage at all. The ILO provides assistance to countries to help extend adequate levels of social protection to all members of society."
+			"description": "Implement nationally appropriate social protection systems"
 		}, {
 			"number": "1.5",
-			"description": "The ILO works with governments, workers and the prive sector to provide financial services like insurance and microfinance to vulnerable families"
+			"description": "Ensure that all men and women, have equal rights to economic resources, including microfinance"
 		}, {
 			"number": "1.5",
-			"description": "ILO supports an employment-centred recovery from conflict, turmoil and disasters while promoting decent work and social justice as key drivers of social cohesion and the prevention of further conflict."
+			"description": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
 		}, {
 			"number": "1.b",
-			"description": "Ensuring decent work opportunities and a social protection floor for all women and men means that no one is left behind and that everyone has the opportunity to sustain themselves, their families and aspire to a better future."
+			"description": "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
 		}
 
 	],
@@ -88,10 +104,10 @@
 	"sdgColor": "#dda63a",
 	"focusTargets": [{
 			"number": "2.3",
-			"description": "The ILO guides local skills development initiatives to be cost-effective, reliable and of high quality, and to include cooperative development and business development services, among many other initiatives."
+			"description": "Double the agricultural productivity and incomes of small-scale food producers"
 		}, {
 			"number": "2.4",
-			"description": "ILO promotes job-intensive rural infrastructure development, much of which has included support for rural road construction and maintenance, mechanization, irrigation, advances in productivity and access to markets for small-scale farmers and agricultural workers. "
+			"description": "Implement resilient agricultural practices that increase productivity and production"
 		}
 
 	],
@@ -119,13 +135,13 @@
 	"sdgColor": "#4c9f38",
 	"focusTargets": [{
 			"number": "3.3",
-			"description": "ILO works to develop and implement policies and programmes to protect workers from HIV infection and facilitate equal access to care, treatment, support and social protection for everyone who is living with or affected by HIV and AIDS."
+			"description": "By 2030, end the epidemic of AIDS"
 		}, {
 			"number": "3.8",
-			"description": "Universal Healthcare Protection is one of many goals the ILO helps its member states acheive as part of its work in the sphere of Social Protection"
+			"description": "Achieve universal health coverage"
 		}, {
 			"number": "3.9",
-			"description": "The protection of workers from the exposure to hazardous substances has always been a major concern for the ILO. So far, the ILO has adopted 14 International Labour Standards guiding the use of industrial chemicals."
+			"description": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination"
 		}
 
 	],
@@ -153,16 +169,16 @@
 	"sdgColor": "#c5192d",
 	"focusTargets": [{
 			"number": "4.4",
-			"description": "The ILO works with governments, employers and workers to improve the employability of workers, move young people into productive and decent work, and increase the productivity of enterprises through better quality and relevant training "
+			"description": "By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship"
 		}, {
 			"number": "4.5",
-			"description": "The ILO promotes equal employment opportunities through measures that improve women’s access to education and skills training"
+			"description": "Eliminate gender disparities in education and ensure equal access to all levels of education"
 		}, {
 			"number": "4.b",
-			"description": "ILO focuses on training in rural communities, on upgrading informal apprenticeship systems and meeting the special needs of Africa to improve skills development and employability."
+			"description": "By 2020, substantially expand globally the number of scholarships available to developing countries for enrolment in higher education, including vocational training"
 		}, {
 			"number": "4.c",
-			"description": "Training teachers and educators is a fundamental part of ILO's work to improve the skills and employability of workers."
+			"description": "By 2030, substantially increase the supply of qualified teachers"
 		}
 
 	],

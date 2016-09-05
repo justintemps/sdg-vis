@@ -7,6 +7,7 @@ import React from "react";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 const Description = React.createClass({
+
 	showLongDescription() {
 		this.props.setLongDescription(true);
 	},
@@ -29,10 +30,14 @@ const Description = React.createClass({
 		}
 	},
 
+	sdgTarget() {
+		return <span className="sdgtarget">  Target {this.props.targetNumber}</span>;
+	},
+
 	render() {
 		return(
 			<div>
-				<p className="target-description">{this.props.description}</p>
+				<p className="target-description">{this.props.description} {this.sdgTarget()}</p>
 				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
 			</div>
 		);

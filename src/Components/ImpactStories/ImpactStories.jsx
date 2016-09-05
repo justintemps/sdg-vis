@@ -32,7 +32,7 @@ const ImpactStories = React.createClass({
 		return(
 			<div className="impactStories">
 				<div className="targetSelector">
-					<h3 style={style}>How ILO is helping</h3>
+					<h3 style={style}>How the ILO is helping</h3>
 					<ul className="bullets">
 						{bullets}
 					</ul>

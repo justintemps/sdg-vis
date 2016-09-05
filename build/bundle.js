@@ -23562,7 +23562,7 @@
 		render: function render() {
 			var _this = this;
 	
-			var heading = "Where decent work comes in";
+			var heading = "Targets for the ILO";
 	
 			var bullets = this.props.focusTargets.map(function (target, i) {
 				return _react2.default.createElement(_Bullet2.default, { type: "focusTarget",
@@ -23580,6 +23580,7 @@
 			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, heading), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "target-description-wrapper" }, _react2.default.createElement(_Description2.default, {
 				focusTarget: this.props.focusTarget,
 				description: this.props.focusTargets[this.props.focusTarget].description,
+				targetNumber: this.props.focusTargets[this.props.focusTarget].number,
 				longDescription: this.props.longDescription,
 				setLongDescription: this.props.setLongDescription
 			}), _react2.default.createElement(_Arrow2.default, {
@@ -23751,8 +23752,11 @@
 				return _react2.default.createElement("span", null, this.props.description.slice(0, limit), _react2.default.createElement("span", { className: "more", onClick: this.showLongDescription }));
 			}
 		},
+		sdgTarget: function sdgTarget() {
+			return _react2.default.createElement("span", { className: "sdgtarget" }, "  Target ", this.props.targetNumber);
+		},
 		render: function render() {
-			return _react2.default.createElement("div", null, _react2.default.createElement("p", { className: "target-description" }, this.props.description), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(100, 50)));
+			return _react2.default.createElement("div", null, _react2.default.createElement("p", { className: "target-description" }, this.props.description, " ", this.sdgTarget()), _react2.default.createElement("p", { className: "mobile-target-description" }, this.mobiledescription(100, 50)));
 		}
 	});
 	
@@ -23816,7 +23820,7 @@
 	
 			var style = { color: this.props.data[this.props.currentSDG].sdgColor };
 	
-			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "How ILO is helping"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement(_ShareWidget2.default, {
+			return _react2.default.createElement("div", { className: "impactStories" }, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, "How the ILO is helping"), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "stories-wrapper" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "title-blurb-wrapper" }, _react2.default.createElement("a", { href: this.props.impactStories[this.props.currentStory].url, target: "_blank" }, _react2.default.createElement("h2", null, this.props.impactStories[this.props.currentStory].title)), _react2.default.createElement("p", null, this.props.impactStories[this.props.currentStory].blurb), _react2.default.createElement(_ShareWidget2.default, {
 				currentStoryUrl: this.props.impactStories[this.props.currentStory].url,
 				currentStoryTitle: this.props.impactStories[this.props.currentStory].title,
 				currentStoryBlurb: this.props.impactStories[this.props.currentStory].blurb
@@ -23982,28 +23986,7 @@
 			"sdgNameShort": "ILO and the 2030 Agenda",
 			"sdgIcon": "./src/images/sdg0.svg",
 			"sdgColor": "#37468E",
-			"focusTargets": [
-				{
-					"number": "1",
-					"description": "Select the blue dots above to begin learning how Decent Work is at the heart of the 2030 Agenda for Sustainable Development.."
-				},
-				{
-					"number": "2",
-					"description": "Choose one of the numbered icons above or below to learn how ILO is working to accomplish that Sustainble Development Goal"
-				},
-				{
-					"number": "3",
-					"description": "Browse through the Decent Work Targets to see which of that Goals targets are related to Decent Work."
-				},
-				{
-					"number": "4",
-					"description": "Browse through our selection of stories to see concrete examples of how ILO works to acheive each of the SDGs."
-				},
-				{
-					"number": "5",
-					"description": "Share the stories with your friends and followers on social media to help spread the word about Decent Work and the Sustainble Development Goals."
-				}
-			],
+			"focusTargets": [],
 			"stories": [
 				{
 					"title": "Decent Work in the Era of Sustainable Development",
@@ -24052,27 +24035,27 @@
 			"focusTargets": [
 				{
 					"number": "1.1",
-					"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
+					"description": "ILO research shows it would cost $US 10 trillion to eradicate extreme poverty by 2030. But that can't be accomplished sustainably without more and better jobs."
 				},
 				{
 					"number": "1.2",
-					"description": "By 2030, reduce at least by half the proportion of men, women and children living in poverty in all its dimensions according to national definitions"
+					"description": "ILO recommendations on labour and social policies can help countries achieve the goal of reducing by at least by half the proportion of men, women and children living in poverty."
 				},
 				{
 					"number": "1.3",
-					"description": "Implement nationally appropriate social protection systems"
+					"description": "Only 20 per cent of the world’s population has adequate social security coverage and more than half lack any coverage at all. The ILO provides assistance to countries to help extend adequate levels of social protection to all members of society."
 				},
 				{
 					"number": "1.5",
-					"description": "Ensure that all men and women, have equal rights to economic resources, including microfinance"
+					"description": "The ILO works with governments, workers and the prive sector to provide financial services like insurance and microfinance to vulnerable families"
 				},
 				{
 					"number": "1.5",
-					"description": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
+					"description": "ILO supports an employment-centred recovery from conflict, turmoil and disasters while promoting decent work and social justice as key drivers of social cohesion and the prevention of further conflict."
 				},
 				{
 					"number": "1.b",
-					"description": "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
+					"description": "Ensuring decent work opportunities and a social protection floor for all women and men means that no one is left behind and that everyone has the opportunity to sustain themselves, their families and aspire to a better future."
 				}
 			],
 			"stories": [
@@ -24105,11 +24088,11 @@
 			"focusTargets": [
 				{
 					"number": "2.3",
-					"description": "Double the agricultural productivity and incomes of small-scale food producers"
+					"description": "The ILO guides local skills development initiatives to be cost-effective, reliable and of high quality, and to include cooperative development and business development services, among many other initiatives."
 				},
 				{
 					"number": "2.4",
-					"description": "Implement resilient agricultural practices that increase productivity and production"
+					"description": "ILO promotes job-intensive rural infrastructure development, much of which has included support for rural road construction and maintenance, mechanization, irrigation, advances in productivity and access to markets for small-scale farmers and agricultural workers. "
 				}
 			],
 			"stories": [
@@ -24142,15 +24125,15 @@
 			"focusTargets": [
 				{
 					"number": "3.3",
-					"description": "By 2030, end the epidemic of AIDS"
+					"description": "ILO works to develop and implement policies and programmes to protect workers from HIV infection and facilitate equal access to care, treatment, support and social protection for everyone who is living with or affected by HIV and AIDS."
 				},
 				{
 					"number": "3.8",
-					"description": "Achieve universal health coverage"
+					"description": "Universal Healthcare Protection is one of many goals the ILO helps its member states acheive as part of its work in the sphere of Social Protection"
 				},
 				{
 					"number": "3.9",
-					"description": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination"
+					"description": "The protection of workers from the exposure to hazardous substances has always been a major concern for the ILO. So far, the ILO has adopted 14 International Labour Standards guiding the use of industrial chemicals."
 				}
 			],
 			"stories": [
@@ -24183,19 +24166,19 @@
 			"focusTargets": [
 				{
 					"number": "4.4",
-					"description": "By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship"
+					"description": "The ILO works with governments, employers and workers to improve the employability of workers, move young people into productive and decent work, and increase the productivity of enterprises through better quality and relevant training "
 				},
 				{
 					"number": "4.5",
-					"description": "Eliminate gender disparities in education and ensure equal access to all levels of education"
+					"description": "The ILO promotes equal employment opportunities through measures that improve women’s access to education and skills training"
 				},
 				{
 					"number": "4.b",
-					"description": "By 2020, substantially expand globally the number of scholarships available to developing countries for enrolment in higher education, including vocational training"
+					"description": "ILO focuses on training in rural communities, on upgrading informal apprenticeship systems and meeting the special needs of Africa to improve skills development and employability."
 				},
 				{
 					"number": "4.c",
-					"description": "By 2030, substantially increase the supply of qualified teachers"
+					"description": "Training teachers and educators is a fundamental part of ILO's work to improve the skills and employability of workers."
 				}
 			],
 			"stories": [

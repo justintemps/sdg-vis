@@ -568,6 +568,13 @@ span .little-triangle-enter {
   flex-wrap: nowrap;
   margin: 0; }
 
+.sdgtarget {
+  color: #a8a8a8;
+  font-family: arial;
+  font-size: .75em;
+  font-weight: 600;
+  text-transform: uppercase; }
+
 /* Arrow */
 /* arrowMobile */
 .arrow {
@@ -587,7 +594,7 @@ span .little-triangle-enter {
   margin: 0 10px 0 10px;
   opacity: 0.3;
   position: relative;
-  top: 3.2px;
+  top: 5.5px;
   transition: opacity 0.17s ease; }
 
 .bullet:hover {

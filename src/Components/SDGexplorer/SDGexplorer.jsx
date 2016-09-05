@@ -6,6 +6,7 @@
 
 import React from "react";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+
 import Row from "../Row/Row.jsx";
 import ViewerWindow from "../ViewerWindow/ViewerWindow.jsx";
 import data from "!json!../../data.json";
