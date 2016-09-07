@@ -30,8 +30,13 @@ const Description = React.createClass({
 		}
 	},
 
+	background() {
+		return {backgroundColor : this.props.color};
+	},
+
+
 	sdgTarget() {
-		return <span className="sdgtarget">  Target {this.props.targetNumber}</span>;
+		return <span className="sdgtarget" style={this.background()}> Target {this.props.targetNumber}</span>;
 	},
 
 	render() {

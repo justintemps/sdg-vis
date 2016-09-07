@@ -568,12 +568,17 @@ span .little-triangle-enter {
   flex-wrap: nowrap;
   margin: 0; }
 
+/* This should go in a Description scss  */
 .sdgtarget {
-  color: #a8a8a8;
+  border-radius: 2px;
+  bottom: 1px;
+  color: #fff;
   font-family: arial;
-  font-size: .75em;
-  font-weight: 600;
-  text-transform: uppercase; }
+  font-size: .65em;
+  font-weight: 400;
+  opacity: .3;
+  padding: 2px;
+  position: relative; }
 
 /* Arrow */
 /* arrowMobile */
