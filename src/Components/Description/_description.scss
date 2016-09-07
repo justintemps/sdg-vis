@@ -1,0 +1,30 @@
+/*
+
+.sdgtarget {
+	@extend p;
+	display: inline-block;
+	font-smoothing: antialiased;
+	position: relative;
+	transform: translateZ(0);
+}
+
+*/
+
+.description {
+	font-smoothing: antialiased;
+	transform: translateZ(0);
+}
+
+.sdgtarget {
+	border-radius: 10px;
+	bottom: 2px;
+	color: #fff;
+	display: inline-block;
+	font-family: arial, sans-serif;
+	font-size: .68em;
+	font-weight: 400;
+	margin: 0 0 0 5px;
+	padding: 0 2px;
+	position: relative;
+	text-align: center;
+}

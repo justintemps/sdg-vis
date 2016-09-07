@@ -5,6 +5,8 @@
 
 import React from "react";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import Tooltip from "../Tooltip/Tooltip.jsx";
+import hexToRgb from "./hexToRgb.js";
 
 const Description = React.createClass({
 
@@ -30,19 +32,28 @@ const Description = React.createClass({
 		}
 	},
 
-	background() {
+	buttonColor() {
 		return {backgroundColor : this.props.color};
+	},
+
+	tooltipColor() {
+		return {backgroundColor: hexToRgb(this.props.color, 0.8)};
 	},
 
 
 	sdgTarget() {
-		return <span className="sdgtarget" style={this.background()}> Target {this.props.targetNumber}</span>;
+		return (
+			<div className="sdgtarget" style={this.buttonColor()}> See target {this.props.targetNumber}
+			</div>
+		);
 	},
 
 	render() {
 		return(
-			<div>
-				<p className="target-description">{this.props.description} {this.sdgTarget()}</p>
+			<div className="description">
+				<Tooltip style={this.tooltipColor()} description={this.props.description}></Tooltip>
+				<p className="target-description">{this.props.description}</p>
+				{this.sdgTarget()}
 				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
 			</div>
 		);
