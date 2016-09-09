@@ -21,8 +21,9 @@ const SDGexplorer = React.createClass({
 			currentRow : 0,
 			focusTarget : 0,
 			isMobile : false,
+			longDescription : false,
 			rowChanged : false,
-			longDescription : false
+			toolTipVisible : false
 		});
 	},
 
@@ -87,6 +88,18 @@ const SDGexplorer = React.createClass({
 		this.setState({
 			longDescription: bool
 		});
+	},
+
+	toggleToolTip(visible) {
+		if (visible) {
+			this.setState({
+				toolTipVisible: true
+			});
+		} else if (!visible) {
+			this.setState({
+				toolTipVisible: false
+			});
+		}
 	},
 
 	render() {
@@ -189,15 +202,17 @@ const SDGexplorer = React.createClass({
 						transitionEnterTimeout={1200}>
 
 						<ViewerWindow
+							data={data}
 							key={ this.state.rowChanged ? this.state.currentSdg : 900}
 							currentSdg={this.state.currentSdg}
 							focusTarget={this.state.focusTarget}
-							selectFocusTarget={this.selectFocusTarget}
 							currentStory={this.state.currentStory}
-							selectStory={this.selectStory}
-							data={data}
+							selectFocusTarget={this.selectFocusTarget}
 							longDescription={this.state.longDescription}
+							toolTipVisible={this.state.toolTipVisible}
+							selectStory={this.selectStory}
 							setLongDescription={this.setLongDescription}
+							toggleToolTip={this.toggleToolTip}
 						/>
 
 					</ReactCSSTransitionGroup>

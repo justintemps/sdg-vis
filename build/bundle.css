@@ -431,6 +431,12 @@ span .little-triangle-enter {
   font-style: normal;
   font-weight: 600; }
 
+/* ViewerWindowContent */
+.viewerWindowContent {
+  font-smoothing: antialiased;
+  position: relative;
+  transform: translateZ(0); }
+
 /* Title Bar */
 /* TitleBar */
 /* Background color for Title Bar */
@@ -580,10 +586,6 @@ span .little-triangle-enter {
 }
 
 */
-.description {
-  font-smoothing: antialiased;
-  transform: translateZ(0); }
-
 .sdgtarget {
   border-radius: 10px;
   bottom: 2px;
@@ -604,27 +606,29 @@ span .little-triangle-enter {
 	display: none;
 }
 */
-.tooltip {
+.viewerWindowContent .tooltip {
   font-family: "Apex New Book", sans-serif;
   font-size: 1em; }
 
-.description .tooltip {
-  bottom: 100%;
+.viewerWindowContent .tooltip {
+  background-color: #000;
+  bottom: 80%;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
   color: #fff;
   display: block;
+  left: 25%;
   margin-bottom: 15px;
-  min-width: 400px;
-  opacity: 0;
+  min-width: 250px;
+  opacity: 1;
   padding: 5px;
   pointer-events: none;
   position: absolute;
   text-align: left;
   transform: translateY(10px);
   transition: all .25s ease-out;
-  width: 100%; }
+  width: 50%; }
 
-.description .tooltip:before {
+.viewerWindowContent .tooltip:before {
   bottom: -20px;
   content: " ";
   display: block;
@@ -633,24 +637,27 @@ span .little-triangle-enter {
   position: absolute;
   width: 100%; }
 
-/* Little triangle*/
-.description .tooltip:before {
-  border-left: solid transparent 10px;
-  border-right: solid transparent 10px;
-  border-top: solid rgba(0, 0, 0, 0.7) 10px;
-  bottom: -10px;
-  content: " ";
-  height: 0;
-  left: 50%;
-  margin-left: -13px;
-  position: absolute;
-  width: 0; }
+/*
+.viewerWindowContent .tooltip:before {
+	border-left: solid transparent 10px;
+	border-right: solid transparent 10px;
+	border-top: solid rgba(0,0,0,0.7) 10px;
+	bottom: -10px;
+	content: " ";
+	height: 0;
+	left: 50%;
+	margin-left: -13px;
+	position: absolute;
+	width: 0;
+}
+
 
 .description:hover .tooltip {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0px); }
-
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(0px);
+}
+*/
 /* Arrow */
 /* arrowMobile */
 .arrow {

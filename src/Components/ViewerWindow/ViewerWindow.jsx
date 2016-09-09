@@ -30,6 +30,8 @@ const ViewerWindow = React.createClass({
 					data={this.props.data}
 					longDescription={this.props.longDescription}
 					setLongDescription={this.props.setLongDescription}
+					toggleToolTip={this.props.toggleToolTip}
+					toolTipVisible={this.props.toolTipVisible}
 				/>
 			</div>
 		);

@@ -4,9 +4,6 @@
  */
 
 import React from "react";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
-import Tooltip from "../Tooltip/Tooltip.jsx";
-import hexToRgb from "./hexToRgb.js";
 
 const Description = React.createClass({
 
@@ -36,24 +33,21 @@ const Description = React.createClass({
 		return {backgroundColor : this.props.color};
 	},
 
-	tooltipColor() {
-		return {backgroundColor: hexToRgb(this.props.color, 0.8)};
+	showToolTip() {
+		this.props.toggleToolTip(true);
 	},
 
-
-	sdgTarget() {
-		return (
-			<div className="sdgtarget" style={this.buttonColor()}> See target {this.props.targetNumber}
-			</div>
-		);
+	hideToolTip() {
+		this.props.toggleToolTip(false);
 	},
 
 	render() {
 		return(
 			<div className="description">
-				<Tooltip style={this.tooltipColor()} description={this.props.description}></Tooltip>
 				<p className="target-description">{this.props.description}</p>
-				{this.sdgTarget()}
+					<div className="sdgtarget" style={this.buttonColor()} onMouseEnter={this.showToolTip} onMouseLeave={this.hideToolTip}>
+						See target {this.props.targetNumber}
+					</div>
 				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
 			</div>
 		);

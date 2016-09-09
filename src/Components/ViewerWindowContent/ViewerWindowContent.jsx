@@ -7,6 +7,7 @@ import React from "react";
 import DefaultViewerWindowContent from "./DefaultViewerWindowContent.jsx";
 import FocusTargets from "../FocusTargets/FocusTargets.jsx";
 import ImpactStories from "../ImpactStories/ImpactStories.jsx";
+import Tooltip from "../Tooltip/Tooltip.jsx";
 
 const ViewerWindowContent = React.createClass({
 	render() {
@@ -41,7 +42,17 @@ const ViewerWindowContent = React.createClass({
 						data = {this.props.data}
 						longDescription={this.props.longDescription}
 						setLongDescription={this.props.setLongDescription}
+						toggleToolTip={this.props.toggleToolTip}
+						toolTipVisible={this.props.toolTipVisible}
 					/>
+
+					<Tooltip
+						toolTipVisible={this.props.toolTipVisible}
+						focusTargets={focusTargets}
+						focusTarget={this.props.focusTarget}
+						currentSDG = {this.props.sdgNumber}
+					/>
+
 					<ImpactStories
 						impactStories={impactStories}
 						currentStory={this.props.currentStory}

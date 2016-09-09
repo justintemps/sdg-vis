@@ -44,6 +44,8 @@ const FocusTargets = React.createClass({
 								color={this.props.data[this.props.currentSDG].sdgColor}
 								longDescription={this.props.longDescription}
 								setLongDescription={this.props.setLongDescription}
+								toggleToolTip={this.props.toggleToolTip}
+								toolTipVisible={this.props.toolTipVisible}
 							/>
 							<Arrow
 								item={this.props.focusTarget}
