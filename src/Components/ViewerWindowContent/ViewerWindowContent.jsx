@@ -51,6 +51,7 @@ const ViewerWindowContent = React.createClass({
 						focusTargets={focusTargets}
 						focusTarget={this.props.focusTarget}
 						currentSDG = {this.props.sdgNumber}
+						currentColor={this.props.data[this.props.sdgNumber].sdgColor}
 					/>
 
 					<ImpactStories

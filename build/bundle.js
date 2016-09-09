@@ -23387,7 +23387,8 @@
 					toolTipVisible: this.props.toolTipVisible,
 					focusTargets: focusTargets,
 					focusTarget: this.props.focusTarget,
-					currentSDG: this.props.sdgNumber
+					currentSDG: this.props.sdgNumber,
+					currentColor: this.props.data[this.props.sdgNumber].sdgColor
 				}), _react2.default.createElement(_ImpactStories2.default, {
 					impactStories: impactStories,
 					currentStory: this.props.currentStory,
@@ -23912,29 +23913,62 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _hexToRgb = __webpack_require__(/*! ./hexToRgb.js */ 335);
+	
+	var _hexToRgb2 = _interopRequireDefault(_hexToRgb);
+	
 	function _interopRequireDefault(obj) {
 		return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
+	/**
+	 * Tooltip
+	 * Child to viewerWindowContent
+	 */
+	
 	var Tooltip = _react2.default.createClass({
 		displayName: "Tooltip",
+		styles: function styles() {
+			var bgColor = (0, _hexToRgb2.default)(this.props.currentColor, 0.9);
 	
-		showToolTip: {
-			visibility: "visible"
+			if (this.props.toolTipVisible) {
+				return {
+					opacity: 1,
+					transform: "translateY(0)",
+					visibility: "visible",
+					backgroundColor: bgColor
+				};
+			} else {
+				return {
+					opacity: 0,
+					transform: "translateY(10px)",
+					visibility: "hidden",
+					backgroundColor: bgColor
+				};
+			}
 		},
 	
-		hideToolTip: {
-			visibility: "hidden"
-		},
-	
+		/*
+	 	showToolTip: {
+	 		opacity: 1,
+	 		transform: "translateY(0)",
+	 		visibility: "visible",
+	 		backgroundColor: this.bgColor()
+	 	},
+	 
+	 	hideToolTip: {
+	 		opacity: 0,
+	 		transform: "translateY(10px)",
+	 		visibility: "hidden",
+	 		backgroundColor: this.bgColor()
+	 	},
+	 */
 		render: function render() {
-			return _react2.default.createElement("div", { style: this.props.toolTipVisible ? this.showToolTip : this.hideToolTip,
+	
+			return _react2.default.createElement("div", { style: this.styles(),
 				className: "tooltip" }, this.props.focusTargets[this.props.focusTarget].description);
 		}
-	}); /**
-	     * Tooltip
-	     * Child to viewerWindowContent
-	     */
+	});
 	
 	exports.default = Tooltip;
 
@@ -30159,6 +30193,39 @@
 	        );
 	    }
 	});
+
+/***/ },
+/* 335 */
+/*!********************************************!*\
+  !*** ./src/Components/Tooltip/hexToRgb.js ***!
+  \********************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = hexToRgb;
+	/**
+	 * hxToRgb
+	 * Converts hex to rgb color codes
+	 * Assumes first character is NaN
+	 * @param {string} hex
+	 * @param {number} opacity from 0 to 1
+	 * @returns {string} rgba
+	*/
+	
+	function hexToRgb(hex, a) {
+		var chex = hex.slice(1);
+		var bigint = parseInt(chex, 16);
+		var r = bigint >> 16 & 255;
+		var g = bigint >> 8 & 255;
+		var b = bigint & 255;
+		var color = [r, g, b, a].join();
+		var rgba = "rgba(" + color + ")";
+		return rgba;
+	}
 
 /***/ }
 /******/ ]);
