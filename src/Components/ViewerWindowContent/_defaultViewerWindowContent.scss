@@ -2,6 +2,8 @@
 
 .defaultViewerWindowContent {
 	@include flex();
+	box-sizing: border-box;
+	min-height: 293px;
 	margin: 20px 0 20px 20px;
 }
 

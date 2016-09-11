@@ -408,6 +408,8 @@ span .little-triangle-enter {
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
+  box-sizing: border-box;
+  min-height: 293px;
   margin: 20px 0 20px 20px; }
 
 .defaultDescription {
@@ -433,7 +435,9 @@ span .little-triangle-enter {
 
 /* ViewerWindowContent */
 .viewerWindowContent {
+  box-sizing: border-box;
   font-smoothing: antialiased;
+  min-height: 313px;
   position: relative;
   transform: translateZ(0); }
 
@@ -586,11 +590,6 @@ span .little-triangle-enter {
 
 /* Tooltip */
 /* Tooltip */
-/*
-.tooltip {
-	display: none;
-}
-*/
 .viewerWindowContent .tooltip {
   font-family: "Apex New Book", sans-serif;
   font-size: 1em; }
@@ -611,27 +610,6 @@ span .little-triangle-enter {
   transition: all .25s ease-out;
   width: 50%; }
 
-/*
-.viewerWindowContent .tooltip:before {
-	border-left: solid transparent 10px;
-	border-right: solid transparent 10px;
-	border-top: solid rgba(0,0,0,0.7) 10px;
-	bottom: -10px;
-	content: " ";
-	height: 0;
-	left: 50%;
-	margin-left: -13px;
-	position: absolute;
-	width: 0;
-}
-
-
-.description:hover .tooltip {
-	opacity: 1;
-	pointer-events: auto;
-	transform: translateY(0px);
-}
-*/
 /* Arrow */
 /* arrowMobile */
 .arrow {
@@ -994,6 +972,7 @@ span .little-triangle-enter {
   /* DefaultViewerWindowContent*/
   /* defaultViewerWindowContent */
   .defaultViewerWindowContent {
+    min-height: inherit;
     margin: 20px 15px; }
   .defaultDescription {
     width: 100%; }

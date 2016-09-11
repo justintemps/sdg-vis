@@ -1,5 +1,7 @@
 .viewerWindowContent {
+	box-sizing: border-box;
 	font-smoothing: antialiased;
+	min-height: 313px;
 	position: relative;
 	transform: translateZ(0);
 }
