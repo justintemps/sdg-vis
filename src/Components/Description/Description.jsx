@@ -11,14 +11,31 @@ const Description = React.createClass({
 		this.props.setLongDescription(true);
 	},
 
-	mobiledescription(limit, range) {
+	showToolTip() {
+		this.props.toggleToolTip(true);
+	},
 
+	hideToolTip() {
+		this.props.toggleToolTip(false);
+	},
+
+	seeTargetButton() {
+		return (
+			<span style={ ( () => ({ color : this.props.color }) )() } onMouseEnter={this.showToolTip} onMouseLeave={this.hideToolTip}> See target {this.props.targetNumber}</span>
+		);
+	},
+
+	mobiledescription(limit, range) {
 		const diff = this.props.description.length - limit;
 
-		if (diff < range) {
-			return this.props.description;
-		} else if (this.props.longDescription) {
-			return this.props.description;
+	//	const wholeDescription = `${this.props.description} ${this.seeTargetButton()}`;
+
+		if (diff < range || this.props.longDescription) {
+			return(
+				<span>
+					{this.props.description} {this.seeTargetButton()}
+				</span>
+			);
 		} else {
 			return (
 				<span>
@@ -29,25 +46,10 @@ const Description = React.createClass({
 		}
 	},
 
-	buttonColor() {
-		return {backgroundColor : this.props.color};
-	},
-
-	showToolTip() {
-		this.props.toggleToolTip(true);
-	},
-
-	hideToolTip() {
-		this.props.toggleToolTip(false);
-	},
-
 	render() {
 		return(
 			<div className="description">
-				<p className="target-description">{this.props.description}</p>
-					<div className="sdgtarget" style={this.buttonColor()} onMouseEnter={this.showToolTip} onMouseLeave={this.hideToolTip}>
-						See target {this.props.targetNumber}
-					</div>
+				<p className="target-description">{this.props.description} {this.seeTargetButton()}</p>
 				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
 			</div>
 		);
