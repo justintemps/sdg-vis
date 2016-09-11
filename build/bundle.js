@@ -63,9 +63,15 @@
 	
 	var _SDGexplorer2 = _interopRequireDefault(_SDGexplorer);
 	
+	var _Header = __webpack_require__(/*! ./Components/Header/Header.jsx */ 336);
+	
+	var _Header2 = _interopRequireDefault(_Header);
+	
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
+	
+	(0, _reactDom.render)(_react2.default.createElement(_Header2.default, null), document.getElementById("header"));
 	
 	(0, _reactDom.render)(_react2.default.createElement(_SDGexplorer2.default, null), document.getElementById("app"));
 
@@ -30229,6 +30235,36 @@
 	        );
 	    }
 	});
+
+/***/ },
+/* 336 */
+/*!******************************************!*\
+  !*** ./src/Components/Header/Header.jsx ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Header = _react2.default.createClass({
+		displayName: "Header",
+		render: function render() {
+			return _react2.default.createElement("header", { id: "banner", role: "banner" }, _react2.default.createElement("div", { id: "primary-banner" }, _react2.default.createElement("div", { className: "container" }, _react2.default.createElement("div", { className: "row" }, _react2.default.createElement("div", { className: "large-6-col" }, _react2.default.createElement("a", { id: "logo", className: "navbar-brand", href: "/global/lang--en/index.htm" }, _react2.default.createElement("h1", null, "ILO"))), _react2.default.createElement("div", { className: "large-6-col" }, _react2.default.createElement("h2", null, "Promoting Jobs, Protecting People"), _react2.default.createElement("h3", null, "ILO is a specialised agency of ", _react2.default.createElement("a", { href: "http://www.un.org/en/aboutun/structure/" }, "the United Nations"))), _react2.default.createElement("div", { className: "language" }, _react2.default.createElement("a", { href: "/global/lang--fr/index.htm" }, "français")), _react2.default.createElement("div", null, _react2.default.createElement("a", { href: "/global/lang--es/index.htm" }, "español"))))));
+		}
+	});
+	
+	exports.default = Header;
 
 /***/ }
 /******/ ]);
