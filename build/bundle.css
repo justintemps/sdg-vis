@@ -246,6 +246,17 @@ header {
   box-sizing: border-box;
   width: 41.66666667%; }
 
+.large-12-col {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; }
+
 #logo {
   background-size: cover;
   background: url(http://www.ilo.org/wcmsp5/ilo/global/images/templates/ilo.png) no-repeat 0 0;
@@ -306,8 +317,63 @@ header {
     #secondary-banner .container .form-search input[type="hidden"] {
       display: none; }
 
+.pull-left {
+  float: left; }
+
 .pull-right {
   float: right; }
+
+#tertiary-banner {
+  background-color: #263062;
+  overflow: hidden; }
+  #tertiary-banner .navbar-toggle {
+    display: none;
+    color: #FFF;
+    height: 8px;
+    width: 50%;
+    padding: 15px 10px;
+    font-family: "FS Me Web Bold",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent url(http://www.ilo.org/wcmsp5/ilo/global/images/templates/down-arrow-large.png) no-repeat 99.4% 48%; }
+    #tertiary-banner .navbar-toggle .menu {
+      margin-top: -3px;
+      float: right;
+      padding-left: 30px; }
+    #tertiary-banner .navbar-toggle .icon-bar {
+      border-bottom: 1px solid #FFF;
+      width: 17px;
+      display: block;
+      margin-bottom: 3px; }
+  #tertiary-banner nav ul li:first-child a {
+    border-left: 0; }
+  #tertiary-banner nav ul li:last-child a {
+    border-right: 0; }
+  #tertiary-banner nav ul li a {
+    font-family: "FS Me Web Bold",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 12px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  #tertiary-banner .home-link {
+    display: none; }
+  #tertiary-banner .icon-home {
+    font-size: 15px; }
+
+[class^=icon-] {
+  font-family: icons;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.collapse {
+  display: block; }
 
 /* SDGexplorer */
 /* SDGexplorer */

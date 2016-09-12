@@ -60,6 +60,35 @@ const Header = React.createClass({
 						</div>
 					</div>
 				</div>
+				<div id="tertiary-banner">
+					<div className="container">
+						<div className="header-row">
+							<nav className="large-12-col" role="navigation">
+								<a className="navbar-toggle" href="#">
+									<div className="pull-left">
+										<span className="menu">Menu</span>
+										<span className="icon-bar"></span>
+										<span className="icon-bar"></span>
+										<span className="icon-bar"></span>
+									</div>
+								</a>
+								<div className="collapse">
+									<ul role="menu" className="nav navbar-nav" id="menu">
+										<li role="menuitem" className=""><a href="/global/lang--en/index.htm"><span className="home-link">Home</span><span className="icon-home"></span></a></li>
+										<li role="menuitem" className=""><a href="/global/about-the-ilo/lang--en/index.htm">About the ILO</a></li>
+										<li role="menuitem" className="here"><a href="/global/about-the-ilo/newsroom/lang--en/index.htm">Newsroom</a></li>
+										<li role="menuitem" className=""><a href="/global/meetings-and-events/lang--en/index.htm">Meetings and events</a></li>
+										<li role="menuitem" className=""><a href="/global/publications/lang--en/index.htm">Publications</a></li>
+										<li role="menuitem" className=""><a href="/global/research/lang--en/index.htm">Research</a></li>
+										<li role="menuitem" className=""><a href="/global/standards/lang--en/index.htm">Labour standards</a></li>
+										<li role="menuitem" className=""><a href="/global/statistics-and-databases/lang--en/index.htm">Statistics and databases</a></li>
+										<li role="menuitem" className=""><a href="/global/contact-us/lang--en/index.htm">Contact Us</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
 			</header>
 		);
 	}
