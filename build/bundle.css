@@ -112,7 +112,11 @@ a {
   text-decoration: none; }
 
 /* Typography etc. */
-.header {
+/* Header*/
+/**
+  * @TODO: Make links to assets relative
+*/
+header {
   clear: both;
   display: block;
   font-family: "FS Me Web Regular", Helvetica, Arial, Verdana, sans-serif;
@@ -170,8 +174,13 @@ a {
   width: 938px; }
 
 .header-row {
+  display: block;
   margin-left: -15px;
   margin-right: -15px; }
+
+.header-row::before {
+  content: " ";
+  display: table; }
 
 .large-6-col {
   box-sizing: border-box;
@@ -186,33 +195,32 @@ a {
 
 .large-7-col {
   float: left;
+  font-weight: 400;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: calc(58% - 30px); }
+  width: 58.3333333%; }
   .large-7-col nav div ul {
     display: block;
     list-style-type: disc;
     margin: 0;
-    padding: 0;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px; }
+    padding: 0; }
     .large-7-col nav div ul li {
       display: block;
       float: left;
       font-size: 12px;
       line-height: 16px;
+      text-align: -webkit-match-parent;
+      text-decoration: none;
       width: 24%; }
       .large-7-col nav div ul li a {
         border-left: 1px solid rgba(0, 0, 0, 0.1);
         border-right: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fff;
+        cursor: auto;
+        display: inline-block;
         width: 80%;
         font-size: 12px;
         padding: 11px 10% 10px 10%;
@@ -236,7 +244,7 @@ a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: calc(42% - 30px); }
+  width: 41.66666667%; }
 
 #logo {
   background-size: cover;
@@ -251,9 +259,55 @@ a {
 
 #secondary-banner {
   background-color: #6B91CB;
-  display: block;
+  display: inline-block;
   position: relative;
+  width: 100%;
   z-index: 1000; }
+  #secondary-banner form {
+    display: block;
+    margin-top: 0em; }
+  #secondary-banner .container .form-search {
+    border: 0; }
+    #secondary-banner .container .form-search label {
+      display: none; }
+    #secondary-banner .container .form-search .btn {
+      color: #fff;
+      font-size: 0;
+      text-indent: -9999px;
+      overflow: hidden;
+      width: 37px;
+      height: 37px;
+      border: none;
+      margin: 0;
+      display: block;
+      float: left;
+      padding: 0;
+      background: #4B77B3 url(http://www.ilo.org/wcmsp5/ilo/global/images/templates/mag-low.png) no-repeat 50% 50%;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-left: 1px solid rgba(0, 0, 0, 0.1); }
+    #secondary-banner .container .form-search input {
+      border: 0;
+      height: 36px;
+      padding: 0 10px;
+      background-color: #FFF;
+      font-size: 12px;
+      line-height: 15px;
+      font-family: "FS Me Web Light",Helvetica,Arial,Verdana,sans-serif;
+      color: #4B4B4B;
+      margin: 0;
+      width: 205px;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      border-top: 1.5px solid rgba(0, 0, 0, 0.3);
+      border-left: 1.5px solid rgba(0, 0, 0, 0.3);
+      float: left;
+      -webkit-border-radius: 0;
+      -webkit-appearance: none;
+      border-radius: 0; }
+    #secondary-banner .container .form-search input[type="hidden"] {
+      display: none; }
+
+.pull-right {
+  float: right; }
 
 /* SDGexplorer */
 /* SDGexplorer */

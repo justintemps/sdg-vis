@@ -29,7 +29,7 @@ const Header = React.createClass({
 							<div className="large-7-col">
 								<nav role="navigation">
 									<div>
-										<ul role="menu" class="nav navbar-nav">
+										<ul role="menu" className="nav navbar-nav">
 											<li className="fast-nav" role="menuitem">Fast Navigation:</li>
 											<li className="dropdown regions" role="menuitem">
 												<a href="/global/regions/lang--en/index.htm">Countries</a>
@@ -46,7 +46,15 @@ const Header = React.createClass({
 							</div>
 							<div className="large-5-col small-12-col">
 								<span id="searchGlobal">
-									<form role="search" className="form-search pull-right" method="get" action="http://www.ilo.org/Search4/search.do" name="searchFast_up"></form>
+									<form role="search" className="form-search pull-right" method="get" action="http://www.ilo.org/Search4/search.do" name="searchFast_up">
+										<input type="hidden" id="sitelang" name="sitelang" value="en" />
+										<input type="hidden" id="locale" name="locale" value="en_EN" />
+										<input type="hidden" name="consumercode" value="ILOHQ_STELLENT_PUBLIC" />
+										<label htmlFor="keywords">Search:</label>
+										<input type="text" id="searchWhat" className="input-medium search-query" placeholder="Search ilo.org" name="searchWhat" />
+										<input type="hidden" id="searchLanguage" name="searchLanguage" value="en" />
+										<button className="btn menu-trigger" type="submit">Search</button>
+									</form>
 								</span>
 							</div>
 						</div>
