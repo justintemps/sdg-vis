@@ -116,7 +116,9 @@ a {
   clear: both;
   display: block;
   font-family: "FS Me Web Regular", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 1.35rem;
   font-weight: 400;
+  line-height: 2.0250000000000004rem;
   margin: 0 0 30px 0;
   -webkit-font-smoothing: antialiased; }
 
@@ -164,6 +166,7 @@ a {
 
 .container {
   margin: 0 auto;
+  position: relative;
   width: 938px; }
 
 .header-row {
@@ -181,6 +184,60 @@ a {
   -moz-box-sizing: border-box;
   width: 50%; }
 
+.large-7-col {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: calc(58% - 30px); }
+  .large-7-col nav div ul {
+    display: block;
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px; }
+    .large-7-col nav div ul li {
+      display: block;
+      float: left;
+      font-size: 12px;
+      line-height: 16px;
+      width: 24%; }
+      .large-7-col nav div ul li a {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        width: 80%;
+        font-size: 12px;
+        padding: 11px 10% 10px 10%;
+        font-family: "FS Me Web Bold",Helvetica,Arial,Verdana,sans-serif;
+        background: #4B77B3 url(http://www.ilo.org/wcmsp5/ilo/global/images/templates/down-arrow-large.png) no-repeat 93% 48%; }
+    .large-7-col nav div ul li.fast-nav {
+      color: #FFF;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: right;
+      padding: 11px 10px 10px 10px;
+      font-family: "FS Me Web Regular",Helvetica,Arial,Verdana,sans-serif;
+      width: 89px !important; }
+
+.large-5-col {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: calc(42% - 30px); }
+
 #logo {
   background-size: cover;
   background: url(http://www.ilo.org/wcmsp5/ilo/global/images/templates/ilo.png) no-repeat 0 0;
@@ -191,6 +248,12 @@ a {
   overflow: hidden;
   -webkit-background-size: 100%;
   width: 215px; }
+
+#secondary-banner {
+  background-color: #6B91CB;
+  display: block;
+  position: relative;
+  z-index: 1000; }
 
 /* SDGexplorer */
 /* SDGexplorer */
@@ -685,6 +748,7 @@ span .little-triangle-enter {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
   color: #fff;
   display: block;
+  font-weight: 400;
   left: 25%;
   margin-bottom: 15px;
   min-width: 250px;
