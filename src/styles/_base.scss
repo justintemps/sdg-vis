@@ -1,30 +1,30 @@
 @import "utils";
 
+html {
+	font-size: 62.5%;
+}
+
 html,
 body,
 #app,
 .wrapper {
 	width: 100%;
-	height: 100%;
 	margin: 0;
 	padding: 0;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 }
 
-#app {
-	width: 100%;
-}
-
-.wrapper {
+.wrapper, #app, #title {
 	margin: 0 auto;
 	max-width: 938px;
+	position: relative;
 	text-align: center;
 }
 
 h1 {
 	display: inline;
-	font-size: 2.2em;
+	font-size: 4rem;
 	color: #fff;
 	font-family: $sdg-number;
 	position: relative;
@@ -36,7 +36,7 @@ h1 {
 
 h2 {
 	font-family: $font-stack;
-	font-size: 1.4em;
+	font-size: 2.4rem;
 	font-weight: 400;
 	color: $titleColor;
 	line-height: 1.2em;
@@ -51,7 +51,7 @@ h2:hover {
 
 h3 {
 	font-family: $font-stack;
-	font-size: .88em;
+	font-size: 1.5rem;
 	font-weight: 600;
 	margin: 0;
 	padding: 0;
@@ -61,7 +61,7 @@ h3 {
 h4 {
 	color: $bulletSelected;
 	font-family: $font-stack;
-	font-size: .9em;
+	font-size: .9rem;
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
@@ -70,7 +70,7 @@ h4 {
 
 p {
 	font-family: $font-stack;
-	font-size: 1em;
+	font-size: 1.6rem;
 	font-weight: 400;
 	color: $dark-grey;
 	line-height: 1.3em;
@@ -94,4 +94,76 @@ span.more {
 
 a {
 	text-decoration: none;
+}
+
+/* ILO GRID */
+
+.large-3-col {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.large-5-col {
+	float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 41.66666667%;
+}
+
+.large-6-col {
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 50%;
+}
+
+.large-7-col {
+	float: left;
+	font-weight: 400;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	width: 58.3333333%;
+}
+
+.large-9-col {
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 75%;
+}
+
+.large-12-col {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
 }

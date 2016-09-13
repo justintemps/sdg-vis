@@ -98,7 +98,7 @@ header {
 .container {
 	margin: 0 auto;
 	position: relative;
-	width: 938px;
+	max-width: 938px;
 }
 
 .header-row {
@@ -112,6 +112,7 @@ header {
     display: table;
 }
 
+/*
 .large-6-col {
 	box-sizing: border-box;
 	float: left;
@@ -124,7 +125,9 @@ header {
 	width: 50%;
 }
 
+*/
 .large-7-col {
+/*
 	float: left;
 	font-weight: 400;
 	position: relative;
@@ -133,6 +136,7 @@ header {
 	padding-right: 15px;
 	box-sizing: border-box;
 	width: 58.3333333%;
+*/
 
 	nav div {
 
@@ -178,6 +182,7 @@ header {
 	}
 }
 
+/*
 .large-5-col {
 	float: left;
     position: relative;
@@ -200,6 +205,7 @@ header {
     box-sizing: border-box;
     width: 100%;
 }
+*/
 
 #logo {
 	background-size: cover;

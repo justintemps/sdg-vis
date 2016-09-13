@@ -4,8 +4,11 @@
 /* Typography etc. */
 @import "_base";
 
-/* Typography etc. */
+/* Header etc. */
 @import "../Components/Header/_header";
+
+/* PageTitle etc. */
+@import "../Components/PageTitle/_pageTitle";
 
 /* SDGexplorer */
 @import "../Components/SDGexplorer/_sdgexplorer";

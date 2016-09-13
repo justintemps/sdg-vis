@@ -28,29 +28,29 @@
 /* -- Color Palette -- */
 /* -- Global Goals -- */
 /* Colors List */
+html {
+  font-size: 62.5%; }
+
 html,
 body,
 #app,
 .wrapper,
 .sdgExplorer {
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important; }
 
-#app {
-  width: 100%; }
-
-.wrapper, .sdgExplorer {
+.wrapper, .sdgExplorer, #app, #title {
   margin: 0 auto;
   max-width: 938px;
+  position: relative;
   text-align: center; }
 
 h1 {
   display: inline;
-  font-size: 2.2em;
+  font-size: 4rem;
   color: #fff;
   font-family: "GiorgioSans-Bold", "Source Sans Pro", sans-serif;
   position: relative;
@@ -61,7 +61,7 @@ h1 {
 
 h2 {
   font-family: "Apex New Book", sans-serif;
-  font-size: 1.4em;
+  font-size: 2.4rem;
   font-weight: 400;
   color: #0080b0;
   line-height: 1.2em;
@@ -74,7 +74,7 @@ h2:hover {
 
 h3 {
   font-family: "Apex New Book", sans-serif;
-  font-size: .88em;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -83,7 +83,7 @@ h3 {
 h4 {
   color: #3bc3e4;
   font-family: "Apex New Book", sans-serif;
-  font-size: .9em;
+  font-size: .9rem;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -91,7 +91,7 @@ h4 {
 
 p, span {
   font-family: "Apex New Book", sans-serif;
-  font-size: 1em;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #2a2a2a;
   line-height: 1.3em;
@@ -111,7 +111,72 @@ span.more {
 a {
   text-decoration: none; }
 
-/* Typography etc. */
+/* ILO GRID */
+.large-3-col {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%; }
+
+.large-5-col {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 41.66666667%; }
+
+.large-6-col {
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 50%; }
+
+.large-7-col {
+  float: left;
+  font-weight: 400;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  width: 58.3333333%; }
+
+.large-9-col {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 75%; }
+
+.large-12-col {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; }
+
+/* Header etc. */
 /* Header*/
 /**
   * @TODO: Make links to assets relative
@@ -188,7 +253,7 @@ header {
 .container {
   margin: 0 auto;
   position: relative;
-  width: 938px; }
+  max-width: 938px; }
 
 .header-row {
   display: block;
@@ -199,26 +264,31 @@ header {
   content: " ";
   display: table; }
 
+/*
 .large-6-col {
-  box-sizing: border-box;
-  float: left;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  width: 50%; }
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 50%;
+}
 
+*/
 .large-7-col {
-  float: left;
-  font-weight: 400;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  box-sizing: border-box;
-  width: 58.3333333%; }
+  /*
+	float: left;
+	font-weight: 400;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	width: 58.3333333%;
+*/ }
   .large-7-col nav div ul {
     display: block;
     list-style-type: disc;
@@ -252,27 +322,30 @@ header {
       font-family: "FS Me Web Regular",Helvetica,Arial,Verdana,sans-serif;
       width: 89px !important; }
 
+/*
 .large-5-col {
-  float: left;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 41.66666667%; }
+	float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 41.66666667%;
+}
 
 .large-12-col {
-  float: left;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%; }
-
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+*/
 #logo {
   background-size: cover;
   background: url(http://www.ilo.org/wcmsp5/ilo/global/images/templates/ilo.png) no-repeat 0 0;
@@ -402,6 +475,30 @@ header {
   display: block;
   font-size: 0;
   line-height: 0; }
+
+/* PageTitle etc. */
+.page-title {
+  padding: 0 5px;
+  text-align: left; }
+  .page-title h1 {
+    color: #4B4B4B;
+    font-family: "FS Me Web Regular",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 4.5rem;
+    margin: .67em 0;
+    margin-top: 30px;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em; }
+  .page-title p, .page-title span {
+    font-family: "FS Me Web Regular",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.0250000000000004rem;
+    color: #4B4B4B;
+    font-weight: 400;
+    margin: 20px 0 13.5px;
+    -webkit-font-smoothing: antialiased; }
 
 /* SDGexplorer */
 /* SDGexplorer */
@@ -712,7 +809,7 @@ span .little-triangle-enter {
   text-align: left;
   width: calc(67% - 20px); }
   .defaultDescription p, .defaultDescription span {
-    font-size: 1.1em; }
+    font-size: 2rem; }
   .defaultDescription p:first-child, .defaultDescription span:first-child {
     margin: 0 0 20px 0; }
 
@@ -843,7 +940,7 @@ span .little-triangle-enter {
 
 /* TITLE BAR FOR INTRO */
 .defaultTitle {
-  font-size: 3.3em;
+  font-size: 5rem;
   line-height: 80%; }
 
 /* Focus Targets */
@@ -1275,7 +1372,7 @@ span .little-triangle-enter {
   .gglogo-container {
     display: none; }
   .defaultTitle {
-    font-size: 3em;
+    font-size: 3rem;
     line-height: .9em;
     margin-bottom: 15px; }
   /* FocusTargets */

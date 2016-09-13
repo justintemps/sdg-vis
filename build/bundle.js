@@ -67,12 +67,16 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
+	var _PageTitle = __webpack_require__(/*! ./Components/PageTitle/PageTitle.jsx */ 343);
+	
+	var _PageTitle2 = _interopRequireDefault(_PageTitle);
+	
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
 	(0, _reactDom.render)(_react2.default.createElement(_Header2.default, null), document.getElementById("header"));
-	
+	(0, _reactDom.render)(_react2.default.createElement(_PageTitle2.default, null), document.getElementById("title"));
 	(0, _reactDom.render)(_react2.default.createElement(_SDGexplorer2.default, null), document.getElementById("app"));
 
 /***/ },
@@ -22241,7 +22245,7 @@
 				return num;
 			}
 	
-			return _react2.default.createElement("div", { className: "wrapper" }, _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, {
+			return _react2.default.createElement("div", { className: "sdgExplorer" }, _react2.default.createElement(_Row2.default, {
 				startFrom: 0,
 				numberIcons: numberIcons(this.state.currentRow, true),
 				key: 1,
@@ -22276,7 +22280,7 @@
 				data: _data2.default,
 				rowChanged: this.state.rowChanged,
 				icons: _icons.icons
-			})));
+			}));
 		}
 	});
 	
@@ -30417,6 +30421,36 @@
 	});
 	
 	exports.default = Header;
+
+/***/ },
+/* 343 */
+/*!************************************************!*\
+  !*** ./src/Components/PageTitle/PageTitle.jsx ***!
+  \************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var PageTitle = _react2.default.createClass({
+		displayName: "PageTitle",
+		render: function render() {
+			return _react2.default.createElement("div", { className: "container" }, _react2.default.createElement("div", { className: "small-12-col medium-8-col large-9-col" }, _react2.default.createElement("header", { className: "page-title" }, _react2.default.createElement("h1", null, "Decent work and the 2030 Agenda for sustainable development"), _react2.default.createElement("p", null, "Through its mandate to promote decent work and social justice for all, the ILO\"s work cuts across all 17 of the Sustainable Development Goals. Click on any one of the goals below to start learning how."))));
+		}
+	});
+	
+	exports.default = PageTitle;
 
 /***/ }
 /******/ ]);

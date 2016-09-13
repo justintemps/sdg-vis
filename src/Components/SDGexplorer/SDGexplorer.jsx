@@ -180,54 +180,51 @@ const SDGexplorer = React.createClass({
 		}
 
 		return (
-			<div className="wrapper">
-				<div className="sdgExplorer">
+			<div className="sdgExplorer">
+				<Row
+					startFrom={0}
+					numberIcons={numberIcons(this.state.currentRow, true)}
+					key={1}
+					handler={this.selectSDG}
+					currentSdg={this.state.currentSdg}
+					data={data}
+					rowChanged={this.state.rowChanged}
+					icons={icons}
+				/>
 
-					<Row
-						startFrom={0}
-						numberIcons={numberIcons(this.state.currentRow, true)}
-						key={1}
-						handler={this.selectSDG}
-						currentSdg={this.state.currentSdg}
+				<ReactCSSTransitionGroup
+					transitionName="sliding-viewer"
+					transitionLeave={this.state.rowChanged}
+					transitionEnter={this.state.rowChanged}
+					transitionLeaveTimeout={500}
+					transitionEnterTimeout={1200}>
+
+					<ViewerWindow
 						data={data}
-						rowChanged={this.state.rowChanged}
-						icons={icons}
+						key={ this.state.rowChanged ? this.state.currentSdg : 900}
+						currentSdg={this.state.currentSdg}
+						focusTarget={this.state.focusTarget}
+						currentStory={this.state.currentStory}
+						selectFocusTarget={this.selectFocusTarget}
+						longDescription={this.state.longDescription}
+						toolTipVisible={this.state.toolTipVisible}
+						selectStory={this.selectStory}
+						setLongDescription={this.setLongDescription}
+						toggleToolTip={this.toggleToolTip}
 					/>
 
-					<ReactCSSTransitionGroup
-						transitionName="sliding-viewer"
-						transitionLeave={this.state.rowChanged}
-						transitionEnter={this.state.rowChanged}
-						transitionLeaveTimeout={500}
-						transitionEnterTimeout={1200}>
+				</ReactCSSTransitionGroup>
 
-						<ViewerWindow
-							data={data}
-							key={ this.state.rowChanged ? this.state.currentSdg : 900}
-							currentSdg={this.state.currentSdg}
-							focusTarget={this.state.focusTarget}
-							currentStory={this.state.currentStory}
-							selectFocusTarget={this.selectFocusTarget}
-							longDescription={this.state.longDescription}
-							toolTipVisible={this.state.toolTipVisible}
-							selectStory={this.selectStory}
-							setLongDescription={this.setLongDescription}
-							toggleToolTip={this.toggleToolTip}
-						/>
-
-					</ReactCSSTransitionGroup>
-
-					<Row
-						startFrom={startFrom(this.state.currentRow)}
-						numberIcons={numberIcons(this.state.currentRow, false)}
-						key={2}
-						handler={this.selectSDG}
-						currentSdg={this.state.currentSdg}
-						data={data}
-						rowChanged={this.state.rowChanged}
-						icons={icons}
-					/>
-				</div>
+				<Row
+					startFrom={startFrom(this.state.currentRow)}
+					numberIcons={numberIcons(this.state.currentRow, false)}
+					key={2}
+					handler={this.selectSDG}
+					currentSdg={this.state.currentSdg}
+					data={data}
+					rowChanged={this.state.rowChanged}
+					icons={icons}
+				/>
 			</div>
 		);
 	}
