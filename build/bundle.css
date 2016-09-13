@@ -46,6 +46,7 @@ html, body {
   align-content: flex-start;
   align-items: flex-start;
   justify-content: space-between;
+  margin: 0 auto;
   max-width: 1138px;
   width: 100%; }
 
@@ -432,7 +433,7 @@ header {
 
 #tertiary-banner {
   background-color: #263062;
-  margin: -4px 0 0;
+  margin: -7px 0 0;
   overflow: hidden; }
   #tertiary-banner .navbar-toggle {
     display: none;
@@ -518,8 +519,125 @@ header {
 /* Sidebar */
 .sidebar {
   height: 100px;
+  font-size: 1.35rem;
   width: 100%;
-  border: 1px solid red; }
+  font-family: "FS Me Web Bold",Helvetica,Arial,Verdana,sans-serif;
+  /*
+	.icon-angle-right:before {
+		content: "\f105";
+	}
+*/ }
+  .sidebar h4 {
+    border-bottom: 3px solid #CE5C3C;
+    background-color: #263062;
+    color: #FFF;
+    padding: 10px 10px 9px 15px;
+    margin-bottom: 15px;
+    line-height: 1.7rem;
+    font-size: 1.6rem;
+    font-weight: 600; }
+  .sidebar ol {
+    border: 1px solid #e4e4e4;
+    padding: 12px 12px 12px 12px;
+    margin-top: 0;
+    padding: 12px 7px 12px 7px; }
+    .sidebar ol li {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      list-style: none;
+      border-bottom: 1px solid #e4e4e4;
+      display: list-item;
+      text-align: -webkit-match-parent; }
+      .sidebar ol li a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        display: block;
+        color: #4B4B4B; }
+    .sidebar ol li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0; }
+
+.furniture {
+  margin: 30px 0 0; }
+  .furniture .slim-bar h4 {
+    margin: 0;
+    margin-bottom: 15px;
+    background: 0 0;
+    color: #4B4B4B;
+    font-family: "FS Me Web Bold",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 24px;
+    line-height: 2.4000000000000004rem;
+    line-height: 17px;
+    line-height: 1.7rem;
+    font-weight: 400;
+    padding: 10px 0 8px 0;
+    border-bottom: 3px solid #CE5C3C; }
+  .furniture .item-list {
+    padding: 10px 0 0;
+    overflow: hidden;
+    background-color: #FFF;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 12px 12px 12px;
+    list-style: none; }
+    .furniture .item-list li.highlight {
+      background-color: #f7f3ef !important;
+      border: 0 !important;
+      padding: 10px; }
+    .furniture .item-list a {
+      color: #4558b3;
+      font-size: 1.35rem;
+      font-weight: 400;
+      line-height: 2rem;
+      text-decoration: none; }
+    .furniture .item-list .item-image + span.caption {
+      font-size: 10px;
+      line-height: 15px;
+      display: block;
+      color: #4b4b4b;
+      background: #fff;
+      background: rgba(255, 255, 255, 0.7);
+      top: -8px;
+      position: relative; }
+    .furniture .item-list .item-prehead {
+      font-size: 1.2rem;
+      line-height: 1.7999999999999998rem;
+      color: #CE5C3C;
+      margin-top: 0;
+      margin-bottom: 5px; }
+    .furniture .item-list .item-info {
+      color: #767676;
+      font-size: 1.2rem;
+      line-height: 1.79999999999; }
+    .furniture .item-list .highlight a img {
+      max-width: 186px; }
+
+.furniture > h5 {
+  font-family: "FS Me Web Bold",Helvetica,Arial,Verdana,sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7999999999999998rem;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .furniture > h5 .text-wrap-img-left .item-image {
+    float: left;
+    margin: 0 10px 0 0 !important;
+    margin-bottom: 0; }
+
+.furniture.feature-multiple {
+  overflow: hidden; }
+  .furniture.feature-multiple h4 {
+    color: #4B4B4B;
+    background-color: #fff;
+    font-weight: 600;
+    margin: 0 0 15px;
+    padding: 10px 0 8px 0; }
+  .furniture.feature-multiple li:last-child {
+    margin-bottom: 0; }
 
 /* SDGexplorer */
 /* SDGexplorer */
