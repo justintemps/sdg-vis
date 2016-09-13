@@ -125,6 +125,25 @@ header {
   line-height: 2.0250000000000004rem;
   margin: 0 0 30px 0;
   -webkit-font-smoothing: antialiased; }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    /*
+		li.here a {
+			cursor: default;
+    		color: #4B4B4B;
+		}
+*/ }
+    header nav ul li {
+      float: left;
+      display: block;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: -webkit-match-parent; }
+      header nav ul li a {
+        color: #FFF;
+        padding: 12px 10px 14px 10px;
+        display: inline-block; }
 
 #primary-banner {
   background-color: #37468E;
@@ -325,6 +344,8 @@ header {
 
 #tertiary-banner {
   background-color: #263062;
+  font-size: 0;
+  line-height: 0;
   overflow: hidden; }
   #tertiary-banner .navbar-toggle {
     display: none;
@@ -373,7 +394,9 @@ header {
   -moz-osx-font-smoothing: grayscale; }
 
 .collapse {
-  display: block; }
+  display: block;
+  font-size: 0;
+  line-height: 0; }
 
 /* SDGexplorer */
 /* SDGexplorer */

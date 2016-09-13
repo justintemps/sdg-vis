@@ -13,6 +13,31 @@ header {
 	line-height: 2.0250000000000004rem;
 	margin: 0 0 30px 0;
 	-webkit-font-smoothing: antialiased;
+
+	nav ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			float: left;
+			display: block;
+			font-size: 12px;
+			line-height: 17px;
+    		text-align: -webkit-match-parent;
+
+			a {
+				color: #FFF;
+				padding: 12px 10px 14px 10px;
+				display: inline-block;
+			}
+		}
+/*
+		li.here a {
+			cursor: default;
+    		color: #4B4B4B;
+		}
+*/
+	}
 }
 
 #primary-banner {
@@ -261,7 +286,10 @@ header {
 
 #tertiary-banner {
 	background-color: #263062;
+	font-size: 0;
+	line-height: 0;
 	overflow: hidden;
+	
 
 	.navbar-toggle {
 		display: none;
@@ -328,4 +356,6 @@ header {
 
 .collapse {
 	display: block;
+	font-size: 0;
+	line-height: 0;
 }
