@@ -9,7 +9,7 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 import Row from "../Row/Row.jsx";
 import ViewerWindow from "../ViewerWindow/ViewerWindow.jsx";
-import data from "!json!../../data1.json";
+import data from "!json!../../data.json";
 import {icons} from "../Icon/icons.js";
 
 const SDGexplorer = React.createClass({

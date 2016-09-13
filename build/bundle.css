@@ -31,23 +31,33 @@
 html {
   font-size: 62.5%; }
 
-html,
-body,
-#app,
-.wrapper,
-.sdgExplorer {
+html, body {
   width: 100%;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important; }
 
-.wrapper, .sdgExplorer, #app, #title {
-  display: block;
-  margin: 0 auto;
-  max-width: 938px;
-  position: relative;
-  text-align: center; }
+.body-content {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1138px;
+  width: 100%; }
+
+.left-col {
+  flex-basis: 25%; }
+
+.right-col {
+  flex-basis: 75%; }
+
+.left-col, .right-col {
+  box-sizing: border-box;
+  padding: 0 15px; }
 
 #app {
   display: inline-block; }
@@ -180,7 +190,7 @@ a {
   box-sizing: border-box;
   width: 100%; }
 
-/* Header etc. */
+/* Header */
 /* Header*/
 /**
   * @TODO: Make links to assets relative
@@ -190,6 +200,7 @@ header {
   display: block;
   font-family: "FS Me Web Regular", Helvetica, Arial, Verdana, sans-serif;
   font-weight: 600;
+  line-height: 2.0250000000000004rem;
   margin: 0 0 30px 0;
   -webkit-font-smoothing: antialiased; }
   header nav ul {
@@ -257,7 +268,7 @@ header {
 .container {
   margin: 0 auto;
   position: relative;
-  max-width: 938px; }
+  max-width: 1138px; }
 
 .header-row {
   display: block;
@@ -480,7 +491,7 @@ header {
   font-size: 0;
   line-height: 0; }
 
-/* PageTitle etc. */
+/* PageTitle */
 .page-title {
   padding: 0 5px;
   text-align: left; }
@@ -503,6 +514,12 @@ header {
     font-weight: 400;
     margin: 20px 0 13.5px;
     -webkit-font-smoothing: antialiased; }
+
+/* Sidebar */
+.sidebar {
+  height: 100px;
+  width: 100%;
+  border: 1px solid red; }
 
 /* SDGexplorer */
 /* SDGexplorer */

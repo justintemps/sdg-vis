@@ -71,12 +71,17 @@
 	
 	var _PageTitle2 = _interopRequireDefault(_PageTitle);
 	
+	var _Sidebar = __webpack_require__(/*! ./Components/Sidebar/Sidebar.jsx */ 344);
+	
+	var _Sidebar2 = _interopRequireDefault(_Sidebar);
+	
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
 	(0, _reactDom.render)(_react2.default.createElement(_Header2.default, null), document.getElementById("header"));
 	(0, _reactDom.render)(_react2.default.createElement(_PageTitle2.default, null), document.getElementById("title"));
+	(0, _reactDom.render)(_react2.default.createElement(_Sidebar2.default, null), document.getElementById("sidebar"));
 	(0, _reactDom.render)(_react2.default.createElement(_SDGexplorer2.default, null), document.getElementById("app"));
 
 /***/ },
@@ -22064,7 +22069,7 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	var _data = __webpack_require__(/*! json!../../data1.json */ 211);
+	var _data = __webpack_require__(/*! json!../../data.json */ 211);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -24113,9 +24118,9 @@
 
 /***/ },
 /* 211 */
-/*!****************************************!*\
-  !*** ./~/json-loader!./src/data1.json ***!
-  \****************************************/
+/*!***************************************!*\
+  !*** ./~/json-loader!./src/data.json ***!
+  \***************************************/
 /***/ function(module, exports) {
 
 	module.exports = [
@@ -30741,6 +30746,36 @@
 	});
 	
 	exports.default = PageTitle;
+
+/***/ },
+/* 344 */
+/*!********************************************!*\
+  !*** ./src/Components/Sidebar/Sidebar.jsx ***!
+  \********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Sidebar = _react2.default.createClass({
+		displayName: "Sidebar",
+		render: function render() {
+			return _react2.default.createElement("div", { className: "sidebar" });
+		}
+	});
+	
+	exports.default = Sidebar;
 
 /***/ }
 /******/ ]);

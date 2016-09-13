@@ -4,10 +4,7 @@ html {
 	font-size: 62.5%;
 }
 
-html,
-body,
-#app,
-.wrapper {
+html, body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -15,17 +12,33 @@ body,
 	-webkit-font-smoothing: antialiased !important;
 }
 
-.wrapper, #app, #title {
-	display: block;
-	margin: 0 auto;
-	max-width: 938px;
-	position: relative;
-	text-align: center;
+.body-content {
+	@include flex();
+	align-content: flex-start;
+	align-items: flex-start;
+	justify-content: space-between;
+	max-width: 1138px;
+	width: 100%;
+}
+
+.left-col {
+	flex-basis: 25%;
+}
+
+.right-col {
+	flex-basis: 75%;
+}
+
+.left-col, .right-col {
+	box-sizing: border-box;
+	padding: 0 15px;
 }
 
 #app {
 	display: inline-block;
 }
+
+
 
 h1 {
 	display: inline;

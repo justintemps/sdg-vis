@@ -4,11 +4,14 @@
 /* Typography etc. */
 @import "_base";
 
-/* Header etc. */
+/* Header */
 @import "../Components/Header/_header";
 
-/* PageTitle etc. */
+/* PageTitle */
 @import "../Components/PageTitle/_pageTitle";
+
+/* Sidebar */
+@import "../Components/Sidebar/_sidebar";
 
 /* SDGexplorer */
 @import "../Components/SDGexplorer/_sdgexplorer";
