@@ -16,10 +16,15 @@ body,
 }
 
 .wrapper, #app, #title {
+	display: block;
 	margin: 0 auto;
 	max-width: 938px;
 	position: relative;
 	text-align: center;
+}
+
+#app {
+	display: inline-block;
 }
 
 h1 {

@@ -4,7 +4,7 @@ const PageTitle = React.createClass({
 	render() {
 		return(
 			<div className="container">
-				<div className="small-12-col medium-8-col large-9-col">
+				<div className="small-12-col medium-8-col large-12-col">
 					<header className="page-title">
 						<h1>Decent work and the 2030 Agenda for sustainable development</h1>
 						<p>

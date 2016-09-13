@@ -22064,7 +22064,7 @@
 	
 	var _ViewerWindow2 = _interopRequireDefault(_ViewerWindow);
 	
-	var _data = __webpack_require__(/*! json!../../data.json */ 211);
+	var _data = __webpack_require__(/*! json!../../data1.json */ 211);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -22169,6 +22169,7 @@
 			}
 		},
 		render: function render() {
+	
 			var isMobile = this.state.isMobile;
 	
 			/**
@@ -23474,6 +23475,10 @@
 				return { description: target.description, number: target.number };
 			});
 	
+			var iloTargets = this.props.data[this.props.sdgNumber].iloTargets.map(function (target) {
+				return { description: target.description, number: target.number };
+			});
+	
 			// Get the impact stories data for the current SDG
 			var impactStories = this.props.data[this.props.sdgNumber].stories.map(function (story) {
 				return {
@@ -23489,7 +23494,7 @@
 				return _react2.default.createElement(_DefaultViewerWindowContent2.default, null);
 			} else {
 				return _react2.default.createElement("div", { className: "viewerWindowContent" }, _react2.default.createElement(_FocusTargets2.default, {
-					focusTargets: focusTargets,
+					iloTargets: iloTargets,
 					focusTarget: this.props.focusTarget,
 					selectFocusTarget: this.props.selectFocusTarget,
 					currentSDG: this.props.sdgNumber,
@@ -23600,7 +23605,7 @@
 	
 			var heading = "Where the ILO comes in";
 	
-			var bullets = this.props.focusTargets.map(function (target, i) {
+			var bullets = this.props.iloTargets.map(function (target, i) {
 				return _react2.default.createElement(_Bullet2.default, { type: "focusTarget",
 					key: i,
 					id: i,
@@ -23615,8 +23620,8 @@
 	
 			return _react2.default.createElement("div", { className: "focusTargets" }, _react2.default.createElement("div", null, _react2.default.createElement("div", { className: "targetSelector" }, _react2.default.createElement("h3", { style: style }, heading), _react2.default.createElement("ul", { className: "bullets" }, bullets)), _react2.default.createElement("div", { className: "target-description-wrapper" }, _react2.default.createElement(_Description2.default, {
 				focusTarget: this.props.focusTarget,
-				description: this.props.focusTargets[this.props.focusTarget].description,
-				targetNumber: this.props.focusTargets[this.props.focusTarget].number,
+				description: this.props.iloTargets[this.props.focusTarget].description,
+				targetNumber: this.props.iloTargets[this.props.focusTarget].number,
 				color: this.props.data[this.props.currentSDG].sdgColor,
 				longDescription: this.props.longDescription,
 				setLongDescription: this.props.setLongDescription,
@@ -24065,26 +24070,9 @@
 				};
 			}
 		},
-	
-		/*
-	 	showToolTip: {
-	 		opacity: 1,
-	 		transform: "translateY(0)",
-	 		visibility: "visible",
-	 		backgroundColor: this.bgColor()
-	 	},
-	 
-	 	hideToolTip: {
-	 		opacity: 0,
-	 		transform: "translateY(10px)",
-	 		visibility: "hidden",
-	 		backgroundColor: this.bgColor()
-	 	},
-	 */
 		render: function render() {
 	
-			return _react2.default.createElement("div", { style: this.styles(),
-				className: "tooltip" }, this.props.focusTargets[this.props.focusTarget].description);
+			return _react2.default.createElement("div", { style: this.styles(), className: "tooltip" }, _react2.default.createElement("div", { className: "target-number" }, "Target ", this.props.focusTargets[this.props.focusTarget].number), this.props.focusTargets[this.props.focusTarget].description);
 		}
 	});
 	
@@ -24125,9 +24113,9 @@
 
 /***/ },
 /* 211 */
-/*!***************************************!*\
-  !*** ./~/json-loader!./src/data.json ***!
-  \***************************************/
+/*!****************************************!*\
+  !*** ./~/json-loader!./src/data1.json ***!
+  \****************************************/
 /***/ function(module, exports) {
 
 	module.exports = [
@@ -24138,44 +24126,8 @@
 			"sdgIcon": "./src/images/sdg0.svg",
 			"sdgColor": "#37468E",
 			"focusTargets": [],
-			"stories": [
-				{
-					"title": "Decent Work in the Era of Sustainable Development",
-					"blurb": "'If this agenda can become a reality in the next 15 years, we will be turning the tide back in the direction of social justice and assuring a sustainable and fairer society for us and our children' ILO Director-General Guy Ryder",
-					"url": "http://www.ilo.org/global/about-the-ilo/how-the-ilo-works/ilo-director-general/statements-and-speeches/WCMS_493769/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_204847.jpg"
-				},
-				{
-					"title": "What is Decent Work?",
-					"blurb": "The importance of decent work in achieving the newly adopted Sustainable Development Goals is highlighted by Goal 8 which aims to “promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all”.",
-					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_408971/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_408966.jpg"
-				},
-				{
-					"title": "Decent Work in the Sustainable Development Goals",
-					"blurb": "The Sustainable Development Goals set targets for the next fifteen years. As the process of achieving the 17 Goals gains momentum, putting decent work and strengthening social protection are crucial to achieving global prosperity.",
-					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_408995/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_408982.jpg"
-				},
-				{
-					"title": "The World of Work Today",
-					"blurb": "What is the state of decent work in the world today? ILO Director-General Guy Ryder takes the measure of Decent Work in a world buffeted by profound change and growing inequality.",
-					"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_411968/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_411976.jpg"
-				},
-				{
-					"title": "World parliament of labour sets the course for global action to shape the future of work.",
-					"blurb": "ILO sets course to promote decent work in global supply chains, in transition from conflict and crisis and in making poverty history by 2030",
-					"url": "http://www.ilo.org/ilc/ILCSessions/105/media-centre/news/WCMS_489199/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_489203.jpg"
-				},
-				{
-					"title": "ILO welcomes call for stronger efforts to promote decent work and inclusive growth",
-					"blurb": "A meeting between the German Chancellor and the heads of the OECD, WTO, IMF, World Bank and the ILO has agreed on the central role of decent work in meeting policy challenges in the coming year.",
-					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_466871/lang--en/index.htm",
-					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_466903.jpg"
-				}
-			]
+			"iloTargets": [],
+			"stories": []
 		},
 		{
 			"sdgNumber": 1,
@@ -24183,7 +24135,7 @@
 			"sdgNameShort": "No poverty",
 			"sdgIcon": "./src/images/sdg1.svg",
 			"sdgColor": "#e5243b",
-			"focusTargets": [
+			"iloTargets": [
 				{
 					"number": "1.1",
 					"description": "ILO research shows it would cost $US 10 trillion to eradicate extreme poverty by 2030. But that can't be accomplished sustainably without more and better jobs."
@@ -24198,15 +24150,41 @@
 				},
 				{
 					"number": "1.5",
-					"description": "ILO works in countries around the globe to help families in poor communities gain access to financial services like insurance and microcredit."
+					"description": "The ILO works in countries around the globe to help families in poor communities gain access to financial services like insurance and microcredit."
 				},
 				{
 					"number": "1.6",
-					"description": "ILO supports an employment-centred recovery from conflict, turmoil and disasters while promoting decent work and social justice as key drivers of social cohesion and the prevention of further conflict."
+					"description": "The ILO supports an employment-centred recovery from conflict, turmoil and disasters while promoting decent work and social justice as key drivers of social cohesion and the prevention of further conflict."
 				},
 				{
 					"number": "1.b",
-					"description": "ILO works to promote decent work opportunities and a social protection floor for all women and men so that no one is left behind and everyone has the opportunity to sustain themselves, their families and aspire to a better future."
+					"description": "The ILO works to promote decent work opportunities and a social protection floor for all women and men so that no one is left behind and everyone has the opportunity to sustain themselves, their families and aspire to a better future."
+				}
+			],
+			"focusTargets": [
+				{
+					"number": "1.1",
+					"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
+				},
+				{
+					"number": "1.2",
+					"description": "By 2030, reduce at least by half the proportion of men, women and children living in poverty in all its dimensions according to national definitions"
+				},
+				{
+					"number": "1.3",
+					"description": "Implement nationally appropriate social protection systems"
+				},
+				{
+					"number": "1.5",
+					"description": "Ensure that all men and women, have equal rights to economic resources, including microfinance"
+				},
+				{
+					"number": "1.6",
+					"description": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
+				},
+				{
+					"number": "1.b",
+					"description": "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
 				}
 			],
 			"stories": [
@@ -24236,14 +24214,24 @@
 			"sdgNameShort": "No hunger",
 			"sdgIcon": "./src/images/sdg2.svg",
 			"sdgColor": "#dda63a",
-			"focusTargets": [
+			"iloTargets": [
 				{
 					"number": "2.3",
 					"description": "The ILO is helping farmers to double their productivity by 2030 through skills-building activities ranging from business development to support for farmers’ cooperatives."
 				},
 				{
 					"number": "2.4",
-					"description": "ILO promotes job-intensive rural infrastructure development, much of which has included support for rural road construction and maintenance, mechanization, irrigation, advances in productivity and access to markets for small-scale farmers and agricultural workers."
+					"description": "The ILO promotes job-intensive rural infrastructure development, much of which has included support for rural road construction and maintenance, mechanization, irrigation, advances in productivity and access to markets for small-scale farmers and agricultural workers."
+				}
+			],
+			"focusTargets": [
+				{
+					"number": "2.3",
+					"description": "Double the agricultural productivity and incomes of small-scale food producers"
+				},
+				{
+					"number": "2.4",
+					"description": "Implement resilient agricultural practices that increase productivity and production"
 				}
 			],
 			"stories": [
@@ -24273,10 +24261,10 @@
 			"sdgNameShort": "Good health",
 			"sdgIcon": "./src/images/sdg3.svg",
 			"sdgColor": "#4c9f38",
-			"focusTargets": [
+			"iloTargets": [
 				{
 					"number": "3.3",
-					"description": "ILO helps countries develop and implement policies to protect workers from HIV infection and facilitate equal access to care, treatment, support and social protection for everyone who is living with or affected by HIV and AIDS."
+					"description": "The ILO helps countries develop and implement policies to protect workers from HIV infection and facilitate equal access to care, treatment, support and social protection for everyone who is living with or affected by HIV and AIDS."
 				},
 				{
 					"number": "3.8",
@@ -24284,7 +24272,21 @@
 				},
 				{
 					"number": "3.9",
-					"description": "ILO has adopted 14 International Labour Standards guiding the use of industrial chemicals with the goal of protecting the health and safety of both workers and consumers."
+					"description": "The ILO has adopted 14 International Labour Standards guiding the use of industrial chemicals with the goal of protecting the health and safety of both workers and consumers."
+				}
+			],
+			"focusTargets": [
+				{
+					"number": "3.3",
+					"description": "By 2030, end the epidemic of AIDS"
+				},
+				{
+					"number": "3.8",
+					"description": "Achieve universal health coverage"
+				},
+				{
+					"number": "3.9",
+					"description": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination"
 				}
 			],
 			"stories": [
@@ -24314,14 +24316,14 @@
 			"sdgNameShort": "Quality education",
 			"sdgIcon": "./src/images/sdg4.svg",
 			"sdgColor": "#c5192d",
-			"focusTargets": [
+			"iloTargets": [
 				{
 					"number": "4.4",
 					"description": "Improving the skills and employability of the world's workers is a central tenant of ILO's mandate, which it achieves through a vast range of research and training activities."
 				},
 				{
 					"number": "4.5",
-					"description": "ILO is a powerful advocate for equal access to training and education for women, which it promotes through active policy recommendations to countries as well as skills-building programmes specifically targeting women."
+					"description": "The ILO is a powerful advocate for equal access to training and education for women, which it promotes through active policy recommendations to countries as well as skills-building programmes specifically targeting women."
 				},
 				{
 					"number": "4.b",
@@ -24329,7 +24331,25 @@
 				},
 				{
 					"number": "4.c",
-					"description": "ILO is a powerful ally of educators around the globe. In addition to promoting training activities for teachers, ILO also works to defend their rights and empower them to help defend the rights of children."
+					"description": "The ILO is a powerful ally of educators around the globe. In addition to promoting training activities for teachers, ILO also works to defend their rights and empower them to help defend the rights of children."
+				}
+			],
+			"focusTargets": [
+				{
+					"number": "4.4",
+					"description": "By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship"
+				},
+				{
+					"number": "4.5",
+					"description": "Eliminate gender disparities in education and ensure equal access to all levels of education"
+				},
+				{
+					"number": "4.b",
+					"description": "By 2020, substantially expand globally the number of scholarships available to developing countries for enrolment in higher education, including vocational training"
+				},
+				{
+					"number": "4.c",
+					"description": "By 2030, substantially increase the supply of qualified teachers"
 				}
 			],
 			"stories": [
@@ -24359,22 +24379,22 @@
 			"sdgNameShort": "Gender Equality",
 			"sdgIcon": "./src/images/sdg5.svg",
 			"sdgColor": "#ff3a21",
-			"focusTargets": [
+			"iloTargets": [
 				{
 					"number": "5.1",
-					"description": "ILO is dedicated to ending discrimination against women in the workplace and to ensuring equal education opportunities for girls"
+					"description": "The ILO is dedicated to ending discrimination against women in the workplace and to ensuring equal education opportunities for girls."
 				},
 				{
 					"number": "5.2",
-					"description": "ILO works on many fronts to end violence against women, both as part of its commitment to defend the rights of women at work and through its work to combat forced labour and human trafficking, of which women are the most frequent victims."
+					"description": "The ILO works on many fronts to end violence against women, both as part of its commitment to defend the rights of women at work and through its work to combat forced labour and human trafficking, of which women are the most frequent victims."
 				},
 				{
 					"number": "5.4",
-					"description": "ILO is an outspoken champion of working mothers, on whose behalf it continues to advocate for maternity protections at work and social protections to safeguard their families."
+					"description": "The ILO is an outspoken champion of working mothers, on whose behalf it continues to advocate for maternity protections at work and social protections to safeguard their families."
 				},
 				{
 					"number": "5.5",
-					"description": "ILO works with businesses, workers' groups and governments to promote the advancement of women into positions of leadership at all levels of society."
+					"description": "The ILO works with businesses, workers' groups and governments to promote the advancement of women into positions of leadership at all levels of society."
 				},
 				{
 					"number": "5.a",
@@ -24383,6 +24403,32 @@
 				{
 					"number": "5.c",
 					"description": "International Labour Standards on equality of opportunity form the basis of legislation protecting the rights of women workers in countries around the world."
+				}
+			],
+			"focusTargets": [
+				{
+					"number": "5.1",
+					"description": "End all forms of discrimination against all women and girls"
+				},
+				{
+					"number": "5.2",
+					"description": "Eliminate all forms of violence against all women and girls in the public and private spheres, including trafficking"
+				},
+				{
+					"number": "5.4",
+					"description": "Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies and the promotion of shared responsibility within the household and the family as nationally appropriate"
+				},
+				{
+					"number": "5.5",
+					"description": "Ensure women’s full and effective participation and equal opportunities for leadership at all levels of decision-making in political, economic and public life"
+				},
+				{
+					"number": "5.a",
+					"description": "Undertake reforms to give women equal rights to economic resources"
+				},
+				{
+					"number": "5.c",
+					"description": "Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels"
 				}
 			],
 			"stories": [
@@ -24412,10 +24458,16 @@
 			"sdgNameShort": "Clean water and sanitation",
 			"sdgIcon": "./src/images/sdg6.svg",
 			"sdgColor": "#26bde2",
-			"focusTargets": [
+			"iloTargets": [
 				{
 					"number": "6.3",
 					"description": "An estimated three out of four jobs on Earth are heavily or moderately dependent on water. Access to improved drinking water and sanitation facilitates job creation and a healthy, educated and productive workforce which is the foundation for growth."
+				}
+			],
+			"focusTargets": [
+				{
+					"number": "6.3",
+					"description": "By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally"
 				}
 			],
 			"stories": [
@@ -24439,18 +24491,32 @@
 			"sdgNameShort": "Renewable energy",
 			"sdgIcon": "./src/images/sdg7.svg",
 			"sdgColor": "#fcc30b",
-			"focusTargets": [
+			"iloTargets": [
 				{
 					"number": "7.1",
-					"description": "ILO promotes improvements in energy efficiency and enhanced access to energy for businesses as a way of stimulating the creation of new jobs."
+					"description": "The ILO promotes improvements in energy efficiency and enhanced access to energy for businesses as a way of stimulating the creation of new jobs."
 				},
 				{
 					"number": "7.2",
-					"description": "ILO's Green Jobs programme helps businessses transition to a lower-carbon energy sources as a means of stimulating the creation of new, environmentally friendly jobs."
+					"description": "The ILO's Green Jobs programme helps businessses transition to a lower-carbon energy sources as a means of stimulating the creation of new, environmentally friendly jobs."
 				},
 				{
 					"number": "7.b",
-					"description": "ILO supports the creation of green enterprises, particularly in developing countries, through training progarmmes that teach young entrepreneurs how to start and run green businesses."
+					"description": "The ILO supports the creation of green enterprises, particularly in developing countries, through training progarmmes that teach young entrepreneurs how to start and run green businesses."
+				}
+			],
+			"focusTargets": [
+				{
+					"number": "7.1",
+					"description": "By 2030, ensure universal access to affordable, reliable and modern energy services."
+				},
+				{
+					"number": "7.2",
+					"description": "By 2030, increase substantially the share of renewable energy in the global energy mix."
+				},
+				{
+					"number": "7.b",
+					"description": "By 2030, expand infrastructure and upgrade technology for supplying modern and sustainable energy services for all in developing countries, in particular least developed countries, small island developing States and land-locked developing countries, in accordance with their respective programmes of support."
 				}
 			],
 			"stories": [
@@ -24480,18 +24546,18 @@
 			"sdgNameShort": "Good Jobs and Economic Growth",
 			"sdgIcon": "./src/images/sdg8.svg",
 			"sdgColor": "#a21942",
-			"focusTargets": [
+			"iloTargets": [
 				{
 					"number": "8.1",
-					"description": "ILO's mission, to ensure that all women and men have opportunities for decent work, work is not only a goal but also a driver of sustainable development. More women and men in productive and decent jobs means stronger and more inclusive economic growth."
+					"description": "The ILO's mission, to ensure that all women and men have opportunities for decent work, work is not only a goal but also a driver of sustainable development. More women and men in productive and decent jobs means stronger and more inclusive economic growth."
 				},
 				{
 					"number": "8.2",
-					"description": "ILO's mission to advance decent work is also about improving productivity, which it pursues by promoting cooperation among governments, employers and workers."
+					"description": "The ILO's mission to advance decent work is also about improving productivity, which it pursues by promoting cooperation among governments, employers and workers."
 				},
 				{
 					"number": "8.3",
-					"description": "ILO promotes development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services."
+					"description": "The ILO promotes development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services."
 				},
 				{
 					"number": "8.4",
@@ -24511,23 +24577,73 @@
 				},
 				{
 					"number": "8.8",
-					"description": "ILO works to forge policies that maximize the benefits of labour migration while protecting the rights of all those involved, especially women."
+					"description": "The ILO works to forge policies that maximize the benefits of labour migration while protecting the rights of all those involved, especially women."
 				},
 				{
 					"number": "8.9",
-					"description": "ILO's expertise in the sphere of sustainable tourism for development provides a framework for policies that creates jobs and promotes local culture and products."
+					"description": "The ILO's expertise in the sphere of sustainable tourism for development provides a framework for policies that creates jobs and promotes local culture and products."
 				},
 				{
 					"number": "8.10",
-					"description": "ILO works with a broad range of actors in government and the financial services industry to expand access to banking, insurance and access to credit for all."
+					"description": "The ILO works with a broad range of actors in government and the financial services industry to expand access to banking, insurance and access to credit for all."
 				},
 				{
 					"number": "8.a",
-					"description": "ILO takes part in multiple Aid for Trade Initiatives, which seek to help developing countries leverage international trade to acheive their development goals, such as the creation of decent jobs."
+					"description": "The ILO works with a broad range of actors in government and the financial services industry to expand access to banking, insurance and access to credit for all."
 				},
 				{
 					"number": "8.b",
-					"description": "ILO is a key driver behind the Global Initiative on Decent Jobs for Youth, a global collaboration to move millions of young people into education, training and decent work."
+					"description": "The ILO is a key driver behind the Global Initiative on Decent Jobs for Youth, a global collaboration to move millions of young people into education, training and decent work."
+				}
+			],
+			"focusTargets": [
+				{
+					"number": "8.1",
+					"description": "Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries"
+				},
+				{
+					"number": "8.2",
+					"description": "Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors"
+				},
+				{
+					"number": "8.3",
+					"description": "Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services"
+				},
+				{
+					"number": "8.4",
+					"description": "Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10-year framework of programmes on sustainable consumption and production, with developed countries taking the lead"
+				},
+				{
+					"number": "8.5",
+					"description": "By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value"
+				},
+				{
+					"number": "8.6",
+					"description": "By 2020, substantially reduce the proportion of youth not in employment, education or training"
+				},
+				{
+					"number": "8.7",
+					"description": "Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms"
+				},
+				{
+					"number": "8.8",
+					"description": "Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment"
+				},
+				{
+					"number": "8.9",
+					"description": "By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products"
+				},
+				{
+					"number": "8.10",
+					"description": "Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all"
+				},
+				{
+					"number": "8.a",
+					"description": "Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-Related Technical Assistance to Least Developed Countries"
+				},
+				{
+					"number": "8.b",
+					"description": "By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization"
 				}
 			],
 			"stories": [
@@ -24544,6 +24660,18 @@
 					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_486063.jpg"
 				},
 				{
+					"title": "Stars sign up to end modern slavery",
+					"blurb": "Robin Wright, David Oyelowo and Wagner Moura give voice to victims of modern slavery, as the International Labour Organization launches its 50 for Freedom campaign.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_416433/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_416435.jpg"
+				},
+				{
+					"title": "Building a global alliance against child labour and forced labour",
+					"blurb": "Learn more about how Alliance 8.7 will help achieve target 8.7 of the United Nations’ SDGs which calls for an end to forced labour and child labour by 2025.",
+					"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_421016/lang--en/index.htm",
+					"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_421226.jpg"
+				},
+				{
 					"title": "From refugee in Kenya to business owner in Somalia",
 					"blurb": "The story of one of the beneficiaries of ILO’s Durable Solutions for Somali refugee returnees through Repatriation, Assistance and Promoting Sustainable Livelihood project.",
 					"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
@@ -24557,18 +24685,32 @@
 			"sdgNameShort": "Innovation and infrastructure",
 			"sdgIcon": "./src/images/sdg9.svg",
 			"sdgColor": "#fd6925",
-			"focusTargets": [
+			"iloTargets": [
 				{
 					"number": "9.1",
-					"description": "ILO has a long history of providing sustainable approaches to local and community infrastracture develompent in ways that spur the creation of decent jobs."
+					"description": "The ILO has a long history of providing sustainable approaches to local and community infrastracture develompent in ways that spur the creation of decent jobs."
 				},
 				{
 					"number": "9.2",
-					"description": "ILO promotes inclusive and sustainable industrialization throughout the world through expert policy advice geared towards the creation of decent jobs."
+					"description": "The ILO promotes inclusive and sustainable industrialization throughout the world through expert policy advice geared towards the creation of decent jobs."
 				},
 				{
 					"number": "9.3",
-					"description": "ILO's value-chain development methodologies are state of the art tools for job creation, particularly in the case of small-scale enterprises."
+					"description": "The ILO's value-chain development methodologies are state of the art tools for job creation, particularly in the case of small-scale enterprises."
+				}
+			],
+			"focusTargets": [
+				{
+					"number": "9.1",
+					"description": "Develop quality, reliable, sustainable and resilient infrastructure to support economic development and human well-being"
+				},
+				{
+					"number": "9.2",
+					"description": "Promote inclusive and sustainable industrialization and significantly raise industry's share of employment"
+				},
+				{
+					"number": "9.3",
+					"description": "Increase the access of small-scale industrial and other enterprises, to financial services, value chains"
 				}
 			],
 			"stories": [
@@ -24598,18 +24740,18 @@
 			"sdgNameShort": "Reduced Inequalities",
 			"sdgIcon": "./src/images/sdg10.svg",
 			"sdgColor": "#dd1367",
-			"focusTargets": [
+			"iloTargets": [
 				{
 					"number": "10.1",
-					"description": "ILO's mission to ensure decent work for all women and men is a key step towrds boosting income growth for the poorest 40 per cent of the population"
+					"description": "The ILO's mission to ensure decent work for all women and men is a key step towrds boosting income growth for the poorest 40 per cent of the population."
 				},
 				{
 					"number": "10.2",
-					"description": "ILO works with governments, employers and workers to promote the social, economic and political inclusion of all, regardless of age, sex, disability, race, ethnicity, origin, religion or economic status."
+					"description": "The ILO works with governments, employers and workers to promote the social, economic and political inclusion of all, regardless of age, sex, disability, race, ethnicity, origin, religion or economic status."
 				},
 				{
 					"number": "10.3",
-					"description": "ILO's work promoting decent work for all aims to narrow the gap between the richest and poorest members of society."
+					"description": "The ILO's work promoting decent work for all aims to narrow the gap between the richest and poorest members of society."
 				},
 				{
 					"number": "10.4",
@@ -24617,11 +24759,45 @@
 				},
 				{
 					"number": "10.5",
-					"description": "ILO research informs policy makers about the implications of financial market volitility for workers and their families, and makes the case for a fairer system of globalization."
+					"description": "ILO research informs policy makers about the implications of financial market volatility for workers and their families, and makes the case for a fairer system of globalization."
 				},
 				{
 					"number": "10.6",
-					"description": "ILO's tripartite structure, which gives an equal voice to governments, employers and workers, "
+					"description": "ILO's emphasis on social dialogue empowers governments, employers and workers in over 180 countries who have an equal voice in the adoption of international labour standards."
+				},
+				{
+					"number": "10.7",
+					"description": "ILO research shows that most migrants leave their homes in search of work. ILO helps countries craft migration policies that maximize the benefits to all those involved."
+				},
+				{
+					"number": "10.c",
+					"description": "The ILO works with financial services worldwide to help lower the cost of remittances from migrants, while working with migrants themselves to help them make informed decisions about the financial services they choose."
+				}
+			],
+			"focusTargets": [
+				{
+					"number": "10.1",
+					"description": "Progressively achieve and sustain income growth of the bottom 40 per cent of the population"
+				},
+				{
+					"number": "10.2",
+					"description": "Empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status"
+				},
+				{
+					"number": "10.3",
+					"description": "Ensure equal opportunity and reduce inequalities of outcome, including by eliminating discriminatory laws, policies and practices and promoting appropriate legislation, policies and action"
+				},
+				{
+					"number": "10.4",
+					"description": "Adopt policies, especially fiscal, wage and social protection policies, and progressively achieve gender equality"
+				},
+				{
+					"number": "10.5",
+					"description": "Improve the regulation and monitoring of global financial markets and institutions and strengthen the implementation of such regulations"
+				},
+				{
+					"number": "10.6",
+					"description": "Ensure enhanced representation and voice for developing countries in decision-making in global international economic and financial institutions in order to deliver more effective, credible, accountable and legitimate institutions"
 				},
 				{
 					"number": "10.7",
@@ -24653,6 +24829,20 @@
 			"sdgNameShort": "Sustainable Cities and Communities",
 			"sdgIcon": "./src/images/sdg11.svg",
 			"sdgColor": "#fd9d24",
+			"iloTargets": [
+				{
+					"number": "11.1",
+					"description": "ILO projects in several developing countries help to stimulate the creation of decent jobs by providing affordable housing to low-income communities."
+				},
+				{
+					"number": "11.2",
+					"description": "The ILO promotes social dialogue in the public transportation sector as well as the safety and health of public transport workers."
+				},
+				{
+					"number": "11.c",
+					"description": "The ILO Green Jobs initiatives help businesses in least-developed countries use local materials to build safe and sustainable homes and workplaces."
+				}
+			],
 			"focusTargets": [
 				{
 					"number": "11.1",
@@ -24694,6 +24884,28 @@
 			"sdgNameShort": "Responsible Consumption",
 			"sdgIcon": "./src/images/sdg12.svg",
 			"sdgColor": "#bf8b2e",
+			"iloTargets": [
+				{
+					"number": "12.1",
+					"description": "The ILO is one of 19 members of the UN Interagency Coordination Group of the 10-year framework of programmes on sustainable consumption and production."
+				},
+				{
+					"number": "12.4",
+					"description": "International Labour Standards form the basis of legislation on the safe management and disposal of chemicals and waste in the workplace, and provide a starting point for improvements limiting their environmental impacts."
+				},
+				{
+					"number": "12.6",
+					"description": "Social dialogue offers an ideal means of encouraging businesses to adopt sustainable practices and integrate sustainability into their reporting cycles."
+				},
+				{
+					"number": "12.a",
+					"description": "Boosting skills and education among workers in developing countries is a major focus of ILO's policy recommendations and programmes, particularly those which can foster sustainable patterns of development."
+				},
+				{
+					"number": "12.b",
+					"description": "ILO research leverages partnerships throughout the hotels, catering and tourism sector to monitor its impact on sustainable development and encourage the creation of decent jobs."
+				}
+			],
 			"focusTargets": [
 				{
 					"number": "12.1",
@@ -24743,6 +24955,12 @@
 			"sdgNameShort": "Climate Action",
 			"sdgIcon": "./src/images/sdg13.svg",
 			"sdgColor": "#3f7e44",
+			"iloTargets": [
+				{
+					"number": "13.1",
+					"description": "The ILO's Jobs for Peace and Resilience Programme helps countries prepare for and respond to natural disasters through job-intensive activities that protect the livelihoods of impacted communities."
+				}
+			],
 			"focusTargets": [
 				{
 					"number": "13.1",
@@ -24776,6 +24994,20 @@
 			"sdgNameShort": "Life Below Water",
 			"sdgIcon": "./src/images/sdg14.svg",
 			"sdgColor": "#0a97d9",
+			"iloTargets": [
+				{
+					"number": "14.4",
+					"description": "ILO works with FAO to promote decent work in fisheries as a strategy for more effective and responsible fisheries management, while also improving livelihoods and food security."
+				},
+				{
+					"number": "14.6",
+					"description": "The ILO promotes formalization of work in the fishing sector and the elimination of labour abuses often associated with llegal, unreported and unregulated fishing."
+				},
+				{
+					"number": "14.7",
+					"description": "ILO advocates for decent job creation as a path to sustainable development in SIDS. In Mauritius ILO supported the government and social partners in green job creation and as part of the Island's vision for sustainability, called Maurice Ile Durable (MID)."
+				}
+			],
 			"focusTargets": [
 				{
 					"number": "14.4",
@@ -24817,6 +25049,12 @@
 			"sdgNameShort": "Life on land",
 			"sdgIcon": "./src/images/sdg15.svg",
 			"sdgColor": "#56c02b",
+			"iloTargets": [
+				{
+					"number": "15.b",
+					"description": "The ILO is supporting decent work in the forestry sector through the transition from informal to informal economy, combatting child labour and promoting Occupational Safety and Health policies, contributing to better and more sustainable management of the forests."
+				}
+			],
 			"focusTargets": [
 				{
 					"number": "15.b",
@@ -24850,6 +25088,40 @@
 			"sdgNameShort": "Peace and Justice",
 			"sdgIcon": "./src/images/sdg16.svg",
 			"sdgColor": "#00689d",
+			"iloTargets": [
+				{
+					"number": "16.2",
+					"description": "The ILO aims to protect children in many ways, including through its International Programme on the Elimination of Child Labour (IPEC), which has has been working to eliminate child labour in all its forms, with an urgent focus on the worst forms, since 1992."
+				},
+				{
+					"number": "16.3",
+					"description": "As the world's foremost advocate of labour standards, the ILO continues to promote the rule of law in the workplace and beyond."
+				},
+				{
+					"number": "16.6",
+					"description": "The ILO works with its tripartite partners the build and support effective labour market institutions to ensure just and decent working conditions globally."
+				},
+				{
+					"number": "16.7",
+					"description": "With its unique tripartite structure, the ILO is founded and operates on the understanding that decision making must include the participation and willing collaboration of all stakeholders."
+				},
+				{
+					"number": "16.8",
+					"description": "Promoting the equal participation of developing countries in policy and decsion making processes is a basic tenet of ILO's governance."
+				},
+				{
+					"number": "16.10",
+					"description": "The ILO is committed to protecting fundamental freedoms, including access to information. Its own programmes, governance and budget are freely available to the public.  The ILO also has mechanisms to censure countries that violate previously agreed norms and conventions.  "
+				},
+				{
+					"number": "16.a",
+					"description": "The ILO works to raise awareness of the prevalence and dangers of workplace violence and introduce policies that guard against it.  It is also activley campaigning to reduce the incidence of human trafficking, modern slavery and exploitation, contributing to reducing global crime and violence."
+				},
+				{
+					"number": "16.b",
+					"description": "Combating discrimination is an essential part of promoting decent work. The ILO aims,both through its Standards and its field programmes, to encourage the development and application of non discrimnatory laws and policies."
+				}
+			],
 			"focusTargets": [
 				{
 					"number": "16.2",
@@ -24911,6 +25183,24 @@
 			"sdgNameShort": "Partnerships for the Goals",
 			"sdgIcon": "./src/images/sdg17.svg",
 			"sdgColor": "#19486a",
+			"iloTargets": [
+				{
+					"number": "17.9",
+					"description": "The ILO is actively building capacity with its many field programmes. Collaborating with the International community to encourage continued capacity building in developing countries is core to the ILO's mandate."
+				},
+				{
+					"number": "17.13",
+					"description": "The ILO advocates for coordinated, macro economic  policies that contribute to job rich and sustainable growth in the firm belief that pursuing low unemployment and reducing poverty is the best path to global macroeconomic security."
+				},
+				{
+					"number": "17.14",
+					"description": "The ILO will work to support the alignment of countries' policies to justly distribute the costs and equitable share the benefits sustainable development."
+				},
+				{
+					"number": "17.17",
+					"description": "The ILO's deep experience in tripartism and social dialogue provides many useful working examples of the power of public, public-private and civil society partnerships in solving problems and helping achieve the Sustainable Development Agenda."
+				}
+			],
 			"focusTargets": [
 				{
 					"number": "17.9",
@@ -30446,7 +30736,7 @@
 	var PageTitle = _react2.default.createClass({
 		displayName: "PageTitle",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "container" }, _react2.default.createElement("div", { className: "small-12-col medium-8-col large-9-col" }, _react2.default.createElement("header", { className: "page-title" }, _react2.default.createElement("h1", null, "Decent work and the 2030 Agenda for sustainable development"), _react2.default.createElement("p", null, "Through its mandate to promote decent work and social justice for all, the ILO\"s work cuts across all 17 of the Sustainable Development Goals. Click on any one of the goals below to start learning how."))));
+			return _react2.default.createElement("div", { className: "container" }, _react2.default.createElement("div", { className: "small-12-col medium-8-col large-12-col" }, _react2.default.createElement("header", { className: "page-title" }, _react2.default.createElement("h1", null, "Decent work and the 2030 Agenda for sustainable development"), _react2.default.createElement("p", null, "Through its mandate to promote decent work and social justice for all, the ILO\"s work cuts across all 17 of the Sustainable Development Goals. Click on any one of the goals below to start learning how."))));
 		}
 	});
 	

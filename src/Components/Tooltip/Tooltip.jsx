@@ -28,26 +28,11 @@
 		}
 	},
 
-/*
-	showToolTip: {
-		opacity: 1,
-		transform: "translateY(0)",
-		visibility: "visible",
-		backgroundColor: this.bgColor()
-	},
-
-	hideToolTip: {
-		opacity: 0,
-		transform: "translateY(10px)",
-		visibility: "hidden",
-		backgroundColor: this.bgColor()
-	},
-*/
 	render() {
 
 		return(
-			<div style={this.styles()}
-				className="tooltip">
+			<div style={this.styles()} className="tooltip">
+				<div className="target-number">Target {this.props.focusTargets[this.props.focusTarget].number}</div>
 				{this.props.focusTargets[this.props.focusTarget].description}
 			</div>
 		);

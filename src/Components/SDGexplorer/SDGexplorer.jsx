@@ -9,7 +9,7 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 import Row from "../Row/Row.jsx";
 import ViewerWindow from "../ViewerWindow/ViewerWindow.jsx";
-import data from "!json!../../data.json";
+import data from "!json!../../data1.json";
 import {icons} from "../Icon/icons.js";
 
 const SDGexplorer = React.createClass({
@@ -103,6 +103,7 @@ const SDGexplorer = React.createClass({
 	},
 
 	render() {
+
 		const isMobile = this.state.isMobile;
 
 		/**

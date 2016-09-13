@@ -14,7 +14,7 @@ const FocusTargets = React.createClass({
 
 		const heading = "Where the ILO comes in";
 
-		const bullets = this.props.focusTargets.map( (target, i) =>
+		const bullets = this.props.iloTargets.map( (target, i) =>
 			<Bullet type="focusTarget"
 				key={i}
 				id={i}
@@ -39,8 +39,8 @@ const FocusTargets = React.createClass({
 						<div className="target-description-wrapper">
 							<Description
 								focusTarget={this.props.focusTarget}
-								description={this.props.focusTargets[this.props.focusTarget].description}
-								targetNumber={this.props.focusTargets[this.props.focusTarget].number}
+								description={this.props.iloTargets[this.props.focusTarget].description}
+								targetNumber={this.props.iloTargets[this.props.focusTarget].number}
 								color={this.props.data[this.props.currentSDG].sdgColor}
 								longDescription={this.props.longDescription}
 								setLongDescription={this.props.setLongDescription}

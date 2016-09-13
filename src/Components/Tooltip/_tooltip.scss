@@ -1,6 +1,5 @@
 /* Tooltip */
 
-
 .viewerWindowContent .tooltip {
 	font-family: $font-stack;
 	font-size: 1em;
@@ -22,4 +21,9 @@
 	text-align: left;
 	transition: all .25s ease-out;
 	width: 50%;
+}
+
+.target-number {
+	font-weight: 600;
+	margin: 0 0 5px 0;
 }

@@ -43,10 +43,14 @@ body,
   -webkit-font-smoothing: antialiased !important; }
 
 .wrapper, .sdgExplorer, #app, #title {
+  display: block;
   margin: 0 auto;
   max-width: 938px;
   position: relative;
   text-align: center; }
+
+#app {
+  display: inline-block; }
 
 h1 {
   display: inline;
@@ -1002,6 +1006,10 @@ span .little-triangle-enter {
   text-align: left;
   transition: all .25s ease-out;
   width: 50%; }
+
+.target-number {
+  font-weight: 600;
+  margin: 0 0 5px 0; }
 
 /* Arrow */
 /* arrowMobile */

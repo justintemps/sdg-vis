@@ -17,6 +17,10 @@ const ViewerWindowContent = React.createClass({
 			({ description : target.description, number : target.number })
 		);
 
+		const iloTargets = this.props.data[this.props.sdgNumber].iloTargets.map( target =>
+			({ description : target.description, number : target.number })
+		);
+
 		// Get the impact stories data for the current SDG
 		const impactStories = this.props.data[this.props.sdgNumber].stories.map( story => {
 			return (
@@ -35,7 +39,7 @@ const ViewerWindowContent = React.createClass({
 			return (
 				<div className="viewerWindowContent">
 					<FocusTargets
-						focusTargets={focusTargets}
+						iloTargets={iloTargets}
 						focusTarget={this.props.focusTarget}
 						selectFocusTarget={this.props.selectFocusTarget}
 						currentSDG = {this.props.sdgNumber}
