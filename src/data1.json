@@ -4,82 +4,52 @@
 	"sdgNameShort" : "ILO and the 2030 Agenda",
 	"sdgIcon": "./src/images/sdg0.svg",
 	"sdgColor": "#37468E",
-	"focusTargets": [{
-			"number": "1",
-			"description": "Select the blue dots above to begin learning how Decent Work is at the heart of the 2030 Agenda for Sustainable Development.."
-		}, {
-			"number": "2",
-			"description": "Choose one of the numbered icons above or below to learn how ILO is working to accomplish that Sustainble Development Goal"
-		}, {
-			"number": "3",
-			"description": "Browse through the Decent Work Targets to see which of that Goals targets are related to Decent Work."
-		}, {
-			"number": "4",
-			"description": "Browse through our selection of stories to see concrete examples of how ILO works to acheive each of the SDGs."
-		}, {
-			"number": "5",
-			"description": "Share the stories with your friends and followers on social media to help spread the word about Decent Work and the Sustainble Development Goals."
-		}
-	],
-	"stories": [{
-	"title": "Decent Work in the Era of Sustainable Development",
-	"blurb": "'If this agenda can become a reality in the next 15 years, we will be turning the tide back in the direction of social justice and assuring a sustainable and fairer society for us and our children' ILO Director-General Guy Ryder",
-	"url": "http://www.ilo.org/global/about-the-ilo/how-the-ilo-works/ilo-director-general/statements-and-speeches/WCMS_493769/lang--en/index.htm",
-	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_204847.jpg"
-}, {
-	"title": "What is Decent Work?",
-	"blurb": "The importance of decent work in achieving the newly adopted Sustainable Development Goals is highlighted by Goal 8 which aims to “promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all”.",
-	"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_408971/lang--en/index.htm",
-	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_408966.jpg"
-}, {
-	"title": "Decent Work in the Sustainable Development Goals",
-	"blurb": "The Sustainable Development Goals set targets for the next fifteen years. As the process of achieving the 17 Goals gains momentum, putting decent work and strengthening social protection are crucial to achieving global prosperity.",
-	"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_408995/lang--en/index.htm",
-	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_408982.jpg"
-}, {
-	"title": "The World of Work Today",
-	"blurb": "What is the state of decent work in the world today? ILO Director-General Guy Ryder takes the measure of Decent Work in a world buffeted by profound change and growing inequality.",
-	"url": "http://www.ilo.org/global/about-the-ilo/multimedia/video/institutional-videos/WCMS_411968/lang--en/index.htm",
-	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_411976.jpg"
-
-}, {
-	"title": "World parliament of labour sets the course for global action to shape the future of work.",
-	"blurb": "ILO sets course to promote decent work in global supply chains, in transition from conflict and crisis and in making poverty history by 2030",
-	"url": "http://www.ilo.org/ilc/ILCSessions/105/media-centre/news/WCMS_489199/lang--en/index.htm",
-	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_489203.jpg"
-}, {
-	"title": "ILO welcomes call for stronger efforts to promote decent work and inclusive growth",
-	"blurb": "A meeting between the German Chancellor and the heads of the OECD, WTO, IMF, World Bank and the ILO has agreed on the central role of decent work in meeting policy challenges in the coming year.",
-	"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_466871/lang--en/index.htm",
-	"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_466903.jpg"
-}]
+	"focusTargets": [],
+	"stories": []
 },{
 	"sdgNumber": 1,
 	"sdgName": "End poverty in all its forms everywhere",
 	"sdgNameShort" : "No poverty",
 	"sdgIcon": "./src/images/sdg1.svg",
 	"sdgColor": "#e5243b",
-	"focusTargets": [{
-			"number": "1.1",
-			"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
-		}, {
-			"number": "1.2",
-			"description": "By 2030, reduce at least by half the proportion of men, women and children living in poverty in all its dimensions according to national definitions"
-		}, {
-			"number": "1.3",
-			"description": "Implement nationally appropriate social protection systems"
-		}, {
-			"number": "1.5",
-			"description": "Ensure that all men and women, have equal rights to economic resources, including microfinance"
-		}, {
-			"number": "1.5",
-			"description": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
-		}, {
-			"number": "1.b",
-			"description": "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
-		}
-
-	],
+	"iloTargets" : [{
+		"number": "1.1",
+		"description" : "ILO research shows it would cost $US 10 trillion to eradicate extreme poverty by 2030. But that can't be accomplished sustainably without more and better jobs."
+	},{
+		"number": "1.2",
+		"description" : "ILO recommendations on labour and social policies help to drive sustainable development by putting more women and men in decent jobs. That's a crucial step towards the goal of reducing the number of people living in poverty by half before 2030."
+	},{
+		"number": "1.3",
+		"description" : "Less than one third of the world’s population has adequate social security coverage and more than half lack any coverage at all. The ILO helps countries improve and extend their social protection programmes with the goal of reaching universal coverage by 2030."
+	},{
+		"number": "1.5",
+		"description" : "The ILO works in countries around the globe to help families in poor communities gain access to financial services like insurance and microcredit."
+	},{
+		"number": "1.6",
+		"description" : "The ILO supports an employment-centred recovery from conflict, turmoil and disasters while promoting decent work and social justice as key drivers of social cohesion and the prevention of further conflict."
+	},{
+		"number": "1.b",
+		"description" : "The ILO works to promote decent work opportunities and a social protection floor for all women and men so that no one is left behind and everyone has the opportunity to sustain themselves, their families and aspire to a better future."
+	}],
+	"focusTargets" : [{
+		"number": "1.1",
+		"description": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
+	}, {
+		"number": "1.2",
+		"description": "By 2030, reduce at least by half the proportion of men, women and children living in poverty in all its dimensions according to national definitions"
+	}, {
+		"number": "1.3",
+		"description": "Implement nationally appropriate social protection systems"
+	}, {
+		"number": "1.5",
+		"description": "Ensure that all men and women, have equal rights to economic resources, including microfinance"
+	}, {
+		"number": "1.5",
+		"description": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
+	}, {
+		"number": "1.b",
+		"description": "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
+	}],
 	"stories": [{
 		"title": "Breaking the cycle of poverty in Tunisia",
 		"blurb": "Cooperation between government and social partners, and effective collective bargaining, can promote a more equitable distribution of a country's wealth and income.",
@@ -102,6 +72,14 @@
 	"sdgNameShort" : "No hunger",
 	"sdgIcon": "./src/images/sdg2.svg",
 	"sdgColor": "#dda63a",
+	"iloTargets": [{
+			"number": "2.3",
+			"description": "The ILO is helping farmers to double their productivity by 2030 through skills-building activities ranging from business development to support for farmers’ cooperatives."
+		}, {
+			"number": "2.4",
+			"description": "The ILO promotes job-intensive rural infrastructure development, much of which has included support for rural road construction and maintenance, mechanization, irrigation, advances in productivity and access to markets for small-scale farmers and agricultural workers."
+		}
+	],
 	"focusTargets": [{
 			"number": "2.3",
 			"description": "Double the agricultural productivity and incomes of small-scale food producers"
@@ -109,7 +87,6 @@
 			"number": "2.4",
 			"description": "Implement resilient agricultural practices that increase productivity and production"
 		}
-
 	],
 	"stories": [{
 		"title": "Women in agriculture: Cooking their way to empowerment and visibility",

@@ -8,9 +8,9 @@ header {
 	clear: both;
 	display: block;
 	font-family: "FS Me Web Regular", Helvetica, Arial, Verdana, sans-serif;
-	font-size: 1.35rem;
-	font-weight: 400;
-	line-height: 2.0250000000000004rem;
+//	font-size: 1.35rem;
+	font-weight: 600;
+//	line-height: 2.0250000000000004rem;
 	margin: 0 0 30px 0;
 	-webkit-font-smoothing: antialiased;
 
@@ -194,7 +194,6 @@ header {
     float: left;
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
     padding-right: 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -286,10 +285,8 @@ header {
 
 #tertiary-banner {
 	background-color: #263062;
-	font-size: 0;
-	line-height: 0;
+	margin: -4px 0 0;
 	overflow: hidden;
-	
 
 	.navbar-toggle {
 		display: none;
@@ -305,7 +302,6 @@ header {
 		background: transparent url(http://www.ilo.org/wcmsp5/ilo/global/images/templates/down-arrow-large.png) no-repeat 99.4% 48%;
 
 		.menu {
-			margin-top: -3px;
 		    float: right;
 		    padding-left: 30px;
 		}
@@ -331,6 +327,13 @@ header {
 	    font-size: 12px;
 	    border-left: 1px solid rgba(255,255,255,.2);
 	    border-right: 1px solid rgba(0,0,0,.3);
+	}
+
+	nav ul li.here a {
+		background-color: #FFF;
+		border-right-color: #FFF!important;
+		cursor: default;
+		color: #4B4B4B;
 	}
 
 	.home-link {
