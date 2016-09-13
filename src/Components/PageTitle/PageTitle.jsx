@@ -8,7 +8,7 @@ const PageTitle = React.createClass({
 					<header className="page-title">
 						<h1>Decent work and the 2030 Agenda for sustainable development</h1>
 						<p>
-							Through its mandate to promote decent work and social justice for all, the ILO&quot;s work cuts across all 17 of the Sustainable Development Goals. Click on any one of the goals below to start learning how.
+							Through its work to promote decent jobs and social justice for all, the ILO's mandate cuts across all of the Sustainable Development Goals. Click on any one of the goals below to start learning how.
 						</p>
 					</header>
 				</div>
