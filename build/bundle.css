@@ -45,6 +45,7 @@ html, body {
   display: flex;
   align-content: flex-start;
   align-items: flex-start;
+  flex-wrap: nowrap;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1138px;
@@ -641,6 +642,9 @@ header {
 
 /* SDGexplorer */
 /* SDGexplorer */
+.sdgExplorer {
+  width: 100%; }
+
 .sliding-viewer {
   box-sizing: border-box;
   max-height: 500px; }
@@ -1231,13 +1235,19 @@ span .little-triangle-enter {
   transition: color 200ms ease; }
 
 /* -- MOBILE STYLES START HERE -- */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 696px) {
   /* Base */
-  .wrapper, .sdgExplorer {
-    width: 100%; }
   h1 {
     font-size: 1.6em; }
-  /* SDGExplorer*/
+  .left-col {
+    flex-basis: 0; }
+  .right-col {
+    flex-basis: 100%; }
+  /* Sidebar */
+  /* Sidebar */
+  .sidebar {
+    display: none; }
+  /* SDGExplorer */
   /* SDGexplorerMobile */
   .sliding-viewer-enter.sliding-viewer-enter-active {
     max-height: 575px; }
@@ -1347,16 +1357,16 @@ span .little-triangle-enter {
   .mobileSdgNumber {
     bottom: 3px;
     display: inline-block;
-    font-size: 2.4em;
+    font-size: 4.3rem;
     position: relative;
     margin: 0 10px 0 5px;
     vertical-align: middle; }
   .mobileSdgName {
     display: inline-block;
-    font-size: .9em;
+    font-size: 1.6rem;
     position: relative;
     letter-spacing: .8px;
-    line-height: .9em;
+    line-height: 1.8rem;
     text-align: left;
     text-transform: uppercase; }
   .mobileSdgNumber > img {

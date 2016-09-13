@@ -1,7 +1,11 @@
-.wrapper {
-	width: 100%;
-}
-
 h1 {
 	font-size: 1.6em;
+}
+
+.left-col {
+	flex-basis: 0;
+}
+
+.right-col {
+	flex-basis: 100%;
 }

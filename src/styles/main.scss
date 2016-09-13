@@ -59,12 +59,15 @@
 @import "../Components/ShareWidget/_shareWidget";
 
 /* -- MOBILE STYLES START HERE -- */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 696px) {
 
 	/* Base */
 	@import "_mobileBase";
 
-	/* SDGExplorer*/
+	/* Sidebar */
+	@import "../Components/Sidebar/_mobileSidebar";
+
+	/* SDGExplorer */
 	@import "../Components/SDGexplorer/_sdgexplorerMobile";
 
 	/* Row */

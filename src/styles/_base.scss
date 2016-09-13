@@ -16,6 +16,7 @@ html, body {
 	@include flex();
 	align-content: flex-start;
 	align-items: flex-start;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1138px;
