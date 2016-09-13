@@ -293,6 +293,9 @@ header {
   #secondary-banner form {
     display: block;
     margin-top: 0em; }
+  #secondary-banner .container nav ul li a:hover {
+    background-color: #1f2750;
+    color: #fff; }
   #secondary-banner .container .form-search {
     border: 0; }
     #secondary-banner .container .form-search label {
@@ -372,6 +375,8 @@ header {
     font-size: 12px;
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  #tertiary-banner nav ul li a:hover {
+    background-color: #4558b3; }
   #tertiary-banner nav ul li.here a {
     background-color: #FFF;
     border-right-color: #FFF !important;

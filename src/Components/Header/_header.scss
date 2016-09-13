@@ -225,6 +225,11 @@ header {
 		margin-top: 0em;
 	}
 
+	.container nav ul li a:hover {
+		background-color: #1f2750;
+		color: #fff;
+	}
+
 	.container .form-search {
 		border: 0;
 
@@ -327,6 +332,10 @@ header {
 	    font-size: 12px;
 	    border-left: 1px solid rgba(255,255,255,.2);
 	    border-right: 1px solid rgba(0,0,0,.3);
+	}
+
+	nav ul li a:hover {
+		background-color: #4558b3;
 	}
 
 	nav ul li.here a {
