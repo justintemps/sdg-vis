@@ -58,7 +58,7 @@
 /* ShareWidget */
 @import "../Components/ShareWidget/_shareWidget";
 
-/* -- MOBILE STYLES START HERE -- */
+/* -- RESPONSIVE STYLES START HERE -- */
 
 @media screen and (max-width: 979px) {
 
@@ -117,14 +117,23 @@
 
 }
 
+/* iPhone 6Plus*/
+@media screen and (max-width: 414px) {
+
+	@import "_largeMobile";
+
+}
+
+/* iPhone6 */
 @media screen and (max-width: 375px) {
 
 	@import "_mediumMobile";
 
 }
 
-@media screen and (max-width: 360px) {
+/* iPhone5 */
+@media screen and (max-width: 320px) {
 
-	@import "_SmallMobile";
+	@import "_smallMobile";
 
 }

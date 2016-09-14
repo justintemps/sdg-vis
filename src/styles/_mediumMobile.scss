@@ -1,22 +1,19 @@
-/* smallMobileBase */
+/* mediumMobileBase */
 
-.focusTargets {
-	min-height: 100px;
-}
+.titleBar {
 
-.impactStories {
-	margin: 15px 0 0;
-	min-height: 275px;
-}
+	h1 {
+		font-size: 2.6rem;
+		letter-spacing: .8px;
+	}
 
-.mobileSdgNumber {
-	margin: 0 5px;
+	.defaultTitle {
+		font-size: 4.68rem;
+	}
 }
 
 .mobileSdgName {
-	font-size: .7em;
-}
-
-.bullet {
-	margin: 0 8px 0 0;
+	font-size: 1.5rem;
+	letter-spacing: .3px;
+	line-height: 1.5rem;
 }

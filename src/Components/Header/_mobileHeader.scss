@@ -1,5 +1,9 @@
+header {
+	margin: 0;
+}
+
 #banner {
-    margin-bottom: 0;
+    margin: 0 0 10px;
 }
 
 .container {
@@ -64,7 +68,7 @@
 
 			.btn {
 				position: absolute;
-				top: 0;
+				top: -1px;
 				right: 0;
 				width: 40px;
 			}
