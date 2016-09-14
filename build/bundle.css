@@ -1321,9 +1321,11 @@ span .little-triangle-enter {
   h1 {
     font-size: 1.6em; }
   .left-col {
-    display: 0;
+    display: none;
     flex-basis: 0; }
   .right-col {
+    margin: 0;
+    padding: 0;
     flex-basis: 100%; }
   .container {
     max-width: inherit; }

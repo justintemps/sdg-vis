@@ -3,11 +3,13 @@ h1 {
 }
 
 .left-col {
-	display: 0;
+	display: none;
 	flex-basis: 0;
 }
 
 .right-col {
+	margin: 0;
+	padding: 0;
 	flex-basis: 100%;
 }
 
