@@ -23529,7 +23529,7 @@
 				toolTipVisible: this.props.toolTipVisible
 			}), _react2.default.createElement(_Arrow2.default, {
 				item: this.props.focusTarget,
-				set: this.props.focusTargets,
+				set: this.props.iloTargets,
 				setItem: this.props.selectFocusTarget
 			}))));
 		}

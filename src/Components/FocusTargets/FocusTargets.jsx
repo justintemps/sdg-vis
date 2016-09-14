@@ -49,7 +49,7 @@ const FocusTargets = React.createClass({
 							/>
 							<Arrow
 								item={this.props.focusTarget}
-								set={this.props.focusTargets}
+								set={this.props.iloTargets}
 								setItem={this.props.selectFocusTarget}
 							/>
 					</div>
