@@ -23,11 +23,16 @@ $sdg-slug: sdgcol- !default;
 }
 
 .titleBar {
-	margin: 0;
-}
+	margin: 10px 0 0;
 
-.defaultTitle {
-	color: $iloblue;
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	.defaultTitle {
+		font-size: 5rem;
+		color: $iloblue;
+	}
 }
 
 .triangle {

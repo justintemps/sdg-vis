@@ -1315,10 +1315,17 @@ span .little-triangle-enter {
 @media screen and (max-width: 767px) {
   /* Header */
   /* Sidebar */
+  /**
+  * @TODO: left-col and right-col styles shouldn't be here!
+*/
+  .left-col {
+    flex-basis: 0%; }
+  .right-col {
+    flex-basis: 100%; }
   .sidebar {
     display: none; } }
 
-@media screen and (max-width: 696px) {
+@media screen and (max-width: 640px) {
   /* Base */
   h1 {
     font-size: 1.6em; }
@@ -1599,9 +1606,12 @@ span .little-triangle-enter {
     color: #19486a;
     transition: color 0.5s ease; }
   .titleBar {
-    margin: 0; }
-  .defaultTitle {
-    color: #37468E; }
+    margin: 10px 0 0; }
+    .titleBar h1 {
+      font-size: 3.5rem; }
+    .titleBar .defaultTitle {
+      font-size: 5rem;
+      color: #37468E; }
   .triangle, .small-triangle {
     display: none !important; }
   .sdgNumber {
