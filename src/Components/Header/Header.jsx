@@ -14,11 +14,6 @@ const Header = React.createClass({
 							<div className="large-6-col">
 								<h2>Promoting Jobs, Protecting People</h2>
 								<h3>ILO is a specialised agency of the <a href="http://www.un.org/en/aboutun/structure/">United Nations</a></h3>
-								<div className="language">
-									<a href="/global/lang--fr/index.htm">français</a>
-									|
-									<a href="/global/lang--es/index.htm">español</a>
-								</div>
 							</div>
 						</div>
 					</div>

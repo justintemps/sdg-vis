@@ -59,13 +59,28 @@
 @import "../Components/ShareWidget/_shareWidget";
 
 /* -- MOBILE STYLES START HERE -- */
+
+@media screen and (max-width: 979px) {
+
+	/* Header */
+	@import "../Components/Header/_mediumMobileHeader";
+
+	/* Sidebar */
+	@import "../Components/Sidebar/_mobileSidebar";
+
+}
+
+@media screen and (max-width: 767px) {
+
+	/* Header */
+	@import "../Components/Header/_smallMobileHeader";
+
+}
+
 @media screen and (max-width: 696px) {
 
 	/* Base */
 	@import "_mobileBase";
-
-	/* Sidebar */
-	@import "../Components/Sidebar/_mobileSidebar";
 
 	/* SDGExplorer */
 	@import "../Components/SDGexplorer/_sdgexplorerMobile";

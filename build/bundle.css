@@ -1235,6 +1235,86 @@ span .little-triangle-enter {
   transition: color 200ms ease; }
 
 /* -- MOBILE STYLES START HERE -- */
+@media screen and (max-width: 979px) {
+  /* Header */
+  #banner {
+    margin-bottom: 0; }
+  .container {
+    margin: 0 auto;
+    max-width: 979px;
+    width: 100%; }
+  #primary-banner {
+    padding-top: 40px;
+    position: relative; }
+    #primary-banner #logo {
+      overflow: hidden;
+      width: 215px;
+      height: 77px;
+      display: block;
+      color: #fff;
+      background: url(http://www.ilo.org/wcmsp5/ilo/global/images/templates/ilo.png) no-repeat 0 0;
+      -webkit-background-size: 100%;
+      background-size: cover;
+      display: block;
+      margin: 10px 0 10px 15px; }
+    #primary-banner h2, #primary-banner h3 {
+      display: none; }
+  .pull-right {
+    float: none !important; }
+  #secondary-banner .container {
+    position: relative;
+    width: 100%; }
+    #secondary-banner .container .form-search input {
+      border: 1px solid #e4e4e4 !important;
+      height: 36px;
+      padding: 0 10px;
+      background-color: #FFF;
+      font-size: 12px;
+      line-height: 15px;
+      font-family: "FS Me Web Light",Helvetica,Arial,Verdana,sans-serif;
+      color: #4b4b4b;
+      padding-left: 20px !important;
+      float: left;
+      border-radius: 0;
+      width: 100% !important; }
+    #secondary-banner .container .form-search .btn {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      width: 40px; }
+  #secondary-banner .large-7-col {
+    display: none; }
+  #secondary-banner .small-12-col {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%; }
+  #secondary-banner .form-search .pull-right {
+    float: none !important; }
+  #tertiary-banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px; }
+    #tertiary-banner .navbar-toggle {
+      border-left: 0 !important;
+      border-right: 0 !important; }
+    #tertiary-banner .collapse {
+      display: none; }
+  /* Sidebar */
+  /* Sidebar */
+  .sidebar {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  /* Header */
+  /* smallMobileHeader */ }
+
 @media screen and (max-width: 696px) {
   /* Base */
   h1 {
@@ -1243,10 +1323,6 @@ span .little-triangle-enter {
     flex-basis: 0; }
   .right-col {
     flex-basis: 100%; }
-  /* Sidebar */
-  /* Sidebar */
-  .sidebar {
-    display: none; }
   /* SDGExplorer */
   /* SDGexplorerMobile */
   .sliding-viewer-enter.sliding-viewer-enter-active {
