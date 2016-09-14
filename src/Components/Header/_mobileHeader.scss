@@ -6,6 +6,10 @@
 	margin: 0 auto;
 	max-width: 979px;
 	width: 100%;
+
+	.header-row {
+		margin: 0;
+	}
 }
 
 #primary-banner {
@@ -44,23 +48,24 @@
 
 			input {
 				border: 1px solid #e4e4e4!important;
+				box-sizing: border-box;
 				height: 36px;
-				padding: 0 10px;
+				padding: 0;
 				background-color: #FFF;
 				font-size: 12px;
 				line-height: 15px;
 				font-family: "FS Me Web Light",Helvetica,Arial,Verdana,sans-serif;
 				color: #4b4b4b;
-				padding-left: 20px !important;
+				padding-left: 20px;
 				float: left;
 				border-radius: 0;
-				width: 100% !important;
+				width: 100%
 			}
 
 			.btn {
 				position: absolute;
 				top: 0;
-				right: 15px;
+				right: 0;
 				width: 40px;
 			}
 		}
@@ -74,8 +79,8 @@
 		float: left;
 		position: relative;
 		min-height: 1px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 0;
+		padding-right: 0;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;

@@ -63,17 +63,14 @@
 @media screen and (max-width: 979px) {
 
 	/* Header */
-	@import "../Components/Header/_mediumMobileHeader";
-
-	/* Sidebar */
-	@import "../Components/Sidebar/_mobileSidebar";
+	@import "../Components/Header/_mobileHeader";
 
 }
 
 @media screen and (max-width: 767px) {
 
 	/* Header */
-	@import "../Components/Header/_smallMobileHeader";
+	@import "../Components/Sidebar/_mobileSidebar";
 
 }
 
@@ -81,6 +78,9 @@
 
 	/* Base */
 	@import "_mobileBase";
+
+	/* PageTitle */
+	@import "../Components/PageTitle/_mobilePageTitle";
 
 	/* SDGExplorer */
 	@import "../Components/SDGexplorer/_sdgexplorerMobile";
