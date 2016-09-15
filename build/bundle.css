@@ -1697,6 +1697,13 @@ span .little-triangle-enter {
     padding: 0 6px 0 5px; }
     .impactStories .arrow {
       top: 55px; }
+  .stories-wrapper div:first-child {
+    flex-basis: 80%; }
+    .stories-wrapper div:first-child .title-blurb-wrapper {
+      flex-basis: 100%; }
+  .stories-wrapper .thumbnail-wrapper {
+    flex-basis: 20%;
+    text-align: right; }
   .title-blurb-wrapper {
     min-height: 170px;
     padding: 0 10px 0 0; }

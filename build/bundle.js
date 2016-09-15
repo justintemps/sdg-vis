@@ -23614,7 +23614,7 @@
 		render: function render() {
 			var _this = this;
 	
-			var heading = "Where the ILO comes in";
+			var heading = "Where Decent Work comes in";
 	
 			var bullets = this.props.iloTargets.map(function (target, i) {
 				return _react2.default.createElement(_Bullet2.default, { type: "focusTarget",
@@ -24157,7 +24157,7 @@
 				},
 				{
 					"number": "1.3",
-					"description": "Less than one third of the world’s population has adequate social security coverage and more than half lack any coverage at all. The ILO helps countries improve and extend their social protection programmes with the goal of reaching universal coverage by 2030."
+					"description": "Less than one third of the world’s population has adequate social security coverage and more than half lack any coverage at all. The ILO helps countries improve and extend their social protection programmes with the goal of expanding the right of universal coverage to all by 2030."
 				},
 				{
 					"number": "1.5",
@@ -24169,7 +24169,7 @@
 				},
 				{
 					"number": "1.b",
-					"description": "The ILO works to promote decent work opportunities and a social protection floor for all women and men so that no one is left behind and everyone has the opportunity to sustain themselves, their families and aspire to a better future."
+					"description": "The ILO works to promote decent work opportunities and a social protection floor for all women and men so that no one is left behind and everyone has the right to sustain themselves, their families and aspire to a better future."
 				}
 			],
 			"focusTargets": [
@@ -24334,7 +24334,7 @@
 				},
 				{
 					"number": "4.5",
-					"description": "The ILO is a powerful advocate for equal access to training and education for women, which it promotes through active policy recommendations to countries as well as skills-building programmes specifically targeting women."
+					"description": "The ILO is a powerful advocate for equal access to training and education for women, which it promotes through its Standards, active policy recommendations to countries as well as skills-building programmes specifically targeting women."
 				},
 				{
 					"number": "4.b",
@@ -24393,15 +24393,15 @@
 			"iloTargets": [
 				{
 					"number": "5.1",
-					"description": "The ILO is dedicated to ending discrimination against women in the workplace and to ensuring equal education opportunities for girls."
+					"description": "Access to equal opportunity is a human right. Using Standards and other tools the ILO is dedicated to ending discrimination against women in the workplace and to ensuring the right to equal education opportunities for girls"
 				},
 				{
 					"number": "5.2",
-					"description": "The ILO works on many fronts to end violence against women, both as part of its commitment to defend the rights of women at work and through its work to combat forced labour and human trafficking, of which women are the most frequent victims."
+					"description": "The ILO works on many fronts to end violence against women, in part through supporting norms that defend the rights of women at work and also through its work to combat forced labour and human trafficking, of which women are the most frequent victims."
 				},
 				{
 					"number": "5.4",
-					"description": "The ILO is an outspoken champion of working mothers, on whose behalf it continues to advocate for maternity protections at work and social protections to safeguard their families."
+					"description": "The ILO is an outspoken champion of working mothers, on whose behalf it continues to advocate for  maternity protection at work and social protection to safeguard their families, in accordance with the relevant International Labour Conventions."
 				},
 				{
 					"number": "5.5",
@@ -24560,7 +24560,7 @@
 			"iloTargets": [
 				{
 					"number": "8.1",
-					"description": "The ILO's mission, to ensure that all women and men have opportunities for decent work, work is not only a goal but also a driver of sustainable development. More women and men in productive and decent jobs means stronger and more inclusive economic growth."
+					"description": "Decent work is the foundation of fair and inclusive growth, it is a driver of development and boosts consumption. This, along with social protection for those that can't find or are unable to work, addresses inequality, a major drag on economic growth."
 				},
 				{
 					"number": "8.2",
@@ -24572,11 +24572,11 @@
 				},
 				{
 					"number": "8.4",
-					"description": "A greener world requires greener jobs. The ILO works with governments, employers and workers  around the world to build solutions for a greener economy through knowledge, advocacy, capacity-building and active labour-market policies."
+					"description": "By engaging governments, workers and employers as active agents of change, the ILO promotes the greening of enterprises, workplace practices and the labour market as a whole. These efforts create decent employment opportunities, enhance resource efficiency and help build low-carbon sustainable societies."
 				},
 				{
 					"number": "8.5",
-					"description": "ILO research and advocacy are key to the goal of achieving full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value."
+					"description": "The ILO Decent Work Agenda takes a fully integrated approach to development, incorporating decent job creation, rights, social protection and dialogue to ensure no-one is left behind."
 				},
 				{
 					"number": "8.6",
@@ -24588,7 +24588,7 @@
 				},
 				{
 					"number": "8.8",
-					"description": "The ILO works to forge policies that maximize the benefits of labour migration while protecting the rights of all those involved, especially women."
+					"description": "The ILO works to forge standards and policies that maximize the benefits of labour migration while protecting the rights of all those involved, especially women."
 				},
 				{
 					"number": "8.9",
@@ -24758,11 +24758,11 @@
 				},
 				{
 					"number": "10.2",
-					"description": "The ILO works with governments, employers and workers to promote the social, economic and political inclusion of all, regardless of age, sex, disability, race, ethnicity, origin, religion or economic status."
+					"description": "The ILO Declaration on Fundamental Principles and Rights at Work commits Member States to respect and promote principles and rights, including the elimination of discrimination in respect of employment."
 				},
 				{
 					"number": "10.3",
-					"description": "The ILO's work promoting decent work for all aims to narrow the gap between the richest and poorest members of society."
+					"description": "The integrated approach of the Decent Work Agenda helps tackle discrimination and inequality of outcome. The ILO works with member states to ensure non-discrimination is included as a priority in Decent Work Country Programmes."
 				},
 				{
 					"number": "10.4",
@@ -25012,7 +25012,7 @@
 				},
 				{
 					"number": "14.6",
-					"description": "The ILO promotes formalization of work in the fishing sector and the elimination of labour abuses often associated with llegal, unreported and unregulated fishing."
+					"description": "The ILO promotes formalization of work in the fishing sector and the elimination of labour abuses often associated with llegal, unreported and unregulated fishing. Its Work in Fishing Convention aims to ensure all fishers shall have decent conditions."
 				},
 				{
 					"number": "14.7",
@@ -25102,7 +25102,7 @@
 			"iloTargets": [
 				{
 					"number": "16.2",
-					"description": "The ILO aims to protect children in many ways, including through its International Programme on the Elimination of Child Labour (IPEC), which has has been working to eliminate child labour in all its forms, with an urgent focus on the worst forms, since 1992."
+					"description": "ILO International Labour Standards and supervisory mechanism provide a strong legal framework for tackling forced and child labour. It's Fundamental Principles and Rights at Work programme works to end labour exploitation in all its forms."
 				},
 				{
 					"number": "16.3",
@@ -25114,7 +25114,7 @@
 				},
 				{
 					"number": "16.7",
-					"description": "With its unique tripartite structure, the ILO is founded and operates on the understanding that decision making must include the participation and willing collaboration of all stakeholders."
+					"description": "With its unique tripartite structure, the ILO is by its nature a participatory organization founded on the understanding that decision making must be representative of those whom it will affect."
 				},
 				{
 					"number": "16.8",

@@ -12,7 +12,7 @@ const FocusTargets = React.createClass({
 
 	render() {
 
-		const heading = "Where the ILO comes in";
+		const heading = "Where Decent Work comes in";
 
 		const bullets = this.props.iloTargets.map( (target, i) =>
 			<Bullet type="focusTarget"
