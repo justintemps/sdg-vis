@@ -364,8 +364,8 @@ header {
 }
 */
 #logo {
-  background-size: cover;
   background: url(http://www.ilo.org/wcmsp5/ilo/global/images/templates/ilo.png) no-repeat 0 0;
+  background-size: cover;
   color: #fff;
   display: block;
   height: 77px;
@@ -1260,7 +1260,7 @@ span .little-triangle-enter {
       -webkit-background-size: 100%;
       background-size: cover;
       display: block;
-      margin: 10px 0 10px 15px; }
+      margin: 10px 0; }
     #primary-banner h2, #primary-banner h3 {
       display: none; }
   .pull-right {
@@ -1305,7 +1305,7 @@ span .little-triangle-enter {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 40px; }
+    height: 47px; }
     #tertiary-banner .navbar-toggle {
       border-left: 0 !important;
       border-right: 0 !important; }

@@ -33,6 +33,7 @@ const SDGexplorer = React.createClass({
 
 	componentDidMount() {
 		window.addEventListener("resize", this.setMobileRows);
+		document.body.addEventListener("touchstart", () => { this.toggleToolTip(false); });
 	},
 
 	setMobileRows(e) {
@@ -96,6 +97,7 @@ const SDGexplorer = React.createClass({
 				toolTipVisible: true
 			});
 		} else if (!visible) {
+			console.log("toggleToolTip is false");
 			this.setState({
 				toolTipVisible: false
 			});

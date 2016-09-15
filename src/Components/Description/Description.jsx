@@ -21,7 +21,7 @@ const Description = React.createClass({
 
 	seeTargetButton() {
 		return (
-			<span style={ ( () => ({ color : this.props.color }) )() } onMouseEnter={this.showToolTip} onMouseLeave={this.hideToolTip}> See target {this.props.targetNumber}</span>
+			<span style={ ( () => ({ color : this.props.color }) )() } onTouchStart={this.showToolTip} onMouseOver={this.showToolTip} onMouseLeave={this.hideToolTip}> See target {this.props.targetNumber}</span>
 		);
 	},
 
