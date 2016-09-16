@@ -1458,9 +1458,10 @@ span .little-triangle-enter {
   .mobileSdgNumber {
     bottom: 3px;
     display: inline-block;
+    flex-shrink: 0;
     font-size: 4.3rem;
     position: relative;
-    margin: 0 10px 0 5px;
+    margin: 0 5px 0 5px;
     vertical-align: middle; }
   .mobileSdgName {
     display: inline-block;
@@ -1607,6 +1608,8 @@ span .little-triangle-enter {
     transition: color 0.5s ease; }
   .titleBar {
     margin: 10px 0 0; }
+    .titleBar .sdgNumber {
+      flex-shrink: 0; }
     .titleBar h1 {
       font-size: 3.5rem; }
     .titleBar .defaultTitle {
@@ -1728,8 +1731,7 @@ span .little-triangle-enter {
   .icon {
     padding: 0 3px; }
   .mobileSdgNumber {
-    font-size: 5rem;
-    margin: 0 5px; }
+    font-size: 5rem; }
     .mobileSdgNumber img {
       width: 35px; }
   .mobileSdgName {

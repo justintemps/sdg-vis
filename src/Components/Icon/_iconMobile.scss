@@ -44,9 +44,10 @@ $class-slug: sdg !default;
 .mobileSdgNumber {
 	bottom: 3px;
 	display: inline-block;
+	flex-shrink: 0;
 	font-size: 4.3rem;
 	position: relative;
-	margin: 0 10px 0 5px;
+	margin: 0 5px 0 5px;
 	vertical-align: middle;
 }
 

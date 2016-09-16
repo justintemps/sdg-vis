@@ -25,6 +25,10 @@ $sdg-slug: sdgcol- !default;
 .titleBar {
 	margin: 10px 0 0;
 
+	.sdgNumber {
+		flex-shrink: 0;
+	}
+
 	h1 {
 		font-size: 3.5rem;
 	}
