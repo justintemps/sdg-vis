@@ -30747,7 +30747,7 @@
 	var PageTitle = _react2.default.createClass({
 		displayName: "PageTitle",
 		render: function render() {
-			return _react2.default.createElement("div", { className: "container" }, _react2.default.createElement("div", { className: "small-12-col medium-8-col large-12-col" }, _react2.default.createElement("header", { className: "page-title" }, _react2.default.createElement("h1", null, "Decent work and the 2030 Agenda for sustainable development"), _react2.default.createElement("p", null, "Through its work to promote decent jobs and social justice for all, the ILO's mandate cuts across all of the Sustainable Development Goals. Click on any one of the goals below to start learning how."))));
+			return _react2.default.createElement("div", { className: "container" }, _react2.default.createElement("div", { className: "small-12-col medium-8-col large-12-col" }, _react2.default.createElement("header", { className: "page-title" }, _react2.default.createElement("h1", null, "Decent work and the 2030 Agenda for Sustainable Development"), _react2.default.createElement("p", null, "Through its work to promote decent jobs and social justice for all, the ILO's mandate cuts across all of the Sustainable Development Goals. Click on any one of the goals below to start learning how."))));
 		}
 	});
 	
