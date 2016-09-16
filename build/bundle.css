@@ -519,8 +519,9 @@ header {
 
 /* Sidebar */
 .sidebar {
-  height: 100px;
+  height: 100%;
   font-size: 1.35rem;
+  min-height: 1100px;
   width: 100%;
   font-family: "FS Me Web Regular",Helvetica,Arial,Verdana,sans-serif; }
   .sidebar h4 {
