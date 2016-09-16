@@ -2,9 +2,10 @@
 	height: 100px;
 	font-size: 1.35rem;
 	width: 100%;
-	font-family: "FS Me Web Bold",Helvetica,Arial,Verdana,sans-serif;
+	font-family: "FS Me Web Regular",Helvetica,Arial,Verdana,sans-serif;
 
 	h4 {
+		font-family: "FS Me Web Bold",Helvetica,Arial,Verdana,sans-serif;
 		border-bottom: 3px solid #CE5C3C;
 		background-color: #263062;
 		color: #FFF;
@@ -36,6 +37,10 @@
 			    padding-right: 8px;
 			    display: block;
 				color: #4B4B4B;
+			}
+
+			a:hover {
+				color: #6B91CB;
 			}
 		}
 
