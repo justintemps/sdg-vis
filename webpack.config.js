@@ -105,7 +105,7 @@ module.exports = {
 				exclude: /node_modules/
 			},
 			{
-				test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
+				test: /\.(png|woff|woff2|eot|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
 				loader: "url?limit=10000&mimetype=application/font-woff&name=[name].[ext]",
 				exclude: /node_modules/
 			}
