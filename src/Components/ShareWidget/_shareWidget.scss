@@ -7,7 +7,7 @@
 .shareWidget {
 	color: $light-grey;
 	font-size: .86em;
-	margin: 15px 0 0;
+	margin: 10px 0 0;
 
 	span {
 		color: inherit;
@@ -19,6 +19,10 @@
 	margin: 0 7px;
 	position: relative;
 	top: 1px;
+}
+
+.fa-circle {
+	color: #fff;
 }
 
 .fa-facebook:hover {

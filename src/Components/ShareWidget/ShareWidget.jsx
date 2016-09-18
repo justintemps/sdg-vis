@@ -46,7 +46,7 @@ const ShareWidget = React.createClass({
 		const post = baseUrl + sharedUrl + postText + postSummary;
 
 		// Center new window on screen
-		popupCenter(post, "Post a Tweet on Twitter", "400", "400");
+		popupCenter(post, "Share on LinkedIn", "400", "400");
 	},
 
 	render() {
@@ -65,15 +65,19 @@ const Sharebutton = React.createClass({
 
 	// Sets font-awesome class
 	network : {
-		twitter : "fa fa-twitter",
-		facebook : "fa fa-facebook",
-		linkedin : "fa fa-linkedin"
+		twitter : "fa fa-twitter fa-stack-1x",
+		facebook : "fa fa-facebook fa-stack-1x",
+		linkedin : "fa fa-linkedin fa-stack-1x"
 	},
 
 	render() {
 
 		return(
-			<i className={this.network[this.props.network]} aria-hidden="true" onClick={this.props.handler}></i>
+			<span className="fa-stack fa-lg">
+				<i className="fa fa-circle fa-stack-2x"></i>
+				<i className={this.network[this.props.network]} aria-hidden="true" onClick={this.props.handler}></i>
+			</span>
+
 		);
 	}
 });

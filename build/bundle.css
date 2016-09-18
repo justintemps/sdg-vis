@@ -1244,7 +1244,7 @@ span .little-triangle-enter {
 .shareWidget {
   color: #7e7e7e;
   font-size: .86em;
-  margin: 15px 0 0; }
+  margin: 10px 0 0; }
   .shareWidget span {
     color: inherit; }
 
@@ -1253,6 +1253,9 @@ span .little-triangle-enter {
   margin: 0 7px;
   position: relative;
   top: 1px; }
+
+.fa-circle {
+  color: #fff; }
 
 .fa-facebook:hover {
   color: #3B5998;
@@ -1746,7 +1749,26 @@ span .little-triangle-enter {
     min-height: 170px;
     padding: 0 10px 0 0; }
   .thumbnail {
-    display: none; } }
+    display: none; }
+  /* ShareWidget */
+  .shareWidget {
+    margin: 10px 0 30px; }
+    .shareWidget .fa-circle {
+      color: #7e7e7e; }
+    .shareWidget .fa-twitter, .shareWidget .fa-facebook, .shareWidget .fa-linkedin {
+      color: #fff; }
+    .shareWidget .fa-stack:nth-child(2):hover .fa-circle {
+      color: #3B5998; }
+    .shareWidget .fa-stack:nth-child(3):hover .fa-circle {
+      color: #75B2F3; }
+    .shareWidget .fa-stack:nth-child(4):hover .fa-circle {
+      color: #0077b5; }
+    .shareWidget span {
+      margin: 0 15px; }
+    .shareWidget span:first-child {
+      display: none; }
+    .shareWidget span:nth-child(2) {
+      margin-left: 0; } }
 
 /* iPhone 6Plus*/
 @media screen and (max-width: 414px) {
