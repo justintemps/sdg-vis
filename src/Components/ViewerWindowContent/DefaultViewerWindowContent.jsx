@@ -3,12 +3,15 @@
  */
 
  import React from "react";
+ import globalGoalsSVG from "!babel!svg-react!../../images/gglogo.svg";
+
+ const gglogo = React.createElement(globalGoalsSVG, {
+	className : "gglogo"
+ });
 
  const DefaultViewerWindowContent = React.createClass({
 
 	render() {
-
-		const imgSrc = "src/images/gglogo.svg";
 
 		return(
 			<div className="defaultViewerWindowContent">
@@ -17,7 +20,7 @@
 					<p><span className="emphasize">Choose a goal</span> and learn how the ILO's mandate and purpose of social justice is helping to acheive each of the Sustainable Development Goals.</p>
 				</div>
 				<div className="gglogo-container">
-					<img className="gglogo" src={imgSrc}></img>
+					{gglogo}
 				</div>
 			</div>
 		);
