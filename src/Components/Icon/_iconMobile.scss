@@ -68,5 +68,11 @@ $class-slug: sdg !default;
 }
 
 .sdg0 .mobileSdgNumber {
-	margin: 0 0 0 5px;
+	margin: 0 5px 0 2px;
+}
+
+.mobileSdgNumber > svg {
+	position: relative;
+	top: 3px;
+	width: 33px;
 }

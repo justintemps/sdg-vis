@@ -6,6 +6,10 @@
 import React from "react";
 import Triangle from "../Triangle/Triangle.jsx";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import globalGoalsSVG from "!babel!svg-react!../../images/gglogo.svg";
+
+// Global Goals Logo for SDG0 for mobile view
+const gglogo = React.createElement(globalGoalsSVG);
 
 const Icon = React.createClass({
 
@@ -14,8 +18,6 @@ const Icon = React.createClass({
 	},
 
 	render() {
-
-//		const sdgs = this.props.icons;
 
 		// Configure the class for the icon
 		const iconClass = `icon sdg${this.props.sdg}`;
@@ -32,9 +34,6 @@ const Icon = React.createClass({
 				return <Triangle className="triangle" key={this.props.number} small={true} sdgNumber={this.props.number} sdgColor={this.props.color} />;
 			}
 		};
-
-		// Global Goals logo appears in first icon of mobile view
-		const gglogo = <img src="src/images/gglogo.svg" />;
 
 		// Determines which number or character should appear in the mobile icon
 		const mobileSDGNumber = ( this.props.sdg > 0 ) ? this.props.sdg : gglogo;

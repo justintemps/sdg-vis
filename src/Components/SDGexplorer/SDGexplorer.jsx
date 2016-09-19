@@ -97,7 +97,6 @@ const SDGexplorer = React.createClass({
 				toolTipVisible: true
 			});
 		} else if (!visible) {
-			console.log("toggleToolTip is false");
 			this.setState({
 				toolTipVisible: false
 			});
