@@ -42,6 +42,7 @@ if (production) {
 		// This plugins defines various variables that we can set to false
 		// in production to avoid code related to them from being compiled
 		// in our final bundle
+	/*
 		new webpack.DefinePlugin({
 			__SERVER__:      !production,
 			__DEVELOPMENT__: !production,
@@ -50,6 +51,14 @@ if (production) {
 				BABEL_ENV: JSON.stringify(process.env.NODE_ENV)
 			}
 		})
+		*/
+
+		new webpack.DefinePlugin({
+			"process.env": {
+				NODE_ENV: JSON.stringify("production")
+			}
+		})
+
 	]);
 }
 
