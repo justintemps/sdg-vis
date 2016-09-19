@@ -14,6 +14,14 @@
 
 	p {
 		font-size: 2rem;
+
+		a {
+			color: $titleColor;
+		}
+
+		a:hover {
+			color: $bulletSelected;
+		}
 	}
 
 	p:first-child {
@@ -31,7 +39,6 @@
 }
 
 .emphasize {
-	color: $goal8color;
 	font-style: normal;
 	font-weight: 600;
 }
