@@ -14,7 +14,9 @@ $class-slug-title: title-sdg- !default;
 .titleBar {
 	@include flex();
 	flex-wrap: nowrap;
+	height: 110px;
 	margin: 15px 0 0;
+	max-width: 832px;
 	min-height: 110px;
 	padding: 0;
 	position: relative;
@@ -46,4 +48,12 @@ $class-slug-title: title-sdg- !default;
 .defaultTitle {
 	font-size: 5rem;
 	line-height: 80%;
+}
+
+
+/* IE Hacks */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.sdgNumber {
+		bottom: 0;
+	}
 }

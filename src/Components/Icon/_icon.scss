@@ -11,7 +11,7 @@
 .icon {
 	box-sizing: border-box;
 	cursor: pointer;
-	flex-basis: auto;
+	max-width: 128px;
 	opacity: 0.3;
 	transition: opacity 200ms ease;
 	width: 100%;
