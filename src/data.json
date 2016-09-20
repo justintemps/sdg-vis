@@ -269,7 +269,7 @@
 	"sdgColor": "#26bde2",
 	"iloTargets": [{
 		"number": "6.3",
-		"description": "An estimated three out of four jobs on Earth are heavily or moderately dependent on water. Access to improved drinking water and sanitation facilitates job creation and a healthy, educated and productive workforce which is the foundation for growth."
+		"description": "An estimated three out of four jobs are heavily or moderately dependent on water. Access to improved drinking water and sanitation facilitates job creation and a healthy, educated and productive workforce which is the foundation for growth."
 	}],
 	"focusTargets": [{
 		"number": "6.3",
@@ -297,10 +297,10 @@
 		"description": "The ILO promotes improvements in energy efficiency and enhanced access to energy for businesses as a way of stimulating the creation of new jobs."
 	},{
 		"number": "7.2",
-		"description": "The ILO's Green Jobs programme helps businessses transition to a lower-carbon energy sources as a means of stimulating the creation of new, environmentally friendly jobs."
+		"description": "The ILO's Green Jobs programme helps businessses transition to lower-carbon energy sources as a means of stimulating the creation of new, environmentally friendly jobs."
 	},{
 		"number": "7.b",
-		"description": "The ILO supports the creation of green enterprises, particularly in developing countries, through training progarmmes that teach young entrepreneurs how to start and run green businesses."
+		"description": "The ILO supports the creation of green enterprises, particularly in developing countries, through training programmes that teach young entrepreneurs how to start and run green businesses."
 	}],
 	"focusTargets": [{
 		"number": "7.1",
@@ -366,7 +366,7 @@
 		"description": "The ILO works with a broad range of actors in government and the financial services industry to expand access to banking, insurance and access to credit for all."
 	}, {
 		"number": "8.a",
-		"description": "The ILO works with a broad range of actors in government and the financial services industry to expand access to banking, insurance and access to credit for all."
+		"description": "Through technical assistance and policy guidance, the ILO helps to ensure that trade is based on foundation of decent work and fairness."
 	}, {
 		"number": "8.b",
 		"description": "The ILO is a key driver behind the Global Initiative on Decent Jobs for Youth, a global collaboration to move millions of young people into education, training and decent work."
@@ -442,7 +442,7 @@
 	"sdgColor": "#fd6925",
 	"iloTargets": [{
 		"number": "9.1",
-		"description": "The ILO has a long history of providing sustainable approaches to local and community infrastracture develompent in ways that spur the creation of decent jobs."
+		"description": "The ILO has a long history of providing sustainable approaches to local and community infrastracture development in ways that spur the creation of decent jobs."
 	}, {
 		"number": "9.2",
 		"description": "The ILO promotes inclusive and sustainable industrialization throughout the world through expert policy advice geared towards the creation of decent jobs."
@@ -484,7 +484,7 @@
 	"sdgColor": "#dd1367",
 	"iloTargets": [{
 		"number": "10.1",
-		"description": "The ILO's mission to ensure decent work for all women and men is a key step towrds boosting income growth for the poorest 40 per cent of the population."
+		"description": "The ILO's mission to ensure decent work for all women and men is a key step towards boosting income growth for the poorest 40 per cent of the population."
 	}, {
 		"number": "10.2",
 		"description": "The ILO Declaration on Fundamental Principles and Rights at Work commits Member States to respect and promote principles and rights, including the elimination of discrimination in respect of employment."
@@ -680,7 +680,7 @@
 		"description": "ILO works with FAO to promote decent work in fisheries as a strategy for more effective and responsible fisheries management, while also improving livelihoods and food security."
 	}, {
 		"number": "14.6",
-		"description": "The ILO promotes formalization of work in the fishing sector and the elimination of labour abuses often associated with llegal, unreported and unregulated fishing. Its Work in Fishing Convention aims to ensure all fishers shall have decent conditions."
+		"description": "The ILO promotes formalization of work in the fishing sector and the elimination of labour abuses often associated with illegal, unreported and unregulated fishing. Its Work in Fishing Convention aims to ensure all fishers shall have decent working conditions."
 	}, {
 		"number": "14.7",
 		"description": "ILO advocates for decent job creation as a path to sustainable development in SIDS. In Mauritius ILO supported the government and social partners in green job creation and as part of the Island's vision for sustainability, called Maurice Ile Durable (MID)."
@@ -719,7 +719,7 @@
 	"sdgColor": "#56c02b",
 	"iloTargets": [{
 		"number": "15.b",
-		"description": "The ILO is supporting decent work in the forestry sector through the transition from informal to informal economy, combatting child labour and promoting Occupational Safety and Health policies, contributing to better and more sustainable management of the forests."
+		"description": "The ILO is supporting decent work in the forestry sector through the transition from informal to the formal economy, combatting child labour and promoting Occupational Safety and Health policies, contributing to better and more sustainable management of the forests."
 	}],
 	"focusTargets": [{
 		"number": "15.b",
@@ -755,13 +755,13 @@
 		"description": "As the world's foremost advocate of labour standards, the ILO continues to promote the rule of law in the workplace and beyond."
 	}, {
 		"number": "16.6",
-		"description": "The ILO works with its tripartite partners the build and support effective labour market institutions to ensure just and decent working conditions globally."
+		"description": "The ILO works with its tripartite partners to build and support effective labour market institutions to ensure just and decent working conditions globally."
 	}, {
 		"number": "16.7",
 		"description": "With its unique tripartite structure, the ILO is by its nature a participatory organization founded on the understanding that decision making must be representative of those whom it will affect."
 	}, {
 		"number": "16.8",
-		"description": "Promoting the equal participation of developing countries in policy and decsion making processes is a basic tenet of ILO's governance."
+		"description": "Promoting the equal participation of developing countries in policy and decision making processes is a basic tenet of ILO's governance."
 	}, {
 		"number": "16.10",
 		"description": "The ILO is committed to protecting fundamental freedoms, including access to information. Its own programmes, governance and budget are freely available to the public. The ILO has mechanisms to discuss and expose cases in countries that violate previously agreed norms and conventions."
@@ -770,7 +770,7 @@
 		"description": "The ILO works to raise awareness of the prevalence and dangers of workplace violence and introduce policies that guard against it.  It is also activley campaigning to reduce the incidence of human trafficking, modern slavery and exploitation, contributing to reducing global crime and violence."
 	}, {
 		"number": "16.b",
-		"description": "Combating discrimination is an essential part of promoting decent work. The ILO aims,both through its Standards and its field programmes, to encourage the development and application of non discrimnatory laws and policies."
+		"description": "Combating discrimination is an essential part of promoting decent work. The ILO aims,both through its Standards and its field programmes, to encourage the development and application of non discriminatory laws and policies."
 	}],
 	"focusTargets": [{
 		"number": "16.2",
