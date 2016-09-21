@@ -61,8 +61,8 @@ module.exports = {
 	output: {
 		path:          "build",
 		filename:      production ? "[name]-[hash].js" : "bundle.js",
-		chunkFilename: "[name]-[chunkhash].js"
-	//	publicPath:    "build/"
+		chunkFilename: "[name]-[chunkhash].js",
+		publicPath:    "./"
 	},
 	plugins: plugins,
 	module: {
@@ -89,11 +89,13 @@ module.exports = {
 			},
 			{
 				test: /\.html/,
-				loader: "html-loader"
+				loader: "html-loader",
+				exclude: /node_modules/
 			},
 			{
 				test: /\.scss/,
-				loader: ExtractPlugin.extract("style", "css!sass")
+				loader: ExtractPlugin.extract("style", "css!sass"),
+				exclude: /node_modules/
 			},
 			{
 				test: /\.svg$/,
@@ -102,12 +104,12 @@ module.exports = {
 			},
 			{
 				test: /\.ttf$/,
-				loader: "file-loader?mimetype=application/octet-stream&name=[name].[ext]",
+				loader: "file-loader?mimetype=application/octet-stream&name=fonts/[name].[ext]",
 				exclude: /node_modules/
 			},
 			{
 				test: /\.(png|woff|woff2|eot|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-				loader: "url?limit=10000&mimetype=application/font-woff&name=[name].[ext]",
+				loader: "url?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]",
 				exclude: /node_modules/
 			}
 		]
