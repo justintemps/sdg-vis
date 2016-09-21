@@ -1,10 +1,12 @@
 var webpack = require("webpack");
 var CleanPlugin = require("clean-webpack-plugin");
 var ExtractPlugin = require("extract-text-webpack-plugin");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 var production = process.env.NODE_ENV === "production";
 
 var plugins = [
 	new ExtractPlugin("bundle.css"),
+
 	new webpack.optimize.CommonsChunkPlugin({
         // Move dependencies to our main file
 		name : "main",
@@ -12,6 +14,12 @@ var plugins = [
 		children : true,
         // How many times a dependency must come up before being extracted
 		minChunks : 2
+	}),
+
+	// Builds the html template
+	new HtmlWebpackPlugin({
+		template: "index.template.ejs",
+		inject: "body",
 	})
 ];
 
@@ -19,14 +27,13 @@ var plugins = [
 if (production) {
 	plugins = plugins.concat([
 
-        // Cleanup the builds/ folder before compiling our final assets
 		new CleanPlugin("build"),
 
-        // This plugin looks for similar chunks and files
+        // Looks for similar chunks and files
         // and merges them for better caching by the user
 		new webpack.optimize.DedupePlugin(),
 
-        // This plugins optimizes chunks and modules by
+        // Optimizes chunks and modules by
         // how much they are used in your app
 		new webpack.optimize.OccurenceOrderPlugin(),
 
@@ -44,7 +51,6 @@ if (production) {
 				NODE_ENV: JSON.stringify("production")
 			}
 		})
-
 	]);
 }
 
