@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "webpack -d --watch",
     "build": "NODE_ENV='production' webpack",
+	"buildwin" : "SET NODE_ENV='production' & webpack",
     "start": "webpack-dev-server"
   },
   "author": "@justintemps",
