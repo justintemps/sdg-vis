@@ -19,7 +19,7 @@ var plugins = [
 	// Builds the html template
 	new HtmlWebpackPlugin({
 		template: "index.template.ejs",
-		inject: "body",
+		inject: "body"
 	})
 ];
 
