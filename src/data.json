@@ -57,6 +57,16 @@
 		"url": "http://www.ilo.org/global/about-the-ilo/multimedia/features/tunisia/lang--en/index.htm",
 		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_481717.jpg"
 	}, {
+		"title": "A future we want through decent work for all",
+		"blurb": "In a major push to achieve inclusive growth, decent work and social protection for all, the Government of Belgium is scaling-up its collaboration with and support for the ILO to meet these critical goals.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/media-centre/press-releases/WCMS_525713/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_525716.jpg"
+	}, {
+		"title": "World Bank, ILO announce new push for universal social protection",
+		"blurb": "New partnership will expand social protection measures worldwide as part of efforts to combat poverty and rising income inequality.",
+		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_525544/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_526188.jpg"
+	}, {
 		"title": "Working out of poverty in Timor-Leste",
 		"blurb": "ILO’s Business Opportunities and Support Services (BOSS) project helped local communities to improve farming practices, develop market access, create jobs and develop small and medium-sized enterprises.",
 		"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_493375/lang--en/index.htm",
@@ -138,6 +148,11 @@
 		"blurb": "A novel programme helped HIV vulnerable women in southern Africa build business to improve their lives and the wellbeing of their families.",
 		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_481049/lang--en/index.htm",
 		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_481605.jpg"
+	}, {
+		"title": "New Investments in Global Health Workforce Will Create Jobs and Drive Economic Growth",
+		"blurb": "Investing in the health workforce is needed to make progress towards the Sustainable Development Goals. ",
+		"url": "http://www.ilo.org/newyork/at-the-un/general-assembly/WCMS_524154/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_526184.jpg"
 	}, {
 		"title": "Ergonomics in China: Tackling workplace stress",
 		"blurb": "The ILO works with unions and the government in China to reduce the impact of stress and poor ergonomics on workers.",
@@ -280,6 +295,11 @@
 		"blurb": "A labour-intensive ILO initiative to develop water catchment and drip irrigation systems is playing a pivotal role in creating decent work opportunities in northern Jordan.",
 		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_463108/lang--en/index.htm",
 		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_463116.jpg"
+	}, {
+		"title": "What does water have to do with work? In Malawi, plenty",
+		"blurb": "Learn more about the links between employment, development and managing our scarce water resources.",
+		"url": "https://iloblog.org/2016/08/28/what-does-water-have-to-do-with-work-in-malawi-plenty/",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_516124.jpg"
 	}, {
 		"title": "Monrovia post Ebola: The quest for clean water and youth employment",
 		"blurb": "A new programme to strengthen the capacity of local communities in Liberia to improve sanitation highlights the importance of access to clean water.",
@@ -433,7 +453,12 @@
 		"blurb": "The story of one of the beneficiaries of ILO’s Durable Solutions for Somali refugee returnees through Repatriation, Assistance and Promoting Sustainable Livelihood project.",
 		"url": "http://www.ilo.org/global/publications/magazines-and-journals/world-of-work-magazine/articles/WCMS_496553/lang--en/index.htm",
 		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_496590.jpg"
-	}]
+	}, {
+		"title": "Alliance 8.7: Time for a rethink in fighting forced labour in Africa",
+		"blurb": "With millions of African victims of forced labour, modern slavery, human trafficking and child labour, the continent needs to redefine its priorities for an inclusive strategic partnership to boost the implementation of the Alliance SDG 8.7.",
+		"url": "http://www.ilo.org/addisababa/media-centre/pr/WCMS_521331/lang--en/index.htm",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---africa/documents/image/wcms_521326.jpg"
+		}]
 }, {
 	"sdgNumber": 9,
 	"sdgName": "Build resilient infrastructure, promote sustainable industrialization and foster innovation",
@@ -658,6 +683,11 @@
 		"blurb": "Just before the opening of the Paris climate conference that is expected to set new ambitious targets to move to a low-carbon economy, ILO Green Jobs Programme Coordinator Kees van der Ree outlines ten steps that can facilitate a transition to a green economy.",
 		"url": "http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_429777/lang--en/index.htm",
 		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_429793.jpg"
+	}, {
+		"title": "Indigenous Peoples: Agents of Change ",
+		"blurb": "Indigenous peoples care for 22% of the Earth’s surface and protect nearly 8% of the biodiversity on the planet. Watch this video to learn more about their vital role as agents of change.",
+		"url": "https://www.youtube.com/watch?v=emFSfc-wZq4",
+		"imageUrl": "http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_508320.jpg"
 	}, {
 		"title": "Climate change is a world of work issue",
 		"blurb": "Dr. Esther Byer-Suckoo, Minister of Labour for Barbados and chair of an ILO expert meeting on transitioning to a sustainable economy, spoke to ILO news about green jobs and decent work.",
