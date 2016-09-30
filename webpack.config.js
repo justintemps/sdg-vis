@@ -2,7 +2,9 @@ var webpack = require("webpack");
 var CleanPlugin = require("clean-webpack-plugin");
 var ExtractPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
+var validate = require("webpack-validator");
 var production = process.env.NODE_ENV === "production";
+var merge = require("webpack-merge");
 
 var plugins = [
 	new ExtractPlugin("bundle.css"),
@@ -54,7 +56,7 @@ if (production) {
 	]);
 }
 
-module.exports = {
+const common = {
 	debug:  !production,
 	devtool: production ? false : "eval",
 	entry: "./src/index.jsx",
@@ -115,3 +117,14 @@ module.exports = {
 		]
 	}
 };
+
+var config;
+
+switch(process.env.npm_lifecycle_event) {
+case "build" :
+	config = merge(common, {});
+	break;
+default: config = merge(common, {});
+}
+
+module.exports = validate(config);
