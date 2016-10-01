@@ -64,7 +64,7 @@ const common = {
 		path:          "build",
 		filename:      production ? "[name]-[hash].js" : "bundle.js",
 		chunkFilename: "[name]-[chunkhash].js",
-		publicPath:    "./"
+		publicPath:    "/build/"
 	},
 	plugins: plugins,
 	module: {
@@ -86,7 +86,7 @@ const common = {
 				loader: "babel-loader",
 				exclude: /node_modules/,
 				query: {
-					presets: ["es2015", "react"]
+					presets: ["es2015", "react", "react-hmre"]
 				}
 			},
 			{
@@ -118,13 +118,4 @@ const common = {
 	}
 };
 
-var config;
-
-switch(process.env.npm_lifecycle_event) {
-case "build" :
-	config = merge(common, {});
-	break;
-default: config = merge(common, {});
-}
-
-module.exports = validate(config);
+module.exports = validate(common);
