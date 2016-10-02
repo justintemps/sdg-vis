@@ -1,3 +1,8 @@
+/**
+ * @TODO: This needs to be cleaned up. Too many ternaries
+ * with settings for production vs. dev
+*/
+
 var webpack = require("webpack");
 var CleanPlugin = require("clean-webpack-plugin");
 var ExtractPlugin = require("extract-text-webpack-plugin");

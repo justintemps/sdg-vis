@@ -4,13 +4,13 @@
  * Owns state for the whole app
  */
 
-import React from "react";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
-
-import Row from "../Row/Row.jsx";
-import ViewerWindow from "../ViewerWindow/ViewerWindow.jsx";
-import data from "!json!../../data.json";
-import {icons} from "../Icon/icons.js";
+import React 					from "react";
+import ReactCSSTransitionGroup 	from "react-addons-css-transition-group";
+import Row						from "../Row/Row.jsx";
+import ViewerWindow				from "../ViewerWindow/ViewerWindow.jsx";
+import data 					from "!json!../../data.json";
+import {icons}					from "../Icon/icons.js";
+import {numberIcons, startFrom}	from "./setRows.js";
 
 const SDGexplorer = React.createClass({
 
@@ -36,6 +36,7 @@ const SDGexplorer = React.createClass({
 		document.body.addEventListener("touchstart", () => { this.toggleToolTip(false); });
 	},
 
+	// Are we in mobile view?
 	setMobileRows(e) {
 		if (window.innerWidth < 640) {
 			this.setState({	isMobile : true });
@@ -105,87 +106,11 @@ const SDGexplorer = React.createClass({
 
 	render() {
 
-		const isMobile = this.state.isMobile;
-
-		/**
-		 * numberIcons() decides how many icons to display in each row
-		 * @param {Number} row - the current row
-		 * @param {Boolean} top - is this for the top row?
-		 * @return {Number} number of icons to display
-		*/
-		function numberIcons(row, top) {
-			let numberIcons;
-
-			switch(row) {
-			case 0:
-				if (isMobile) {
-					numberIcons = top ? 3 : 15;
-				} else {
-					numberIcons = top ? 6 : 12;
-				}
-				break;
-			case 1:
-				if (isMobile) {
-					numberIcons = top ? 6 : 12;
-				} else {
-					numberIcons = top ? 12 : 6;
-				}
-				break;
-			case 2:
-				if (isMobile) {
-					numberIcons = top ? 9 : 9;
-				} else {
-					numberIcons = top ? 18 : 0;
-				}
-				break;
-			case 3:
-				numberIcons = top ? 12 : 6;
-				break;
-			case 4:
-				numberIcons = top ? 15 : 3;
-				break;
-			case 5:
-				numberIcons = top ? 18 : 0;
-				break;
-			}
-			return numberIcons;
-		}
-
-		/**
-		 * startFrom() which number icon should the row start from?
-		 * @param {Number} row - the current row
-		 * @return {Number} num - the number of the icon to start with
-		*/
-		function startFrom(row) {
-			let num;
-			switch(row) {
-			case 0:
-				num = isMobile ? 3 : 6;
-				break;
-			case 1:
-				num = isMobile ? 6 : 12;
-				break;
-			case 2:
-				num = isMobile ? 9 : 0;
-				break;
-			case 3:
-				num = 12;
-				break;
-			case 4:
-				num = 15;
-				break;
-			case 5:
-				num = 18;
-				break;
-			}
-			return num;
-		}
-
 		return (
 			<div className="sdgExplorer">
 				<Row
 					startFrom={0}
-					numberIcons={numberIcons(this.state.currentRow, true)}
+					numberIcons={numberIcons(this.state.currentRow, true, this.state.isMobile)}
 					key={1}
 					handler={this.selectSDG}
 					currentSdg={this.state.currentSdg}
@@ -218,8 +143,8 @@ const SDGexplorer = React.createClass({
 				</ReactCSSTransitionGroup>
 
 				<Row
-					startFrom={startFrom(this.state.currentRow)}
-					numberIcons={numberIcons(this.state.currentRow, false)}
+					startFrom={startFrom(this.state.currentRow, this.state.isMobile)}
+					numberIcons={numberIcons(this.state.currentRow, false, this.state.isMobile)}
 					key={2}
 					handler={this.selectSDG}
 					currentSdg={this.state.currentSdg}
