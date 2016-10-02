@@ -61,10 +61,10 @@ const common = {
 	devtool: production ? false : "eval",
 	entry: "./src/index.jsx",
 	output: {
-		path:          "build",
+		path:          __dirname + "/build",
 		filename:      production ? "[name]-[hash].js" : "bundle.js",
 		chunkFilename: "[name]-[chunkhash].js",
-		publicPath:    "/build/"
+		publicPath:    production ? "./" : "/build/"
 	},
 	plugins: plugins,
 	module: {
@@ -86,7 +86,7 @@ const common = {
 				loader: "babel-loader",
 				exclude: /node_modules/,
 				query: {
-					presets: ["es2015", "react", "react-hmre"]
+					presets: production ? ["es2015", "react"] : ["es2015", "react", "react-hmre"]
 				}
 			},
 			{
