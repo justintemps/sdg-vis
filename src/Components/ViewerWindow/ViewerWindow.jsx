@@ -10,7 +10,6 @@ import ViewerWindowContent from "../ViewerWindowContent/ViewerWindowContent.jsx"
 const ViewerWindow = React.createClass({
 
 	render() {
-
 		const titleBar = <TitleBar
 			sdgNumber={this.props.data[this.props.currentSdg].sdgNumber}
 			sdgName={this.props.data[this.props.currentSdg].sdgName}
@@ -22,7 +21,7 @@ const ViewerWindow = React.createClass({
 			<div className="viewerWindow">
 				{titleBar}
 				<ViewerWindowContent
-					sdgNumber={this.props.currentSdg}
+					currentSdg={this.props.currentSdg}
 					focusTarget={this.props.focusTarget}
 					selectFocusTarget={this.props.selectFocusTarget}
 					currentStory={this.props.currentStory}

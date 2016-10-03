@@ -13,16 +13,16 @@ const ViewerWindowContent = React.createClass({
 	render() {
 
 		// Get the focus targets number and description for the current SDG
-		const focusTargets = this.props.data[this.props.sdgNumber].focusTargets.map( target =>
+		const focusTargets = this.props.data[this.props.currentSdg].focusTargets.map( target =>
 			({ description : target.description, number : target.number })
 		);
 
-		const iloTargets = this.props.data[this.props.sdgNumber].iloTargets.map( target =>
+		const iloTargets = this.props.data[this.props.currentSdg].iloTargets.map( target =>
 			({ description : target.description, number : target.number })
 		);
 
 		// Get the impact stories data for the current SDG
-		const impactStories = this.props.data[this.props.sdgNumber].stories.map( story => {
+		const impactStories = this.props.data[this.props.currentSdg].stories.map( story => {
 			return (
 			{
 				title : story.title,
@@ -33,7 +33,7 @@ const ViewerWindowContent = React.createClass({
 		});
 
 		// If current SDG is 0, show the default screen, otherwise show Focus Targets, Impact Stories
-		if (this.props.sdgNumber === 0 ) {
+		if (this.props.currentSdg === 0 ) {
 			return <DefaultViewerWindowContent />;
 		} else {
 			return (
@@ -42,7 +42,7 @@ const ViewerWindowContent = React.createClass({
 						iloTargets={iloTargets}
 						focusTarget={this.props.focusTarget}
 						selectFocusTarget={this.props.selectFocusTarget}
-						currentSDG = {this.props.sdgNumber}
+						currentSDG = {this.props.currentSdg}
 						data = {this.props.data}
 						longDescription={this.props.longDescription}
 						setLongDescription={this.props.setLongDescription}
@@ -54,15 +54,15 @@ const ViewerWindowContent = React.createClass({
 						toolTipVisible={this.props.toolTipVisible}
 						focusTargets={focusTargets}
 						focusTarget={this.props.focusTarget}
-						currentSDG = {this.props.sdgNumber}
-						currentColor={this.props.data[this.props.sdgNumber].sdgColor}
+						currentSDG = {this.props.currentSdg}
+						currentColor={this.props.data[this.props.currentSdg].sdgColor}
 					/>
 
 					<ImpactStories
 						impactStories={impactStories}
 						currentStory={this.props.currentStory}
 						selectStory={this.props.selectStory}
-						currentSDG = {this.props.sdgNumber}
+						currentSDG = {this.props.currentSdg}
 						data = {this.props.data}
 					/>
 				</div>

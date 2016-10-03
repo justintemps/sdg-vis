@@ -12,7 +12,6 @@
 	},
 
 	render() {
-
 		const properties = {
 			borderLeft: `${this.size()}px solid transparent`,
 			borderRight: `${this.size()}px solid transparent`,

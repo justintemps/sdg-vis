@@ -11,15 +11,14 @@ const Row = React.createClass({
 		for ( let i = (this.props.startFrom); i < (this.props.numberIcons + this.props.startFrom); i++ ) {
 			this.icons.push(
 				<Icon
-					sdg={this.props.data[i].sdgNumber}
-					key={i}
-					src={this.props.data[i].sdgIcon}
 					color={this.props.data[i].sdgColor}
-					handler={this.props.selectSDG}
 					currentSdg={this.props.currentSdg}
-					sdgNameShort={this.props.data[i].sdgNameShort}
-					rowChanged={this.props.rowChanged}
 					icon={this.props.icons[i]}
+					key={i}
+					rowChanged={this.props.rowChanged}
+					sdgNameShort={this.props.data[i].sdgNameShort}
+					sdgNumber={this.props.data[i].sdgNumber}
+					selectSDG={this.props.selectSDG}
 				/>
 			);
 		}
@@ -36,3 +35,18 @@ const Row = React.createClass({
 });
 
 export default Row;
+
+/*
+
+<Icon
+	sdgNumber={this.props.data[i].sdgNumber}
+	key={i}
+	color={this.props.data[i].sdgColor}
+	sdgNameShort={this.props.data[i].sdgNameShort}
+	selectSDG={this.props.selectSDG}
+	currentSdg={this.props.currentSdg}
+	rowChanged={this.props.rowChanged}
+	icon={this.props.icons[i]}
+/>
+
+*/

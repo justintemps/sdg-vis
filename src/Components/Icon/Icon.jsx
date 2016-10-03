@@ -14,36 +14,35 @@ const gglogo = React.createElement(globalGoalsSVG);
 const Icon = React.createClass({
 
 	clickHandler() {
-		this.props.handler(this.props.sdg);
+		this.props.selectSDG(this.props.sdgNumber);
 	},
 
 	render() {
-
 		// Configure the class for the icon
-		const iconClass = `icon sdg${this.props.sdg}`;
+		const iconClass = `icon sdg${this.props.sdgNumber}`;
 
 		// Sets the opacity on the currently selected element
 		const opacity = () => {
-			if (this.props.sdg === this.props.currentSdg) {
+			if (this.props.sdgNumber === this.props.currentSdg) {
 				return({opacity: 1});
 			}
 		};
 
 		const triangle = () => {
-			if (this.props.sdg === this.props.currentSdg) {
+			if (this.props.sdgNumber === this.props.currentSdg) {
 				return <Triangle className="triangle" key={this.props.number} small={true} sdgNumber={this.props.number} sdgColor={this.props.color} />;
 			}
 		};
 
 		// Determines which number or character should appear in the mobile icon
-		const mobileSDGNumber = ( this.props.sdg > 0 ) ? this.props.sdg : gglogo;
+		const mobileSDGNumber = ( this.props.sdgNumber > 0 ) ? this.props.sdgNumber : gglogo;
 
 		return(
 			<div className="icon-wrapper">
 				<div style={opacity()} className={iconClass} onClick={this.clickHandler}>
 					{this.props.icon}
 					<div className="mobileSdgNumber">{mobileSDGNumber}</div>
-					<div className="mobileSdgName">{this.props.sdgNameShort}</div>
+					<div className="mobileSdgName">{this.props.sdgNumberNameShort}</div>
 				</div>
 				<ReactCSSTransitionGroup transitionName="little-triangle" transitionLeaveTimeout={1} transitionEnterTimeout={this.props.rowChanged ? 750 : 1}>
 					{triangle()}
