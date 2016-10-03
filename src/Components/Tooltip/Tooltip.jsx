@@ -29,7 +29,6 @@
 	},
 
 	render() {
-
 		return(
 			<div style={this.styles()} className="tooltip">
 				<div className="target-number">Target {this.props.focusTargets[this.props.focusTarget].number}</div>

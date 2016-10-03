@@ -21,13 +21,13 @@ const ImpactStories = React.createClass({
 					id={i}
 					currentStory={this.props.currentStory}
 					selectStory={this.props.selectStory}
-					currentSDG = {this.props.currentSDG}
+					currentSDG = {this.props.currentSdg}
 					data={this.props.data}
 				/>
 			);
 		});
 
-		const style = {color: this.props.data[this.props.currentSDG].sdgColor};
+		const style = {color: this.props.data[this.props.currentSdg].sdgColor};
 
 		return(
 			<div className="impactStories">

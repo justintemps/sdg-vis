@@ -42,7 +42,7 @@ const Icon = React.createClass({
 				<div style={opacity()} className={iconClass} onClick={this.clickHandler}>
 					{this.props.icon}
 					<div className="mobileSdgNumber">{mobileSDGNumber}</div>
-					<div className="mobileSdgName">{this.props.sdgNumberNameShort}</div>
+					<div className="mobileSdgName">{this.props.sdgNameShort}</div>
 				</div>
 				<ReactCSSTransitionGroup transitionName="little-triangle" transitionLeaveTimeout={1} transitionEnterTimeout={this.props.rowChanged ? 750 : 1}>
 					{triangle()}

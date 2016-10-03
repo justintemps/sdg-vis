@@ -20,12 +20,12 @@ const FocusTargets = React.createClass({
 				id={i}
 				focusTarget={this.props.focusTarget}
 				selectFocusTarget={this.props.selectFocusTarget}
-				currentSDG = {this.props.currentSDG}
+				currentSDG = {this.props.currentSdg}
 				data = {this.props.data}
 			/>
 		);
 
-		const style = {color: this.props.data[this.props.currentSDG].sdgColor};
+		const style = {color: this.props.data[this.props.currentSdg].sdgColor};
 
 		return (
 			<div className="focusTargets">
@@ -41,7 +41,7 @@ const FocusTargets = React.createClass({
 								focusTarget={this.props.focusTarget}
 								description={this.props.iloTargets[this.props.focusTarget].description}
 								targetNumber={this.props.iloTargets[this.props.focusTarget].number}
-								color={this.props.data[this.props.currentSDG].sdgColor}
+								color={this.props.data[this.props.currentSdg].sdgColor}
 								longDescription={this.props.longDescription}
 								setLongDescription={this.props.setLongDescription}
 								toggleToolTip={this.props.toggleToolTip}

@@ -42,7 +42,7 @@ const ViewerWindowContent = React.createClass({
 						iloTargets={iloTargets}
 						focusTarget={this.props.focusTarget}
 						selectFocusTarget={this.props.selectFocusTarget}
-						currentSDG = {this.props.currentSdg}
+						currentSdg = {this.props.currentSdg}
 						data = {this.props.data}
 						longDescription={this.props.longDescription}
 						setLongDescription={this.props.setLongDescription}
@@ -54,7 +54,6 @@ const ViewerWindowContent = React.createClass({
 						toolTipVisible={this.props.toolTipVisible}
 						focusTargets={focusTargets}
 						focusTarget={this.props.focusTarget}
-						currentSDG = {this.props.currentSdg}
 						currentColor={this.props.data[this.props.currentSdg].sdgColor}
 					/>
 
@@ -62,7 +61,7 @@ const ViewerWindowContent = React.createClass({
 						impactStories={impactStories}
 						currentStory={this.props.currentStory}
 						selectStory={this.props.selectStory}
-						currentSDG = {this.props.currentSdg}
+						currentSdg = {this.props.currentSdg}
 						data = {this.props.data}
 					/>
 				</div>
