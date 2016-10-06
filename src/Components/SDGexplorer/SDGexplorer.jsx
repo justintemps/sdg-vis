@@ -49,6 +49,7 @@ const SDGexplorer = React.createClass({
 		}
 	},
 
+	// Syncs the route with the current SDG
 	setRoute(route) {
 		window.location.hash = route;
 	},
