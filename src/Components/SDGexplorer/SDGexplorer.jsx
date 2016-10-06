@@ -34,6 +34,20 @@ const SDGexplorer = React.createClass({
 	componentDidMount() {
 		window.addEventListener("resize", this.setMobileRows);
 		document.body.addEventListener("touchstart", () => { this.toggleToolTip(false); });
+		this.followRoute(window.location.hash);
+	},
+
+	followRoute(route) {
+		let r = parseInt( route.replace(/^\D+/g, "") );
+		if (r >= 0 && r < 17) {
+			this.setState({ currentSdg : r });
+		} else {
+			this.setState({currentSdg : 0});
+		}
+	},
+
+	setRoute(route) {
+		window.location.hash = route;
 	},
 
 	// Are we in mobile view?
@@ -48,7 +62,6 @@ const SDGexplorer = React.createClass({
 	// Select a new SDG and change the row of necessary.
 	// Also resets the current story and focus target
 	selectSDG(sdg) {
-
 		const rowDivisor = this.state.isMobile ? 3 : 6;
 
 		this.setState({
@@ -60,7 +73,11 @@ const SDGexplorer = React.createClass({
 		});
 
 		// Shift the row if it changed
-		setTimeout( () => this.shiftRow( Math.floor(sdg/rowDivisor) ), 500 );
+		// Set route to new sdg
+		setTimeout( () => {
+			this.shiftRow( Math.floor(sdg/rowDivisor) );
+			this.setRoute(this.state.currentSdg);
+		}, 500);
 	},
 
 	// Select the current focus target
