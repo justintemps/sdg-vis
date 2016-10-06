@@ -37,12 +37,15 @@ const SDGexplorer = React.createClass({
 		this.followRoute(window.location.hash);
 	},
 
+	// Maps the route to the relevant SDG
 	followRoute(route) {
 		let r = parseInt( route.replace(/^\D+/g, "") );
-		if (r >= 0 && r < 17) {
-			this.setState({ currentSdg : r });
-		} else {
-			this.setState({currentSdg : 0});
+		if (r >= 0 && r < 18) {
+			const rowDivisor = this.state.isMobile ? 3 : 6;
+			this.setState({
+				currentSdg : r,
+				currentRow : Math.floor(r / rowDivisor)
+			});
 		}
 	},
 
