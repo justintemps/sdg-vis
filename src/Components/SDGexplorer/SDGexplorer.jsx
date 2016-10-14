@@ -34,7 +34,13 @@ const SDGexplorer = React.createClass({
 
 	componentDidMount() {
 		window.addEventListener("resize", this.setMobileRows);
-		document.body.addEventListener("touchstart", () => { this.toggleToolTip(false); });
+		document.body.addEventListener("touchstart", () => {
+			this.toggleToolTip(false);
+			this.closeModal();
+		});
+		document.body.addEventListener("click", () => {
+			this.closeModal();
+		});
 		this.followRoute(window.location.hash);
 	},
 
@@ -165,7 +171,6 @@ const SDGexplorer = React.createClass({
 						longDescription={this.state.longDescription}
 						toolTipVisible={this.state.toolTipVisible}
 						isModalOpen={this.state.isModalOpen}
-
 						openModal={this.openModal}
 						closeModal={this.closeModal}
 						selectFocusTarget={this.selectFocusTarget}

@@ -23,7 +23,13 @@
 				<div className="gglogo-container">
 					{gglogo}
 				</div>
-				<Modal />
+				<Modal isModalOpen={this.props.isModalOpen}>
+					<iframe
+						className="youtube-frame"
+						src={`https://www.youtube.com/embed/mZpyJwevPqc?autoplay=1`}
+						allowFullScreen
+					/>
+				</Modal>
 			</div>
 		);
 	}
