@@ -10,15 +10,29 @@ const Modal = React.createClass({
 	render() {
 		if (this.props.isOpen) {
 			return (
-				<ReactCSSTransitionGroup transitionName={this.props.transitionName}>
+				<ReactCSSTransitionGroup
+					transitionName="modal"
+					transitionEnterTimeout={500}
+					transitionLeaveTimeout={300}>
+
+					<div className="modal">
+						{this.props.children}
+					</div>
+
+				</ReactCSSTransitionGroup>
+			);
+		}
+		else {
+			return (
+				<ReactCSSTransitionGroup
+					transitionName="modal"
+					transitionEnterTimeout={500}
+					transitionLeaveTimeout={300}>
+					
 					<div className="modal">
 						{this.props.children}
 					</div>
 				</ReactCSSTransitionGroup>
-			);
-		} else {
-			return (
-				<ReactCSSTransitionGroup transitionName={this.props.transitionName} />
 			);
 		}
 	}

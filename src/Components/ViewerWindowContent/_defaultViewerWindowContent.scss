@@ -15,8 +15,9 @@
 	p {
 		font-size: 2rem;
 
-		a {
+		span {
 			color: $titleColor;
+			cursor: pointer;
 		}
 
 		a:hover {

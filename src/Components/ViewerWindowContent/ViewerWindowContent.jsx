@@ -34,7 +34,13 @@ const ViewerWindowContent = React.createClass({
 
 		// If current SDG is 0, show the default screen, otherwise show Focus Targets, Impact Stories
 		if (this.props.currentSdg === 0 ) {
-			return <DefaultViewerWindowContent />;
+			return (
+				<DefaultViewerWindowContent
+					isModalOpen={this.props.isModalOpen}
+					openModal={this.props.openModal}
+					closeModal={this.props.closeModal}
+				/>
+			);
 		} else {
 			return (
 				<div className="viewerWindowContent">
