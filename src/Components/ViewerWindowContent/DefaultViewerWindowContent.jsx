@@ -3,6 +3,7 @@
  */
 
  import React from "react";
+ import Modal from "../Modal/Modal.jsx";
  import globalGoalsSVG from "!babel!svg-react!../../images/gglogo.svg";
 
  const gglogo = React.createElement(globalGoalsSVG, {

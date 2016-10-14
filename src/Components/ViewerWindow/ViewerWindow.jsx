@@ -20,18 +20,7 @@ const ViewerWindow = React.createClass({
 		return (
 			<div className="viewerWindow">
 				{titleBar}
-				<ViewerWindowContent
-					currentSdg={this.props.currentSdg}
-					focusTarget={this.props.focusTarget}
-					selectFocusTarget={this.props.selectFocusTarget}
-					currentStory={this.props.currentStory}
-					selectStory={this.props.selectStory}
-					data={this.props.data}
-					longDescription={this.props.longDescription}
-					setLongDescription={this.props.setLongDescription}
-					toggleToolTip={this.props.toggleToolTip}
-					toolTipVisible={this.props.toolTipVisible}
-				/>
+				<ViewerWindowContent {...this.props} />
 			</div>
 		);
 	}

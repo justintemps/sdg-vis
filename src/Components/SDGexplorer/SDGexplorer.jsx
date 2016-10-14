@@ -21,6 +21,7 @@ const SDGexplorer = React.createClass({
 			currentRow : 0,
 			focusTarget : 0,
 			isMobile : false,
+			isModalOpen : false,
 			longDescription : false,
 			rowChanged : false,
 			toolTipVisible : false
@@ -35,6 +36,14 @@ const SDGexplorer = React.createClass({
 		window.addEventListener("resize", this.setMobileRows);
 		document.body.addEventListener("touchstart", () => { this.toggleToolTip(false); });
 		this.followRoute(window.location.hash);
+	},
+
+	openModal() {
+		this.setState({isModalOpen : true});
+	},
+
+	closeModal() {
+		this.setState({isModalOpen : false});
 	},
 
 	// Maps the route to the relevant SDG
@@ -153,9 +162,13 @@ const SDGexplorer = React.createClass({
 						currentSdg={this.state.currentSdg}
 						focusTarget={this.state.focusTarget}
 						currentStory={this.state.currentStory}
-						selectFocusTarget={this.selectFocusTarget}
 						longDescription={this.state.longDescription}
 						toolTipVisible={this.state.toolTipVisible}
+						isModalOpen={this.state.isModalOpen}
+
+						openModal={this.openModal}
+						closeModal={this.closeModal}
+						selectFocusTarget={this.selectFocusTarget}
 						selectStory={this.selectStory}
 						setLongDescription={this.setLongDescription}
 						toggleToolTip={this.toggleToolTip}
