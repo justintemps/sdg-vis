@@ -24,11 +24,12 @@
 					{gglogo}
 				</div>
 				<Modal isModalOpen={this.props.isModalOpen}>
-					<iframe
-						className="youtube-frame"
-						src={`https://www.youtube.com/embed/mZpyJwevPqc?autoplay=1`}
-						allowFullScreen
-					/>
+					<div className="iframe-wrapper">
+						<iframe
+							src="https://www.youtube.com/embed/mZpyJwevPqc?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"
+							frameborder="0"
+						/>
+					</div>
 				</Modal>
 			</div>
 		);

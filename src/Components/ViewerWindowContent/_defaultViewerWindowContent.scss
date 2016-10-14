@@ -6,6 +6,23 @@
 	min-height: 293px;
 	margin: 20px 0 20px 20px;
 	position: relative;
+
+	.iframe-wrapper {
+		clear: both;
+		float: none;
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+		width: 100%;
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .defaultDescription {
