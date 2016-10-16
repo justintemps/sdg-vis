@@ -11,6 +11,21 @@ import Modal from "../Modal/Modal.jsx";
 
 const ViewerWindow = React.createClass({
 
+	mountModal() {
+		if (this.props.isModalOpen) {
+			return(
+				<Modal>
+					<div className="iframe-wrapper">
+						<iframe
+							src="https://www.youtube.com/embed/mZpyJwevPqc?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"
+							frameBorder="0"
+						/>
+					</div>
+				</Modal>
+			);
+		}
+	},
+
 	render() {
 		const titleBar = <TitleBar
 			sdgNumber={this.props.data[this.props.currentSdg].sdgNumber}
@@ -23,14 +38,7 @@ const ViewerWindow = React.createClass({
 			<div className="viewerWindow">
 				{titleBar}
 				<ViewerWindowContent {...this.props} />
-				<Modal isModalOpen={this.props.isModalOpen}>
-					<div className="iframe-wrapper">
-						<iframe
-							src="https://www.youtube.com/embed/mZpyJwevPqc?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0"
-							frameBorder="0"
-						/>
-					</div>
-				</Modal>
+				{this.mountModal()}
 			</div>
 		);
 	}
