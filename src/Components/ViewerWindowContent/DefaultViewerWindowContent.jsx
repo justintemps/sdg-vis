@@ -3,7 +3,6 @@
  */
 
  import React from "react";
- import Modal from "../Modal/Modal.jsx";
  import globalGoalsSVG from "!babel!svg-react!../../images/gglogo.svg";
 
  const gglogo = React.createElement(globalGoalsSVG, {
@@ -23,14 +22,6 @@
 				<div className="gglogo-container">
 					{gglogo}
 				</div>
-				<Modal isModalOpen={this.props.isModalOpen}>
-					<div className="iframe-wrapper">
-						<iframe
-							src="https://www.youtube.com/embed/mZpyJwevPqc?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"
-							frameBorder="0"
-						/>
-					</div>
-				</Modal>
 			</div>
 		);
 	}
