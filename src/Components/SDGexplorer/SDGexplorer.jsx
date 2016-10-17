@@ -36,10 +36,6 @@ const SDGexplorer = React.createClass({
 		window.addEventListener("resize", this.setMobileRows);
 		document.body.addEventListener("touchstart", () => {
 			this.toggleToolTip(false);
-			this.closeModal();
-		});
-		document.body.addEventListener("click", () => {
-			this.closeModal();
 		});
 		this.followRoute(window.location.hash);
 	},

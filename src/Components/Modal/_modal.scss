@@ -1,52 +1,28 @@
-
-
-.modal-anim-enter {
-    opacity: 0.00;
-    transform: scale(0.7);
-    transition: all 0.2s;
-}
-
-.modal-anim-enter.modal-anim-enter-active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.modal-anim-leave {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.2s;
-}
-
-.modal-anim-leave.modal-anim-leave-active {
-    opacity: 0.00;
-    transform: scale(0.7);
-}
+/* Modal */
 
 .modal {
-	box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.28);
+	box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.28);
 	color: #000;
 	display: block;
 	font-weight: 400;
-	left: 40%;
-	max-width: 500px;
-	pointer-events: none;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-width: 750px;
 	position: fixed;
 	text-align: left;
 	top: 30%;
-	width: 50%;
+	width: 55%;
 	z-index: 9999;
 }
 
-.modal-backdrop {
-	position: fixed;
-	width: 100%;
+#modal-backdrop {
+	background: rgba(0, 0, 0, 0.5);
 	height: 100%;
-	top: 0;
 	left: 0;
-	z-index: 9998;
-	background: rgba(0, 0, 0, 0.3);
-}
-
-.no-scroll {
 	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9998;
 }

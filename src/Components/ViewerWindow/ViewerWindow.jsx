@@ -14,10 +14,10 @@ const ViewerWindow = React.createClass({
 	mountModal() {
 		if (this.props.isModalOpen) {
 			return(
-				<Modal>
+				<Modal closeModal={this.props.closeModal}>
 					<div className="iframe-wrapper">
 						<iframe
-							src="https://www.youtube.com/embed/mZpyJwevPqc?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"
+							src="https://www.youtube.com/embed/mZpyJwevPqc?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;modestbranding=1"
 							frameBorder="0"
 						/>
 					</div>
@@ -45,3 +45,7 @@ const ViewerWindow = React.createClass({
 });
 
 export default ViewerWindow;
+
+/*
+?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;wmode=opaque
+*/
