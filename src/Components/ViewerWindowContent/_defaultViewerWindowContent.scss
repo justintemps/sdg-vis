@@ -16,13 +16,17 @@
 	p {
 		font-size: 2rem;
 
-		span {
+		.link, .fa {
 			color: $titleColor;
 			cursor: pointer;
 		}
 
-		span:hover {
+		.link:hover {
 			color: $bulletSelected;
+
+			.fa {
+				color: $bulletSelected;
+			}
 		}
 	}
 
