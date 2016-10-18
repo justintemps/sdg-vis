@@ -5,7 +5,9 @@ const Sidebar = React.createClass({
 		return(
 			<div className="sidebar">
 				<h4>
-					The 2030 development agenda&nbsp;
+					<a href="/global/topics/sdg-2030/lang--en/index.htm">
+						The 2030 development agenda&nbsp;
+					</a>
 				</h4>
 				<ol role="menu" className="l_tinynav1">
 					<li className="">
