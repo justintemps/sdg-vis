@@ -15,6 +15,15 @@
 
 	p {
 		font-size: 2rem;
+	}
+
+	p:first-child {
+		margin: 0 0 20px 0;
+	}
+
+	div {
+		font-size: 2rem;
+		margin: 3rem 0 0;
 
 		.link, .fa {
 			color: $titleColor;
@@ -31,13 +40,10 @@
 
 		.fa {
 			display: inline;
-			font-size: 1.2rem;
-			vertical-align: .3rem;
+			font-size: 3.8rem;
+			margin: 0 0 0 10px;
+			vertical-align: -0.5rem;
 		}
-	}
-
-	p:first-child {
-		margin: 0 0 20px 0;
 	}
 }
 

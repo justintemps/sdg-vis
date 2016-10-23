@@ -17,11 +17,14 @@ const DefaultViewerWindowContent = React.createClass({
 			<div className="defaultViewerWindowContent">
 				<div className="defaultDescription">
 					<p>
-						The 2030 Agenda places <span className="link" onClick={this.props.openModal}>Decent Work for all <span className="fa fa-play"></span></span> at the heart of policies for sustainable and inclusive growth and development.
+						The 2030 Agenda places Decent Work for all at the heart of policies for sustainable and inclusive growth and development.
 					</p>
 					<p>
 						<span className="emphasize">Choose a goal</span> and learn how the ILO's mandate to promote social justice is helping to achieve each of the Sustainable Development Goals.
 					</p>
+					<div>
+						<span className="link" onClick={this.props.openModal}>What is decent work?<span className="fa fa-play-circle-o"></span></span>
+					</div>
 				</div>
 				<div className="gglogo-container">
 					{gglogo}
@@ -32,3 +35,9 @@ const DefaultViewerWindowContent = React.createClass({
 });
 
 export default DefaultViewerWindowContent;
+
+/*<span className="link" onClick={this.props.openModal}>
+
+
+
+*/
