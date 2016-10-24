@@ -26,8 +26,34 @@ const Description = React.createClass({
 
 	seeTargetButton() {
 		return (
-			<span style={ ( () => ({ color : this.props.color }) )() } onTouchStart={this.showToolTip} onMouseOver={this.showToolTip} onMouseLeave={this.hideToolTip}> SDG Target {this.props.targetNumber}</span>
+			<span
+				style={ ( () => ({ color : this.props.color }) )() }
+				onTouchStart={this.showToolTip}
+				onMouseOver={this.showToolTip}
+				onMouseLeave={this.hideToolTip}
+			>
+				SDG Target {this.props.targetNumber}
+			</span>
 		);
+	},
+
+	seeILSButton() {
+		if (this.props.ils) {
+			const match = this.props.ils.filter( ils => ils.number === this.props.targetNumber );
+
+			if (match) {
+				return(
+					<span
+						style={ ( () => ({ color : this.props.color }) )() }
+						onTouchStart={this.showToolTip}
+						onMouseOver={this.showToolTip}
+						onMouseLeave={this.hideToolTip}
+					>
+					See related ILO Standards
+					</span>
+				);
+			}
+		}
 	},
 
 	mobiledescription(limit, range) {
@@ -36,7 +62,7 @@ const Description = React.createClass({
 		if (diff < range || this.props.longDescription) {
 			return(
 				<span>
-					{this.props.description} {this.seeTargetButton()}
+					{this.props.description} {this.seeTargetButton()}}
 				</span>
 			);
 		} else {
@@ -52,7 +78,7 @@ const Description = React.createClass({
 	render() {
 		return(
 			<div className="description">
-				<p className="target-description">{this.props.description}{this.seeTargetButton()}</p>
+				<p className="target-description">{this.props.description}{this.seeTargetButton()}{this.seeILSButton()}</p>
 				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
 			</div>
 		);

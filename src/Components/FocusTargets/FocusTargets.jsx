@@ -11,7 +11,6 @@ import Description from "../Description/Description.jsx";
 const FocusTargets = React.createClass({
 
 	render() {
-
 		const heading = "Where Decent Work comes in";
 
 		const bullets = this.props.iloTargets.map( (target, i) =>
@@ -39,6 +38,7 @@ const FocusTargets = React.createClass({
 						<div className="target-description-wrapper">
 							<Description
 								focusTarget={this.props.focusTarget}
+								ils={this.props.ils}
 								description={this.props.iloTargets[this.props.focusTarget].description}
 								targetNumber={this.props.iloTargets[this.props.focusTarget].number}
 								color={this.props.data[this.props.currentSdg].sdgColor}
