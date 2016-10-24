@@ -21,7 +21,7 @@ const Description = React.createClass({
 
 	seeTargetButton() {
 		return (
-			<span style={ ( () => ({ color : this.props.color }) )() } onTouchStart={this.showToolTip} onMouseOver={this.showToolTip} onMouseLeave={this.hideToolTip}> See target {this.props.targetNumber}</span>
+			<span style={ ( () => ({ color : this.props.color }) )() } onTouchStart={this.showToolTip} onMouseOver={this.showToolTip} onMouseLeave={this.hideToolTip}> SDG Target {this.props.targetNumber}</span>
 		);
 	},
 
@@ -49,7 +49,7 @@ const Description = React.createClass({
 	render() {
 		return(
 			<div className="description">
-				<p className="target-description">{this.props.description} {this.seeTargetButton()}</p>
+				<p className="target-description">{this.props.description}{this.seeTargetButton()}</p>
 				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
 			</div>
 		);
