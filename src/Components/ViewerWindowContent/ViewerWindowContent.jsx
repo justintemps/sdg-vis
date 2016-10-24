@@ -10,18 +10,25 @@ import ImpactStories from "../ImpactStories/ImpactStories.jsx";
 import Tooltip from "../Tooltip/Tooltip.jsx";
 
 const ViewerWindowContent = React.createClass({
-	render() {
 
-		// Get the focus targets number and description for the current SDG
+	// Get the actual SDG targets for this SDG
+	focusTargets() {
 		const focusTargets = this.props.data[this.props.currentSdg].focusTargets.map( target =>
 			({ description : target.description, number : target.number })
 		);
+		return focusTargets;
+	},
 
+	// Get the ILO wording of the SDG targets
+	iloTargets() {
 		const iloTargets = this.props.data[this.props.currentSdg].iloTargets.map( target =>
 			({ description : target.description, number : target.number })
 		);
+		return iloTargets;
+	},
 
-		// Get the impact stories data for the current SDG
+	// Get the list of stories associated with that target
+	impactStories() {
 		const impactStories = this.props.data[this.props.currentSdg].stories.map( story => {
 			return (
 			{
@@ -31,6 +38,10 @@ const ViewerWindowContent = React.createClass({
 				imageUrl : story.imageUrl
 			});
 		});
+		return impactStories;
+	},
+
+	render() {
 
 		// If current SDG is 0, show the default screen, otherwise show Focus Targets, Impact Stories
 		if (this.props.currentSdg === 0 ) {
@@ -45,7 +56,7 @@ const ViewerWindowContent = React.createClass({
 			return (
 				<div className="viewerWindowContent">
 					<FocusTargets
-						iloTargets={iloTargets}
+						iloTargets={this.iloTargets()}
 						focusTarget={this.props.focusTarget}
 						selectFocusTarget={this.props.selectFocusTarget}
 						currentSdg = {this.props.currentSdg}
@@ -58,13 +69,13 @@ const ViewerWindowContent = React.createClass({
 
 					<Tooltip
 						toolTipVisible={this.props.toolTipVisible}
-						focusTargets={focusTargets}
+						focusTargets={this.focusTargets()}
 						focusTarget={this.props.focusTarget}
 						currentColor={this.props.data[this.props.currentSdg].sdgColor}
 					/>
 
 					<ImpactStories
-						impactStories={impactStories}
+						impactStories={this.impactStories()}
 						currentStory={this.props.currentStory}
 						selectStory={this.props.selectStory}
 						currentSdg = {this.props.currentSdg}

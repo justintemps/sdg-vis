@@ -7,6 +7,11 @@ import React from "react";
 
 const Description = React.createClass({
 
+	propTypes: {
+		setLongDescription : React.PropTypes.func.isRequired,
+		toggleToolTip : React.PropTypes.func.isRequired,
+	},
+
 	showLongDescription() {
 		this.props.setLongDescription(true);
 	},
@@ -27,8 +32,6 @@ const Description = React.createClass({
 
 	mobiledescription(limit, range) {
 		const diff = this.props.description.length - limit;
-
-	//	const wholeDescription = `${this.props.description} ${this.seeTargetButton()}`;
 
 		if (diff < range || this.props.longDescription) {
 			return(
