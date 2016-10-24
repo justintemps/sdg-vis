@@ -27,6 +27,18 @@ const ViewerWindowContent = React.createClass({
 		return iloTargets;
 	},
 
+	// Get ils if it's there!
+	ils() {
+		if (this.props.data[this.props.currentSdg].ils) {
+			const ils = this.props.data[this.props.currentSdg].ils.map ( ils =>
+				({title: ils.title, description : ils.description, number : ils.number})
+			);
+			return ils;
+		} else {
+			return false;
+		}
+	},
+
 	// Get the list of stories associated with that target
 	impactStories() {
 		const impactStories = this.props.data[this.props.currentSdg].stories.map( story => {
@@ -58,6 +70,7 @@ const ViewerWindowContent = React.createClass({
 					<FocusTargets
 						iloTargets={this.iloTargets()}
 						focusTarget={this.props.focusTarget}
+						ils={this.ils()}
 						selectFocusTarget={this.props.selectFocusTarget}
 						currentSdg = {this.props.currentSdg}
 						data = {this.props.data}
