@@ -66,6 +66,7 @@ const ViewerWindowContent = React.createClass({
 		} else {
 			return (
 				<div className="viewerWindowContent">
+
 					<FocusTargets
 						iloTargets={this.iloTargets()}
 						focusTarget={this.props.focusTarget}
@@ -77,6 +78,7 @@ const ViewerWindowContent = React.createClass({
 						setLongDescription={this.props.setLongDescription}
 						toggleToolTip={this.props.toggleToolTip}
 						toolTipVisible={this.props.toolTipVisible}
+						showIlsInToolTip={this.props.showIlsInToolTip}
 					/>
 
 					<Tooltip
@@ -84,6 +86,8 @@ const ViewerWindowContent = React.createClass({
 						focusTargets={this.focusTargets()}
 						focusTarget={this.props.focusTarget}
 						currentColor={this.props.data[this.props.currentSdg].sdgColor}
+						ils={this.ils()}
+						ilsInToolTip={this.props.ilsInToolTip}
 					/>
 
 					<ImpactStories

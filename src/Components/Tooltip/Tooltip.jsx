@@ -3,10 +3,10 @@
  * Child to viewerWindowContent
  */
 
- import React from "react";
- import hexToRgb from "./hexToRgb.js";
+import React from "react";
+import hexToRgb from "./hexToRgb.js";
 
- const Tooltip = React.createClass({
+const Tooltip = React.createClass({
 
 	styles() {
 		const bgColor = hexToRgb(this.props.currentColor, 0.9);
@@ -28,14 +28,33 @@
 		}
 	},
 
-	render() {
-		return(
-			<div style={this.styles()} className="tooltip">
-				<div className="target-number">Target {this.props.focusTargets[this.props.focusTarget].number}</div>
-				{this.props.focusTargets[this.props.focusTarget].description}
-			</div>
+	matchingILS() {
+		const matchingILS = this.props.ils.find(
+			ils => ils.number === this.props.focusTargets[this.props.focusTarget].number
 		);
-	}
- });
+		return matchingILS;
+	},
 
- export default Tooltip;
+	render() {
+		if (this.props.ilsInToolTip === false) {
+			return (
+				<div style={this.styles()} className="tooltip">
+					<div className="target-number">Target {this.props.focusTargets[this.props.focusTarget].number}
+					</div>
+					{this.props.focusTargets[this.props.focusTarget].description}
+				</div>
+			);
+		} else {
+			return (
+				<div style={this.styles()} className="tooltip">
+					<div className="target-number">
+						{this.matchingILS().title}
+					</div>
+					{this.matchingILS().description}
+				</div>
+			);
+		}
+	}
+});
+
+export default Tooltip;

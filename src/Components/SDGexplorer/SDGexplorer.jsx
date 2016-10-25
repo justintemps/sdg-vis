@@ -24,7 +24,8 @@ const SDGexplorer = React.createClass({
 			isModalOpen : false,
 			longDescription : false,
 			rowChanged : false,
-			toolTipVisible : false
+			toolTipVisible : false,
+			ilsInToolTip : false
 		});
 	},
 
@@ -38,6 +39,15 @@ const SDGexplorer = React.createClass({
 			this.toggleToolTip(false);
 		});
 		this.followRoute(window.location.hash);
+	},
+
+	// Decides whether to show standards in the tooltip.
+	showIlsInToolTip(param) {
+		if (param) {
+			this.setState({ilsInToolTip: true});
+		} else {
+			this.setState({ilsInToolTip: false});
+		}
 	},
 
 	openModal() {
@@ -84,6 +94,7 @@ const SDGexplorer = React.createClass({
 			focusTarget : 0,
 			currentStory : 0,
 			longDescription : false,
+			ilsInToolTip : false,
 			rowChanged : Math.floor(sdg / rowDivisor) !== this.state.currentRow ? true : false
 		});
 
@@ -159,6 +170,7 @@ const SDGexplorer = React.createClass({
 					transitionEnterTimeout={1200}>
 
 					<ViewerWindow
+
 						data={data}
 						key={ this.state.rowChanged ? this.state.currentSdg : 900}
 						currentSdg={this.state.currentSdg}
@@ -167,12 +179,15 @@ const SDGexplorer = React.createClass({
 						longDescription={this.state.longDescription}
 						toolTipVisible={this.state.toolTipVisible}
 						isModalOpen={this.state.isModalOpen}
+						ilsInToolTip={this.state.ilsInToolTip}
+
 						openModal={this.openModal}
 						closeModal={this.closeModal}
 						selectFocusTarget={this.selectFocusTarget}
 						selectStory={this.selectStory}
 						setLongDescription={this.setLongDescription}
 						toggleToolTip={this.toggleToolTip}
+						showIlsInToolTip={this.showIlsInToolTip}
 					/>
 
 				</ReactCSSTransitionGroup>

@@ -47,6 +47,7 @@ const FocusTargets = React.createClass({
 								setLongDescription={this.props.setLongDescription}
 								toggleToolTip={this.props.toggleToolTip}
 								toolTipVisible={this.props.toolTipVisible}
+								showIlsInToolTip={this.props.showIlsInToolTip}
 							/>
 
 							<Arrow

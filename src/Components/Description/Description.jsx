@@ -49,6 +49,7 @@ const Description = React.createClass({
 					ils={this.props.ils}
 					color={this.props.color}
 					targetNumber={this.props.targetNumber}
+					showIlsInToolTip={this.props.showIlsInToolTip}
 				/>
 
 				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
@@ -73,7 +74,13 @@ const ToolTipButtons = React.createClass({
 		ils : React.PropTypes.array.isRequired
 	},
 
-	showToolTip() {
+	seeTarget() {
+		this.props.showIlsInToolTip(false);
+		this.props.toggleToolTip(true);
+	},
+
+	seeILS() {
+		this.props.showIlsInToolTip(true);
 		this.props.toggleToolTip(true);
 	},
 
@@ -85,8 +92,8 @@ const ToolTipButtons = React.createClass({
 		return (
 			<span
 				style={ ( () => ({ color : this.props.color }) )() }
-				onTouchStart={this.showToolTip}
-				onMouseOver={this.showToolTip}
+				onTouchStart={this.seeTarget}
+				onMouseOver={this.seeTarget}
 				onMouseLeave={this.hideToolTip}
 			>
 				SDG Target {this.props.targetNumber}
@@ -100,11 +107,11 @@ const ToolTipButtons = React.createClass({
 			const match = this.props.ils.filter( ils => ils.number === this.props.targetNumber );
 
 			if (match.length > 0) {
-				return(
+				return (
 					<span
 						style={ ( () => ({ color : this.props.color }) )() }
-						onTouchStart={this.showToolTip}
-						onMouseOver={this.showToolTip}
+						onTouchStart={this.seeILS}
+						onMouseOver={this.seeILS}
 						onMouseLeave={this.hideToolTip}
 					>
 					See related ILO Standards
