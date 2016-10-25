@@ -5,16 +5,7 @@
 
 import React from "react";
 
-const Description = React.createClass({
-
-	propTypes: {
-		setLongDescription : React.PropTypes.func.isRequired,
-		toggleToolTip : React.PropTypes.func.isRequired,
-	},
-
-	showLongDescription() {
-		this.props.setLongDescription(true);
-	},
+const ToolTipButtons = React.createClass({
 
 	showToolTip() {
 		this.props.toggleToolTip(true);
@@ -57,13 +48,34 @@ const Description = React.createClass({
 		}
 	},
 
+	render() {
+		return(
+			<div>
+				{this.seeTargetButton()}
+				{this.seeILSButton()}
+			</div>
+		);
+	}
+});
+
+const Description = React.createClass({
+
+	propTypes: {
+		setLongDescription : React.PropTypes.func.isRequired,
+		toggleToolTip : React.PropTypes.func.isRequired,
+	},
+
+	showLongDescription() {
+		this.props.setLongDescription(true);
+	},
+
 	mobiledescription(limit, range) {
 		const diff = this.props.description.length - limit;
 
 		if (diff < range || this.props.longDescription) {
 			return(
 				<span>
-					{this.props.description} {this.seeTargetButton()}}
+					{this.props.description}
 				</span>
 			);
 		} else {
@@ -77,9 +89,21 @@ const Description = React.createClass({
 	},
 
 	render() {
+
 		return(
 			<div className="description">
-				<p className="target-description">{this.props.description}{this.seeTargetButton()}{this.seeILSButton()}</p>
+
+				<p className="target-description">
+					{this.props.description}
+				</p>
+
+				<ToolTipButtons
+					toggleToolTip={this.props.toggleToolTip}
+					ils={this.props.ils}
+					color={this.props.color}
+					targetNumber={this.props.targetNumber}
+				/>
+
 				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
 			</div>
 		);

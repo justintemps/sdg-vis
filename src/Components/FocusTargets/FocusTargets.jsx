@@ -36,6 +36,7 @@ const FocusTargets = React.createClass({
 							</ul>
 						</div>
 						<div className="target-description-wrapper">
+
 							<Description
 								focusTarget={this.props.focusTarget}
 								ils={this.props.ils}
@@ -47,6 +48,7 @@ const FocusTargets = React.createClass({
 								toggleToolTip={this.props.toggleToolTip}
 								toolTipVisible={this.props.toolTipVisible}
 							/>
+
 							<Arrow
 								item={this.props.focusTarget}
 								set={this.props.iloTargets}
