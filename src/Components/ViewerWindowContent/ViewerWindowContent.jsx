@@ -29,14 +29,13 @@ const ViewerWindowContent = React.createClass({
 
 	// Get ils if it's there!
 	ils() {
+		let ils = [];
 		if (this.props.data[this.props.currentSdg].ils) {
-			const ils = this.props.data[this.props.currentSdg].ils.map ( ils =>
+			ils = this.props.data[this.props.currentSdg].ils.map ( ils =>
 				({title: ils.title, description : ils.description, number : ils.number})
 			);
-			return ils;
-		} else {
-			return false;
 		}
+		return ils;
 	},
 
 	// Get the list of stories associated with that target

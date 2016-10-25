@@ -5,59 +5,6 @@
 
 import React from "react";
 
-const ToolTipButtons = React.createClass({
-
-	showToolTip() {
-		this.props.toggleToolTip(true);
-	},
-
-	hideToolTip() {
-		this.props.toggleToolTip(false);
-	},
-
-	seeTargetButton() {
-		return (
-			<span
-				style={ ( () => ({ color : this.props.color }) )() }
-				onTouchStart={this.showToolTip}
-				onMouseOver={this.showToolTip}
-				onMouseLeave={this.hideToolTip}
-			>
-				SDG Target {this.props.targetNumber}
-			</span>
-		);
-	},
-
-	seeILSButton() {
-		if (this.props.ils) {
-
-			const match = this.props.ils.filter( ils => ils.number === this.props.targetNumber );
-
-			if (match.length > 0) {
-				return(
-					<span
-						style={ ( () => ({ color : this.props.color }) )() }
-						onTouchStart={this.showToolTip}
-						onMouseOver={this.showToolTip}
-						onMouseLeave={this.hideToolTip}
-					>
-					See related ILO Standards
-					</span>
-				);
-			}
-		}
-	},
-
-	render() {
-		return(
-			<div>
-				{this.seeTargetButton()}
-				{this.seeILSButton()}
-			</div>
-		);
-	}
-});
-
 const Description = React.createClass({
 
 	propTypes: {
@@ -105,6 +52,81 @@ const Description = React.createClass({
 				/>
 
 				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
+			</div>
+		);
+	}
+});
+
+
+/**
+ * TOOLTIP BUTTONS
+ * Shows SDG Targets and related ILS where applicable
+ * Child of Description
+*/
+
+const ToolTipButtons = React.createClass({
+
+	propTypes: {
+		toggleToolTip : React.PropTypes.func.isRequired,
+		color : React.PropTypes.string.isRequired,
+		targetNumber : React.PropTypes.string.isRequired,
+		ils : React.PropTypes.array.isRequired
+	},
+
+	showToolTip() {
+		this.props.toggleToolTip(true);
+	},
+
+	hideToolTip() {
+		this.props.toggleToolTip(false);
+	},
+
+	seeTargetButton() {
+		return (
+			<span
+				style={ ( () => ({ color : this.props.color }) )() }
+				onTouchStart={this.showToolTip}
+				onMouseOver={this.showToolTip}
+				onMouseLeave={this.hideToolTip}
+			>
+				SDG Target {this.props.targetNumber}
+			</span>
+		);
+	},
+
+	seeILSButton() {
+		if (this.props.ils.length > 0) {
+
+			const match = this.props.ils.filter( ils => ils.number === this.props.targetNumber );
+
+			if (match.length > 0) {
+				return(
+					<span
+						style={ ( () => ({ color : this.props.color }) )() }
+						onTouchStart={this.showToolTip}
+						onMouseOver={this.showToolTip}
+						onMouseLeave={this.hideToolTip}
+					>
+					See related ILO Standards
+					</span>
+				);
+			}
+		}
+	},
+
+	// Insert a vertical bar if ILS is displayed
+	seeVerticalBar() {
+		if ( this.seeILSButton() ) {
+			return <span className="bold">｜</span>;
+		}
+	},
+
+	render() {
+		return(
+			<div className="toolTipButtons">
+				{this.seeTargetButton()}
+				{this.seeVerticalBar()}
+				{this.seeILSButton()}
 			</div>
 		);
 	}
