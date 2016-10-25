@@ -39,9 +39,10 @@ const Description = React.createClass({
 
 	seeILSButton() {
 		if (this.props.ils) {
+
 			const match = this.props.ils.filter( ils => ils.number === this.props.targetNumber );
 
-			if (match) {
+			if (match.length > 0) {
 				return(
 					<span
 						style={ ( () => ({ color : this.props.color }) )() }
