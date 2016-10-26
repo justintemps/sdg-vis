@@ -1,6 +1,15 @@
 .mobile-target-description {
 
-	span span {
-		z-index: 500;
-	}
+	span {
+		font-weight: 400;
+
+		span {
+			z-index: 500;
+		}
+}
+}
+
+.toolTipButtons {
+	text-align: left;
+	margin: 0;
 }

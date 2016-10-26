@@ -8,8 +8,9 @@ import React from "react";
 const Description = React.createClass({
 
 	propTypes: {
+		description : React.PropTypes.string.isRequired,
 		setLongDescription : React.PropTypes.func.isRequired,
-		toggleToolTip : React.PropTypes.func.isRequired,
+		toggleToolTip : React.PropTypes.func.isRequired
 	},
 
 	showLongDescription() {
@@ -23,6 +24,13 @@ const Description = React.createClass({
 			return(
 				<span>
 					{this.props.description}
+					<ToolTipButtons
+						toggleToolTip={this.props.toggleToolTip}
+						ils={this.props.ils}
+						color={this.props.color}
+						targetNumber={this.props.targetNumber}
+						showIlsInToolTip={this.props.showIlsInToolTip}
+					/>
 				</span>
 			);
 		} else {
@@ -39,20 +47,19 @@ const Description = React.createClass({
 
 		return(
 			<div className="description">
-
-				<p className="target-description">
-					{this.props.description}
-				</p>
-
-				<ToolTipButtons
-					toggleToolTip={this.props.toggleToolTip}
-					ils={this.props.ils}
-					color={this.props.color}
-					targetNumber={this.props.targetNumber}
-					showIlsInToolTip={this.props.showIlsInToolTip}
-				/>
-
-				<p className="mobile-target-description">{this.mobiledescription(100, 50)}</p>
+				<div className="target-description">
+					<p>
+						{this.props.description}
+					</p>
+					<ToolTipButtons
+						toggleToolTip={this.props.toggleToolTip}
+						ils={this.props.ils}
+						color={this.props.color}
+						targetNumber={this.props.targetNumber}
+						showIlsInToolTip={this.props.showIlsInToolTip}
+					/>
+				</div>
+				<div className="mobile-target-description">{this.mobiledescription(100, 50)}</div>
 			</div>
 		);
 	}
@@ -96,7 +103,7 @@ const ToolTipButtons = React.createClass({
 				onMouseOver={this.seeTarget}
 				onMouseLeave={this.hideToolTip}
 			>
-				SDG Target {this.props.targetNumber}
+				Target {this.props.targetNumber}
 			</span>
 		);
 	},
@@ -114,7 +121,7 @@ const ToolTipButtons = React.createClass({
 						onMouseOver={this.seeILS}
 						onMouseLeave={this.hideToolTip}
 					>
-					See related ILO Standards
+					ILO standards
 					</span>
 				);
 			}
