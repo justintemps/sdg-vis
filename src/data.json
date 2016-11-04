@@ -87,6 +87,17 @@
         ],
         "stories":[
             {
+                "title":"The real cost of extreme poverty",
+                "blurb":"Only through deliberately improving the quality of employment for those who have jobs will we provide a durable exit from working poverty.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_533351/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_533355.jpg"
+            },
+			{
+                "title":"Global Business Network meets to promote social protection floors",
+                "blurb":"ILO Director-General highlights the role of business in further developing social protection floors and achieving sustainable development goals on social protection.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/statements-and-speeches/WCMS_532776/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_532785.jpg"
+            },			{
                 "title":"Breaking the cycle of poverty in Tunisia",
                 "blurb":"Cooperation between government and social partners, and effective collective bargaining, can promote a more equitable distribution of a country's wealth and income.",
                 "url":"http://www.ilo.org/global/about-the-ilo/multimedia/features/tunisia/lang--en/index.htm",
@@ -158,6 +169,18 @@
                 "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-dhaka/documents/image/wcms_451925.jpg"
             },
             {
+                "title":"The neatest vegetable plot in Timor Leste",
+                "blurb":"A Timorese owned enterprise that provides agriculture support and buys vegetables from farmers for on-sale to Dili supermarkets and restaurants.",
+                "url":"http://www.ilo.org/jakarta/info/public/fs/WCMS_513911/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-jakarta/documents/image/wcms_514330.jpg"
+            },
+			{
+                "title":"Unlocking a herbal business opportunity in Timor-Leste",
+                "blurb":"Thirty-six year old Ruben da Silva Gusmao is motivated to become an entrepreneur, considering the vast unlocked business opportunities in the Timor-Leste market.",
+                "url":"http://www.ilo.org/jakarta/info/public/fs/WCMS_503513/lang--en/index.htm",
+                "imageUrl":"https://c2.staticflickr.com/8/7566/16008554636_2eee50b117_b.jpg"
+            },
+			{
                 "title":"Olive festival supports Jordan host communities in face of refugee crisis",
                 "blurb":"Local farmers and businesses came together to showcase products and explore avenues to develop the olive industry.",
                 "url":"http://www.ilo.org/beirut/media-centre/fs/WCMS_321418/lang--en/index.htm",
@@ -230,6 +253,18 @@
                 "url":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_472313/lang--en/index.htm",
                 "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_474879.jpg"
             },
+			{
+                "title":"Women shout out for safer workplaces",
+                "blurb":"ILO is working with women trade unionists to boost awareness of occupational safety issues in the garment industry.",
+                "url":"http://www.ilo.org/dhaka/Informationresources/Publicinformation/features/WCMS_533326/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-dhaka/documents/image/wcms_533329.jpg"
+            },
+			{
+                "title":"ILO: Domestic workers should have the right to rest",
+                "blurb":"ILO publication says domestic workers should enjoy the same right to sufficient rest as other workers.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_465466/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_466493.jpg"
+            },
             {
                 "title":"On the fire safety frontline: Lessons from Bangladeshi fire fighters",
                 "blurb":"Bangladeshi fire fighters received ILO-supported training, focusing on fire and building safety in garment factories.",
@@ -286,6 +321,18 @@
                 "blurb":"Nearly 550 Jordanian youth learned how to set up and run a business through the “Know about Business” course which fills a big gap in entrepreneurship education.",
                 "url":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_389391/lang--en/index.htm",
                 "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_389395.jpg"
+            },
+			{
+                "title":"The 50-year struggle to put teachers at the centre of quality education",
+                "blurb":"On World Teachers Day, we all have a stake in standing with teachers to make education a true force for peace, discovery and fulfilment.",
+                "url":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_531481.gif",
+                "imageUrl":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_531394/lang--en/index.htm"
+            },
+			{
+                "title":"Back to school: Remedial classes for working children begin in Kyrgyzstan",
+                "blurb":"Three formal remedial classes for children with breaks in their education, school drop-outs and child labourers have started at the secondary school No. 94 in Kyrgyzstan’s capital Bishkek.",
+                "url":"http://www.ilo.org/moscow/news/WCMS_531727/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---europe/---ro-geneva/---sro-moscow/documents/image/wcms_531736.jpg"
             },
             {
                 "title":"Apprenticeship programme offers escape from child labour in Jordan",
@@ -383,6 +430,18 @@
                 "blurb":"How the Better Work Programme of the ILO and the International Finance Cooperation (IFC) promotes decent work for young women in Lesotho’s garment industry.",
                 "url":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_403759/lang--en/index.htm",
                 "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_403763.jpg"
+            },
+			{
+                "title":"“I didn’t have a life, but now I feel strong”",
+                "blurb":"An ILO-US-funded project brings financial independence to Egyptian women who used to stay at home and were dependent on their families.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_531919/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_531653.jpg"
+            },
+			{
+                "title":"Women beneficiaries lead the way on farming at Nyanga field day",
+                "blurb":"Women are fully engaged in productive activities and help to showcase good crops and provide a platform to extend ILO-supported technical advice on farming practices.",
+                "url":"http://www.ilo.org/addisababa/media-centre/articles/WCMS_524510/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---africa/---ro-addis_ababa/---sro-harare/documents/image/wcms_524511.jpg"
             },
             {
                 "title":"Global momentum means more women move into management",
@@ -611,6 +670,42 @@
         ],
         "stories":[
             {
+                "title":"Two more companies sign the Global Business and Disability Charter",
+                "blurb":"Two major French companies, Engie and Société Générale, have joined the 15 companies that have already signed the Global Business and Disability Charter.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_532276/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_532231.jpg"
+            },
+			{
+                "title":"IFC, ILO join forces to support entrepreneurship, boost youth employment in MENA",
+                "blurb":"Partnership aims to develop policies that support entrepreneurship, ensure youth have skills that are required by the market, and encourage more young people to become entrepreneurs.",
+                "url":"http://www.ilo.org/beirut/media-centre/news/WCMS_531960/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---arabstates/---ro-beirut/documents/image/wcms_531961.jpg"
+            },
+			{
+                "title":"ILO members agree on a roadmap to curb undeclared work in Greece",
+                "blurb":"New initiative aims at reducing undeclared work that remains a significant feature of the Greek economy.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_533376/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_533690.jpg"
+            },
+			{
+                "title":"Financial skills help shape a better future",
+                "blurb":"An ILO project in Indonesia enhances labour productivity, employment opportunities and entrepreneurship in key rural activities.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_533335/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-colombo/documents/image/wcms_533339.jpg"
+            },
+			{
+                "title":"Improved working conditions in the apparel industry make workers’ lives better and businesses stronger",
+                "blurb":"Better Work programme shows significant gains in quality of life for workers in factories they advise, as well as enhanced productivity and profitability for those businesses involved.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_526513/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_526525.jpg"
+            },
+			{
+                "title":"Decent work key to reducing poverty, inequality and breaking out of the slow growth trap",
+                "blurb":"ILO Director-General highlighted that there are over 70 million women and men not in work today who would have had a job if pre-crisis growth had resumed.",
+                "url":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_531669.png",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_346758.jpg"
+            },
+			{
                 "title":"Rising to the top of the footwear industry through Decent Work",
                 "blurb":"Bethlehem Tilahun Alemu, a young Ethiopian entrepreneur created one of the world’s fastest growing footwear brands by betting on Decent Work.",
                 "url":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_346716/lang--en/index.htm",
@@ -694,6 +789,12 @@
                 "blurb":"Conference participants discuss the importance of developing globalised value chains, building infrastructure, boosting access to energy as well as women’s empowerment.",
                 "url":"http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_250882/lang--en/index.htm",
                 "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_250888.jpg"
+            },
+			{
+                "title":"Making SMEs productive and competitive to create more and better quality jobs in India",
+                "blurb":"ILO-SCORE training programme equips MSMEs with critical factory management practices to improve their efficiency and productivity.",
+                "url":"http://www.ilo.org/newdelhi/info/public/fs/WCMS_520919/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---sro-new_delhi/documents/image/wcms_520920.jpg"
             },
             {
                 "title":"Ryder: Rana Plaza legacy must be improved working conditions globally",
@@ -841,6 +942,18 @@
                 "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_363237.jpg"
             },
             {
+                "title":"Income inequality affects you whether you realize it or not",
+                "blurb":"Income inequality has a big impact on our lives, yet its effects aren’t always apparent. They’re often indirect, affecting us in ways that we may not even realize. Its consequences, however, are no less profound.",
+                "url":"https://iloblog.org/2016/11/02/income-inequality-affects-you-whether-you-realize-it-or-not/",
+                "imageUrl":"https://c2.staticflickr.com/8/7223/7180524608_7df31b430f_b.jpg"
+            },
+			{
+                "title":"What do we really know about income inequality?",
+                "blurb":"If you watch the news or read the papers, chances are you have heard about income inequality. The issue is complex and polarizing. But what does income inequality really mean?",
+                "url":"https://iloblog.org/2016/10/07/what-do-we-really-know-about-income-inequality/",
+                "imageUrl":"http://www.ilo.org/dyn/media/images/power/e13265.jpg"
+            },
+			{
                 "title":"From the depths of an African shantytown, a nascent youth employment movement grows",
                 "blurb":"In Africa’s second largest slum, youth unemployment is sky high. But cooperative projects are helping youth find work and slowly lift themselves out of poverty.",
                 "url":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_170345/lang--en/index.htm",
@@ -952,6 +1065,24 @@
         ],
         "stories":[
             {
+                "title":"Five ways in which the ILO is working on climate change",
+                "blurb":"Climate change negotiators are increasingly realising the importance of the linkages between the agendas of climate change and the promotion of decent work for all.",
+                "url":"http://www.ilo.org/global/topics/green-jobs/news/WCMS_323873/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_323948.jpg"
+            },
+			{
+                "title":"Female entrepreneur builds economical, green homes in Zambia",
+                "blurb":"ILO-led Green Jobs Programme in Zambia is expected to create 5,000 new green jobs by 2017 thanks to a partnership between the government and the construction sector.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_372815/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_372867.jpg"
+            },
+			{
+                "title":"Do we have to choose between creating jobs and protecting the climate?",
+                "blurb":"Peter Poschen, Director of the ILO Enterprises Department, argues that the world of work has a central role to play in tackling climate change and ensuring a just transition to a green economy.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_373207/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_395612.jpg"
+            },
+			{
                 "title":"10 action points towards a greener economy",
                 "blurb":"Just before the opening of the Paris climate conference that is expected to set new ambitious targets to move to a low-carbon economy, ILO Green Jobs Programme Coordinator Kees van der Ree outlines ten steps that can facilitate a transition to a green economy.",
                 "url":"http://www.ilo.org/global/about-the-ilo/newsroom/news/WCMS_429777/lang--en/index.htm",
@@ -1160,6 +1291,18 @@
                 "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/image/wcms_483826.jpg"
             },
             {
+                "title":"Sri Lanka: From dream to work",
+                "blurb":"A new ILO project helps people find decent jobs in areas of Sri Lanka that were affected by civil war.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_454449/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/documents/image/wcms_454451.jpg"
+            },
+			{
+                "title":"Post war resilience: New skills bring better incomes for Sri Lankan women",
+                "blurb":"An ILO and Australian Government project is increasing economic resilience and prosperity in post-war Sri Lanka.",
+                "url":"http://www.ilo.org/global/about-the-ilo/newsroom/features/WCMS_513769/lang--en/index.htm",
+                "imageUrl":"http://www.ilo.org/wcmsp5/groups/public/---asia/---ro-bangkok/---ilo-colombo/documents/image/wcms_516110.jpg"
+            },
+			{
                 "title":"Migrant Worker Resource Centres: Supporting justice and fair treatment",
                 "blurb":"Imagine that you had a family to feed and moving abroad was your only option to earn a decent wage — but you didn’t know where or how to find work overseas. Or imagine that your daughter works abroad but that you haven’t had any word from her for months and months.",
                 "url":"https://iloblog.org/2015/06/23/migrant-worker-resource-centres-supporting-justice-and-fair-treatment/",
