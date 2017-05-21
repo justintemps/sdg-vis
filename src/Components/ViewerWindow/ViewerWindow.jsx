@@ -26,6 +26,11 @@ const ViewerWindow = React.createClass({
 		}
 	},
 
+  requestFullscreen() {
+    const body = document.getElementsByTagName('body');
+    body.requestFullscreen();
+  },
+
 	render() {
 		const titleBar = <TitleBar
 			sdgNumber={this.props.data[this.props.currentSdg].sdgNumber}
@@ -39,6 +44,7 @@ const ViewerWindow = React.createClass({
 				{titleBar}
 				<ViewerWindowContent {...this.props} />
 				{this.mountModal()}
+        <button onClick={this.requestFullscreen}>Click me for full screen!</button>
 			</div>
 		);
 	}

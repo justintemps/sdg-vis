@@ -44,17 +44,6 @@ const ViewerWindowContent = React.createClass({
 		} else {
 			return (
 				<div className="viewerWindowContent">
-					<FocusTargets
-						iloTargets={iloTargets}
-						focusTarget={this.props.focusTarget}
-						selectFocusTarget={this.props.selectFocusTarget}
-						currentSdg = {this.props.currentSdg}
-						data = {this.props.data}
-						longDescription={this.props.longDescription}
-						setLongDescription={this.props.setLongDescription}
-						toggleToolTip={this.props.toggleToolTip}
-						toolTipVisible={this.props.toolTipVisible}
-					/>
 
 					<Tooltip
 						toolTipVisible={this.props.toolTipVisible}

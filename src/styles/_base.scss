@@ -23,24 +23,14 @@ html, body {
 	width: 100%;
 }
 
-.left-col {
-	flex-basis: 25%;
-}
-
 .right-col {
-	flex-basis: 75%;
-}
-
-.left-col, .right-col {
-	box-sizing: border-box;
-	padding: 0 15px;
+	flex-basis: 100%;
 }
 
 #app {
 	display: inline-block;
+  width: 100%;
 }
-
-
 
 h1 {
 	display: inline;

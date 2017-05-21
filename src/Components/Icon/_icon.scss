@@ -3,7 +3,6 @@
 	box-sizing: border-box;
 	cursor: pointer;
 	flex-basis: auto;
-	padding: 5px;
 	position: relative;
 	width: 16.6666%;
 }
@@ -11,7 +10,7 @@
 .icon {
 	box-sizing: border-box;
 	cursor: pointer;
-	max-width: 128px;
+	max-width: 200px;
 	opacity: 0.3;
 	transition: opacity 200ms ease;
 	width: 100%;
