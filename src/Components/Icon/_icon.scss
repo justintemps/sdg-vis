@@ -3,17 +3,18 @@
 	box-sizing: border-box;
 	cursor: pointer;
 	flex-basis: auto;
+  margin: 5px 0;
 	position: relative;
-	width: 16.6666%;
+  width: 16.6666%;
 }
 
 .icon {
 	box-sizing: border-box;
 	cursor: pointer;
-	max-width: 200px;
+  width: 85%;
 	opacity: 0.3;
 	transition: opacity 200ms ease;
-	width: 100%;
+
 }
 
 .icon:hover {

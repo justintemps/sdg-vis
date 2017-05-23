@@ -1,37 +1,39 @@
-import React from "react";
-import Icon from "../Icon/Icon.jsx";
+import React from 'react';
+import Icon from '../Icon/Icon.jsx';
 
 const Row = React.createClass({
+  icons: [],
 
-	icons: [],
+  // Gets icons according to startFrom and numberIcons props passed from SDGExplorer
+  getIcons() {
+    this.icons = [];
+    for (
+      let i = this.props.startFrom;
+      i < this.props.numberIcons + this.props.startFrom;
+      i++
+    ) {
+      this.icons.push(
+        <Icon
+          color={this.props.data[i].sdgColor}
+          currentSdg={this.props.currentSdg}
+          icon={this.props.icons[i]}
+          key={i}
+          rowChanged={this.props.rowChanged}
+          sdgNumber={this.props.data[i].sdgNumber}
+          selectSDG={this.props.selectSDG}
+        />
+      );
+    }
+  },
 
-	// Gets icons according to startFrom and numberIcons props passed from SDGExplorer
-	getIcons() {
-		this.icons = [];
-		for ( let i = (this.props.startFrom); i < (this.props.numberIcons + this.props.startFrom); i++ ) {
-			this.icons.push(
-				<Icon
-					color={this.props.data[i].sdgColor}
-					currentSdg={this.props.currentSdg}
-					icon={this.props.icons[i]}
-					key={i}
-					rowChanged={this.props.rowChanged}
-					sdgNameShort={this.props.data[i].sdgNameShort}
-					sdgNumber={this.props.data[i].sdgNumber}
-					selectSDG={this.props.selectSDG}
-				/>
-			);
-		}
-	},
-
-	render() {
-		this.getIcons();
-		return (
-			<div className="row">
-				{this.icons}
-			</div>
-		);
-	}
+  render() {
+    this.getIcons();
+    return (
+      <div className="row">
+        {this.icons}
+      </div>
+    );
+  }
 });
 
 export default Row;

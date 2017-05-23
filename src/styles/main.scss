@@ -4,9 +4,6 @@
 /* Typography etc. */
 @import "_base";
 
-/* PageTitle */
-@import "../Components/PageTitle/_pageTitle";
-
 /* SDGexplorer */
 @import "../Components/SDGexplorer/_sdgexplorer";
 
@@ -31,20 +28,5 @@
 /* ViewerWindowContent */
 @import "../Components/ViewerWindowContent/_viewerWindowContent";
 
-/* Title Bar */
-@import "../Components/TitleBar/_titleBar";
-
-/* Focus Targets */
-@import "../Components/FocusTargets/_focusTargets";
-
-/* Description */
-@import "../Components/Description/_description";
-
 /* Arrow */
 @import "../Components/Arrow/_arrow";
-
-/* Bullet */
-@import "../Components/Bullet/_bullet";
-
-/* ImpactStories */
-@import "../Components/ImpactStories/_impactStories";
