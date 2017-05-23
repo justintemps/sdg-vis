@@ -4,14 +4,8 @@
 /* Typography etc. */
 @import "_base";
 
-/* Header */
-@import "../Components/Header/_header";
-
 /* PageTitle */
 @import "../Components/PageTitle/_pageTitle";
-
-/* Sidebar */
-@import "../Components/Sidebar/_sidebar";
 
 /* SDGexplorer */
 @import "../Components/SDGexplorer/_sdgexplorer";
@@ -46,9 +40,6 @@
 /* Description */
 @import "../Components/Description/_description";
 
-/* Tooltip */
-@import "../Components/Tooltip/_tooltip";
-
 /* Arrow */
 @import "../Components/Arrow/_arrow";
 
@@ -57,92 +48,3 @@
 
 /* ImpactStories */
 @import "../Components/ImpactStories/_impactStories";
-
-/* ShareWidget */
-@import "../Components/ShareWidget/_shareWidget";
-
-/* -- RESPONSIVE STYLES START HERE -- */
-
-@media screen and (max-width: 979px) {
-
-	/* Header */
-	@import "../Components/Header/_mobileHeader";
-
-	/* Modal */
-	@import "../Components/Modal/_mobileModal";
-
-}
-
-@media screen and (max-width: 767px) {
-
-	/* Header */
-	@import "../Components/Sidebar/_mobileSidebar";
-
-}
-
-@media screen and (max-width: 640px) {
-
-	/* Base */
-	@import "_mobileBase";
-
-	/* PageTitle */
-	@import "../Components/PageTitle/_mobilePageTitle";
-
-	/* SDGExplorer */
-	@import "../Components/SDGexplorer/_sdgexplorerMobile";
-
-	/* Row */
-	@import "../Components/Row/_rowMobile";
-
-	/* Icon */
-	@import "../Components/Icon/_iconMobile";
-
-	/* TitleBar */
-	@import "../Components/TitleBar/_titleBarMobile";
-
-	/* DefaultViewerWindowContent*/
-	@import "../Components/ViewerWindow/_mobileViewerWindow";
-
-	/* DefaultViewerWindowContent*/
-	@import "../Components/ViewerWindowContent/_mobileDefaultViewerWindowContent";
-
-	/* FocusTargets */
-	@import "../Components/FocusTargets/_focusTargetsMobile";
-
-	/* Description */
-	@import "../Components/Description/_descriptionMobile";
-
-	/* Tooltip */
-	@import "../Components/Tooltip/_tooltipMobile";
-
-	/* Arrow */
-	@import "../Components/Arrow/_arrowMobile";
-
-	/* ImpactStories */
-	@import "../Components/ImpactStories/_impactStoriesMobile";
-
-	/* ShareWidget */
-	@import "../Components/ShareWidget/_mobileShareWidget";
-
-}
-
-/* iPhone 6Plus*/
-@media screen and (max-width: 414px) {
-
-	@import "_largeMobile";
-
-}
-
-/* iPhone6 */
-@media screen and (max-width: 375px) {
-
-	@import "_mediumMobile";
-
-}
-
-/* iPhone5 */
-@media screen and (max-width: 320px) {
-
-	@import "_smallMobile";
-
-}
