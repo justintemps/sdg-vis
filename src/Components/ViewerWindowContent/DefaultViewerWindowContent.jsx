@@ -17,9 +17,3 @@ const DefaultViewerWindowContent = React.createClass({
 });
 
 export default DefaultViewerWindowContent;
-
-/*<span className="link" onClick={this.props.openModal}>
-
-
-
-*/

@@ -16,7 +16,6 @@ const Row = React.createClass({
         <Icon
           color={this.props.data[i].sdgColor}
           currentSdg={this.props.currentSdg}
-          icon={this.props.icons[i]}
           key={i}
           rowChanged={this.props.rowChanged}
           sdgNumber={this.props.data[i].sdgNumber}
@@ -30,25 +29,17 @@ const Row = React.createClass({
     this.getIcons();
     return (
       <div className="row">
-        {this.icons}
+        <Icon
+          color={this.props.data[1].sdgColor}
+          currentSdg={this.props.currentSdg}
+          key={1}
+          rowChanged={this.props.rowChanged}
+          sdgNumber={this.props.data[1].sdgNumber}
+          selectSDG={this.props.selectSDG}
+        />
       </div>
     );
   }
 });
 
 export default Row;
-
-/*
-
-<Icon
-	sdgNumber={this.props.data[i].sdgNumber}
-	key={i}
-	color={this.props.data[i].sdgColor}
-	sdgNameShort={this.props.data[i].sdgNameShort}
-	selectSDG={this.props.selectSDG}
-	currentSdg={this.props.currentSdg}
-	rowChanged={this.props.rowChanged}
-	icon={this.props.icons[i]}
-/>
-
-*/
