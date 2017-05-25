@@ -20,7 +20,6 @@ const Row = React.createClass({
           rowChanged={this.props.rowChanged}
           sdgNumber={this.props.data[i].sdgNumber}
           selectSDG={this.props.selectSDG}
-          icon={this.props.icons[i]}
         />
       );
     }

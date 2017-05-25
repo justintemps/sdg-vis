@@ -25,7 +25,7 @@ const ViewerWindow = React.createClass({
   },
 
   requestFullscreen(e) {
-    document.documentElement.webkitRequestFullscreen();
+    document.body.webkitRequestFullscreen();
   },
 
   render() {

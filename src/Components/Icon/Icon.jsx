@@ -38,21 +38,23 @@ class Icon extends React.Component {
   render() {
     return (
       <div className="icon-wrapper">
-        <img
-          style={this.opacity()}
-          className={`icon sdg${this.props.sdgNumber}`}
-          src={require(`!file-loader!../../images/sdg${this.props.sdgNumber}.svg`)}
-          onClick={() => {
-            this.clickHandler(this.props.sdgNumber);
-          }}
-        />
-        <ReactCSSTransitionGroup
-          transitionName="little-triangle"
-          transitionLeaveTimeout={1}
-          transitionEnterTimeout={this.props.rowChanged ? 750 : 1}
-        >
-          {this.triangle()}
-        </ReactCSSTransitionGroup>
+        <div>
+          <img
+            style={this.opacity()}
+            className={`icon sdg${this.props.sdgNumber}`}
+            src={require(`!file-loader!../../images/sdg${this.props.sdgNumber}.svg`)}
+            onClick={() => {
+              this.clickHandler(this.props.sdgNumber);
+            }}
+          />
+          <ReactCSSTransitionGroup
+            transitionName="little-triangle"
+            transitionLeaveTimeout={1}
+            transitionEnterTimeout={this.props.rowChanged ? 750 : 1}
+          >
+            {this.triangle()}
+          </ReactCSSTransitionGroup>
+        </div>
       </div>
     );
   }
