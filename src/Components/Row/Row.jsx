@@ -20,6 +20,7 @@ const Row = React.createClass({
           rowChanged={this.props.rowChanged}
           sdgNumber={this.props.data[i].sdgNumber}
           selectSDG={this.props.selectSDG}
+          icon={this.props.icons[i]}
         />
       );
     }
@@ -29,14 +30,7 @@ const Row = React.createClass({
     this.getIcons();
     return (
       <div className="row">
-        <Icon
-          color={this.props.data[1].sdgColor}
-          currentSdg={this.props.currentSdg}
-          key={1}
-          rowChanged={this.props.rowChanged}
-          sdgNumber={this.props.data[1].sdgNumber}
-          selectSDG={this.props.selectSDG}
-        />
+        {this.icons}
       </div>
     );
   }

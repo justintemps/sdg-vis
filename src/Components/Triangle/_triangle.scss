@@ -10,6 +10,8 @@
 
 .small-triangle {
 	@extend .triangle;
+  bottom: -10px;
+  left: 24px;
 	margin: 0;
 	padding: 0;
 	position: absolute;

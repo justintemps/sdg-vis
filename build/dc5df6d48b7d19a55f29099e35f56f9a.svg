@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.76 111.77">
   <title>SDG7 Affordable and Clean Energy</title>
-  <style>.sdg7-1{fill:#fac315;}
-  .sdg7-2{fill:#fff;}</style>
   <g id="English">
     <rect class="sdg7-1" x="-1.31" y="-1.83" width="116.82" height="118.33" />
     <path
@@ -153,4 +151,4 @@
       points="14.63 12.21 20.45 12.21 15.42 31.55 19.16 31.55 24.09 12.6 24.09 9.13 14.63 9.13 14.63 12.21"
     />
   </g>
-</svg>
+</svg>;

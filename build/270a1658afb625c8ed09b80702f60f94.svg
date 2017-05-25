@@ -1,10 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.76 111.76">
 	<title>SDG1 No Poverty</title>
-  <style>
-    .sdg1-1 {fill:#e3253c;}
-    .sdg1-2, .sdg1-3 {fill:#fff;}
-    .sdg1-3 {stroke: #fff;stroke-linecap:round;stroke-miterlimit: 10;stroke-width:1.31px;}
-  </style>
 	<g id="English">
 		<rect class="sdg1-1" x="-2.49" y="-2.17" width="117.33" height="117.33" />
 		<path class="sdg1-2" d="M86.07,53.32a3.09,3.09,0,1,1,3.1,3.09,3.1,3.1,0,0,1-3.1-3.09"/>

@@ -2,19 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Triangle from '../Triangle/Triangle.jsx';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import svg from '!file-loader!../../images/sdg0.svg';
 
 class Icon extends React.Component {
   constructor() {
     super();
     this.opacity = this.opacity.bind(this);
     this.triangle = this.triangle.bind(this);
+    this.clickHandler = this.clickHandler.bind(this);
   }
 
   opacity() {
     if (this.props.sdgNumber === this.props.currentSdg) {
       return { opacity: 1 };
     }
+  }
+
+  clickHandler(sdg) {
+    this.props.selectSDG(sdg);
   }
 
   triangle() {
@@ -32,15 +36,16 @@ class Icon extends React.Component {
   }
 
   render() {
-    console.log(svg);
     return (
       <div className="icon-wrapper">
-        <div
+        <img
           style={this.opacity()}
           className={`icon sdg${this.props.sdgNumber}`}
-        >
-          <img src={svg} />
-        </div>
+          src={require(`!file-loader!../../images/sdg${this.props.sdgNumber}.svg`)}
+          onClick={() => {
+            this.clickHandler(this.props.sdgNumber);
+          }}
+        />
         <ReactCSSTransitionGroup
           transitionName="little-triangle"
           transitionLeaveTimeout={1}
