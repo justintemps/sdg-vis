@@ -38,7 +38,6 @@ class Icon extends React.Component {
   render() {
     return (
       <div className="icon-wrapper">
-        <div>
           <img
             style={this.opacity()}
             className={`icon sdg${this.props.sdgNumber}`}
@@ -54,7 +53,6 @@ class Icon extends React.Component {
           >
             {this.triangle()}
           </ReactCSSTransitionGroup>
-        </div>
       </div>
     );
   }

@@ -1,61 +1,26 @@
 /* defaultViewerWindowContent */
 
 .defaultViewerWindowContent {
-	@include flex();
+  box-sizing: border-box;
+	display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   height: 32vh;
-	box-sizing: border-box;
+	justify-content: space-between;
 	position: relative;
+}
+
+.defaultViewerWindowContent div:first-child {
+  flex-basis: 60%;
+  text-align: left;
+}
+
+.defaultViewerWindowContent div:nth-child(2){
+  flex-basis: 40%;
+  text-align: left;
 }
 
 .defaultDescription {
 	box-sizing: border-box;
 	text-align: left;
-	width: calc(67% - 20px);
-
-	p {
-		font-size: 2rem;
-	}
-
-	p:first-child {
-		margin: 0 0 20px 0;
-	}
-
-	div {
-		font-size: 2rem;
-		margin: 3rem 0 0;
-
-		.link, .fa {
-			color: $titleColor;
-			cursor: pointer;
-		}
-
-		.link:hover {
-			color: $bulletSelected;
-
-			.fa {
-				color: $bulletSelected;
-			}
-		}
-
-		.fa {
-			display: inline;
-			font-size: 3.8rem;
-			margin: 0 0 0 10px;
-			vertical-align: -0.5rem;
-		}
-	}
-}
-
-.gglogo-container {
-	box-sizing: border-box;
-	width: 33%;
-}
-
-.gglogo {
-	width: 100%;
-}
-
-.emphasize {
-	font-style: normal;
-	font-weight: 600;
 }
