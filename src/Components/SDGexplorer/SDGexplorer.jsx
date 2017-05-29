@@ -23,31 +23,12 @@ const SDGexplorer = React.createClass({
     };
   },
 
-  componentDidMount() {
-    document.body.addEventListener('touchstart', () => {
-      this.toggleToolTip(false);
-    });
-    this.followRoute(window.location.hash);
-  },
-
   openModal() {
     this.setState({ isModalOpen: true });
   },
 
   closeModal() {
     this.setState({ isModalOpen: false });
-  },
-
-  // Maps the route to the relevant SDG
-  followRoute(route) {
-    let r = parseInt(route.replace(/^\D+/g, ''));
-    if (r >= 0 && r < 18) {
-      const rowDivisor = this.state.isMobile ? 3 : 6;
-      this.setState({
-        currentSdg: r,
-        currentRow: Math.floor(r / rowDivisor)
-      });
-    }
   },
 
   // Select a new SDG and change the row of necessary.
@@ -57,9 +38,7 @@ const SDGexplorer = React.createClass({
 
     this.setState({
       currentSdg: sdg,
-      rowChanged: Math.floor(sdg / rowDivisor) !== this.state.currentRow
-        ? true
-        : false
+      rowChanged: (Math.floor(sdg / rowDivisor) !== this.state.currentRow) ? true : false
     });
 
     // Shift the row if it changed
@@ -79,6 +58,7 @@ const SDGexplorer = React.createClass({
 
   // Determines the row underneath which the viwer window should be displayed
   shiftRow(row) {
+    
     this.setState({
       currentRow: row
     });

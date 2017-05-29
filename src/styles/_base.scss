@@ -36,13 +36,14 @@ html, body {
 }
 
 h1 {
-	display: inline;
+	display: inline-block;
 	font-size: 7rem;
 	color: $iloblue;
 	font-family: $sdg-number;
 	position: relative;
 	line-height: 90%;
 	letter-spacing: 0.024em;
+  margin: 0 0 20px;
 }
 
 h2 {
@@ -81,7 +82,7 @@ h4 {
 
 p {
 	font-family: $font-stack;
-	font-size: 1.6rem;
+	font-size: 3rem;
 	font-weight: 400;
 	color: $dark-grey;
 	line-height: 1.3em;

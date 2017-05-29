@@ -11,16 +11,21 @@
 }
 
 .defaultViewerWindowContent div:first-child {
-  flex-basis: 60%;
+  flex-basis: 55%;
   text-align: left;
 }
 
 .defaultViewerWindowContent div:nth-child(2){
-  flex-basis: 40%;
-  text-align: left;
+  flex-basis: 45%;
 }
 
 .defaultDescription {
 	box-sizing: border-box;
+  height: inherit;
 	text-align: left;
+}
+
+.sdgLogo {
+  position: relative;
+  max-width: 300px;
 }
