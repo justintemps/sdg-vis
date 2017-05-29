@@ -24,18 +24,11 @@ const ViewerWindow = React.createClass({
     }
   },
 
-  requestFullscreen(e) {
-    document.body.webkitRequestFullscreen();
-  },
-
   render() {
     return (
       <div className="viewerWindow">
         <ViewerWindowContent {...this.props} />
         {this.mountModal()}
-        <button onClick={this.requestFullscreen}>
-          Click me for full screen!
-        </button>
       </div>
     );
   }

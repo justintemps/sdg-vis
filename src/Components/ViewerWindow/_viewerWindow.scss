@@ -2,10 +2,10 @@
 .viewerWindow {
 	box-sizing: border-box;
 	overflow: hidden;
-  margin: 0 0 0 15px;
-	position: static;
+	position: relative;
 	text-align: center;
   width: 100%;
+  padding: 0 3% 0 0;
 
 	.iframe-wrapper {
 		clear: both;

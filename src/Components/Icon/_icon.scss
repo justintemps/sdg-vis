@@ -1,15 +1,13 @@
 /* Icon */
 .icon-wrapper {
+  box-sizing: border-box;
+	cursor: pointer;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-	box-sizing: border-box;
-	cursor: pointer;
-	flex-basis: auto;
-  margin: 5px 0;
-	position: relative;
   flex-basis: 16.6666%;
   justify-content: space-between;
+  margin: 5px 0;
+	position: relative;
   max-height: 20vh;
 }
 

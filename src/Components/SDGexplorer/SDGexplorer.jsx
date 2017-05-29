@@ -9,6 +9,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Row from '../Row/Row.jsx';
 import ViewerWindow from '../ViewerWindow/ViewerWindow.jsx';
 import data from '!json!../../data.json';
+import FullScreenBtn from '../FullScreenBtn/FullScreenBtn.jsx';
 import { numberIcons, startFrom } from './setRows.js';
 
 const SDGexplorer = React.createClass({
@@ -86,6 +87,9 @@ const SDGexplorer = React.createClass({
   render() {
     return (
       <div className="sdgExplorer">
+
+        <FullScreenBtn />
+
         <Row
           startFrom={0}
           numberIcons={numberIcons(this.state.currentRow, true, false)}
