@@ -13,6 +13,9 @@
 function numberIcons(row, top, isMobile) {
   let numberIcons;
   switch (row) {
+  case -1:
+    numberIcons = top ? 0 : 18;
+    break;
   case 0:
     numberIcons = top ? 6 : 12;
     break;
@@ -35,6 +38,9 @@ function numberIcons(row, top, isMobile) {
 function startFrom(row, isMobile) {
   let num;
   switch (row) {
+  case -1:
+    num = 0;
+    break;
   case 0:
     num = 6;
     break;

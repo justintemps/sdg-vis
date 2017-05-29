@@ -35,16 +35,18 @@ const SDGexplorer = React.createClass({
   // Also resets the current story and focus target
   selectSDG(sdg) {
     const rowDivisor = 6;
+    let row;
 
     this.setState({
       currentSdg: sdg,
-      rowChanged: (Math.floor(sdg / rowDivisor) !== this.state.currentRow) ? true : false
+      rowChanged: sdg === 0 || (Math.floor(sdg / rowDivisor) !== this.state.currentRow) ? true : false
     });
 
     // Shift the row if it changed
     // Set route to new sdg
     setTimeout(() => {
-      this.shiftRow(Math.floor(sdg / rowDivisor));
+      row = sdg === 0 ? -1 : Math.floor(sdg / rowDivisor);
+      this.shiftRow(row);
     }, 500);
   },
 
@@ -58,7 +60,6 @@ const SDGexplorer = React.createClass({
 
   // Determines the row underneath which the viwer window should be displayed
   shiftRow(row) {
-    
     this.setState({
       currentRow: row
     });
