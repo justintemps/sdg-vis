@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from '../Carousel/Carousel.jsx';
 
 class ViewerWindowContent extends React.Component {
   constructor(props) {
@@ -7,7 +8,9 @@ class ViewerWindowContent extends React.Component {
 
   render() {
     return (
-      <div className='viewerWindowContent'>Basic content goes here</div>
+      <div className='viewerWindowContent'>
+        <Carousel />
+      </div>
     );
   }
 }
