@@ -4,8 +4,8 @@
  * Owns state for the whole app
  */
 
+import { CSSTransitionGroup } from 'react-transition-group';
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Row from '../Row/Row.jsx';
 import ViewerWindow from '../ViewerWindow/ViewerWindow.jsx';
 import data from '!json!../../data.json';
@@ -70,7 +70,7 @@ class SDGexplorer extends React.Component {
           rowChanged={this.state.rowChanged}
         />
 
-        <ReactCSSTransitionGroup
+        <CSSTransitionGroup
           transitionName="sliding-viewer"
           transitionLeave={this.state.rowChanged}
           transitionEnter={this.state.rowChanged}
@@ -86,7 +86,7 @@ class SDGexplorer extends React.Component {
             closeModal={this.closeModal}
           />
 
-        </ReactCSSTransitionGroup>
+        </CSSTransitionGroup>
 
         <Row
           startFrom={startFrom(this.state.currentRow, this.state.isMobile)}

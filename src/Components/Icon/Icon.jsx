@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Triangle from '../Triangle/Triangle.jsx';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class Icon extends React.Component {
   constructor(props) {
@@ -46,13 +46,13 @@ class Icon extends React.Component {
               this.clickHandler(this.props.sdgNumber);
             }}
           />
-          <ReactCSSTransitionGroup
+          <CSSTransitionGroup
             transitionName="little-triangle"
             transitionLeaveTimeout={1}
             transitionEnterTimeout={this.props.rowChanged ? 750 : 1}
           >
             {this.triangle()}
-          </ReactCSSTransitionGroup>
+          </CSSTransitionGroup>
       </div>
     );
   }
