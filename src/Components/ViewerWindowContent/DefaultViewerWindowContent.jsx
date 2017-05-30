@@ -6,7 +6,7 @@ function DefaultViewerWindowContent(props) {
       <div>
         <h1>Touch the goals</h1>
         <p>
-          to learn how the ILO is working to achieve the 2030 Sustainable Development Agenda
+          to learn how the ILO is working to make the 2030 Sustainable Development Agenda a reality
         </p>
       </div>
       <div>
