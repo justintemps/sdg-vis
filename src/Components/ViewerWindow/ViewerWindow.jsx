@@ -36,11 +36,7 @@ class ViewerWindow extends React.Component {
   currentView(sdg) {
     if (sdg === 0) {
       return (
-        <DefaultViewerWindowContent
-          isModalOpen={this.state.modalIsOpen}
-          openModal={this.openModal}
-          closeModal={this.closeModal}
-        />
+        <DefaultViewerWindowContent />
       );
     } else {
       return (

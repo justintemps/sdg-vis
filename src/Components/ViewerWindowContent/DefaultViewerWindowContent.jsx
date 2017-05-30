@@ -10,7 +10,10 @@ function DefaultViewerWindowContent(props) {
         </p>
       </div>
       <div>
-        <img className='gglogo' src={require(`!file-loader!../../images/gglogo.svg`)} />
+        <img
+          className='gglogo'
+          src={require('!file-loader!../../images/gglogo.svg')}
+        />
       </div>
     </div>
   );

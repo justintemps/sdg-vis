@@ -12,15 +12,18 @@ import data from '!json!../../data.json';
 import FullScreenBtn from '../FullScreenBtn/FullScreenBtn.jsx';
 import { numberIcons, startFrom } from './setRows.js';
 
-const SDGexplorer = React.createClass({
-  getInitialState() {
-    return {
+class SDGexplorer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       currentSdg: 0,
       currentRow: -1,
       focusTarget: 0,
       rowChanged: false
     };
-  },
+    this.selectSDG = this.selectSDG.bind(this);
+    this.shiftRow = this.shiftRow.bind(this);
+  }
 
   // Select a new SDG and change the row of necessary.
   // Also resets the current story and focus target
@@ -30,7 +33,10 @@ const SDGexplorer = React.createClass({
 
     this.setState({
       currentSdg: sdg,
-      rowChanged: sdg === 0 || (Math.floor(sdg / rowDivisor) !== this.state.currentRow) ? true : false
+      rowChanged: sdg === 0 ||
+        Math.floor(sdg / rowDivisor) !== this.state.currentRow
+        ? true
+        : false
     });
 
     // Shift the row if it changed
@@ -39,22 +45,14 @@ const SDGexplorer = React.createClass({
       row = sdg === 0 ? -1 : Math.floor(sdg / rowDivisor);
       this.shiftRow(row);
     }, 500);
-  },
-
-  // Select the current focus target
-  selectFocusTarget(focusTarget) {
-    this.setState({
-      focusTarget: focusTarget,
-      longDescription: false
-    });
-  },
+  }
 
   // Determines the row underneath which the viwer window should be displayed
   shiftRow(row) {
     this.setState({
       currentRow: row
     });
-  },
+  }
 
   render() {
     return (
@@ -102,6 +100,6 @@ const SDGexplorer = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default SDGexplorer;
