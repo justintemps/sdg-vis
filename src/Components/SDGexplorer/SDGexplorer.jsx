@@ -16,19 +16,10 @@ const SDGexplorer = React.createClass({
   getInitialState() {
     return {
       currentSdg: 0,
-      currentRow: 0,
+      currentRow: -1,
       focusTarget: 0,
-      isModalOpen: false,
       rowChanged: false
     };
-  },
-
-  openModal() {
-    this.setState({ isModalOpen: true });
-  },
-
-  closeModal() {
-    this.setState({ isModalOpen: false });
   },
 
   // Select a new SDG and change the row of necessary.
@@ -93,7 +84,6 @@ const SDGexplorer = React.createClass({
             data={data}
             key={this.state.rowChanged ? this.state.currentSdg : 900}
             currentSdg={this.state.currentSdg}
-            isModalOpen={this.state.isModalOpen}
             openModal={this.openModal}
             closeModal={this.closeModal}
           />

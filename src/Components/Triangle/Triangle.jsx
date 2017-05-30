@@ -5,25 +5,41 @@
 
 import React from 'react';
 
-const Triangle = React.createClass({
-  size() {
-    return this.props.small ? 15 : 20;
-  },
+function Triangle(props) {
+  const size = () => {
+    return props.small ? 15 : 20;
+  };
 
-  render() {
-    const properties = {
-      borderLeft: `${this.size()}px solid transparent`,
-      borderRight: `${this.size()}px solid transparent`,
-      borderTop: `${this.size()}px solid ${this.props.sdgColor}`
-    };
+  const style = sdg => {
+    if (sdg === 0) {
+      return {
+        borderLeft: `${size()}px solid transparent`,
+        borderRight: `${size()}px solid transparent`,
+        borderBottom: `${size()}px solid ${props.sdgColor}`
+      };
+    } else {
+      return {
+        borderLeft: `${size()}px solid transparent`,
+        borderRight: `${size()}px solid transparent`,
+        borderTop: `${size()}px solid ${props.sdgColor}`
+      };
+    }
+  };
 
-    return (
-      <div
-        className={this.props.small ? 'small-triangle' : 'triangle'}
-        style={properties}
-      />
-    );
-  }
-});
+  const topOrBottom = sdg => {
+    if (sdg === 0) {
+      return 'up-triangle';
+    } else {
+      return 'down-triangle';
+    }
+  };
+
+  return (
+    <div
+      className={topOrBottom(props.sdgNumber)}
+      style={style(props.sdgNumber)}
+    />
+  );
+}
 
 export default Triangle;

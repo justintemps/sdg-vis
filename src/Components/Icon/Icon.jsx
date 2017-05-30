@@ -4,8 +4,8 @@ import Triangle from '../Triangle/Triangle.jsx';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class Icon extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.opacity = this.opacity.bind(this);
     this.triangle = this.triangle.bind(this);
     this.clickHandler = this.clickHandler.bind(this);
@@ -28,7 +28,7 @@ class Icon extends React.Component {
           className="triangle"
           key={this.props.number}
           small={true}
-          sdgNumber={this.props.number}
+          sdgNumber={this.props.sdgNumber}
           sdgColor={this.props.color}
         />
       );

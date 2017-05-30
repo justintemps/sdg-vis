@@ -11,12 +11,23 @@
 }
 
 .defaultViewerWindowContent div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex-basis: 55%;
+  height: 100%;
   text-align: left;
 }
 
 .defaultViewerWindowContent div:nth-child(2){
   flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 55%;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
 }
 
 .defaultDescription {
@@ -25,7 +36,7 @@
 	text-align: left;
 }
 
-.sdgLogo {
-  position: relative;
-  max-width: 300px;
+.gglogo {
+  position: absolute;
+  max-width: 50%;
 }

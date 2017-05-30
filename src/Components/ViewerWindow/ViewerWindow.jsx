@@ -1,41 +1,66 @@
-/**
- * ViewerWindow
- * Parent to TitleBar, ViewerWindowContent
- */
-
 import React from 'react';
 import ViewerWindowContent
   from '../ViewerWindowContent/ViewerWindowContent.jsx';
+import DefaultViewerWindowContent
+  from '../ViewerWindowContent/DefaultViewerWindowContent.jsx';
 import Modal from '../Modal/Modal.jsx';
 
-const ViewerWindow = React.createClass({
+class ViewerWindow extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { modalIsOpen: false };
+    this.mountModal = this.mountModal.bind(this);
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.currentView = this.currentView.bind(this);
+  }
+
+  openModal() {
+    this.setState({
+      modalIsOpen: true
+    });
+  }
+
+  closeModal() {
+    this.setState({
+      modalIsOpen: false
+    });
+  }
+
   mountModal() {
-    if (this.props.isModalOpen) {
+    if (this.state.modalIsOpen) {
+      return <Modal closeModal={this.closeModal} />;
+    }
+  }
+
+  currentView(sdg) {
+    if (sdg === 0) {
       return (
-        <Modal closeModal={this.props.closeModal}>
-          <div className="iframe-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/mZpyJwevPqc?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;modestbranding=1"
-              frameBorder="0"
-            />
-          </div>
-        </Modal>
+        <DefaultViewerWindowContent
+          isModalOpen={this.state.modalIsOpen}
+          openModal={this.openModal}
+          closeModal={this.closeModal}
+        />
+      );
+    } else {
+      return (
+        <ViewerWindowContent
+          isModalOpen={this.state.modalIsOpen}
+          openModal={this.openModal}
+          closeModal={this.closeModal}
+        />
       );
     }
-  },
+  }
 
   render() {
     return (
       <div className="viewerWindow">
-        <ViewerWindowContent {...this.props} />
+        {this.currentView(this.props.currentSdg)}
         {this.mountModal()}
       </div>
     );
   }
-});
+}
 
 export default ViewerWindow;
-
-/*
-?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;wmode=opaque
-*/

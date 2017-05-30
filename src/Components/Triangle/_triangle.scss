@@ -1,4 +1,4 @@
-.small-triangle {
+.up-triangle {
 	content: "";
 	display: block;
 	height: 0;
@@ -7,5 +7,12 @@
 	width: 0;
   margin: 0;
   padding: 0;
+  bottom: initial;
+  top: -10%;
+}
+
+.down-triangle {
+  @extend .up-triangle;
+  top: initial;
   bottom: -10%;
 }
