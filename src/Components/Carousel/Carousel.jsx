@@ -18,9 +18,13 @@ class Carousel extends React.Component {
   render() {
     return (
       <Slider {...this.settings}>
-        <div><img src="http://placekitten.com/g/300/200" /></div>
-        <div><img src="http://placekitten.com/g/300/200" /></div>
-        <div><img src="http://placekitten.com/g/300/200" /></div>
+        {videos
+          .filter(vid => vid.sdg === this.props.currentSdg)
+          .map(vid => (
+            <div key={vid.youtubeID}>
+              <img className="thumbnail" src={vid.thumbnail} />
+            </div>
+          ))}
       </Slider>
     );
   }

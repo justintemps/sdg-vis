@@ -38,6 +38,7 @@
     "webpack-validator": "^2.2.8"
   },
   "dependencies": {
+    "jsonp": "^0.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",

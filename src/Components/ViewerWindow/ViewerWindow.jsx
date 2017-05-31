@@ -3,47 +3,29 @@ import ViewerWindowContent
   from '../ViewerWindowContent/ViewerWindowContent.jsx';
 import DefaultViewerWindowContent
   from '../ViewerWindowContent/DefaultViewerWindowContent.jsx';
-import Modal from '../Modal/Modal.jsx';
+import getData from '../../../libs/googleSheets-client.js';
 
 class ViewerWindow extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { modalIsOpen: false };
-    this.mountModal = this.mountModal.bind(this);
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
+    this.state = { videos: [] };
     this.currentView = this.currentView.bind(this);
   }
 
-  openModal() {
-    this.setState({
-      modalIsOpen: true
+  componentDidMount() {
+    getData().then(data => {
+      this.setState({ videos: data });
     });
-  }
-
-  closeModal() {
-    this.setState({
-      modalIsOpen: false
-    });
-  }
-
-  mountModal() {
-    if (this.state.modalIsOpen) {
-      return <Modal closeModal={this.closeModal} />;
-    }
   }
 
   currentView(sdg) {
     if (sdg === 0) {
-      return (
-        <DefaultViewerWindowContent />
-      );
+      return <DefaultViewerWindowContent />;
     } else {
       return (
         <ViewerWindowContent
-          isModalOpen={this.state.modalIsOpen}
-          openModal={this.openModal}
-          closeModal={this.closeModal}
+          currentSdg={this.props.currentSdg}
+          videos={this.state.videos}
         />
       );
     }
@@ -53,7 +35,6 @@ class ViewerWindow extends React.Component {
     return (
       <div className="viewerWindow">
         {this.currentView(this.props.currentSdg)}
-        {this.mountModal()}
       </div>
     );
   }
