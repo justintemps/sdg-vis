@@ -16,17 +16,19 @@ class Carousel extends React.Component {
   }
 
   render() {
-    return (
-      <Slider {...this.settings}>
-        {videos
-          .filter(vid => vid.sdg === this.props.currentSdg)
-          .map(vid => (
+    if (this.props.videos.length !== 0) {
+      return (
+        <Slider {...this.settings}>
+          {this.props.videos.filter(vid => vid.sdg === this.props.currentSdg.toString()).map(vid => (
             <div key={vid.youtubeID}>
               <img className="thumbnail" src={vid.thumbnail} />
             </div>
           ))}
-      </Slider>
-    );
+        </Slider>
+      );
+    } else {
+      return null;
+    }
   }
 }
 
