@@ -16,7 +16,7 @@ const ImpactStories = React.createClass({
     };
   },
 
-  componentWillReceiveProps() {
+  updateStories() {
     const url = `https://api.ilo-sdgs.online/stories/sdg/${this.props
       .currentSdg}`;
     axios(url).then(res => {
@@ -24,12 +24,12 @@ const ImpactStories = React.createClass({
     });
   },
 
+  componentWillReceiveProps() {
+    this.updateStories();
+  },
+
   componentDidMount() {
-    const url = `https://api.ilo-sdgs.online/stories/sdg/${this.props
-      .currentSdg}`;
-    axios(url).then(res => {
-      this.setState({ stories: res.data[0].stories });
-    });
+    this.updateStories();
   },
 
   impactStory() {
@@ -50,18 +50,20 @@ const ImpactStories = React.createClass({
   },
 
   render() {
-    const bullets = this.props.impactStories.map((target, i) => {
-      return (
-        <Bullet
-          type="impactStory"
-          key={i}
-          id={i}
-          currentStory={this.props.currentStory}
-          selectStory={this.props.selectStory}
-          currentSDG={this.props.currentSdg}
-          data={this.props.data}
-        />
-      );
+    const bullets = this.state.stories.map((target, i) => {
+      if (i <= 8) {
+        return (
+          <Bullet
+            type="impactStory"
+            key={i}
+            id={i}
+            currentStory={this.props.currentStory}
+            selectStory={this.props.selectStory}
+            currentSDG={this.props.currentSdg}
+            data={this.props.data}
+          />
+        );
+      }
     });
 
     const style = { color: this.props.data[this.props.currentSdg].sdgColor };
